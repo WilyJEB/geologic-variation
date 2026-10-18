@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible addon problem
+body:
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions and environment
+      description: Minecraft, NeoForge, TD artifact/backend, addon, OS and Java
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Steps, seed, scale, coordinates, expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Relevant logs/screenshots and whether it reproduces with only TD and the addon

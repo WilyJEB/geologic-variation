@@ -1,0 +1,6 @@
+{
+    "textures":  {
+                     "all":  "minecraft:block/diorite"
+                 },
+    "parent":  "minecraft:block/cube_all"
+}

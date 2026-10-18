@@ -1,0 +1,6 @@
+{
+    "textures":  {
+                     "all":  "minecraft:block/polished_blackstone"
+                 },
+    "parent":  "minecraft:block/cube_all"
+}

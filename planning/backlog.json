@@ -1,0 +1,363 @@
+{
+    "issues":  [
+                   {
+                       "implemented":  true,
+                       "acceptance":  [
+                                          "Require official terrain_diffusion_mc 2.3.0 on Minecraft 1.21.1 / NeoForge; no Ulti-World or Living Cities requirement.",
+                                          "Pin and hash-verify the compile dependency; do not bundle it.",
+                                          "Full local Gradle build and deterministic province checks pass. Evidence: docs/verification.md, standalone 0.1.1 revision."
+                                      ],
+                       "dependencies":  [
+
+                                        ],
+                       "key":  "standalone",
+                       "milestone":  "m0",
+                       "title":  "Establish the independent official Terrain Diffusion build baseline",
+                       "labels":  [
+                                      "foundation"
+                                  ]
+                   },
+                   {
+                       "implemented":  true,
+                       "acceptance":  [
+                                          "Limestone, slate, quartzite and gabbro have blocks/items, models, translations and self-drop loot.",
+                                          "Register mining, ore host and carver tags.",
+                                          "Package all resources successfully. In-game mining and carving remain tracked in M1."
+                                      ],
+                       "dependencies":  [
+                                            "standalone"
+                                        ],
+                       "key":  "stones",
+                       "milestone":  "m0",
+                       "title":  "Register four usable placeholder stones and generation tags",
+                       "labels":  [
+                                      "foundation",
+                                      "worldgen"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Run the committed workflow from a clean checkout.",
+                                          "Bootstrap the official dependency, build and run testGeology.",
+                                          "Upload the development JAR and link the successful run in the verification record."
+                                      ],
+                       "dependencies":  [
+                                            "standalone"
+                                        ],
+                       "key":  "ci",
+                       "milestone":  "m0",
+                       "title":  "Verify a clean GitHub Actions build and downloadable development artifact",
+                       "labels":  [
+                                      "build"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Use only official TD 2.3.0 and this addon on NeoForge 1.21.1.",
+                                          "Record actual mixin application, four creative entries and client/server connection.",
+                                          "Record artifact/backend, Java, loader and addon versions with relevant logs; no pack files."
+                                      ],
+                       "dependencies":  [
+                                            "ci",
+                                            "stones"
+                                        ],
+                       "key":  "launch",
+                       "milestone":  "m1",
+                       "title":  "Validate minimal client and dedicated-server startup",
+                       "labels":  [
+                                      "testing",
+                                      "priority:next"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Generate identical seeds in opposite exploration orders and compare stone selection at recorded coordinates.",
+                                          "Test scales 1 and 6, negative coordinates, chunk edges and province contacts.",
+                                          "Save/reopen and compare newly generated neighbors; confirm vanilla Overworld, Nether and End stay unaffected."
+                                      ],
+                       "dependencies":  [
+                                            "launch"
+                                        ],
+                       "key":  "regions",
+                       "milestone":  "m1",
+                       "title":  "Verify reproducible provinces and save/reopen behavior in game",
+                       "labels":  [
+                                      "testing",
+                                      "worldgen"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Mine and place each stone in survival; verify drops and tool behavior.",
+                                          "Inspect ore placement and cave carving in every host stone.",
+                                          "Check soils, water, bedrock and deepslate; document exact-block feature limitations and fix reproduced regressions."
+                                      ],
+                       "dependencies":  [
+                                            "launch"
+                                        ],
+                       "key":  "ores",
+                       "milestone":  "m1",
+                       "title":  "Validate mining, ores, caves and preserved surface materials",
+                       "labels":  [
+                                      "testing",
+                                      "worldgen"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Record hardware/backend and cold versus cached chunk-generation timings.",
+                                          "Check first visits to remote province anchors and concurrent requests for stalls or deadlocks.",
+                                          "Record bounded cache behavior and decide whether generation scanning or sampling needs optimization."
+                                      ],
+                       "dependencies":  [
+                                            "launch"
+                                        ],
+                       "key":  "performance",
+                       "milestone":  "m1",
+                       "title":  "Measure cold-province inference latency and chunk-generation cost",
+                       "labels":  [
+                                      "testing",
+                                      "performance"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Expose bounded province spacing and classification parameters with documented units.",
+                                          "Persist settings when a world is initialized and use the saved values after restart.",
+                                          "Reject invalid inputs and explain attempted changes that would affect an existing world."
+                                      ],
+                       "dependencies":  [
+                                            "regions"
+                                        ],
+                       "key":  "config",
+                       "milestone":  "m2",
+                       "title":  "Add validated world-persistent geology settings",
+                       "labels":  [
+                                      "worldgen"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Persist schema/generator version and dependency/model context needed for reproducibility.",
+                                          "Define a deterministic policy for incompatible settings or algorithm changes.",
+                                          "Test reload and upgrade handling without silently changing newly generated neighboring geology."
+                                      ],
+                       "dependencies":  [
+                                            "config"
+                                        ],
+                       "key":  "versioning",
+                       "milestone":  "m2",
+                       "title":  "Version geological generation rules and guard continuing saves",
+                       "labels":  [
+                                      "worldgen",
+                                      "save-data"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Report stone ID, province cell/anchor, generation version and terrain evidence at supplied coordinates.",
+                                          "Make permissions and inference cost explicit; keep queries bounded.",
+                                          "Use output to reproduce issues without requiring a city mod or client-only UI."
+                                      ],
+                       "dependencies":  [
+                                            "config"
+                                        ],
+                       "key":  "diagnostics",
+                       "milestone":  "m2",
+                       "title":  "Add a server-side geology inspection command",
+                       "labels":  [
+                                      "diagnostics"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Evaluate current sharp nearest-site contacts in recorded landscapes.",
+                                          "Design deterministic terrain-informed boundary variation that keeps large coherent stone regions.",
+                                          "Avoid per-block speckle and traversal dependence; version any changed generation contract.",
+                                          "Keep full tectonic simulation and complex strata outside this issue."
+                                      ],
+                       "dependencies":  [
+                                            "regions",
+                                            "versioning"
+                                        ],
+                       "key":  "contacts",
+                       "milestone":  "m2",
+                       "title":  "Refine terrain-conditioned province shapes and geological contacts",
+                       "labels":  [
+                                      "worldgen"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Replace vanilla texture references with distinguishable limestone, slate, quartzite and gabbro art.",
+                                          "Record author/license and editable sources.",
+                                          "Retain the four shipped block IDs; no final assets required for M1 acceptance."
+                                      ],
+                       "dependencies":  [
+                                            "ores"
+                                        ],
+                       "key":  "art",
+                       "milestone":  "m3",
+                       "title":  "Create four distinct stone texture sets with editable source and provenance",
+                       "labels":  [
+                                      "assets"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Agree a bounded useful set of cut/polished/brick blocks and stairs/slabs/walls.",
+                                          "Add consistent recipes, drops, mining tags and creative entries.",
+                                          "Validate placement, waterlogging where applicable and model connections without changing raw-stone IDs."
+                                      ],
+                       "dependencies":  [
+                                            "art"
+                                        ],
+                       "key":  "masonry",
+                       "milestone":  "m3",
+                       "title":  "Add regional masonry variants, shapes and recipes",
+                       "labels":  [
+                                      "content"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Automate missing model/texture/loot/recipe reference checks.",
+                                          "Verify each new block item and translation is packaged.",
+                                          "Perform in-game visual review at representative light levels; record art defects separately."
+                                      ],
+                       "dependencies":  [
+                                            "art",
+                                            "masonry"
+                                        ],
+                       "key":  "assets-check",
+                       "milestone":  "m3",
+                       "title":  "Validate resource references, translations and packaged asset completeness",
+                       "labels":  [
+                                      "assets",
+                                      "build"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Document query threading/inference behavior and stable province/stone identifiers.",
+                                          "Separate palette DTOs from registry internals where useful.",
+                                          "Define API versioning and meaningful deterministic contract tests; no mandatory city mod."
+                                      ],
+                       "dependencies":  [
+                                            "versioning",
+                                            "diagnostics"
+                                        ],
+                       "key":  "api",
+                       "milestone":  "m4",
+                       "title":  "Stabilize the public regional palette API and identity contract",
+                       "labels":  [
+                                      "api"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Provide a small example that queries local stone once and persists a founding palette.",
+                                          "Define expansion and boundary-crossing behavior for an external city system.",
+                                          "Keep Living Cities optional; do not automatically generate or restyle cities in the core addon."
+                                      ],
+                       "dependencies":  [
+                                            "api"
+                                        ],
+                       "key":  "city-example",
+                       "milestone":  "m4",
+                       "title":  "Document a city founding-palette consumer without coupling the addon",
+                       "labels":  [
+                                      "api",
+                                      "integration"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Begin only after standalone M1 acceptance is recorded.",
+                                          "Audit the then-current pack TD fork and add an explicit optional adapter or separate compatibility build.",
+                                          "Record source/artifact pins and isolated pack acceptance; preserve the official standalone build.",
+                                          "Do not introduce Ulti-World as a mandatory core dependency."
+                                      ],
+                       "dependencies":  [
+                                            "regions",
+                                            "ores",
+                                            "performance",
+                                            "api"
+                                        ],
+                       "key":  "ulti",
+                       "milestone":  "m5",
+                       "title":  "Implement an optional Ulti-World Terrain Diffusion adapter later",
+                       "labels":  [
+                                      "integration",
+                                      "deferred"
+                                  ]
+                   },
+                   {
+                       "implemented":  false,
+                       "acceptance":  [
+                                          "Publish an evidence-based compatibility matrix for exact artifact/loader/backend combinations.",
+                                          "Test API contracts and minimal installations before widening metadata ranges.",
+                                          "Treat Fabric or another Minecraft line as a deliberate port, not implied support."
+                                      ],
+                       "dependencies":  [
+                                            "launch",
+                                            "api"
+                                        ],
+                       "key":  "matrix",
+                       "milestone":  "m5",
+                       "title":  "Evaluate additional Terrain Diffusion versions and loader/backend compatibility",
+                       "labels":  [
+                                      "integration",
+                                      "deferred"
+                                  ]
+                   }
+               ],
+    "milestones":  [
+                       {
+                           "title":  "M0 - Standalone foundation",
+                           "key":  "m0",
+                           "description":  "Independent official Terrain Diffusion baseline, placeholder blocks, reproducible build and CI. Runtime certification is tracked separately."
+                       },
+                       {
+                           "title":  "M1 - Minimal-install acceptance",
+                           "key":  "m1",
+                           "description":  "User-led acceptance with only Minecraft 1.21.1, NeoForge, official Terrain Diffusion and this addon. Record actual runtime evidence."
+                       },
+                       {
+                           "title":  "M2 - Geology controls and diagnostics",
+                           "key":  "m2",
+                           "description":  "World-persistent settings, generation versioning, diagnostics and terrain-aware regional refinements."
+                       },
+                       {
+                           "title":  "M3 - Assets and masonry",
+                           "key":  "m3",
+                           "description":  "Deferred visual assets and practical building pieces, with stable IDs and recorded provenance."
+                       },
+                       {
+                           "title":  "M4 - City palette API",
+                           "key":  "m4",
+                           "description":  "Independent regional identity API that external city systems can adopt without adding a mandatory city-mod dependency."
+                       },
+                       {
+                           "title":  "M5 - Optional integrations",
+                           "key":  "m5",
+                           "description":  "Later Ulti-World adapter and explicit compatibility expansion after standalone acceptance."
+                       }
+                   ],
+    "repository":  "WilyJEB/geologic-variation"
+}

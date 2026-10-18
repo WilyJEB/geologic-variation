@@ -1,0 +1,6 @@
+{
+    "textures":  {
+                     "all":  "minecraft:block/deepslate"
+                 },
+    "parent":  "minecraft:block/cube_all"
+}

@@ -1,0 +1,15 @@
+name: Feature request
+description: Propose an observable addition
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Desired behavior
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and scope exclusions
+    validations:
+      required: true
