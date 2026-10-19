@@ -23,3 +23,8 @@ are deferred. Optional integrations must not become mandatory dependencies.
 Issue #13 now has a code-first masonry implementation using vanilla texture
 placeholders. Final art (#12) and in-game placement/waterlogging review remain
 M3 acceptance gates; see docs/stone-families.md.
+
+The researched target is four regional families per host layer alongside vanilla
+(#22), coarse-terrain-derived terranes (#11), and future regional mineral systems
+(#23). See docs/geology-research.md and planning/geology. These are planned
+versioned changes, not features of the current four-rock prototype.

@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "runtime_enabled": false,
+  "implementation_issue": 23,
+  "semantics": {
+    "bulk_composition": "Common constituent elements in the rock catalog; not an ore grade.",
+    "permissive_host": "Potentially compatible host, not proof of enrichment.",
+    "mineral_system": "Host plus geological process and structural/history conditions.",
+    "prospectivity": "Future normalized game score, not ppm, mass percent or measured reserve."
+  },
+  "unsupported_elements": "Metadata only until explicit block/item support or optional integration exists.",
+  "vanilla_ore_policy": "Future implementation must budget yields against vanilla features and avoid unconstrained additive duplication.",
+  "profiles": [
+    {
+      "id": "sedimentary_ironstone",
+      "host_rocks": [
+        "ironstone"
+      ],
+      "palette_host_ids": [
+        "ironstone"
+      ],
+      "target_elements_or_groups": [
+        "Fe"
+      ],
+      "representative_minerals": [
+        "siderite",
+        "iron oxides",
+        "iron-bearing silicates"
+      ],
+      "enrichment_process": "Sedimentary iron concentration with possible later oxidation or alteration.",
+      "required_geological_context": [
+        "iron-rich sedimentary horizon"
+      ],
+      "candidate_game_geometry": [
+        "beds",
+        "lenses",
+        "ooidal horizons"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "bgs_ironstone"
+      ],
+      "limitation": "Common building ironstone must not automatically smelt to iron; separately mark enriched material and balance yields."
+    },
+    {
+      "id": "banded_iron_formation",
+      "host_rocks": [
+        "banded iron formation"
+      ],
+      "palette_host_ids": [],
+      "target_elements_or_groups": [
+        "Fe"
+      ],
+      "representative_minerals": [
+        "magnetite",
+        "hematite",
+        "siderite"
+      ],
+      "enrichment_process": "Iron-rich chemical sediment accumulates with silica-rich layers.",
+      "required_geological_context": [
+        "inherited iron-formation sequence"
+      ],
+      "candidate_game_geometry": [
+        "stratabound bands",
+        "folded lenses"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_iron_formation"
+      ],
+      "limitation": "Host suitability does not guarantee mineralization or economic grade."
+    },
+    {
+      "id": "mafic_magmatic_sulfides",
+      "host_rocks": [
+        "gabbro",
+        "mafic-ultramafic intrusion"
+      ],
+      "palette_host_ids": [
+        "gabbro"
+      ],
+      "target_elements_or_groups": [
+        "Ni",
+        "Cu",
+        "Co",
+        "PGE"
+      ],
+      "representative_minerals": [
+        "nickel-copper sulfides"
+      ],
+      "enrichment_process": "Magmatic sulfide segregation concentrates compatible metals.",
+      "required_geological_context": [
+        "suitable mafic-ultramafic intrusive complex",
+        "sulfide saturation history"
+      ],
+      "candidate_game_geometry": [
+        "basal lenses",
+        "pods",
+        "disseminated zones"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_mafic_deposits"
+      ],
+      "limitation": "Host suitability does not guarantee mineralization or economic grade."
+    },
+    {
+      "id": "ultramafic_chromitite",
+      "host_rocks": [
+        "peridotite",
+        "dunite",
+        "altered ultramafic rock"
+      ],
+      "palette_host_ids": [
+        "serpentinite"
+      ],
+      "target_elements_or_groups": [
+        "Cr",
+        "PGE"
+      ],
+      "representative_minerals": [
+        "chromite"
+      ],
+      "enrichment_process": "Chromite accumulation in selected ultramafic magmatic systems.",
+      "required_geological_context": [
+        "layered intrusion or ophiolitic domain"
+      ],
+      "candidate_game_geometry": [
+        "layers",
+        "pods"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_mafic_deposits"
+      ],
+      "limitation": "Serpentinite can preserve an ultramafic association; hydration alone does not create chromite enrichment."
+    },
+    {
+      "id": "porphyry_copper",
+      "host_rocks": [
+        "porphyritic intermediate-felsic intrusion",
+        "altered country rock"
+      ],
+      "palette_host_ids": [],
+      "target_elements_or_groups": [
+        "Cu",
+        "Mo",
+        "Au"
+      ],
+      "representative_minerals": [
+        "copper sulfides",
+        "molybdenite"
+      ],
+      "enrichment_process": "Magmatic-hydrothermal fluids mineralize fractures and surrounding rock.",
+      "required_geological_context": [
+        "fertile intrusion",
+        "hydrothermal alteration and fluid pathways"
+      ],
+      "candidate_game_geometry": [
+        "stockwork",
+        "disseminated shell",
+        "vein network"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_porphyry"
+      ],
+      "limitation": "Host suitability does not guarantee mineralization or economic grade."
+    },
+    {
+      "id": "carbonate_mvt",
+      "host_rocks": [
+        "limestone",
+        "dolostone"
+      ],
+      "palette_host_ids": [
+        "limestone"
+      ],
+      "target_elements_or_groups": [
+        "Pb",
+        "Zn"
+      ],
+      "representative_minerals": [
+        "galena",
+        "sphalerite"
+      ],
+      "enrichment_process": "Basin-related mineralizing fluids deposit sulfides in carbonate hosts.",
+      "required_geological_context": [
+        "platform carbonate",
+        "basin flank or foreland context",
+        "permeability/fluid pathways"
+      ],
+      "candidate_game_geometry": [
+        "replacement bodies",
+        "breccia bodies",
+        "stratabound lenses"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_mvt"
+      ],
+      "limitation": "Host suitability does not guarantee mineralization or economic grade."
+    },
+    {
+      "id": "contact_skarn",
+      "host_rocks": [
+        "limestone",
+        "impure carbonate",
+        "calc-silicate skarn"
+      ],
+      "palette_host_ids": [
+        "limestone"
+      ],
+      "target_elements_or_groups": [
+        "W",
+        "Cu",
+        "Fe"
+      ],
+      "representative_minerals": [
+        "scheelite",
+        "copper sulfides",
+        "iron oxides"
+      ],
+      "enrichment_process": "Fluid-driven replacement near carbonate-intrusion contacts.",
+      "required_geological_context": [
+        "reactive carbonate",
+        "appropriate intrusion",
+        "contact/fluid history"
+      ],
+      "candidate_game_geometry": [
+        "contact lenses",
+        "replacement bodies",
+        "veins"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_skarn"
+      ],
+      "limitation": "Different skarn subtypes have different commodities; do not enable every listed element in every contact."
+    },
+    {
+      "id": "sediment_hosted_copper",
+      "host_rocks": [
+        "red-bed sandstone",
+        "shale",
+        "siltstone",
+        "carbonate-bearing sedimentary sequence"
+      ],
+      "palette_host_ids": [],
+      "target_elements_or_groups": [
+        "Cu"
+      ],
+      "representative_minerals": [
+        "copper sulfides"
+      ],
+      "enrichment_process": "Sedimentary-basin fluids concentrate copper across favorable chemical boundaries.",
+      "required_geological_context": [
+        "red-bed basin sequence",
+        "permeable and chemically reactive horizons"
+      ],
+      "candidate_game_geometry": [
+        "stratabound sheets",
+        "lenses"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_sediment_cu"
+      ],
+      "limitation": "Host suitability does not guarantee mineralization or economic grade."
+    },
+    {
+      "id": "lct_pegmatite",
+      "host_rocks": [
+        "evolved granitic pegmatite"
+      ],
+      "palette_host_ids": [],
+      "target_elements_or_groups": [
+        "Li",
+        "Cs",
+        "Ta",
+        "Sn",
+        "Be"
+      ],
+      "representative_minerals": [
+        "spodumene",
+        "petalite",
+        "lepidolite",
+        "pollucite",
+        "columbite-tantalite",
+        "cassiterite",
+        "beryl"
+      ],
+      "enrichment_process": "Strong differentiation of selected granitic melts produces rare-element pegmatites.",
+      "required_geological_context": [
+        "evolved LCT granitic system"
+      ],
+      "candidate_game_geometry": [
+        "dikes",
+        "zoned lenses",
+        "coarse pockets"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_lct"
+      ],
+      "limitation": "Not every pegmatite is LCT or enriched in every listed commodity."
+    },
+    {
+      "id": "bauxite",
+      "host_rocks": [
+        "bauxite",
+        "residual or transported material over carbonate"
+      ],
+      "palette_host_ids": [],
+      "target_elements_or_groups": [
+        "Al"
+      ],
+      "representative_minerals": [
+        "aluminum hydroxide minerals"
+      ],
+      "enrichment_process": "Weathering/residual concentration, including karst-associated accumulations.",
+      "required_geological_context": [
+        "weathering history",
+        "residual accumulation or karst trap"
+      ],
+      "candidate_game_geometry": [
+        "blankets",
+        "karst pockets"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_bauxite"
+      ],
+      "limitation": "Ancient weathering history is required; a current warm biome is not sufficient."
+    },
+    {
+      "id": "phosphorite",
+      "host_rocks": [
+        "phosphorite",
+        "phosphatized sedimentary rock"
+      ],
+      "palette_host_ids": [],
+      "target_elements_or_groups": [
+        "P"
+      ],
+      "representative_minerals": [
+        "phosphate minerals"
+      ],
+      "enrichment_process": "Marine sedimentary processes concentrate phosphorus.",
+      "required_geological_context": [
+        "productive marine sedimentary setting",
+        "depositional history"
+      ],
+      "candidate_game_geometry": [
+        "beds",
+        "hardgrounds",
+        "nodules"
+      ],
+      "grade": null,
+      "numeric_grade_provenance": null,
+      "source_ids": [
+        "usgs_phosphorite"
+      ],
+      "limitation": "Host suitability does not guarantee mineralization or economic grade."
+    }
+  ]
+}

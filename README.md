@@ -107,3 +107,10 @@ worlds in `config/geologic_variation-common.toml`. Each world saves its own
 settings and keeps them when the common config changes. Pre-settings worlds
 adopt the original defaults. See [settings and persistence](docs/geology-settings.md)
 for units, validation, snapshot location and remaining runtime acceptance.
+
+## Researched next palette
+
+The next versioned design has four regional stones per layer alongside vanilla,
+plus a sourced library of future mineral-enrichment systems. This catalog does
+not yet change the running four-rock generator. See
+[geology research and implementation issues](docs/geology-research.md).
