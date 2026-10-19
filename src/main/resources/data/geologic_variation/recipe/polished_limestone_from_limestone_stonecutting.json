@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:limestone"
+  },
+  "result": {
+    "id": "geologic_variation:polished_limestone",
+    "count": 1
+  }
+}

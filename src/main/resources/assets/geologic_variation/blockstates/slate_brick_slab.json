@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "geologic_variation:block/slate_brick_slab"
+    },
+    "type=double": {
+      "model": "geologic_variation:block/slate_bricks"
+    },
+    "type=top": {
+      "model": "geologic_variation:block/slate_brick_slab_top"
+    }
+  }
+}

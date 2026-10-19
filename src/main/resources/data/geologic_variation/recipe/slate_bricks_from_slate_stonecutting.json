@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:slate"
+  },
+  "result": {
+    "id": "geologic_variation:slate_bricks",
+    "count": 1
+  }
+}

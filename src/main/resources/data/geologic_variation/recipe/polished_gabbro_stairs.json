@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:polished_gabbro"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:polished_gabbro_stairs",
+    "count": 4
+  }
+}

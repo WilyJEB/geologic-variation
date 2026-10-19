@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:quartzite"
+  },
+  "result": {
+    "id": "geologic_variation:polished_quartzite_wall",
+    "count": 1
+  }
+}

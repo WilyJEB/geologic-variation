@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:quartzite"
+  },
+  "result": {
+    "id": "geologic_variation:cobbled_quartzite_slab",
+    "count": 2
+  }
+}

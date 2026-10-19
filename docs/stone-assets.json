@@ -1,0 +1,98 @@
+[
+  {
+    "block": "limestone",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/limestone.png",
+    "placeholder": "minecraft:block/calcite"
+  },
+  {
+    "block": "cobbled_limestone",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/cobbled_limestone.png",
+    "placeholder": "minecraft:block/cobblestone"
+  },
+  {
+    "block": "polished_limestone",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/polished_limestone.png",
+    "placeholder": "minecraft:block/smooth_sandstone"
+  },
+  {
+    "block": "limestone_bricks",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/limestone_bricks.png",
+    "placeholder": "minecraft:block/stone_bricks"
+  },
+  {
+    "block": "slate",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/slate.png",
+    "placeholder": "minecraft:block/deepslate"
+  },
+  {
+    "block": "cobbled_slate",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/cobbled_slate.png",
+    "placeholder": "minecraft:block/cobbled_deepslate"
+  },
+  {
+    "block": "polished_slate",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/polished_slate.png",
+    "placeholder": "minecraft:block/polished_deepslate"
+  },
+  {
+    "block": "slate_bricks",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/slate_bricks.png",
+    "placeholder": "minecraft:block/deepslate_bricks"
+  },
+  {
+    "block": "quartzite",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/quartzite.png",
+    "placeholder": "minecraft:block/diorite"
+  },
+  {
+    "block": "cobbled_quartzite",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/cobbled_quartzite.png",
+    "placeholder": "minecraft:block/cobblestone"
+  },
+  {
+    "block": "polished_quartzite",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/polished_quartzite.png",
+    "placeholder": "minecraft:block/polished_diorite"
+  },
+  {
+    "block": "quartzite_bricks",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/quartzite_bricks.png",
+    "placeholder": "minecraft:block/stone_bricks"
+  },
+  {
+    "block": "gabbro",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/gabbro.png",
+    "placeholder": "minecraft:block/polished_blackstone"
+  },
+  {
+    "block": "cobbled_gabbro",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/cobbled_gabbro.png",
+    "placeholder": "minecraft:block/blackstone"
+  },
+  {
+    "block": "polished_gabbro",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/polished_gabbro.png",
+    "placeholder": "minecraft:block/polished_blackstone"
+  },
+  {
+    "block": "gabbro_bricks",
+    "layer": "surface",
+    "planned_texture": "assets/geologic_variation/textures/block/gabbro_bricks.png",
+    "placeholder": "minecraft:block/polished_blackstone_bricks"
+  }
+]

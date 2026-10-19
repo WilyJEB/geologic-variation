@@ -1,19 +1,46 @@
 {
-    "pools":  [
-                  {
-                      "entries":  [
-                                      {
-                                          "name":  "geologic_variation:gabbro",
-                                          "type":  "minecraft:item"
-                                      }
-                                  ],
-                      "rolls":  1,
-                      "conditions":  [
-                                         {
-                                             "condition":  "minecraft:survives_explosion"
-                                         }
-                                     ]
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
                   }
+                }
               ],
-    "type":  "minecraft:block"
+              "name": "geologic_variation:gabbro"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "name": "geologic_variation:cobbled_gabbro"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
-    "variants":  {
-                     "":  {
-                              "model":  "geologic_variation:block/gabbro"
-                          }
-                 }
+  "variants": {
+    "": {
+      "model": "geologic_variation:block/gabbro"
+    }
+  }
 }

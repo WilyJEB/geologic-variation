@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "geologic_variation:limestone_bricks",
+    "geologic_variation:slate_bricks",
+    "geologic_variation:quartzite_bricks",
+    "geologic_variation:gabbro_bricks"
+  ]
+}

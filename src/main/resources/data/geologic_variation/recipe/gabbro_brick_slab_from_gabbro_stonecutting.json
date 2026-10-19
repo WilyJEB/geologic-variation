@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:gabbro"
+  },
+  "result": {
+    "id": "geologic_variation:gabbro_brick_slab",
+    "count": 2
+  }
+}

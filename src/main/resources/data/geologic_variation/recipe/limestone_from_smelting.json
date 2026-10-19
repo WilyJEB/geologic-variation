@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "ingredient": {
+    "item": "geologic_variation:cobbled_limestone"
+  },
+  "result": {
+    "id": "geologic_variation:limestone"
+  },
+  "experience": 0.1,
+  "cookingtime": 200
+}

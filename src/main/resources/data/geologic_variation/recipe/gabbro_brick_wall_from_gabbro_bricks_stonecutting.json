@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:gabbro_bricks"
+  },
+  "result": {
+    "id": "geologic_variation:gabbro_brick_wall",
+    "count": 1
+  }
+}

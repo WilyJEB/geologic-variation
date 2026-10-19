@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "geologic_variation:block/polished_gabbro_slab"
+    },
+    "type=double": {
+      "model": "geologic_variation:block/polished_gabbro"
+    },
+    "type=top": {
+      "model": "geologic_variation:block/polished_gabbro_slab_top"
+    }
+  }
+}

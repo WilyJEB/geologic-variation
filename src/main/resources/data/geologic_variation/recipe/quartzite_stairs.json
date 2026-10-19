@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:quartzite"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:quartzite_stairs",
+    "count": 4
+  }
+}

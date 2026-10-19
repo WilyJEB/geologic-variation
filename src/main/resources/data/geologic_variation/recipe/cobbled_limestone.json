@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "geologic_variation:limestone"
+    }
+  ],
+  "result": {
+    "id": "geologic_variation:cobbled_limestone",
+    "count": 1
+  }
+}

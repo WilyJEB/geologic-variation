@@ -14,6 +14,11 @@ jobs:
         run: ./scripts/bootstrap.ps1
       - shell: pwsh
         run: ./gradlew.bat build
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - shell: pwsh
+        run: python scripts/generate-masonry.py --check --jar build/libs/geologic-variation-0.2.0-dev.jar
       - uses: actions/upload-artifact@v4
         with:
           name: geologic-variation-dev

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "geologic_variation:limestone",
+    "geologic_variation:limestone_stairs",
+    "geologic_variation:limestone_slab",
+    "geologic_variation:limestone_wall",
+    "geologic_variation:cobbled_limestone",
+    "geologic_variation:cobbled_limestone_stairs",
+    "geologic_variation:cobbled_limestone_slab",
+    "geologic_variation:cobbled_limestone_wall",
+    "geologic_variation:polished_limestone",
+    "geologic_variation:polished_limestone_stairs",
+    "geologic_variation:polished_limestone_slab",
+    "geologic_variation:polished_limestone_wall",
+    "geologic_variation:limestone_bricks",
+    "geologic_variation:limestone_brick_stairs",
+    "geologic_variation:limestone_brick_slab",
+    "geologic_variation:limestone_brick_wall"
+  ]
+}

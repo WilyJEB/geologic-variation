@@ -1,7 +1,7 @@
 {
-    "variants":  {
-                     "":  {
-                              "model":  "geologic_variation:block/limestone"
-                          }
-                 }
+  "variants": {
+    "": {
+      "model": "geologic_variation:block/limestone"
+    }
+  }
 }

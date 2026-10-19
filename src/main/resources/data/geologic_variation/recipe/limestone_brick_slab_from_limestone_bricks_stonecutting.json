@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:limestone_bricks"
+  },
+  "result": {
+    "id": "geologic_variation:limestone_brick_slab",
+    "count": 2
+  }
+}

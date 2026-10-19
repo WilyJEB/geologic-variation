@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "geologic_variation:block/polished_slate_slab"
+    },
+    "type=double": {
+      "model": "geologic_variation:block/polished_slate"
+    },
+    "type=top": {
+      "model": "geologic_variation:block/polished_slate_slab_top"
+    }
+  }
+}

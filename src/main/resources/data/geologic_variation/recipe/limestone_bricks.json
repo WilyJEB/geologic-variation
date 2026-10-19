@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:polished_limestone"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:limestone_bricks",
+    "count": 4
+  }
+}

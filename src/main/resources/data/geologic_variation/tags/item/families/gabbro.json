@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "geologic_variation:gabbro",
+    "geologic_variation:gabbro_stairs",
+    "geologic_variation:gabbro_slab",
+    "geologic_variation:gabbro_wall",
+    "geologic_variation:cobbled_gabbro",
+    "geologic_variation:cobbled_gabbro_stairs",
+    "geologic_variation:cobbled_gabbro_slab",
+    "geologic_variation:cobbled_gabbro_wall",
+    "geologic_variation:polished_gabbro",
+    "geologic_variation:polished_gabbro_stairs",
+    "geologic_variation:polished_gabbro_slab",
+    "geologic_variation:polished_gabbro_wall",
+    "geologic_variation:gabbro_bricks",
+    "geologic_variation:gabbro_brick_stairs",
+    "geologic_variation:gabbro_brick_slab",
+    "geologic_variation:gabbro_brick_wall"
+  ]
+}

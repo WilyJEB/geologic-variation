@@ -25,10 +25,13 @@ public abstract class SurfaceMixin {
         var pos = new BlockPos.MutableBlockPos();
         int sx = chunk.getPos().getMinBlockX(), sz = chunk.getPos().getMinBlockZ();
         for (int z = sz; z < sz+16; z++) for (int x = sx; x < sx+16; x++) {
-            var stone = GeologicVariation.STONES.get(Geology.regionAt(x, z).stone()).get().defaultBlockState();
+            var material = Geology.regionAt(x, z).stone();
+            var host = material.layer() == dev.wilyjeb.geology.domain.Provinces.Layer.DEEP
+                    ? Blocks.DEEPSLATE : Blocks.STONE;
+            var stone = GeologicVariation.STONES.get(material).get().defaultBlockState();
             for (int y = chunk.getMinBuildHeight(); y < chunk.getMaxBuildHeight(); y++) {
                 pos.set(x, y, z);
-                if (chunk.getBlockState(pos).is(Blocks.STONE)) chunk.setBlockState(pos, stone, false);
+                if (chunk.getBlockState(pos).is(host)) chunk.setBlockState(pos, stone, false);
             }
         }
     }

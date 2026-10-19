@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:slate"
+  },
+  "result": {
+    "id": "geologic_variation:polished_slate_stairs",
+    "count": 1
+  }
+}
