@@ -81,19 +81,19 @@
       ]
     },
     {
-      "id": "greywacke",
+      "id": "phyllite",
       "status": "proposed_active_palette",
       "layer": "surface",
       "material_template": "minecraft:stone",
-      "color_role": "dark_gray",
+      "color_role": "gray_green",
       "art_swatches": [
-        "#4B5054",
-        "#74766D"
+        "#55615A",
+        "#909B8C"
       ],
-      "art_direction": "Dark blue-gray; irregular sandy/lithic grains, sparse olive flecks.",
-      "formation_summary": "Poorly sorted lithic sediment, commonly associated with submarine sediment flows, forms a dark sandstone.",
+      "art_direction": "Gray-green body with silver/sage highlights and fine wavy foliation; painted silky mica sheen, not a requirement for shaders.",
+      "formation_summary": "Metamorphism of fine-grained sediment produces fine mica/chlorite-rich foliation with a silky-looking cleavage surface.",
       "inferred_terrane_affinities": [
-        "sedimentary_basin",
+        "fold_belt",
         "accretionary_belt"
       ],
       "common_bulk_constituents": [
@@ -102,7 +102,8 @@
         "O"
       ],
       "source_ids": [
-        "bgs_greywacke"
+        "bgs_phyllite",
+        "usgs_phyllite"
       ]
     },
     {
@@ -211,33 +212,44 @@
       ]
     },
     {
-      "id": "eclogite",
+      "id": "minette",
       "status": "proposed_active_palette",
       "layer": "deep",
       "material_template": "minecraft:deepslate",
-      "color_role": "green_burgundy",
+      "color_role": "red_brown_black",
       "art_swatches": [
-        "#34423C",
-        "#783E49"
+        "#291D1C",
+        "#50302A",
+        "#795043"
       ],
-      "art_direction": "Dark green matrix with discrete burgundy garnet grains, not a solid red field.",
-      "formation_summary": "Garnet and sodic pyroxene characterize this high-pressure rock; restrict occurrence to inferred high-pressure domains.",
+      "art_direction": "Near-black reddish-brown matrix with sparse dark copper-brown mica flecks; no luminous red grains.",
+      "formation_summary": "Mica-rich lamprophyric magma intrudes fractures as dikes; the selected dark reddish-brown variety is supported by documented mica lamprophyres.",
       "inferred_terrane_affinities": [
-        "high_pressure_belt"
+        "intrusive_fracture_domain",
+        "post_orogenic_intrusive_domain"
       ],
       "common_bulk_constituents": [
-        "Si",
-        "Al",
-        "Ca",
+        "K",
         "Mg",
         "Fe",
-        "Na",
+        "Si",
+        "Al",
         "O"
       ],
       "source_ids": [
-        "usgs_eclogite",
-        "usgs_high_pressure"
-      ]
+        "bgs_minette",
+        "usgs_minette_dikes"
+      ],
+      "occurrence": {
+        "mode": "steep_dike",
+        "orientation": "steep_to_vertical",
+        "geometry": "narrow_planar_sheets",
+        "context": "versioned regional intrusion/fracture corridors",
+        "host_layer": "deep",
+        "cross_chunk_rule": "canonical global dike identity with bounded neighborhood queries",
+        "placement_rule": "replace eligible natural deep host blocks only; preserve ores, bedrock, fluids and constructed blocks",
+        "note": "This is a structural intrusion, not an equal-area blanket province or horizontal stratum; configurable finite thickness and extent remain implementation work in #11/#22."
+      }
     }
   ],
   "legacy_only": [
@@ -256,5 +268,6 @@
     "Gabbro moves from surface to deep in the new generator only; older generator selection must remain stable.",
     "A shared gabbro block material-preset change also affects existing placed blocks globally; document it explicitly before release.",
     "Eight active families plus legacy quartzite imply 144 registered block forms if the existing complete-family design is retained."
-  ]
+  ],
+  "revised_date": "2026-10-19"
 }

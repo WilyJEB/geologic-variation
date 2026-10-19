@@ -102,6 +102,27 @@
       "title": "USGS Global seabed mineral resources",
       "url": "https://www.usgs.gov/centers/pcmsc/science/global-seabed-mineral-resources?page=1&qt-science_center_objects=",
       "access_basis": "indexed_excerpt"
+    },
+    "bgs_phyllite": {
+      "title": "BGS Ballachulish green-gray phyllites",
+      "url": "https://earthwise.bgs.ac.uk/index.php/Fraochaidh_prograde_sequence,_Ballachulish_Igneous_Complex_-_an_excursion",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_phyllite": {
+      "title": "USGS phyllite classification and silky cleavage",
+      "url": "https://ngmdb.usgs.gov/Info/standards/datamodel/model41.pdf",
+      "access_basis": "indexed_excerpt"
+    },
+    "bgs_minette": {
+      "title": "BGS mica lamprophyres and minette",
+      "url": "https://webapps.bgs.ac.uk/Memoirs/docs/B07321.html",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_minette_dikes": {
+      "title": "USGS minette province: vertical dikes",
+      "url": "https://pubs.usgs.gov/pp/0521d/report.pdf",
+      "access_basis": "indexed_excerpt"
     }
-  }
+  },
+  "revised_date": "2026-10-19"
 }

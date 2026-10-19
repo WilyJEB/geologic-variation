@@ -18,7 +18,13 @@ for layer, template in [('surface', 'minecraft:stone'), ('deep', 'minecraft:deep
     assert all(r['material_template'] == template for r in entries)
     assert rocks['vanilla_candidates'][layer] == template
 surface = [r for r in rocks['rocks'] if r['layer'] == 'surface']
-assert sorted(r['color_role'] for r in surface) == ['dark_brown', 'dark_gray', 'dark_gray', 'light']
+assert sorted(r['color_role'] for r in surface) == ['dark_brown', 'dark_gray', 'gray_green', 'light']
+assert {'phyllite', 'minette'} <= set(ids) and {'greywacke', 'eclogite'}.isdisjoint(ids)
+minette = next(r for r in rocks['rocks'] if r['id'] == 'minette')
+assert minette['layer'] == 'deep' and minette['color_role'] == 'red_brown_black'
+assert minette['occurrence']['mode'] == 'steep_dike'
+assert minette['occurrence']['orientation'] == 'steep_to_vertical'
+assert minette['occurrence']['geometry'] == 'narrow_planar_sheets'
 assert rocks['legacy_only'][0]['id'] == 'quartzite' and rocks['legacy_only'][0]['registered_ids_must_remain']
 contract = rocks['family_contract']
 assert len(contract['finishes']) == 4 and len(contract['shapes']) == 4

@@ -1,14 +1,15 @@
 # Eight-rock palette, geological history and regional mineral systems
 
-Research date: 2026-10-18. This is a sourced design/library deliverable, not a
+Research date: 2026-10-18; palette revised 2026-10-19. This is a sourced design/library deliverable, not a
 runtime palette switch. Implementation is tracked in #22 (layers/materials),
 #11 (terrane mapping), #23 (mineral systems), #12 (art) and #9 (world versioning).
 The previous four-rock prototype remains the running generator.
 
 ## Selected palette
 
-The surface request is interpreted as two dark-gray rocks, one dark-brown rock
-and one light rock. Deep varieties retain dark bases with distinct mineral accents.
+The revised surface palette has light limestone, charcoal slate, gray-green
+phyllite and dark-brown ironstone. The phyllite selection supersedes the earlier
+second-dark-gray greywacke slot. Deep varieties retain dark bases with distinct mineral accents.
 Swatches in the catalog are art targets, not measured colors or a claim that all
 specimens have the same appearance.
 
@@ -16,23 +17,23 @@ specimens have the same appearance.
 | --- | --- | --- | --- |
 | Surface | Limestone | Cream, ivory, warm buff | Carbonate-platform/basin sediment, potentially uplifted later |
 | Surface | Slate | Charcoal gray, fine cleavage | Low-grade metamorphism of mud-rich sediment |
-| Surface | Greywacke | Dark blue-gray with granular olive flecks | Lithic sandstone associated with sedimentary/accretionary sequences |
+| Surface | Phyllite | Gray-green with silver/sage highlights and wavy foliation | Fine-grained metamorphic rock with silky cleavage |
 | Surface | Ironstone | Dark umber with rust/ochre detail | Iron-bearing sedimentary horizons |
 | Deep | Gabbro | Blue-black with subdued feldspar grains | Mafic intrusive domains, including oceanic crust and continental intrusions |
 | Deep | Blueschist | Navy with blue-gray foliation | High-pressure, relatively cool subduction metamorphism |
 | Deep | Serpentinite | Dark olive/forest green, pale veins | Hydrated ultramafic parent rock |
-| Deep | Eclogite | Dark green with burgundy garnet grains | Selected high-pressure domains; less widespread than the mafic baseline |
+| Deep | Minette | Near-black reddish brown with sparse mica flecks | Narrow steep/vertical intrusive dikes |
 
-BGS documents [dark-gray greywacke](https://webservices.bgs.ac.uk/buildingstone/buildingstones/10088),
-[slate](https://webservices.bgs.ac.uk/buildingstone/buildingstones/10106?mapType=recordMap&recordId=10106&recordType=buildingStone),
-and [brown varieties of ironstone](https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=RDLI).
-USGS identifies the blue amphibole association of
-[blueschist](https://apps.usgs.gov/thesaurus/term-simple.php?code=5.5.2&thcode=4),
-the green minerals in [serpentinite](https://www.usgs.gov/media/images/serpentinite-californias-coast-range-mountains),
-and garnet/pyroxene in [eclogite](https://apps.usgs.gov/thesaurus/term-simple.php?code=5.10&thcode=4).
+BGS documents [green-gray phyllite](https://earthwise.bgs.ac.uk/index.php/Fraochaidh_prograde_sequence,_Ballachulish_Igneous_Complex_-_an_excursion)
+and [brown ironstone](https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=RDLI).
+USGS describes the [silky cleavage of phyllite](https://ngmdb.usgs.gov/Info/standards/datamodel/model41.pdf).
+For minette, [BGS mica lamprophyres](https://webapps.bgs.ac.uk/Memoirs/docs/B07321.html)
+include reddish-brown matrices and brown mica; [USGS minette-province examples](https://pubs.usgs.gov/pp/0521d/report.pdf)
+include vertical dikes. The chosen near-black red-brown texture is an art target
+within that geological direction, not a universal specimen color.
 [The rock catalog](../planning/geology/rock-catalog.json) links every entry to
-its evidence and describes the chosen texture structures. Keep slate and
-greywacke distinguishable in grayscale, not merely by a slight hue difference.
+its evidence and describes its texture. Distinguish planar slate from wavy,
+silky-looking phyllite; actual reflective shader support is not required.
 
 ## Metamorphism is a history, not a vertical paint gradient
 
@@ -55,8 +56,9 @@ should model inherited geological history in coherent terranes.
 
 ## Runtime framework contract for #22
 
-Each region needs independent surface and deep selections sharing one terrane
-identity. Each selection includes vanilla plus four regional choices. Retain a
+Each region needs independent surface and deep background selections sharing one
+terrane identity, plus a structural dike pass for minette. Each layer includes vanilla plus four regional material types. Minette occupies
+its deep slot as intrusive sheets rather than a blanket background province. Retain a
 nonzero configurable share of vanilla stone/deepslate regions; the present
 blanket stone replacement is not the target design.
 
@@ -84,6 +86,21 @@ that changing the shared block's physical preset affects already placed gabbro
 in every world: explicitly document that material change before release, or use
 a distinct deep ID if old physical behavior must be preserved. Generator
 versioning alone cannot give one block ID two different material presets.
+
+## Minette occurrence contract
+
+Minette is the selected short registry name (`minette`), referring to the
+igneous mica-lamprophyre rock, not the iron-ore use of the same word.
+Generate narrow steep-to-vertical sheets along seeded intrusion/fracture
+corridors. Let them cut across eligible natural deep background rocks rather
+than track horizontal height bands or fill whole provinces. Finite thickness,
+height and along-strike extent should be bounded game controls.
+
+Dike identity/orientation must be defined in global coordinates so neighboring
+chunks agree, including negative coordinates and reversed exploration. The
+placement pass must preserve ore blocks, bedrock, fluids and player construction.
+The material retains the deep deepslate preset and complete masonry family.
+The catalog records the geometry now; no runtime dike generator is implemented.
 
 ## Which Terrain Diffusion layer to use
 
@@ -170,7 +187,7 @@ Representative primary models: [USGS mafic/ultramafic systems](https://pubs.usgs
 [MVT Pb-Zn](https://pubs.usgs.gov/sir/2010/5070/a/),
 [skarn](https://pubs.usgs.gov/bul/1878/report.pdf),
 and [LCT pegmatites](https://www.usgs.gov/publications/mineral-deposit-model-lithium-cesium-tantalum-pegmatites).
-The [source register](../planning/geology/sources.json) supplies all 20 primary
+The [source register](../planning/geology/sources.json) supplies all 24 primary
 references and explicitly distinguishes full page access from indexed excerpts.
 No report text, photographs or texture artwork are copied.
 
