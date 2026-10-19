@@ -22,4 +22,10 @@ tasks.register('testGeology', JavaExec) {
     mainClass = 'dev.wilyjeb.geology.domain.GeologyTests'
 }
 tasks.named('test') { failOnNoDiscoveredTests = false }
-tasks.named('check') { dependsOn testGeology }
+tasks.register('testSettings', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'dev.wilyjeb.geology.domain.SettingsTests'
+}
+
+tasks.named('check') { dependsOn testGeology, testSettings }

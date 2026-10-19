@@ -3,22 +3,24 @@ import com.github.xandergos.terraindiffusionmc.config.TerrainDiffusionConfig;
 import com.github.xandergos.terraindiffusionmc.pipeline.LocalTerrainProvider;
 import com.github.xandergos.terraindiffusionmc.world.WorldScaleManager;
 import dev.wilyjeb.geology.domain.Provinces;
+import dev.wilyjeb.geology.domain.GeologySettings;
 import dev.wilyjeb.geology.domain.Provinces.Stone;
 import java.util.LinkedHashMap;
 import java.util.Map;
 /** Server worldgen API for future city palettes. Queries may perform terrain inference. */
 public final class Geology {
     public record Region(Provinces.Province province, Stone stone, double elevationMetres, double reliefMetres) {}
-    private record Key(long seed, int scale, long x, long z) {}
+    private record Key(long seed, int scale, GeologySettings settings, long x, long z) {}
     private static final Map<Key, Region> CACHE = new LinkedHashMap<>(512, 0.75f, true) {
         @Override protected boolean removeEldestEntry(Map.Entry<Key, Region> e) { return size() > 512; }
     };
     private Geology() {}
     public static Region regionAt(int x, int z) {
+        var settings = WorldGeologySettings.current();
         long seed = LocalTerrainProvider.getSeed();
         int scale = WorldScaleManager.getCurrentScale();
-        var province = Provinces.at(seed, scale, x, z);
-        var key = new Key(seed, scale, province.cellX(), province.cellZ());
+        var province = Provinces.at(seed, scale, x, z, settings);
+        var key = new Key(seed, scale, settings, province.cellX(), province.cellZ());
         synchronized (CACHE) { var found = CACHE.get(key); if (found != null) return found; }
         int tile = TerrainDiffusionConfig.tileSize();
         int sx = Math.floorDiv(province.anchorX(), tile) * tile;
@@ -30,7 +32,7 @@ public final class Geology {
             sum += h; low = Math.min(low, h); high = Math.max(high, h);
         }
         double mean = sum / 25;
-        var result = new Region(province, Provinces.classify(province, mean, high-low), mean, high-low);
+        var result = new Region(province, Provinces.classify(province, mean, high-low, settings), mean, high-low);
         synchronized (CACHE) { CACHE.put(key, result); }
         return result;
     }

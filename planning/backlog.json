@@ -136,6 +136,8 @@
                                             "regions"
                                         ],
                        "key":  "config",
+                       "implementation_status":  "Code and file/domain tests implemented; minimal-install lifecycle acceptance pending.",
+                       "specification":  "docs/geology-settings.md",
                        "milestone":  "m2",
                        "title":  "Add validated world-persistent geology settings",
                        "labels":  [

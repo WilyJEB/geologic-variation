@@ -60,10 +60,13 @@ public final class GeologicVariation {
     private static <T extends Block> void shape(String name, Supplier<T> supplier) {
         item(name, BLOCKS.register(name, supplier));
     }
-    public GeologicVariation(IEventBus bus) {
+    public GeologicVariation(IEventBus bus, net.neoforged.fml.ModContainer container) {
+        container.registerConfig(net.neoforged.fml.config.ModConfig.Type.COMMON, GeologyConfig.SPEC);
         BLOCKS.register(bus); ITEMS.register(bus);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(
-                (net.neoforged.neoforge.event.server.ServerStoppedEvent event) -> Geology.clearCache());
+                (net.neoforged.neoforge.event.server.ServerStoppedEvent event) -> WorldGeologySettings.clear());
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(WorldGeologySettings::load);
+        bus.addListener(WorldGeologySettings::reloaded);
         bus.addListener(GeologicVariation::creative);
     }
     private static void creative(BuildCreativeModeTabContentsEvent event) {
