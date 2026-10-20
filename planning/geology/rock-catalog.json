@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "runtime_enabled": false,
+  "implementation_issue": 22,
+  "purpose": "Reviewed design input for a future versioned runtime catalog, not a current registry or generation switch.",
+  "palette_size_per_layer": 4,
+  "vanilla_candidates": {
+    "surface": "minecraft:stone",
+    "deep": "minecraft:deepslate"
+  },
+  "vanilla_retention": "Both remain explicit regional candidates with a nonzero configurable share, not blanket replacements.",
+  "family_contract": {
+    "finishes": [
+      "natural",
+      "cobbled",
+      "polished",
+      "bricks"
+    ],
+    "shapes": [
+      "block",
+      "stairs",
+      "slab",
+      "wall"
+    ],
+    "property_rule": "All forms use the layer material preset; geometry, own loot and recipes remain form-specific.",
+    "active_block_forms": 128,
+    "active_shared_textures": 32
+  },
+  "art_note": "Swatches are selected artistic targets, not measurements or universal specimen colors.",
+  "rocks": [
+    {
+      "id": "limestone",
+      "status": "proposed_active_palette",
+      "layer": "surface",
+      "material_template": "minecraft:stone",
+      "color_role": "light",
+      "art_swatches": [
+        "#C7BEA6",
+        "#DDD6C4"
+      ],
+      "art_direction": "Cream/buff matrix; subtle bedding and sparse bioclastic detail.",
+      "formation_summary": "Carbonate sediment accumulates and lithifies; later uplift may expose former marine deposits.",
+      "inferred_terrane_affinities": [
+        "carbonate_platform",
+        "sedimentary_basin"
+      ],
+      "common_bulk_constituents": [
+        "Ca",
+        "C",
+        "O"
+      ],
+      "source_ids": [
+        "bgs_rocks",
+        "usgs_mvt"
+      ]
+    },
+    {
+      "id": "slate",
+      "status": "proposed_active_palette",
+      "layer": "surface",
+      "material_template": "minecraft:stone",
+      "color_role": "dark_gray",
+      "art_swatches": [
+        "#42464D",
+        "#61656C"
+      ],
+      "art_direction": "Charcoal gray; fine planar cleavage, distinguishable from granular greywacke.",
+      "formation_summary": "Low-grade metamorphism of mud-rich sediment produces slaty cleavage.",
+      "inferred_terrane_affinities": [
+        "fold_belt",
+        "accretionary_belt"
+      ],
+      "common_bulk_constituents": [
+        "Si",
+        "Al",
+        "O"
+      ],
+      "source_ids": [
+        "bgs_rocks",
+        "bgs_slate"
+      ]
+    },
+    {
+      "id": "phyllite",
+      "status": "proposed_active_palette",
+      "layer": "surface",
+      "material_template": "minecraft:stone",
+      "color_role": "gray_green",
+      "art_swatches": [
+        "#55615A",
+        "#909B8C"
+      ],
+      "art_direction": "Gray-green body with silver/sage highlights and fine wavy foliation; painted silky mica sheen, not a requirement for shaders.",
+      "formation_summary": "Metamorphism of fine-grained sediment produces fine mica/chlorite-rich foliation with a silky-looking cleavage surface.",
+      "inferred_terrane_affinities": [
+        "fold_belt",
+        "accretionary_belt"
+      ],
+      "common_bulk_constituents": [
+        "Si",
+        "Al",
+        "O"
+      ],
+      "source_ids": [
+        "bgs_phyllite",
+        "usgs_phyllite"
+      ]
+    },
+    {
+      "id": "ironstone",
+      "status": "proposed_active_palette",
+      "layer": "surface",
+      "material_template": "minecraft:stone",
+      "color_role": "dark_brown",
+      "art_swatches": [
+        "#4C3026",
+        "#8D5636"
+      ],
+      "art_direction": "Dark umber body; restrained rust/ochre mottling and ooids.",
+      "formation_summary": "Iron-rich sedimentary varieties include ooidal rocks with iron-bearing silicates, carbonates and oxides.",
+      "inferred_terrane_affinities": [
+        "sedimentary_basin",
+        "carbonate_platform"
+      ],
+      "common_bulk_constituents": [
+        "Fe",
+        "O"
+      ],
+      "source_ids": [
+        "bgs_ironstone"
+      ]
+    },
+    {
+      "id": "gabbro",
+      "status": "proposed_active_palette",
+      "layer": "deep",
+      "material_template": "minecraft:deepslate",
+      "color_role": "blue_black",
+      "art_swatches": [
+        "#222932",
+        "#737B75"
+      ],
+      "art_direction": "Blue-black mafic grains with scattered subdued feldspar flecks.",
+      "formation_summary": "Slow crystallization of mafic magma forms intrusive rock; both oceanic crust and continental intrusions are possible.",
+      "inferred_terrane_affinities": [
+        "mafic_intrusive_domain",
+        "oceanic_domain"
+      ],
+      "common_bulk_constituents": [
+        "Fe",
+        "Mg",
+        "Ca",
+        "Si",
+        "Al",
+        "O"
+      ],
+      "source_ids": [
+        "usgs_gabbro"
+      ]
+    },
+    {
+      "id": "blueschist",
+      "status": "proposed_active_palette",
+      "layer": "deep",
+      "material_template": "minecraft:deepslate",
+      "color_role": "navy",
+      "art_swatches": [
+        "#283F60",
+        "#60778B"
+      ],
+      "art_direction": "Navy body with blue-gray foliation; preserve a dark mean value.",
+      "formation_summary": "High-pressure, relatively low-temperature metamorphism associated with subduction can produce blue sodic amphibole.",
+      "inferred_terrane_affinities": [
+        "high_pressure_belt"
+      ],
+      "common_bulk_constituents": [
+        "Na",
+        "Si",
+        "Al",
+        "O"
+      ],
+      "source_ids": [
+        "usgs_blueschist",
+        "usgs_high_pressure"
+      ]
+    },
+    {
+      "id": "serpentinite",
+      "status": "proposed_active_palette",
+      "layer": "deep",
+      "material_template": "minecraft:deepslate",
+      "color_role": "dark_green",
+      "art_swatches": [
+        "#34452E",
+        "#758263"
+      ],
+      "art_direction": "Dark olive/forest green with narrow pale-green veins.",
+      "formation_summary": "Hydration alters ultramafic parent rock; water-rock reaction matters, not just greater burial.",
+      "inferred_terrane_affinities": [
+        "ultramafic_belt",
+        "oceanic_domain"
+      ],
+      "common_bulk_constituents": [
+        "Mg",
+        "Si",
+        "O",
+        "H"
+      ],
+      "source_ids": [
+        "usgs_serpentinite",
+        "usgs_serpentinite_petrology"
+      ]
+    },
+    {
+      "id": "minette",
+      "status": "proposed_active_palette",
+      "layer": "deep",
+      "material_template": "minecraft:deepslate",
+      "color_role": "red_brown_black",
+      "art_swatches": [
+        "#291D1C",
+        "#50302A",
+        "#795043"
+      ],
+      "art_direction": "Near-black reddish-brown matrix with sparse dark copper-brown mica flecks; no luminous red grains.",
+      "formation_summary": "Mica-rich lamprophyric magma intrudes fractures as dikes; the selected dark reddish-brown variety is supported by documented mica lamprophyres.",
+      "inferred_terrane_affinities": [
+        "intrusive_fracture_domain",
+        "post_orogenic_intrusive_domain"
+      ],
+      "common_bulk_constituents": [
+        "K",
+        "Mg",
+        "Fe",
+        "Si",
+        "Al",
+        "O"
+      ],
+      "source_ids": [
+        "bgs_minette",
+        "usgs_minette_dikes"
+      ],
+      "occurrence": {
+        "mode": "steep_dike",
+        "orientation": "steep_to_vertical",
+        "geometry": "narrow_planar_sheets",
+        "context": "versioned regional intrusion/fracture corridors",
+        "host_layer": "deep",
+        "cross_chunk_rule": "canonical global dike identity with bounded neighborhood queries",
+        "placement_rule": "replace eligible natural deep host blocks only; preserve ores, bedrock, fluids and constructed blocks",
+        "note": "This is a structural intrusion, not an equal-area blanket province or horizontal stratum; configurable finite thickness and extent remain implementation work in #11/#22."
+      }
+    }
+  ],
+  "legacy_only": [
+    {
+      "id": "quartzite",
+      "registered_ids_must_remain": true,
+      "generation_in_new_palette": false,
+      "source_ids": [
+        "usgs_metamorphism"
+      ],
+      "note": "Keep all 16 existing forms placeable; preserve legacy-world selection under its pinned generator version."
+    }
+  ],
+  "migration_notes": [
+    "Preserve all four original rock IDs and shipped shape IDs.",
+    "Gabbro moves from surface to deep in the new generator only; older generator selection must remain stable.",
+    "A shared gabbro block material-preset change also affects existing placed blocks globally; document it explicitly before release.",
+    "Eight active families plus legacy quartzite imply 144 registered block forms if the existing complete-family design is retained."
+  ],
+  "revised_date": "2026-10-19"
+}

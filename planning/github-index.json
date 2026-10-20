@@ -1,127 +1,137 @@
 {
-    "issues":  [
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/1",
-                       "number":  1,
-                       "key":  "standalone"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/2",
-                       "number":  2,
-                       "key":  "stones"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/3",
-                       "number":  3,
-                       "key":  "ci"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/4",
-                       "number":  4,
-                       "key":  "launch"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/5",
-                       "number":  5,
-                       "key":  "regions"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/6",
-                       "number":  6,
-                       "key":  "ores"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/7",
-                       "number":  7,
-                       "key":  "performance"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/8",
-                       "number":  8,
-                       "key":  "config"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/9",
-                       "number":  9,
-                       "key":  "versioning"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/10",
-                       "number":  10,
-                       "key":  "diagnostics"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/11",
-                       "number":  11,
-                       "key":  "contacts"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/12",
-                       "number":  12,
-                       "key":  "art"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/13",
-                       "number":  13,
-                       "key":  "masonry"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/14",
-                       "number":  14,
-                       "key":  "assets-check"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/15",
-                       "number":  15,
-                       "key":  "api"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/16",
-                       "number":  16,
-                       "key":  "city-example"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/17",
-                       "number":  17,
-                       "key":  "ulti"
-                   },
-                   {
-                       "url":  "https://github.com/WilyJEB/geologic-variation/issues/18",
-                       "number":  18,
-                       "key":  "matrix"
-                   }
-               ],
-    "milestones":  [
-                       {
-                           "url":  "https://github.com/WilyJEB/geologic-variation/milestone/1",
-                           "number":  1,
-                           "key":  "m0"
-                       },
-                       {
-                           "url":  "https://github.com/WilyJEB/geologic-variation/milestone/2",
-                           "number":  2,
-                           "key":  "m1"
-                       },
-                       {
-                           "url":  "https://github.com/WilyJEB/geologic-variation/milestone/3",
-                           "number":  3,
-                           "key":  "m2"
-                       },
-                       {
-                           "url":  "https://github.com/WilyJEB/geologic-variation/milestone/4",
-                           "number":  4,
-                           "key":  "m3"
-                       },
-                       {
-                           "url":  "https://github.com/WilyJEB/geologic-variation/milestone/5",
-                           "number":  5,
-                           "key":  "m4"
-                       },
-                       {
-                           "url":  "https://github.com/WilyJEB/geologic-variation/milestone/6",
-                           "number":  6,
-                           "key":  "m5"
-                       }
-                   ],
-    "repository":  "https://github.com/WilyJEB/geologic-variation"
+    "issues": [
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/1",
+            "number": 1,
+            "key": "standalone"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/2",
+            "number": 2,
+            "key": "stones"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/3",
+            "number": 3,
+            "key": "ci"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/4",
+            "number": 4,
+            "key": "launch"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/5",
+            "number": 5,
+            "key": "regions"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/6",
+            "number": 6,
+            "key": "ores"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/7",
+            "number": 7,
+            "key": "performance"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/8",
+            "number": 8,
+            "key": "config"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/9",
+            "number": 9,
+            "key": "versioning"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/10",
+            "number": 10,
+            "key": "diagnostics"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/11",
+            "number": 11,
+            "key": "contacts"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/12",
+            "number": 12,
+            "key": "art"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/13",
+            "number": 13,
+            "key": "masonry"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/14",
+            "number": 14,
+            "key": "assets-check"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/15",
+            "number": 15,
+            "key": "api"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/16",
+            "number": 16,
+            "key": "city-example"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/17",
+            "number": 17,
+            "key": "ulti"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/18",
+            "number": 18,
+            "key": "matrix"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/22",
+            "number": 22,
+            "key": "layered-palette"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/issues/23",
+            "number": 23,
+            "key": "mineral-systems"
+        }
+    ],
+    "milestones": [
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/milestone/1",
+            "number": 1,
+            "key": "m0"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/milestone/2",
+            "number": 2,
+            "key": "m1"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/milestone/3",
+            "number": 3,
+            "key": "m2"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/milestone/4",
+            "number": 4,
+            "key": "m3"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/milestone/5",
+            "number": 5,
+            "key": "m4"
+        },
+        {
+            "url": "https://github.com/WilyJEB/geologic-variation/milestone/6",
+            "number": 6,
+            "key": "m5"
+        }
+    ],
+    "repository": "https://github.com/WilyJEB/geologic-variation"
 }

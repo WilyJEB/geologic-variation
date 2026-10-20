@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-10-18",
+  "notes": "Original paraphrases. indexed_excerpt means the indexed abstract/description was available, not a claim that the complete report was read. No art is copied.",
+  "sources": {
+    "bgs_rocks": {
+      "title": "BGS Rocks and minerals",
+      "url": "https://www.bgs.ac.uk/discovering-geology/rocks-and-minerals/",
+      "access_basis": "page"
+    },
+    "bgs_slate": {
+      "title": "BGS West Highland Slate",
+      "url": "https://webservices.bgs.ac.uk/buildingstone/buildingstones/10106?mapType=recordMap&recordId=10106&recordType=buildingStone",
+      "access_basis": "indexed_excerpt"
+    },
+    "bgs_greywacke": {
+      "title": "BGS Southern Uplands Greywacke",
+      "url": "https://webservices.bgs.ac.uk/buildingstone/buildingstones/10088",
+      "access_basis": "page"
+    },
+    "bgs_ironstone": {
+      "title": "BGS Rosedale Ironstone Member",
+      "url": "https://webapps.bgs.ac.uk/lexicon/lexicon.cfm?pub=RDLI",
+      "access_basis": "page"
+    },
+    "usgs_gabbro": {
+      "title": "USGS Southern Sierra mafic rocks",
+      "url": "https://pubs.usgs.gov/of/1987/0275/report.pdf",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_blueschist": {
+      "title": "USGS Lithologic thesaurus: blueschist",
+      "url": "https://apps.usgs.gov/thesaurus/term-simple.php?code=5.5.2&thcode=4",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_serpentinite": {
+      "title": "USGS California serpentinite",
+      "url": "https://www.usgs.gov/media/images/serpentinite-californias-coast-range-mountains",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_serpentinite_petrology": {
+      "title": "USGS Serpentinite and associated rocks",
+      "url": "https://pubs.usgs.gov/pp/0345/report.pdf",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_eclogite": {
+      "title": "USGS Lithologic thesaurus: eclogite",
+      "url": "https://apps.usgs.gov/thesaurus/term-simple.php?code=5.10&thcode=4",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_high_pressure": {
+      "title": "USGS Garnet types from the Cazadero area",
+      "url": "https://www.usgs.gov/publications/garnet-types-cazadero-area-california",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_metamorphism": {
+      "title": "USGS Collecting rocks",
+      "url": "https://pubs.usgs.gov/gip/collect1/collectgip.html",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_mafic_deposits": {
+      "title": "USGS mineral-deposit model table A3",
+      "url": "https://pubs.usgs.gov/pp/2005/1654/pdf/P1654.pdf",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_iron_formation": {
+      "title": "USGS Negaunee Iron Formation",
+      "url": "https://ngmdb.usgs.gov/Geolex/UnitRefs/NegauneeRefs_2962.html",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_porphyry": {
+      "title": "USGS Porphyry copper deposit model",
+      "url": "https://www.usgs.gov/publications/porphyry-copper-deposit-model",
+      "access_basis": "page"
+    },
+    "usgs_mvt": {
+      "title": "USGS MVT lead-zinc deposit model",
+      "url": "https://pubs.usgs.gov/sir/2010/5070/a/",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_skarn": {
+      "title": "USGS Copper-tungsten skarn descriptive model",
+      "url": "https://pubs.usgs.gov/bul/1878/report.pdf",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_sediment_cu": {
+      "title": "USGS Sediment-hosted copper model",
+      "url": "https://pubs.usgs.gov/bul/b1693/html/bull27xx.htm",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_lct": {
+      "title": "USGS LCT pegmatite deposit model",
+      "url": "https://www.usgs.gov/publications/mineral-deposit-model-lithium-cesium-tantalum-pegmatites",
+      "access_basis": "page"
+    },
+    "usgs_bauxite": {
+      "title": "USGS Karst-type bauxite model",
+      "url": "https://pubs.usgs.gov/bul/b1693/html/bull20dh.htm",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_phosphorite": {
+      "title": "USGS Global seabed mineral resources",
+      "url": "https://www.usgs.gov/centers/pcmsc/science/global-seabed-mineral-resources?page=1&qt-science_center_objects=",
+      "access_basis": "indexed_excerpt"
+    },
+    "bgs_phyllite": {
+      "title": "BGS Ballachulish green-gray phyllites",
+      "url": "https://earthwise.bgs.ac.uk/index.php/Fraochaidh_prograde_sequence,_Ballachulish_Igneous_Complex_-_an_excursion",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_phyllite": {
+      "title": "USGS phyllite classification and silky cleavage",
+      "url": "https://ngmdb.usgs.gov/Info/standards/datamodel/model41.pdf",
+      "access_basis": "indexed_excerpt"
+    },
+    "bgs_minette": {
+      "title": "BGS mica lamprophyres and minette",
+      "url": "https://webapps.bgs.ac.uk/Memoirs/docs/B07321.html",
+      "access_basis": "indexed_excerpt"
+    },
+    "usgs_minette_dikes": {
+      "title": "USGS minette province: vertical dikes",
+      "url": "https://pubs.usgs.gov/pp/0521d/report.pdf",
+      "access_basis": "indexed_excerpt"
+    }
+  },
+  "revised_date": "2026-10-19"
+}
