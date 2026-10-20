@@ -65,7 +65,8 @@ public final class GeologicVariation {
         BLOCKS.register(bus); ITEMS.register(bus);
         net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(
                 (net.neoforged.neoforge.event.server.ServerStoppedEvent event) -> WorldGeologySettings.clear());
-        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(WorldGeologySettings::load);
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(
+                net.neoforged.bus.api.EventPriority.LOWEST, WorldGeologySettings::load);
         bus.addListener(WorldGeologySettings::reloaded);
         bus.addListener(GeologicVariation::creative);
     }

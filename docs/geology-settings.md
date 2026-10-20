@@ -50,9 +50,48 @@ initialization with their path in the error. They are never overwritten with
 fresh defaults. Preserve this file with world backups; do not delete or edit a
 continuing world's snapshot to change generation rules.
 
-The file's `schema=1` identifies only its storage format. Pinning generator
-algorithm versions and TD seed/scale/model/backend context remains #9. This
-change does not claim to protect against changes in those external inputs.
+## Generation compatibility (issue #9)
+
+New worlds now write `schema=2`, independently pinning `generator=geology-1`.
+This rule version covers province hashing/anchors, sampling, classification,
+stone probabilities and host replacement. Changes to these rules must bump the
+generator identity; retaining an old identity requires preserving its behavior.
+The default generation fingerprint remains -4340957394944646000.
+
+The snapshot also records the TD provider seed, world scale, effective tile size,
+SHA-256 of the installed TD artifact, a canonical aggregate of the names and
+actual SHA-256 hashes of every asset in TD's model manifest (including pipeline
+config), and resolved inference provider plus OS/architecture. Hashes use contents,
+not installation paths or modification times. Models finish loading before capture;
+the load listener runs at LOWEST priority after TD's normal initialization and
+checks the provider seed against the world seed. Missing/unreadable context fails
+initialization. Artifact hashing intentionally rejects even same-version TD forks
+and backend builds with different bytes.
+
+Continuing worlds require exact context equality. Unknown schema/rule versions,
+missing fields, invalid settings, changed dependency/model/backend, seed, scale or
+tile size stop initialization without changing the snapshot. There is no automatic
+upgrade or fallback to current defaults. Restore the original installation and
+world inputs from backup to resume. Config edits remain proposals for new worlds.
+Every geology query checks live seed/scale/tile/backend before cache lookup and
+again after inference, rejecting TD explorer edits that change those inputs.
+
+**This supersedes the legacy adoption behavior described above:** schema-1 and
+snapshotless continuing saves have no verifiable dependency/model provenance and
+are rejected untouched. Before using this build with one, keep a backup and its
+original installation. An explicit migration requires recovering its actual old
+context, proving matching generation with that installation, and a reviewed tool
+that writes schema 2 while preserving settings (legacy defaults for snapshotless
+saves). That migration tool and runtime acceptance are not implemented here;
+deleting the snapshot is not an upgrade path.
+
+Model/dependency files must remain immutable for the process lifetime; hashes are
+captured once per world load, not on every query. TD models are global and can
+already be loaded before the addon runs. Runtime file replacement, simultaneous
+servers, differing drivers/hardware under the same provider, and TD optimized
+model cache correctness are outside this equality guard. Matching identities do
+not prove bitwise native inference reproducibility. Use a fixed runtime and verify
+neighboring chunks before accepting an installation change.
 
 ## Validation
 

@@ -31,6 +31,17 @@ public final class SettingsTests {
  }
 
     public static void main(String[] args) throws IOException {
+        // Regression: model loading alone leaves the provider unknown until first inference.
+        var provider = new java.util.concurrent.atomic.AtomicReference<String>("unknown");
+        var initializations = new java.util.concurrent.atomic.AtomicInteger();
+        String resolved = BackendIdentity.resolve(provider::get, () -> {
+            initializations.incrementAndGet(); provider.set("CPU");
+        });
+        check(resolved.equals("CPU") && initializations.get() == 1, "Captured backend before lazy provider initialization");
+        check(BackendIdentity.resolve(provider::get, () -> { throw new AssertionError("Known provider was warmed twice"); }).equals("CPU"), "Known backend changed");
+        unreadable(() -> BackendIdentity.resolve(() -> "unknown", () -> {}));
+        unreadable(() -> BackendIdentity.resolve(() -> "unknown", () -> { throw new IOException("Inference failed"); }));
+        invalid(() -> new GenerationContext(GenerationContext.GENERATOR,42,2,256,"td-sha","model-sha","unknown/Windows 11/amd64"));
         var defaults = GeologySettings.DEFAULT;
         check(fingerprint(defaults) == -4340957394944646000L,
                 "Default province anchors and classification changed from the pre-settings build");
@@ -51,10 +62,48 @@ public final class SettingsTests {
         invalid(() -> new GeologySettings(2048,-10001,600,1800,300,600));
         Path fixture = Files.createTempDirectory(Path.of("build").toAbsolutePath(), "settings-tests-");
         try {
+            var context = new GenerationContext(GenerationContext.GENERATOR, 42, 2, 256, "td-sha", "model-sha", "CPU/os/arch");
+            Path versioned = fixture.resolve("versioned.properties");
+            var created = SettingsStore.loadOrCreate(versioned, () -> tuned, false, context);
+            byte[] versionedBytes = Files.readAllBytes(versioned);
+            var loaded = SettingsStore.loadOrCreate(versioned,
+                    () -> { throw new AssertionError("Reload consulted config"); }, true, context);
+            check(created.created() && !loaded.created() && fingerprint(loaded.settings()) == fingerprint(tuned),
+                    "Versioned reload changed neighboring geology");
+            for (var changed : new GenerationContext[]{
+                    new GenerationContext("geology-2",42,2,256,"td-sha","model-sha","CPU/os/arch"),
+                    new GenerationContext(GenerationContext.GENERATOR,43,2,256,"td-sha","model-sha","CPU/os/arch"),
+                    new GenerationContext(GenerationContext.GENERATOR,42,3,256,"td-sha","model-sha","CPU/os/arch"),
+                    new GenerationContext(GenerationContext.GENERATOR,42,2,512,"td-sha","model-sha","CPU/os/arch"),
+                    new GenerationContext(GenerationContext.GENERATOR,42,2,256,"new-td","model-sha","CPU/os/arch"),
+                    new GenerationContext(GenerationContext.GENERATOR,42,2,256,"td-sha","new-model","CPU/os/arch"),
+                    new GenerationContext(GenerationContext.GENERATOR,42,2,256,"td-sha","model-sha","CUDA/os/arch")}) {
+                try {
+                    SettingsStore.loadOrCreate(versioned, () -> defaults, true, changed);
+                    throw new AssertionError("Incompatible upgrade accepted");
+                } catch (IOException | IllegalArgumentException expected) {}
+                check(Arrays.equals(versionedBytes, Files.readAllBytes(versioned)), "Mismatch rewrote snapshot");
+                invalid(() -> context.requireCompatible(changed));
+            }
+            Path missing = fixture.resolve("unverified.properties");
+            unreadable(() -> SettingsStore.loadOrCreate(missing, () -> defaults, true, context));
+            check(!Files.exists(missing), "Unverified continuing world was silently adopted");
+            for (String broken : new String[]{new String(versionedBytes).replace("schema=2", "schema=99"),
+                    new String(versionedBytes).replace("scale=2", "scale=0"),
+                    new String(versionedBytes).replace("generator=geology-1", "generator=geology-2"),
+                    new String(versionedBytes).replace("models=model-sha", ""),
+                    new String(versionedBytes).replace("backend=CPU/os/arch", "backend=unknown/Windows 11/amd64"),
+                    new String(versionedBytes) + "unexpected=1\n"}) {
+                Files.writeString(versioned, broken);
+                unreadable(() -> SettingsStore.loadOrCreate(versioned, () -> defaults, true, context));
+                check(Files.readString(versioned).equals(broken), "Invalid versioned snapshot overwritten");
+            }
             Path world = fixture.resolve("new-world/data/settings.properties");
             var first = SettingsStore.loadOrCreate(world, () -> tuned, false);
             check(first.created() && !first.adoptedLegacyDefaults() && first.settings().equals(tuned), "new-world config snapshot");
             byte[] original = Files.readAllBytes(world);
+            unreadable(() -> SettingsStore.loadOrCreate(world, () -> defaults, true, context));
+            check(Arrays.equals(original, Files.readAllBytes(world)), "Schema 1 was silently upgraded");
             var reopened = SettingsStore.loadOrCreate(world, () -> defaults, true);
             check(!reopened.created() && reopened.settings().equals(tuned), "config edit changed a continuing world");
             check(fingerprint(reopened.settings()) == fingerprint(tuned), "reload changed world generation");

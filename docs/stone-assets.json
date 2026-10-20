@@ -15,7 +15,7 @@
     "block": "polished_limestone",
     "layer": "surface",
     "planned_texture": "assets/geologic_variation/textures/block/polished_limestone.png",
-    "placeholder": "minecraft:block/smooth_sandstone"
+    "placeholder": "minecraft:block/sandstone_top"
   },
   {
     "block": "limestone_bricks",

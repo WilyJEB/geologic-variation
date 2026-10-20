@@ -12,7 +12,7 @@ Use JDK 21. Run PowerShell from this directory:
     powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/bootstrap.ps1
     ./gradlew.bat build
 
-Install build/libs/geologic-variation-0.2.0-dev.jar on BOTH client and server
+Install build/libs/geologic-variation-0.2.1-dev.jar on BOTH client and server
 alongside official Terrain Diffusion 2.3.0 (NeoForge, Minecraft 1.21.1).
 The dependency is downloaded separately, SHA-512 verified, and never bundled.
 The Windows artifact is the build baseline. Official matching NeoForge 1.21.1 CUDA/CPU variants share the common Java API.
