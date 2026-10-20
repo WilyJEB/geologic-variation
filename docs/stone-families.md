@@ -86,7 +86,7 @@ With JDK 21, after bootstrapping the pinned dependency:
 
 ```powershell
 ./gradlew.bat build
-python scripts/generate-masonry.py --check --jar build/libs/geologic-variation-0.2.0-dev.jar
+python scripts/generate-masonry.py --check --jar build/libs/geologic-variation-0.2.1-dev.jar
 ```
 
 Regeneration uses the pinned Minecraft resource JAR materialized by Gradle:

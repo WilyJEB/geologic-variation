@@ -14,7 +14,7 @@ MOD = 'geologic_variation'
 VANILLA = ROOT / 'build/moddev/artifacts/neoforge-21.1.251-client-extra-aka-minecraft-resources.jar'
 # Texture order: natural, cobbled, polished, bricks. These are replaceable placeholders.
 TEXTURES = {
-    'limestone': ['calcite', 'cobblestone', 'smooth_sandstone', 'stone_bricks'],
+    'limestone': ['calcite', 'cobblestone', 'sandstone_top', 'stone_bricks'],
     'slate': ['deepslate', 'cobbled_deepslate', 'polished_deepslate', 'deepslate_bricks'],
     'quartzite': ['diorite', 'cobblestone', 'polished_diorite', 'stone_bricks'],
     'gabbro': ['polished_blackstone', 'blackstone', 'polished_blackstone', 'polished_blackstone_bricks'],
@@ -189,6 +189,12 @@ with zipfile.ZipFile(VANILLA) as vanilla:
         elif isinstance(data, str): yield data
     for path, data in OUTPUT.items():
         if '/models/' in path or '/blockstates/' in path:
+            # A texture name must resolve to a PNG, even if a same-named block model exists.
+            for texture in data.get('textures', {}).values():
+                if texture.startswith('#'): continue
+                namespace, relative = texture.split(':', 1)
+                resource = f'assets/{namespace}/textures/{relative}.png'
+                assert resource in vanilla.namelist() if namespace == 'minecraft' else (RES / resource).exists(), (path, texture)
             for value in walk(data):
                 if value.startswith(MOD + ':block/') and value not in data.get('textures', {}).values():
                     assert f'assets/{MOD}/models/block/{value.split("/")[-1]}.json' in OUTPUT, (path, value)

@@ -26,6 +26,7 @@ public final class Geology {
         int sx = Math.floorDiv(province.anchorX(), tile) * tile;
         int sz = Math.floorDiv(province.anchorZ(), tile) * tile;
         var data = LocalTerrainProvider.getInstance().fetchHeightmap(sz, sx, sz + tile, sx + tile);
+        WorldGeologySettings.current(); // Reject explorer seed/scale edits made during inference too.
         double sum = 0, low = Double.POSITIVE_INFINITY, high = Double.NEGATIVE_INFINITY;
         for (int row = 0; row < 5; row++) for (int col = 0; col < 5; col++) {
             double h = data.heightmap[row * (data.height-1) / 4][col * (data.width-1) / 4];

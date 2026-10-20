@@ -23,8 +23,10 @@ Heightmap bounds are Z then X, end-exclusive. SurfaceMixin injects one exact
 NoiseBasedChunkGenerator.buildSurface descriptor at RETURN, gated to a TD
 Overworld. This hook is independent of any pack configuration.
 
-Cache includes seed/scale and clears at server stop. Freeze models, tile size
-and generation rules in continuing saves. The provider is global in TD; multiple
+Cache includes seed/scale/settings and clears at server stop. Schema-2 snapshots
+pin generation rules, TD artifact/model hashes, seed/scale/tile and backend context;
+incompatible or unverified continuing saves are rejected (see geology-settings.md).
+The provider is global in TD; multiple
 independent simultaneous servers in one JVM are outside this contract.
 
 Both client and server require the addon for block registration. No models,
