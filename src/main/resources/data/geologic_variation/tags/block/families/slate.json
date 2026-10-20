@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "geologic_variation:slate",
+    "geologic_variation:slate_stairs",
+    "geologic_variation:slate_slab",
+    "geologic_variation:slate_wall",
+    "geologic_variation:cobbled_slate",
+    "geologic_variation:cobbled_slate_stairs",
+    "geologic_variation:cobbled_slate_slab",
+    "geologic_variation:cobbled_slate_wall",
+    "geologic_variation:polished_slate",
+    "geologic_variation:polished_slate_stairs",
+    "geologic_variation:polished_slate_slab",
+    "geologic_variation:polished_slate_wall",
+    "geologic_variation:slate_bricks",
+    "geologic_variation:slate_brick_stairs",
+    "geologic_variation:slate_brick_slab",
+    "geologic_variation:slate_brick_wall"
+  ]
+}

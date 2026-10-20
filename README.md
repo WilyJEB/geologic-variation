@@ -12,7 +12,7 @@ Use JDK 21. Run PowerShell from this directory:
     powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/bootstrap.ps1
     ./gradlew.bat build
 
-Install build/libs/geologic-variation-0.1.1-dev.jar on BOTH client and server
+Install build/libs/geologic-variation-0.2.0-dev.jar on BOTH client and server
 alongside official Terrain Diffusion 2.3.0 (NeoForge, Minecraft 1.21.1).
 The dependency is downloaded separately, SHA-512 verified, and never bundled.
 The Windows artifact is the build baseline. Official matching NeoForge 1.21.1 CUDA/CPU variants share the common Java API.
@@ -70,9 +70,15 @@ runtime dependency, and automatic cultural/style assignment is not included.
 
 ## Assets and extensions
 
-The four block IDs are geologic_variation:limestone, :slate, :quartzite and
+Each stone now has natural, cobbled, polished and brick blocks, each with stairs,
+slabs and walls (64 blocks total). Craft or stonecut masonry, smelt cobbled rock
+back to its natural form, and use regional cobblestone for ordinary tools and
+furnaces. One-way conversions to vanilla stone/cobblestone cover exact-item
+recipes. See [stone families and asset handoff](docs/stone-families.md).
+
+The four original block IDs are geologic_variation:limestone, :slate, :quartzite and
 :gabbro. All use vanilla textures temporarily, have block items, creative
-entries, self-drop loot and stone mining properties. Replace the textures
+entries, cobbled drops (natural blocks with Silk Touch), and stone mining properties. Replace the textures
 referenced in assets/geologic_variation/models/block/*.json later, or override
 them with a resource pack. IDs need not change when art is added.
 

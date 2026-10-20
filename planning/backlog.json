@@ -224,6 +224,8 @@
                                             "art"
                                         ],
                        "key":  "masonry",
+                       "implementation_status":  "Code implemented; final art and in-game acceptance pending.",
+                       "specification":  "docs/stone-families.md",
                        "milestone":  "m3",
                        "title":  "Add regional masonry variants, shapes and recipes",
                        "labels":  [

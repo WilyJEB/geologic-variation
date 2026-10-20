@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:cobbled_limestone"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:cobbled_limestone_wall",
+    "count": 6
+  }
+}

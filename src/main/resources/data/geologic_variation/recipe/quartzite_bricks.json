@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:polished_quartzite"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:quartzite_bricks",
+    "count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:slate"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:slate_slab",
+    "count": 6
+  }
+}

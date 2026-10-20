@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "geologic_variation:cobbled_limestone",
+    "geologic_variation:cobbled_slate",
+    "geologic_variation:cobbled_quartzite",
+    "geologic_variation:cobbled_gabbro"
+  ]
+}

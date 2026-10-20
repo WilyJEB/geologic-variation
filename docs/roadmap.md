@@ -19,3 +19,7 @@ criteria. planning/github-index.json maps those definitions to GitHub URLs.
 Scope excludes a full tectonic simulation, automatic city culture assignment,
 and existing-world block conversion. Final assets and Ulti-World integration
 are deferred. Optional integrations must not become mandatory dependencies.
+
+Issue #13 now has a code-first masonry implementation using vanilla texture
+placeholders. Final art (#12) and in-game placement/waterlogging review remain
+M3 acceptance gates; see docs/stone-families.md.

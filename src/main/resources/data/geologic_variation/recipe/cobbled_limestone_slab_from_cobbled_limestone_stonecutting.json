@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "geologic_variation:cobbled_limestone"
+  },
+  "result": {
+    "id": "geologic_variation:cobbled_limestone_slab",
+    "count": 2
+  }
+}

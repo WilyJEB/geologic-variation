@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "geologic_variation:quartzite",
+    "geologic_variation:quartzite_stairs",
+    "geologic_variation:quartzite_slab",
+    "geologic_variation:quartzite_wall",
+    "geologic_variation:cobbled_quartzite",
+    "geologic_variation:cobbled_quartzite_stairs",
+    "geologic_variation:cobbled_quartzite_slab",
+    "geologic_variation:cobbled_quartzite_wall",
+    "geologic_variation:polished_quartzite",
+    "geologic_variation:polished_quartzite_stairs",
+    "geologic_variation:polished_quartzite_slab",
+    "geologic_variation:polished_quartzite_wall",
+    "geologic_variation:quartzite_bricks",
+    "geologic_variation:quartzite_brick_stairs",
+    "geologic_variation:quartzite_brick_slab",
+    "geologic_variation:quartzite_brick_wall"
+  ]
+}

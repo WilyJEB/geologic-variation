@@ -2,7 +2,16 @@ package dev.wilyjeb.geology.domain;
 
 /** Pure immutable province partition. Version 1 is a worldgen contract. */
 public final class Provinces {
-    public enum Stone { LIMESTONE, SLATE, QUARTZITE, GABBRO }
+    /** Host layer, not a claim about the depth at which a rock formed. */
+    public enum Layer { SURFACE, DEEP }
+    public enum Stone {
+        LIMESTONE(Layer.SURFACE), SLATE(Layer.SURFACE),
+        QUARTZITE(Layer.SURFACE), GABBRO(Layer.SURFACE);
+        private final Layer layer;
+        Stone(Layer layer) { this.layer = layer; }
+        public Layer layer() { return layer; }
+        public String id() { return name().toLowerCase(java.util.Locale.ROOT); }
+    }
     public record Province(long cellX, long cellZ, int anchorX, int anchorZ, long identity) {}
     private Provinces() {}
     public static long mix(long n) {

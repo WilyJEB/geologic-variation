@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:polished_gabbro"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:polished_gabbro_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "geologic_variation:gabbro"
+    }
+  },
+  "result": {
+    "id": "geologic_variation:gabbro_slab",
+    "count": 6
+  }
+}

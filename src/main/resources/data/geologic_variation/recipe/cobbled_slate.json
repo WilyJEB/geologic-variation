@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "geologic_variation:slate"
+    }
+  ],
+  "result": {
+    "id": "geologic_variation:cobbled_slate",
+    "count": 1
+  }
+}

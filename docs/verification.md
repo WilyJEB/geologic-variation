@@ -1,3 +1,33 @@
+# Stone families revision 0.2.0-dev
+
+2026-10-18, local JDK 21.0.6; NeoForge 21.1.251 / Minecraft 1.21.1 and
+pinned official Terrain Diffusion 2.3.0 dependency.
+
+- Full Gradle build and testGeology passed on feature/stone-families.
+- Registered 64 block/item entries: four rocks x four finishes x four forms
+  (full block, stairs, slab, wall). This adds 60 entries to the original four.
+- Checked 158 recipes and matching recipe-book advancements; all 711 generated
+  JSON resources match the packaged JAR.
+- Checked model, vanilla texture, local loot/recipe/tag references and version
+  consistency between build metadata and packaged mod metadata.
+- Resolved the pinned vanilla furnace and stone-pickaxe recipe tag inputs with
+  addon tags; all regional cobbled full blocks are accepted, with decoration
+  inputs excluded. One-way conversion recipes cover exact vanilla stone and
+  cobblestone consumers.
+- Resources derive stair/slab/wall states and natural/Silk Touch/double-slab
+  loot from pinned Minecraft templates; wall properties use forceSolidOn like
+  vanilla walls. Runtime placement and drops still require in-game acceptance.
+- Original block IDs, province classifier and four SURFACE assignments remain
+  stable. No active deep palette or higher layer was introduced.
+- Final artwork remains pending; docs/stone-assets.json specifies 16 textures.
+
+Artifact: build/libs/geologic-variation-0.2.0-dev.jar. SHA-256 is recorded in
+build/libs/geologic-variation-0.2.0-dev.jar.sha256 after the final build.
+
+Pending for #13: in-game mining/Silk Touch, smelting, mixed stone crafting,
+recipe discovery, shape placement/waterlogging, wall connections, double-slab
+loot and final-art review. No runtime acceptance or issue closure is claimed.
+
 # Standalone revision 0.1.1-dev
 
 2026-10-18:

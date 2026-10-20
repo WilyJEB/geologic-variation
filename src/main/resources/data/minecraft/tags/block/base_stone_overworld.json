@@ -1,9 +1,6 @@
 {
-    "replace":  false,
-    "values":  [
-                   "geologic_variation:limestone",
-                   "geologic_variation:slate",
-                   "geologic_variation:gabbro",
-                   "geologic_variation:quartzite"
-               ]
+  "replace": false,
+  "values": [
+    "#geologic_variation:natural_stones"
+  ]
 }

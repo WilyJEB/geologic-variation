@@ -1,7 +1,7 @@
 {
-    "variants":  {
-                     "":  {
-                              "model":  "geologic_variation:block/quartzite"
-                          }
-                 }
+  "variants": {
+    "": {
+      "model": "geologic_variation:block/quartzite"
+    }
+  }
 }

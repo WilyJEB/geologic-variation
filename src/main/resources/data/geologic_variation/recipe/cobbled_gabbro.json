@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "geologic_variation:gabbro"
+    }
+  ],
+  "result": {
+    "id": "geologic_variation:cobbled_gabbro",
+    "count": 1
+  }
+}

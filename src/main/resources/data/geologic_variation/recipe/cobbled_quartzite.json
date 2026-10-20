@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "geologic_variation:quartzite"
+    }
+  ],
+  "result": {
+    "id": "geologic_variation:cobbled_quartzite",
+    "count": 1
+  }
+}

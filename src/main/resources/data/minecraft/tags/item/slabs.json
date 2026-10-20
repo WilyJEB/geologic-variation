@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "geologic_variation:limestone_slab",
+    "geologic_variation:cobbled_limestone_slab",
+    "geologic_variation:polished_limestone_slab",
+    "geologic_variation:limestone_brick_slab",
+    "geologic_variation:slate_slab",
+    "geologic_variation:cobbled_slate_slab",
+    "geologic_variation:polished_slate_slab",
+    "geologic_variation:slate_brick_slab",
+    "geologic_variation:quartzite_slab",
+    "geologic_variation:cobbled_quartzite_slab",
+    "geologic_variation:polished_quartzite_slab",
+    "geologic_variation:quartzite_brick_slab",
+    "geologic_variation:gabbro_slab",
+    "geologic_variation:cobbled_gabbro_slab",
+    "geologic_variation:polished_gabbro_slab",
+    "geologic_variation:gabbro_brick_slab"
+  ]
+}

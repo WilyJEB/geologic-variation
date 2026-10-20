@@ -1,7 +1,7 @@
 {
-    "variants":  {
-                     "":  {
-                              "model":  "geologic_variation:block/slate"
-                          }
-                 }
+  "variants": {
+    "": {
+      "model": "geologic_variation:block/slate"
+    }
+  }
 }
