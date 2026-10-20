@@ -21,8 +21,11 @@ public final class Provinces {
     }
     private static double unit(long n) { return (mix(n) >>> 11) * 0x1.0p-53; }
     public static Province at(long seed, int scale, int x, int z) {
+        return at(seed, scale, x, z, GeologySettings.DEFAULT);
+    }
+    public static Province at(long seed, int scale, int x, int z, GeologySettings settings) {
         if (scale < 1 || scale > 6) throw new IllegalArgumentException("scale must be 1..6");
-        int spacing = 2048 * scale;
+        int spacing = settings.provinceSpacingBlocks() * scale;
         long cx = Math.floorDiv(x, spacing), cz = Math.floorDiv(z, spacing);
         Province best = null;
         double distance = Double.POSITIVE_INFINITY;
@@ -37,12 +40,15 @@ public final class Provinces {
         return best;
     }
     public static Stone classify(Province p, double elevation, double relief) {
+        return classify(p, elevation, relief, GeologySettings.DEFAULT);
+    }
+    public static Stone classify(Province p, double elevation, double relief, GeologySettings settings) {
         if (!Double.isFinite(elevation) || !Double.isFinite(relief) || relief < 0)
             throw new IllegalArgumentException("invalid terrain");
         double r = unit(p.identity() ^ 0x461aL);
-        if (elevation < -200) return r < 0.75 ? Stone.GABBRO : Stone.LIMESTONE;
-        if (elevation < 600 && relief < 300) return r < 0.80 ? Stone.LIMESTONE : Stone.SLATE;
-        if (relief > 600 || elevation > 1800) return r < 0.65 ? Stone.QUARTZITE : Stone.SLATE;
+        if (elevation < settings.oceanCeilingMetres()) return r < 0.75 ? Stone.GABBRO : Stone.LIMESTONE;
+        if (elevation < settings.lowlandCeilingMetres() && relief < settings.gentleReliefMetres()) return r < 0.80 ? Stone.LIMESTONE : Stone.SLATE;
+        if (relief > settings.ruggedReliefMetres() || elevation > settings.mountainFloorMetres()) return r < 0.65 ? Stone.QUARTZITE : Stone.SLATE;
         return r < 0.65 ? Stone.SLATE : r < 0.85 ? Stone.QUARTZITE : Stone.GABBRO;
     }
 }

@@ -99,3 +99,11 @@ Issues: https://github.com/WilyJEB/geologic-variation/issues
 See docs/roadmap.md for milestone gates and docs/workflow.md for contribution
 and validation expectations. Minimal standalone testing precedes optional pack
 or city-mod integration.
+
+## World settings
+
+Province spacing and terrain classification thresholds can be set for new TD
+worlds in `config/geologic_variation-common.toml`. Each world saves its own
+settings and keeps them when the common config changes. Pre-settings worlds
+adopt the original defaults. See [settings and persistence](docs/geology-settings.md)
+for units, validation, snapshot location and remaining runtime acceptance.

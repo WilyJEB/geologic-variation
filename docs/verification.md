@@ -1,3 +1,23 @@
+# World settings implementation on 0.2.0-dev
+
+2026-10-18, feature/persistent-geology-settings (stacked on stone-families):
+
+- JDK 21 full Gradle build, testGeology and testSettings passed.
+- Pre-change generation fingerprint: -4340957394944646000; defaults preserve
+  province anchors/identities and classifications for three seeds, six scales,
+  negative coordinates and sampled elevation/relief boundaries.
+- Persistence tests cover custom snapshot round-trips, byte preservation on
+  reload, config-edit isolation, pre-settings world adoption of legacy defaults,
+  separate worlds, invalid field combinations, corrupt/unknown-schema/oversized
+  snapshots and write failures. Failed reads never recreate the snapshot.
+- NeoForge config and Overworld load/stop hooks compile against the pinned API.
+  Source lifecycle inspection places Overworld load before initial spawn.
+- All 711 masonry JSON resources still match the combined development JAR.
+- Actual TD world load, save/reopen and runtime config-reload acceptance remain
+  pending under #5/#8. Generator/dependency context versioning remains #9.
+- Masonry PR #20 also passed GitHub Actions:
+  https://github.com/WilyJEB/geologic-variation/actions/runs/39192373812
+
 # Stone families revision 0.2.0-dev
 
 2026-10-18, local JDK 21.0.6; NeoForge 21.1.251 / Minecraft 1.21.1 and
