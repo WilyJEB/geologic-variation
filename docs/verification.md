@@ -37,11 +37,22 @@ listener during a separate smoke run; that environment is not runtime-certified.
 Artifact: build/libs/geologic-variation-0.2.2-dev.jar; SHA-256:
 `ef6473c51eb505c02c4f72060a9c53a2433358bcc8fe1b954dfc298085492e07`.
 
-Still unverified: dedicated-server rejection/shutdown and matching-client
-acceptance (#19), alternate backend execution (#18), other live/context fields
-and scale/coordinate/lifecycle coverage (#9/#5). Keep #27 open until its remaining
-runtime acceptance is recorded. No user installation or existing user save was
-modified. See [failure behavior and reproduction](failure-handling.md).
+Dedicated-server follow-up, same date/environment, loopback-only development run:
+- The server distribution loads common hooks without client-class errors.
+- Tile size 256 saved / 512 runtime is rejected with full context and restoration
+  guidance in the log. The process exits after resource cleanup without a loading
+  or save-drain hang. Snapshot plus all nine region files remain byte-identical.
+- Restoring 256 allows the same copied world to reach the server's Done message.
+  A normal stop command completes all-dimension saves and process exit; the
+  snapshot remains unchanged. No matching client connected in this test.
+
+Still unverified: matching-client dedicated-server acceptance (#19), dedicated
+live-worker mismatch, alternate backend execution (#18), other live/context fields
+and scale/coordinate/lifecycle coverage (#9/#5). #27 has client initialization and
+live-worker evidence plus dedicated initialization/rejection/recovery evidence;
+the PR can now be reviewed without claiming the broader matrix is certified.
+No user installation or existing user save was modified. See
+[failure behavior and reproduction](failure-handling.md).
 
 # 0.2.1-dev upgrade and recovery notes
 
