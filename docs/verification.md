@@ -5,7 +5,8 @@ all four stones and generated terrain, retained inventory/blocks through a clean
 server restart, and placed limestone confirmed by the server and decoded save.
 Both server runs and the client exited cleanly; geology snapshot bytes matched.
 See [exact environment, coordinates and acceptance](dedicated-server-acceptance.md).
-A cold teleport incurred about 29 seconds of server lag; #7 remains open.
+A cold teleport took about 29 seconds; TD CPU request intervals account for
+27.744 seconds. Incremental addon cost is unmeasured; #7 remains open.
 This closes the #19 gate for the recorded CPU development runtime. Broader
 runtime matrices (#5/#6/#9/#18) and separately packaged deployment remain outside
 this acceptance. Automated build/resource/catalog checks also pass.

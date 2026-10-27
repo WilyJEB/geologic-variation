@@ -71,9 +71,40 @@ Verified 2026-10-27, 12:45-12:52 America/Los_Angeles, against source commit
 The cold teleport requested terrain at 12:50:15.654 and completed at
 12:50:44.318. The server logged 28,670 ms / 573 ticks behind. The temporary RCON
 helper timed out after 15 seconds, but inference continued and the command
-completed; the client stayed connected. This is a single observed cold stall,
-not a controlled benchmark or performance acceptance. #7 remains open for
-cold/warm, concurrency and cache measurements.
+completed; the client stayed connected.
+
+The five serial TD CPU request/completion pairs account for 27.744 seconds of
+the 28.664-second request-to-teleport interval:
+
+| TD request start | Duration | Newly computed windows |
+| --- | --- | --- |
+| 12:50:15.654 | 13.835 s | 56 |
+| 12:50:29.496 | 5.983 s | 12 |
+| 12:50:35.489 | 1.002 s | 2 |
+| 12:50:36.495 | 0.577 s | 1 |
+| 12:50:37.581 | 6.347 s | 14 |
+
+These are TD request-to-completion intervals, including possible queue time,
+not profiler measurements of addon CPU time. TD's pinned fetchHeightmap API is
+blocking; cold terrain inference can stall its server/chunk-worker caller.
+The warning alone does not establish an addon regression or distinguish ordinary
+TD generation from extra requests caused by the addon.
+
+Static province calculation for this seed/scale and (-1800, -2055) gives anchor
+(-2045, -2865), aligned tile x=-2048/z=-3072. That matches the final logged
+request. Geology.query requests an anchor tile on a province-cache miss, so this
+is evidence consistent with addon-triggered TD inference. The log has no call-site
+trace; 6.347 seconds must not be presented as measured incremental addon overhead.
+The earlier requests cover tiles near the destination and are consistent with
+ordinary TD terrain generation. Request origins and comparative costs remain
+unmeasured.
+
+This is a single combined-runtime observation, not a controlled benchmark or
+performance acceptance. #7 must compare TD-only with TD-plus-addon using identical
+seed, scale, tile, model/artifact/backend, JVM/hardware, chunk targets and traversal;
+separate fresh-process and warm-cache trials, repeat runs, and attribute terrain
+versus anchor requests with timing/call-site instrumentation. Report baseline TD
+cost, additional requests and addon work separately before proposing optimization.
 
 #19's minimal dedicated-server/matching-client gate is satisfied for this exact
 CPU development environment. #5's traversal/scale/dimension matrix, #6's complete
