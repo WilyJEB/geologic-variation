@@ -1,3 +1,41 @@
+# Matching-client dedicated-server acceptance (#19)
+
+2026-10-27: matching CPU development client joined the dedicated server, rendered
+all four stones and generated terrain, retained inventory/blocks through a clean
+server restart, and placed limestone confirmed by the server and decoded save.
+Both server runs and the client exited cleanly; geology snapshot bytes matched.
+See [exact environment, coordinates and acceptance](dedicated-server-acceptance.md).
+A cold teleport incurred about 29 seconds of server lag; #7 remains open.
+This closes the #19 gate for the recorded CPU development runtime. Broader
+runtime matrices (#5/#6/#9/#18) and separately packaged deployment remain outside
+this acceptance. Automated build/resource/catalog checks also pass.
+
+# Main verification audit (2026-10-27)
+
+- Main commit `38b5a35546476bf0aa0be0a5526f6abeaa9ec270` passed
+  [GitHub Actions build](https://github.com/WilyJEB/geologic-variation/actions/runs/40569874257).
+  The run uploads the non-expired `geologic-variation-dev` artifact. The committed
+  workflow checks out sources, bootstraps the pinned official dependency, builds,
+  runs both domain suites, and validates packaged resources and the design catalog.
+  This satisfies the CI/development-artifact gate in #3.
+- Local JDK 21 build, testGeology and testSettings pass. Packaged checks confirm
+  64 blocks, 158 recipes and 711 JSON resources. The catalog validator passes;
+  its proposed palette remains disabled. The 0.2.2-dev JAR SHA-256 still matches
+  `39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226`.
+- No Java or Python processes remained before this audit's build. Temporary
+  runtime evidence under temp/ is retained locally and excluded from this change.
+
+Next acceptance sequence: finish M1 with #19 (matching client joins a minimal
+CPU dedicated server; registry/block sync, generated stone, clean stop/restart),
+#5 (same seed/opposite traversal, scales 1/6, negative coordinates, contacts,
+save/reopen, vanilla/dimension gating), #6 (ores/caves and preserved hosts), then
+#7 (record hardware and cold/warm inference/generation timings). Record exact
+artifact hashes, environment, coordinates and logs for each case. Existing
+failure/recovery evidence does not complete these gates. Continue #9's remaining
+context/lifecycle matrix before changing generation under #11/#22; #10's bounded
+inspection command can support that work. Final art and optional integrations
+remain later work.
+
 # 0.2.2-dev controlled geology failures (#27)
 
 2026-10-27, development client: Minecraft 1.21.1, NeoForge 21.1.251,

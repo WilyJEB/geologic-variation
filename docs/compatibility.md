@@ -10,7 +10,9 @@ Standalone baseline, revised 2026-10-18:
   https://github.com/xandergos/terrain-diffusion-mc/releases/tag/2.3.0-preview
 - Bootstrap pins the official NeoForge Windows +1.21.1 artifact by SHA-512.
 - The official 2.3.0 NeoForge CPU/CUDA variants share the declared version and
-  common Java API; native backend execution has not been tested here.
+  common Java API. CPU client/dedicated development acceptance is recorded in
+  [the #19 report](dedicated-server-acceptance.md); Windows native/CUDA execution
+  is not certified by that run.
 - No Ulti-World, Living Cities, Terralith or pack-owned fork dependency.
 - Fabric, Forge, Minecraft 1.21.11 and arbitrary TD forks are not certified.
 - Ulti-World's terra_diffusion_compat fork is deliberately outside this
