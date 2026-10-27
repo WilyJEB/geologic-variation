@@ -14,6 +14,10 @@ error screen with the mismatched fields and recovery guidance. This works during
 the initial loading wait and after joining. Unrelated errors retain Minecraft's
 normal crash handling. Client hooks are in the client-only mixin list.
 
+On a geology failure the addon also closes TD's explorer explicitly. Minecraft's
+exceptional server exit skips the normal ServerStoppingEvent used by TD to close
+that listener; its HTTP dispatcher must not outlive the stopped server.
+
 Failed servers skip chunk save/flush and the normal save-ready drain loop,
 including the independent flush performed when the chunk source closes.
 Individual chunk saves also reject work after failure. Resource closing still

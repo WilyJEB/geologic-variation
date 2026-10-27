@@ -31,7 +31,13 @@ public abstract class ServerFailureMixin implements GeologyServer {
     }
 
     @Inject(method = "stopServer", at = @At("HEAD"))
-    private void geology$stopping(CallbackInfo ci) { geology$state.stopping(); }
+    private void geology$stopping(CallbackInfo ci) {
+        geology$state.stopping();
+        // Exceptional runServer exits skip ServerStoppingEvent, where TD normally
+        // closes its explorer. Its HTTP dispatcher otherwise keeps the JVM alive.
+        if (geology$state.failure() != null)
+            com.github.xandergos.terraindiffusionmc.explorer.ExplorerServer.stop();
+    }
 
     @Redirect(method = "stopServer", at = @At(value = "FIELD",
             target = "Lnet/minecraft/server/level/ServerLevel;noSave:Z", opcode = 181))

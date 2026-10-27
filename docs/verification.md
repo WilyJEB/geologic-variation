@@ -35,7 +35,7 @@ crash handling: the pinned TD Windows native DLL failed before the addon load
 listener during a separate smoke run; that environment is not runtime-certified.
 
 Artifact: build/libs/geologic-variation-0.2.2-dev.jar; SHA-256:
-`ef6473c51eb505c02c4f72060a9c53a2433358bcc8fe1b954dfc298085492e07`.
+`39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226`.
 
 Dedicated-server follow-up, same date/environment, loopback-only development run:
 - The server distribution loads common hooks without client-class errors.
@@ -45,12 +45,22 @@ Dedicated-server follow-up, same date/environment, loopback-only development run
 - Restoring 256 allows the same copied world to reach the server's Done message.
   A normal stop command completes all-dimension saves and process exit; the
   snapshot remains unchanged. No matching client connected in this test.
+- Final pre-merge compatibility check: start the explorer on the dedicated
+  server, freeze ordinary ticks, flush a baseline, change the explorer seed to
+  42 and force-load a new distant chunk. The worker reports the mismatched seed;
+  rejection preserves snapshot bytes and block-state data in all 2,601 existing
+  chunks, with no new chunks persisted.
+- This test exposed exceptional shutdown skipping TD's ServerStoppingEvent
+  cleanup. The explorer HTTP dispatcher remained alive after the server thread
+  exited. The addon now explicitly stops TD's explorer on a latched geology
+  failure. Retesting logs explorer closure and completes process exit normally.
+  Full build/domain tests and packaged resource/catalog checks pass after the fix.
 
-Still unverified: matching-client dedicated-server acceptance (#19), dedicated
-live-worker mismatch, alternate backend execution (#18), other live/context fields
-and scale/coordinate/lifecycle coverage (#9/#5). #27 has client initialization and
-live-worker evidence plus dedicated initialization/rejection/recovery evidence;
-the PR can now be reviewed without claiming the broader matrix is certified.
+Still unverified: matching-client dedicated-server acceptance (#19), alternate
+backend execution (#18), other live/context fields and scale/coordinate/lifecycle
+coverage (#9/#5). #27 has client and dedicated initialization/live-worker failure
+evidence, file/block preservation and recovery evidence. The broader compatibility
+matrix is not certified by these tests.
 No user installation or existing user save was modified. See
 [failure behavior and reproduction](failure-handling.md).
 
