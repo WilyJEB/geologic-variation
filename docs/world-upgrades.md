@@ -1,10 +1,10 @@
-# World upgrades and recovery — 0.2.1-dev
+# World upgrades and recovery — schema 2
 
-Read this before opening an existing TD world with Geologic Variation 0.2.1-dev.
+Read this before opening an existing TD world with Geologic Variation 0.2.1-dev or 0.2.2-dev.
 The addon checks a world's generation identity to prevent incompatible geology
 in newly explored chunks. There is no general migration tool.
 
-| Save state | Behavior in 0.2.1-dev | Safe next step |
+| Save state | Behavior in schema-2 builds | Safe next step |
 | --- | --- | --- |
 | New, uninitialized TD world | Writes schema 2 with resolved generation context and validated requested settings | Keep the snapshot with world backups |
 | Valid schema 2, `generator=geology-1`, exact matching context | Loads saved settings; common-config edits apply only to new worlds | Continue with the same installation and world inputs |
@@ -42,9 +42,10 @@ guess hashes or edit context values to force acceptance. These actions discard
 the evidence needed to keep future generation consistent. Matching identities
 also do not guarantee bitwise native inference across different hardware/drivers.
 
-In the current build, a deliberate mismatch can crash the whole client during
-world initialization; worker failures can also leave loading stalled. Cleaner
-failure handling remains [#27](https://github.com/WilyJEB/geologic-variation/issues/27).
+In 0.2.1-dev, a deliberate mismatch can crash the whole client during
+world initialization; worker failures can also leave loading stalled. 0.2.2-dev adds
+[controlled failure handling](failure-handling.md); see the verification record
+for accepted cases and outstanding coverage under #27.
 Rejection is not permission to bypass the guard.
 
 ## Historical unknown-backend recovery (#25)

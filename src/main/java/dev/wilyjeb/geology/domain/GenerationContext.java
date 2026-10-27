@@ -14,8 +14,22 @@ public record GenerationContext(String generator, long seed, int scale, int tile
                 throw new IllegalArgumentException("Unresolved generation context");
     }
     public void requireCompatible(GenerationContext runtime) {
-        if (!generator.equals(GENERATOR) || !equals(runtime))
-            throw new IllegalArgumentException("Incompatible geology generation context. Saved: " + this
+        if (!generator.equals(GENERATOR) || !equals(runtime)) {
+            var fields = new java.util.ArrayList<String>();
+            if (!generator.equals(GENERATOR) || !generator.equals(runtime.generator)) fields.add("generator");
+            if (seed != runtime.seed) fields.add("seed (saved=" + seed + ", runtime=" + runtime.seed + ")");
+            if (scale != runtime.scale) fields.add("scale (saved=" + scale + ", runtime=" + runtime.scale + ")");
+            if (tileSize != runtime.tileSize) fields.add("tileSize (saved=" + tileSize + ", runtime=" + runtime.tileSize + ")");
+            if (!dependency.equals(runtime.dependency)) fields.add("TD artifact");
+            if (!models.equals(runtime.models)) fields.add("models/config");
+            if (!backend.equals(runtime.backend)) fields.add("backend/OS/architecture");
+            throw new Mismatch(String.join(", ", fields), "Incompatible geology generation context. Saved: " + this
                     + "; runtime: " + runtime + ". Restore the original generator, TD dependency/models/backend and world seed/scale/tile size; snapshot unchanged.");
+        }
+    }
+    public static final class Mismatch extends IllegalArgumentException {
+        private final String fields;
+        private Mismatch(String fields, String details) { super(details); this.fields = fields; }
+        public String fields() { return fields; }
     }
 }

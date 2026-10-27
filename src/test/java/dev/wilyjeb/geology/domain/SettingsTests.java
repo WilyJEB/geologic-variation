@@ -31,6 +31,26 @@ public final class SettingsTests {
  }
 
     public static void main(String[] args) throws IOException {
+        var failureState = new FailureState();
+        failureState.check();
+        var firstFailure = new GeologyFailure("tileSize differs", new IOException("snapshot rejected"));
+        check(failureState.record(firstFailure) == firstFailure, "Failure was not retained");
+        check(failureState.record(new GeologyFailure("later error", null)) == firstFailure,
+                "Secondary worker error hid the original diagnostic");
+        try { failureState.check(); throw new AssertionError("Server wait did not abort"); }
+        catch (GeologyFailure expected) { check(expected == firstFailure, "Wrong wait failure"); }
+        failureState.stopping();
+        failureState.check(); // Resource shutdown must not rethrow the failure.
+        check(failureState.failure() == firstFailure, "Shutdown lost client diagnostic");
+        new FailureState().check(); // Another server has no stale failure.
+        check(GeologyFailure.find(new RuntimeException(firstFailure)) == firstFailure,
+                "Wrapped chunk-generation failure was not recognized");
+        check(GeologyFailure.find(new IllegalStateException("unrelated crash")) == null,
+                "Unrelated crashes must retain vanilla handling");
+        var cyclic = new RuntimeException();
+        var wrapper = new RuntimeException(cyclic);
+        cyclic.initCause(wrapper);
+        check(GeologyFailure.find(cyclic) == null, "Cyclic exception chain did not terminate");
         // Regression: model loading alone leaves the provider unknown until first inference.
         var provider = new java.util.concurrent.atomic.AtomicReference<String>("unknown");
         var initializations = new java.util.concurrent.atomic.AtomicInteger();
@@ -84,6 +104,14 @@ public final class SettingsTests {
                 } catch (IOException | IllegalArgumentException expected) {}
                 check(Arrays.equals(versionedBytes, Files.readAllBytes(versioned)), "Mismatch rewrote snapshot");
                 invalid(() -> context.requireCompatible(changed));
+                try {
+                    context.requireCompatible(changed);
+                } catch (GenerationContext.Mismatch mismatch) {
+                    var presented = new GeologyFailure("World load failed", new IOException("wrapped", mismatch)).userMessage();
+                    check(presented.contains(mismatch.fields()), "Client diagnostic lost mismatched fields");
+                    check(!presented.contains("td-sha"), "Client screen includes full hash dump");
+                    check(presented.length() < 600, "Client diagnostic is too long for the error screen");
+                }
             }
             Path missing = fixture.resolve("unverified.properties");
             unreadable(() -> SettingsStore.loadOrCreate(missing, () -> defaults, true, context));

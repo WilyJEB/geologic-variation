@@ -24,8 +24,13 @@ public abstract class SurfaceMixin {
                 || !(generator.getBiomeSource() instanceof TerrainDiffusionBiomeSource)) return;
         var pos = new BlockPos.MutableBlockPos();
         int sx = chunk.getPos().getMinBlockX(), sz = chunk.getPos().getMinBlockZ();
+        // Resolve all potentially blocking queries before changing this chunk.
+        var materials = new dev.wilyjeb.geology.domain.Provinces.Stone[256];
+        for (int z = 0; z < 16; z++) for (int x = 0; x < 16; x++)
+            materials[z * 16 + x] = Geology.regionAt(region.getLevel().getServer(), sx + x, sz + z).stone();
+        dev.wilyjeb.geology.WorldGeologySettings.current(region.getLevel().getServer());
         for (int z = sz; z < sz+16; z++) for (int x = sx; x < sx+16; x++) {
-            var material = Geology.regionAt(x, z).stone();
+            var material = materials[(z - sz) * 16 + x - sx];
             var host = material.layer() == dev.wilyjeb.geology.domain.Provinces.Layer.DEEP
                     ? Blocks.DEEPSLATE : Blocks.STONE;
             var stone = GeologicVariation.STONES.get(material).get().defaultBlockState();
