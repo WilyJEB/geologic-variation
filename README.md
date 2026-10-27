@@ -86,7 +86,8 @@ The pure domain/Provinces.java owns region partition and classification;
 Geology.java owns the standalone TD adapter; mixin/SurfaceMixin.java applies it.
 Freeze seed, scale, model versions, tile size and these rules for a continuing
 world. Altering them can create contacts at old/new chunk borders.
-See docs/compatibility.md and docs/verification.md.
+See docs/compatibility.md and docs/verification.md. Before updating an existing
+save, read the [world upgrade and recovery guide](docs/world-upgrades.md).
 
 
 
@@ -105,7 +106,7 @@ or city-mod integration.
 Province spacing and terrain classification thresholds can be set for new TD
 worlds in `config/geologic_variation-common.toml`. Each world saves its own
 settings and keeps them when the common config changes. Pre-settings worlds
-adopt the original defaults. See [settings and persistence](docs/geology-settings.md)
+are rejected unless they have verified schema-2 provenance. See [settings and persistence](docs/geology-settings.md)
 for units, validation, snapshot location and remaining runtime acceptance.
 
 ## Researched next palette
