@@ -1,3 +1,11 @@
+# 0.2.1-dev upgrade and recovery notes
+
+See [world upgrades and recovery](world-upgrades.md) for the schema-2 upgrade
+matrix, backup procedure, unsupported legacy saves and narrow #25 recovery.
+On 2026-10-27, the supplied client crash report confirmed tile-size mismatch
+rejection (256 saved / 512 runtime); restoration/reopen was user-reported.
+The whole-game crash remains #27; other runtime compatibility cases remain #9.
+
 # User acceptance for masonry (#13)
 
 2026-10-20: the user reported all supplied checks passed on 0.2.1-dev: survival mining and Silk Touch, cobble smelting, mixed-family tool/furnace recipes, recipe discovery, crafting/stonecutting, shape placement, waterlogging, wall connections and double-slab drops. Placeholder-backed functionality is accepted. Final user-authored textures and their visual review remain tracked under #12 and #14.
