@@ -12,7 +12,7 @@ Use JDK 21. Run PowerShell from this directory:
     powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/bootstrap.ps1
     ./gradlew.bat build
 
-Install build/libs/geologic-variation-0.2.1-dev.jar on BOTH client and server
+Install build/libs/geologic-variation-0.2.2-dev.jar on BOTH client and server
 alongside official Terrain Diffusion 2.3.0 (NeoForge, Minecraft 1.21.1).
 The dependency is downloaded separately, SHA-512 verified, and never bundled.
 The Windows artifact is the build baseline. Official matching NeoForge 1.21.1 CUDA/CPU variants share the common Java API.
@@ -86,7 +86,8 @@ The pure domain/Provinces.java owns region partition and classification;
 Geology.java owns the standalone TD adapter; mixin/SurfaceMixin.java applies it.
 Freeze seed, scale, model versions, tile size and these rules for a continuing
 world. Altering them can create contacts at old/new chunk borders.
-See docs/compatibility.md and docs/verification.md. Before updating an existing
+See docs/compatibility.md and docs/verification.md. Version 0.2.2 adds
+[controlled geology errors](docs/failure-handling.md). Before updating an existing
 save, read the [world upgrade and recovery guide](docs/world-upgrades.md).
 
 

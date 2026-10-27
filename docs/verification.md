@@ -1,3 +1,69 @@
+# 0.2.2-dev controlled geology failures (#27)
+
+2026-10-27, development client: Minecraft 1.21.1, NeoForge 21.1.251,
+Oracle Java 21.0.6, Windows 11/amd64, official TD 2.3.0 CPU. A temporary
+uncommitted launch override used the existing CPU artifact; bootstrap and the
+build dependency remain pinned to the official Windows artifact.
+
+Passed:
+- Full build/testGeology/testSettings, including first-error retention, shutdown
+  behavior, server-state isolation, tagged/wrapped/unrelated/cyclic exceptions,
+  concise field diagnostics, unchanged snapshot bytes and the legacy fingerprint.
+- Packaged resource checks: 64 blocks, 158 recipes, 711 JSON resources. Geology
+  catalog checks pass. Generator remains geology-1; block IDs/rules are unchanged.
+- Disposable TD baseline at scale 2: generated stone, joined, saved and exited.
+- Saved tile size 256 versus runtime 512: readable error screen, client remains
+  usable, snapshot and all nine region files byte-identical after rejection.
+- A separate vanilla world loads in that same client process after rejection.
+- Restore tile size 256 and restart: original TD world reopens with identical
+  snapshot bytes and visible regional stone.
+- Live explorer seed change followed by a request for distant chunks: tagged
+  synchronous worker error is converted to a failed chunk result, server exits,
+  client shows the seed mismatch and a working return-to-title button.
+- The compatible TD worker copy reopens in that same process after rejection.
+- Controlled repetition with normal ticks frozen and a pause/save baseline:
+  snapshot bytes and decoded block-state data in all 2,601 existing Overworld
+  chunks match; no new chunks persist. Region file metadata is not a block-state
+  invariant. An earlier unfrozen comparison included ordinary grass growth,
+  amethyst growth and falling gravel before detection; it is not byte-preservation
+  evidence. This abort does not roll back previously committed writes.
+
+The original worker attempt exposed vanilla's uncaught ReportedException handler
+calling System.exit. The chunk-holder failure boundary was added and both later
+worker attempts reached the recoverable screen. Unrelated failures retain normal
+crash handling: the pinned TD Windows native DLL failed before the addon load
+listener during a separate smoke run; that environment is not runtime-certified.
+
+Artifact: build/libs/geologic-variation-0.2.2-dev.jar; SHA-256:
+`39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226`.
+
+Dedicated-server follow-up, same date/environment, loopback-only development run:
+- The server distribution loads common hooks without client-class errors.
+- Tile size 256 saved / 512 runtime is rejected with full context and restoration
+  guidance in the log. The process exits after resource cleanup without a loading
+  or save-drain hang. Snapshot plus all nine region files remain byte-identical.
+- Restoring 256 allows the same copied world to reach the server's Done message.
+  A normal stop command completes all-dimension saves and process exit; the
+  snapshot remains unchanged. No matching client connected in this test.
+- Final pre-merge compatibility check: start the explorer on the dedicated
+  server, freeze ordinary ticks, flush a baseline, change the explorer seed to
+  42 and force-load a new distant chunk. The worker reports the mismatched seed;
+  rejection preserves snapshot bytes and block-state data in all 2,601 existing
+  chunks, with no new chunks persisted.
+- This test exposed exceptional shutdown skipping TD's ServerStoppingEvent
+  cleanup. The explorer HTTP dispatcher remained alive after the server thread
+  exited. The addon now explicitly stops TD's explorer on a latched geology
+  failure. Retesting logs explorer closure and completes process exit normally.
+  Full build/domain tests and packaged resource/catalog checks pass after the fix.
+
+Still unverified: matching-client dedicated-server acceptance (#19), alternate
+backend execution (#18), other live/context fields and scale/coordinate/lifecycle
+coverage (#9/#5). #27 has client and dedicated initialization/live-worker failure
+evidence, file/block preservation and recovery evidence. The broader compatibility
+matrix is not certified by these tests.
+No user installation or existing user save was modified. See
+[failure behavior and reproduction](failure-handling.md).
+
 # 0.2.1-dev upgrade and recovery notes
 
 See [world upgrades and recovery](world-upgrades.md) for the schema-2 upgrade
