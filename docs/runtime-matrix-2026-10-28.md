@@ -115,7 +115,12 @@ comparison measures the net difference under the stated conditions. It cannot
 retroactively decompose the earlier #19 scale-2 teleport or establish a general
 slowdown percentage.
 
-Warm loaded-chunk reads take 0.04–0.17 ms. These are reads, not warm generation.
+Later neighboring-chunk completion calls, after the surrounding TD tiles have
+been requested, take 68.9–76.3 ms in TD-only and 77.1–86.6 ms with the addon.
+Earlier requests may already have partially generated those neighboring chunks;
+these are warmed-neighborhood completion timings, not isolated fresh-chunk or
+scanner CPU benchmarks. Warm loaded-chunk reads take 0.04–0.17 ms. Those are reads,
+not warm generation.
 Four simultaneous cold queries for one remote province complete with identical
 results in 13.08–13.54 seconds; subsequent cached region queries take
 0.0265–0.0289 ms. No deadlock occurs in these trials. The actual cache's synthetic
