@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.wilyjeb.geology.probe.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["HeightmapProbeMixin"],
+  "injectors": {"defaultRequire": 1}
+}

@@ -13,6 +13,10 @@ Standalone baseline, revised 2026-10-18:
   common Java API. CPU client/dedicated development acceptance is recorded in
   [the #19 report](dedicated-server-acceptance.md); Windows native/CUDA execution
   is not certified by that run.
+- Separate CPU production client/server JAR loading, sampled dimension gating
+  and paired performance measurements are recorded in the
+  [2026-10-28 runtime matrix](runtime-matrix-2026-10-28.md). Exact final-block
+  reproducibility remains unresolved under #5; do not infer whole-world determinism.
 - No Ulti-World, Living Cities, Terralith or pack-owned fork dependency.
 - Fabric, Forge, Minecraft 1.21.11 and arbitrary TD forks are not certified.
 - Ulti-World's terra_diffusion_compat fork is deliberately outside this
