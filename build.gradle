@@ -29,3 +29,19 @@ tasks.register('testSettings', JavaExec) {
 }
 
 tasks.named('check') { dependsOn testGeology, testSettings }
+
+// Explicit opt-in acceptance tooling; never included in the distributed addon.
+sourceSets {
+    runtimeProbe {
+        compileClasspath += sourceSets.main.compileClasspath
+        runtimeClasspath += sourceSets.main.runtimeClasspath
+    }
+}
+tasks.register('runtimeProbeJar', Jar) {
+    dependsOn runtimeProbeClasses
+    archiveBaseName = 'geology-runtime-probe'
+    destinationDirectory = layout.buildDirectory.dir('runtime-probe')
+    from sourceSets.runtimeProbe.output
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+}

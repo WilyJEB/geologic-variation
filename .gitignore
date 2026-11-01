@@ -4,3 +4,4 @@ runs/
 libs/
 upstream/
 .local/
+__pycache__/

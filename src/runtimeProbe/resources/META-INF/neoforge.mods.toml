@@ -1,0 +1,9 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+[[mods]]
+modId="geology_runtime_probe"
+version="1.0.0"
+displayName="Geology acceptance probe (test only)"
+[[mixins]]
+config="geology-runtime-probe.mixins.json"

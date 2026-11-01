@@ -13,7 +13,7 @@ jobs:
       - shell: pwsh
         run: ./scripts/bootstrap.ps1
       - shell: pwsh
-        run: ./gradlew.bat build
+        run: ./gradlew.bat build runtimeProbeJar
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

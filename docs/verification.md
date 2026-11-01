@@ -1,3 +1,20 @@
+# Production matrix and packaged deployment (2026-10-27–28)
+
+See [the runtime matrix report](runtime-matrix-2026-10-28.md) and its portable
+artifact/log evidence. Sampled vanilla Overworld/Nether/End gating passes, as does
+separate production client/server loading of the unchanged 0.2.2-dev JAR.
+Three TD-only/addon pairs isolate additional remote-anchor requests: median
+sampled-route difference 14.383 seconds, with substantial ordinary TD CPU cost in
+both arms. Concurrent queries and the cache policy check pass (#7 evidence).
+
+#5 is not closed: scale-1 regional block hashes, region records at both scales,
+restart/snapshot preservation and new neighbors pass, but strict scale-6 positioned
+regional-block hashes differ. Final differences involving regional stone are coal
+ore replacements, with zero regional palette conflicts. A TD-only reverse-order
+control also varies between vanilla stone and coal ore. Preserve that failure;
+it is not proof of an addon palette bug or a passing full-block matrix. No
+production generation, IDs or dependency pins changed.
+
 # Matching-client dedicated-server acceptance (#19)
 
 2026-10-27: matching CPU development client joined the dedicated server, rendered
