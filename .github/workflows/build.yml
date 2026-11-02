@@ -23,6 +23,8 @@ jobs:
         run: python scripts/check-geology-library.py
       - shell: pwsh
         run: python -m py_compile scripts/runtime-acceptance.py scripts/compare-runtime-chunks.py scripts/audit-host-feature-rules.py scripts/verify-ore-hosts.py scripts/summarize-host-acceptance.py scripts/trace-natural-coal.py scripts/summarize-natural-coal.py scripts/verify-context-startup.py scripts/summarize-context-startup.py scripts/verify-live-context.py scripts/summarize-live-context.py scripts/verify-hot-config.py scripts/summarize-hot-config.py scripts/verify-td-artifact.py scripts/summarize-td-artifact.py scripts/verify-model-config.py scripts/summarize-model-config.py
+      - shell: pwsh
+        run: python -m py_compile scripts/inspect-backend-feasibility.py scripts/summarize-backend-feasibility.py
       - uses: actions/upload-artifact@v4
         with:
           name: geologic-variation-dev
