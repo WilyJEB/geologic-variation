@@ -1,5 +1,7 @@
 * text=auto
 *.java text eol=lf
+scripts/inspect-backend-feasibility.py text eol=lf
+scripts/summarize-backend-feasibility.py text eol=lf
 *.gradle text eol=lf
 *.json text eol=lf
 *.md text eol=lf
