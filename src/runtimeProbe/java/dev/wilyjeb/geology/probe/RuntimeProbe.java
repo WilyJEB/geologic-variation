@@ -32,6 +32,7 @@ public final class RuntimeProbe {
     private static void commands(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
             .then(Commands.literal("prepare").executes(c -> prepare(c.getSource())))
+            .then(Commands.literal("settings").executes(c -> settings(c.getSource())))
             .then(Commands.literal("trace-reset").executes(c -> send(c.getSource(),CoalTrace.reset())))
             .then(Commands.literal("trace-summary").executes(c -> { CoalTrace.flush(); return send(c.getSource(),CoalTrace.summary()); }))
             .then(Commands.literal("trace-watch").then(Commands.argument("x",IntegerArgumentType.integer())
@@ -68,6 +69,16 @@ public final class RuntimeProbe {
             return send(source, Map.of("kind","prepare", "processors",Runtime.getRuntime().availableProcessors(),
                     "max_heap",Runtime.getRuntime().maxMemory(), "backend",
                     com.github.xandergos.terraindiffusionmc.pipeline.OnnxModel.getResolvedInferenceProvider()));
+        } catch(Exception e) { throw new RuntimeException(e); }
+    }
+    private static int settings(CommandSourceStack source) {
+        try {
+            var type=Class.forName("dev.wilyjeb.geology.WorldGeologySettings");
+            var active=type.getMethod("current",net.minecraft.server.MinecraftServer.class).invoke(null,source.getServer());
+            var context=type.getDeclaredField("context");context.setAccessible(true);
+            var requested=Class.forName("dev.wilyjeb.geology.GeologyConfig").getMethod("requested").invoke(null);
+            return send(source,Map.of("kind","settings","active",active.toString(),"requested",requested.toString(),
+                "context",context.get(null).toString(),"owner_matches",type.getMethod("server").invoke(null)==source.getServer()));
         } catch(Exception e) { throw new RuntimeException(e); }
     }
     /** Exercise the real map's eviction policy without computing 600 remote terrain tiles.

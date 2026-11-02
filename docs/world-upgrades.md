@@ -44,8 +44,9 @@ also do not guarantee bitwise native inference across different hardware/drivers
 
 In 0.2.1-dev, a deliberate mismatch can crash the whole client during
 world initialization; worker failures can also leave loading stalled. 0.2.2-dev adds
-[controlled failure handling](failure-handling.md); see the verification record
-for accepted cases and outstanding coverage under #27.
+[controlled failure handling](failure-handling.md). #27's client/dedicated failure
+presentation and recovery acceptance is recorded in [verification](verification.md);
+the broader context/lifecycle coverage remains under #9.
 Rejection is not permission to bypass the guard.
 
 ## Historical unknown-backend recovery (#25)
@@ -66,13 +67,23 @@ Schema-1/snapshotless worlds lack more context and need a separate migration des
 
 ## Evidence and reporting
 
-Accepted client evidence: Minecraft 1.21.1, NeoForge 21.1.251, TD 2.3.0 CPU,
+Current dedicated CPU evidence includes the
+[2026-11-01 startup matrix](context-startup-2026-11-01.md): independent seed/scale,
+schema-1, missing and malformed-snapshot rejection before Ready, exact existing
+snapshot/region-file preservation, and successful restoration of each verified
+fixture. Continuing config edits preserve active settings and existing blocks.
+Those controlled backup-restoration tests are not legacy migration recipes;
+unknown saves still require provenance review and the broader #9 matrix remains.
+
+Historical supplied client evidence: Minecraft 1.21.1, NeoForge 21.1.251, TD 2.3.0 CPU,
 Geologic Variation 0.2.1-dev, Java 21.0.12.1, Windows 11/amd64. The supplied
 2026-10-27 crash report confirms rejection of saved tile size 256 versus runtime
 512; the user reports reopening successfully after restoring 256. Before/after
 snapshot byte equality was not independently measured for that runtime test.
-Dedicated-server acceptance (#19), alternate backends (#18), other runtime
-mismatches and broader lifecycle/reproducibility checks (#9/#5) remain open.
+Later matching-client dedicated-server acceptance (#19) and separate packaged
+CPU loading/rejoin evidence are recorded in [verification](verification.md).
+Alternate backends (#18) and the remaining context/lifecycle/reproducibility
+checks (#9/#5) retain their separate gates.
 Compilation and domain tests are separate evidence, not runtime certification.
 
 For diagnosis, provide addon/TD artifact names and checksums, Minecraft/NeoForge/

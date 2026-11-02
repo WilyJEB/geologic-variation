@@ -101,7 +101,11 @@ invalid values, malformed snapshots and write failures.
 
 Source inspection of the pinned Minecraft/NeoForge server lifecycle confirms
 Overworld `LevelEvent.Load` occurs before `setInitialSpawn`. Full compilation
-and these file/domain tests pass. Minimal-install runtime acceptance remains:
-create a custom-settings TD world, save/reopen it with different common config,
-confirm logged snapshot reuse and matching newly generated geology, then verify rejection of an unverified pre-settings world on a disposable copy. This is retained under #5/#8; no in-game execution
-is implied by the pure tests.
+and file/domain tests pass. Dedicated CPU runtime evidence now separately covers
+[continuing-world config isolation and startup rejection/restoration](context-startup-2026-11-01.md):
+all six edited config proposals are observed but the saved settings, context,
+region and existing blocks remain active through restart. Schema-1, missing and
+malformed snapshots reject unchanged; actual seed/scale mismatches also reject
+and restore correctly. This does not certify custom-settings new-world creation,
+live config reload, every newly generated neighbor, or the remaining #9 lifecycle
+matrix. Pure tests are not runtime certification of those remaining cases.
