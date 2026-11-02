@@ -83,6 +83,13 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For the independently accepted DirectML startup backend matrix, use
+`scripts/verify-backend.py` and `scripts/summarize-backend.py`. The
+[backend report](backend-2026-11-02.md) describes isolated Java runtime preparation,
+actual completed TD execution before rejection, exactly dependency/backend context
+differences, preservation and exact original restoration. The passive test-only
+OnnxModel return observer schedules no inference and changes no production code.
+
 Before a trained-weight/backend matrix, `scripts/inspect-backend-feasibility.py`
 can test pinned official CPU/CUDA/Windows native runtimes against the verified
 coarse model without opening a save. `BackendPreflight.java` is a standalone

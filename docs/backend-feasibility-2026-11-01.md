@@ -1,5 +1,9 @@
 # Trained-weight/backend gate feasibility, 2026-11-01
 
+Follow-up: [2026-11-02 DirectML matrix](backend-2026-11-02.md) unblocks the
+Windows backend with an isolated Java CRT set and accepts its independent
+rejection/restoration slice. The failures below remain historical evidence.
+
 **Blocked; no new save-safety acceptance.** The official CUDA and Windows
 distributions cannot initialize a GPU model session in this environment. The
 official model catalog supplies no second directly loadable ONNX weight set.
