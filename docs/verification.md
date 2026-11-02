@@ -1,3 +1,14 @@
+# Supported TD model-config substitution (2026-11-01)
+
+The [model-config report](model-config-2026-11-01.md) records three NEW dedicated
+CPU launches: original control, supported test-derived JSON substitution, and
+exact restoration/reopen. TD actually loads residual_mean=1.0 and initializes CPU;
+geology rejects before Ready/RCON with only the models context field differing.
+Snapshot bytes, all 529 stored terrain records and restored geology/sample blocks
+match. Source fixture/shared inputs are unchanged; no production fix. #37-#39
+are reused prior evidence, not rerun. #9 stays open for trained-weight/backend,
+upgrade and client/lifecycle gates. #5's stronger failed assertion and #11 remain.
+
 # Actual TD artifact substitution (2026-11-01)
 
 The [artifact report](td-artifact-2026-11-01.md) records three dedicated JVM

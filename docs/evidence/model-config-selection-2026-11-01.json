@@ -1,0 +1,60 @@
+{
+  "td_source_tag": "2.3.0-preview",
+  "td_source_commit": "8acd2b680ee248334637f8cf13f6c78ac20003da",
+  "official_model_history": [
+    {
+      "id": "ad2df557eca5645f588766101cf3bc3682455c3e",
+      "title": "Upload 5 files",
+      "message": "",
+      "authors": [
+        {
+          "user": "xandergos",
+          "avatar": "/avatars/81f0407aac0327d66b449cb31763fa98.svg"
+        }
+      ],
+      "date": "2026-04-05T00:55:09.000Z"
+    },
+    {
+      "id": "b564963e838dd741d1eab99c904f86a7888c0b7a",
+      "title": "initial commit",
+      "message": "",
+      "authors": [
+        {
+          "user": "xandergos",
+          "avatar": "/avatars/81f0407aac0327d66b449cb31763fa98.svg"
+        }
+      ],
+      "date": "2026-04-05T00:54:04.000Z"
+    }
+  ],
+  "official_initial_revision_files": [
+    {
+      "type": "file",
+      "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519,
+      "path": ".gitattributes"
+    },
+    {
+      "type": "file",
+      "oid": "7be5fc7f47d5db027d120b8024982df93db95b74",
+      "size": 24,
+      "path": "README.md"
+    }
+  ],
+  "inspection_sha256": {
+    "README.md": "833cd2f118146e5db6e6f4b860a2200086dc0fdf71fd6485dc9862255409c259",
+    "TerrainDiffusionConfig.java": "f403a863ce2918d2199fd84f246a0c2fb0e85c88a2bfe426253eeafbebfa01d7",
+    "WorldPipelineModelConfig.java": "d1ca7849288ec159d4d20827f8d3d2835bf31eef044b6d94cdd9b432f2ab369a",
+    "WorldPipeline.java": "f8106d8999ad46ed886ebe0422de3ccd16739f4c2584f3e39882e745360ad024",
+    "ModelAssetManager.java": "771393bd7ae95ca675ed6dc3e747e4f5df80845242f4449ab2e644e4e0c00522",
+    "td-tree.json": "9adc4f82c877d43351a402f7b23f0ea40c7e06c1771ededa866c67540a940ed3",
+    "hf-commits.json": "c53e5088ff201d7699daf9683367787cfcb23ee2f9a0dba1a8e457a5cb8ce5a8",
+    "hf-initial-tree.json": "aecf7fed62bf9e17a5b3cfd50e73fb2a511ba0fe0526e7e7d8a03e4fd0c174c4",
+    "WorldPipelineModelConfig.txt": "8f51ba5f2427cd30fe03d59b785b931ad09a815fb3a4700d0d1b646cb110b39f",
+    "WorldPipelineModelConfig$ConfigJson.txt": "7091c56a0fb02453ffe7bae482cfd8095db311b233d00e9232d01099c45368d9",
+    "WorldPipeline.txt": "72da43da87c8bd99409051862e8beb95188396cb6a7b94218ff14326f1ceb12b",
+    "ModelAssetManager.txt": "921de2398bda639d0d44a0c8cbe7705d1ce3599d36d1513667a56d10a0413a9a",
+    "PipelineModels.txt": "110ba8601c01e2eb08ca4f30e9d58afbf2b0ad4b2d553259d12bd81e79a696fd"
+  },
+  "conclusion": "One official uploaded asset revision; select explicitly test-derived custom config via documented validate_model=false. No claim of exhaustive third-party model search."
+}
