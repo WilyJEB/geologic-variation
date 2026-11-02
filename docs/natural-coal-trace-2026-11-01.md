@@ -1,5 +1,9 @@
 # Natural cross-chunk ore-order trace, 2026-11-01
 
+Subsequent policy resolution: see the [supported reproducibility contract](reproducibility-contract.md).
+It selects stable geology/save continuity while retaining the strict failure
+reported below. The investigation's pending-decision statements are historical.
+
 ## Result and acceptance boundary
 
 The remaining #5 final-position failure has a demonstrated natural feature-order
