@@ -1,3 +1,17 @@
+# Independent integrated-client lifecycle matrix — 2026-11-02 (#9)
+
+See the [report](integrated-lifecycle-2026-11-02.md) for packaged CPU control →
+seed incompatibility/recovery UI → compatible world in the same JVM → exact
+original-input restoration/reopen. The independent pre-fix run reproduced an
+explorer HTTP executor surviving into the next world; the narrow stop-hook fix
+is verified with strict worker/dispatcher termination before subsequent loads.
+Snapshot, settings/context, actual geology, complete sample blocks, all 529
+persisted records' coverage/status/block containers and separate region hashes
+are checked. Original fixtures/shared inputs remain unchanged. #44's dedicated
+DirectML result is reused, not rerun as integrated GPU coverage. #9 remains open
+for trained weights, generator upgrades and remaining lifecycle/concurrency gates;
+#5's original stronger assertion stays failed and #11's overhead is unchanged.
+
 # Trained-weight/backend feasibility (2026-11-01)
 
 The [feasibility report](backend-feasibility-2026-11-01.md) records a blocked #9

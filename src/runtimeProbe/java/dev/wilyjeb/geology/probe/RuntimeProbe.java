@@ -26,6 +26,7 @@ public final class RuntimeProbe {
     private static final java.util.Set<String> NORMALIZED_HOSTS = java.util.Set.of("geologic_variation:limestone",
         "geologic_variation:slate","geologic_variation:quartzite","geologic_variation:gabbro");
     public RuntimeProbe() {
+        if (Boolean.getBoolean("geology.acceptance.integrated")) IntegratedLifecycle.attach();
         NeoForge.EVENT_BUS.addListener(RuntimeProbe::commands);
         NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.server.ServerStoppedEvent event) -> CoalTrace.flush());
     }

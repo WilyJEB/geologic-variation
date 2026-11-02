@@ -83,6 +83,19 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For independent packaged integrated-client rejection/recovery, use
+`scripts/verify-integrated-lifecycle.py` and `scripts/summarize-integrated-lifecycle.py`.
+The [integrated lifecycle report](integrated-lifecycle-2026-11-02.md) documents
+normal client load APIs, offline identity, the property-gated file bridge,
+four loads in one JVM, exact seed-byte restoration, persisted terrain checks,
+the reproduced explorer executor regression and its narrow production fix.
+Supply the built addon's explicit `--expected-addon-sha256`; default pinning
+continues to identify the original pre-fix addon. This mode requires a NEW case,
+an installed library manifest and its matching meta directory, and the separate
+probe. It never reads account files or changes installed profiles. Do not install
+the probe in user worlds. Thread/resource snapshots distinguish the persistent
+idle JVM inference executor from per-world explorer resources, which must close.
+
 For the independently accepted DirectML startup backend matrix, use
 `scripts/verify-backend.py` and `scripts/summarize-backend.py`. The
 [backend report](backend-2026-11-02.md) describes isolated Java runtime preparation,
