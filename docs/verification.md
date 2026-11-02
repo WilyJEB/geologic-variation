@@ -1,3 +1,19 @@
+# Ore/host and stage verification (2026-11-01)
+
+See [the #5/#6 runtime report](host-acceptance-2026-11-01.md) and portable evidence.
+Eight production worlds pass exact surface/carver traversal comparisons at scales
+1/6 and normalized addon/TD-only preservation. All four natural rocks pass real
+server survival drops, Silk Touch, item placement, actual coal placement and cave
+carver fixtures; 24 loaded ore configurations accept them, and all 60 masonry
+variants remain excluded. #6's scoped CPU-baseline acceptance is satisfied.
+
+A controlled vanilla coal fixture changes 148 positions when two overlapping
+placement groups are reversed; all four regional hosts exactly match vanilla in
+each order. This demonstrates a vanilla feature-order mechanism, not attribution
+of every natural difference. #5's strict final regional-position comparison still
+fails and remains open. No production generation, save contract or release JAR
+changed, and the 14.383-second performance opportunity remains #11.
+
 # Production matrix and packaged deployment (2026-10-27–28)
 
 See [the runtime matrix report](runtime-matrix-2026-10-28.md) and its portable

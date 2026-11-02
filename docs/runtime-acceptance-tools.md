@@ -75,6 +75,16 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For generation-stage isolation, four-rock survival/ore/carver fixtures, and the
+overlapping vanilla coal reproduction, use `scripts/verify-ore-hosts.py` and the
+[2026-11-01 report](host-acceptance-2026-11-01.md). The new permission-level-4
+`acceptance stage <surface|carvers|features|full> <x> <z>` command rejects a chunk
+already past its requested status. `acceptance hosts` and `acceptance ore-order`
+are destructive disposable-world fixtures, not gameplay commands. Four natural
+host IDs are normalized to stone only in an additional comparison hash; original
+complete and positioned regional hashes are retained. No stronger assertion in
+the original reproducibility mode is removed or relaxed.
+
 `reproducibility` uses scales 1 and 6, negative-coordinate province boundaries,
 chunk edges, and a known land sample. Each pair uses opposite chunk traversal
 orders. It requires nonempty regional blocks, matching positioned block hashes,

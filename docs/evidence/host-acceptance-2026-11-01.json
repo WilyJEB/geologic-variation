@@ -1,0 +1,4163 @@
+{
+  "stage_cases": [
+    {
+      "name": "stages-s1-t0-td-only",
+      "scale": 1,
+      "trial": 0,
+      "addon": false,
+      "plan": {
+        "edge": [
+          -289,
+          -1024
+        ],
+        "chunks": [
+          [
+            -32,
+            -65
+          ],
+          [
+            -20,
+            -64
+          ],
+          [
+            -19,
+            -64
+          ],
+          [
+            -18,
+            -64
+          ]
+        ],
+        "region_points": [
+          [
+            -290,
+            -1024
+          ],
+          [
+            -289,
+            -1024
+          ]
+        ]
+      },
+      "artifacts": {
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 30091.4894,
+            "blocks_sha256": "1c3d575bfa1cd90e8065616b191dcbaa120aae07e514e38e0b2bbf794279200d",
+            "stage": "surface",
+            "normalized_sha256": "1c3d575bfa1cd90e8065616b191dcbaa120aae07e514e38e0b2bbf794279200d",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 80616,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15711,
+              "minecraft:dirt": 552,
+              "minecraft:grass_block": 138,
+              "minecraft:stone": 19964
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 5687.5807,
+            "blocks_sha256": "0840e0bf08bf1888eeefe22c2fb2bf296d0bec870947a5e7c3dabb79752e6555",
+            "stage": "surface",
+            "normalized_sha256": "0840e0bf08bf1888eeefe22c2fb2bf296d0bec870947a5e7c3dabb79752e6555",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15713,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 24318
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 3554.8338,
+            "blocks_sha256": "5c00e1e4c4c5c8b46df15e1834944b67f3e38f6587dac26763dacd16e6e4323c",
+            "stage": "surface",
+            "normalized_sha256": "5c00e1e4c4c5c8b46df15e1834944b67f3e38f6587dac26763dacd16e6e4323c",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 76134,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15775,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165,
+              "minecraft:stone": 24274
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 32.5881,
+            "blocks_sha256": "9bf48cb795a50d3a20e992a72405cd464822825a9315c9d88417d8f150487c04",
+            "stage": "surface",
+            "normalized_sha256": "9bf48cb795a50d3a20e992a72405cd464822825a9315c9d88417d8f150487c04",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75455,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15758,
+              "minecraft:dirt": 531,
+              "minecraft:grass_block": 121,
+              "minecraft:stone": 25126
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 9.5869,
+            "blocks_sha256": "e19686712dd305f602ebf4422c2ff939ae33b896dee240d9a57d9ed9c75e7db5",
+            "stage": "carvers",
+            "normalized_sha256": "e19686712dd305f602ebf4422c2ff939ae33b896dee240d9a57d9ed9c75e7db5",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 80662,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15302,
+              "minecraft:dirt": 551,
+              "minecraft:grass_block": 138,
+              "minecraft:stone": 19919,
+              "minecraft:water": 409
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 4.3971,
+            "blocks_sha256": "8840fb27405c7bc6082e1ec58ba0ad3fbbe6438f80d24bd91f79f16be01ce69d",
+            "stage": "carvers",
+            "normalized_sha256": "8840fb27405c7bc6082e1ec58ba0ad3fbbe6438f80d24bd91f79f16be01ce69d",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15705,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 24185,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 4.3586,
+            "blocks_sha256": "62c437e55b0831a3ffa9d4cdeec8434eec7531bded463ee8212906af5068383d",
+            "stage": "carvers",
+            "normalized_sha256": "62c437e55b0831a3ffa9d4cdeec8434eec7531bded463ee8212906af5068383d",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 76164,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15283,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165,
+              "minecraft:stone": 23817,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 3.9987,
+            "blocks_sha256": "4f351b28681fc3bf39d1f3ae9facb7e55ab2d6b935097239db761b5628956ccc",
+            "stage": "carvers",
+            "normalized_sha256": "4f351b28681fc3bf39d1f3ae9facb7e55ab2d6b935097239db761b5628956ccc",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75633,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15161,
+              "minecraft:dirt": 481,
+              "minecraft:grass_block": 118,
+              "minecraft:stone": 24734,
+              "minecraft:water": 864
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 404.6759,
+            "blocks_sha256": "e94de895ee1a12ad064ee85f0c5a068c51daa3dac966051c4fbbcc513ce95ade",
+            "stage": "full",
+            "normalized_sha256": "e94de895ee1a12ad064ee85f0c5a068c51daa3dac966051c4fbbcc513ce95ade",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 80620,
+              "minecraft:andesite": 1210,
+              "minecraft:bedrock": 1803,
+              "minecraft:coal_ore": 121,
+              "minecraft:copper_ore": 107,
+              "minecraft:deepslate": 13698,
+              "minecraft:deepslate_copper_ore": 1,
+              "minecraft:deepslate_diamond_ore": 34,
+              "minecraft:deepslate_gold_ore": 23,
+              "minecraft:deepslate_iron_ore": 26,
+              "minecraft:deepslate_lapis_ore": 22,
+              "minecraft:deepslate_redstone_ore": 29,
+              "minecraft:diorite": 1337,
+              "minecraft:dirt": 906,
+              "minecraft:emerald_ore": 3,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 846,
+              "minecraft:grass_block": 138,
+              "minecraft:gravel": 608,
+              "minecraft:infested_deepslate": 28,
+              "minecraft:infested_stone": 27,
+              "minecraft:iron_ore": 49,
+              "minecraft:lapis_ore": 1,
+              "minecraft:redstone_ore": 6,
+              "minecraft:short_grass": 42,
+              "minecraft:stone": 15597,
+              "minecraft:tuff": 1085,
+              "minecraft:water": 409
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 473.4231,
+            "blocks_sha256": "558ac8edc4015a7704565cdef6fdec7c5baca9c1994f46f22ae42207e6139dd8",
+            "stage": "full",
+            "normalized_sha256": "558ac8edc4015a7704565cdef6fdec7c5baca9c1994f46f22ae42207e6139dd8",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75559,
+              "minecraft:andesite": 1027,
+              "minecraft:bedrock": 1811,
+              "minecraft:coal_ore": 270,
+              "minecraft:copper_ore": 109,
+              "minecraft:deepslate": 13830,
+              "minecraft:deepslate_copper_ore": 6,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 22,
+              "minecraft:deepslate_iron_ore": 18,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1520,
+              "minecraft:dirt": 1630,
+              "minecraft:gold_ore": 7,
+              "minecraft:granite": 1145,
+              "minecraft:grass_block": 254,
+              "minecraft:gravel": 396,
+              "minecraft:iron_ore": 64,
+              "minecraft:lapis_ore": 3,
+              "minecraft:oak_leaves": 79,
+              "minecraft:oak_log": 12,
+              "minecraft:short_grass": 12,
+              "minecraft:stone": 19336,
+              "minecraft:tuff": 1462,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 92.2702,
+            "blocks_sha256": "7b2d0600f94070128b81e4da65d36e720f40b53ece94cffc2781d8ad6a4b3be7",
+            "stage": "full",
+            "normalized_sha256": "7b2d0600f94070128b81e4da65d36e720f40b53ece94cffc2781d8ad6a4b3be7",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 76107,
+              "minecraft:andesite": 630,
+              "minecraft:bedrock": 1780,
+              "minecraft:birch_leaves": 7,
+              "minecraft:coal_ore": 181,
+              "minecraft:copper_ore": 140,
+              "minecraft:deepslate": 14223,
+              "minecraft:deepslate_copper_ore": 2,
+              "minecraft:deepslate_diamond_ore": 33,
+              "minecraft:deepslate_gold_ore": 26,
+              "minecraft:deepslate_iron_ore": 27,
+              "minecraft:deepslate_lapis_ore": 3,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1250,
+              "minecraft:dirt": 1205,
+              "minecraft:emerald_ore": 2,
+              "minecraft:granite": 989,
+              "minecraft:grass_block": 164,
+              "minecraft:gravel": 502,
+              "minecraft:infested_deepslate": 35,
+              "minecraft:infested_stone": 10,
+              "minecraft:iron_ore": 55,
+              "minecraft:lapis_ore": 13,
+              "minecraft:oak_leaves": 40,
+              "minecraft:oak_log": 6,
+              "minecraft:redstone_ore": 2,
+              "minecraft:short_grass": 4,
+              "minecraft:stone": 19827,
+              "minecraft:tuff": 574,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 89.749,
+            "blocks_sha256": "e0f8297ad41fe2f2e67d60a858b217e34a2ce1be47e1ea72cbb5829d50e0300b",
+            "stage": "full",
+            "normalized_sha256": "e0f8297ad41fe2f2e67d60a858b217e34a2ce1be47e1ea72cbb5829d50e0300b",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75628,
+              "minecraft:andesite": 988,
+              "minecraft:bedrock": 1793,
+              "minecraft:coal_ore": 284,
+              "minecraft:copper_ore": 120,
+              "minecraft:deepslate": 13354,
+              "minecraft:deepslate_diamond_ore": 26,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 21,
+              "minecraft:deepslate_lapis_ore": 21,
+              "minecraft:deepslate_redstone_ore": 13,
+              "minecraft:diorite": 858,
+              "minecraft:dirt": 901,
+              "minecraft:emerald_ore": 1,
+              "minecraft:gold_ore": 11,
+              "minecraft:granite": 1359,
+              "minecraft:grass_block": 118,
+              "minecraft:gravel": 842,
+              "minecraft:infested_deepslate": 9,
+              "minecraft:infested_stone": 6,
+              "minecraft:iron_ore": 60,
+              "minecraft:lapis_ore": 12,
+              "minecraft:magma_block": 11,
+              "minecraft:redstone_ore": 5,
+              "minecraft:short_grass": 5,
+              "minecraft:stone": 20506,
+              "minecraft:tuff": 947,
+              "minecraft:water": 864
+            }
+          }
+        ]
+      },
+      "logs": {
+        "console-1.log": "099424fba7d15cdb87df0111040b3f16e3fe0d6a15121ea7926fc1ed3cfdfd15"
+      }
+    },
+    {
+      "name": "stages-s1-t0-addon",
+      "scale": 1,
+      "trial": 0,
+      "addon": true,
+      "plan": {
+        "edge": [
+          -289,
+          -1024
+        ],
+        "chunks": [
+          [
+            -32,
+            -65
+          ],
+          [
+            -20,
+            -64
+          ],
+          [
+            -19,
+            -64
+          ],
+          [
+            -18,
+            -64
+          ]
+        ],
+        "region_points": [
+          [
+            -290,
+            -1024
+          ],
+          [
+            -289,
+            -1024
+          ]
+        ]
+      },
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226",
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 32224.1484,
+            "blocks_sha256": "758672e30c9a2859d1073b7d04ed8f1cb2f8d3362c3caae212184b7763dd4a6d",
+            "stage": "surface",
+            "normalized_sha256": "1c3d575bfa1cd90e8065616b191dcbaa120aae07e514e38e0b2bbf794279200d",
+            "geology_sha256": "f5db31b516bb7e3c16ad8376157f05982c6c239a306b3922009032d09369b7ae",
+            "counts": {
+              "geologic_variation:slate": 19964,
+              "minecraft:air": 80616,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15711,
+              "minecraft:dirt": 552,
+              "minecraft:grass_block": 138
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 5284.6608,
+            "blocks_sha256": "8e9e686ca4494276673f69c5de124c4b072d2b900ac0a36f405b16c4ba6af185",
+            "stage": "surface",
+            "normalized_sha256": "0840e0bf08bf1888eeefe22c2fb2bf296d0bec870947a5e7c3dabb79752e6555",
+            "geology_sha256": "87347f1d9ca369f87b8cd678d40e12707a0347e65c034d5f4d73e1a89ae08c84",
+            "counts": {
+              "geologic_variation:slate": 24318,
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15713,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 13512.7999,
+            "blocks_sha256": "17956febb9f91dabb81a1d916e8b0b5027f08c702a239270d7b00981fa5eae72",
+            "stage": "surface",
+            "normalized_sha256": "5c00e1e4c4c5c8b46df15e1834944b67f3e38f6587dac26763dacd16e6e4323c",
+            "geology_sha256": "f4a21f6b86045a2d2632dabdda5ede70ee6c90770637eb3f29cff59eb07ffc64",
+            "counts": {
+              "geologic_variation:quartzite": 3877,
+              "geologic_variation:slate": 20397,
+              "minecraft:air": 76134,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15775,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 24.7917,
+            "blocks_sha256": "48526be6aeef3f8799204ecddaec51c9f768197a4d0df45d260ba0eddd456485",
+            "stage": "surface",
+            "normalized_sha256": "9bf48cb795a50d3a20e992a72405cd464822825a9315c9d88417d8f150487c04",
+            "geology_sha256": "b5ff4118caf20b6f48fa29580a7fb91e4912251bd2e29a2ec72e6678823acb71",
+            "counts": {
+              "geologic_variation:quartzite": 25126,
+              "minecraft:air": 75455,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15758,
+              "minecraft:dirt": 531,
+              "minecraft:grass_block": 121
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 9.8967,
+            "blocks_sha256": "de15685cb9151c2bb0d84cdf8eceade25c4728ca455f210986b65bbaf4f47681",
+            "stage": "carvers",
+            "normalized_sha256": "e19686712dd305f602ebf4422c2ff939ae33b896dee240d9a57d9ed9c75e7db5",
+            "geology_sha256": "2846d0f42412d0f8de66c0ee3afdceb08ea609090bd8f510b4a752790fb8cda8",
+            "counts": {
+              "geologic_variation:slate": 19919,
+              "minecraft:air": 80662,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15302,
+              "minecraft:dirt": 551,
+              "minecraft:grass_block": 138,
+              "minecraft:water": 409
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 3.6373,
+            "blocks_sha256": "8fc670331c7396c9a14e4b33faa0979fa717ac64b7ec62d6725a03053818895c",
+            "stage": "carvers",
+            "normalized_sha256": "8840fb27405c7bc6082e1ec58ba0ad3fbbe6438f80d24bd91f79f16be01ce69d",
+            "geology_sha256": "de436eb4921b30f02abe4994fcf27119e165b55d8a5b018aeb25795508ff852c",
+            "counts": {
+              "geologic_variation:slate": 24185,
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15705,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 2.9437,
+            "blocks_sha256": "58d2239d8c0c3123f45f71d5edfd874007cb3d8182e439809a25e7c1de9dda08",
+            "stage": "carvers",
+            "normalized_sha256": "62c437e55b0831a3ffa9d4cdeec8434eec7531bded463ee8212906af5068383d",
+            "geology_sha256": "ed02971b4726ba133875cd60d5dd5694bb867b1f85d71c741ce1c50a9302c464",
+            "counts": {
+              "geologic_variation:quartzite": 3790,
+              "geologic_variation:slate": 20027,
+              "minecraft:air": 76164,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15283,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 3.662,
+            "blocks_sha256": "429a88b2e2b97a703c4b3c44fa3678faaf8b6b176ce00abae0cfec1f674a516e",
+            "stage": "carvers",
+            "normalized_sha256": "4f351b28681fc3bf39d1f3ae9facb7e55ab2d6b935097239db761b5628956ccc",
+            "geology_sha256": "46c9a55b8f78dabf1f2bbac66d458be66656267f5907f9f15a4e4950f07437a9",
+            "counts": {
+              "geologic_variation:quartzite": 24734,
+              "minecraft:air": 75633,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15161,
+              "minecraft:dirt": 481,
+              "minecraft:grass_block": 118,
+              "minecraft:water": 864
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 417.1572,
+            "blocks_sha256": "4bae9709df45e5ff0c7dc9b1111de190967d8c607cd141695c7e88fd0c1b0872",
+            "stage": "full",
+            "normalized_sha256": "0b234fe906b2d44968771b264d433febb9a93f310b850a34e5047bdf5bef2bd4",
+            "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+            "counts": {
+              "geologic_variation:slate": 15597,
+              "minecraft:air": 80628,
+              "minecraft:andesite": 1150,
+              "minecraft:bedrock": 1803,
+              "minecraft:coal_ore": 121,
+              "minecraft:copper_ore": 107,
+              "minecraft:deepslate": 13698,
+              "minecraft:deepslate_copper_ore": 1,
+              "minecraft:deepslate_diamond_ore": 34,
+              "minecraft:deepslate_gold_ore": 23,
+              "minecraft:deepslate_iron_ore": 26,
+              "minecraft:deepslate_lapis_ore": 22,
+              "minecraft:deepslate_redstone_ore": 29,
+              "minecraft:diorite": 1397,
+              "minecraft:dirt": 910,
+              "minecraft:emerald_ore": 3,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 846,
+              "minecraft:grass_block": 138,
+              "minecraft:gravel": 604,
+              "minecraft:infested_deepslate": 28,
+              "minecraft:infested_stone": 27,
+              "minecraft:iron_ore": 49,
+              "minecraft:lapis_ore": 1,
+              "minecraft:redstone_ore": 6,
+              "minecraft:short_grass": 34,
+              "minecraft:tuff": 1085,
+              "minecraft:water": 409
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 487.8265,
+            "blocks_sha256": "f62cfc9bd5811f80ae1c12c88727956f44dc6fe6ba7b5e24793ec4f16b6b815c",
+            "stage": "full",
+            "normalized_sha256": "68a87474ad4e956a92dd4a48e9ff4931d81cd74eb5fae0ef79de8a77adec9f67",
+            "geology_sha256": "0354308403af5d07e195888a6c577a85ae935fce915ca02e192c0be2b6dd5473",
+            "counts": {
+              "geologic_variation:slate": 19336,
+              "minecraft:air": 75498,
+              "minecraft:andesite": 1031,
+              "minecraft:bedrock": 1811,
+              "minecraft:birch_leaves": 20,
+              "minecraft:coal_ore": 270,
+              "minecraft:copper_ore": 109,
+              "minecraft:deepslate": 13830,
+              "minecraft:deepslate_copper_ore": 6,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 22,
+              "minecraft:deepslate_iron_ore": 18,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1516,
+              "minecraft:dirt": 1630,
+              "minecraft:gold_ore": 7,
+              "minecraft:granite": 1145,
+              "minecraft:grass_block": 254,
+              "minecraft:gravel": 396,
+              "minecraft:iron_ore": 64,
+              "minecraft:lapis_ore": 3,
+              "minecraft:oak_leaves": 118,
+              "minecraft:oak_log": 10,
+              "minecraft:short_grass": 16,
+              "minecraft:tuff": 1462,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 83.9098,
+            "blocks_sha256": "c3ea118bb27019479e3634ce73e56b05dbeeddf9871b96b6a714763540d09721",
+            "stage": "full",
+            "normalized_sha256": "3b32b35db50adf2b410520e038095dc8e9e9b6e87145ce537498dfdfffe9736b",
+            "geology_sha256": "8bb4d0a28973153b469d21905af0af39053e60d5f9faabc7adb46f8054864d00",
+            "counts": {
+              "geologic_variation:quartzite": 2927,
+              "geologic_variation:slate": 16900,
+              "minecraft:air": 76033,
+              "minecraft:andesite": 630,
+              "minecraft:bedrock": 1780,
+              "minecraft:birch_leaves": 56,
+              "minecraft:birch_log": 6,
+              "minecraft:coal_ore": 181,
+              "minecraft:copper_ore": 140,
+              "minecraft:deepslate": 14223,
+              "minecraft:deepslate_copper_ore": 2,
+              "minecraft:deepslate_diamond_ore": 33,
+              "minecraft:deepslate_gold_ore": 26,
+              "minecraft:deepslate_iron_ore": 27,
+              "minecraft:deepslate_lapis_ore": 3,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1250,
+              "minecraft:dirt": 1206,
+              "minecraft:emerald_ore": 2,
+              "minecraft:granite": 989,
+              "minecraft:grass_block": 163,
+              "minecraft:gravel": 502,
+              "minecraft:infested_deepslate": 35,
+              "minecraft:infested_stone": 10,
+              "minecraft:iron_ore": 55,
+              "minecraft:lapis_ore": 13,
+              "minecraft:oak_leaves": 56,
+              "minecraft:oak_log": 4,
+              "minecraft:redstone_ore": 2,
+              "minecraft:short_grass": 9,
+              "minecraft:tuff": 574,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 86.3402,
+            "blocks_sha256": "47f6b3bebf94993e8fedea7e18757f95f02e3324530d609d14d53b2b7ac6355f",
+            "stage": "full",
+            "normalized_sha256": "84dd2dd9285d02d8edf2503a2ed27b6f18c9c8fd7552e3ebf632c92a4a8eeb51",
+            "geology_sha256": "f48bf00a30ae76102fe62bb39aff35e1ebe5ed0568fd0d75399943d7f959018d",
+            "counts": {
+              "geologic_variation:quartzite": 20506,
+              "minecraft:air": 75485,
+              "minecraft:andesite": 988,
+              "minecraft:bedrock": 1793,
+              "minecraft:coal_ore": 284,
+              "minecraft:copper_ore": 120,
+              "minecraft:deepslate": 13354,
+              "minecraft:deepslate_diamond_ore": 26,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 21,
+              "minecraft:deepslate_lapis_ore": 21,
+              "minecraft:deepslate_redstone_ore": 13,
+              "minecraft:diorite": 858,
+              "minecraft:dirt": 904,
+              "minecraft:emerald_ore": 1,
+              "minecraft:gold_ore": 11,
+              "minecraft:granite": 1359,
+              "minecraft:grass_block": 115,
+              "minecraft:gravel": 842,
+              "minecraft:infested_deepslate": 9,
+              "minecraft:infested_stone": 6,
+              "minecraft:iron_ore": 60,
+              "minecraft:lapis_ore": 12,
+              "minecraft:magma_block": 11,
+              "minecraft:oak_leaves": 129,
+              "minecraft:oak_log": 15,
+              "minecraft:redstone_ore": 5,
+              "minecraft:short_grass": 4,
+              "minecraft:tuff": 947,
+              "minecraft:water": 864
+            }
+          }
+        ]
+      },
+      "regions": [
+        {
+          "kind": "region",
+          "x": -290,
+          "z": -1024,
+          "wall_ms": 2.0941,
+          "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]",
+          "cache_entries": 2
+        },
+        {
+          "kind": "region",
+          "x": -289,
+          "z": -1024,
+          "wall_ms": 0.0283,
+          "region": "Region[province=Province[cellX=0, cellZ=-1, anchorX=551, anchorZ=-1012, identity=328585151156627333], stone=QUARTZITE, elevationMetres=798.36, reliefMetres=1194.0]",
+          "cache_entries": 2
+        }
+      ],
+      "host_fixture": {
+        "families": [
+          {
+            "carved_to_air": true,
+            "host": "limestone",
+            "item_placement": true,
+            "coal_target": true,
+            "exact_stone_target": false,
+            "placed_coal_blocks": 20,
+            "ore_positions_match_stone": true,
+            "survival_drops": {
+              "hand": "none",
+              "pickaxe": "geologic_variation:cobbled_limestone",
+              "silk": "geologic_variation:limestone"
+            }
+          },
+          {
+            "carved_to_air": true,
+            "host": "slate",
+            "item_placement": true,
+            "coal_target": true,
+            "exact_stone_target": false,
+            "placed_coal_blocks": 20,
+            "ore_positions_match_stone": true,
+            "survival_drops": {
+              "hand": "none",
+              "pickaxe": "geologic_variation:cobbled_slate",
+              "silk": "geologic_variation:slate"
+            }
+          },
+          {
+            "carved_to_air": true,
+            "host": "quartzite",
+            "item_placement": true,
+            "coal_target": true,
+            "exact_stone_target": false,
+            "placed_coal_blocks": 20,
+            "ore_positions_match_stone": true,
+            "survival_drops": {
+              "hand": "none",
+              "pickaxe": "geologic_variation:cobbled_quartzite",
+              "silk": "geologic_variation:quartzite"
+            }
+          },
+          {
+            "carved_to_air": true,
+            "host": "gabbro",
+            "item_placement": true,
+            "coal_target": true,
+            "exact_stone_target": false,
+            "placed_coal_blocks": 20,
+            "ore_positions_match_stone": true,
+            "survival_drops": {
+              "hand": "none",
+              "pickaxe": "geologic_variation:cobbled_gabbro",
+              "silk": "geologic_variation:gabbro"
+            }
+          }
+        ],
+        "kind": "hosts",
+        "excluded_masonry": [
+          "cobbled_limestone",
+          "polished_limestone",
+          "limestone_bricks",
+          "limestone_stairs"
+        ],
+        "position": [
+          -504,
+          220,
+          -1032
+        ]
+      },
+      "logs": {
+        "console-1.log": "caa6ceac403477a16e1d3b0dc8e256c83e2b94683ad9e22166b0c4365aef0ee0"
+      }
+    },
+    {
+      "name": "stages-s1-t1-td-only",
+      "scale": 1,
+      "trial": 1,
+      "addon": false,
+      "plan": {
+        "edge": [
+          -289,
+          -1024
+        ],
+        "chunks": [
+          [
+            -32,
+            -65
+          ],
+          [
+            -20,
+            -64
+          ],
+          [
+            -19,
+            -64
+          ],
+          [
+            -18,
+            -64
+          ]
+        ],
+        "region_points": [
+          [
+            -290,
+            -1024
+          ],
+          [
+            -289,
+            -1024
+          ]
+        ]
+      },
+      "artifacts": {
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 31826.8089,
+            "blocks_sha256": "9bf48cb795a50d3a20e992a72405cd464822825a9315c9d88417d8f150487c04",
+            "stage": "surface",
+            "normalized_sha256": "9bf48cb795a50d3a20e992a72405cd464822825a9315c9d88417d8f150487c04",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75455,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15758,
+              "minecraft:dirt": 531,
+              "minecraft:grass_block": 121,
+              "minecraft:stone": 25126
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 28.663,
+            "blocks_sha256": "5c00e1e4c4c5c8b46df15e1834944b67f3e38f6587dac26763dacd16e6e4323c",
+            "stage": "surface",
+            "normalized_sha256": "5c00e1e4c4c5c8b46df15e1834944b67f3e38f6587dac26763dacd16e6e4323c",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 76134,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15775,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165,
+              "minecraft:stone": 24274
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 26.647,
+            "blocks_sha256": "0840e0bf08bf1888eeefe22c2fb2bf296d0bec870947a5e7c3dabb79752e6555",
+            "stage": "surface",
+            "normalized_sha256": "0840e0bf08bf1888eeefe22c2fb2bf296d0bec870947a5e7c3dabb79752e6555",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15713,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 24318
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 10223.5208,
+            "blocks_sha256": "1c3d575bfa1cd90e8065616b191dcbaa120aae07e514e38e0b2bbf794279200d",
+            "stage": "surface",
+            "normalized_sha256": "1c3d575bfa1cd90e8065616b191dcbaa120aae07e514e38e0b2bbf794279200d",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 80616,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15711,
+              "minecraft:dirt": 552,
+              "minecraft:grass_block": 138,
+              "minecraft:stone": 19964
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 11.6081,
+            "blocks_sha256": "4f351b28681fc3bf39d1f3ae9facb7e55ab2d6b935097239db761b5628956ccc",
+            "stage": "carvers",
+            "normalized_sha256": "4f351b28681fc3bf39d1f3ae9facb7e55ab2d6b935097239db761b5628956ccc",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75633,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15161,
+              "minecraft:dirt": 481,
+              "minecraft:grass_block": 118,
+              "minecraft:stone": 24734,
+              "minecraft:water": 864
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 2.8997,
+            "blocks_sha256": "62c437e55b0831a3ffa9d4cdeec8434eec7531bded463ee8212906af5068383d",
+            "stage": "carvers",
+            "normalized_sha256": "62c437e55b0831a3ffa9d4cdeec8434eec7531bded463ee8212906af5068383d",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 76164,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15283,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165,
+              "minecraft:stone": 23817,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 2.2588,
+            "blocks_sha256": "8840fb27405c7bc6082e1ec58ba0ad3fbbe6438f80d24bd91f79f16be01ce69d",
+            "stage": "carvers",
+            "normalized_sha256": "8840fb27405c7bc6082e1ec58ba0ad3fbbe6438f80d24bd91f79f16be01ce69d",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15705,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 24185,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 3.1332,
+            "blocks_sha256": "e19686712dd305f602ebf4422c2ff939ae33b896dee240d9a57d9ed9c75e7db5",
+            "stage": "carvers",
+            "normalized_sha256": "e19686712dd305f602ebf4422c2ff939ae33b896dee240d9a57d9ed9c75e7db5",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 80662,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15302,
+              "minecraft:dirt": 551,
+              "minecraft:grass_block": 138,
+              "minecraft:stone": 19919,
+              "minecraft:water": 409
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 384.0375,
+            "blocks_sha256": "e0f8297ad41fe2f2e67d60a858b217e34a2ce1be47e1ea72cbb5829d50e0300b",
+            "stage": "full",
+            "normalized_sha256": "e0f8297ad41fe2f2e67d60a858b217e34a2ce1be47e1ea72cbb5829d50e0300b",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75628,
+              "minecraft:andesite": 988,
+              "minecraft:bedrock": 1793,
+              "minecraft:coal_ore": 284,
+              "minecraft:copper_ore": 120,
+              "minecraft:deepslate": 13354,
+              "minecraft:deepslate_diamond_ore": 26,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 21,
+              "minecraft:deepslate_lapis_ore": 21,
+              "minecraft:deepslate_redstone_ore": 13,
+              "minecraft:diorite": 858,
+              "minecraft:dirt": 901,
+              "minecraft:emerald_ore": 1,
+              "minecraft:gold_ore": 11,
+              "minecraft:granite": 1359,
+              "minecraft:grass_block": 118,
+              "minecraft:gravel": 842,
+              "minecraft:infested_deepslate": 9,
+              "minecraft:infested_stone": 6,
+              "minecraft:iron_ore": 60,
+              "minecraft:lapis_ore": 12,
+              "minecraft:magma_block": 11,
+              "minecraft:redstone_ore": 5,
+              "minecraft:short_grass": 5,
+              "minecraft:stone": 20506,
+              "minecraft:tuff": 947,
+              "minecraft:water": 864
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 173.7071,
+            "blocks_sha256": "3cbcced14646ff7374784e4454079c445eeb90ae804d6ed6edb35a97b0a414b4",
+            "stage": "full",
+            "normalized_sha256": "3cbcced14646ff7374784e4454079c445eeb90ae804d6ed6edb35a97b0a414b4",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 76107,
+              "minecraft:andesite": 630,
+              "minecraft:bedrock": 1780,
+              "minecraft:birch_leaves": 7,
+              "minecraft:coal_ore": 181,
+              "minecraft:copper_ore": 140,
+              "minecraft:deepslate": 14223,
+              "minecraft:deepslate_copper_ore": 2,
+              "minecraft:deepslate_diamond_ore": 33,
+              "minecraft:deepslate_gold_ore": 26,
+              "minecraft:deepslate_iron_ore": 28,
+              "minecraft:deepslate_lapis_ore": 3,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1282,
+              "minecraft:dirt": 1204,
+              "minecraft:emerald_ore": 2,
+              "minecraft:granite": 957,
+              "minecraft:grass_block": 164,
+              "minecraft:gravel": 502,
+              "minecraft:infested_deepslate": 35,
+              "minecraft:infested_stone": 10,
+              "minecraft:iron_ore": 55,
+              "minecraft:lapis_ore": 13,
+              "minecraft:oak_leaves": 40,
+              "minecraft:oak_log": 6,
+              "minecraft:redstone_ore": 2,
+              "minecraft:short_grass": 4,
+              "minecraft:stone": 19827,
+              "minecraft:tuff": 574,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 71.522,
+            "blocks_sha256": "da8f216a9475bf4022be0cc63b4f41419776d861d88c7b6f835c16e883c4215a",
+            "stage": "full",
+            "normalized_sha256": "da8f216a9475bf4022be0cc63b4f41419776d861d88c7b6f835c16e883c4215a",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 75559,
+              "minecraft:andesite": 1031,
+              "minecraft:bedrock": 1811,
+              "minecraft:coal_ore": 270,
+              "minecraft:copper_ore": 109,
+              "minecraft:deepslate": 13830,
+              "minecraft:deepslate_copper_ore": 6,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 22,
+              "minecraft:deepslate_iron_ore": 20,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1516,
+              "minecraft:dirt": 1628,
+              "minecraft:gold_ore": 7,
+              "minecraft:granite": 1145,
+              "minecraft:grass_block": 254,
+              "minecraft:gravel": 396,
+              "minecraft:iron_ore": 64,
+              "minecraft:lapis_ore": 3,
+              "minecraft:oak_leaves": 79,
+              "minecraft:oak_log": 12,
+              "minecraft:short_grass": 12,
+              "minecraft:stone": 19336,
+              "minecraft:tuff": 1462,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 261.2068,
+            "blocks_sha256": "44ca2f31f945bf6c0befc4e2f488fe45973b3cdf85b4303547589711804a9b8c",
+            "stage": "full",
+            "normalized_sha256": "44ca2f31f945bf6c0befc4e2f488fe45973b3cdf85b4303547589711804a9b8c",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 80620,
+              "minecraft:andesite": 1150,
+              "minecraft:bedrock": 1803,
+              "minecraft:coal_ore": 121,
+              "minecraft:copper_ore": 107,
+              "minecraft:deepslate": 13698,
+              "minecraft:deepslate_copper_ore": 1,
+              "minecraft:deepslate_diamond_ore": 34,
+              "minecraft:deepslate_gold_ore": 23,
+              "minecraft:deepslate_iron_ore": 26,
+              "minecraft:deepslate_lapis_ore": 22,
+              "minecraft:deepslate_redstone_ore": 29,
+              "minecraft:diorite": 1397,
+              "minecraft:dirt": 910,
+              "minecraft:emerald_ore": 3,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 846,
+              "minecraft:grass_block": 138,
+              "minecraft:gravel": 604,
+              "minecraft:infested_deepslate": 28,
+              "minecraft:infested_stone": 27,
+              "minecraft:iron_ore": 49,
+              "minecraft:lapis_ore": 1,
+              "minecraft:redstone_ore": 6,
+              "minecraft:short_grass": 42,
+              "minecraft:stone": 15597,
+              "minecraft:tuff": 1085,
+              "minecraft:water": 409
+            }
+          }
+        ]
+      },
+      "logs": {
+        "console-1.log": "ac3112e9a4081d98f6843d397dfc0ae6ba6765ae1591358b5ddcc64d39f8e109"
+      }
+    },
+    {
+      "name": "stages-s1-t1-addon",
+      "scale": 1,
+      "trial": 1,
+      "addon": true,
+      "plan": {
+        "edge": [
+          -289,
+          -1024
+        ],
+        "chunks": [
+          [
+            -32,
+            -65
+          ],
+          [
+            -20,
+            -64
+          ],
+          [
+            -19,
+            -64
+          ],
+          [
+            -18,
+            -64
+          ]
+        ],
+        "region_points": [
+          [
+            -290,
+            -1024
+          ],
+          [
+            -289,
+            -1024
+          ]
+        ]
+      },
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226",
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 39556.2987,
+            "blocks_sha256": "48526be6aeef3f8799204ecddaec51c9f768197a4d0df45d260ba0eddd456485",
+            "stage": "surface",
+            "normalized_sha256": "9bf48cb795a50d3a20e992a72405cd464822825a9315c9d88417d8f150487c04",
+            "geology_sha256": "b5ff4118caf20b6f48fa29580a7fb91e4912251bd2e29a2ec72e6678823acb71",
+            "counts": {
+              "geologic_variation:quartzite": 25126,
+              "minecraft:air": 75455,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15758,
+              "minecraft:dirt": 531,
+              "minecraft:grass_block": 121
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 9586.9769,
+            "blocks_sha256": "17956febb9f91dabb81a1d916e8b0b5027f08c702a239270d7b00981fa5eae72",
+            "stage": "surface",
+            "normalized_sha256": "5c00e1e4c4c5c8b46df15e1834944b67f3e38f6587dac26763dacd16e6e4323c",
+            "geology_sha256": "f4a21f6b86045a2d2632dabdda5ede70ee6c90770637eb3f29cff59eb07ffc64",
+            "counts": {
+              "geologic_variation:quartzite": 3877,
+              "geologic_variation:slate": 20397,
+              "minecraft:air": 76134,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15775,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 25.7979,
+            "blocks_sha256": "8e9e686ca4494276673f69c5de124c4b072d2b900ac0a36f405b16c4ba6af185",
+            "stage": "surface",
+            "normalized_sha256": "0840e0bf08bf1888eeefe22c2fb2bf296d0bec870947a5e7c3dabb79752e6555",
+            "geology_sha256": "87347f1d9ca369f87b8cd678d40e12707a0347e65c034d5f4d73e1a89ae08c84",
+            "counts": {
+              "geologic_variation:slate": 24318,
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15713,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 4681.9524,
+            "blocks_sha256": "758672e30c9a2859d1073b7d04ed8f1cb2f8d3362c3caae212184b7763dd4a6d",
+            "stage": "surface",
+            "normalized_sha256": "1c3d575bfa1cd90e8065616b191dcbaa120aae07e514e38e0b2bbf794279200d",
+            "geology_sha256": "f5db31b516bb7e3c16ad8376157f05982c6c239a306b3922009032d09369b7ae",
+            "counts": {
+              "geologic_variation:slate": 19964,
+              "minecraft:air": 80616,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15711,
+              "minecraft:dirt": 552,
+              "minecraft:grass_block": 138
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 14.7358,
+            "blocks_sha256": "429a88b2e2b97a703c4b3c44fa3678faaf8b6b176ce00abae0cfec1f674a516e",
+            "stage": "carvers",
+            "normalized_sha256": "4f351b28681fc3bf39d1f3ae9facb7e55ab2d6b935097239db761b5628956ccc",
+            "geology_sha256": "46c9a55b8f78dabf1f2bbac66d458be66656267f5907f9f15a4e4950f07437a9",
+            "counts": {
+              "geologic_variation:quartzite": 24734,
+              "minecraft:air": 75633,
+              "minecraft:bedrock": 1793,
+              "minecraft:deepslate": 15161,
+              "minecraft:dirt": 481,
+              "minecraft:grass_block": 118,
+              "minecraft:water": 864
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 2.137,
+            "blocks_sha256": "58d2239d8c0c3123f45f71d5edfd874007cb3d8182e439809a25e7c1de9dda08",
+            "stage": "carvers",
+            "normalized_sha256": "62c437e55b0831a3ffa9d4cdeec8434eec7531bded463ee8212906af5068383d",
+            "geology_sha256": "ed02971b4726ba133875cd60d5dd5694bb867b1f85d71c741ce1c50a9302c464",
+            "counts": {
+              "geologic_variation:quartzite": 3790,
+              "geologic_variation:slate": 20027,
+              "minecraft:air": 76164,
+              "minecraft:bedrock": 1780,
+              "minecraft:deepslate": 15283,
+              "minecraft:dirt": 656,
+              "minecraft:grass_block": 165,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 2.3271,
+            "blocks_sha256": "8fc670331c7396c9a14e4b33faa0979fa717ac64b7ec62d6725a03053818895c",
+            "stage": "carvers",
+            "normalized_sha256": "8840fb27405c7bc6082e1ec58ba0ad3fbbe6438f80d24bd91f79f16be01ce69d",
+            "geology_sha256": "de436eb4921b30f02abe4994fcf27119e165b55d8a5b018aeb25795508ff852c",
+            "counts": {
+              "geologic_variation:slate": 24185,
+              "minecraft:air": 75662,
+              "minecraft:bedrock": 1811,
+              "minecraft:deepslate": 15705,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 3.3719,
+            "blocks_sha256": "de15685cb9151c2bb0d84cdf8eceade25c4728ca455f210986b65bbaf4f47681",
+            "stage": "carvers",
+            "normalized_sha256": "e19686712dd305f602ebf4422c2ff939ae33b896dee240d9a57d9ed9c75e7db5",
+            "geology_sha256": "2846d0f42412d0f8de66c0ee3afdceb08ea609090bd8f510b4a752790fb8cda8",
+            "counts": {
+              "geologic_variation:slate": 19919,
+              "minecraft:air": 80662,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15302,
+              "minecraft:dirt": 551,
+              "minecraft:grass_block": 138,
+              "minecraft:water": 409
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -18,
+            "z": -64,
+            "generation_ms": 443.1149,
+            "blocks_sha256": "bf5ff1b188358f3f2efb9a28f8a7d00f92d1868df9fe358a7d39f0e64eb9cbb5",
+            "stage": "full",
+            "normalized_sha256": "0f182f03c94e45638f2acf7330c437526e9c384dccf25280c13bbc5e9c4dc1c2",
+            "geology_sha256": "f48bf00a30ae76102fe62bb39aff35e1ebe5ed0568fd0d75399943d7f959018d",
+            "counts": {
+              "geologic_variation:quartzite": 20506,
+              "minecraft:air": 75623,
+              "minecraft:andesite": 988,
+              "minecraft:bedrock": 1793,
+              "minecraft:coal_ore": 284,
+              "minecraft:copper_ore": 120,
+              "minecraft:deepslate": 13354,
+              "minecraft:deepslate_diamond_ore": 26,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 21,
+              "minecraft:deepslate_lapis_ore": 21,
+              "minecraft:deepslate_redstone_ore": 13,
+              "minecraft:diorite": 858,
+              "minecraft:dirt": 901,
+              "minecraft:emerald_ore": 1,
+              "minecraft:gold_ore": 11,
+              "minecraft:granite": 1359,
+              "minecraft:grass_block": 118,
+              "minecraft:gravel": 842,
+              "minecraft:infested_deepslate": 9,
+              "minecraft:infested_stone": 6,
+              "minecraft:iron_ore": 60,
+              "minecraft:lapis_ore": 12,
+              "minecraft:magma_block": 11,
+              "minecraft:oak_leaves": 6,
+              "minecraft:redstone_ore": 5,
+              "minecraft:short_grass": 4,
+              "minecraft:tuff": 947,
+              "minecraft:water": 864
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -19,
+            "z": -64,
+            "generation_ms": 164.5205,
+            "blocks_sha256": "1dfa786dadfd2cebfae484208985b605bc70102cbd02b7420340ff4bb6e69e2a",
+            "stage": "full",
+            "normalized_sha256": "01f8e1d8a815d731ee4c850ad721eebbaaf505920448e84b251d5a6bb6d9fe22",
+            "geology_sha256": "8bb4d0a28973153b469d21905af0af39053e60d5f9faabc7adb46f8054864d00",
+            "counts": {
+              "geologic_variation:quartzite": 2927,
+              "geologic_variation:slate": 16900,
+              "minecraft:air": 75895,
+              "minecraft:andesite": 630,
+              "minecraft:bedrock": 1780,
+              "minecraft:coal_ore": 181,
+              "minecraft:copper_ore": 140,
+              "minecraft:deepslate": 14223,
+              "minecraft:deepslate_copper_ore": 2,
+              "minecraft:deepslate_diamond_ore": 33,
+              "minecraft:deepslate_gold_ore": 26,
+              "minecraft:deepslate_iron_ore": 28,
+              "minecraft:deepslate_lapis_ore": 3,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1282,
+              "minecraft:dirt": 1204,
+              "minecraft:emerald_ore": 2,
+              "minecraft:granite": 957,
+              "minecraft:grass_block": 164,
+              "minecraft:gravel": 502,
+              "minecraft:infested_deepslate": 35,
+              "minecraft:infested_stone": 10,
+              "minecraft:iron_ore": 55,
+              "minecraft:lapis_ore": 13,
+              "minecraft:oak_leaves": 241,
+              "minecraft:oak_log": 19,
+              "minecraft:redstone_ore": 2,
+              "minecraft:short_grass": 9,
+              "minecraft:tuff": 574,
+              "minecraft:water": 919
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -20,
+            "z": -64,
+            "generation_ms": 78.4929,
+            "blocks_sha256": "aa2c70e8e9f9a9a70a7ab3be15b827078ceebff5b6ed656a50cde7fc89f5db5a",
+            "stage": "full",
+            "normalized_sha256": "805d7bac00fc03b893a4779c077cb1705a0f4d07c4e2b50330bf1020b8b91963",
+            "geology_sha256": "0354308403af5d07e195888a6c577a85ae935fce915ca02e192c0be2b6dd5473",
+            "counts": {
+              "geologic_variation:slate": 19336,
+              "minecraft:air": 75475,
+              "minecraft:andesite": 1027,
+              "minecraft:bedrock": 1811,
+              "minecraft:coal_ore": 270,
+              "minecraft:copper_ore": 109,
+              "minecraft:deepslate": 13830,
+              "minecraft:deepslate_copper_ore": 6,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 22,
+              "minecraft:deepslate_iron_ore": 20,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 28,
+              "minecraft:diorite": 1520,
+              "minecraft:dirt": 1629,
+              "minecraft:gold_ore": 7,
+              "minecraft:granite": 1145,
+              "minecraft:grass_block": 253,
+              "minecraft:gravel": 396,
+              "minecraft:iron_ore": 64,
+              "minecraft:lapis_ore": 3,
+              "minecraft:oak_leaves": 157,
+              "minecraft:oak_log": 14,
+              "minecraft:short_grass": 16,
+              "minecraft:tuff": 1462,
+              "minecraft:water": 141
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -32,
+            "z": -65,
+            "generation_ms": 305.9152,
+            "blocks_sha256": "4bae9709df45e5ff0c7dc9b1111de190967d8c607cd141695c7e88fd0c1b0872",
+            "stage": "full",
+            "normalized_sha256": "0b234fe906b2d44968771b264d433febb9a93f310b850a34e5047bdf5bef2bd4",
+            "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+            "counts": {
+              "geologic_variation:slate": 15597,
+              "minecraft:air": 80628,
+              "minecraft:andesite": 1150,
+              "minecraft:bedrock": 1803,
+              "minecraft:coal_ore": 121,
+              "minecraft:copper_ore": 107,
+              "minecraft:deepslate": 13698,
+              "minecraft:deepslate_copper_ore": 1,
+              "minecraft:deepslate_diamond_ore": 34,
+              "minecraft:deepslate_gold_ore": 23,
+              "minecraft:deepslate_iron_ore": 26,
+              "minecraft:deepslate_lapis_ore": 22,
+              "minecraft:deepslate_redstone_ore": 29,
+              "minecraft:diorite": 1397,
+              "minecraft:dirt": 910,
+              "minecraft:emerald_ore": 3,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 846,
+              "minecraft:grass_block": 138,
+              "minecraft:gravel": 604,
+              "minecraft:infested_deepslate": 28,
+              "minecraft:infested_stone": 27,
+              "minecraft:iron_ore": 49,
+              "minecraft:lapis_ore": 1,
+              "minecraft:redstone_ore": 6,
+              "minecraft:short_grass": 34,
+              "minecraft:tuff": 1085,
+              "minecraft:water": 409
+            }
+          }
+        ]
+      },
+      "regions": [
+        {
+          "kind": "region",
+          "x": -290,
+          "z": -1024,
+          "wall_ms": 2.5462,
+          "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]",
+          "cache_entries": 2
+        },
+        {
+          "kind": "region",
+          "x": -289,
+          "z": -1024,
+          "wall_ms": 0.0251,
+          "region": "Region[province=Province[cellX=0, cellZ=-1, anchorX=551, anchorZ=-1012, identity=328585151156627333], stone=QUARTZITE, elevationMetres=798.36, reliefMetres=1194.0]",
+          "cache_entries": 2
+        }
+      ],
+      "logs": {
+        "console-1.log": "014e97f11cf64df9b4aa36b8ddd39aac57e4220f1daba50731d58a5c96a858ee"
+      }
+    },
+    {
+      "name": "stages-s6-t0-td-only",
+      "scale": 6,
+      "trial": 0,
+      "addon": false,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 12469.2961,
+            "blocks_sha256": "76e3162935a1e3fbc1f8e61464be3e6a21ccea8ec5c0f90dbd368282b6cca4e7",
+            "stage": "surface",
+            "normalized_sha256": "76e3162935a1e3fbc1f8e61464be3e6a21ccea8ec5c0f90dbd368282b6cca4e7",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 51621,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15720,
+              "minecraft:stone": 49640
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 7967.5695,
+            "blocks_sha256": "4f60fe100229e69c8edf21f2b309cea7da1742dce27978d2d4ce55bf4fcb7d7b",
+            "stage": "surface",
+            "normalized_sha256": "4f60fe100229e69c8edf21f2b309cea7da1742dce27978d2d4ce55bf4fcb7d7b",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 26116,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15729,
+              "minecraft:stone": 75147
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 54.7477,
+            "blocks_sha256": "21f3756467380ef8ccbe7021837caf147ed358679a5067be598bea4f2ba6c251",
+            "stage": "surface",
+            "normalized_sha256": "21f3756467380ef8ccbe7021837caf147ed358679a5067be598bea4f2ba6c251",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 28929,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15731,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96,
+              "minecraft:stone": 71837
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 41.0822,
+            "blocks_sha256": "5315d765cf70379ab14d225ee17a4184fec580964b2f0ac9962b8edcb0c1ea50",
+            "stage": "surface",
+            "normalized_sha256": "5315d765cf70379ab14d225ee17a4184fec580964b2f0ac9962b8edcb0c1ea50",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 15741,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 69804
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 421.5112,
+            "blocks_sha256": "40a13ba1a9453cf92f96a8946f4276364da1c8e1d6dd908c89d71bce74476cd2",
+            "stage": "carvers",
+            "normalized_sha256": "40a13ba1a9453cf92f96a8946f4276364da1c8e1d6dd908c89d71bce74476cd2",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 52427,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15718,
+              "minecraft:stone": 48832,
+              "minecraft:water": 4
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 5.1724,
+            "blocks_sha256": "a8ebb43db58ba3c34096b1cecd76c5c51630eea18f3a29d3da963ca0129c31dc",
+            "stage": "carvers",
+            "normalized_sha256": "a8ebb43db58ba3c34096b1cecd76c5c51630eea18f3a29d3da963ca0129c31dc",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 26355,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15122,
+              "minecraft:stone": 74253,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 1.6104,
+            "blocks_sha256": "a1e963cc1bfc27b9ffaae2db8c02494700e15229394d551014a1c0bdf5ef6673",
+            "stage": "carvers",
+            "normalized_sha256": "a1e963cc1bfc27b9ffaae2db8c02494700e15229394d551014a1c0bdf5ef6673",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 28938,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15327,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96,
+              "minecraft:stone": 71519,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 1.9549,
+            "blocks_sha256": "71c2a9f288c1dcb5a68262a4f7767c1006530cf3bf746e0b47920cf4d927af10",
+            "stage": "carvers",
+            "normalized_sha256": "71c2a9f288c1dcb5a68262a4f7767c1006530cf3bf746e0b47920cf4d927af10",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 14956,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 69776,
+              "minecraft:water": 813
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 490.0675,
+            "blocks_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+            "stage": "full",
+            "normalized_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 52427,
+              "minecraft:andesite": 1356,
+              "minecraft:bedrock": 1803,
+              "minecraft:cave_air": 28,
+              "minecraft:coal_ore": 649,
+              "minecraft:copper_ore": 116,
+              "minecraft:deepslate": 13368,
+              "minecraft:deepslate_diamond_ore": 30,
+              "minecraft:deepslate_gold_ore": 31,
+              "minecraft:deepslate_iron_ore": 25,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 18,
+              "minecraft:diorite": 1078,
+              "minecraft:dirt": 742,
+              "minecraft:emerald_ore": 18,
+              "minecraft:gold_ore": 9,
+              "minecraft:granite": 809,
+              "minecraft:gravel": 1335,
+              "minecraft:infested_deepslate": 25,
+              "minecraft:infested_stone": 49,
+              "minecraft:iron_ore": 264,
+              "minecraft:lapis_ore": 11,
+              "minecraft:lava": 13,
+              "minecraft:redstone_ore": 6,
+              "minecraft:stone": 43111,
+              "minecraft:tuff": 1442,
+              "minecraft:water": 4
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 646.397,
+            "blocks_sha256": "c87cd0cc6b98307924c5cea68e316f54a2a8053cb92150c9bb14812391d040e1",
+            "stage": "full",
+            "normalized_sha256": "c87cd0cc6b98307924c5cea68e316f54a2a8053cb92150c9bb14812391d040e1",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 26353,
+              "minecraft:andesite": 1014,
+              "minecraft:bedrock": 1792,
+              "minecraft:cave_air": 174,
+              "minecraft:coal_ore": 794,
+              "minecraft:cobweb": 3,
+              "minecraft:copper_ore": 123,
+              "minecraft:deepslate": 13491,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 27,
+              "minecraft:deepslate_lapis_ore": 25,
+              "minecraft:deepslate_redstone_ore": 27,
+              "minecraft:diorite": 1113,
+              "minecraft:dirt": 821,
+              "minecraft:emerald_ore": 31,
+              "minecraft:glow_lichen": 2,
+              "minecraft:gold_ore": 18,
+              "minecraft:granite": 1152,
+              "minecraft:gravel": 1462,
+              "minecraft:infested_deepslate": 49,
+              "minecraft:infested_stone": 20,
+              "minecraft:iron_ore": 517,
+              "minecraft:oak_planks": 12,
+              "minecraft:redstone_ore": 4,
+              "minecraft:stone": 68046,
+              "minecraft:tuff": 402,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 127.1925,
+            "blocks_sha256": "4e4c224ed27e1f79317871c697b584adec7482617c740f21c22a7b8ee3a2618f",
+            "stage": "full",
+            "normalized_sha256": "4e4c224ed27e1f79317871c697b584adec7482617c740f21c22a7b8ee3a2618f",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 28881,
+              "minecraft:andesite": 730,
+              "minecraft:bedrock": 1794,
+              "minecraft:birch_leaves": 8,
+              "minecraft:cave_air": 202,
+              "minecraft:coal_ore": 813,
+              "minecraft:copper_ore": 128,
+              "minecraft:deepslate": 13809,
+              "minecraft:deepslate_coal_ore": 4,
+              "minecraft:deepslate_copper_ore": 15,
+              "minecraft:deepslate_diamond_ore": 27,
+              "minecraft:deepslate_emerald_ore": 1,
+              "minecraft:deepslate_gold_ore": 13,
+              "minecraft:deepslate_iron_ore": 30,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 45,
+              "minecraft:diorite": 1655,
+              "minecraft:dirt": 1247,
+              "minecraft:emerald_ore": 12,
+              "minecraft:gold_ore": 6,
+              "minecraft:granite": 988,
+              "minecraft:grass_block": 95,
+              "minecraft:gravel": 933,
+              "minecraft:infested_deepslate": 24,
+              "minecraft:infested_stone": 41,
+              "minecraft:iron_ore": 511,
+              "minecraft:lapis_ore": 19,
+              "minecraft:lava": 78,
+              "minecraft:oak_leaves": 40,
+              "minecraft:oak_log": 5,
+              "minecraft:redstone_ore": 1,
+              "minecraft:short_grass": 4,
+              "minecraft:stone": 65327,
+              "minecraft:tuff": 571,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 123.7764,
+            "blocks_sha256": "ea87e566b44c666c561315a0ca458ed2d1a8c31cbf75aad72ca02b3d55111539",
+            "stage": "full",
+            "normalized_sha256": "ea87e566b44c666c561315a0ca458ed2d1a8c31cbf75aad72ca02b3d55111539",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 29987,
+              "minecraft:andesite": 1511,
+              "minecraft:bedrock": 1795,
+              "minecraft:birch_leaves": 96,
+              "minecraft:birch_log": 11,
+              "minecraft:cave_air": 205,
+              "minecraft:coal_ore": 680,
+              "minecraft:copper_ore": 114,
+              "minecraft:deepslate": 12484,
+              "minecraft:deepslate_copper_ore": 22,
+              "minecraft:deepslate_diamond_ore": 28,
+              "minecraft:deepslate_gold_ore": 19,
+              "minecraft:deepslate_iron_ore": 29,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 43,
+              "minecraft:diamond_ore": 6,
+              "minecraft:diorite": 1021,
+              "minecraft:dirt": 1950,
+              "minecraft:emerald_ore": 1,
+              "minecraft:glow_lichen": 1,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 1264,
+              "minecraft:grass_block": 253,
+              "minecraft:gravel": 919,
+              "minecraft:infested_deepslate": 6,
+              "minecraft:iron_ore": 519,
+              "minecraft:lapis_ore": 9,
+              "minecraft:lava": 52,
+              "minecraft:oak_fence": 8,
+              "minecraft:oak_leaves": 53,
+              "minecraft:oak_log": 5,
+              "minecraft:oak_planks": 6,
+              "minecraft:redstone_ore": 3,
+              "minecraft:short_grass": 12,
+              "minecraft:stone": 63469,
+              "minecraft:tuff": 1365,
+              "minecraft:wall_torch": 1,
+              "minecraft:water": 812
+            }
+          }
+        ]
+      },
+      "logs": {
+        "console-1.log": "7528796b49ff9289199e2ca5ac968f8a06ff060709282b1b73e921bba9b5c33e"
+      }
+    },
+    {
+      "name": "stages-s6-t0-addon",
+      "scale": 6,
+      "trial": 0,
+      "addon": true,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226",
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 17287.7179,
+            "blocks_sha256": "9da867b736673cf050826181aa1cfafac80684ea61fe70f5805a9861875d17ac",
+            "stage": "surface",
+            "normalized_sha256": "76e3162935a1e3fbc1f8e61464be3e6a21ccea8ec5c0f90dbd368282b6cca4e7",
+            "geology_sha256": "8d5ffd2e0a60f557c19888c47e0a5ae8694d9c844ac727326592b2cb953f095b",
+            "counts": {
+              "geologic_variation:gabbro": 49640,
+              "minecraft:air": 51621,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15720
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 7580.5169,
+            "blocks_sha256": "0022454e97280b7dbc84d0bf6273bff671d824413a3ab2106bfeb86afaf8e188",
+            "stage": "surface",
+            "normalized_sha256": "4f60fe100229e69c8edf21f2b309cea7da1742dce27978d2d4ce55bf4fcb7d7b",
+            "geology_sha256": "910b524bbe7257316be41f971bf5756a88e9928b57a13e21ef1ecda023c7e651",
+            "counts": {
+              "geologic_variation:gabbro": 75147,
+              "minecraft:air": 26116,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15729
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 11521.1409,
+            "blocks_sha256": "e8dc92037900f4ba290c81f8381d58d2d920688cb5a3c3aa02b6ffa9d1b09fa6",
+            "stage": "surface",
+            "normalized_sha256": "21f3756467380ef8ccbe7021837caf147ed358679a5067be598bea4f2ba6c251",
+            "geology_sha256": "b7a71ffb22d6882492b4371750555718ef9f08e123073c909be88b0f8e5d103f",
+            "counts": {
+              "geologic_variation:gabbro": 48143,
+              "geologic_variation:slate": 23694,
+              "minecraft:air": 28929,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15731,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 35.669,
+            "blocks_sha256": "f3290c413dae7b9f6a771c53b683740174cde41e13621130b071325db2b805c6",
+            "stage": "surface",
+            "normalized_sha256": "5315d765cf70379ab14d225ee17a4184fec580964b2f0ac9962b8edcb0c1ea50",
+            "geology_sha256": "4206fea0ec0d31f91f4b46af7360eafda124bec6596a9dea2ef06f2cc75fc773",
+            "counts": {
+              "geologic_variation:slate": 69804,
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 15741,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 475.7698,
+            "blocks_sha256": "92189f1d9d7d11d9dcd4a322e7ae0eb770f350eb156504e31e4e0636b216b9e6",
+            "stage": "carvers",
+            "normalized_sha256": "40a13ba1a9453cf92f96a8946f4276364da1c8e1d6dd908c89d71bce74476cd2",
+            "geology_sha256": "df2dbdab4a702587170c7c332d5e911865805d75a3641569ce18f5123c61ab4e",
+            "counts": {
+              "geologic_variation:gabbro": 48832,
+              "minecraft:air": 52427,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15718,
+              "minecraft:water": 4
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 4.7266,
+            "blocks_sha256": "ff0581590a22ac347923c650c8eaf3ee125e201e8330fd6bdb292df73ae060f5",
+            "stage": "carvers",
+            "normalized_sha256": "a8ebb43db58ba3c34096b1cecd76c5c51630eea18f3a29d3da963ca0129c31dc",
+            "geology_sha256": "b3809a9e239109d85c48806fd23ae7eac927fca35cac04a73a68d7ff30dbacee",
+            "counts": {
+              "geologic_variation:gabbro": 74253,
+              "minecraft:air": 26355,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15122,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 1.4413,
+            "blocks_sha256": "e338ce2b21d514004a895809133dd1d4e5c3cbf62eda88f7d59d53b86fabb834",
+            "stage": "carvers",
+            "normalized_sha256": "a1e963cc1bfc27b9ffaae2db8c02494700e15229394d551014a1c0bdf5ef6673",
+            "geology_sha256": "f1be95149afecbe28a2f57032b313132b570205f685b5ac530258ee969837ea1",
+            "counts": {
+              "geologic_variation:gabbro": 47844,
+              "geologic_variation:slate": 23675,
+              "minecraft:air": 28938,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15327,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 2.8488,
+            "blocks_sha256": "79f40bb2c28e982fc66fa3b37d035c178861dd06e98d1fc74ec4747bad2c39a5",
+            "stage": "carvers",
+            "normalized_sha256": "71c2a9f288c1dcb5a68262a4f7767c1006530cf3bf746e0b47920cf4d927af10",
+            "geology_sha256": "66a19d1078edea90fa8bd521cfcb36175f37dddba6fa3e0134a693e83b05c0d7",
+            "counts": {
+              "geologic_variation:slate": 69776,
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 14956,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:water": 813
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 559.0252,
+            "blocks_sha256": "ed65827d36af19c19617af9ea1b8fd80baacf6fdd29151f5587a51f2525a0f08",
+            "stage": "full",
+            "normalized_sha256": "fbc4557f962cd437b78ff955a882bfaed839534a256a7314033ca4ecdd6d5446",
+            "geology_sha256": "886864c138d67118747c88477f7b6afdf07a77f64bb95a63f3ae743f8aa55b4e",
+            "counts": {
+              "geologic_variation:gabbro": 43055,
+              "minecraft:air": 52427,
+              "minecraft:andesite": 1348,
+              "minecraft:bedrock": 1803,
+              "minecraft:cave_air": 28,
+              "minecraft:coal_ore": 656,
+              "minecraft:copper_ore": 115,
+              "minecraft:deepslate": 13368,
+              "minecraft:deepslate_diamond_ore": 30,
+              "minecraft:deepslate_gold_ore": 31,
+              "minecraft:deepslate_iron_ore": 25,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 18,
+              "minecraft:diorite": 1087,
+              "minecraft:dirt": 742,
+              "minecraft:emerald_ore": 18,
+              "minecraft:gold_ore": 9,
+              "minecraft:granite": 818,
+              "minecraft:gravel": 1341,
+              "minecraft:infested_deepslate": 25,
+              "minecraft:infested_stone": 45,
+              "minecraft:iron_ore": 264,
+              "minecraft:lapis_ore": 11,
+              "minecraft:lava": 13,
+              "minecraft:redstone_ore": 6,
+              "minecraft:stone": 38,
+              "minecraft:tuff": 1442,
+              "minecraft:water": 4
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 815.9376,
+            "blocks_sha256": "aeae3ea376f040a0037b09f0c4821cd59e5d928f3b90e5cbe84cc89a3bec73ad",
+            "stage": "full",
+            "normalized_sha256": "489a0808d74f5155e379d3291ce060cae0cb61212b8ba5948ece37097b956464",
+            "geology_sha256": "89e8ba1209e7a305790aaa9b5b3c383c3c5f0cd218de76d5907b7215362cb5a5",
+            "counts": {
+              "geologic_variation:gabbro": 68044,
+              "minecraft:air": 26355,
+              "minecraft:andesite": 1014,
+              "minecraft:bedrock": 1792,
+              "minecraft:cave_air": 174,
+              "minecraft:coal_ore": 796,
+              "minecraft:cobweb": 3,
+              "minecraft:copper_ore": 123,
+              "minecraft:deepslate": 13491,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 27,
+              "minecraft:deepslate_lapis_ore": 25,
+              "minecraft:deepslate_redstone_ore": 27,
+              "minecraft:diorite": 1113,
+              "minecraft:dirt": 821,
+              "minecraft:emerald_ore": 31,
+              "minecraft:gold_ore": 18,
+              "minecraft:granite": 1152,
+              "minecraft:gravel": 1462,
+              "minecraft:infested_deepslate": 49,
+              "minecraft:infested_stone": 20,
+              "minecraft:iron_ore": 517,
+              "minecraft:oak_planks": 12,
+              "minecraft:redstone_ore": 4,
+              "minecraft:tuff": 402,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 164.0321,
+            "blocks_sha256": "3aee46fa7e5eac5f99b0e08afea43982cdddd181b8ef5ede702957945c645732",
+            "stage": "full",
+            "normalized_sha256": "f4c5c662318026f84f4c8097141d41d5f96550d39684dd1b27f743dddbc3e962",
+            "geology_sha256": "76c37c48e40c5aa81f1afa7b4ed3cbc6a14fbfd59c713f6ee61e61eeb9b33aa8",
+            "counts": {
+              "geologic_variation:gabbro": 43618,
+              "geologic_variation:slate": 21570,
+              "minecraft:air": 28897,
+              "minecraft:andesite": 730,
+              "minecraft:bedrock": 1794,
+              "minecraft:cave_air": 202,
+              "minecraft:coal_ore": 813,
+              "minecraft:copper_ore": 128,
+              "minecraft:deepslate": 13809,
+              "minecraft:deepslate_coal_ore": 4,
+              "minecraft:deepslate_copper_ore": 15,
+              "minecraft:deepslate_diamond_ore": 27,
+              "minecraft:deepslate_emerald_ore": 1,
+              "minecraft:deepslate_gold_ore": 13,
+              "minecraft:deepslate_iron_ore": 30,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 45,
+              "minecraft:diorite": 1655,
+              "minecraft:dirt": 1247,
+              "minecraft:emerald_ore": 12,
+              "minecraft:gold_ore": 6,
+              "minecraft:granite": 988,
+              "minecraft:grass_block": 95,
+              "minecraft:gravel": 933,
+              "minecraft:infested_deepslate": 24,
+              "minecraft:infested_stone": 41,
+              "minecraft:iron_ore": 511,
+              "minecraft:lapis_ore": 19,
+              "minecraft:lava": 78,
+              "minecraft:oak_leaves": 34,
+              "minecraft:oak_log": 4,
+              "minecraft:redstone_ore": 1,
+              "minecraft:short_grass": 3,
+              "minecraft:stone": 139,
+              "minecraft:tuff": 571,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 145.9698,
+            "blocks_sha256": "fb0ddf98335c90721d976ff22cc4f3efa56dd28e35498b2cc482d3ed01aebbd0",
+            "stage": "full",
+            "normalized_sha256": "ae210661da8b461cec1892ded248caf5834b5fdff7ed32071724fac4a20d66de",
+            "geology_sha256": "6c255ace7d585dcf5c9c6088c113c0845a98fd8e2c9fe677330888091085691c",
+            "counts": {
+              "geologic_variation:slate": 63304,
+              "minecraft:air": 29964,
+              "minecraft:andesite": 1511,
+              "minecraft:bedrock": 1795,
+              "minecraft:birch_leaves": 49,
+              "minecraft:birch_log": 6,
+              "minecraft:cave_air": 205,
+              "minecraft:coal_ore": 680,
+              "minecraft:copper_ore": 114,
+              "minecraft:deepslate": 12484,
+              "minecraft:deepslate_copper_ore": 22,
+              "minecraft:deepslate_diamond_ore": 28,
+              "minecraft:deepslate_gold_ore": 19,
+              "minecraft:deepslate_iron_ore": 29,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 43,
+              "minecraft:diamond_ore": 6,
+              "minecraft:diorite": 1021,
+              "minecraft:dirt": 1950,
+              "minecraft:emerald_ore": 1,
+              "minecraft:glow_lichen": 1,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 1264,
+              "minecraft:grass_block": 253,
+              "minecraft:gravel": 919,
+              "minecraft:infested_deepslate": 6,
+              "minecraft:iron_ore": 519,
+              "minecraft:lapis_ore": 9,
+              "minecraft:lava": 52,
+              "minecraft:oak_fence": 8,
+              "minecraft:oak_leaves": 125,
+              "minecraft:oak_log": 10,
+              "minecraft:oak_planks": 6,
+              "minecraft:redstone_ore": 3,
+              "minecraft:short_grass": 10,
+              "minecraft:stone": 165,
+              "minecraft:tuff": 1365,
+              "minecraft:wall_torch": 1,
+              "minecraft:water": 812
+            }
+          }
+        ]
+      },
+      "regions": [
+        {
+          "kind": "region",
+          "x": -1732,
+          "z": -6144,
+          "wall_ms": 2.3335,
+          "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-6134, anchorZ=-8595, identity=6352826561952862732], stone=GABBRO, elevationMetres=-840.4, reliefMetres=392.0]",
+          "cache_entries": 2
+        },
+        {
+          "kind": "region",
+          "x": -1731,
+          "z": -6144,
+          "wall_ms": 0.0268,
+          "region": "Region[province=Province[cellX=0, cellZ=-1, anchorX=3306, anchorZ=-6072, identity=328585151156627333], stone=SLATE, elevationMetres=746.84, reliefMetres=358.0]",
+          "cache_entries": 2
+        }
+      ],
+      "logs": {
+        "console-1.log": "ce7ad59534737d1f16d4c8b0dc1c856a809482ca45b27404cd5926e5a7f1004b"
+      }
+    },
+    {
+      "name": "stages-s6-t1-td-only",
+      "scale": 6,
+      "trial": 1,
+      "addon": false,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 18215.4832,
+            "blocks_sha256": "5315d765cf70379ab14d225ee17a4184fec580964b2f0ac9962b8edcb0c1ea50",
+            "stage": "surface",
+            "normalized_sha256": "5315d765cf70379ab14d225ee17a4184fec580964b2f0ac9962b8edcb0c1ea50",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 15741,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 69804
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 66.6565,
+            "blocks_sha256": "21f3756467380ef8ccbe7021837caf147ed358679a5067be598bea4f2ba6c251",
+            "stage": "surface",
+            "normalized_sha256": "21f3756467380ef8ccbe7021837caf147ed358679a5067be598bea4f2ba6c251",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 28929,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15731,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96,
+              "minecraft:stone": 71837
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 39.2668,
+            "blocks_sha256": "4f60fe100229e69c8edf21f2b309cea7da1742dce27978d2d4ce55bf4fcb7d7b",
+            "stage": "surface",
+            "normalized_sha256": "4f60fe100229e69c8edf21f2b309cea7da1742dce27978d2d4ce55bf4fcb7d7b",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 26116,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15729,
+              "minecraft:stone": 75147
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 1115.8696,
+            "blocks_sha256": "76e3162935a1e3fbc1f8e61464be3e6a21ccea8ec5c0f90dbd368282b6cca4e7",
+            "stage": "surface",
+            "normalized_sha256": "76e3162935a1e3fbc1f8e61464be3e6a21ccea8ec5c0f90dbd368282b6cca4e7",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 51621,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15720,
+              "minecraft:stone": 49640
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 9.9039,
+            "blocks_sha256": "71c2a9f288c1dcb5a68262a4f7767c1006530cf3bf746e0b47920cf4d927af10",
+            "stage": "carvers",
+            "normalized_sha256": "71c2a9f288c1dcb5a68262a4f7767c1006530cf3bf746e0b47920cf4d927af10",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 14956,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:stone": 69776,
+              "minecraft:water": 813
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 2.2538,
+            "blocks_sha256": "a1e963cc1bfc27b9ffaae2db8c02494700e15229394d551014a1c0bdf5ef6673",
+            "stage": "carvers",
+            "normalized_sha256": "a1e963cc1bfc27b9ffaae2db8c02494700e15229394d551014a1c0bdf5ef6673",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 28938,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15327,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96,
+              "minecraft:stone": 71519,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 2.1217,
+            "blocks_sha256": "a8ebb43db58ba3c34096b1cecd76c5c51630eea18f3a29d3da963ca0129c31dc",
+            "stage": "carvers",
+            "normalized_sha256": "a8ebb43db58ba3c34096b1cecd76c5c51630eea18f3a29d3da963ca0129c31dc",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 26355,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15122,
+              "minecraft:stone": 74253,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 705.1348,
+            "blocks_sha256": "40a13ba1a9453cf92f96a8946f4276364da1c8e1d6dd908c89d71bce74476cd2",
+            "stage": "carvers",
+            "normalized_sha256": "40a13ba1a9453cf92f96a8946f4276364da1c8e1d6dd908c89d71bce74476cd2",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 52427,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15718,
+              "minecraft:stone": 48832,
+              "minecraft:water": 4
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 585.9868,
+            "blocks_sha256": "ed17a69a107430f7612e16f1bcd102e0ddcce64887f71272acdc218da7105261",
+            "stage": "full",
+            "normalized_sha256": "ed17a69a107430f7612e16f1bcd102e0ddcce64887f71272acdc218da7105261",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 30018,
+              "minecraft:andesite": 1511,
+              "minecraft:bedrock": 1795,
+              "minecraft:birch_leaves": 70,
+              "minecraft:birch_log": 5,
+              "minecraft:cave_air": 205,
+              "minecraft:coal_ore": 680,
+              "minecraft:copper_ore": 114,
+              "minecraft:deepslate": 12484,
+              "minecraft:deepslate_copper_ore": 22,
+              "minecraft:deepslate_diamond_ore": 28,
+              "minecraft:deepslate_gold_ore": 19,
+              "minecraft:deepslate_iron_ore": 29,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 43,
+              "minecraft:diamond_ore": 6,
+              "minecraft:diorite": 1021,
+              "minecraft:dirt": 1949,
+              "minecraft:emerald_ore": 1,
+              "minecraft:glow_lichen": 1,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 1264,
+              "minecraft:grass_block": 254,
+              "minecraft:gravel": 919,
+              "minecraft:infested_deepslate": 6,
+              "minecraft:iron_ore": 519,
+              "minecraft:lapis_ore": 9,
+              "minecraft:lava": 52,
+              "minecraft:oak_fence": 8,
+              "minecraft:oak_leaves": 55,
+              "minecraft:oak_log": 4,
+              "minecraft:oak_planks": 6,
+              "minecraft:redstone_ore": 3,
+              "minecraft:short_grass": 12,
+              "minecraft:stone": 63469,
+              "minecraft:tuff": 1365,
+              "minecraft:wall_torch": 1,
+              "minecraft:water": 812
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 239.7352,
+            "blocks_sha256": "db332d2d6a3979662b98250e0d6aafa894ffde7f0f8a250e85c2ecb1aa06761c",
+            "stage": "full",
+            "normalized_sha256": "db332d2d6a3979662b98250e0d6aafa894ffde7f0f8a250e85c2ecb1aa06761c",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 28882,
+              "minecraft:andesite": 860,
+              "minecraft:bedrock": 1794,
+              "minecraft:birch_leaves": 21,
+              "minecraft:birch_log": 7,
+              "minecraft:cave_air": 202,
+              "minecraft:coal_ore": 801,
+              "minecraft:copper_ore": 128,
+              "minecraft:deepslate": 13813,
+              "minecraft:deepslate_copper_ore": 15,
+              "minecraft:deepslate_diamond_ore": 27,
+              "minecraft:deepslate_emerald_ore": 1,
+              "minecraft:deepslate_gold_ore": 13,
+              "minecraft:deepslate_iron_ore": 30,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 45,
+              "minecraft:diorite": 1654,
+              "minecraft:dirt": 1248,
+              "minecraft:emerald_ore": 12,
+              "minecraft:gold_ore": 6,
+              "minecraft:granite": 841,
+              "minecraft:grass_block": 95,
+              "minecraft:gravel": 922,
+              "minecraft:infested_deepslate": 24,
+              "minecraft:infested_stone": 41,
+              "minecraft:iron_ore": 519,
+              "minecraft:lapis_ore": 19,
+              "minecraft:lava": 78,
+              "minecraft:oak_leaves": 27,
+              "minecraft:redstone_ore": 1,
+              "minecraft:short_grass": 1,
+              "minecraft:stone": 65359,
+              "minecraft:tuff": 571,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 128.4611,
+            "blocks_sha256": "ceb5e7332f4d60e2ae4d6efbb8096c87d36d50fe537777e2c9c9feaa464363c8",
+            "stage": "full",
+            "normalized_sha256": "ceb5e7332f4d60e2ae4d6efbb8096c87d36d50fe537777e2c9c9feaa464363c8",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 26353,
+              "minecraft:andesite": 1059,
+              "minecraft:bedrock": 1792,
+              "minecraft:cave_air": 174,
+              "minecraft:coal_ore": 847,
+              "minecraft:cobweb": 3,
+              "minecraft:copper_ore": 122,
+              "minecraft:deepslate": 13491,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 27,
+              "minecraft:deepslate_lapis_ore": 25,
+              "minecraft:deepslate_redstone_ore": 26,
+              "minecraft:diorite": 1061,
+              "minecraft:dirt": 821,
+              "minecraft:emerald_ore": 31,
+              "minecraft:glow_lichen": 2,
+              "minecraft:gold_ore": 18,
+              "minecraft:granite": 1167,
+              "minecraft:gravel": 1461,
+              "minecraft:infested_deepslate": 49,
+              "minecraft:infested_stone": 20,
+              "minecraft:iron_ore": 515,
+              "minecraft:oak_planks": 12,
+              "minecraft:redstone_ore": 4,
+              "minecraft:stone": 67990,
+              "minecraft:tuff": 402,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 440.0993,
+            "blocks_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+            "stage": "full",
+            "normalized_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+            "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "counts": {
+              "minecraft:air": 52427,
+              "minecraft:andesite": 1356,
+              "minecraft:bedrock": 1803,
+              "minecraft:cave_air": 28,
+              "minecraft:coal_ore": 649,
+              "minecraft:copper_ore": 116,
+              "minecraft:deepslate": 13368,
+              "minecraft:deepslate_diamond_ore": 30,
+              "minecraft:deepslate_gold_ore": 31,
+              "minecraft:deepslate_iron_ore": 25,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 18,
+              "minecraft:diorite": 1078,
+              "minecraft:dirt": 742,
+              "minecraft:emerald_ore": 18,
+              "minecraft:gold_ore": 9,
+              "minecraft:granite": 809,
+              "minecraft:gravel": 1335,
+              "minecraft:infested_deepslate": 25,
+              "minecraft:infested_stone": 49,
+              "minecraft:iron_ore": 264,
+              "minecraft:lapis_ore": 11,
+              "minecraft:lava": 13,
+              "minecraft:redstone_ore": 6,
+              "minecraft:stone": 43111,
+              "minecraft:tuff": 1442,
+              "minecraft:water": 4
+            }
+          }
+        ]
+      },
+      "logs": {
+        "console-1.log": "a2d8943a364696de9433ef8171fe57a28d2009b8ce9c2fde6583da5b9fe50ee6"
+      }
+    },
+    {
+      "name": "stages-s6-t1-addon",
+      "scale": 6,
+      "trial": 1,
+      "addon": true,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226",
+        "geology-runtime-probe-0.2.2-dev.jar": "5e85feb0a33665ced43c156dfd0d41a72122b28140b4107b76afbb284f83e01f",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "stages": {
+        "surface": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 26346.7781,
+            "blocks_sha256": "f3290c413dae7b9f6a771c53b683740174cde41e13621130b071325db2b805c6",
+            "stage": "surface",
+            "normalized_sha256": "5315d765cf70379ab14d225ee17a4184fec580964b2f0ac9962b8edcb0c1ea50",
+            "geology_sha256": "4206fea0ec0d31f91f4b46af7360eafda124bec6596a9dea2ef06f2cc75fc773",
+            "counts": {
+              "geologic_variation:slate": 69804,
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 15741,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 7921.5066,
+            "blocks_sha256": "e8dc92037900f4ba290c81f8381d58d2d920688cb5a3c3aa02b6ffa9d1b09fa6",
+            "stage": "surface",
+            "normalized_sha256": "21f3756467380ef8ccbe7021837caf147ed358679a5067be598bea4f2ba6c251",
+            "geology_sha256": "b7a71ffb22d6882492b4371750555718ef9f08e123073c909be88b0f8e5d103f",
+            "counts": {
+              "geologic_variation:gabbro": 48143,
+              "geologic_variation:slate": 23694,
+              "minecraft:air": 28929,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15731,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 43.3796,
+            "blocks_sha256": "0022454e97280b7dbc84d0bf6273bff671d824413a3ab2106bfeb86afaf8e188",
+            "stage": "surface",
+            "normalized_sha256": "4f60fe100229e69c8edf21f2b309cea7da1742dce27978d2d4ce55bf4fcb7d7b",
+            "geology_sha256": "910b524bbe7257316be41f971bf5756a88e9928b57a13e21ef1ecda023c7e651",
+            "counts": {
+              "geologic_variation:gabbro": 75147,
+              "minecraft:air": 26116,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15729
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 1554.6046,
+            "blocks_sha256": "9da867b736673cf050826181aa1cfafac80684ea61fe70f5805a9861875d17ac",
+            "stage": "surface",
+            "normalized_sha256": "76e3162935a1e3fbc1f8e61464be3e6a21ccea8ec5c0f90dbd368282b6cca4e7",
+            "geology_sha256": "8d5ffd2e0a60f557c19888c47e0a5ae8694d9c844ac727326592b2cb953f095b",
+            "counts": {
+              "geologic_variation:gabbro": 49640,
+              "minecraft:air": 51621,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15720
+            }
+          }
+        ],
+        "carvers": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 14.7055,
+            "blocks_sha256": "79f40bb2c28e982fc66fa3b37d035c178861dd06e98d1fc74ec4747bad2c39a5",
+            "stage": "carvers",
+            "normalized_sha256": "71c2a9f288c1dcb5a68262a4f7767c1006530cf3bf746e0b47920cf4d927af10",
+            "geology_sha256": "66a19d1078edea90fa8bd521cfcb36175f37dddba6fa3e0134a693e83b05c0d7",
+            "counts": {
+              "geologic_variation:slate": 69776,
+              "minecraft:air": 30164,
+              "minecraft:bedrock": 1795,
+              "minecraft:deepslate": 14956,
+              "minecraft:dirt": 1024,
+              "minecraft:grass_block": 256,
+              "minecraft:water": 813
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 3.2476,
+            "blocks_sha256": "e338ce2b21d514004a895809133dd1d4e5c3cbf62eda88f7d59d53b86fabb834",
+            "stage": "carvers",
+            "normalized_sha256": "a1e963cc1bfc27b9ffaae2db8c02494700e15229394d551014a1c0bdf5ef6673",
+            "geology_sha256": "f1be95149afecbe28a2f57032b313132b570205f685b5ac530258ee969837ea1",
+            "counts": {
+              "geologic_variation:gabbro": 47844,
+              "geologic_variation:slate": 23675,
+              "minecraft:air": 28938,
+              "minecraft:bedrock": 1794,
+              "minecraft:deepslate": 15327,
+              "minecraft:dirt": 397,
+              "minecraft:grass_block": 96,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 2.1719,
+            "blocks_sha256": "ff0581590a22ac347923c650c8eaf3ee125e201e8330fd6bdb292df73ae060f5",
+            "stage": "carvers",
+            "normalized_sha256": "a8ebb43db58ba3c34096b1cecd76c5c51630eea18f3a29d3da963ca0129c31dc",
+            "geology_sha256": "b3809a9e239109d85c48806fd23ae7eac927fca35cac04a73a68d7ff30dbacee",
+            "counts": {
+              "geologic_variation:gabbro": 74253,
+              "minecraft:air": 26355,
+              "minecraft:bedrock": 1792,
+              "minecraft:deepslate": 15122,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 778.4689,
+            "blocks_sha256": "92189f1d9d7d11d9dcd4a322e7ae0eb770f350eb156504e31e4e0636b216b9e6",
+            "stage": "carvers",
+            "normalized_sha256": "40a13ba1a9453cf92f96a8946f4276364da1c8e1d6dd908c89d71bce74476cd2",
+            "geology_sha256": "df2dbdab4a702587170c7c332d5e911865805d75a3641569ce18f5123c61ab4e",
+            "counts": {
+              "geologic_variation:gabbro": 48832,
+              "minecraft:air": 52427,
+              "minecraft:bedrock": 1803,
+              "minecraft:deepslate": 15718,
+              "minecraft:water": 4
+            }
+          }
+        ],
+        "full": [
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -108,
+            "z": -384,
+            "generation_ms": 1001.0255,
+            "blocks_sha256": "fb0ddf98335c90721d976ff22cc4f3efa56dd28e35498b2cc482d3ed01aebbd0",
+            "stage": "full",
+            "normalized_sha256": "ae210661da8b461cec1892ded248caf5834b5fdff7ed32071724fac4a20d66de",
+            "geology_sha256": "6c255ace7d585dcf5c9c6088c113c0845a98fd8e2c9fe677330888091085691c",
+            "counts": {
+              "geologic_variation:slate": 63304,
+              "minecraft:air": 29964,
+              "minecraft:andesite": 1511,
+              "minecraft:bedrock": 1795,
+              "minecraft:birch_leaves": 49,
+              "minecraft:birch_log": 6,
+              "minecraft:cave_air": 205,
+              "minecraft:coal_ore": 680,
+              "minecraft:copper_ore": 114,
+              "minecraft:deepslate": 12484,
+              "minecraft:deepslate_copper_ore": 22,
+              "minecraft:deepslate_diamond_ore": 28,
+              "minecraft:deepslate_gold_ore": 19,
+              "minecraft:deepslate_iron_ore": 29,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 43,
+              "minecraft:diamond_ore": 6,
+              "minecraft:diorite": 1021,
+              "minecraft:dirt": 1950,
+              "minecraft:emerald_ore": 1,
+              "minecraft:glow_lichen": 1,
+              "minecraft:gold_ore": 8,
+              "minecraft:granite": 1264,
+              "minecraft:grass_block": 253,
+              "minecraft:gravel": 919,
+              "minecraft:infested_deepslate": 6,
+              "minecraft:iron_ore": 519,
+              "minecraft:lapis_ore": 9,
+              "minecraft:lava": 52,
+              "minecraft:oak_fence": 8,
+              "minecraft:oak_leaves": 125,
+              "minecraft:oak_log": 10,
+              "minecraft:oak_planks": 6,
+              "minecraft:redstone_ore": 3,
+              "minecraft:short_grass": 10,
+              "minecraft:stone": 165,
+              "minecraft:tuff": 1365,
+              "minecraft:wall_torch": 1,
+              "minecraft:water": 812
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -109,
+            "z": -384,
+            "generation_ms": 309.6729,
+            "blocks_sha256": "c0bd9baa9b4079a51e120ed1eb3e892c221ef867cc1452e2331da0f0c4b3cb49",
+            "stage": "full",
+            "normalized_sha256": "aa42dfb24d23a99f3b91454170e97c1dac07919b1818821b1837e31554d2ba81",
+            "geology_sha256": "b8eb776a4d47b8bbd56db7c3d6ca7ea018eda0184ce13079545a089db531029d",
+            "counts": {
+              "geologic_variation:gabbro": 43671,
+              "geologic_variation:slate": 21549,
+              "minecraft:air": 28897,
+              "minecraft:andesite": 860,
+              "minecraft:bedrock": 1794,
+              "minecraft:cave_air": 202,
+              "minecraft:coal_ore": 801,
+              "minecraft:copper_ore": 128,
+              "minecraft:deepslate": 13813,
+              "minecraft:deepslate_copper_ore": 15,
+              "minecraft:deepslate_diamond_ore": 27,
+              "minecraft:deepslate_emerald_ore": 1,
+              "minecraft:deepslate_gold_ore": 13,
+              "minecraft:deepslate_iron_ore": 30,
+              "minecraft:deepslate_lapis_ore": 14,
+              "minecraft:deepslate_redstone_ore": 45,
+              "minecraft:diorite": 1654,
+              "minecraft:dirt": 1248,
+              "minecraft:emerald_ore": 12,
+              "minecraft:gold_ore": 6,
+              "minecraft:granite": 841,
+              "minecraft:grass_block": 95,
+              "minecraft:gravel": 922,
+              "minecraft:infested_deepslate": 24,
+              "minecraft:infested_stone": 41,
+              "minecraft:iron_ore": 519,
+              "minecraft:lapis_ore": 19,
+              "minecraft:lava": 78,
+              "minecraft:oak_leaves": 34,
+              "minecraft:oak_log": 4,
+              "minecraft:redstone_ore": 1,
+              "minecraft:short_grass": 3,
+              "minecraft:stone": 139,
+              "minecraft:tuff": 571,
+              "minecraft:water": 713
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -110,
+            "z": -384,
+            "generation_ms": 173.7326,
+            "blocks_sha256": "1a5e91452ca0ce9ce7c7f80ba5662a919c9bd868f207dea789004850a9c84552",
+            "stage": "full",
+            "normalized_sha256": "311ab62f4803658f647da878a418eab139f0a4fed4d8fa03451e5c022783257a",
+            "geology_sha256": "18c1e6ae96912e14547dfcb8844120e888b5a5e84d5033d5c639899a9b49e424",
+            "counts": {
+              "geologic_variation:gabbro": 67991,
+              "minecraft:air": 26355,
+              "minecraft:andesite": 1059,
+              "minecraft:bedrock": 1792,
+              "minecraft:cave_air": 174,
+              "minecraft:coal_ore": 846,
+              "minecraft:cobweb": 3,
+              "minecraft:copper_ore": 122,
+              "minecraft:deepslate": 13491,
+              "minecraft:deepslate_diamond_ore": 29,
+              "minecraft:deepslate_gold_ore": 21,
+              "minecraft:deepslate_iron_ore": 27,
+              "minecraft:deepslate_lapis_ore": 25,
+              "minecraft:deepslate_redstone_ore": 30,
+              "minecraft:diorite": 1133,
+              "minecraft:dirt": 821,
+              "minecraft:emerald_ore": 31,
+              "minecraft:gold_ore": 18,
+              "minecraft:granite": 1095,
+              "minecraft:gravel": 1455,
+              "minecraft:infested_deepslate": 49,
+              "minecraft:infested_stone": 20,
+              "minecraft:iron_ore": 517,
+              "minecraft:oak_planks": 12,
+              "minecraft:redstone_ore": 4,
+              "minecraft:tuff": 402,
+              "minecraft:water": 1262
+            }
+          },
+          {
+            "kind": "chunk",
+            "dimension": "overworld",
+            "x": -191,
+            "z": -386,
+            "generation_ms": 500.6227,
+            "blocks_sha256": "24640968bf946a293dfcf73c75d872cecca00fb92d5b08838e522bccd9c17cc2",
+            "stage": "full",
+            "normalized_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+            "geology_sha256": "9d7a0ec27cfbe6a95625474314cc9671f492bc1c43186713ec23cec6473fd52e",
+            "counts": {
+              "geologic_variation:gabbro": 43073,
+              "minecraft:air": 52427,
+              "minecraft:andesite": 1356,
+              "minecraft:bedrock": 1803,
+              "minecraft:cave_air": 28,
+              "minecraft:coal_ore": 649,
+              "minecraft:copper_ore": 116,
+              "minecraft:deepslate": 13368,
+              "minecraft:deepslate_diamond_ore": 30,
+              "minecraft:deepslate_gold_ore": 31,
+              "minecraft:deepslate_iron_ore": 25,
+              "minecraft:deepslate_lapis_ore": 17,
+              "minecraft:deepslate_redstone_ore": 18,
+              "minecraft:diorite": 1078,
+              "minecraft:dirt": 742,
+              "minecraft:emerald_ore": 18,
+              "minecraft:gold_ore": 9,
+              "minecraft:granite": 809,
+              "minecraft:gravel": 1335,
+              "minecraft:infested_deepslate": 25,
+              "minecraft:infested_stone": 49,
+              "minecraft:iron_ore": 264,
+              "minecraft:lapis_ore": 11,
+              "minecraft:lava": 13,
+              "minecraft:redstone_ore": 6,
+              "minecraft:stone": 38,
+              "minecraft:tuff": 1442,
+              "minecraft:water": 4
+            }
+          }
+        ]
+      },
+      "regions": [
+        {
+          "kind": "region",
+          "x": -1732,
+          "z": -6144,
+          "wall_ms": 4.2516,
+          "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-6134, anchorZ=-8595, identity=6352826561952862732], stone=GABBRO, elevationMetres=-840.4, reliefMetres=392.0]",
+          "cache_entries": 2
+        },
+        {
+          "kind": "region",
+          "x": -1731,
+          "z": -6144,
+          "wall_ms": 0.038,
+          "region": "Region[province=Province[cellX=0, cellZ=-1, anchorX=3306, anchorZ=-6072, identity=328585151156627333], stone=SLATE, elevationMetres=746.84, reliefMetres=358.0]",
+          "cache_entries": 2
+        }
+      ],
+      "logs": {
+        "console-1.log": "692783aabb28aeac9a38f27c5b81796fdae68b7fb452d420728e17f09ea77d3e"
+      }
+    }
+  ],
+  "stage_comparisons": [
+    {
+      "scale": 1,
+      "stage": "surface",
+      "traversal": {
+        "td_only": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        },
+        "addon": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        }
+      },
+      "normalized_addon_vs_td_only": [
+        true,
+        true
+      ]
+    },
+    {
+      "scale": 1,
+      "stage": "carvers",
+      "traversal": {
+        "td_only": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        },
+        "addon": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        }
+      },
+      "normalized_addon_vs_td_only": [
+        true,
+        true
+      ]
+    },
+    {
+      "scale": 1,
+      "stage": "full",
+      "traversal": {
+        "td_only": {
+          "full_states_equal": false,
+          "regional_positions_equal": true
+        },
+        "addon": {
+          "full_states_equal": false,
+          "regional_positions_equal": true
+        }
+      },
+      "normalized_addon_vs_td_only": [
+        false,
+        false
+      ]
+    },
+    {
+      "scale": 6,
+      "stage": "surface",
+      "traversal": {
+        "td_only": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        },
+        "addon": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        }
+      },
+      "normalized_addon_vs_td_only": [
+        true,
+        true
+      ]
+    },
+    {
+      "scale": 6,
+      "stage": "carvers",
+      "traversal": {
+        "td_only": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        },
+        "addon": {
+          "full_states_equal": true,
+          "regional_positions_equal": true
+        }
+      },
+      "normalized_addon_vs_td_only": [
+        true,
+        true
+      ]
+    },
+    {
+      "scale": 6,
+      "stage": "full",
+      "traversal": {
+        "td_only": {
+          "full_states_equal": false,
+          "regional_positions_equal": true
+        },
+        "addon": {
+          "full_states_equal": false,
+          "regional_positions_equal": false
+        }
+      },
+      "normalized_addon_vs_td_only": [
+        false,
+        false
+      ]
+    }
+  ],
+  "fixtures": {
+    "hosts": {
+      "kind": "hosts",
+      "configured_ore_rules": [
+        "minecraft:ore_iron_small",
+        "minecraft:ore_diamond_small",
+        "minecraft:ore_iron",
+        "minecraft:ore_lapis",
+        "minecraft:ore_andesite",
+        "minecraft:ore_coal_buried",
+        "minecraft:ore_emerald",
+        "minecraft:ore_infested",
+        "minecraft:ore_diamond_buried",
+        "minecraft:ore_granite",
+        "minecraft:ore_redstone",
+        "minecraft:ore_diamond_medium",
+        "minecraft:ore_diamond_large",
+        "minecraft:ore_copper_large",
+        "minecraft:ore_tuff",
+        "minecraft:ore_clay",
+        "minecraft:ore_lapis_buried",
+        "minecraft:ore_diorite",
+        "minecraft:ore_coal",
+        "minecraft:ore_gold_buried",
+        "minecraft:ore_gold",
+        "minecraft:ore_copper_small",
+        "minecraft:ore_dirt",
+        "minecraft:ore_gravel"
+      ],
+      "position": [
+        -504,
+        220,
+        -1032
+      ],
+      "families": [
+        {
+          "carved_to_air": true,
+          "survival_drops": {
+            "hand": "none",
+            "pickaxe": "geologic_variation:cobbled_limestone",
+            "silk": "geologic_variation:limestone"
+          },
+          "ore_positions_match_stone": true,
+          "placed_coal_blocks": 20,
+          "exact_stone_target": false,
+          "coal_target": true,
+          "item_placement": true,
+          "host": "limestone"
+        },
+        {
+          "carved_to_air": true,
+          "survival_drops": {
+            "hand": "none",
+            "pickaxe": "geologic_variation:cobbled_slate",
+            "silk": "geologic_variation:slate"
+          },
+          "ore_positions_match_stone": true,
+          "placed_coal_blocks": 20,
+          "exact_stone_target": false,
+          "coal_target": true,
+          "item_placement": true,
+          "host": "slate"
+        },
+        {
+          "carved_to_air": true,
+          "survival_drops": {
+            "hand": "none",
+            "pickaxe": "geologic_variation:cobbled_quartzite",
+            "silk": "geologic_variation:quartzite"
+          },
+          "ore_positions_match_stone": true,
+          "placed_coal_blocks": 20,
+          "exact_stone_target": false,
+          "coal_target": true,
+          "item_placement": true,
+          "host": "quartzite"
+        },
+        {
+          "carved_to_air": true,
+          "survival_drops": {
+            "hand": "none",
+            "pickaxe": "geologic_variation:cobbled_gabbro",
+            "silk": "geologic_variation:gabbro"
+          },
+          "ore_positions_match_stone": true,
+          "placed_coal_blocks": 20,
+          "exact_stone_target": false,
+          "coal_target": true,
+          "item_placement": true,
+          "host": "gabbro"
+        }
+      ],
+      "excluded_masonry": [
+        "limestone_stairs",
+        "limestone_slab",
+        "limestone_wall",
+        "cobbled_limestone",
+        "cobbled_limestone_stairs",
+        "cobbled_limestone_slab",
+        "cobbled_limestone_wall",
+        "polished_limestone",
+        "polished_limestone_stairs",
+        "polished_limestone_slab",
+        "polished_limestone_wall",
+        "limestone_bricks",
+        "limestone_brick_stairs",
+        "limestone_brick_slab",
+        "limestone_brick_wall",
+        "slate_stairs",
+        "slate_slab",
+        "slate_wall",
+        "cobbled_slate",
+        "cobbled_slate_stairs",
+        "cobbled_slate_slab",
+        "cobbled_slate_wall",
+        "polished_slate",
+        "polished_slate_stairs",
+        "polished_slate_slab",
+        "polished_slate_wall",
+        "slate_bricks",
+        "slate_brick_stairs",
+        "slate_brick_slab",
+        "slate_brick_wall",
+        "quartzite_stairs",
+        "quartzite_slab",
+        "quartzite_wall",
+        "cobbled_quartzite",
+        "cobbled_quartzite_stairs",
+        "cobbled_quartzite_slab",
+        "cobbled_quartzite_wall",
+        "polished_quartzite",
+        "polished_quartzite_stairs",
+        "polished_quartzite_slab",
+        "polished_quartzite_wall",
+        "quartzite_bricks",
+        "quartzite_brick_stairs",
+        "quartzite_brick_slab",
+        "quartzite_brick_wall",
+        "gabbro_stairs",
+        "gabbro_slab",
+        "gabbro_wall",
+        "cobbled_gabbro",
+        "cobbled_gabbro_stairs",
+        "cobbled_gabbro_slab",
+        "cobbled_gabbro_wall",
+        "polished_gabbro",
+        "polished_gabbro_stairs",
+        "polished_gabbro_slab",
+        "polished_gabbro_wall",
+        "gabbro_bricks",
+        "gabbro_brick_stairs",
+        "gabbro_brick_slab",
+        "gabbro_brick_wall"
+      ]
+    },
+    "ore-order": {
+      "feature": "minecraft:ore",
+      "forward_coal": 247,
+      "changed_positions": 148,
+      "reverse_coal": 191,
+      "attempts_per_owner": 8,
+      "discard_chance_on_air_exposure": 0.5,
+      "size": 17,
+      "kind": "ore-order",
+      "hosts": [
+        {
+          "forward_matches_stone": true,
+          "reverse_matches_stone": true,
+          "host": "limestone"
+        },
+        {
+          "forward_matches_stone": true,
+          "reverse_matches_stone": true,
+          "host": "slate"
+        },
+        {
+          "forward_matches_stone": true,
+          "reverse_matches_stone": true,
+          "host": "quartzite"
+        },
+        {
+          "forward_matches_stone": true,
+          "reverse_matches_stone": true,
+          "host": "gabbro"
+        }
+      ],
+      "owner_seeds": [
+        10,
+        11
+      ]
+    },
+    "artifacts": {
+      "geologic-variation-0.2.2-dev.jar": "39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226",
+      "geology-runtime-probe-0.2.2-dev.jar": "59ac092f9e56005f5cb24ea47b4f2186efbc817be1f0993e074541383c123996",
+      "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+    },
+    "logs": {
+      "console-1.log": "bd6e75746fa5151a00a8933fe89a431b97f82cb3805019f604d1a2a70c2e8039"
+    }
+  },
+  "resource_audit": {
+    "artifacts": {
+      "server-1.21.1-20240808.144430-extra.jar": "24a5d2d162cfad2a1a574c4d552e99dc6c6303a49d1e68b43a7b638f3b0930fd",
+      "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+    },
+    "features": [
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_andesite.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:base_stone_overworld"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_clay.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:base_stone_overworld"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_coal.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_coal_buried.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_copper_large.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_copper_small.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_diamond_buried.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_diamond_large.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_diamond_medium.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_diamond_small.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_diorite.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:base_stone_overworld"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_dirt.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:base_stone_overworld"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_emerald.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_gold.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_gold_buried.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_granite.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:base_stone_overworld"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_gravel.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:base_stone_overworld"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_infested.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_iron.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_iron_small.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_lapis.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_lapis_buried.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_redstone.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:stone_ore_replaceables"
+          },
+          {
+            "path": "/config/targets/1/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:deepslate_ore_replaceables"
+          }
+        ]
+      },
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/ore_tuff.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:ore",
+        "rules": [
+          {
+            "path": "/config/targets/0/target",
+            "predicate_type": "minecraft:tag_match",
+            "tag": "minecraft:base_stone_overworld"
+          }
+        ]
+      }
+    ],
+    "configured_host_states": [
+      {
+        "resource": "data/minecraft/worldgen/configured_feature/lake_lava.json",
+        "artifact": "server-1.21.1-20240808.144430-extra.jar",
+        "type": "minecraft:lake",
+        "host_states": [
+          {
+            "path": "/config/barrier/state",
+            "state": {
+              "Name": "minecraft:stone"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "saved_scale6_comparisons": {
+    "td_only": {
+      "chunks": [
+        [
+          -191,
+          -386
+        ],
+        [
+          -110,
+          -384
+        ],
+        [
+          -109,
+          -384
+        ],
+        [
+          -108,
+          -384
+        ]
+      ],
+      "all_changed_blocks": 1731,
+      "normalized_changed_blocks": 1731,
+      "changed_material_categories": {
+        "bedrock": 0,
+        "deepslate": 4,
+        "fluids": 0,
+        "soil": 22
+      },
+      "vanilla_stone_transitions": [
+        {
+          "left": "minecraft:coal_ore",
+          "right": "minecraft:stone",
+          "count": 490
+        },
+        {
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "count": 514
+        }
+      ],
+      "regional_changed_blocks": 0,
+      "regional_transitions": [],
+      "palette_conflicts": [],
+      "regional_examples": []
+    },
+    "addon": {
+      "chunks": [
+        [
+          -191,
+          -386
+        ],
+        [
+          -110,
+          -384
+        ],
+        [
+          -109,
+          -384
+        ],
+        [
+          -108,
+          -384
+        ]
+      ],
+      "all_changed_blocks": 1858,
+      "normalized_changed_blocks": 1858,
+      "changed_material_categories": {
+        "bedrock": 0,
+        "deepslate": 4,
+        "fluids": 0,
+        "soil": 27
+      },
+      "vanilla_stone_transitions": [],
+      "regional_changed_blocks": 1439,
+      "regional_transitions": [
+        {
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "count": 623
+        },
+        {
+          "left": "geologic_variation:slate",
+          "right": "minecraft:coal_ore",
+          "count": 98
+        },
+        {
+          "left": "minecraft:coal_ore",
+          "right": "geologic_variation:gabbro",
+          "count": 641
+        },
+        {
+          "left": "minecraft:coal_ore",
+          "right": "geologic_variation:slate",
+          "count": 77
+        }
+      ],
+      "palette_conflicts": [],
+      "regional_examples": [
+        {
+          "position": [
+            -3049,
+            35,
+            -6165
+          ],
+          "left": {
+            "Name": "geologic_variation:gabbro"
+          },
+          "right": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "position": [
+            -3049,
+            35,
+            -6164
+          ],
+          "left": {
+            "Name": "geologic_variation:gabbro"
+          },
+          "right": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "position": [
+            -3049,
+            36,
+            -6165
+          ],
+          "left": {
+            "Name": "geologic_variation:gabbro"
+          },
+          "right": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "position": [
+            -3049,
+            36,
+            -6164
+          ],
+          "left": {
+            "Name": "geologic_variation:gabbro"
+          },
+          "right": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "position": [
+            -3056,
+            46,
+            -6170
+          ],
+          "left": {
+            "Name": "minecraft:coal_ore"
+          },
+          "right": {
+            "Name": "geologic_variation:gabbro"
+          }
+        },
+        {
+          "position": [
+            -3055,
+            46,
+            -6170
+          ],
+          "left": {
+            "Name": "minecraft:coal_ore"
+          },
+          "right": {
+            "Name": "geologic_variation:gabbro"
+          }
+        },
+        {
+          "position": [
+            -3054,
+            46,
+            -6170
+          ],
+          "left": {
+            "Name": "minecraft:coal_ore"
+          },
+          "right": {
+            "Name": "geologic_variation:gabbro"
+          }
+        },
+        {
+          "position": [
+            -3054,
+            47,
+            -6169
+          ],
+          "left": {
+            "Name": "minecraft:coal_ore"
+          },
+          "right": {
+            "Name": "geologic_variation:gabbro"
+          }
+        },
+        {
+          "position": [
+            -3053,
+            47,
+            -6169
+          ],
+          "left": {
+            "Name": "minecraft:coal_ore"
+          },
+          "right": {
+            "Name": "geologic_variation:gabbro"
+          }
+        },
+        {
+          "position": [
+            -3048,
+            47,
+            -6164
+          ],
+          "left": {
+            "Name": "geologic_variation:gabbro"
+          },
+          "right": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "position": [
+            -3047,
+            47,
+            -6164
+          ],
+          "left": {
+            "Name": "geologic_variation:gabbro"
+          },
+          "right": {
+            "Name": "minecraft:coal_ore"
+          }
+        },
+        {
+          "position": [
+            -3048,
+            47,
+            -6163
+          ],
+          "left": {
+            "Name": "geologic_variation:gabbro"
+          },
+          "right": {
+            "Name": "minecraft:coal_ore"
+          }
+        }
+      ]
+    }
+  }
+}
