@@ -75,6 +75,16 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For actual hot common-config reload use `scripts/verify-hot-config.py` with a
+verified saved-terrain `--fixture`, then `scripts/summarize-hot-config.py`.
+The runner externally edits all six proposals while each server stays running;
+a passive mod-bus observer records the real Reloading event and watcher stack.
+Permission-level-4 `acceptance reload-events` reports observed events;
+`acceptance reload-cache <clear|query>` controls and measures the real geology
+cache on a frozen disposable server. No command dispatches a reload or calls its
+handler. The [hot-config report](hot-config-2026-11-01.md) records pinned API
+inspection, independent cache routes, save/reopen preservation and limits.
+
 For independent live seed/scale queries use `scripts/verify-live-context.py`
 with a verified disposable `--fixture` and a new output directory, then validate
 with `scripts/summarize-live-context.py`. Test-only

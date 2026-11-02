@@ -30,7 +30,12 @@ public final class RuntimeProbe {
         NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.server.ServerStoppedEvent event) -> CoalTrace.flush());
     }
     private static void commands(RegisterCommandsEvent event) {
+        HotConfig.attach();
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
+            .then(Commands.literal("reload-events").executes(c -> send(c.getSource(), HotConfig.events())))
+            .then(Commands.literal("reload-cache").then(Commands.argument("action", com.mojang.brigadier.arguments.StringArgumentType.word())
+                .executes(c -> send(c.getSource(), HotConfig.cache(c.getSource(),
+                    com.mojang.brigadier.arguments.StringArgumentType.getString(c,"action"))))))
             .then(Commands.literal("prepare").executes(c -> prepare(c.getSource())))
             .then(Commands.literal("settings").executes(c -> settings(c.getSource())))
             .then(Commands.literal("live-context").then(Commands.argument("field", com.mojang.brigadier.arguments.StringArgumentType.word())
