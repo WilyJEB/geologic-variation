@@ -1,0 +1,69 @@
+{
+  "source_manifest_sha256": "824533277a0227d54e72d552134a2d7de7c7bbe4bafd150ddc704e3e9ceab0c5",
+  "isolated_manifest_sha256": "e108409f95840dc11393b4616428268eef8eb61562293dc918b33f07f20e53a6",
+  "copy_bytes": 331032064,
+  "installed_jdk_unchanged": true,
+  "runtime_sha256": {
+    "msvcp140.dll": "7c26614e1d733892c2deac7e245ce115504b1d80592dd0a01b08e3e5a55f89ca",
+    "msvcp140_1.dll": "206c931bf90fdad8816de3b5e2ef80b2bcaa9406c89ecc05fe6fddffe251e982",
+    "vcruntime140.dll": "d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7",
+    "vcruntime140_1.dll": "a7146c08f89fe5b04541ab507cdb59ff7b44534d4ba3c668a426c6450a03434e"
+  },
+  "original_runtime_sha256": {
+    "msvcp140.dll": "74892d9b4028c05debaf0b9b5d9dc6d22f7956fa7d7eee00c681318c26792823",
+    "msvcp140_1.dll": null,
+    "vcruntime140.dll": "69320f278d90efaaeb67e2a1b55e5b0543883125834c812c8d9c39676e0494fc",
+    "vcruntime140_1.dll": "6fd366a691ed68430bcd0a3de3d8d19a0cb2102952bfc140bbef4354ed082c47"
+  },
+  "changed_or_added_files": [
+    "bin/msvcp140.dll",
+    "bin/msvcp140_1.dll",
+    "bin/vcruntime140.dll",
+    "bin/vcruntime140_1.dll"
+  ],
+  "native_preflights": {
+    "stock": {
+      "pid": 11396,
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 0.906,
+      "log_sha256": "fb56a9d2e1e59f1c325b69fac5346f3570009799a3676afeb7f382e2da77e99c",
+      "free_bytes_before": 2529628160
+    },
+    "isolated": {
+      "pid": 24976,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.64,
+      "log_sha256": "b61d8d51f8f61668a56bdbf6a46ed1adc620c07c2d2679db498212ae4c5af35b",
+      "free_bytes_before": 2541727744
+    }
+  },
+  "native_runtime_sha256": "fd5156eed8993ca0b9255012abd47402e833970d047258b1115957e1e7c26d7f",
+  "signatures": [
+    {
+      "Name": "msvcp140.dll",
+      "Status": 0,
+      "Signer": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    },
+    {
+      "Name": "vcruntime140.dll",
+      "Status": 0,
+      "Signer": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    },
+    {
+      "Name": "vcruntime140_1.dll",
+      "Status": 0,
+      "Signer": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    },
+    {
+      "Name": "msvcp140_1.dll",
+      "Status": 0,
+      "Signer": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+    }
+  ],
+  "raw_logs": {
+    "stock": "JAVA 21.0.6 Windows 11/amd64\nException in thread \"main\" java.lang.UnsatisfiedLinkError: <workspace>\\runs\\acceptance\\backend-dependencies-2026-11-02-01\\onnxruntime.dll: A dynamic link library (DLL) initialization routine failed\n\tat java.base/jdk.internal.loader.NativeLibraries.load(Native Method)\n\tat java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(NativeLibraries.java:331)\n\tat java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:197)\n\tat java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:139)\n\tat java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2418)\n\tat java.base/java.lang.Runtime.load0(Runtime.java:852)\n\tat java.base/java.lang.System.load(System.java:2025)\n\tat ai.onnxruntime.OnnxRuntime.load(OnnxRuntime.java:378)\n\tat ai.onnxruntime.OnnxRuntime.init(OnnxRuntime.java:188)\n\tat ai.onnxruntime.OrtEnvironment.<clinit>(OrtEnvironment.java:38)\n\tat BackendPreflight.main(BackendPreflight.java:10)\n",
+    "isolated": "JAVA 21.0.6 Windows 11/amd64\nNATIVE_INITIALIZED providers=[CPU, DIRECT_ML]\nPROVIDER_ADDED directml\n\u001b\u0000[\u00000\u0000;\u00009\u00003\u0000m\u00002\u00000\u00002\u00006\u0000-\u00001\u00001\u0000-\u00000\u00002\u0000 \u00001\u00000\u0000:\u00003\u00007\u0000:\u00003\u00008\u0000.\u00005\u00006\u00000\u00004\u00002\u00007\u00003\u0000 \u0000[\u0000W\u0000:\u0000o\u0000n\u0000n\u0000x\u0000r\u0000u\u0000n\u0000t\u0000i\u0000m\u0000e\u0000:\u0000,\u0000 \u0000s\u0000e\u0000s\u0000s\u0000i\u0000o\u0000n\u0000_\u0000s\u0000t\u0000a\u0000t\u0000e\u0000.\u0000c\u0000c\u0000:\u00001\u00003\u00006\u00007\u0000 \u0000o\u0000n\u0000n\u0000x\u0000r\u0000u\u0000n\u0000t\u0000i\u0000m\u0000e\u0000:\u0000:\u0000V\u0000e\u0000r\u0000i\u0000f\u0000y\u0000E\u0000a\u0000c\u0000h\u0000N\u0000o\u0000d\u0000e\u0000I\u0000s\u0000A\u0000s\u0000s\u0000i\u0000g\u0000n\u0000e\u0000d\u0000T\u0000o\u0000A\u0000n\u0000E\u0000p\u0000]\u0000 \u0000S\u0000o\u0000m\u0000e\u0000 \u0000n\u0000o\u0000d\u0000e\u0000s\u0000 \u0000w\u0000e\u0000r\u0000e\u0000 \u0000n\u0000o\u0000t\u0000 \u0000a\u0000s\u0000s\u0000i\u0000g\u0000n\u0000e\u0000d\u0000 \u0000t\u0000o\u0000 \u0000t\u0000h\u0000e\u0000 \u0000p\u0000r\u0000e\u0000f\u0000e\u0000r\u0000r\u0000e\u0000d\u0000 \u0000e\u0000x\u0000e\u0000c\u0000u\u0000t\u0000i\u0000o\u0000n\u0000 \u0000p\u0000r\u0000o\u0000v\u0000i\u0000d\u0000e\u0000r\u0000s\u0000 \u0000w\u0000h\u0000i\u0000c\u0000h\u0000 \u0000m\u0000a\u0000y\u0000 \u0000o\u0000r\u0000 \u0000m\u0000a\u0000y\u0000 \u0000n\u0000o\u0000t\u0000 \u0000h\u0000a\u0000v\u0000e\u0000 \u0000a\u0000n\u0000 \u0000n\u0000e\u0000g\u0000a\u0000t\u0000i\u0000v\u0000e\u0000 \u0000i\u0000m\u0000p\u0000a\u0000c\u0000t\u0000 \u0000o\u0000n\u0000 \u0000p\u0000e\u0000r\u0000f\u0000o\u0000r\u0000m\u0000a\u0000n\u0000c\u0000e\u0000.\u0000 \u0000e\u0000.\u0000g\u0000.\u0000 \u0000O\u0000R\u0000T\u0000 \u0000e\u0000x\u0000p\u0000l\u0000i\u0000c\u0000i\u0000t\u0000l\u0000y\u0000 \u0000a\u0000s\u0000s\u0000i\u0000g\u0000n\u0000s\u0000 \u0000s\u0000h\u0000a\u0000p\u0000e\u0000 \u0000r\u0000e\u0000l\u0000a\u0000t\u0000e\u0000d\u0000 \u0000o\u0000p\u0000s\u0000 \u0000t\u0000o\u0000 \u0000C\u0000P\u0000U\u0000 \u0000t\u0000o\u0000 \u0000i\u0000m\u0000p\u0000r\u0000o\u0000v\u0000e\u0000 \u0000p\u0000e\u0000r\u0000f\u0000.\u0000\u001b\u0000[\u0000m\u0000\n\u0000\u001b\u0000[\u00000\u0000;\u00009\u00003\u0000m\u00002\u00000\u00002\u00006\u0000-\u00001\u00001\u0000-\u00000\u00002\u0000 \u00001\u00000\u0000:\u00003\u00007\u0000:\u00003\u00008\u0000.\u00005\u00006\u00002\u00006\u00007\u00008\u00009\u0000 \u0000[\u0000W\u0000:\u0000o\u0000n\u0000n\u0000x\u0000r\u0000u\u0000n\u0000t\u0000i\u0000m\u0000e\u0000:\u0000,\u0000 \u0000s\u0000e\u0000s\u0000s\u0000i\u0000o\u0000n\u0000_\u0000s\u0000t\u0000a\u0000t\u0000e\u0000.\u0000c\u0000c\u0000:\u00001\u00003\u00006\u00009\u0000 \u0000o\u0000n\u0000n\u0000x\u0000r\u0000u\u0000n\u0000t\u0000i\u0000m\u0000e\u0000:\u0000:\u0000V\u0000e\u0000r\u0000i\u0000f\u0000y\u0000E\u0000a\u0000c\u0000h\u0000N\u0000o\u0000d\u0000e\u0000I\u0000s\u0000A\u0000s\u0000s\u0000i\u0000g\u0000n\u0000e\u0000d\u0000T\u0000o\u0000A\u0000n\u0000E\u0000p\u0000]\u0000 \u0000R\u0000e\u0000r\u0000u\u0000n\u0000n\u0000i\u0000n\u0000g\u0000 \u0000w\u0000i\u0000t\u0000h\u0000 \u0000v\u0000e\u0000r\u0000b\u0000o\u0000s\u0000e\u0000 \u0000o\u0000u\u0000t\u0000p\u0000u\u0000t\u0000 \u0000o\u0000n\u0000 \u0000a\u0000 \u0000n\u0000o\u0000n\u0000-\u0000m\u0000i\u0000n\u0000i\u0000m\u0000a\u0000l\u0000 \u0000b\u0000u\u0000i\u0000l\u0000d\u0000 \u0000w\u0000i\u0000l\u0000l\u0000 \u0000s\u0000h\u0000o\u0000w\u0000 \u0000n\u0000o\u0000d\u0000e\u0000 \u0000a\u0000s\u0000s\u0000i\u0000g\u0000n\u0000m\u0000e\u0000n\u0000t\u0000s\u0000.\u0000\u001b\u0000[\u0000m\u0000\n\u0000MODEL_SESSION_CREATED inputs={x=NodeInfo(name=x,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1, 11, 64, 64],dimNames=[batch,\"\",\"\",\"\"])), noise_labels=NodeInfo(name=noise_labels,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_0=NodeInfo(name=cond_0,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_1=NodeInfo(name=cond_1,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_2=NodeInfo(name=cond_2,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_3=NodeInfo(name=cond_3,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_4=NodeInfo(name=cond_4,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch]))}\n"
+  }
+}
