@@ -75,6 +75,14 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For independent dedicated startup rejection and restoration, use
+`scripts/verify-context-startup.py` and `scripts/summarize-context-startup.py`;
+see the [#9 startup report](context-startup-2026-11-01.md). Permission-level-4
+`acceptance settings` reports active/requested settings, captured context and
+server ownership through reflection, so the probe remains optional in TD-only
+arms. These tests mutate only newly created fixture copies, restore their own
+verified bytes, and do not provide a legacy migration tool or live reload proof.
+
 For actual natural feature-write attribution, use `scripts/trace-natural-coal.py`
 and `scripts/summarize-natural-coal.py`; see the
 [natural ore-order report](natural-coal-trace-2026-11-01.md). `acceptance trace-reset`,

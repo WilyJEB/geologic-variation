@@ -1,3 +1,15 @@
+# Dedicated startup context guards (2026-11-01)
+
+The [#9 startup report](context-startup-2026-11-01.md) records five independent
+CPU dedicated rejection/restoration cases: actual seed/scale changes, schema 1,
+missing snapshot and a malformed setting. Rejections preserve snapshot bytes
+(or absence) and all nine existing region files, exit before Ready, and log the
+intended guard. Exact restoration reopens each copy with matching settings,
+context, region identity and existing blocks. A separate control confirms all
+six changed common-config proposals remain ignored by the continuing snapshot.
+No production code/JAR or generation changes; #9 remains open for the remaining
+artifact/model/backend, upgrade, live-change and client/lifecycle cases.
+
 # Natural ore-order tracing (2026-11-01)
 
 PR #34 merged; #6 is closed for its recorded CPU scope. The
