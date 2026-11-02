@@ -83,6 +83,17 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+Before a trained-weight/backend matrix, `scripts/inspect-backend-feasibility.py`
+can test pinned official CPU/CUDA/Windows native runtimes against the verified
+coarse model without opening a save. `BackendPreflight.java` is a standalone
+test helper, never packaged with the addon. All processes are bounded; no CPU
+fallback is accepted for a GPU candidate. A created session only selects a
+candidate, not runtime save-safety acceptance. The blocked-report exporter is
+`scripts/summarize-backend-feasibility.py`; it rechecks raw logs and official
+source/catalog evidence and refuses a blocked conclusion if a GPU session
+succeeds. See [the feasibility report](backend-feasibility-2026-11-01.md) for
+arguments, source URLs, input pins and the current CUDA/DirectML limitations.
+
 For actual official TD artifact substitution use `scripts/verify-td-artifact.py`
 with pinned `--td`, `--alternate`, verified `--fixture` and NEW `--output`, then
 `scripts/summarize-td-artifact.py`. The three-launch CPU control/rejection/reopen

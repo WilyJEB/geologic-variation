@@ -1,3 +1,14 @@
+# Trained-weight/backend feasibility (2026-11-01)
+
+The [feasibility report](backend-feasibility-2026-11-01.md) records a blocked #9
+gate: official CPU native/model session control passes, CUDA provider loading
+fails with error 126, and Windows/DirectML fails native DLL initialization. The
+official model catalog has no second ready-to-load ONNX weight set. No save was
+launched and no rejection/restoration matrix is claimed. Fixture/shared inputs
+are unchanged; source/API/hardware/log evidence and concrete unblocking inputs
+are recorded. Earlier matrices are reused, not rerun. Production, #5 and #11
+remain unchanged; #9 stays open.
+
 # Supported TD model-config substitution (2026-11-01)
 
 The [model-config report](model-config-2026-11-01.md) records three NEW dedicated

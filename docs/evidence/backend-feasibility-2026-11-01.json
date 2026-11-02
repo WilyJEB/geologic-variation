@@ -1,0 +1,709 @@
+{
+  "kind": "native feasibility, not save-safety acceptance",
+  "artifact_sha256": {
+    "cpu": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+    "cuda": "97ff25936fdf79b9cabbf8b68dc5d02fd15938437e08069c4005619f695161ad",
+    "directml": "64422a53d395666ed0774a8904823b7c96688b5ce82a0026326c3e823f7e99dd"
+  },
+  "manifest": {
+    "repositorySlug": "xandergos/terrain-diffusion-30m-onnx",
+    "revision": "ad2df557eca5645f588766101cf3bc3682455c3e",
+    "assets": {
+      "base_model.onnx": {
+        "sha256": "543de788f73d0a4012685c908259f615601102aace4751aeccec64154ba145c0",
+        "sizeBytes": 2029994361,
+        "url": "https://huggingface.co/xandergos/terrain-diffusion-30m-onnx/resolve/ad2df557eca5645f588766101cf3bc3682455c3e/base_model.onnx?download=true"
+      },
+      "coarse_model.onnx": {
+        "sha256": "d6ca15b21b2e35d5e594a9ac7a4249a2376590c0ad2b5b49a1e6e2d033450008",
+        "sizeBytes": 22497125,
+        "url": "https://huggingface.co/xandergos/terrain-diffusion-30m-onnx/resolve/ad2df557eca5645f588766101cf3bc3682455c3e/coarse_model.onnx?download=true"
+      },
+      "decoder_model.onnx": {
+        "sha256": "6473ae47ca6ec4d743d30fe4f5d381fe4158899714eff09b762005bdbdef68c1",
+        "sizeBytes": 223854143,
+        "url": "https://huggingface.co/xandergos/terrain-diffusion-30m-onnx/resolve/ad2df557eca5645f588766101cf3bc3682455c3e/decoder_model.onnx?download=true"
+      },
+      "pipeline_data.json": {
+        "sha256": "e3132c3ef0c65d8613615f9278ffe23bbd9363ddcd87f1cc6f18456bcc9efe5c",
+        "sizeBytes": 12226,
+        "url": "https://huggingface.co/xandergos/terrain-diffusion-30m-onnx/resolve/ad2df557eca5645f588766101cf3bc3682455c3e/pipeline_data.json?download=true"
+      },
+      "world_pipeline_config.json": {
+        "sha256": "c60f0b74d89317e64cfc623fbfdd828f1b5b2e50aa75020ac4001103381853bd",
+        "sizeBytes": 774,
+        "url": "https://huggingface.co/xandergos/terrain-diffusion-30m-onnx/resolve/ad2df557eca5645f588766101cf3bc3682455c3e/world_pipeline_config.json?download=true"
+      }
+    }
+  },
+  "asset_sha256": {
+    "base_model.onnx": "543de788f73d0a4012685c908259f615601102aace4751aeccec64154ba145c0",
+    "coarse_model.onnx": "d6ca15b21b2e35d5e594a9ac7a4249a2376590c0ad2b5b49a1e6e2d033450008",
+    "decoder_model.onnx": "6473ae47ca6ec4d743d30fe4f5d381fe4158899714eff09b762005bdbdef68c1",
+    "pipeline_data.json": "e3132c3ef0c65d8613615f9278ffe23bbd9363ddcd87f1cc6f18456bcc9efe5c",
+    "world_pipeline_config.json": "c60f0b74d89317e64cfc623fbfdd828f1b5b2e50aa75020ac4001103381853bd"
+  },
+  "fixture_files": 21,
+  "fixture_manifest_sha256": "4a9b4ed05657ce7814a7cb92d08724e485b61802f9eccfc0a294c52b9cf6ffc6",
+  "cases": {
+    "cpu": {
+      "pid": 1776,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.265,
+      "log_sha256": "0c262d8e304689e589c9c00116656bfadb75a5d8259937ba8a9d9988f8f578c3",
+      "free_bytes_before": 3860496384,
+      "runtime_entry": "META-INF/jarjar/onnxruntime-1.20.0.jar",
+      "runtime_sha256": "c46608681692b3693914defb42fa3119ad7cb6146870581ece247e0ed5793fe8",
+      "native_libraries": {
+        "ai/onnxruntime/native/win-x64/onnxruntime.dll": {
+          "sha256": "fc540584294ee523643b538de6a4573cda6f60a3f041f5e19c9a92ef1a21f856",
+          "bytes": 11567672,
+          "machine": "0x8664"
+        },
+        "ai/onnxruntime/native/win-x64/onnxruntime4j_jni.dll": {
+          "sha256": "b19d869ebd53b688912e7624c88fd759d9ec5c2c650df6cf25c7344592cefaf8",
+          "bytes": 87096,
+          "machine": "0x8664"
+        }
+      },
+      "compile": {
+        "pid": 24520,
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.344,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "log_excerpt": "JAVA 21.0.6 Windows 11/amd64\nNATIVE_INITIALIZED providers=[CPU, AZURE]\nPROVIDER_ADDED cpu\nMODEL_SESSION_CREATED inputs={x=NodeInfo(name=x,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1, 11, 64, 64],dimNames=[batch,\"\",\"\",\"\"])), noise_labels=NodeInfo(name=noise_labels,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_0=NodeInfo(name=cond_0,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_1=NodeInfo(name=cond_1,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_2=NodeInfo(name=cond_2,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_3=NodeInfo(name=cond_3,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch])), cond_4=NodeInfo(name=cond_4,info=TensorInfo(javaType=FLOAT,onnxType=ONNX_TENSOR_ELEMENT_DATA_TYPE_FLOAT,shape=[-1],dimNames=[batch]))}\n",
+      "native_initialized": true,
+      "provider_added": true,
+      "model_session_created": true,
+      "candidate": true
+    },
+    "cuda": {
+      "pid": 10688,
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 3.703,
+      "log_sha256": "90ef2ba41fac6b078ba67108abeed0303f27fe866c8844b0b03aa7acfca8673c",
+      "free_bytes_before": 3755835392,
+      "runtime_entry": "META-INF/jarjar/onnxruntime_gpu-1.20.0.jar",
+      "runtime_sha256": "ab70f78259cc730ef27072ca83fd4cea5682e51530081cf12be2ecd2910fa4e4",
+      "native_libraries": {
+        "ai/onnxruntime/native/win-x64/onnxruntime.dll": {
+          "sha256": "2f3c6bd66eed0dbe406891f9a48c1807c1bdc1da5a5ae9e33a6898ee74201e1d",
+          "bytes": 12395080,
+          "machine": "0x8664"
+        },
+        "ai/onnxruntime/native/win-x64/onnxruntime4j_jni.dll": {
+          "sha256": "ad49481c581e4d5fc1ea9dc884dd55d9827797580af12749dbed556a851ca3ea",
+          "bytes": 87608,
+          "machine": "0x8664"
+        },
+        "ai/onnxruntime/native/win-x64/onnxruntime_providers_cuda.dll": {
+          "sha256": "516a2b7567778d72d77e10742716a15717af7490737f276583c4dcdf42b4771d",
+          "bytes": 673740344,
+          "machine": "0x8664"
+        },
+        "ai/onnxruntime/native/win-x64/onnxruntime_providers_shared.dll": {
+          "sha256": "022e584dba27039a1eb9caee4e9ed9fd7892e4ab0653970bfa8abfd73bbe94ff",
+          "bytes": 22088,
+          "machine": "0x8664"
+        },
+        "ai/onnxruntime/native/win-x64/onnxruntime_providers_tensorrt.dll": {
+          "sha256": "e5329a9cd036ac2e20c28469a2f0cfe360e9927cbaf0c5e965a47a14a7b8b905",
+          "bytes": 758840,
+          "machine": "0x8664"
+        }
+      },
+      "compile": {
+        "pid": 28108,
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.406,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "log_excerpt": "JAVA 21.0.6 Windows 11/amd64\nNATIVE_INITIALIZED providers=[CPU, CUDA, TENSOR_RT]\nException in thread \"main\" ai.onnxruntime.OrtException: Error code - ORT_RUNTIME_EXCEPTION - message: D:\\a\\_work\\1\\s\\onnxruntime\\core\\session\\provider_bridge_ort.cc:1539 onnxruntime::ProviderLibrary::Get [ONNXRuntimeError] : 1 : FAIL : LoadLibrary failed with error 126 \"\" when trying to load \"<workspace>\\runs\\acceptance\\backend-feasibility-2026-11-01-02\\cuda\\tmp\\onnxruntime-java15957578043594552259\\onnxruntime_providers_cuda.dll\"\n\n\tat ai.onnxruntime.providers.OrtCUDAProviderOptions.applyToNative(Native Method)\n\tat ai.onnxruntime.providers.StringConfigProviderOptions.applyToNative(StringConfigProviderOptions.java:90)\n\tat ai.onnxruntime.OrtSession$SessionOptions.addCUDA(OrtSession.java:1077)\n\tat BackendPreflight.main(BackendPreflight.java:17)\n",
+      "native_initialized": true,
+      "provider_added": false,
+      "model_session_created": false,
+      "candidate": false
+    },
+    "directml": {
+      "pid": 7480,
+      "exit_code": 1,
+      "timed_out": false,
+      "elapsed_seconds": 1.078,
+      "log_sha256": "254e6526853a1a2e2315e2336aa00609610a7001afbcdd86638f1877b4e5d8d2",
+      "free_bytes_before": 3191689216,
+      "runtime_entry": "META-INF/jarjar/onnxruntime-dml-1.0.jar",
+      "runtime_sha256": "fd5156eed8993ca0b9255012abd47402e833970d047258b1115957e1e7c26d7f",
+      "native_libraries": {
+        "ai/onnxruntime/native/win-x64/onnxruntime4j_jni.dll": {
+          "sha256": "27fa4769521c0030644d556d5359eb3c1316fcd1dde6cfb641df4b851ee8d354",
+          "bytes": 127488,
+          "machine": "0x8664"
+        },
+        "ai/onnxruntime/native/win-x64/onnxruntime.dll": {
+          "sha256": "d447215673ececcde06e3589f9c1983e447102c5ed6eaf7972cc55522ff52e3f",
+          "bytes": 21509120,
+          "machine": "0x8664"
+        },
+        "ai/onnxruntime/native/win-x64/onnxruntime_providers_shared.dll": {
+          "sha256": "da95228987756a2c64e24ff07d8141f2cecd68aed9bd94b5c27912351cd21313",
+          "bytes": 11264,
+          "machine": "0x8664"
+        }
+      },
+      "compile": {
+        "pid": 23092,
+        "exit_code": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.437,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "log_excerpt": "JAVA 21.0.6 Windows 11/amd64\nException in thread \"main\" java.lang.UnsatisfiedLinkError: <workspace>\\runs\\acceptance\\backend-feasibility-2026-11-01-02\\directml\\tmp\\onnxruntime-java11732309054327972715\\onnxruntime.dll: A dynamic link library (DLL) initialization routine failed\n\tat java.base/jdk.internal.loader.NativeLibraries.load(Native Method)\n\tat java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(NativeLibraries.java:331)\n\tat java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:197)\n\tat java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:139)\n\tat java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2418)\n\tat java.base/java.lang.Runtime.load0(Runtime.java:852)\n\tat java.base/java.lang.System.load(System.java:2025)\n\tat ai.onnxruntime.OnnxRuntime.load(OnnxRuntime.java:406)\n\tat ai.onnxruntime.OnnxRuntime.init(OnnxRuntime.java:188)\n\tat ai.onnxruntime.OrtEnvironment.<clinit>(OrtEnvironment.java:38)\n\tat BackendPreflight.main(BackendPreflight.java:10)\n",
+      "native_initialized": false,
+      "provider_added": false,
+      "model_session_created": false,
+      "candidate": false
+    }
+  },
+  "hardware": {
+    "pid": 16576,
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 0.047,
+    "log_sha256": "e52bff74c84f37d948d73183fb496334f681f359529a2e5a45d992e9be5e1a82",
+    "text": "name, driver_version, memory.total [MiB]\nNVIDIA GeForce RTX 5080, 610.88, 16303 MiB"
+  },
+  "cuda_dlls_on_path": {
+    "cudart64_12.dll": false,
+    "cublas64_12.dll": false,
+    "cudnn64_9.dll": false
+  },
+  "fixture_unchanged": true,
+  "shared_inputs_unchanged": true,
+  "identical_td_classes": 58,
+  "save_launches": 0,
+  "save_safety_accepted": false,
+  "source_sha256": {
+    "BackendPreflight.java": "ab11a2c97afd3d98f38254f450dad2eb7f0964b75fd06fca834194ec0d45eba6",
+    "inspect-backend-feasibility.py": "0aeb0312e409398b10456d8164202be411a3f1e3d0ff3745062bc948580dc773"
+  },
+  "official_artifacts": {
+    "cpu": {
+      "name": "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar",
+      "digest": "sha256:3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+      "size": 92727089,
+      "browser_download_url": "https://github.com/xandergos/terrain-diffusion-mc/releases/download/2.3.0-preview/NeoForge-terrain-diffusion-mc-2.3.0-cpu%2B1.21.1.jar"
+    },
+    "cuda": {
+      "name": "NeoForge-terrain-diffusion-mc-2.3.0-cuda+1.21.1.jar",
+      "digest": "sha256:97ff25936fdf79b9cabbf8b68dc5d02fd15938437e08069c4005619f695161ad",
+      "size": 547142899,
+      "browser_download_url": "https://github.com/xandergos/terrain-diffusion-mc/releases/download/2.3.0-preview/NeoForge-terrain-diffusion-mc-2.3.0-cuda%2B1.21.1.jar"
+    },
+    "directml": {
+      "name": "NeoForge-terrain-diffusion-mc-2.3.0-windows+1.21.1.jar",
+      "digest": "sha256:64422a53d395666ed0774a8904823b7c96688b5ce82a0026326c3e823f7e99dd",
+      "size": 6952064,
+      "browser_download_url": "https://github.com/xandergos/terrain-diffusion-mc/releases/download/2.3.0-preview/NeoForge-terrain-diffusion-mc-2.3.0-windows%2B1.21.1.jar"
+    }
+  },
+  "selection": {
+    "td_source_commit": "8acd2b680ee248334637f8cf13f6c78ac20003da",
+    "official_onnx_history": [
+      {
+        "id": "ad2df557eca5645f588766101cf3bc3682455c3e",
+        "title": "Upload 5 files",
+        "message": "",
+        "authors": [
+          {
+            "user": "xandergos",
+            "avatar": "/avatars/81f0407aac0327d66b449cb31763fa98.svg"
+          }
+        ],
+        "date": "2026-04-05T00:55:09.000Z"
+      },
+      {
+        "id": "b564963e838dd741d1eab99c904f86a7888c0b7a",
+        "title": "initial commit",
+        "message": "",
+        "authors": [
+          {
+            "user": "xandergos",
+            "avatar": "/avatars/81f0407aac0327d66b449cb31763fa98.svg"
+          }
+        ],
+        "date": "2026-04-05T00:54:04.000Z"
+      }
+    ],
+    "official_model_catalog": {
+      "xandergos/TerrainDiffusion-Consistency-Base-192x3": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "4bea2c366c24b3f653832b26610da8f9ddca55c1",
+            "size": 208,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "fa33ebe8ec0e66586933b7a01349754a61eca189",
+            "size": 716,
+            "path": "config.json"
+          },
+          {
+            "type": "file",
+            "oid": "a77491004d201462785c5b26e7699b36c8ebf0c4",
+            "size": 1014772076,
+            "lfs": {
+              "oid": "e426277db86517335d4b0bc02b3d456bb812b2a8726ea010635686f77373be36",
+              "size": 1014772076,
+              "pointerSize": 135
+            },
+            "xetHash": "6e1b3c46055be150d28c1a1f94573b2d5e09f70c170f8805a7aee19b4aa139e2",
+            "path": "diffusion_pytorch_model.safetensors"
+          }
+        ]
+      },
+      "xandergos/TerrainDiffusion-Consistency-Decoder-64x3": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "4bea2c366c24b3f653832b26610da8f9ddca55c1",
+            "size": 208,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "5f10a907af269cc02668a84fa8a40ea873dca32c",
+            "size": 630,
+            "path": "config.json"
+          },
+          {
+            "type": "file",
+            "oid": "a6e7b174b8a0ae5f3c22ad2661a06ebc5bd34a89",
+            "size": 111709108,
+            "lfs": {
+              "oid": "b6c7fa99f836ad75c514236c9529e18a68ea207ed59dd39fd1341fc9a8a03bcc",
+              "size": 111709108,
+              "pointerSize": 134
+            },
+            "xetHash": "412267d8b457ad62134835c811fb83ca76ebfe5144c1e44eaccc07b47a4b3247",
+            "path": "diffusion_pytorch_model.safetensors"
+          }
+        ]
+      },
+      "xandergos/TerrainDiffusion-Diffusion-Coarse-128A": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "4bea2c366c24b3f653832b26610da8f9ddca55c1",
+            "size": 208,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "77a13a590101a15f61c638af9f4a5d826a8067e5",
+            "size": 763,
+            "path": "config.json"
+          },
+          {
+            "type": "file",
+            "oid": "07295bd940fbdd585d924234282a826c251c15fc",
+            "size": 11200936,
+            "lfs": {
+              "oid": "13c21db4581d2072db56fd76fe3b92fa2d5efa8805be2aae0b63448b5d28ac5c",
+              "size": 11200936,
+              "pointerSize": 133
+            },
+            "xetHash": "9cd187b06f80f99cf99d8007606f30482d03bd3161989cd6e7ff6ca723160324",
+            "path": "diffusion_pytorch_model.safetensors"
+          }
+        ]
+      },
+      "xandergos/terrain-diffusion-30m": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "6205fe4ca6c42faacc3a71cb3c71f9e0bc70a389",
+            "size": 154,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "fe29b9bff062c584d9ab96a9d1b817b44f30ffbb",
+            "size": 682,
+            "path": "base_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "11d3d245b5a3878d51275d97e119942c594967f3",
+            "size": 1014772076,
+            "lfs": {
+              "oid": "351d1b1a77cf32e15adc4f72ed5fd26d317340598329d35f5dce2ff6dbcce735",
+              "size": 1014772076,
+              "pointerSize": 135
+            },
+            "xetHash": "bba3c6c185806d61ff32cfba6d982c78c4b879d98431630ee8954f352a33b8c1",
+            "path": "base_model/diffusion_pytorch_model.safetensors"
+          },
+          {
+            "type": "file",
+            "oid": "cef4fd543fe40d4c4f807aa4a4a5bdd041b30985",
+            "size": 828,
+            "path": "coarse_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "2ff6e0fab97c416bf28a23ed3fb3bf59ca715d49",
+            "size": 11200936,
+            "lfs": {
+              "oid": "f88cdc26c70a2c73ee4c91088b8cec3f45202fc452682ac759554b099c5c2f33",
+              "size": 11200936,
+              "pointerSize": 133
+            },
+            "xetHash": "3f1fd8f1b6a4be1c800a93caa54f8eb9401a0de4ab5285ba7d925f3e3cf8b539",
+            "path": "coarse_model/diffusion_pytorch_model.safetensors"
+          },
+          {
+            "type": "file",
+            "oid": "0c293000c80941d5fe4e6a9fa60d21355468a454",
+            "size": 774,
+            "path": "config.json"
+          },
+          {
+            "type": "file",
+            "oid": "09b0acc2ff9ca390067853470b55d46e2d643f59",
+            "size": 609,
+            "path": "decoder_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "a6e7b174b8a0ae5f3c22ad2661a06ebc5bd34a89",
+            "size": 111709108,
+            "lfs": {
+              "oid": "b6c7fa99f836ad75c514236c9529e18a68ea207ed59dd39fd1341fc9a8a03bcc",
+              "size": 111709108,
+              "pointerSize": 134
+            },
+            "xetHash": "412267d8b457ad62134835c811fb83ca76ebfe5144c1e44eaccc07b47a4b3247",
+            "path": "decoder_model/diffusion_pytorch_model.safetensors"
+          }
+        ]
+      },
+      "xandergos/terrain-diffusion-90m": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "21f1c91f265ae09b0ede0d33ef0a68cd593bfb75",
+            "size": 146,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "7a0ecab8dcd20abe655593d8486dbc5eceb5794b",
+            "size": 698,
+            "path": "base_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "a77491004d201462785c5b26e7699b36c8ebf0c4",
+            "size": 1014772076,
+            "lfs": {
+              "oid": "e426277db86517335d4b0bc02b3d456bb812b2a8726ea010635686f77373be36",
+              "size": 1014772076,
+              "pointerSize": 135
+            },
+            "xetHash": "6e1b3c46055be150d28c1a1f94573b2d5e09f70c170f8805a7aee19b4aa139e2",
+            "path": "base_model/diffusion_pytorch_model.safetensors"
+          },
+          {
+            "type": "file",
+            "oid": "d67e204e1f9f4f83fd5d5667fa62457c3058a8d5",
+            "size": 824,
+            "path": "coarse_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "07295bd940fbdd585d924234282a826c251c15fc",
+            "size": 11200936,
+            "lfs": {
+              "oid": "13c21db4581d2072db56fd76fe3b92fa2d5efa8805be2aae0b63448b5d28ac5c",
+              "size": 11200936,
+              "pointerSize": 133
+            },
+            "xetHash": "9cd187b06f80f99cf99d8007606f30482d03bd3161989cd6e7ff6ca723160324",
+            "path": "coarse_model/diffusion_pytorch_model.safetensors"
+          },
+          {
+            "type": "file",
+            "oid": "6f0c74b206c09e2b2883c052b21b635002482255",
+            "size": 440,
+            "path": "config.json"
+          },
+          {
+            "type": "file",
+            "oid": "98112fa00b532bf9b514b40e75c32096ec8416e5",
+            "size": 612,
+            "path": "decoder_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "a6e7b174b8a0ae5f3c22ad2661a06ebc5bd34a89",
+            "size": 111709108,
+            "lfs": {
+              "oid": "b6c7fa99f836ad75c514236c9529e18a68ea207ed59dd39fd1341fc9a8a03bcc",
+              "size": 111709108,
+              "pointerSize": 134
+            },
+            "xetHash": "412267d8b457ad62134835c811fb83ca76ebfe5144c1e44eaccc07b47a4b3247",
+            "path": "decoder_model/diffusion_pytorch_model.safetensors"
+          }
+        ]
+      },
+      "xandergos/terrain-diffusion-90m-pool2": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "5bc106257c7afa55edb9b40ba371e7685b7e4cb6",
+            "size": 230,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "7a0ecab8dcd20abe655593d8486dbc5eceb5794b",
+            "size": 698,
+            "path": "base_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "a77491004d201462785c5b26e7699b36c8ebf0c4",
+            "size": 1014772076,
+            "lfs": {
+              "oid": "e426277db86517335d4b0bc02b3d456bb812b2a8726ea010635686f77373be36",
+              "size": 1014772076,
+              "pointerSize": 135
+            },
+            "xetHash": "6e1b3c46055be150d28c1a1f94573b2d5e09f70c170f8805a7aee19b4aa139e2",
+            "path": "base_model/diffusion_pytorch_model.safetensors"
+          },
+          {
+            "type": "file",
+            "oid": "d67e204e1f9f4f83fd5d5667fa62457c3058a8d5",
+            "size": 824,
+            "path": "coarse_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "07295bd940fbdd585d924234282a826c251c15fc",
+            "size": 11200936,
+            "lfs": {
+              "oid": "13c21db4581d2072db56fd76fe3b92fa2d5efa8805be2aae0b63448b5d28ac5c",
+              "size": 11200936,
+              "pointerSize": 133
+            },
+            "xetHash": "9cd187b06f80f99cf99d8007606f30482d03bd3161989cd6e7ff6ca723160324",
+            "path": "coarse_model/diffusion_pytorch_model.safetensors"
+          },
+          {
+            "type": "file",
+            "oid": "7c6e8be5d92ecbaceef8f434b3bfc0c73b4108ec",
+            "size": 440,
+            "path": "config.json"
+          },
+          {
+            "type": "file",
+            "oid": "98112fa00b532bf9b514b40e75c32096ec8416e5",
+            "size": 612,
+            "path": "decoder_model/config.json"
+          },
+          {
+            "type": "file",
+            "oid": "a6e7b174b8a0ae5f3c22ad2661a06ebc5bd34a89",
+            "size": 111709108,
+            "lfs": {
+              "oid": "b6c7fa99f836ad75c514236c9529e18a68ea207ed59dd39fd1341fc9a8a03bcc",
+              "size": 111709108,
+              "pointerSize": 134
+            },
+            "xetHash": "412267d8b457ad62134835c811fb83ca76ebfe5144c1e44eaccc07b47a4b3247",
+            "path": "decoder_model/diffusion_pytorch_model.safetensors"
+          }
+        ]
+      },
+      "xandergos/terrain-diffusion-30m-onnx": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "7be5fc7f47d5db027d120b8024982df93db95b74",
+            "size": 24,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "4659c18cbcf237b6c2295e250a15e9c1ddeda6e5",
+            "size": 2029994361,
+            "lfs": {
+              "oid": "543de788f73d0a4012685c908259f615601102aace4751aeccec64154ba145c0",
+              "size": 2029994361,
+              "pointerSize": 135
+            },
+            "xetHash": "78ea8ddaa8be8530d4f01719b40bc3329a3bd21073668b30bf7336c5cde3175b",
+            "path": "base_model.onnx"
+          },
+          {
+            "type": "file",
+            "oid": "f9c22bad57b32755fd9d52e7c49adf7341035a38",
+            "size": 22497125,
+            "lfs": {
+              "oid": "d6ca15b21b2e35d5e594a9ac7a4249a2376590c0ad2b5b49a1e6e2d033450008",
+              "size": 22497125,
+              "pointerSize": 133
+            },
+            "xetHash": "3661839cd1c1e17d7da1663627c22ece1fbebcca0f1f8f4b21ff3b65f25e95bb",
+            "path": "coarse_model.onnx"
+          },
+          {
+            "type": "file",
+            "oid": "46b1c5f041e3b7e195e4a5706cf35fae7195cff4",
+            "size": 223854143,
+            "lfs": {
+              "oid": "6473ae47ca6ec4d743d30fe4f5d381fe4158899714eff09b762005bdbdef68c1",
+              "size": 223854143,
+              "pointerSize": 134
+            },
+            "xetHash": "42f701bf366132ae5e49dfe33b4c31bdbfc7b89ffed42efd0f597fec95299767",
+            "path": "decoder_model.onnx"
+          },
+          {
+            "type": "file",
+            "oid": "c965f493a43d44ab74f21cfbbdb17da9ea79ca39",
+            "size": 12226,
+            "path": "pipeline_data.json"
+          },
+          {
+            "type": "file",
+            "oid": "0c293000c80941d5fe4e6a9fa60d21355468a454",
+            "size": 774,
+            "path": "world_pipeline_config.json"
+          }
+        ]
+      },
+      "xandergos/terrain-diffusion-autoencoder": {
+        "files": [
+          {
+            "type": "file",
+            "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+            "size": 1519,
+            "path": ".gitattributes"
+          },
+          {
+            "type": "file",
+            "oid": "32897cd3e640101ba184f8c4ccd896981de3804a",
+            "size": 21,
+            "path": "README.md"
+          },
+          {
+            "type": "file",
+            "oid": "316d4eea6213a3a168899925e88c2d51d5b8f4d3",
+            "size": 476,
+            "path": "config.json"
+          },
+          {
+            "type": "file",
+            "oid": "dcd43b2e284029041d09683d9fed9a54c2a2a493",
+            "size": 81968196,
+            "lfs": {
+              "oid": "bd3d81e93fc514deb0ab8494f2212d956f42bca1e76eb547da93bd66e539ff8a",
+              "size": 81968196,
+              "pointerSize": 133
+            },
+            "xetHash": "c89de004eb45dd502d71a416d81400f96500e8052ff2ccb4df7f90778ac753a5",
+            "path": "diffusion_pytorch_model.safetensors"
+          }
+        ]
+      }
+    },
+    "scope": "Official author catalog only; no exhaustive third-party search or export certification",
+    "decision": "Blocked: no second ready-to-load official ONNX weight set; neither official GPU runtime initializes a model session here",
+    "required_matrix_context_changes": {
+      "cuda_or_directml": [
+        "dependency",
+        "backend"
+      ],
+      "alternate_weights": [
+        "models"
+      ]
+    }
+  },
+  "inspection_sha256": {
+    "cuda-development.log": "2c85a1dfe17534957953c0a0fa0b8a8b8a239969ba51bcd12e84b89a47f88736",
+    "CUDA_INSTALL.md": "1e01f20074055dfef99900c2376cacc0ae4964c7813b875e8a39725042fc1fae",
+    "directml-development.log": "dfec2624eb31cb96af628b208d867c854571b4c5fd0c34bcde6d9454047eacc2",
+    "hf-commits.json": "c53e5088ff201d7699daf9683367787cfcb23ee2f9a0dba1a8e457a5cb8ce5a8",
+    "model-repositories.json": "3cc78c434af95a624d6d675b56e5e89c454b0ce58f88fca94c69472065ced397",
+    "onnx-model.json": "59850933389b02b6baf8bea0329a8d7e9c9fe2e0ef04952cba7b18b4e1b3a7e1",
+    "OnnxModel-bytecode.txt": "b721b77b83155719de950d3a9c5df13bf74391f78499d9daea5692ee3ffacbfb",
+    "OnnxModel.java": "d06dbe5fbecf4d398dc0bcbb907de775e754d660431715a690390256e6415d05",
+    "PipelineModels.java": "e7e59e7324fd0a69b18e0c739b883335e62ccd5ad40c337c1a92a38f164f4804",
+    "release.json": "b70c721ee05c89f53d7c0952ee69e7e26a4964991758a4fc41fd5acdaec84f00",
+    "source-tag.json": "cbe69765eafb397452fa97d1832c4f8ff75cb35be626b3df6992d041a9254614",
+    "terrain-diffusion-30m-onnx-tree.json": "c4eee4b50b2652a506a0e4e4b7741f70046732123dce1172323d43f2813811d9",
+    "terrain-diffusion-30m-recursive.json": "f7196a0a7e597b2d2af4b3f333a1fb7f07c1803f43ab581f1b9e4d6f1ab4e89d",
+    "terrain-diffusion-30m-tree.json": "7f74fe49d121cee32a20e10fc3dfcc848dde1ee73b821535f453c0b6506602db",
+    "terrain-diffusion-90m-pool2-recursive.json": "878894a0d43a0008787e8166b332b5a8bcbaf4048121ff53d0a3eb15755ff6d3",
+    "terrain-diffusion-90m-pool2-tree.json": "672e8ff0999b23c678034ca424d7a5de55b5361a8a5d2f0424b81703e3e37dfb",
+    "terrain-diffusion-90m-recursive.json": "285c84b2b4254094863b11bb6868a0b33c9524dba3ecbaffa23d15e04fdf7bf4",
+    "terrain-diffusion-90m-tree.json": "71d6230b86c72d503918987f1c757631fc62a25ca3ed9b235b97dfec9edd05bb",
+    "terrain-diffusion-autoencoder-tree.json": "75c16b3091121d65b78dcf3a138fd159f0872a97a359df499c2dac6a7c7529f0",
+    "TerrainDiffusion-Consistency-Base-192x3-tree.json": "65c8311f6edcdffa2373c43188b8d6e8f3ee2cd7f487a84010588b54df254511",
+    "TerrainDiffusion-Consistency-Decoder-64x3-tree.json": "1af2329dc4205850057086af124aa494803c12fb7decffdb7850a7da3d0bd5b6",
+    "TerrainDiffusion-Diffusion-Coarse-128A-tree.json": "e7a09d330616b6a103182f40bc081e77a8575268c0cdc3a348df59d0bfb0b219"
+  },
+  "raw_results_sha256": "7ad9cd30ed1988840a15497a394f540abc19296b17b248103fb91d349ce356dc"
+}
