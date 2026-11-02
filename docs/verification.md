@@ -1,3 +1,13 @@
+# Actual TD artifact substitution (2026-11-01)
+
+The [artifact report](td-artifact-2026-11-01.md) records three dedicated JVM
+launches: matching CPU control, official CUDA-distribution substitution with CPU
+selected, and exact original-input restoration/reopen. Only the artifact context
+hash differs; rejection precedes Ready/RCON and preserves snapshot/terrain.
+All 529 persisted block containers/statuses/coverage and reopened sample/geology
+match. No production fix. #9 retains model/backend, upgrade and client/lifecycle
+gates; CUDA inference is not certified. #5 and #11 remain unchanged.
+
 # Actual hot common-config reload (2026-11-01)
 
 Both independent populated/empty geology-cache cases pass with actual NeoForge
