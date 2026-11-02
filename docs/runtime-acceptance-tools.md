@@ -75,6 +75,14 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For actual official TD artifact substitution use `scripts/verify-td-artifact.py`
+with pinned `--td`, `--alternate`, verified `--fixture` and NEW `--output`, then
+`scripts/summarize-td-artifact.py`. The three-launch CPU control/rejection/reopen
+case changes only the TD JAR between stopped launches, parses every context field,
+and separately compares persisted block containers/status/coverage and metadata.
+See the [artifact report](td-artifact-2026-11-01.md) for official provenance,
+CPU selection, exact restoration, bounds and remaining gates.
+
 For actual hot common-config reload use `scripts/verify-hot-config.py` with a
 verified saved-terrain `--fixture`, then `scripts/summarize-hot-config.py`.
 The runner externally edits all six proposals while each server stays running;

@@ -67,6 +67,13 @@ Schema-1/snapshotless worlds lack more context and need a separate migration des
 
 ## Evidence and reporting
 
+The [official artifact substitution test](td-artifact-2026-11-01.md) independently
+confirms startup rejection when a CPU-resolved official CUDA distribution replaces
+the original CPU JAR. Only the artifact hash differs. Restoring the exact original
+JAR reopens the fixture with matching settings/context/geology and existing blocks;
+snapshot bytes and all 529 persisted terrain records remain unchanged. This does
+not establish a migration path or CUDA inference compatibility.
+
 Current dedicated CPU evidence includes the
 [2026-11-01 startup matrix](context-startup-2026-11-01.md): independent seed/scale,
 schema-1, missing and malformed-snapshot rejection before Ready, exact existing
