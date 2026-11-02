@@ -1,0 +1,2576 @@
+{
+  "cases": [
+    {
+      "name": "coal-s6-t0-td-only",
+      "addon": false,
+      "trial": 0,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geology-runtime-probe-0.2.2-dev.jar": "7168845af16542e71202191fc44f213680f2118e080502ce91bd74f790137711",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "chunks": [
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -191,
+          "z": -386,
+          "generation_ms": 19960.387,
+          "blocks_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+          "stage": "full",
+          "normalized_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 52427,
+            "minecraft:andesite": 1356,
+            "minecraft:bedrock": 1803,
+            "minecraft:cave_air": 28,
+            "minecraft:coal_ore": 649,
+            "minecraft:copper_ore": 116,
+            "minecraft:deepslate": 13368,
+            "minecraft:deepslate_diamond_ore": 30,
+            "minecraft:deepslate_gold_ore": 31,
+            "minecraft:deepslate_iron_ore": 25,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 18,
+            "minecraft:diorite": 1078,
+            "minecraft:dirt": 742,
+            "minecraft:emerald_ore": 18,
+            "minecraft:gold_ore": 9,
+            "minecraft:granite": 809,
+            "minecraft:gravel": 1335,
+            "minecraft:infested_deepslate": 25,
+            "minecraft:infested_stone": 49,
+            "minecraft:iron_ore": 264,
+            "minecraft:lapis_ore": 11,
+            "minecraft:lava": 13,
+            "minecraft:redstone_ore": 6,
+            "minecraft:stone": 43111,
+            "minecraft:tuff": 1442,
+            "minecraft:water": 4
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -110,
+          "z": -384,
+          "generation_ms": 6853.6336,
+          "blocks_sha256": "ab57b80cdaeda7fc9fa4b8d4991fb92a0a8285a9d5624d01e5579f582ad7cd2e",
+          "stage": "full",
+          "normalized_sha256": "ab57b80cdaeda7fc9fa4b8d4991fb92a0a8285a9d5624d01e5579f582ad7cd2e",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 26353,
+            "minecraft:andesite": 1014,
+            "minecraft:bedrock": 1792,
+            "minecraft:cave_air": 174,
+            "minecraft:coal_ore": 797,
+            "minecraft:cobweb": 3,
+            "minecraft:copper_ore": 123,
+            "minecraft:deepslate": 13491,
+            "minecraft:deepslate_diamond_ore": 29,
+            "minecraft:deepslate_gold_ore": 21,
+            "minecraft:deepslate_iron_ore": 27,
+            "minecraft:deepslate_lapis_ore": 25,
+            "minecraft:deepslate_redstone_ore": 27,
+            "minecraft:diorite": 1113,
+            "minecraft:dirt": 821,
+            "minecraft:emerald_ore": 31,
+            "minecraft:glow_lichen": 2,
+            "minecraft:gold_ore": 18,
+            "minecraft:granite": 1152,
+            "minecraft:gravel": 1462,
+            "minecraft:infested_deepslate": 49,
+            "minecraft:infested_stone": 20,
+            "minecraft:iron_ore": 517,
+            "minecraft:oak_planks": 12,
+            "minecraft:redstone_ore": 4,
+            "minecraft:stone": 68043,
+            "minecraft:tuff": 402,
+            "minecraft:water": 1262
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -109,
+          "z": -384,
+          "generation_ms": 143.742,
+          "blocks_sha256": "869aeefcfd87e886726ca5161dec31a56670a97affe28da847e7ef2274df1351",
+          "stage": "full",
+          "normalized_sha256": "869aeefcfd87e886726ca5161dec31a56670a97affe28da847e7ef2274df1351",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 28768,
+            "minecraft:andesite": 730,
+            "minecraft:bedrock": 1794,
+            "minecraft:birch_leaves": 7,
+            "minecraft:cave_air": 202,
+            "minecraft:coal_ore": 813,
+            "minecraft:copper_ore": 128,
+            "minecraft:deepslate": 13809,
+            "minecraft:deepslate_coal_ore": 4,
+            "minecraft:deepslate_copper_ore": 15,
+            "minecraft:deepslate_diamond_ore": 27,
+            "minecraft:deepslate_emerald_ore": 1,
+            "minecraft:deepslate_gold_ore": 13,
+            "minecraft:deepslate_iron_ore": 30,
+            "minecraft:deepslate_lapis_ore": 14,
+            "minecraft:deepslate_redstone_ore": 45,
+            "minecraft:diorite": 1655,
+            "minecraft:dirt": 1247,
+            "minecraft:emerald_ore": 12,
+            "minecraft:gold_ore": 6,
+            "minecraft:granite": 988,
+            "minecraft:grass_block": 95,
+            "minecraft:gravel": 933,
+            "minecraft:infested_deepslate": 24,
+            "minecraft:infested_stone": 41,
+            "minecraft:iron_ore": 511,
+            "minecraft:lapis_ore": 19,
+            "minecraft:lava": 78,
+            "minecraft:oak_leaves": 154,
+            "minecraft:oak_log": 9,
+            "minecraft:redstone_ore": 1,
+            "minecraft:stone": 65327,
+            "minecraft:tuff": 571,
+            "minecraft:water": 713
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -108,
+          "z": -384,
+          "generation_ms": 141.7098,
+          "blocks_sha256": "b112057c1c3ee4b7f4556f970692008973bb1c737674fc395902f01235ba4cb0",
+          "stage": "full",
+          "normalized_sha256": "b112057c1c3ee4b7f4556f970692008973bb1c737674fc395902f01235ba4cb0",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 30037,
+            "minecraft:andesite": 1506,
+            "minecraft:bedrock": 1795,
+            "minecraft:cave_air": 205,
+            "minecraft:coal_ore": 680,
+            "minecraft:copper_ore": 114,
+            "minecraft:deepslate": 12484,
+            "minecraft:deepslate_copper_ore": 22,
+            "minecraft:deepslate_diamond_ore": 28,
+            "minecraft:deepslate_gold_ore": 19,
+            "minecraft:deepslate_iron_ore": 29,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 43,
+            "minecraft:diamond_ore": 6,
+            "minecraft:diorite": 1021,
+            "minecraft:dirt": 1949,
+            "minecraft:emerald_ore": 1,
+            "minecraft:glow_lichen": 1,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 1269,
+            "minecraft:grass_block": 254,
+            "minecraft:gravel": 919,
+            "minecraft:infested_deepslate": 6,
+            "minecraft:iron_ore": 519,
+            "minecraft:lapis_ore": 9,
+            "minecraft:lava": 52,
+            "minecraft:oak_fence": 8,
+            "minecraft:oak_leaves": 110,
+            "minecraft:oak_log": 12,
+            "minecraft:oak_planks": 6,
+            "minecraft:redstone_ore": 3,
+            "minecraft:short_grass": 5,
+            "minecraft:stone": 63469,
+            "minecraft:tuff": 1365,
+            "minecraft:wall_torch": 1,
+            "minecraft:water": 812
+          }
+        }
+      ],
+      "trace_summary": {
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "kind": "coal-trace",
+        "unmatched_writes": 0,
+        "source_halo": 2,
+        "events": 112930,
+        "overflow": false,
+        "record_limit": 500000
+      },
+      "trace_sha256": "74bb05e26215f20179a5f1df9a5c7ac754bffb2ecc5995177c0ca35d0524e203",
+      "logs": {
+        "console-1.log": "8dc93d2b7e01b672740dfd19dc38e1dfa18788a1b747a921c6c032ae872941b0"
+      },
+      "optimized_cache_removed": true,
+      "final_trace_summary": {
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "kind": "coal-trace",
+        "unmatched_writes": 0,
+        "source_halo": 2,
+        "events": 112930,
+        "overflow": false,
+        "record_limit": 500000
+      },
+      "final_coal_positions": 2943,
+      "final_coal_without_trace": 0,
+      "event_counts": {
+        "begin": 7408,
+        "write": 78451,
+        "end": 7408,
+        "check": 19663
+      },
+      "cross_chunk_writes": 10202,
+      "rejected_existing_coal": 146,
+      "watched_cross_chunk_writes": 2118,
+      "watched_coal_cross_chunk_writes": 305,
+      "state_changed_between_check_and_write": 0,
+      "rejected_existing_coal_random_deltas": {
+        "0": 146
+      },
+      "duplicate_write_positions": 0
+    },
+    {
+      "name": "coal-s6-t1-td-only",
+      "addon": false,
+      "trial": 1,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geology-runtime-probe-0.2.2-dev.jar": "7168845af16542e71202191fc44f213680f2118e080502ce91bd74f790137711",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "chunks": [
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -108,
+          "z": -384,
+          "generation_ms": 18062.6547,
+          "blocks_sha256": "ce140beba034229dae77d853517ffc85f09dfe89ec5ba5abdf2edf2e3b7726f4",
+          "stage": "full",
+          "normalized_sha256": "ce140beba034229dae77d853517ffc85f09dfe89ec5ba5abdf2edf2e3b7726f4",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 29984,
+            "minecraft:andesite": 1511,
+            "minecraft:bedrock": 1795,
+            "minecraft:birch_leaves": 101,
+            "minecraft:birch_log": 13,
+            "minecraft:cave_air": 205,
+            "minecraft:coal_ore": 680,
+            "minecraft:copper_ore": 114,
+            "minecraft:deepslate": 12484,
+            "minecraft:deepslate_copper_ore": 22,
+            "minecraft:deepslate_diamond_ore": 28,
+            "minecraft:deepslate_gold_ore": 19,
+            "minecraft:deepslate_iron_ore": 29,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 43,
+            "minecraft:diamond_ore": 6,
+            "minecraft:diorite": 1021,
+            "minecraft:dirt": 1950,
+            "minecraft:emerald_ore": 1,
+            "minecraft:glow_lichen": 1,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 1264,
+            "minecraft:grass_block": 253,
+            "minecraft:gravel": 919,
+            "minecraft:infested_deepslate": 6,
+            "minecraft:iron_ore": 519,
+            "minecraft:lapis_ore": 9,
+            "minecraft:lava": 52,
+            "minecraft:oak_fence": 8,
+            "minecraft:oak_leaves": 54,
+            "minecraft:oak_log": 4,
+            "minecraft:oak_planks": 6,
+            "minecraft:redstone_ore": 3,
+            "minecraft:short_grass": 8,
+            "minecraft:stone": 63469,
+            "minecraft:tuff": 1365,
+            "minecraft:wall_torch": 1,
+            "minecraft:water": 812
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -109,
+          "z": -384,
+          "generation_ms": 258.665,
+          "blocks_sha256": "affe1e3969654085ca2f8e4bd009d05f8d3a5e2f832b0016aa1c92a2215983c4",
+          "stage": "full",
+          "normalized_sha256": "affe1e3969654085ca2f8e4bd009d05f8d3a5e2f832b0016aa1c92a2215983c4",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 28829,
+            "minecraft:andesite": 860,
+            "minecraft:bedrock": 1794,
+            "minecraft:birch_leaves": 64,
+            "minecraft:birch_log": 7,
+            "minecraft:cave_air": 202,
+            "minecraft:coal_ore": 801,
+            "minecraft:copper_ore": 128,
+            "minecraft:deepslate": 13813,
+            "minecraft:deepslate_copper_ore": 15,
+            "minecraft:deepslate_diamond_ore": 27,
+            "minecraft:deepslate_emerald_ore": 1,
+            "minecraft:deepslate_gold_ore": 13,
+            "minecraft:deepslate_iron_ore": 30,
+            "minecraft:deepslate_lapis_ore": 14,
+            "minecraft:deepslate_redstone_ore": 45,
+            "minecraft:diorite": 1654,
+            "minecraft:dirt": 1249,
+            "minecraft:emerald_ore": 12,
+            "minecraft:gold_ore": 6,
+            "minecraft:granite": 841,
+            "minecraft:grass_block": 94,
+            "minecraft:gravel": 922,
+            "minecraft:infested_deepslate": 24,
+            "minecraft:infested_stone": 41,
+            "minecraft:iron_ore": 519,
+            "minecraft:lapis_ore": 19,
+            "minecraft:lava": 78,
+            "minecraft:oak_leaves": 34,
+            "minecraft:oak_log": 4,
+            "minecraft:redstone_ore": 1,
+            "minecraft:stone": 65359,
+            "minecraft:tuff": 571,
+            "minecraft:water": 713
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -110,
+          "z": -384,
+          "generation_ms": 139.0099,
+          "blocks_sha256": "54f061c64d6bbe7ccb5a632d719fa7fdffd8ecf3256f4364485a6b07e43cece1",
+          "stage": "full",
+          "normalized_sha256": "54f061c64d6bbe7ccb5a632d719fa7fdffd8ecf3256f4364485a6b07e43cece1",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 26353,
+            "minecraft:andesite": 1059,
+            "minecraft:bedrock": 1792,
+            "minecraft:cave_air": 174,
+            "minecraft:coal_ore": 846,
+            "minecraft:cobweb": 3,
+            "minecraft:copper_ore": 122,
+            "minecraft:deepslate": 13491,
+            "minecraft:deepslate_diamond_ore": 29,
+            "minecraft:deepslate_gold_ore": 21,
+            "minecraft:deepslate_iron_ore": 27,
+            "minecraft:deepslate_lapis_ore": 25,
+            "minecraft:deepslate_redstone_ore": 30,
+            "minecraft:diorite": 1133,
+            "minecraft:dirt": 821,
+            "minecraft:emerald_ore": 31,
+            "minecraft:glow_lichen": 2,
+            "minecraft:gold_ore": 18,
+            "minecraft:granite": 1095,
+            "minecraft:gravel": 1455,
+            "minecraft:infested_deepslate": 49,
+            "minecraft:infested_stone": 20,
+            "minecraft:iron_ore": 517,
+            "minecraft:oak_planks": 12,
+            "minecraft:redstone_ore": 4,
+            "minecraft:stone": 67991,
+            "minecraft:tuff": 402,
+            "minecraft:water": 1262
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -191,
+          "z": -386,
+          "generation_ms": 2151.2835,
+          "blocks_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+          "stage": "full",
+          "normalized_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+          "geology_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "counts": {
+            "minecraft:air": 52427,
+            "minecraft:andesite": 1356,
+            "minecraft:bedrock": 1803,
+            "minecraft:cave_air": 28,
+            "minecraft:coal_ore": 649,
+            "minecraft:copper_ore": 116,
+            "minecraft:deepslate": 13368,
+            "minecraft:deepslate_diamond_ore": 30,
+            "minecraft:deepslate_gold_ore": 31,
+            "minecraft:deepslate_iron_ore": 25,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 18,
+            "minecraft:diorite": 1078,
+            "minecraft:dirt": 742,
+            "minecraft:emerald_ore": 18,
+            "minecraft:gold_ore": 9,
+            "minecraft:granite": 809,
+            "minecraft:gravel": 1335,
+            "minecraft:infested_deepslate": 25,
+            "minecraft:infested_stone": 49,
+            "minecraft:iron_ore": 264,
+            "minecraft:lapis_ore": 11,
+            "minecraft:lava": 13,
+            "minecraft:redstone_ore": 6,
+            "minecraft:stone": 43111,
+            "minecraft:tuff": 1442,
+            "minecraft:water": 4
+          }
+        }
+      ],
+      "trace_summary": {
+        "unmatched_writes": 0,
+        "source_halo": 2,
+        "events": 112869,
+        "overflow": false,
+        "record_limit": 500000,
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "kind": "coal-trace"
+      },
+      "trace_sha256": "7d90d4894034b27bb115d3f396febc0a0e639e9d78f41fbdd69da7a06f27eab4",
+      "logs": {
+        "console-1.log": "559dab836c5ee19fe3a128cf894c8abd5ef6268dea4d3c13f2dbb9ce31b46401"
+      },
+      "optimized_cache_removed": true,
+      "final_trace_summary": {
+        "unmatched_writes": 0,
+        "source_halo": 2,
+        "events": 112869,
+        "overflow": false,
+        "record_limit": 500000,
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "kind": "coal-trace"
+      },
+      "final_coal_positions": 2976,
+      "final_coal_without_trace": 0,
+      "event_counts": {
+        "begin": 7408,
+        "write": 78395,
+        "end": 7408,
+        "check": 19658
+      },
+      "cross_chunk_writes": 10160,
+      "rejected_existing_coal": 142,
+      "watched_cross_chunk_writes": 2121,
+      "watched_coal_cross_chunk_writes": 325,
+      "state_changed_between_check_and_write": 0,
+      "rejected_existing_coal_random_deltas": {
+        "0": 142
+      },
+      "duplicate_write_positions": 0
+    },
+    {
+      "name": "coal-s6-t0-addon",
+      "addon": true,
+      "trial": 0,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226",
+        "geology-runtime-probe-0.2.2-dev.jar": "7168845af16542e71202191fc44f213680f2118e080502ce91bd74f790137711",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "chunks": [
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -191,
+          "z": -386,
+          "generation_ms": 20624.4621,
+          "blocks_sha256": "24640968bf946a293dfcf73c75d872cecca00fb92d5b08838e522bccd9c17cc2",
+          "stage": "full",
+          "normalized_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+          "geology_sha256": "9d7a0ec27cfbe6a95625474314cc9671f492bc1c43186713ec23cec6473fd52e",
+          "counts": {
+            "geologic_variation:gabbro": 43073,
+            "minecraft:air": 52427,
+            "minecraft:andesite": 1356,
+            "minecraft:bedrock": 1803,
+            "minecraft:cave_air": 28,
+            "minecraft:coal_ore": 649,
+            "minecraft:copper_ore": 116,
+            "minecraft:deepslate": 13368,
+            "minecraft:deepslate_diamond_ore": 30,
+            "minecraft:deepslate_gold_ore": 31,
+            "minecraft:deepslate_iron_ore": 25,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 18,
+            "minecraft:diorite": 1078,
+            "minecraft:dirt": 742,
+            "minecraft:emerald_ore": 18,
+            "minecraft:gold_ore": 9,
+            "minecraft:granite": 809,
+            "minecraft:gravel": 1335,
+            "minecraft:infested_deepslate": 25,
+            "minecraft:infested_stone": 49,
+            "minecraft:iron_ore": 264,
+            "minecraft:lapis_ore": 11,
+            "minecraft:lava": 13,
+            "minecraft:redstone_ore": 6,
+            "minecraft:stone": 38,
+            "minecraft:tuff": 1442,
+            "minecraft:water": 4
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -110,
+          "z": -384,
+          "generation_ms": 18760.8311,
+          "blocks_sha256": "aeae3ea376f040a0037b09f0c4821cd59e5d928f3b90e5cbe84cc89a3bec73ad",
+          "stage": "full",
+          "normalized_sha256": "489a0808d74f5155e379d3291ce060cae0cb61212b8ba5948ece37097b956464",
+          "geology_sha256": "89e8ba1209e7a305790aaa9b5b3c383c3c5f0cd218de76d5907b7215362cb5a5",
+          "counts": {
+            "geologic_variation:gabbro": 68044,
+            "minecraft:air": 26355,
+            "minecraft:andesite": 1014,
+            "minecraft:bedrock": 1792,
+            "minecraft:cave_air": 174,
+            "minecraft:coal_ore": 796,
+            "minecraft:cobweb": 3,
+            "minecraft:copper_ore": 123,
+            "minecraft:deepslate": 13491,
+            "minecraft:deepslate_diamond_ore": 29,
+            "minecraft:deepslate_gold_ore": 21,
+            "minecraft:deepslate_iron_ore": 27,
+            "minecraft:deepslate_lapis_ore": 25,
+            "minecraft:deepslate_redstone_ore": 27,
+            "minecraft:diorite": 1113,
+            "minecraft:dirt": 821,
+            "minecraft:emerald_ore": 31,
+            "minecraft:gold_ore": 18,
+            "minecraft:granite": 1152,
+            "minecraft:gravel": 1462,
+            "minecraft:infested_deepslate": 49,
+            "minecraft:infested_stone": 20,
+            "minecraft:iron_ore": 517,
+            "minecraft:oak_planks": 12,
+            "minecraft:redstone_ore": 4,
+            "minecraft:tuff": 402,
+            "minecraft:water": 1262
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -109,
+          "z": -384,
+          "generation_ms": 151.0603,
+          "blocks_sha256": "b4a6a705b7b52ade4c5265e622f6022023292a0d984eb479fb8b558a8363ea0d",
+          "stage": "full",
+          "normalized_sha256": "216268947a80304fa34323e3115409e50ceca9f5489d35e4d9baa75398766129",
+          "geology_sha256": "76c37c48e40c5aa81f1afa7b4ed3cbc6a14fbfd59c713f6ee61e61eeb9b33aa8",
+          "counts": {
+            "geologic_variation:gabbro": 43618,
+            "geologic_variation:slate": 21570,
+            "minecraft:air": 28829,
+            "minecraft:andesite": 730,
+            "minecraft:bedrock": 1794,
+            "minecraft:birch_leaves": 48,
+            "minecraft:birch_log": 5,
+            "minecraft:cave_air": 202,
+            "minecraft:coal_ore": 813,
+            "minecraft:copper_ore": 128,
+            "minecraft:deepslate": 13809,
+            "minecraft:deepslate_coal_ore": 4,
+            "minecraft:deepslate_copper_ore": 15,
+            "minecraft:deepslate_diamond_ore": 27,
+            "minecraft:deepslate_emerald_ore": 1,
+            "minecraft:deepslate_gold_ore": 13,
+            "minecraft:deepslate_iron_ore": 30,
+            "minecraft:deepslate_lapis_ore": 14,
+            "minecraft:deepslate_redstone_ore": 45,
+            "minecraft:diorite": 1655,
+            "minecraft:dirt": 1248,
+            "minecraft:emerald_ore": 12,
+            "minecraft:gold_ore": 6,
+            "minecraft:granite": 988,
+            "minecraft:grass_block": 94,
+            "minecraft:gravel": 933,
+            "minecraft:infested_deepslate": 24,
+            "minecraft:infested_stone": 41,
+            "minecraft:iron_ore": 511,
+            "minecraft:lapis_ore": 19,
+            "minecraft:lava": 78,
+            "minecraft:oak_leaves": 51,
+            "minecraft:oak_log": 5,
+            "minecraft:redstone_ore": 1,
+            "minecraft:stone": 139,
+            "minecraft:tuff": 571,
+            "minecraft:water": 713
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -108,
+          "z": -384,
+          "generation_ms": 178.1029,
+          "blocks_sha256": "893f3ee5c1b48b628d714f668911f15ea98786497c261cd7225ef6cdbeeb41e4",
+          "stage": "full",
+          "normalized_sha256": "8258aa05543968f0a8c52edd257f413c3b496a853e49c522a33c39caeac5895e",
+          "geology_sha256": "6c255ace7d585dcf5c9c6088c113c0845a98fd8e2c9fe677330888091085691c",
+          "counts": {
+            "geologic_variation:slate": 63304,
+            "minecraft:air": 30022,
+            "minecraft:andesite": 1511,
+            "minecraft:bedrock": 1795,
+            "minecraft:birch_leaves": 49,
+            "minecraft:birch_log": 6,
+            "minecraft:cave_air": 205,
+            "minecraft:coal_ore": 680,
+            "minecraft:copper_ore": 114,
+            "minecraft:deepslate": 12484,
+            "minecraft:deepslate_copper_ore": 22,
+            "minecraft:deepslate_diamond_ore": 28,
+            "minecraft:deepslate_gold_ore": 19,
+            "minecraft:deepslate_iron_ore": 29,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 43,
+            "minecraft:diamond_ore": 6,
+            "minecraft:diorite": 1021,
+            "minecraft:dirt": 1950,
+            "minecraft:emerald_ore": 1,
+            "minecraft:glow_lichen": 1,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 1264,
+            "minecraft:grass_block": 253,
+            "minecraft:gravel": 919,
+            "minecraft:infested_deepslate": 6,
+            "minecraft:iron_ore": 519,
+            "minecraft:lapis_ore": 9,
+            "minecraft:lava": 52,
+            "minecraft:oak_fence": 8,
+            "minecraft:oak_leaves": 72,
+            "minecraft:oak_log": 10,
+            "minecraft:oak_planks": 6,
+            "minecraft:redstone_ore": 3,
+            "minecraft:short_grass": 5,
+            "minecraft:stone": 165,
+            "minecraft:tuff": 1365,
+            "minecraft:wall_torch": 1,
+            "minecraft:water": 812
+          }
+        }
+      ],
+      "trace_summary": {
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "record_limit": 500000,
+        "overflow": false,
+        "events": 112920,
+        "source_halo": 2,
+        "unmatched_writes": 0,
+        "kind": "coal-trace"
+      },
+      "trace_sha256": "926b27a0a2ebef2be514dca1a1f6294a39f28c976348a7eb4aaa6250f6d59a38",
+      "logs": {
+        "console-1.log": "84c66206058d18a5a878abe0e2de1ac61b0228ca71020905e931fa5f6148dbcb"
+      },
+      "optimized_cache_removed": true,
+      "final_trace_summary": {
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "record_limit": 500000,
+        "overflow": false,
+        "events": 112920,
+        "source_halo": 2,
+        "unmatched_writes": 0,
+        "kind": "coal-trace"
+      },
+      "final_coal_positions": 2942,
+      "final_coal_without_trace": 0,
+      "event_counts": {
+        "begin": 7408,
+        "write": 78413,
+        "end": 7408,
+        "check": 19691
+      },
+      "cross_chunk_writes": 10155,
+      "rejected_existing_coal": 152,
+      "watched_cross_chunk_writes": 2117,
+      "watched_coal_cross_chunk_writes": 304,
+      "state_changed_between_check_and_write": 0,
+      "rejected_existing_coal_random_deltas": {
+        "0": 152
+      },
+      "duplicate_write_positions": 0
+    },
+    {
+      "name": "coal-s6-t1-addon",
+      "addon": true,
+      "trial": 1,
+      "plan": {
+        "edge": [
+          -1731,
+          -6144
+        ],
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "region_points": [
+          [
+            -1732,
+            -6144
+          ],
+          [
+            -1731,
+            -6144
+          ]
+        ]
+      },
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226",
+        "geology-runtime-probe-0.2.2-dev.jar": "7168845af16542e71202191fc44f213680f2118e080502ce91bd74f790137711",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "chunks": [
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -108,
+          "z": -384,
+          "generation_ms": 32281.7544,
+          "blocks_sha256": "6f9a126f8b6943e29acdb46dc7ce5326eb49822b7f17845d6ebe20e2112417a2",
+          "stage": "full",
+          "normalized_sha256": "5383f875a9efcf72cca9c6a3ba4f2f15aeeadb92b249b94f7005be2560cdf051",
+          "geology_sha256": "6c255ace7d585dcf5c9c6088c113c0845a98fd8e2c9fe677330888091085691c",
+          "counts": {
+            "geologic_variation:slate": 63304,
+            "minecraft:air": 29980,
+            "minecraft:andesite": 1511,
+            "minecraft:bedrock": 1795,
+            "minecraft:birch_leaves": 101,
+            "minecraft:birch_log": 13,
+            "minecraft:cave_air": 205,
+            "minecraft:coal_ore": 680,
+            "minecraft:copper_ore": 114,
+            "minecraft:deepslate": 12484,
+            "minecraft:deepslate_copper_ore": 22,
+            "minecraft:deepslate_diamond_ore": 28,
+            "minecraft:deepslate_gold_ore": 19,
+            "minecraft:deepslate_iron_ore": 29,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 43,
+            "minecraft:diamond_ore": 6,
+            "minecraft:diorite": 1021,
+            "minecraft:dirt": 1950,
+            "minecraft:emerald_ore": 1,
+            "minecraft:glow_lichen": 1,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 1264,
+            "minecraft:grass_block": 253,
+            "minecraft:gravel": 919,
+            "minecraft:infested_deepslate": 6,
+            "minecraft:iron_ore": 519,
+            "minecraft:lapis_ore": 9,
+            "minecraft:lava": 52,
+            "minecraft:oak_fence": 8,
+            "minecraft:oak_leaves": 54,
+            "minecraft:oak_log": 4,
+            "minecraft:oak_planks": 6,
+            "minecraft:redstone_ore": 3,
+            "minecraft:short_grass": 12,
+            "minecraft:stone": 165,
+            "minecraft:tuff": 1365,
+            "minecraft:wall_torch": 1,
+            "minecraft:water": 812
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -109,
+          "z": -384,
+          "generation_ms": 310.1362,
+          "blocks_sha256": "46448e299d78b8778537903e1b467593b01fcd38a1298c6552f4c90cb7a53595",
+          "stage": "full",
+          "normalized_sha256": "04ebde84ce3a6d972fc02aa0b6cdcf275b78721ff548568a094f1b647d80aa2d",
+          "geology_sha256": "66d0caf4e74f097731addeff1fb0f049ee98b1f08124997d15358dba0d94fbf8",
+          "counts": {
+            "geologic_variation:gabbro": 43667,
+            "geologic_variation:slate": 21549,
+            "minecraft:air": 28825,
+            "minecraft:andesite": 844,
+            "minecraft:bedrock": 1794,
+            "minecraft:birch_leaves": 64,
+            "minecraft:birch_log": 7,
+            "minecraft:cave_air": 202,
+            "minecraft:coal_ore": 805,
+            "minecraft:copper_ore": 128,
+            "minecraft:deepslate": 13813,
+            "minecraft:deepslate_copper_ore": 15,
+            "minecraft:deepslate_diamond_ore": 27,
+            "minecraft:deepslate_emerald_ore": 1,
+            "minecraft:deepslate_gold_ore": 13,
+            "minecraft:deepslate_iron_ore": 30,
+            "minecraft:deepslate_lapis_ore": 14,
+            "minecraft:deepslate_redstone_ore": 45,
+            "minecraft:diorite": 1670,
+            "minecraft:dirt": 1249,
+            "minecraft:emerald_ore": 12,
+            "minecraft:gold_ore": 6,
+            "minecraft:granite": 841,
+            "minecraft:grass_block": 94,
+            "minecraft:gravel": 922,
+            "minecraft:infested_deepslate": 24,
+            "minecraft:infested_stone": 41,
+            "minecraft:iron_ore": 519,
+            "minecraft:lapis_ore": 19,
+            "minecraft:lava": 78,
+            "minecraft:oak_leaves": 34,
+            "minecraft:oak_log": 4,
+            "minecraft:redstone_ore": 1,
+            "minecraft:short_grass": 4,
+            "minecraft:stone": 139,
+            "minecraft:tuff": 571,
+            "minecraft:water": 713
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -110,
+          "z": -384,
+          "generation_ms": 158.1893,
+          "blocks_sha256": "fae67f9423624b0720458ca66476536985876fa27d24083b6a7042ad2d48841c",
+          "stage": "full",
+          "normalized_sha256": "79e54f7a9849e0cf3e39fad5e996d0e2879858a9c324efd77b6dfebb94609939",
+          "geology_sha256": "452c0893d5f7a6d83c577c5f14d84c587435f760c51ce95329882216900fb58f",
+          "counts": {
+            "geologic_variation:gabbro": 67994,
+            "minecraft:air": 26355,
+            "minecraft:andesite": 1048,
+            "minecraft:bedrock": 1792,
+            "minecraft:cave_air": 174,
+            "minecraft:coal_ore": 844,
+            "minecraft:cobweb": 3,
+            "minecraft:copper_ore": 122,
+            "minecraft:deepslate": 13491,
+            "minecraft:deepslate_diamond_ore": 29,
+            "minecraft:deepslate_gold_ore": 21,
+            "minecraft:deepslate_iron_ore": 27,
+            "minecraft:deepslate_lapis_ore": 25,
+            "minecraft:deepslate_redstone_ore": 26,
+            "minecraft:diorite": 1072,
+            "minecraft:dirt": 821,
+            "minecraft:emerald_ore": 30,
+            "minecraft:gold_ore": 18,
+            "minecraft:granite": 1167,
+            "minecraft:gravel": 1461,
+            "minecraft:infested_deepslate": 49,
+            "minecraft:infested_stone": 20,
+            "minecraft:iron_ore": 515,
+            "minecraft:oak_planks": 12,
+            "minecraft:redstone_ore": 4,
+            "minecraft:tuff": 402,
+            "minecraft:water": 1262
+          }
+        },
+        {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -191,
+          "z": -386,
+          "generation_ms": 2124.0071,
+          "blocks_sha256": "24640968bf946a293dfcf73c75d872cecca00fb92d5b08838e522bccd9c17cc2",
+          "stage": "full",
+          "normalized_sha256": "1731881602af6126282f12fed3b851ad236e4c3b5151305453d375fd78000029",
+          "geology_sha256": "9d7a0ec27cfbe6a95625474314cc9671f492bc1c43186713ec23cec6473fd52e",
+          "counts": {
+            "geologic_variation:gabbro": 43073,
+            "minecraft:air": 52427,
+            "minecraft:andesite": 1356,
+            "minecraft:bedrock": 1803,
+            "minecraft:cave_air": 28,
+            "minecraft:coal_ore": 649,
+            "minecraft:copper_ore": 116,
+            "minecraft:deepslate": 13368,
+            "minecraft:deepslate_diamond_ore": 30,
+            "minecraft:deepslate_gold_ore": 31,
+            "minecraft:deepslate_iron_ore": 25,
+            "minecraft:deepslate_lapis_ore": 17,
+            "minecraft:deepslate_redstone_ore": 18,
+            "minecraft:diorite": 1078,
+            "minecraft:dirt": 742,
+            "minecraft:emerald_ore": 18,
+            "minecraft:gold_ore": 9,
+            "minecraft:granite": 809,
+            "minecraft:gravel": 1335,
+            "minecraft:infested_deepslate": 25,
+            "minecraft:infested_stone": 49,
+            "minecraft:iron_ore": 264,
+            "minecraft:lapis_ore": 11,
+            "minecraft:lava": 13,
+            "minecraft:redstone_ore": 6,
+            "minecraft:stone": 38,
+            "minecraft:tuff": 1442,
+            "minecraft:water": 4
+          }
+        }
+      ],
+      "trace_summary": {
+        "unmatched_writes": 0,
+        "kind": "coal-trace",
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "record_limit": 500000,
+        "overflow": false,
+        "events": 112911,
+        "source_halo": 2
+      },
+      "trace_sha256": "9063c789e1f58ffa3ad978b4294855f76e18897f9f4aa3872c99ddc0d48becfb",
+      "logs": {
+        "console-1.log": "ea6af35cc683c468ffc330f6dbdb3d2d3c5dbc1438d69c1a21de15485fe896b4"
+      },
+      "optimized_cache_removed": true,
+      "final_trace_summary": {
+        "unmatched_writes": 0,
+        "kind": "coal-trace",
+        "watched": [
+          [
+            -110,
+            -384
+          ],
+          [
+            -191,
+            -386
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "record_limit": 500000,
+        "overflow": false,
+        "events": 112911,
+        "source_halo": 2
+      },
+      "final_coal_positions": 2978,
+      "final_coal_without_trace": 0,
+      "event_counts": {
+        "begin": 7408,
+        "write": 78430,
+        "end": 7408,
+        "check": 19665
+      },
+      "cross_chunk_writes": 10193,
+      "rejected_existing_coal": 180,
+      "watched_cross_chunk_writes": 2129,
+      "watched_coal_cross_chunk_writes": 327,
+      "state_changed_between_check_and_write": 0,
+      "rejected_existing_coal_random_deltas": {
+        "0": 180
+      },
+      "duplicate_write_positions": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "addon": false,
+      "saved_blocks": {
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "all_changed_blocks": 1959,
+        "normalized_changed_blocks": 1959,
+        "changed_material_categories": {
+          "bedrock": 0,
+          "deepslate": 4,
+          "fluids": 0,
+          "soil": 29
+        },
+        "vanilla_stone_transitions": [
+          {
+            "left": "minecraft:coal_ore",
+            "right": "minecraft:stone",
+            "count": 493
+          },
+          {
+            "left": "minecraft:stone",
+            "right": "minecraft:coal_ore",
+            "count": 513
+          }
+        ],
+        "regional_changed_blocks": 0,
+        "regional_transitions": [],
+        "palette_conflicts": [],
+        "regional_examples": []
+      },
+      "host_coal_differences": 1006,
+      "all_differing_coal_observed": true,
+      "difference_examples": [
+        {
+          "position": [
+            -1759,
+            11,
+            -6133
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46761,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1759,
+                11,
+                -6133
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1758,
+            11,
+            -6133
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46757,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1758,
+                11,
+                -6133
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1759,
+            11,
+            -6132
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46763,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1759,
+                11,
+                -6132
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1758,
+            11,
+            -6132
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46753,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1758,
+                11,
+                -6132
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1757,
+            11,
+            -6132
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46749,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1757,
+                11,
+                -6132
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1758,
+            11,
+            -6131
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46745,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1758,
+                11,
+                -6131
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1757,
+            11,
+            -6131
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46733,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1757,
+                11,
+                -6131
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1759,
+            12,
+            -6133
+          ],
+          "left": "minecraft:stone",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 46765,
+              "target": "minecraft:coal_ore",
+              "previous": "minecraft:stone",
+              "position": [
+                -1759,
+                12,
+                -6133
+              ],
+              "event": "write",
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "step": 6,
+                "decoration_seed": -7534091283043126675,
+                "feature_index": 10
+              }
+            }
+          ]
+        }
+      ],
+      "natural_order_chain_examples": [
+        {
+          "placement": "-109,-384/17/0.5/10:6/7",
+          "source": [
+            -109,
+            -384
+          ],
+          "feature_seed": {
+            "step": 6,
+            "decoration_seed": -3115387465723396643,
+            "feature_index": 10
+          },
+          "same_origin": [
+            -1743,
+            82,
+            -6132
+          ],
+          "position": [
+            -1743,
+            80,
+            -6133
+          ],
+          "blocking_write": {
+            "sequence": 60812,
+            "event": "write",
+            "placement": "-110,-384/33/0.0/1:6/11",
+            "target": "minecraft:gravel",
+            "previous": "minecraft:stone",
+            "position": [
+              -1743,
+              80,
+              -6133
+            ]
+          },
+          "blocking_source": [
+            -110,
+            -384
+          ],
+          "blocked_check": {
+            "sequence": 78055,
+            "random_before": 4102,
+            "event": "check",
+            "position": [
+              -1743,
+              80,
+              -6133
+            ],
+            "accepted": false,
+            "previous": "minecraft:gravel",
+            "placement": "-109,-384/17/0.5/10:6/7",
+            "target": "minecraft:coal_ore",
+            "random_after": 4102
+          },
+          "unblocked_check": {
+            "sequence": 13097,
+            "previous": "minecraft:stone",
+            "placement": "-109,-384/17/0.5/10:6/7",
+            "target": "minecraft:coal_ore",
+            "random_after": 4103,
+            "random_before": 4102,
+            "event": "check",
+            "position": [
+              -1743,
+              80,
+              -6133
+            ],
+            "accepted": true
+          },
+          "next_placement": "-109,-384/17/0.5/10:6/8",
+          "next_origin_blocked_run": [
+            -1736,
+            9,
+            -6131
+          ],
+          "next_origin_other_run": [
+            -1743,
+            116,
+            -6133
+          ],
+          "downstream_saved_difference_examples": [
+            {
+              "position": [
+                -1736,
+                6,
+                -6130
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            },
+            {
+              "position": [
+                -1736,
+                6,
+                -6129
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            },
+            {
+              "position": [
+                -1736,
+                7,
+                -6130
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            },
+            {
+              "position": [
+                -1735,
+                7,
+                -6130
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            }
+          ]
+        },
+        {
+          "placement": "-110,-384/17/0.5/10:6/4",
+          "source": [
+            -110,
+            -384
+          ],
+          "feature_seed": {
+            "step": 6,
+            "decoration_seed": -7534091283043126675,
+            "feature_index": 10
+          },
+          "same_origin": [
+            -1745,
+            85,
+            -6136
+          ],
+          "position": [
+            -1744,
+            83,
+            -6137
+          ],
+          "blocking_write": {
+            "sequence": 10160,
+            "target": "minecraft:dirt",
+            "previous": "minecraft:stone",
+            "position": [
+              -1744,
+              83,
+              -6137
+            ],
+            "event": "write",
+            "placement": "-109,-384/33/0.0/0:6/1"
+          },
+          "blocking_source": [
+            -109,
+            -384
+          ],
+          "blocked_check": {
+            "sequence": 46392,
+            "previous": "minecraft:dirt",
+            "placement": "-110,-384/17/0.5/10:6/4",
+            "target": "minecraft:coal_ore",
+            "random_after": 3908,
+            "random_before": 3908,
+            "event": "check",
+            "position": [
+              -1744,
+              83,
+              -6137
+            ],
+            "accepted": false
+          },
+          "unblocked_check": {
+            "sequence": 62283,
+            "random_before": 3908,
+            "event": "check",
+            "position": [
+              -1744,
+              83,
+              -6137
+            ],
+            "accepted": true,
+            "previous": "minecraft:stone",
+            "placement": "-110,-384/17/0.5/10:6/4",
+            "target": "minecraft:coal_ore",
+            "random_after": 3909
+          },
+          "next_placement": "-110,-384/17/0.5/10:6/5",
+          "next_origin_blocked_run": [
+            -1749,
+            129,
+            -6132
+          ],
+          "next_origin_other_run": [
+            -1748,
+            103,
+            -6135
+          ],
+          "downstream_saved_difference_examples": [
+            {
+              "position": [
+                -1748,
+                128,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            },
+            {
+              "position": [
+                -1748,
+                129,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            },
+            {
+              "position": [
+                -1749,
+                128,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            },
+            {
+              "position": [
+                -1749,
+                129,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "minecraft:stone"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "addon": true,
+      "saved_blocks": {
+        "chunks": [
+          [
+            -191,
+            -386
+          ],
+          [
+            -110,
+            -384
+          ],
+          [
+            -109,
+            -384
+          ],
+          [
+            -108,
+            -384
+          ]
+        ],
+        "all_changed_blocks": 1883,
+        "normalized_changed_blocks": 1883,
+        "changed_material_categories": {
+          "bedrock": 0,
+          "deepslate": 4,
+          "fluids": 0,
+          "soil": 25
+        },
+        "vanilla_stone_transitions": [],
+        "regional_changed_blocks": 1026,
+        "regional_transitions": [
+          {
+            "left": "geologic_variation:gabbro",
+            "right": "minecraft:coal_ore",
+            "count": 426
+          },
+          {
+            "left": "geologic_variation:slate",
+            "right": "minecraft:coal_ore",
+            "count": 98
+          },
+          {
+            "left": "minecraft:coal_ore",
+            "right": "geologic_variation:gabbro",
+            "count": 425
+          },
+          {
+            "left": "minecraft:coal_ore",
+            "right": "geologic_variation:slate",
+            "count": 77
+          }
+        ],
+        "palette_conflicts": [],
+        "regional_examples": [
+          {
+            "position": [
+              -1759,
+              11,
+              -6133
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1758,
+              11,
+              -6133
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1759,
+              11,
+              -6132
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1758,
+              11,
+              -6132
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1757,
+              11,
+              -6132
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1758,
+              11,
+              -6131
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1757,
+              11,
+              -6131
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1759,
+              12,
+              -6133
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1758,
+              12,
+              -6133
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1759,
+              12,
+              -6132
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1758,
+              12,
+              -6132
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          },
+          {
+            "position": [
+              -1757,
+              12,
+              -6132
+            ],
+            "left": {
+              "Name": "geologic_variation:gabbro"
+            },
+            "right": {
+              "Name": "minecraft:coal_ore"
+            }
+          }
+        ]
+      },
+      "host_coal_differences": 1026,
+      "all_differing_coal_observed": true,
+      "difference_examples": [
+        {
+          "position": [
+            -1759,
+            11,
+            -6133
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57565,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1759,
+                11,
+                -6133
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1758,
+            11,
+            -6133
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57561,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1758,
+                11,
+                -6133
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1759,
+            11,
+            -6132
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57567,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1759,
+                11,
+                -6132
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1758,
+            11,
+            -6132
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57557,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1758,
+                11,
+                -6132
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1757,
+            11,
+            -6132
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57553,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1757,
+                11,
+                -6132
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1758,
+            11,
+            -6131
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57549,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1758,
+                11,
+                -6131
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1757,
+            11,
+            -6131
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57537,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1757,
+                11,
+                -6131
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            -1759,
+            12,
+            -6133
+          ],
+          "left": "geologic_variation:gabbro",
+          "right": "minecraft:coal_ore",
+          "writes": [
+            {
+              "sequence": 57569,
+              "placement": "-110,-384/17/0.5/10:6/12",
+              "event": "write",
+              "position": [
+                -1759,
+                12,
+                -6133
+              ],
+              "previous": "geologic_variation:gabbro",
+              "target": "minecraft:coal_ore",
+              "source": [
+                -110,
+                -384
+              ],
+              "feature_seed": {
+                "feature_index": 10,
+                "decoration_seed": -7534091283043126675,
+                "step": 6
+              }
+            }
+          ]
+        }
+      ],
+      "natural_order_chain_examples": [
+        {
+          "placement": "-110,-383/17/0.5/10:6/14",
+          "source": [
+            -110,
+            -383
+          ],
+          "feature_seed": {
+            "feature_index": 10,
+            "decoration_seed": 1531286029203473885,
+            "step": 6
+          },
+          "same_origin": [
+            -1753,
+            105,
+            -6128
+          ],
+          "position": [
+            -1754,
+            103,
+            -6130
+          ],
+          "blocking_write": {
+            "sequence": 64200,
+            "position": [
+              -1754,
+              103,
+              -6130
+            ],
+            "previous": "geologic_variation:gabbro",
+            "target": "minecraft:emerald_ore",
+            "placement": "-110,-384/3/0.0/30:6/8",
+            "event": "write"
+          },
+          "blocking_source": [
+            -110,
+            -384
+          ],
+          "blocked_check": {
+            "sequence": 68153,
+            "random_before": 4628,
+            "random_after": 4628,
+            "target": "minecraft:coal_ore",
+            "placement": "-110,-383/17/0.5/10:6/14",
+            "previous": "minecraft:emerald_ore",
+            "accepted": false,
+            "position": [
+              -1754,
+              103,
+              -6130
+            ],
+            "event": "check"
+          },
+          "unblocked_check": {
+            "sequence": 46820,
+            "placement": "-110,-383/17/0.5/10:6/14",
+            "previous": "geologic_variation:gabbro",
+            "accepted": true,
+            "position": [
+              -1754,
+              103,
+              -6130
+            ],
+            "event": "check",
+            "random_before": 4628,
+            "random_after": 4629,
+            "target": "minecraft:coal_ore"
+          },
+          "next_placement": "-110,-383/17/0.5/10:6/15",
+          "next_origin_blocked_run": [
+            -1755,
+            92,
+            -6128
+          ],
+          "next_origin_other_run": [
+            -1760,
+            98,
+            -6116
+          ],
+          "downstream_saved_difference_examples": [
+            {
+              "position": [
+                -1756,
+                89,
+                -6129
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1756,
+                90,
+                -6129
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1755,
+                89,
+                -6129
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1755,
+                90,
+                -6129
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            }
+          ]
+        },
+        {
+          "placement": "-109,-384/17/0.5/10:6/7",
+          "source": [
+            -109,
+            -384
+          ],
+          "feature_seed": {
+            "feature_index": 10,
+            "decoration_seed": -3115387465723396643,
+            "step": 6
+          },
+          "same_origin": [
+            -1743,
+            82,
+            -6132
+          ],
+          "position": [
+            -1743,
+            80,
+            -6133
+          ],
+          "blocking_write": {
+            "sequence": 60802,
+            "position": [
+              -1743,
+              80,
+              -6133
+            ],
+            "previous": "geologic_variation:gabbro",
+            "target": "minecraft:gravel",
+            "placement": "-110,-384/33/0.0/1:6/11",
+            "event": "write"
+          },
+          "blocking_source": [
+            -110,
+            -384
+          ],
+          "blocked_check": {
+            "sequence": 78045,
+            "random_before": 4102,
+            "random_after": 4102,
+            "target": "minecraft:coal_ore",
+            "placement": "-109,-384/17/0.5/10:6/7",
+            "previous": "minecraft:gravel",
+            "accepted": false,
+            "position": [
+              -1743,
+              80,
+              -6133
+            ],
+            "event": "check"
+          },
+          "unblocked_check": {
+            "sequence": 3154,
+            "placement": "-109,-384/17/0.5/10:6/7",
+            "previous": "geologic_variation:gabbro",
+            "accepted": true,
+            "position": [
+              -1743,
+              80,
+              -6133
+            ],
+            "event": "check",
+            "random_before": 4102,
+            "random_after": 4103,
+            "target": "minecraft:coal_ore"
+          },
+          "next_placement": "-109,-384/17/0.5/10:6/8",
+          "next_origin_blocked_run": [
+            -1736,
+            9,
+            -6131
+          ],
+          "next_origin_other_run": [
+            -1743,
+            116,
+            -6133
+          ],
+          "downstream_saved_difference_examples": [
+            {
+              "position": [
+                -1736,
+                6,
+                -6130
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1736,
+                6,
+                -6129
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1736,
+                7,
+                -6130
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1735,
+                7,
+                -6130
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:slate"
+            }
+          ]
+        },
+        {
+          "placement": "-110,-384/17/0.5/10:6/4",
+          "source": [
+            -110,
+            -384
+          ],
+          "feature_seed": {
+            "feature_index": 10,
+            "decoration_seed": -7534091283043126675,
+            "step": 6
+          },
+          "same_origin": [
+            -1745,
+            85,
+            -6136
+          ],
+          "position": [
+            -1744,
+            83,
+            -6137
+          ],
+          "blocking_write": {
+            "sequence": 217,
+            "placement": "-109,-384/33/0.0/0:6/1",
+            "event": "write",
+            "position": [
+              -1744,
+              83,
+              -6137
+            ],
+            "previous": "geologic_variation:gabbro",
+            "target": "minecraft:dirt"
+          },
+          "blocking_source": [
+            -109,
+            -384
+          ],
+          "blocked_check": {
+            "sequence": 57196,
+            "placement": "-110,-384/17/0.5/10:6/4",
+            "previous": "minecraft:dirt",
+            "accepted": false,
+            "position": [
+              -1744,
+              83,
+              -6137
+            ],
+            "event": "check",
+            "random_before": 3908,
+            "random_after": 3908,
+            "target": "minecraft:coal_ore"
+          },
+          "unblocked_check": {
+            "sequence": 62273,
+            "random_before": 3908,
+            "random_after": 3909,
+            "target": "minecraft:coal_ore",
+            "placement": "-110,-384/17/0.5/10:6/4",
+            "previous": "geologic_variation:gabbro",
+            "accepted": true,
+            "position": [
+              -1744,
+              83,
+              -6137
+            ],
+            "event": "check"
+          },
+          "next_placement": "-110,-384/17/0.5/10:6/5",
+          "next_origin_blocked_run": [
+            -1749,
+            129,
+            -6132
+          ],
+          "next_origin_other_run": [
+            -1748,
+            103,
+            -6135
+          ],
+          "downstream_saved_difference_examples": [
+            {
+              "position": [
+                -1748,
+                128,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1748,
+                129,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1749,
+                128,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            },
+            {
+              "position": [
+                -1749,
+                129,
+                -6131
+              ],
+              "left": "minecraft:coal_ore",
+              "right": "geologic_variation:gabbro"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

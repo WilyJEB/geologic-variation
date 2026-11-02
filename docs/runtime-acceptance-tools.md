@@ -75,6 +75,15 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For actual natural feature-write attribution, use `scripts/trace-natural-coal.py`
+and `scripts/summarize-natural-coal.py`; see the
+[natural ore-order report](natural-coal-trace-2026-11-01.md). `acceptance trace-reset`,
+`acceptance trace-watch <chunkX> <chunkZ>` and `acceptance trace-summary` control
+the bounded opt-in probe. A final raw trace is exported on server stop. The runner
+uses immutable TD hardlinks, requires space for transient ONNX optimization, and
+removes only its own regenerable cache after process exit. Never edit linked TD
+or model inputs during a run. These diagnostic traces do not measure throughput.
+
 For generation-stage isolation, four-rock survival/ore/carver fixtures, and the
 overlapping vanilla coal reproduction, use `scripts/verify-ore-hosts.py` and the
 [2026-11-01 report](host-acceptance-2026-11-01.md). The new permission-level-4

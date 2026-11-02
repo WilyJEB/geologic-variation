@@ -145,14 +145,16 @@ def targets(seed, scale):
 
 
 class Server:
-    def __init__(self, args, name, addon=True, scale=1, vanilla=False, probe=True):
+    def __init__(self, args, name, addon=True, scale=1, vanilla=False, probe=True, link_td=False):
         self.args = args
         self.path = args.output / name
         self.path.mkdir(parents=True, exist_ok=False)
         self.password = os.urandom(18).hex()
         for folder in ('mods', 'config', 'world/data', 'terrain-diffusion-models'):
             (self.path / folder).mkdir(parents=True, exist_ok=True)
-        shutil.copy2(args.td, self.path / 'mods' / args.td.name)
+        # Opt-in immutable dependency link for large diagnostic matrices on one volume.
+        # Addon/probe outputs stay copied: later builds must not alter prior evidence.
+        (os.link if link_td else shutil.copy2)(args.td, self.path / 'mods' / args.td.name)
         if addon:
             shutil.copy2(args.addon, self.path / 'mods' / args.addon.name)
         if probe:
