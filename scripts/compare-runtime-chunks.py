@@ -49,6 +49,10 @@ def blocks(world, x, z):
 def compare(a, b, coordinates):
     all_changes, regional_changes = Counter(), Counter()
     conflicts, examples = [], []
+    normalized_changes = 0
+    preserved = Counter()
+    hosts = {'geologic_variation:'+name for name in ('limestone','slate','quartzite','gabbro')}
+    normalize = lambda state: {'Name':'minecraft:stone'} if state['Name'] in hosts else state
     for x, z in coordinates:
         left, right = blocks(a, x, z), blocks(b, x, z)
         assert left.keys() == right.keys(), 'Chunk vertical coverage differs'
@@ -56,6 +60,15 @@ def compare(a, b, coordinates):
             la, lb = left[pos], right[pos]
             if la == lb:
                 continue
+            if normalize(la) != normalize(lb):
+                normalized_changes += 1
+            for category,names in {
+                'bedrock': {'minecraft:bedrock'}, 'deepslate': {'minecraft:deepslate'},
+                'fluids': {'minecraft:water','minecraft:lava'},
+                'soil': {'minecraft:dirt','minecraft:grass_block','minecraft:sand','minecraft:gravel','minecraft:clay'},
+            }.items():
+                if la['Name'] in names or lb['Name'] in names:
+                    preserved[category] += 1
             pair = la['Name'], lb['Name']
             all_changes[pair] += 1
             regional = [name.startswith('geologic_variation:') for name in pair]
@@ -66,6 +79,8 @@ def compare(a, b, coordinates):
             if all(regional) and pair[0] != pair[1]:
                 conflicts.append({'position': pos, 'left': pair[0], 'right': pair[1]})
     return {'chunks': coordinates, 'all_changed_blocks': sum(all_changes.values()),
+            'normalized_changed_blocks': normalized_changes,
+            'changed_material_categories': {name:preserved[name] for name in ('bedrock','deepslate','fluids','soil')},
             'vanilla_stone_transitions': [{'left': a, 'right': b, 'count': n} for (a,b),n in sorted(all_changes.items()) if 'minecraft:stone' in (a,b)],
             'regional_changed_blocks': sum(regional_changes.values()),
             'regional_transitions': [{'left': a, 'right': b, 'count': n} for (a,b),n in sorted(regional_changes.items())],

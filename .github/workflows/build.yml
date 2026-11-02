@@ -21,6 +21,8 @@ jobs:
         run: python scripts/generate-masonry.py --check --jar build/libs/geologic-variation-0.2.2-dev.jar
       - shell: pwsh
         run: python scripts/check-geology-library.py
+      - shell: pwsh
+        run: python -m py_compile scripts/runtime-acceptance.py scripts/compare-runtime-chunks.py scripts/audit-host-feature-rules.py scripts/verify-ore-hosts.py scripts/summarize-host-acceptance.py
       - uses: actions/upload-artifact@v4
         with:
           name: geologic-variation-dev

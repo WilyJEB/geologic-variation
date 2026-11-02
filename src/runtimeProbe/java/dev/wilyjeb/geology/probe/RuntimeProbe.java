@@ -23,11 +23,19 @@ import java.util.concurrent.Executors;
 
 @Mod("geology_runtime_probe")
 public final class RuntimeProbe {
+    private static final java.util.Set<String> NORMALIZED_HOSTS = java.util.Set.of("geologic_variation:limestone",
+        "geologic_variation:slate","geologic_variation:quartzite","geologic_variation:gabbro");
     public RuntimeProbe() { NeoForge.EVENT_BUS.addListener(RuntimeProbe::commands); }
     private static void commands(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
             .then(Commands.literal("prepare").executes(c -> prepare(c.getSource())))
             .then(Commands.literal("cache-policy").executes(c -> cachePolicy(c.getSource())))
+            .then(Commands.literal("hosts").executes(c -> send(c.getSource(), HostAcceptance.run(c.getSource().getLevel()))))
+            .then(Commands.literal("ore-order").executes(c -> send(c.getSource(), HostAcceptance.oreOrder(c.getSource().getLevel()))))
+            .then(Commands.literal("stage").then(Commands.argument("status", com.mojang.brigadier.arguments.StringArgumentType.word())
+                .then(Commands.argument("x", IntegerArgumentType.integer()).then(Commands.argument("z", IntegerArgumentType.integer())
+                    .executes(c -> chunk(c.getSource(), "overworld", IntegerArgumentType.getInteger(c,"x"),
+                        IntegerArgumentType.getInteger(c,"z"), com.mojang.brigadier.arguments.StringArgumentType.getString(c,"status")))))))
             .then(Commands.literal("chunk").then(Commands.argument("dimension", com.mojang.brigadier.arguments.StringArgumentType.word())
                 .then(Commands.argument("x", IntegerArgumentType.integer()).then(Commands.argument("z", IntegerArgumentType.integer())
                     .executes(c -> chunk(c.getSource(), com.mojang.brigadier.arguments.StringArgumentType.getString(c,"dimension"),
@@ -92,15 +100,28 @@ public final class RuntimeProbe {
         }catch(Exception e){throw new RuntimeException(e);}
     }
     private static int chunk(CommandSourceStack source, String dimension, int x, int z) {
+        return chunk(source, dimension, x, z, "full");
+    }
+    private static int chunk(CommandSourceStack source, String dimension, int x, int z, String status) {
         try {
             var level = source.getServer().getLevel(ResourceKey.create(Registries.DIMENSION,
                     ResourceLocation.parse("minecraft:"+dimension)));
             if (level == null) throw new IllegalArgumentException("Missing dimension");
             long start = System.nanoTime();
-            var chunk = level.getChunk(x,z);
+            var target = switch(status) {
+                case "surface" -> net.minecraft.world.level.chunk.status.ChunkStatus.SURFACE;
+                case "carvers" -> net.minecraft.world.level.chunk.status.ChunkStatus.CARVERS;
+                case "features" -> net.minecraft.world.level.chunk.status.ChunkStatus.FEATURES;
+                case "full" -> net.minecraft.world.level.chunk.status.ChunkStatus.FULL;
+                default -> throw new IllegalArgumentException("Unknown stage: " + status);
+            };
+            var chunk = level.getChunk(x,z,target,true);
+            if (chunk == null || chunk.getPersistedStatus() != target)
+                throw new IllegalStateException("Requested an exact fresh stage; chunk already advanced or unavailable");
             double generationMs = (System.nanoTime()-start)/1e6;
             var digest = MessageDigest.getInstance("SHA-256");
             var geologyDigest = MessageDigest.getInstance("SHA-256");
+            var normalizedDigest = MessageDigest.getInstance("SHA-256");
             var counts = new java.util.TreeMap<String,Integer>();
             var pos = new BlockPos.MutableBlockPos();
             for (int y=chunk.getMinBuildHeight();y<chunk.getMaxBuildHeight();y++)
@@ -110,12 +131,16 @@ public final class RuntimeProbe {
                     String id=BuiltInRegistries.BLOCK.getKey(state.getBlock()).toString();
                     digest.update((state.toString()+"\n").getBytes(StandardCharsets.UTF_8));
                     counts.merge(id,1,Integer::sum);
+                    normalizedDigest.update(((NORMALIZED_HOSTS.contains(id)
+                        ? net.minecraft.world.level.block.Blocks.STONE.defaultBlockState().toString() : state.toString())+"\n")
+                        .getBytes(StandardCharsets.UTF_8));
                     if (id.startsWith("geologic_variation:")) geologyDigest.update(
                         (dx+","+y+","+dz+":"+id+"\n").getBytes(StandardCharsets.UTF_8));
                 }
             Map<String,Object> result=new LinkedHashMap<>();
             result.put("kind","chunk"); result.put("dimension",dimension); result.put("x",x);result.put("z",z);
             result.put("generation_ms",generationMs);result.put("blocks_sha256",HexFormat.of().formatHex(digest.digest()));
+            result.put("stage",status);result.put("normalized_sha256",HexFormat.of().formatHex(normalizedDigest.digest()));
             result.put("geology_sha256",HexFormat.of().formatHex(geologyDigest.digest()));result.put("counts",counts);
             return send(source,result);
         } catch (Exception e) { throw new RuntimeException(e); }
