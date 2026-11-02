@@ -1,0 +1,794 @@
+{
+  "cases": [
+    {
+      "name": "seed-cached",
+      "before": {
+        "settings": {
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true,
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings"
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 66.0315,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "live": {
+        "kind": "live-context",
+        "field": "seed",
+        "route": "cached",
+        "thread": "Server thread",
+        "expected_region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]",
+        "cache_entries_before_edit": 1,
+        "seed_before": -1550453200536840819,
+        "scale_before": 1,
+        "seed_after": -1550453200536840818,
+        "scale_after": 1,
+        "heightmap_calls_after_edit": 0,
+        "pipeline_data_calls_after_edit": 0,
+        "rejected": true,
+        "diagnostic": "dev.wilyjeb.geology.domain.GeologyFailure: Generation context changed: Incompatible geology generation context. Saved: GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]; runtime: GenerationContext[generator=geology-1, seed=-1550453200536840818, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]. Restore the original generator, TD dependency/models/backend and world seed/scale/tile size; snapshot unchanged.\nRestore this world's original addon, TD/models/backend, seed, scale and tile size. Do not delete or edit its geology snapshot. See logs/latest.log for details.",
+        "cache_entries_after": 0
+      },
+      "preserved_before": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "d6d045435d47c897157eb66fbfd0152aea3c28a14db38942efb003bad6b2d58e",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "preserved_after_rejection": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "d6d045435d47c897157eb66fbfd0152aea3c28a14db38942efb003bad6b2d58e",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "saved_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840819",
+        "scale": "1",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "runtime_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840818",
+        "scale": "1",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "restored": {
+        "settings": {
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true,
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings"
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 66.9202,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "exit_code": 0,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "6f1a143a8b117abdabdfd1c72270d5270c19e18f7920a7df3aab908d3f6ec1ae",
+        "geology-runtime-probe-0.2.2-dev.jar": "38c026e36ae912337963b8f8b0047d94529e8d6c6230ed710d2c5c26ffec0b54",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "33e894a780bd194fbf98e4cdaeb563b63d14a83a46440063425fc91d92c27933",
+        "console-2.log": "a5f70060c2d6691072f37e82629ac9d714b8c81f08ea2a8d044f903dcfc2fe6c"
+      },
+      "restored_terrain_matches": true,
+      "terrain_preservation": {
+        "persisted_chunks": 862,
+        "statuses": {
+          "minecraft:initialize_light": 20,
+          "minecraft:carvers": 36,
+          "minecraft:biomes": 52,
+          "minecraft:structure_starts": 750,
+          "minecraft:full": 4
+        },
+        "chunk_set_status_and_block_containers_sha256": "104da25702afc50e3254fcd73e71cb24078f47eeee06a38eb95318c144cbc2e1",
+        "identical_after_rejection": true
+      }
+    },
+    {
+      "name": "seed-uncached",
+      "before": {
+        "settings": {
+          "kind": "settings",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "owner_matches": true,
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 65.0212,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "live": {
+        "kind": "live-context",
+        "field": "seed",
+        "route": "uncached",
+        "thread": "Server thread",
+        "expected_region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]",
+        "cache_entries_before_edit": 0,
+        "seed_before": -1550453200536840819,
+        "scale_before": 1,
+        "seed_after": -1550453200536840818,
+        "scale_after": 1,
+        "heightmap_calls_after_edit": 0,
+        "pipeline_data_calls_after_edit": 0,
+        "rejected": true,
+        "diagnostic": "dev.wilyjeb.geology.domain.GeologyFailure: Generation context changed: Incompatible geology generation context. Saved: GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]; runtime: GenerationContext[generator=geology-1, seed=-1550453200536840818, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]. Restore the original generator, TD dependency/models/backend and world seed/scale/tile size; snapshot unchanged.\nRestore this world's original addon, TD/models/backend, seed, scale and tile size. Do not delete or edit its geology snapshot. See logs/latest.log for details.",
+        "cache_entries_after": 0
+      },
+      "preserved_before": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "ff347d64597a3ec0e1cca7e6dbd3611ce6876a18217c46daa5c929e3da2f6ef3",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "preserved_after_rejection": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "ff347d64597a3ec0e1cca7e6dbd3611ce6876a18217c46daa5c929e3da2f6ef3",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "saved_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840819",
+        "scale": "1",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "runtime_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840818",
+        "scale": "1",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "restored": {
+        "settings": {
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "owner_matches": true
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 82.288,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "exit_code": 0,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "6f1a143a8b117abdabdfd1c72270d5270c19e18f7920a7df3aab908d3f6ec1ae",
+        "geology-runtime-probe-0.2.2-dev.jar": "38c026e36ae912337963b8f8b0047d94529e8d6c6230ed710d2c5c26ffec0b54",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "bb1a5b05468eb6f80784c74e166309e5c41402c01e161b967f5b67025a717c18",
+        "console-2.log": "03deb50dec0c00a6dcd69b22abb6460ba28a71b8bdbb2234537a01128a637825"
+      },
+      "restored_terrain_matches": true,
+      "terrain_preservation": {
+        "persisted_chunks": 862,
+        "statuses": {
+          "minecraft:initialize_light": 20,
+          "minecraft:carvers": 36,
+          "minecraft:biomes": 52,
+          "minecraft:structure_starts": 750,
+          "minecraft:full": 4
+        },
+        "chunk_set_status_and_block_containers_sha256": "104da25702afc50e3254fcd73e71cb24078f47eeee06a38eb95318c144cbc2e1",
+        "identical_after_rejection": true
+      }
+    },
+    {
+      "name": "scale-cached",
+      "before": {
+        "settings": {
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "owner_matches": true,
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 67.8062,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "live": {
+        "kind": "live-context",
+        "field": "scale",
+        "route": "cached",
+        "thread": "Server thread",
+        "expected_region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]",
+        "cache_entries_before_edit": 1,
+        "seed_before": -1550453200536840819,
+        "scale_before": 1,
+        "seed_after": -1550453200536840819,
+        "scale_after": 6,
+        "heightmap_calls_after_edit": 0,
+        "pipeline_data_calls_after_edit": 0,
+        "rejected": true,
+        "diagnostic": "dev.wilyjeb.geology.domain.GeologyFailure: Generation context changed: Incompatible geology generation context. Saved: GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]; runtime: GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=6, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]. Restore the original generator, TD dependency/models/backend and world seed/scale/tile size; snapshot unchanged.\nRestore this world's original addon, TD/models/backend, seed, scale and tile size. Do not delete or edit its geology snapshot. See logs/latest.log for details.",
+        "cache_entries_after": 0
+      },
+      "preserved_before": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "e0fe4f27e9dabfd127b0e6f96302c03b5c12226774aa9094dcbd324322e85882",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "preserved_after_rejection": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "e0fe4f27e9dabfd127b0e6f96302c03b5c12226774aa9094dcbd324322e85882",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "saved_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840819",
+        "scale": "1",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "runtime_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840819",
+        "scale": "6",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "restored": {
+        "settings": {
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true,
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings"
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 82.0696,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "exit_code": 0,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "6f1a143a8b117abdabdfd1c72270d5270c19e18f7920a7df3aab908d3f6ec1ae",
+        "geology-runtime-probe-0.2.2-dev.jar": "38c026e36ae912337963b8f8b0047d94529e8d6c6230ed710d2c5c26ffec0b54",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "25af93aa8ba0b2684bc135260c3ab1541f4ce9859487c34120a8c0ad188c0dde",
+        "console-2.log": "3266212ecd88bd84a3089c2c9f22cb278385c17b5fb0fce67d2b64d74a6509d6"
+      },
+      "restored_terrain_matches": true,
+      "terrain_preservation": {
+        "persisted_chunks": 862,
+        "statuses": {
+          "minecraft:initialize_light": 20,
+          "minecraft:carvers": 36,
+          "minecraft:biomes": 52,
+          "minecraft:structure_starts": 750,
+          "minecraft:full": 4
+        },
+        "chunk_set_status_and_block_containers_sha256": "104da25702afc50e3254fcd73e71cb24078f47eeee06a38eb95318c144cbc2e1",
+        "identical_after_rejection": true
+      }
+    },
+    {
+      "name": "scale-uncached",
+      "before": {
+        "settings": {
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings",
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 77.4494,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "live": {
+        "kind": "live-context",
+        "field": "scale",
+        "route": "uncached",
+        "thread": "Server thread",
+        "expected_region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]",
+        "cache_entries_before_edit": 0,
+        "seed_before": -1550453200536840819,
+        "scale_before": 1,
+        "seed_after": -1550453200536840819,
+        "scale_after": 6,
+        "heightmap_calls_after_edit": 0,
+        "pipeline_data_calls_after_edit": 0,
+        "rejected": true,
+        "diagnostic": "dev.wilyjeb.geology.domain.GeologyFailure: Generation context changed: Incompatible geology generation context. Saved: GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]; runtime: GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=6, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]. Restore the original generator, TD dependency/models/backend and world seed/scale/tile size; snapshot unchanged.\nRestore this world's original addon, TD/models/backend, seed, scale and tile size. Do not delete or edit its geology snapshot. See logs/latest.log for details.",
+        "cache_entries_after": 0
+      },
+      "preserved_before": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "6380f7288adb4e53c59aebfc58c0a5b4bc33ba7e19a94d36d2d26ca17dd75f78",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "preserved_after_rejection": {
+        "snapshot": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+        "regions": {
+          "entities/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "entities/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-1.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-2.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "poi/r.-2.-3.mca": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "region/r.-1.-2.mca": "585198cee76a7ef54fe6a88dee8a7f3c3bf7372f4c4bafd4c8b80f0df1359fc8",
+          "region/r.-1.-3.mca": "6380f7288adb4e53c59aebfc58c0a5b4bc33ba7e19a94d36d2d26ca17dd75f78",
+          "region/r.-2.-2.mca": "15013e5e5152aa6310210ed936b830d16fba9418d59a184a0acd2d3f0574b81b",
+          "region/r.-2.-3.mca": "a7192ebeb3ab556ced134cfac4f786ec6010a340831c7df17aaa3e4e577fabd2"
+        }
+      },
+      "saved_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840819",
+        "scale": "1",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "runtime_context": {
+        "generator": "geology-1",
+        "seed": "-1550453200536840819",
+        "scale": "6",
+        "tileSize": "256",
+        "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+        "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+        "backend": "CPU/Windows 11/amd64"
+      },
+      "restored": {
+        "settings": {
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings",
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true,
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]"
+        },
+        "chunk": {
+          "kind": "chunk",
+          "dimension": "overworld",
+          "x": -32,
+          "z": -65,
+          "generation_ms": 69.1025,
+          "blocks_sha256": "3d272ac5db3e39832a2dcac58e7460d41559a6a522e7afde7d66baae4ca8549b",
+          "stage": "full",
+          "normalized_sha256": "be9b26f3881971cd3a69cea3dd4c2ab11f8619b8d9dde698338c1b74706fec1c",
+          "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+          "counts": {
+            "geologic_variation:slate": 15597,
+            "minecraft:acacia_leaves": 58,
+            "minecraft:acacia_log": 10,
+            "minecraft:air": 80553,
+            "minecraft:andesite": 1210,
+            "minecraft:bedrock": 1803,
+            "minecraft:coal_ore": 121,
+            "minecraft:copper_ore": 107,
+            "minecraft:deepslate": 13698,
+            "minecraft:deepslate_copper_ore": 1,
+            "minecraft:deepslate_diamond_ore": 34,
+            "minecraft:deepslate_gold_ore": 23,
+            "minecraft:deepslate_iron_ore": 26,
+            "minecraft:deepslate_lapis_ore": 22,
+            "minecraft:deepslate_redstone_ore": 29,
+            "minecraft:diorite": 1337,
+            "minecraft:dirt": 907,
+            "minecraft:emerald_ore": 3,
+            "minecraft:gold_ore": 8,
+            "minecraft:granite": 846,
+            "minecraft:grass_block": 137,
+            "minecraft:gravel": 608,
+            "minecraft:infested_deepslate": 28,
+            "minecraft:infested_stone": 27,
+            "minecraft:iron_ore": 49,
+            "minecraft:lapis_ore": 1,
+            "minecraft:redstone_ore": 6,
+            "minecraft:short_grass": 41,
+            "minecraft:tuff": 1085,
+            "minecraft:water": 409
+          }
+        },
+        "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+      },
+      "exit_code": 0,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "6f1a143a8b117abdabdfd1c72270d5270c19e18f7920a7df3aab908d3f6ec1ae",
+        "geology-runtime-probe-0.2.2-dev.jar": "38c026e36ae912337963b8f8b0047d94529e8d6c6230ed710d2c5c26ffec0b54",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "5a74551bf878bd0ea18b9d623d94dface17d456ef24862eea16e1b634750c820",
+        "console-2.log": "65f9d729cea390f04dceba4ecba25ff9d5c2f1e2d8962710230814ad5d114a1d"
+      },
+      "restored_terrain_matches": true,
+      "terrain_preservation": {
+        "persisted_chunks": 862,
+        "statuses": {
+          "minecraft:initialize_light": 20,
+          "minecraft:carvers": 36,
+          "minecraft:biomes": 52,
+          "minecraft:structure_starts": 750,
+          "minecraft:full": 4
+        },
+        "chunk_set_status_and_block_containers_sha256": "104da25702afc50e3254fcd73e71cb24078f47eeee06a38eb95318c144cbc2e1",
+        "identical_after_rejection": true
+      }
+    }
+  ],
+  "shared_inputs_unchanged": true,
+  "raw_results_sha256": "040a746663af982561b996c00df6f8c30e6944043e7bb7c09feaa1b4e6d24a9d"
+}

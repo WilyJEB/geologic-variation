@@ -1,3 +1,16 @@
+# Exact native-scale anchor sampling — 2026-11-02 (#11)
+
+The [focused performance report](anchor-performance-2026-11-02.md) records clean
+alternating CPU pairs, TD/old/new triplets, passive request/window counters,
+131,072 exact elevation comparisons, six addon save/reopen checks and four new
+live guard/restoration cases. The equivalent scale-1 elevation path saves about
+12 ms per anchor with warm TD tensors. Cold-route saving is inconclusive:
+observed median +0.525 s, range -1.003 to +1.024 s; remaining paired overhead
+is 14.157 s and all 62 extra TD windows remain. Geology-1 and strict save guards
+are preserved. Whole post-feature hashes still differ; no regional blocks or
+palettes differ in these saved pairs. #5's stronger failed assertion remains;
+#9's trained-weight/upgrade/remaining lifecycle gates and broader #11 work stay open.
+
 # Independent integrated-client lifecycle matrix — 2026-11-02 (#9)
 
 See the [report](integrated-lifecycle-2026-11-02.md) for packaged CPU control →

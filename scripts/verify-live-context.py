@@ -32,8 +32,10 @@ def terrain(world):
 
 def run(args):
     require(runtime['sha'](args.td)=='3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8','Expected pinned standalone CPU TD')
-    require(runtime['sha'](args.addon)=='39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226','Expected unchanged production addon')
+    require(runtime['sha'](args.addon)==args.expected_addon_sha256,'Unexpected production addon')
     args.output.mkdir(parents=True,exist_ok=False)
+    fixture_manifest={p.relative_to(args.fixture).as_posix():runtime['sha'](p) for p in args.fixture.rglob('*') if p.is_file()}
+    model_manifest={p.name:runtime['sha'](p) for p in args.models.iterdir() if p.is_file()}
     results={'cases':[]}
     for field in ('seed','scale'):
         for route in ('cached','uncached'):
@@ -62,6 +64,9 @@ def run(args):
                 require(len(matches)==1,'Missing unique live result')
                 live=json.loads(matches[0])
                 require(live['rejected'] and live['heightmap_calls_after_edit']==0,'Returned stale result or entered heightmap route')
+                if args.expected_addon_sha256!='39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226':
+                    require('pipeline_data_calls_after_edit' in live,'Candidate requires elevation-entry instrumentation')
+                require(live.get('pipeline_data_calls_after_edit',0)==0,'Entered elevation API after edit')
                 require(live['cache_entries_before_edit']==(1 if route=='cached' else 0),'Wrong cache precondition')
                 require(live['cache_entries_after']==0,'Failure did not clear cache')
                 require(live['thread']=='Server thread','Query did not run on server thread')
@@ -84,9 +89,12 @@ def run(args):
                 require(before['region']==restored['region']==live['expected_region'],'Geology changed')
                 require(before['settings']==restored['settings'],'Settings/context changed')
                 require(helpers['preserve'](world)['snapshot']==preserved['snapshot'],'Snapshot changed on reopen')
+                terrain_restored=terrain(world)
+                require(terrain_before==terrain_restored,'Restored terrain/status/coverage differs')
                 item={'name':server.path.name,'before':before,'live':live,'preserved_before':preserved,
                     'preserved_after_rejection':after,'saved_context':saved,'runtime_context':current,
                     'terrain_before':terrain_before,'terrain_after_rejection':terrain_after,
+                    'terrain_restored':terrain_restored,
                     'restored':restored,'exit_code':server.process.returncode,
                     'artifacts':{p.name:runtime['sha'](p) for p in sorted((server.path/'mods').glob('*.jar'))},
                     'logs':{'console-1.log':rejection_log,'console-2.log':runtime['sha'](helpers['log'](server))}}
@@ -102,6 +110,10 @@ def run(args):
                         server.process.kill();server.process.wait(timeout=30)
                     if hasattr(server,'console') and not server.console.closed:server.console.close()
                     helpers['cleanup_cache'](server)
+    require(fixture_manifest=={p.relative_to(args.fixture).as_posix():runtime['sha'](p) for p in args.fixture.rglob('*') if p.is_file()},'Source fixture changed')
+    require(model_manifest=={p.name:runtime['sha'](p) for p in args.models.iterdir() if p.is_file()},'Shared model inputs changed')
+    results['shared_inputs_unchanged']=True
+    (args.output/'live-results.json').write_text(json.dumps(results,indent=2)+'\n')
 
 
 if __name__=='__main__':
@@ -110,10 +122,12 @@ if __name__=='__main__':
     parser.add_argument('--td',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--fixture',type=Path,required=True,help='Verified disposable matching scale-1 world, copied read-only')
+    parser.add_argument('--expected-addon-sha256',default='39d8f6781752e70490674dbeacbfe8579f95382de0902f20516a595ed02bb226')
     for name,default in {'runtime':'runs/acceptance/runtime','models':'runs/server/terrain-diffusion-models',
                          'template':'runs/server/world','addon':'build/libs/geologic-variation-0.2.2-dev.jar',
                          'probe':'build/runtime-probe/geology-runtime-probe-0.2.2-dev.jar'}.items():
         parser.add_argument('--'+name,type=Path,default=ROOT/default)
     args=parser.parse_args()
-    for name,value in vars(args).items():setattr(args,name,value.resolve())
+    for name,value in vars(args).items():
+        if isinstance(value,Path):setattr(args,name,value.resolve())
     run(args)

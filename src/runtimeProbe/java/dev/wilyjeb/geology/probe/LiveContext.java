@@ -28,6 +28,7 @@ public final class LiveContext {
             synchronized(cache) { entries=cache.size(); }
             long seed=LocalTerrainProvider.getSeed(); int scale=WorldScaleManager.getCurrentScale();
             long calls=HEIGHTMAP_CALLS.get();
+            long dataCalls=Performance.DATA.get();
             // Exact public API used by ExplorerServer / world scale management in pinned TD.
             if(field.equals("seed"))LocalTerrainProvider.changeSeedFromExplorer(seed+1);
             else WorldScaleManager.setCurrentScale(source.getServer().overworld(),6);
@@ -40,6 +41,7 @@ public final class LiveContext {
             result.put("cache_entries_before_edit",entries);result.put("seed_before",seed);result.put("scale_before",scale);
             result.put("seed_after",LocalTerrainProvider.getSeed());result.put("scale_after",WorldScaleManager.getCurrentScale());
             result.put("heightmap_calls_after_edit",HEIGHTMAP_CALLS.get()-calls);
+            result.put("pipeline_data_calls_after_edit",Performance.DATA.get()-dataCalls);
             result.put("rejected",rejected!=null);result.put("diagnostic",rejected==null?"QUERY RETURNED":rejected.toString());
             synchronized(cache) { result.put("cache_entries_after",cache.size()); }
             org.slf4j.LoggerFactory.getLogger("GeologyRuntimeProbe").info("LIVE_CONTEXT {}",new com.google.gson.Gson().toJson(result));

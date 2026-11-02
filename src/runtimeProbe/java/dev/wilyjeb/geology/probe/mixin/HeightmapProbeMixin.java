@@ -19,7 +19,16 @@ public abstract class HeightmapProbeMixin {
                 .anyMatch(frame -> frame.getClassName().equals("dev.wilyjeb.geology.Geology")))
                 ? "addon-anchor" : "td-or-other";
         probe$caller.set(caller);
+        dev.wilyjeb.geology.probe.Performance.HEIGHTMAP.incrementAndGet();
+        if (caller.equals("addon-anchor")) dev.wilyjeb.geology.probe.Performance.ANCHOR.incrementAndGet();
         probe$start.set(System.nanoTime());
+    }
+
+    @Inject(method = "getPipelineData", at = @At("HEAD"), remap = false)
+    private static void probe$data(int z0, int x0, int z1, int x1, boolean climate, CallbackInfoReturnable<Object> ci) {
+        dev.wilyjeb.geology.probe.Performance.DATA.incrementAndGet();
+        org.slf4j.LoggerFactory.getLogger("GeologyRuntimeProbe").info(
+                "TD_DATA x={} z={} width={} height={} climate={} thread={}", x0,z0,x1-x0,z1-z0,climate,Thread.currentThread().getName());
     }
 
     @Inject(method = "fetchHeightmap", at = @At("RETURN"), remap = false)

@@ -43,6 +43,23 @@ ignored output folder. Stop the harness normally so saves and process cleanup ru
 
 ## Probe and measurements
 
+For the focused #11 native-scale sampler comparison, use
+`scripts/verify-anchor-performance.py` and `scripts/summarize-anchor-performance.py`.
+The [focused report](anchor-performance-2026-11-02.md) records clean alternating
+baseline pairs and TD/old/new triplets, per-operation passive counters, full anchor
+elevation comparisons and save/reopen preservation. `acceptance metrics` reads
+atomic request/window counters without scheduling inference; `elevation-check`
+compares all native tile elevations. `sampler-cost` alternates original/new
+accessors in one JVM with warm TD tensor windows and cleared provider caches,
+excluding three warmup pairs and requiring zero new windows. It is a CPU-work
+diagnostic, separate from cold generation and cached-region latency. All three
+commands belong only in disposable, idle, frozen scale-1 CPU fixtures.
+
+The live-context runner/exporter accept `--expected-addon-sha256` for an explicit
+candidate pin; the historical default remains unchanged. New probes count both
+heightmap and public elevation entries after a live edit. Prior evidence remains
+prior evidence, rather than a new candidate pass.
+
 For independent supported TD model-config substitution use
 `scripts/verify-model-config.py` and `scripts/summarize-model-config.py`.
 The [model-config report](model-config-2026-11-01.md) explains provenance,

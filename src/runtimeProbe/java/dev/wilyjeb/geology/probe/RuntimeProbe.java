@@ -33,6 +33,13 @@ public final class RuntimeProbe {
     private static void commands(RegisterCommandsEvent event) {
         HotConfig.attach();
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
+            .then(Commands.literal("metrics").executes(c -> send(c.getSource(), Performance.metrics())))
+            .then(Commands.literal("sampler-cost").then(Commands.argument("x", IntegerArgumentType.integer())
+                .then(Commands.argument("z", IntegerArgumentType.integer()).executes(c -> send(c.getSource(),
+                    Performance.compare(IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z")))))))
+            .then(Commands.literal("elevation-check").then(Commands.argument("x", IntegerArgumentType.integer())
+                .then(Commands.argument("z", IntegerArgumentType.integer()).executes(c -> send(c.getSource(),
+                    Performance.check(IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z")))))))
             .then(Commands.literal("reload-events").executes(c -> send(c.getSource(), HotConfig.events())))
             .then(Commands.literal("reload-cache").then(Commands.argument("action", com.mojang.brigadier.arguments.StringArgumentType.word())
                 .executes(c -> send(c.getSource(), HotConfig.cache(c.getSource(),
