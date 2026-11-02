@@ -75,6 +75,15 @@ distinguish extra inference from duplicate callers waiting on one shared request
 
 ## Modes and acceptance limits
 
+For independent live seed/scale queries use `scripts/verify-live-context.py`
+with a verified disposable `--fixture` and a new output directory, then validate
+with `scripts/summarize-live-context.py`. Test-only
+`acceptance live-context <seed|scale> <cached|uncached>` deliberately latches a
+fatal mismatch on the owning server; use only through that disposable harness.
+It records real cache preconditions and counts all heightmap entries after the
+edit. See the [live-context report](live-context-2026-11-01.md) for API selection,
+terrain preservation, restoration, storage limits and excluded runtime gates.
+
 For independent dedicated startup rejection and restoration, use
 `scripts/verify-context-startup.py` and `scripts/summarize-context-startup.py`;
 see the [#9 startup report](context-startup-2026-11-01.md). Permission-level-4

@@ -14,6 +14,7 @@ public abstract class HeightmapProbeMixin {
 
     @Inject(method = "fetchHeightmap", at = @At("HEAD"), remap = false)
     private void probe$begin(int z0, int x0, int z1, int x1, CallbackInfoReturnable<Object> ci) {
+        dev.wilyjeb.geology.probe.LiveContext.HEIGHTMAP_CALLS.incrementAndGet();
         String caller = StackWalker.getInstance().walk(frames -> frames
                 .anyMatch(frame -> frame.getClassName().equals("dev.wilyjeb.geology.Geology")))
                 ? "addon-anchor" : "td-or-other";

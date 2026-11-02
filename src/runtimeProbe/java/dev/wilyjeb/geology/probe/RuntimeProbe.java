@@ -33,6 +33,10 @@ public final class RuntimeProbe {
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
             .then(Commands.literal("prepare").executes(c -> prepare(c.getSource())))
             .then(Commands.literal("settings").executes(c -> settings(c.getSource())))
+            .then(Commands.literal("live-context").then(Commands.argument("field", com.mojang.brigadier.arguments.StringArgumentType.word())
+                .then(Commands.argument("route", com.mojang.brigadier.arguments.StringArgumentType.word())
+                    .executes(c -> LiveContext.run(c.getSource(), com.mojang.brigadier.arguments.StringArgumentType.getString(c,"field"),
+                        com.mojang.brigadier.arguments.StringArgumentType.getString(c,"route"))))))
             .then(Commands.literal("trace-reset").executes(c -> send(c.getSource(),CoalTrace.reset())))
             .then(Commands.literal("trace-summary").executes(c -> { CoalTrace.flush(); return send(c.getSource(),CoalTrace.summary()); }))
             .then(Commands.literal("trace-watch").then(Commands.argument("x",IntegerArgumentType.integer())
