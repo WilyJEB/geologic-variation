@@ -1,3 +1,15 @@
+# Natural ore-order tracing (2026-11-01)
+
+PR #34 merged; #6 is closed for its recorded CPU scope. The
+[natural coal trace](natural-coal-trace-2026-11-01.md) now links actual neighboring
+gravel/emerald writes to coal-host rejection, a skipped random draw, a changed
+next vein origin and final saved coal/host differences in both TD-only and addon
+arms. Every final watched coal position has a recorded natural coal write.
+The strict final-position failure remains, with 1,006 TD-only stone/coal versus
+1,026 addon regional/coal differences in this diagnostic run and no regional
+palette conflicts. #5 remains open for its explicit determinism-contract decision.
+No production generation or release JAR change; this is not a performance fix.
+
 # Ore/host and stage verification (2026-11-01)
 
 See [the #5/#6 runtime report](host-acceptance-2026-11-01.md) and portable evidence.

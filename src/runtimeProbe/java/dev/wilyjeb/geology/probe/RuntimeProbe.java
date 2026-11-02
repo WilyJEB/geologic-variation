@@ -25,10 +25,18 @@ import java.util.concurrent.Executors;
 public final class RuntimeProbe {
     private static final java.util.Set<String> NORMALIZED_HOSTS = java.util.Set.of("geologic_variation:limestone",
         "geologic_variation:slate","geologic_variation:quartzite","geologic_variation:gabbro");
-    public RuntimeProbe() { NeoForge.EVENT_BUS.addListener(RuntimeProbe::commands); }
+    public RuntimeProbe() {
+        NeoForge.EVENT_BUS.addListener(RuntimeProbe::commands);
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.server.ServerStoppedEvent event) -> CoalTrace.flush());
+    }
     private static void commands(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
             .then(Commands.literal("prepare").executes(c -> prepare(c.getSource())))
+            .then(Commands.literal("trace-reset").executes(c -> send(c.getSource(),CoalTrace.reset())))
+            .then(Commands.literal("trace-summary").executes(c -> { CoalTrace.flush(); return send(c.getSource(),CoalTrace.summary()); }))
+            .then(Commands.literal("trace-watch").then(Commands.argument("x",IntegerArgumentType.integer())
+                .then(Commands.argument("z",IntegerArgumentType.integer()).executes(c -> send(c.getSource(),CoalTrace.watch(
+                    IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z")))))))
             .then(Commands.literal("cache-policy").executes(c -> cachePolicy(c.getSource())))
             .then(Commands.literal("hosts").executes(c -> send(c.getSource(), HostAcceptance.run(c.getSource().getLevel()))))
             .then(Commands.literal("ore-order").executes(c -> send(c.getSource(), HostAcceptance.oreOrder(c.getSource().getLevel()))))
