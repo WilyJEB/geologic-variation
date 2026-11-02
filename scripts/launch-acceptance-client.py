@@ -35,7 +35,9 @@ def launch(args):
     args.output.mkdir(parents=True, exist_ok=False)
     (args.output / 'mods').mkdir()
     for mod in (args.addon, args.td):
-        shutil.copy2(mod, args.output / 'mods' / mod.name)
+        (os.link if args.integrated and mod == args.td else shutil.copy2)(mod, args.output / 'mods' / mod.name)
+    if args.probe:
+        shutil.copy2(args.probe, args.output / 'mods' / args.probe.name)
     models = args.output / 'terrain-diffusion-models'
     models.mkdir()
     for model in args.models.iterdir():
@@ -87,18 +89,33 @@ def launch(args):
                 values = entry['value']
                 result.extend(expand(v) for v in (values if isinstance(values, list) else [values]))
         return result
-    command = [str(args.java), '-Xms2G', '-Xmx6G'] + arguments(manifest['arguments']['jvm'])
+    command = [str(args.java), '-Xms2G', '-Xmx6G']
+    if args.integrated:
+        if not args.probe:
+            raise ValueError('--integrated requires the opt-in runtime probe')
+        command += ['-Dgeology.acceptance.integrated=true']
+    command += arguments(manifest['arguments']['jvm'])
     command += [manifest['mainClass']] + arguments(manifest['arguments']['game'])
-    command += ['--quickPlayMultiplayer', '127.0.0.1:25587']
-    (args.output / 'options.txt').write_text('version:3955\nguiScale:2\nrenderDistance:2\nsimulationDistance:5\ntutorialStep:none\n')
+    if not args.integrated:
+        command += ['--quickPlayMultiplayer', '127.0.0.1:25587']
+    else:
+        command += ['--width','1600','--height','1000']
+    (args.output / 'options.txt').write_text('version:3955\nguiScale:2\nrenderDistance:2\nsimulationDistance:5\ntutorialStep:none\nonboardAccessibility:false\n')
     if args.check_only:
         print('Validated isolated client libraries and launcher arguments.', flush=True)
         return
+    if shutil.disk_usage(args.output).free < 2 * 1024**3:
+        raise RuntimeError('Need 2 GiB free before client launch')
     with (args.output / 'console.log').open('w') as log:
         process = subprocess.Popen(command, cwd=args.output, stdout=log, stderr=subprocess.STDOUT,
             creationflags=subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0)
         print('Isolated packaged client PID', process.pid, flush=True)
-        raise SystemExit(process.wait())
+        (args.output / 'client-pid.txt').write_text(str(process.pid))
+        try:
+            raise SystemExit(process.wait(timeout=args.timeout))
+        except subprocess.TimeoutExpired:
+            process.kill(); process.wait(timeout=30)
+            raise RuntimeError('Client exceeded bounded lifetime')
 
 
 if __name__ == '__main__':
@@ -106,6 +123,9 @@ if __name__ == '__main__':
     for name in ('manifest', 'meta', 'java', 'addon', 'td', 'output'):
         parser.add_argument('--' + name, type=Path, required=True)
     parser.add_argument('--check-only', action='store_true')
+    parser.add_argument('--integrated', action='store_true')
+    parser.add_argument('--probe', type=Path)
+    parser.add_argument('--timeout', type=int, default=1800)
     parser.add_argument('--models',type=Path,default=Path(__file__).resolve().parents[1]/'runs/server/terrain-diffusion-models')
     args = parser.parse_args()
     for name in ('manifest', 'meta', 'java', 'addon', 'td', 'output','models'):

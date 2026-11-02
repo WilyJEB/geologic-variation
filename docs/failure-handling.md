@@ -17,6 +17,13 @@ normal crash handling. Client hooks are in the client-only mixin list.
 On a geology failure the addon also closes TD's explorer explicitly. Minecraft's
 exceptional server exit skips the normal ServerStoppingEvent used by TD to close
 that listener; its HTTP dispatcher must not outlive the stopped server.
+The explorer's per-instance HTTP executor is also explicitly shut down when TD
+stops its listener. A requested explorer previously retained an idle daemon
+worker into the next integrated world until eventual GC cleanup. The
+[independent same-process matrix](integrated-lifecycle-2026-11-02.md) reproduces
+that failure and verifies executor termination before the next load. TD's single
+JVM-wide daemon inference executor/models remain reusable; this is not a native
+inference timeout or cancellation guarantee for in-flight requests.
 
 Failed servers skip chunk save/flush and the normal save-ready drain loop,
 including the independent flush performed when the chunk source closes.
