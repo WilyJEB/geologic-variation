@@ -1,3 +1,14 @@
+# Actual hot common-config reload (2026-11-01)
+
+Both independent populated/empty geology-cache cases pass with actual NeoForge
+file-watcher `ModConfigEvent.Reloading` events in continuing CPU dedicated worlds.
+All six requested proposals change; saved active settings/context, matching
+geology, snapshot bytes, existing blocks and all 529 persisted terrain records'
+coverage/status/block containers survive save/stop and fresh-process reopen.
+Four JVMs exit; no production fix was needed. See the [hot-config report](hot-config-2026-11-01.md)
+and portable hashes. #9 remains open for artifact/model/backend substitutions,
+upgrades and remaining client/lifecycle gates. #5 and #11 are unchanged.
+
 # Live seed/scale query guards (2026-11-01)
 
 See the [live-context report](live-context-2026-11-01.md) for independent
