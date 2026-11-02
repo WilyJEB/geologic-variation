@@ -13,6 +13,8 @@ before pack integration. Build success does not close in-game acceptance.
 | M5 - Optional integrations | Ulti-World adapter and evaluated compatibility | Standalone remains supported and independently tested |
 
 The authoritative work list is the repository's GitHub issues and milestones.
+The [reproducibility contract](reproducibility-contract.md) defines geology/save
+continuity acceptance separately from stronger final-feature diagnostics.
 planning/backlog.json records the initial issue definitions and acceptance
 criteria. planning/github-index.json maps those definitions to GitHub URLs.
 

@@ -28,6 +28,15 @@ earlier #27 and PR #36 results. Production generation and the addon JAR remain
 unchanged; #9 retains artifact/model/backend, upgrade, hot-config and remaining
 client/lifecycle gates. The original #5 failure and #11 performance work remain.
 
+# Reproducibility contract decision (2026-11-01)
+
+The [supported contract](reproducibility-contract.md) now selects deterministic
+regional identity/host assignment and save continuity, preserving vanilla and
+modded feature generation. This resolves #5's policy decision using the existing
+runtime evidence for its original scope. The stronger scale-6 final-block
+assertion remains unchanged and failed; no generation or save rule changed.
+Broader #9 compatibility gates and the #11 performance work remain separate.
+
 # Dedicated startup context guards (2026-11-01)
 
 The [#9 startup report](context-startup-2026-11-01.md) records five independent
