@@ -153,6 +153,12 @@ Build/domain suites and runtimeProbeJar pass. Packaged resource checks pass
 (64 blocks / 158 recipes / 711 JSON); catalog and Python syntax checks pass.
 CI checks build/resources/syntax, not GPU initialization or save safety.
 
+The two feasibility Python tools use repository-pinned LF line endings so raw
+executed-source hashes remain verifiable after a Windows checkout. A post-merge
+checkout exposed automatic CRLF conversion; the focused attributes correction
+restores exact executed bytes, without changing tooling logic or rerunning native
+observations. The retained run -02 exports successfully after that correction.
+
 ## Remaining gate and concrete unblock
 
 First provide a working CUDA 12.x/cuDNN 9.x runtime visible to this Java process,
