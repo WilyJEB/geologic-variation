@@ -43,6 +43,14 @@ ignored output folder. Stop the harness normally so saves and process cleanup ru
 
 ## Probe and measurements
 
+For independent supported TD model-config substitution use
+`scripts/verify-model-config.py` and `scripts/summarize-model-config.py`.
+The [model-config report](model-config-2026-11-01.md) explains provenance,
+the fixed `validate_model=false` custom-input mechanism, detached writable JSON,
+and three-launch original/rejection/restoration matrix. The opt-in probe passively
+logs TD's parsed residual mean; it never starts inference in that observation.
+Trained-weight and resolved-backend changes remain separate gates.
+
 `runtimeProbeJar` writes a separate `build/runtime-probe/` artifact. Never install
 it in a normal world or distribute it as part of the addon. Its permission-level-4
 commands are:
