@@ -1,3 +1,12 @@
+# Live seed/scale query guards (2026-11-01)
+
+See the [live-context report](live-context-2026-11-01.md) for independent
+populated-cache/empty-cache seed and scale rejection/restoration on the pinned
+CPU dedicated runtime. Test tooling and portable evidence are separate from
+earlier #27 and PR #36 results. Production generation and the addon JAR remain
+unchanged; #9 retains artifact/model/backend, upgrade, hot-config and remaining
+client/lifecycle gates. The original #5 failure and #11 performance work remain.
+
 # Dedicated startup context guards (2026-11-01)
 
 The [#9 startup report](context-startup-2026-11-01.md) records five independent
