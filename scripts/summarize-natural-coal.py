@@ -35,7 +35,7 @@ def read_case(root,row):
     final={p:s for x,z in row['plan']['chunks'] for p,s in blocks(path/'world',x,z).items()}
     final_coal={p for p,s in final.items() if s['Name'] in COAL}
     coal_writes={p:ws for p,ws in writes.items() if any(e['target'] in COAL for e in ws)}
-    missing=final_coal-coal_writes.keys()
+    missing={p for p in final_coal if not any(w['target']==final[p]['Name'] for w in coal_writes.get(p,[]))}
     if missing:
         raise ValueError(f'{len(missing)} final coal positions have no observed write')
     cross=[e for ws in writes.values() for e in ws
@@ -84,7 +84,8 @@ def chains(a,b):
                 if pos not in a['final'] or pos not in b['final']:
                     continue
                 names={a['final'][pos]['Name'],b['final'][pos]['Name']}
-                if names&COAL and names&HOSTS and any(w['placement']==following and w['target'] in COAL for w in ws):
+                if names&COAL and names&HOSTS and side['final'][pos]['Name'] in COAL and any(
+                    w['placement']==following and w['target']==side['final'][pos]['Name'] for w in ws):
                     downstream.append({'position':list(pos),'left':a['final'][pos]['Name'],'right':b['final'][pos]['Name']})
         if not downstream:
             continue
