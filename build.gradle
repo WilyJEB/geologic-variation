@@ -28,12 +28,17 @@ tasks.register('testSettings', JavaExec) {
     mainClass = 'dev.wilyjeb.geology.domain.SettingsTests'
 }
 
-tasks.named('check') { dependsOn testGeology, testSettings }
+tasks.register('testCoarse', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'dev.wilyjeb.geology.domain.CoarseTests'
+}
+tasks.named('check') { dependsOn testGeology, testSettings, testCoarse }
 
 // Explicit opt-in acceptance tooling; never included in the distributed addon.
 sourceSets {
     runtimeProbe {
-        compileClasspath += sourceSets.main.compileClasspath
+        compileClasspath += sourceSets.main.compileClasspath + sourceSets.main.output
         runtimeClasspath += sourceSets.main.runtimeClasspath
     }
 }

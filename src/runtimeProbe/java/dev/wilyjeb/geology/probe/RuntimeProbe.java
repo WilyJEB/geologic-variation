@@ -33,6 +33,23 @@ public final class RuntimeProbe {
     private static void commands(RegisterCommandsEvent event) {
         HotConfig.attach();
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
+            .then(Commands.literal("coarse-check").executes(c -> {
+                try { return send(c.getSource(),CoarseSampler.check(c.getSource().getServer())); }
+                catch(Exception e) { throw new RuntimeException(e); }
+            }))
+            .then(Commands.literal("coarse-suite").executes(c -> {
+                try { return send(c.getSource(),CoarseSampler.suite(c.getSource().getServer())); }
+                catch(Exception e) { throw new RuntimeException(e); }
+            }))
+            .then(Commands.literal("coarse-clear").executes(c -> { CoarseSampler.clear(); return send(c.getSource(),Map.of("cleared",true)); }))
+            .then(Commands.literal("coarse-measure").then(Commands.argument("arm",com.mojang.brigadier.arguments.StringArgumentType.word())
+                .then(Commands.argument("x",IntegerArgumentType.integer()).then(Commands.argument("z",IntegerArgumentType.integer())
+                    .executes(c -> send(c.getSource(),CoarseSampler.measure(c.getSource().getServer(),
+                        com.mojang.brigadier.arguments.StringArgumentType.getString(c,"arm"),
+                        IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z"))))))))
+            .then(Commands.literal("coarse").then(Commands.argument("x",IntegerArgumentType.integer())
+                .then(Commands.argument("z",IntegerArgumentType.integer()).executes(c -> send(c.getSource(),
+                    CoarseSampler.sample(c.getSource().getServer(),IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z")))))))
             .then(Commands.literal("metrics").executes(c -> send(c.getSource(), Performance.metrics())))
             .then(Commands.literal("sampler-cost").then(Commands.argument("x", IntegerArgumentType.integer())
                 .then(Commands.argument("z", IntegerArgumentType.integer()).executes(c -> send(c.getSource(),

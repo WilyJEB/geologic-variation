@@ -1,0 +1,3933 @@
+{
+  "sources": {
+    "verify-coarse-prototype.py": "bab160c1f5b3d94083c28153d39274f2445c4130d6340dbac5f90a9f9f0dbaa4",
+    "runtime-acceptance.py": "c5785e5a87ccd01be2d360c54d0e649ec3556f45af2ac6079bb2b6e2549eaa24"
+  },
+  "models": {
+    "base_model.onnx": "543de788f73d0a4012685c908259f615601102aace4751aeccec64154ba145c0",
+    "coarse_model.onnx": "d6ca15b21b2e35d5e594a9ac7a4249a2376590c0ad2b5b49a1e6e2d033450008",
+    "decoder_model.onnx": "6473ae47ca6ec4d743d30fe4f5d381fe4158899714eff09b762005bdbdef68c1",
+    "pipeline_data.json": "e3132c3ef0c65d8613615f9278ffe23bbd9363ddcd87f1cc6f18456bcc9efe5c",
+    "world_pipeline_config.json": "c60f0b74d89317e64cfc623fbfdd828f1b5b2e50aa75020ac4001103381853bd",
+    "onnx-cache/base-unknown-543de788f73d0a40.onnx": "51ed2475a589ede994d08899274ff2fce2b2a4c48cce339b8febd0a7f586a40c",
+    "onnx-cache/coarse-unknown-d6ca15b21b2e35d5.onnx": "1d867498064e0980f91ab6457a58f2ceb78cf9a83c6e82f0e5491e4643f3aef8",
+    "onnx-cache/decoder-unknown-6473ae47ca6ec4d7.onnx": "94e97f0c7a935ce73a5a072a42305b9f778992a5323c48d3dcb4b6ce8c7a47fd"
+  },
+  "cases": [
+    {
+      "name": "s1-t0-current",
+      "scale": 1,
+      "trial": 0,
+      "arm": "current",
+      "settings": {
+        "kind": "settings",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+      },
+      "cold": {
+        "delta": {
+          "coarse_calls": 0,
+          "computed_windows": 61,
+          "pipeline_data_calls": 1,
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0
+        },
+        "z": 8192,
+        "ms": 14624.4962,
+        "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+        "arm": "current",
+        "x": 8192
+      },
+      "warm": [
+        {
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.1639,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "arm": "current",
+          "x": 8192
+        },
+        {
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0426,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "arm": "current",
+          "x": 8192
+        },
+        {
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0392,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "arm": "current",
+          "x": 8192
+        },
+        {
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0386,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "arm": "current",
+          "x": 8192
+        },
+        {
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0346,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "arm": "current",
+          "x": 8192
+        }
+      ],
+      "second_cold": {
+        "delta": {
+          "coarse_calls": 0,
+          "computed_windows": 61,
+          "pipeline_data_calls": 1,
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0
+        },
+        "z": 4096,
+        "ms": 16420.5261,
+        "value": "Region[province=Province[cellX=1, cellZ=1, anchorX=3237, anchorZ=3486, identity=6693269579805992511], stone=QUARTZITE, elevationMetres=1414.44, reliefMetres=856.0]",
+        "arm": "current",
+        "x": 4096
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 33139.159,
+        "blocks_sha256": "50619c05d33f2416c996adc9f0f079c11b4ae3cabf84e81a1f55a04fd2ec9f4f",
+        "stage": "full",
+        "normalized_sha256": "7be36835f834fa80a48e7bade32e74712e05f4fe1c64e30ee0f198aec6a6746d",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80628,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 34,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 67.2364,
+        "blocks_sha256": "50619c05d33f2416c996adc9f0f079c11b4ae3cabf84e81a1f55a04fd2ec9f4f",
+        "stage": "full",
+        "normalized_sha256": "7be36835f834fa80a48e7bade32e74712e05f4fe1c64e30ee0f198aec6a6746d",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80628,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 34,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "5ef8dbf84c233a3f9c5bedb1378e639364a8a5d2cebb55952934d483facf859b",
+        "console-2.log": "acc67b7377b008334839167dd42cd621e33fce06399f69f22eb8fe7f55ba8937"
+      },
+      "exit_code": 0
+    },
+    {
+      "name": "s1-t0-coarse",
+      "scale": 1,
+      "trial": 0,
+      "arm": "coarse",
+      "settings": {
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings"
+      },
+      "cold": {
+        "value": {
+          "col": 35,
+          "p5_used": false,
+          "scale": 1,
+          "classification": "unclassified evidence",
+          "mean_metres": 2870.8428819444443,
+          "version": "coarse-evidence-1",
+          "row": 29,
+          "elevations": [
+            3379.470947265625,
+            3523.67529296875,
+            3528.082275390625,
+            3700.037109375,
+            2885.732421875,
+            2404.9560546875,
+            2405.04443359375,
+            2414.396484375,
+            1596.19091796875
+          ],
+          "neighborhood_range_metres": 2103.84619140625
+        },
+        "arm": "coarse",
+        "x": 8192,
+        "delta": {
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 1,
+          "computed_windows": 0,
+          "pipeline_data_calls": 0
+        },
+        "z": 8192,
+        "ms": 1.0876
+      },
+      "warm": [
+        {
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          },
+          "arm": "coarse",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.1388
+        },
+        {
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          },
+          "arm": "coarse",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.027
+        },
+        {
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          },
+          "arm": "coarse",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0284
+        },
+        {
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          },
+          "arm": "coarse",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0241
+        },
+        {
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          },
+          "arm": "coarse",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.029
+        }
+      ],
+      "second_cold": {
+        "value": {
+          "col": 12,
+          "p5_used": false,
+          "scale": 1,
+          "classification": "unclassified evidence",
+          "mean_metres": 1355.5755343967014,
+          "version": "coarse-evidence-1",
+          "row": 13,
+          "elevations": [
+            1608.1650390625,
+            1102.809326171875,
+            805.2093505859375,
+            2002.4832763671875,
+            1311.8914794921875,
+            916.5648803710938,
+            1929.5067138671875,
+            1688.9775390625,
+            834.5722045898438
+          ],
+          "neighborhood_range_metres": 1197.27392578125
+        },
+        "arm": "coarse",
+        "x": 4096,
+        "delta": {
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 1,
+          "computed_windows": 0,
+          "pipeline_data_calls": 0
+        },
+        "z": 4096,
+        "ms": 0.1376
+      },
+      "contract": {
+        "axis_order": "row=z,column=x",
+        "single_cell_checks": 6,
+        "equal": true,
+        "values": 36,
+        "explorer_channels": 6,
+        "native_stride": 256
+      },
+      "suite": {
+        "concurrent_requests": 1,
+        "evicted_recomputed": true,
+        "concurrent_callers": 4,
+        "boundary_points": [
+          {
+            "col": -2,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": -2522.104214138455,
+            "version": "coarse-evidence-1",
+            "row": 2,
+            "elevations": [
+              -3397.53076171875,
+              -2096.147705078125,
+              -1019.2424926757812,
+              -3407.026123046875,
+              -2600.12109375,
+              -1625.2689208984375,
+              -3725.802001953125,
+              -2455.21875,
+              -2372.580078125
+            ],
+            "neighborhood_range_metres": 2706.5595092773438
+          },
+          {
+            "col": -1,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": -1710.3397691514756,
+            "version": "coarse-evidence-1",
+            "row": 2,
+            "elevations": [
+              -2096.147705078125,
+              -1019.2424926757812,
+              -1298.580322265625,
+              -2600.12109375,
+              -1625.2689208984375,
+              -761.6461181640625,
+              -2455.21875,
+              -2372.580078125,
+              -1164.25244140625
+            ],
+            "neighborhood_range_metres": 1838.4749755859375
+          },
+          {
+            "col": -1,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": -1093.6705881754558,
+            "version": "coarse-evidence-1",
+            "row": 0,
+            "elevations": [
+              -143.1318817138672,
+              -190.99508666992188,
+              -789.2216796875,
+              -1336.65234375,
+              -1004.6306762695312,
+              -1964.43310546875,
+              -2096.147705078125,
+              -1019.2424926757812,
+              -1298.580322265625
+            ],
+            "neighborhood_range_metres": 1953.0158233642578
+          },
+          {
+            "col": 0,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": -803.614610724979,
+            "version": "coarse-evidence-1",
+            "row": -1,
+            "elevations": [
+              6.097024440765381,
+              -128.7891082763672,
+              -50.85305404663086,
+              -190.99508666992188,
+              -789.2216796875,
+              -645.041748046875,
+              -1004.6306762695312,
+              -1964.43310546875,
+              -2464.6640625
+            ],
+            "neighborhood_range_metres": 2470.7610869407654
+          },
+          {
+            "col": 0,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": -803.614610724979,
+            "version": "coarse-evidence-1",
+            "row": -1,
+            "elevations": [
+              6.097024440765381,
+              -128.7891082763672,
+              -50.85305404663086,
+              -190.99508666992188,
+              -789.2216796875,
+              -645.041748046875,
+              -1004.6306762695312,
+              -1964.43310546875,
+              -2464.6640625
+            ],
+            "neighborhood_range_metres": 2470.7610869407654
+          },
+          {
+            "col": 1,
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": -872.1458518770006,
+            "version": "coarse-evidence-1",
+            "row": -1,
+            "elevations": [
+              -128.7891082763672,
+              -50.85305404663086,
+              -8.250521659851074,
+              -789.2216796875,
+              -645.041748046875,
+              -550.8461303710938,
+              -1964.43310546875,
+              -2464.6640625,
+              -1247.2132568359375
+            ],
+            "neighborhood_range_metres": 2456.413540840149
+          }
+        ],
+        "real_cache_entries": 128,
+        "traversal_equal": true
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 30846.644,
+        "blocks_sha256": "50619c05d33f2416c996adc9f0f079c11b4ae3cabf84e81a1f55a04fd2ec9f4f",
+        "stage": "full",
+        "normalized_sha256": "7be36835f834fa80a48e7bade32e74712e05f4fe1c64e30ee0f198aec6a6746d",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80628,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 34,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 64.2532,
+        "blocks_sha256": "50619c05d33f2416c996adc9f0f079c11b4ae3cabf84e81a1f55a04fd2ec9f4f",
+        "stage": "full",
+        "normalized_sha256": "7be36835f834fa80a48e7bade32e74712e05f4fe1c64e30ee0f198aec6a6746d",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80628,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 34,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "cc287f5ae5d1d0ff5a15238a5171072a5206dd3eee888388f657a99c0db4968a",
+        "console-2.log": "497c09c23103fface62ec1f539f248bbdd6f2a0edcdb19c12dc9eaaed1a19b5a"
+      },
+      "exit_code": 0
+    },
+    {
+      "name": "s1-t1-coarse",
+      "scale": 1,
+      "trial": 1,
+      "arm": "coarse",
+      "settings": {
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]"
+      },
+      "cold": {
+        "x": 8192,
+        "delta": {
+          "coarse_calls": 1,
+          "computed_windows": 0,
+          "pipeline_data_calls": 0,
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0
+        },
+        "z": 8192,
+        "ms": 1.0336,
+        "value": {
+          "p5_used": false,
+          "scale": 1,
+          "classification": "unclassified evidence",
+          "mean_metres": 2870.8428819444443,
+          "version": "coarse-evidence-1",
+          "row": 29,
+          "elevations": [
+            3379.470947265625,
+            3523.67529296875,
+            3528.082275390625,
+            3700.037109375,
+            2885.732421875,
+            2404.9560546875,
+            2405.04443359375,
+            2414.396484375,
+            1596.19091796875
+          ],
+          "neighborhood_range_metres": 2103.84619140625,
+          "col": 35
+        },
+        "arm": "coarse"
+      },
+      "warm": [
+        {
+          "x": 8192,
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.1365,
+          "value": {
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625,
+            "col": 35
+          },
+          "arm": "coarse"
+        },
+        {
+          "x": 8192,
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0309,
+          "value": {
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625,
+            "col": 35
+          },
+          "arm": "coarse"
+        },
+        {
+          "x": 8192,
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.03,
+          "value": {
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625,
+            "col": 35
+          },
+          "arm": "coarse"
+        },
+        {
+          "x": 8192,
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.023,
+          "value": {
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625,
+            "col": 35
+          },
+          "arm": "coarse"
+        },
+        {
+          "x": 8192,
+          "delta": {
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0298,
+          "value": {
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625,
+            "col": 35
+          },
+          "arm": "coarse"
+        }
+      ],
+      "second_cold": {
+        "x": 4096,
+        "delta": {
+          "coarse_calls": 1,
+          "computed_windows": 0,
+          "pipeline_data_calls": 0,
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0
+        },
+        "z": 4096,
+        "ms": 0.1451,
+        "value": {
+          "p5_used": false,
+          "scale": 1,
+          "classification": "unclassified evidence",
+          "mean_metres": 1355.5755343967014,
+          "version": "coarse-evidence-1",
+          "row": 13,
+          "elevations": [
+            1608.1650390625,
+            1102.809326171875,
+            805.2093505859375,
+            2002.4832763671875,
+            1311.8914794921875,
+            916.5648803710938,
+            1929.5067138671875,
+            1688.9775390625,
+            834.5722045898438
+          ],
+          "neighborhood_range_metres": 1197.27392578125,
+          "col": 12
+        },
+        "arm": "coarse"
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 31156.6513,
+        "blocks_sha256": "50619c05d33f2416c996adc9f0f079c11b4ae3cabf84e81a1f55a04fd2ec9f4f",
+        "stage": "full",
+        "normalized_sha256": "7be36835f834fa80a48e7bade32e74712e05f4fe1c64e30ee0f198aec6a6746d",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80628,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 34,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 68.6935,
+        "blocks_sha256": "50619c05d33f2416c996adc9f0f079c11b4ae3cabf84e81a1f55a04fd2ec9f4f",
+        "stage": "full",
+        "normalized_sha256": "7be36835f834fa80a48e7bade32e74712e05f4fe1c64e30ee0f198aec6a6746d",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80628,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 34,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "fd54698fc4345a2a532d166a2e088438460c6ecf30dcfa94ee809348c00c53fe",
+        "console-2.log": "0c4ce2af0f68d7ec438c2625e1d5dfbee6f9f6ee382775c5c483e3407a5067e4"
+      },
+      "exit_code": 0
+    },
+    {
+      "name": "s1-t1-current",
+      "scale": 1,
+      "trial": 1,
+      "arm": "current",
+      "settings": {
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings"
+      },
+      "cold": {
+        "arm": "current",
+        "x": 8192,
+        "delta": {
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 0,
+          "computed_windows": 61,
+          "pipeline_data_calls": 1
+        },
+        "z": 8192,
+        "ms": 12857.821,
+        "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]"
+      },
+      "warm": [
+        {
+          "arm": "current",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.2304,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]"
+        },
+        {
+          "arm": "current",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0658,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]"
+        },
+        {
+          "arm": "current",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0452,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]"
+        },
+        {
+          "arm": "current",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0389,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]"
+        },
+        {
+          "arm": "current",
+          "x": 8192,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 8192,
+          "ms": 0.0602,
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]"
+        }
+      ],
+      "second_cold": {
+        "arm": "current",
+        "x": 4096,
+        "delta": {
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 0,
+          "computed_windows": 61,
+          "pipeline_data_calls": 1
+        },
+        "z": 4096,
+        "ms": 13934.0031,
+        "value": "Region[province=Province[cellX=1, cellZ=1, anchorX=3237, anchorZ=3486, identity=6693269579805992511], stone=QUARTZITE, elevationMetres=1414.44, reliefMetres=856.0]"
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 31048.6072,
+        "blocks_sha256": "7cf450b7cb580ea79ea62de32fd6c6da5e8c69eda03956f35d98f6463e8ff18e",
+        "stage": "full",
+        "normalized_sha256": "e94de895ee1a12ad064ee85f0c5a068c51daa3dac966051c4fbbcc513ce95ade",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80620,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 42,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 65.3981,
+        "blocks_sha256": "7cf450b7cb580ea79ea62de32fd6c6da5e8c69eda03956f35d98f6463e8ff18e",
+        "stage": "full",
+        "normalized_sha256": "e94de895ee1a12ad064ee85f0c5a068c51daa3dac966051c4fbbcc513ce95ade",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80620,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 42,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "c9482d212bc90055329d791a9ace1d57e567b30e7d29ad90d1f55be4b0f29ec1",
+        "console-2.log": "878cd3066442ff3d58e0dbcc34c988fedd7f73e45e42787f5b36290c67bb936b"
+      },
+      "exit_code": 0
+    },
+    {
+      "name": "s1-t2-current",
+      "scale": 1,
+      "trial": 2,
+      "arm": "current",
+      "settings": {
+        "kind": "settings",
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "owner_matches": true,
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+      },
+      "cold": {
+        "z": 8192,
+        "delta": {
+          "computed_windows": 61,
+          "coarse_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "heightmap_calls": 0,
+          "pipeline_data_calls": 1
+        },
+        "x": 8192,
+        "arm": "current",
+        "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+        "ms": 11778.0888
+      },
+      "warm": [
+        {
+          "z": 8192,
+          "delta": {
+            "computed_windows": 0,
+            "coarse_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0
+          },
+          "x": 8192,
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "ms": 0.1679
+        },
+        {
+          "z": 8192,
+          "delta": {
+            "computed_windows": 0,
+            "coarse_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0
+          },
+          "x": 8192,
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "ms": 0.0403
+        },
+        {
+          "z": 8192,
+          "delta": {
+            "computed_windows": 0,
+            "coarse_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0
+          },
+          "x": 8192,
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "ms": 0.0422
+        },
+        {
+          "z": 8192,
+          "delta": {
+            "computed_windows": 0,
+            "coarse_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0
+          },
+          "x": 8192,
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "ms": 0.0347
+        },
+        {
+          "z": 8192,
+          "delta": {
+            "computed_windows": 0,
+            "coarse_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0
+          },
+          "x": 8192,
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=9075, anchorZ=7578, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=2944.76, reliefMetres=1661.0]",
+          "ms": 0.0442
+        }
+      ],
+      "second_cold": {
+        "z": 4096,
+        "delta": {
+          "computed_windows": 61,
+          "coarse_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "heightmap_calls": 0,
+          "pipeline_data_calls": 1
+        },
+        "x": 4096,
+        "arm": "current",
+        "value": "Region[province=Province[cellX=1, cellZ=1, anchorX=3237, anchorZ=3486, identity=6693269579805992511], stone=QUARTZITE, elevationMetres=1414.44, reliefMetres=856.0]",
+        "ms": 11744.1719
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 29387.2603,
+        "blocks_sha256": "7cf450b7cb580ea79ea62de32fd6c6da5e8c69eda03956f35d98f6463e8ff18e",
+        "stage": "full",
+        "normalized_sha256": "e94de895ee1a12ad064ee85f0c5a068c51daa3dac966051c4fbbcc513ce95ade",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80620,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 42,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 60.6063,
+        "blocks_sha256": "7cf450b7cb580ea79ea62de32fd6c6da5e8c69eda03956f35d98f6463e8ff18e",
+        "stage": "full",
+        "normalized_sha256": "e94de895ee1a12ad064ee85f0c5a068c51daa3dac966051c4fbbcc513ce95ade",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80620,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 42,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "6cadebbbdaa3023854e10a117c28ee72853f515926a9d4aafa02dcef474ffab3",
+        "console-2.log": "5e0ec40fb0836aaf6f6ce868e41abd9277b9c84c6e7cca4e7efe41a1b06add3b"
+      },
+      "exit_code": 0
+    },
+    {
+      "name": "s1-t2-coarse",
+      "scale": 1,
+      "trial": 2,
+      "arm": "coarse",
+      "settings": {
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings",
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "owner_matches": true
+      },
+      "cold": {
+        "arm": "coarse",
+        "value": {
+          "p5_used": false,
+          "col": 35,
+          "neighborhood_range_metres": 2103.84619140625,
+          "elevations": [
+            3379.470947265625,
+            3523.67529296875,
+            3528.082275390625,
+            3700.037109375,
+            2885.732421875,
+            2404.9560546875,
+            2405.04443359375,
+            2414.396484375,
+            1596.19091796875
+          ],
+          "row": 29,
+          "version": "coarse-evidence-1",
+          "mean_metres": 2870.8428819444443,
+          "classification": "unclassified evidence",
+          "scale": 1
+        },
+        "ms": 1.0354,
+        "z": 8192,
+        "delta": {
+          "anchor_heightmap_calls": 0,
+          "heightmap_calls": 0,
+          "pipeline_data_calls": 0,
+          "computed_windows": 0,
+          "coarse_calls": 1
+        },
+        "x": 8192
+      },
+      "warm": [
+        {
+          "arm": "coarse",
+          "value": {
+            "p5_used": false,
+            "col": 35,
+            "neighborhood_range_metres": 2103.84619140625,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "row": 29,
+            "version": "coarse-evidence-1",
+            "mean_metres": 2870.8428819444443,
+            "classification": "unclassified evidence",
+            "scale": 1
+          },
+          "ms": 0.1287,
+          "z": 8192,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 8192
+        },
+        {
+          "arm": "coarse",
+          "value": {
+            "p5_used": false,
+            "col": 35,
+            "neighborhood_range_metres": 2103.84619140625,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "row": 29,
+            "version": "coarse-evidence-1",
+            "mean_metres": 2870.8428819444443,
+            "classification": "unclassified evidence",
+            "scale": 1
+          },
+          "ms": 0.0393,
+          "z": 8192,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 8192
+        },
+        {
+          "arm": "coarse",
+          "value": {
+            "p5_used": false,
+            "col": 35,
+            "neighborhood_range_metres": 2103.84619140625,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "row": 29,
+            "version": "coarse-evidence-1",
+            "mean_metres": 2870.8428819444443,
+            "classification": "unclassified evidence",
+            "scale": 1
+          },
+          "ms": 0.0314,
+          "z": 8192,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 8192
+        },
+        {
+          "arm": "coarse",
+          "value": {
+            "p5_used": false,
+            "col": 35,
+            "neighborhood_range_metres": 2103.84619140625,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "row": 29,
+            "version": "coarse-evidence-1",
+            "mean_metres": 2870.8428819444443,
+            "classification": "unclassified evidence",
+            "scale": 1
+          },
+          "ms": 0.0261,
+          "z": 8192,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 8192
+        },
+        {
+          "arm": "coarse",
+          "value": {
+            "p5_used": false,
+            "col": 35,
+            "neighborhood_range_metres": 2103.84619140625,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "row": 29,
+            "version": "coarse-evidence-1",
+            "mean_metres": 2870.8428819444443,
+            "classification": "unclassified evidence",
+            "scale": 1
+          },
+          "ms": 0.0328,
+          "z": 8192,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 8192
+        }
+      ],
+      "second_cold": {
+        "arm": "coarse",
+        "value": {
+          "p5_used": false,
+          "col": 12,
+          "neighborhood_range_metres": 1197.27392578125,
+          "elevations": [
+            1608.1650390625,
+            1102.809326171875,
+            805.2093505859375,
+            2002.4832763671875,
+            1311.8914794921875,
+            916.5648803710938,
+            1929.5067138671875,
+            1688.9775390625,
+            834.5722045898438
+          ],
+          "row": 13,
+          "version": "coarse-evidence-1",
+          "mean_metres": 1355.5755343967014,
+          "classification": "unclassified evidence",
+          "scale": 1
+        },
+        "ms": 0.1429,
+        "z": 4096,
+        "delta": {
+          "anchor_heightmap_calls": 0,
+          "heightmap_calls": 0,
+          "pipeline_data_calls": 0,
+          "computed_windows": 0,
+          "coarse_calls": 1
+        },
+        "x": 4096
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 29625.4586,
+        "blocks_sha256": "57c7c744804d48149b8d545695eeb19298b25668704b3aaa85c4823ccfc58278",
+        "stage": "full",
+        "normalized_sha256": "2573a4afd8ae5648fbaba0ae1e36129716c02e0f0c539f5190497d63052b6e1b",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80626,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 36,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 63.9969,
+        "blocks_sha256": "57c7c744804d48149b8d545695eeb19298b25668704b3aaa85c4823ccfc58278",
+        "stage": "full",
+        "normalized_sha256": "2573a4afd8ae5648fbaba0ae1e36129716c02e0f0c539f5190497d63052b6e1b",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80626,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 36,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "c0237cad6358d979a8514086850cd23d1b31266b044876e7f7301f4e029a9e2d",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "108284195063d32e61fbd7f1fc4b4a6eb3e94211fce5648a92d196bf8218caee",
+        "console-2.log": "2cc6bd2f5c58cacb1bb711b7a4f9523b8d17a606d038402ecbf1a2f7b86a586a"
+      },
+      "exit_code": 0
+    },
+    {
+      "name": "s6-t0-current",
+      "scale": 6,
+      "trial": 0,
+      "arm": "current",
+      "settings": {
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=6, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings",
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "owner_matches": true
+      },
+      "cold": {
+        "arm": "current",
+        "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=54453, anchorZ=45473, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=3044.64, reliefMetres=748.0]",
+        "ms": 10466.8171,
+        "z": 49152,
+        "delta": {
+          "anchor_heightmap_calls": 1,
+          "heightmap_calls": 1,
+          "pipeline_data_calls": 0,
+          "computed_windows": 56,
+          "coarse_calls": 0
+        },
+        "x": 49152
+      },
+      "warm": [
+        {
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=54453, anchorZ=45473, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=3044.64, reliefMetres=748.0]",
+          "ms": 0.1572,
+          "z": 49152,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 49152
+        },
+        {
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=54453, anchorZ=45473, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=3044.64, reliefMetres=748.0]",
+          "ms": 0.04,
+          "z": 49152,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 49152
+        },
+        {
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=54453, anchorZ=45473, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=3044.64, reliefMetres=748.0]",
+          "ms": 0.0371,
+          "z": 49152,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 49152
+        },
+        {
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=54453, anchorZ=45473, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=3044.64, reliefMetres=748.0]",
+          "ms": 0.0365,
+          "z": 49152,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 49152
+        },
+        {
+          "arm": "current",
+          "value": "Region[province=Province[cellX=4, cellZ=3, anchorX=54453, anchorZ=45473, identity=-6766717443328913824], stone=QUARTZITE, elevationMetres=3044.64, reliefMetres=748.0]",
+          "ms": 0.0408,
+          "z": 49152,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 0,
+            "coarse_calls": 0
+          },
+          "x": 49152
+        }
+      ],
+      "second_cold": {
+        "arm": "current",
+        "value": "Region[province=Province[cellX=1, cellZ=1, anchorX=19427, anchorZ=20921, identity=6693269579805992511], stone=SLATE, elevationMetres=1282.76, reliefMetres=179.0]",
+        "ms": 8841.971,
+        "z": 24576,
+        "delta": {
+          "anchor_heightmap_calls": 1,
+          "heightmap_calls": 1,
+          "pipeline_data_calls": 0,
+          "computed_windows": 46,
+          "coarse_calls": 0
+        },
+        "x": 24576
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -192,
+        "z": -390,
+        "generation_ms": 19208.4099,
+        "blocks_sha256": "e11b1b8a84017672924825a573fbe52148bd8f2b7105df94824eded3fbc9e178",
+        "stage": "full",
+        "normalized_sha256": "c8f9a92658a099d22513554ca748cc2aa5fdb5504eb6c544a1bf286c959bd689",
+        "geology_sha256": "b1f81783f5f9d71794c62820cf5a0ca32280f189a2323b4d24f83e6382e68951",
+        "counts": {
+          "geologic_variation:gabbro": 35902,
+          "minecraft:acacia_leaves": 119,
+          "minecraft:acacia_log": 14,
+          "minecraft:air": 59745,
+          "minecraft:andesite": 895,
+          "minecraft:bedrock": 1812,
+          "minecraft:bone_block": 1,
+          "minecraft:cave_air": 49,
+          "minecraft:chain": 5,
+          "minecraft:chest": 1,
+          "minecraft:chiseled_tuff_bricks": 72,
+          "minecraft:coal_ore": 486,
+          "minecraft:copper_ore": 123,
+          "minecraft:deepslate": 11025,
+          "minecraft:deepslate_copper_ore": 10,
+          "minecraft:deepslate_diamond_ore": 16,
+          "minecraft:deepslate_gold_ore": 19,
+          "minecraft:deepslate_iron_ore": 18,
+          "minecraft:deepslate_lapis_ore": 12,
+          "minecraft:deepslate_redstone_ore": 42,
+          "minecraft:diorite": 1348,
+          "minecraft:dirt": 1823,
+          "minecraft:dispenser": 1,
+          "minecraft:gold_ore": 6,
+          "minecraft:granite": 839,
+          "minecraft:grass_block": 245,
+          "minecraft:gravel": 659,
+          "minecraft:iron_ore": 148,
+          "minecraft:lapis_ore": 20,
+          "minecraft:oak_button": 1,
+          "minecraft:oak_planks": 6,
+          "minecraft:oxidized_cut_copper": 4,
+          "minecraft:podzol": 1,
+          "minecraft:polished_tuff": 110,
+          "minecraft:polished_tuff_slab": 2,
+          "minecraft:powder_snow": 87,
+          "minecraft:red_candle": 2,
+          "minecraft:red_mushroom": 1,
+          "minecraft:redstone_ore": 4,
+          "minecraft:short_grass": 113,
+          "minecraft:tuff": 1381,
+          "minecraft:tuff_bricks": 936,
+          "minecraft:vault": 1,
+          "minecraft:water": 506,
+          "minecraft:waxed_chiseled_copper": 3,
+          "minecraft:waxed_copper_block": 136,
+          "minecraft:waxed_copper_bulb": 3,
+          "minecraft:waxed_copper_grate": 19,
+          "minecraft:waxed_oxidized_copper": 7,
+          "minecraft:waxed_oxidized_copper_grate": 6
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -192,
+        "z": -390,
+        "generation_ms": 144.2603,
+        "blocks_sha256": "e11b1b8a84017672924825a573fbe52148bd8f2b7105df94824eded3fbc9e178",
+        "stage": "full",
+        "normalized_sha256": "c8f9a92658a099d22513554ca748cc2aa5fdb5504eb6c544a1bf286c959bd689",
+        "geology_sha256": "b1f81783f5f9d71794c62820cf5a0ca32280f189a2323b4d24f83e6382e68951",
+        "counts": {
+          "geologic_variation:gabbro": 35902,
+          "minecraft:acacia_leaves": 119,
+          "minecraft:acacia_log": 14,
+          "minecraft:air": 59745,
+          "minecraft:andesite": 895,
+          "minecraft:bedrock": 1812,
+          "minecraft:bone_block": 1,
+          "minecraft:cave_air": 49,
+          "minecraft:chain": 5,
+          "minecraft:chest": 1,
+          "minecraft:chiseled_tuff_bricks": 72,
+          "minecraft:coal_ore": 486,
+          "minecraft:copper_ore": 123,
+          "minecraft:deepslate": 11025,
+          "minecraft:deepslate_copper_ore": 10,
+          "minecraft:deepslate_diamond_ore": 16,
+          "minecraft:deepslate_gold_ore": 19,
+          "minecraft:deepslate_iron_ore": 18,
+          "minecraft:deepslate_lapis_ore": 12,
+          "minecraft:deepslate_redstone_ore": 42,
+          "minecraft:diorite": 1348,
+          "minecraft:dirt": 1823,
+          "minecraft:dispenser": 1,
+          "minecraft:gold_ore": 6,
+          "minecraft:granite": 839,
+          "minecraft:grass_block": 245,
+          "minecraft:gravel": 659,
+          "minecraft:iron_ore": 148,
+          "minecraft:lapis_ore": 20,
+          "minecraft:oak_button": 1,
+          "minecraft:oak_planks": 6,
+          "minecraft:oxidized_cut_copper": 4,
+          "minecraft:podzol": 1,
+          "minecraft:polished_tuff": 110,
+          "minecraft:polished_tuff_slab": 2,
+          "minecraft:powder_snow": 87,
+          "minecraft:red_candle": 2,
+          "minecraft:red_mushroom": 1,
+          "minecraft:redstone_ore": 4,
+          "minecraft:short_grass": 113,
+          "minecraft:tuff": 1381,
+          "minecraft:tuff_bricks": 936,
+          "minecraft:vault": 1,
+          "minecraft:water": 506,
+          "minecraft:waxed_chiseled_copper": 3,
+          "minecraft:waxed_copper_block": 136,
+          "minecraft:waxed_copper_bulb": 3,
+          "minecraft:waxed_copper_grate": 19,
+          "minecraft:waxed_oxidized_copper": 7,
+          "minecraft:waxed_oxidized_copper_grate": 6
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "ce9db36de193393a6d3c2358dd2ffb35b64efb0eed324e6b61f4bbff82448b77",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "105458a663d9decb4c3816f5902304a966a3d2fbf1de5fbdc1568869e4164993",
+        "console-2.log": "58d63aeae68a94d36b5dc50357d1f77b9aff31c0eb39cd41b60db520dc2b14e9"
+      },
+      "exit_code": 0
+    },
+    {
+      "name": "s6-t0-coarse",
+      "scale": 6,
+      "trial": 0,
+      "arm": "coarse",
+      "settings": {
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=6, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings"
+      },
+      "cold": {
+        "arm": "coarse",
+        "x": 49152,
+        "delta": {
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 1,
+          "computed_windows": 0,
+          "pipeline_data_calls": 0
+        },
+        "z": 49152,
+        "ms": 1.1693,
+        "value": {
+          "col": 35,
+          "p5_used": false,
+          "scale": 6,
+          "classification": "unclassified evidence",
+          "mean_metres": 2870.8428819444443,
+          "version": "coarse-evidence-1",
+          "row": 29,
+          "elevations": [
+            3379.470947265625,
+            3523.67529296875,
+            3528.082275390625,
+            3700.037109375,
+            2885.732421875,
+            2404.9560546875,
+            2405.04443359375,
+            2414.396484375,
+            1596.19091796875
+          ],
+          "neighborhood_range_metres": 2103.84619140625
+        }
+      },
+      "warm": [
+        {
+          "arm": "coarse",
+          "x": 49152,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 49152,
+          "ms": 0.1307,
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          }
+        },
+        {
+          "arm": "coarse",
+          "x": 49152,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 49152,
+          "ms": 0.031,
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          }
+        },
+        {
+          "arm": "coarse",
+          "x": 49152,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 49152,
+          "ms": 0.0309,
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          }
+        },
+        {
+          "arm": "coarse",
+          "x": 49152,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 49152,
+          "ms": 0.0233,
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          }
+        },
+        {
+          "arm": "coarse",
+          "x": 49152,
+          "delta": {
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 0,
+            "pipeline_data_calls": 0
+          },
+          "z": 49152,
+          "ms": 0.0302,
+          "value": {
+            "col": 35,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": 2870.8428819444443,
+            "version": "coarse-evidence-1",
+            "row": 29,
+            "elevations": [
+              3379.470947265625,
+              3523.67529296875,
+              3528.082275390625,
+              3700.037109375,
+              2885.732421875,
+              2404.9560546875,
+              2405.04443359375,
+              2414.396484375,
+              1596.19091796875
+            ],
+            "neighborhood_range_metres": 2103.84619140625
+          }
+        }
+      ],
+      "second_cold": {
+        "arm": "coarse",
+        "x": 24576,
+        "delta": {
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 1,
+          "computed_windows": 0,
+          "pipeline_data_calls": 0
+        },
+        "z": 24576,
+        "ms": 0.1731,
+        "value": {
+          "col": 12,
+          "p5_used": false,
+          "scale": 6,
+          "classification": "unclassified evidence",
+          "mean_metres": 1355.5755343967014,
+          "version": "coarse-evidence-1",
+          "row": 13,
+          "elevations": [
+            1608.1650390625,
+            1102.809326171875,
+            805.2093505859375,
+            2002.4832763671875,
+            1311.8914794921875,
+            916.5648803710938,
+            1929.5067138671875,
+            1688.9775390625,
+            834.5722045898438
+          ],
+          "neighborhood_range_metres": 1197.27392578125
+        }
+      },
+      "contract": {
+        "single_cell_checks": 6,
+        "equal": true,
+        "values": 36,
+        "explorer_channels": 6,
+        "native_stride": 256,
+        "axis_order": "row=z,column=x"
+      },
+      "suite": {
+        "concurrent_requests": 1,
+        "evicted_recomputed": true,
+        "concurrent_callers": 4,
+        "boundary_points": [
+          {
+            "col": -2,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": -2522.104214138455,
+            "version": "coarse-evidence-1",
+            "row": 2,
+            "elevations": [
+              -3397.53076171875,
+              -2096.147705078125,
+              -1019.2424926757812,
+              -3407.026123046875,
+              -2600.12109375,
+              -1625.2689208984375,
+              -3725.802001953125,
+              -2455.21875,
+              -2372.580078125
+            ],
+            "neighborhood_range_metres": 2706.5595092773438
+          },
+          {
+            "col": -1,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": -1710.3397691514756,
+            "version": "coarse-evidence-1",
+            "row": 2,
+            "elevations": [
+              -2096.147705078125,
+              -1019.2424926757812,
+              -1298.580322265625,
+              -2600.12109375,
+              -1625.2689208984375,
+              -761.6461181640625,
+              -2455.21875,
+              -2372.580078125,
+              -1164.25244140625
+            ],
+            "neighborhood_range_metres": 1838.4749755859375
+          },
+          {
+            "col": -1,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": -1093.6705881754558,
+            "version": "coarse-evidence-1",
+            "row": 0,
+            "elevations": [
+              -143.1318817138672,
+              -190.99508666992188,
+              -789.2216796875,
+              -1336.65234375,
+              -1004.6306762695312,
+              -1964.43310546875,
+              -2096.147705078125,
+              -1019.2424926757812,
+              -1298.580322265625
+            ],
+            "neighborhood_range_metres": 1953.0158233642578
+          },
+          {
+            "col": 0,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": -803.614610724979,
+            "version": "coarse-evidence-1",
+            "row": -1,
+            "elevations": [
+              6.097024440765381,
+              -128.7891082763672,
+              -50.85305404663086,
+              -190.99508666992188,
+              -789.2216796875,
+              -645.041748046875,
+              -1004.6306762695312,
+              -1964.43310546875,
+              -2464.6640625
+            ],
+            "neighborhood_range_metres": 2470.7610869407654
+          },
+          {
+            "col": 0,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": -803.614610724979,
+            "version": "coarse-evidence-1",
+            "row": -1,
+            "elevations": [
+              6.097024440765381,
+              -128.7891082763672,
+              -50.85305404663086,
+              -190.99508666992188,
+              -789.2216796875,
+              -645.041748046875,
+              -1004.6306762695312,
+              -1964.43310546875,
+              -2464.6640625
+            ],
+            "neighborhood_range_metres": 2470.7610869407654
+          },
+          {
+            "col": 1,
+            "p5_used": false,
+            "scale": 6,
+            "classification": "unclassified evidence",
+            "mean_metres": -872.1458518770006,
+            "version": "coarse-evidence-1",
+            "row": -1,
+            "elevations": [
+              -128.7891082763672,
+              -50.85305404663086,
+              -8.250521659851074,
+              -789.2216796875,
+              -645.041748046875,
+              -550.8461303710938,
+              -1964.43310546875,
+              -2464.6640625,
+              -1247.2132568359375
+            ],
+            "neighborhood_range_metres": 2456.413540840149
+          }
+        ],
+        "real_cache_entries": 128,
+        "traversal_equal": true
+      },
+      "sample": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -192,
+        "z": -390,
+        "generation_ms": 19317.2049,
+        "blocks_sha256": "e11b1b8a84017672924825a573fbe52148bd8f2b7105df94824eded3fbc9e178",
+        "stage": "full",
+        "normalized_sha256": "c8f9a92658a099d22513554ca748cc2aa5fdb5504eb6c544a1bf286c959bd689",
+        "geology_sha256": "b1f81783f5f9d71794c62820cf5a0ca32280f189a2323b4d24f83e6382e68951",
+        "counts": {
+          "geologic_variation:gabbro": 35902,
+          "minecraft:acacia_leaves": 119,
+          "minecraft:acacia_log": 14,
+          "minecraft:air": 59745,
+          "minecraft:andesite": 895,
+          "minecraft:bedrock": 1812,
+          "minecraft:bone_block": 1,
+          "minecraft:cave_air": 49,
+          "minecraft:chain": 5,
+          "minecraft:chest": 1,
+          "minecraft:chiseled_tuff_bricks": 72,
+          "minecraft:coal_ore": 486,
+          "minecraft:copper_ore": 123,
+          "minecraft:deepslate": 11025,
+          "minecraft:deepslate_copper_ore": 10,
+          "minecraft:deepslate_diamond_ore": 16,
+          "minecraft:deepslate_gold_ore": 19,
+          "minecraft:deepslate_iron_ore": 18,
+          "minecraft:deepslate_lapis_ore": 12,
+          "minecraft:deepslate_redstone_ore": 42,
+          "minecraft:diorite": 1348,
+          "minecraft:dirt": 1823,
+          "minecraft:dispenser": 1,
+          "minecraft:gold_ore": 6,
+          "minecraft:granite": 839,
+          "minecraft:grass_block": 245,
+          "minecraft:gravel": 659,
+          "minecraft:iron_ore": 148,
+          "minecraft:lapis_ore": 20,
+          "minecraft:oak_button": 1,
+          "minecraft:oak_planks": 6,
+          "minecraft:oxidized_cut_copper": 4,
+          "minecraft:podzol": 1,
+          "minecraft:polished_tuff": 110,
+          "minecraft:polished_tuff_slab": 2,
+          "minecraft:powder_snow": 87,
+          "minecraft:red_candle": 2,
+          "minecraft:red_mushroom": 1,
+          "minecraft:redstone_ore": 4,
+          "minecraft:short_grass": 113,
+          "minecraft:tuff": 1381,
+          "minecraft:tuff_bricks": 936,
+          "minecraft:vault": 1,
+          "minecraft:water": 506,
+          "minecraft:waxed_chiseled_copper": 3,
+          "minecraft:waxed_copper_block": 136,
+          "minecraft:waxed_copper_bulb": 3,
+          "minecraft:waxed_copper_grate": 19,
+          "minecraft:waxed_oxidized_copper": 7,
+          "minecraft:waxed_oxidized_copper_grate": 6
+        }
+      },
+      "reopened": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -192,
+        "z": -390,
+        "generation_ms": 143.6213,
+        "blocks_sha256": "e11b1b8a84017672924825a573fbe52148bd8f2b7105df94824eded3fbc9e178",
+        "stage": "full",
+        "normalized_sha256": "c8f9a92658a099d22513554ca748cc2aa5fdb5504eb6c544a1bf286c959bd689",
+        "geology_sha256": "b1f81783f5f9d71794c62820cf5a0ca32280f189a2323b4d24f83e6382e68951",
+        "counts": {
+          "geologic_variation:gabbro": 35902,
+          "minecraft:acacia_leaves": 119,
+          "minecraft:acacia_log": 14,
+          "minecraft:air": 59745,
+          "minecraft:andesite": 895,
+          "minecraft:bedrock": 1812,
+          "minecraft:bone_block": 1,
+          "minecraft:cave_air": 49,
+          "minecraft:chain": 5,
+          "minecraft:chest": 1,
+          "minecraft:chiseled_tuff_bricks": 72,
+          "minecraft:coal_ore": 486,
+          "minecraft:copper_ore": 123,
+          "minecraft:deepslate": 11025,
+          "minecraft:deepslate_copper_ore": 10,
+          "minecraft:deepslate_diamond_ore": 16,
+          "minecraft:deepslate_gold_ore": 19,
+          "minecraft:deepslate_iron_ore": 18,
+          "minecraft:deepslate_lapis_ore": 12,
+          "minecraft:deepslate_redstone_ore": 42,
+          "minecraft:diorite": 1348,
+          "minecraft:dirt": 1823,
+          "minecraft:dispenser": 1,
+          "minecraft:gold_ore": 6,
+          "minecraft:granite": 839,
+          "minecraft:grass_block": 245,
+          "minecraft:gravel": 659,
+          "minecraft:iron_ore": 148,
+          "minecraft:lapis_ore": 20,
+          "minecraft:oak_button": 1,
+          "minecraft:oak_planks": 6,
+          "minecraft:oxidized_cut_copper": 4,
+          "minecraft:podzol": 1,
+          "minecraft:polished_tuff": 110,
+          "minecraft:polished_tuff_slab": 2,
+          "minecraft:powder_snow": 87,
+          "minecraft:red_candle": 2,
+          "minecraft:red_mushroom": 1,
+          "minecraft:redstone_ore": 4,
+          "minecraft:short_grass": 113,
+          "minecraft:tuff": 1381,
+          "minecraft:tuff_bricks": 936,
+          "minecraft:vault": 1,
+          "minecraft:water": 506,
+          "minecraft:waxed_chiseled_copper": 3,
+          "minecraft:waxed_copper_block": 136,
+          "minecraft:waxed_copper_bulb": 3,
+          "minecraft:waxed_copper_grate": 19,
+          "minecraft:waxed_oxidized_copper": 7,
+          "minecraft:waxed_oxidized_copper_grate": 6
+        }
+      },
+      "persisted_records": 529,
+      "snapshot_sha256": "ce9db36de193393a6d3c2358dd2ffb35b64efb0eed324e6b61f4bbff82448b77",
+      "terrain_unchanged": true,
+      "artifacts": {
+        "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+        "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "logs": {
+        "console-1.log": "7362fa84585bfa918091d26adb5051f08d868a165d1303ee688f8eedc56c2be4",
+        "console-2.log": "911bc5343704d133c7557aac0eddfae1e1921c2864a37fa9587caa305f40e060"
+      },
+      "exit_code": 0
+    }
+  ],
+  "production_generator": "geology-1",
+  "prototype": "coarse-evidence-1",
+  "alternate": {
+    "generator": "coarse-evidence-1",
+    "changed_classes": [
+      "dev/wilyjeb/geology/TerrainGenerationContext.class",
+      "dev/wilyjeb/geology/domain/GenerationContext.class"
+    ],
+    "sha256": "d8f549a0aa90ab367efc5d707fe08b5dd0a8cbf44a9cc4af8b160de872b59887"
+  },
+  "generator_rejection": {
+    "expected_diagnostic": "Incompatible geology generation context",
+    "process_exited": true,
+    "exit_code": 0,
+    "ready": false,
+    "console_sha256": "c31e13023a362f325d0ac980e1ecfce4543c51dc284debb723a5d11ebad3dbe3",
+    "saved_context": {
+      "generator": "geology-1",
+      "seed": "-1550453200536840819",
+      "scale": "1",
+      "tileSize": "256",
+      "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+      "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+      "backend": "CPU/Windows 11/amd64"
+    },
+    "runtime_context": {
+      "generator": "coarse-evidence-1",
+      "seed": "-1550453200536840819",
+      "scale": "1",
+      "tileSize": "256",
+      "dependency": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+      "models": "64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9",
+      "backend": "CPU/Windows 11/amd64"
+    },
+    "changed_context_fields": [
+      "generator"
+    ]
+  },
+  "generator_restoration": {
+    "restored": {
+      "settings": {
+        "owner_matches": true,
+        "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings",
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+      },
+      "chunk": {
+        "kind": "chunk",
+        "dimension": "overworld",
+        "x": -32,
+        "z": -65,
+        "generation_ms": 66.1738,
+        "blocks_sha256": "50619c05d33f2416c996adc9f0f079c11b4ae3cabf84e81a1f55a04fd2ec9f4f",
+        "stage": "full",
+        "normalized_sha256": "7be36835f834fa80a48e7bade32e74712e05f4fe1c64e30ee0f198aec6a6746d",
+        "geology_sha256": "40884c317bd13a522573a81af69b71f7dd81bd857885a8960d2872b25759d6d5",
+        "counts": {
+          "geologic_variation:slate": 15597,
+          "minecraft:air": 80628,
+          "minecraft:andesite": 1210,
+          "minecraft:bedrock": 1803,
+          "minecraft:coal_ore": 121,
+          "minecraft:copper_ore": 107,
+          "minecraft:deepslate": 13698,
+          "minecraft:deepslate_copper_ore": 1,
+          "minecraft:deepslate_diamond_ore": 34,
+          "minecraft:deepslate_gold_ore": 23,
+          "minecraft:deepslate_iron_ore": 26,
+          "minecraft:deepslate_lapis_ore": 22,
+          "minecraft:deepslate_redstone_ore": 29,
+          "minecraft:diorite": 1337,
+          "minecraft:dirt": 906,
+          "minecraft:emerald_ore": 3,
+          "minecraft:gold_ore": 8,
+          "minecraft:granite": 846,
+          "minecraft:grass_block": 138,
+          "minecraft:gravel": 608,
+          "minecraft:infested_deepslate": 28,
+          "minecraft:infested_stone": 27,
+          "minecraft:iron_ore": 49,
+          "minecraft:lapis_ore": 1,
+          "minecraft:redstone_ore": 6,
+          "minecraft:short_grass": 34,
+          "minecraft:tuff": 1085,
+          "minecraft:water": 409
+        }
+      },
+      "region": "Region[province=Province[cellX=-1, cellZ=-1, anchorX=-1023, anchorZ=-1433, identity=6352826561952862732], stone=SLATE, elevationMetres=-57.76, reliefMetres=1381.0]"
+    },
+    "persisted_records": 529,
+    "terrain_snapshot_unchanged": true,
+    "logs": {
+      "console-1.log": "c31e13023a362f325d0ac980e1ecfce4543c51dc284debb723a5d11ebad3dbe3",
+      "console-2.log": "3bf947ff79e898dee3646a955717ad0df3426d12a69f34fc13ec1e1409005a6f"
+    }
+  },
+  "shared_inputs_unchanged": true,
+  "raw_results_sha256": "727e2c89eafd4907061fa1bf3d0e8080036afbda274db1cb785281982e439bbb",
+  "pairs": [
+    {
+      "scale": 1,
+      "trial": 0,
+      "current_ms": 14624.4962,
+      "coarse_ms": 1.0876,
+      "paired_saving_ms": 14623.408599999999,
+      "current_delta": {
+        "coarse_calls": 0,
+        "computed_windows": 61,
+        "pipeline_data_calls": 1,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0
+      },
+      "coarse_delta": {
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0,
+        "coarse_calls": 1,
+        "computed_windows": 0,
+        "pipeline_data_calls": 0
+      }
+    },
+    {
+      "scale": 1,
+      "trial": 1,
+      "current_ms": 12857.821,
+      "coarse_ms": 1.0336,
+      "paired_saving_ms": 12856.7874,
+      "current_delta": {
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0,
+        "coarse_calls": 0,
+        "computed_windows": 61,
+        "pipeline_data_calls": 1
+      },
+      "coarse_delta": {
+        "coarse_calls": 1,
+        "computed_windows": 0,
+        "pipeline_data_calls": 0,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0
+      }
+    },
+    {
+      "scale": 1,
+      "trial": 2,
+      "current_ms": 11778.0888,
+      "coarse_ms": 1.0354,
+      "paired_saving_ms": 11777.053399999999,
+      "current_delta": {
+        "computed_windows": 61,
+        "coarse_calls": 0,
+        "anchor_heightmap_calls": 0,
+        "heightmap_calls": 0,
+        "pipeline_data_calls": 1
+      },
+      "coarse_delta": {
+        "anchor_heightmap_calls": 0,
+        "heightmap_calls": 0,
+        "pipeline_data_calls": 0,
+        "computed_windows": 0,
+        "coarse_calls": 1
+      }
+    },
+    {
+      "scale": 6,
+      "trial": 0,
+      "current_ms": 10466.8171,
+      "coarse_ms": 1.1693,
+      "paired_saving_ms": 10465.6478,
+      "current_delta": {
+        "anchor_heightmap_calls": 1,
+        "heightmap_calls": 1,
+        "pipeline_data_calls": 0,
+        "computed_windows": 56,
+        "coarse_calls": 0
+      },
+      "coarse_delta": {
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0,
+        "coarse_calls": 1,
+        "computed_windows": 0,
+        "pipeline_data_calls": 0
+      }
+    }
+  ],
+  "scale1_median_paired_saving_ms": 12856.7874,
+  "warm_medians_ms": {
+    "s1-t0-current": 0.0392,
+    "s1-t0-coarse": 0.0284,
+    "s1-t1-coarse": 0.03,
+    "s1-t1-current": 0.0602,
+    "s1-t2-current": 0.0422,
+    "s1-t2-coarse": 0.0328,
+    "s6-t0-current": 0.04,
+    "s6-t0-coarse": 0.0309
+  },
+  "far_cold": {
+    "cases": [
+      {
+        "name": "t0-current",
+        "arm": "current",
+        "trial": 0,
+        "settings": {
+          "kind": "settings",
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true,
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+        },
+        "cold": {
+          "ms": 16561.5619,
+          "z": 65536,
+          "delta": {
+            "computed_windows": 65,
+            "coarse_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 1
+          },
+          "x": 65536,
+          "arm": "current",
+          "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]"
+        },
+        "warm": [
+          {
+            "ms": 0.2533,
+            "z": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "coarse_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0
+            },
+            "x": 65536,
+            "arm": "current",
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]"
+          },
+          {
+            "ms": 0.0566,
+            "z": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "coarse_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0
+            },
+            "x": 65536,
+            "arm": "current",
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]"
+          },
+          {
+            "ms": 0.0572,
+            "z": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "coarse_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0
+            },
+            "x": 65536,
+            "arm": "current",
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]"
+          },
+          {
+            "ms": 0.0506,
+            "z": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "coarse_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0
+            },
+            "x": 65536,
+            "arm": "current",
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]"
+          },
+          {
+            "ms": 0.0379,
+            "z": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "coarse_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0
+            },
+            "x": 65536,
+            "arm": "current",
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]"
+          }
+        ],
+        "environment": {
+          "processors": 6,
+          "max_heap": 6442450944,
+          "backend": "CPU",
+          "kind": "prepare"
+        },
+        "artifacts": {
+          "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+          "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+          "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+        },
+        "logs": {
+          "console-1.log": "97313ffa51a047be62b2e2b2768f3b0327978fe6411173ae6ad19f2835d21ca6"
+        },
+        "exit_code": 0
+      },
+      {
+        "name": "t0-coarse",
+        "arm": "coarse",
+        "trial": 0,
+        "settings": {
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings",
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true
+        },
+        "cold": {
+          "arm": "coarse",
+          "value": {
+            "col": 253,
+            "neighborhood_range_metres": 1691.5316772460938,
+            "elevations": [
+              8.362157821655273,
+              4.659595489501953,
+              -179.87359619140625,
+              56.301475524902344,
+              22.17335319519043,
+              -428.1913757324219,
+              627.7742309570312,
+              9.580534934997559,
+              -1063.7574462890625
+            ],
+            "row": 258,
+            "version": "coarse-evidence-1",
+            "mean_metres": -104.77456336551242,
+            "classification": "unclassified evidence",
+            "scale": 1,
+            "p5_used": false
+          },
+          "ms": 1240.4749,
+          "z": 65536,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 2,
+            "coarse_calls": 1
+          },
+          "x": 65536
+        },
+        "warm": [
+          {
+            "arm": "coarse",
+            "value": {
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1",
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false
+            },
+            "ms": 0.1781,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            },
+            "x": 65536
+          },
+          {
+            "arm": "coarse",
+            "value": {
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1",
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false
+            },
+            "ms": 0.0358,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            },
+            "x": 65536
+          },
+          {
+            "arm": "coarse",
+            "value": {
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1",
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false
+            },
+            "ms": 0.0417,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            },
+            "x": 65536
+          },
+          {
+            "arm": "coarse",
+            "value": {
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1",
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false
+            },
+            "ms": 0.0261,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            },
+            "x": 65536
+          },
+          {
+            "arm": "coarse",
+            "value": {
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1",
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false
+            },
+            "ms": 0.0311,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            },
+            "x": 65536
+          }
+        ],
+        "environment": {
+          "backend": "CPU",
+          "kind": "prepare",
+          "processors": 6,
+          "max_heap": 6442450944
+        },
+        "artifacts": {
+          "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+          "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+          "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+        },
+        "logs": {
+          "console-1.log": "d5ba3d14f75890a444e54dfa0e281f0e96ab3c15a305796f186e43a2d34722ba"
+        },
+        "exit_code": 0
+      },
+      {
+        "name": "t1-coarse",
+        "arm": "coarse",
+        "trial": 1,
+        "settings": {
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "owner_matches": true,
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+        },
+        "cold": {
+          "x": 65536,
+          "delta": {
+            "coarse_calls": 1,
+            "computed_windows": 2,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          },
+          "z": 65536,
+          "ms": 811.6685,
+          "value": {
+            "p5_used": false,
+            "scale": 1,
+            "classification": "unclassified evidence",
+            "mean_metres": -104.77456336551242,
+            "version": "coarse-evidence-1",
+            "row": 258,
+            "elevations": [
+              8.362157821655273,
+              4.659595489501953,
+              -179.87359619140625,
+              56.301475524902344,
+              22.17335319519043,
+              -428.1913757324219,
+              627.7742309570312,
+              9.580534934997559,
+              -1063.7574462890625
+            ],
+            "neighborhood_range_metres": 1691.5316772460938,
+            "col": 253
+          },
+          "arm": "coarse"
+        },
+        "warm": [
+          {
+            "x": 65536,
+            "delta": {
+              "coarse_calls": 0,
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0
+            },
+            "z": 65536,
+            "ms": 0.1774,
+            "value": {
+              "p5_used": false,
+              "scale": 1,
+              "classification": "unclassified evidence",
+              "mean_metres": -104.77456336551242,
+              "version": "coarse-evidence-1",
+              "row": 258,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "neighborhood_range_metres": 1691.5316772460938,
+              "col": 253
+            },
+            "arm": "coarse"
+          },
+          {
+            "x": 65536,
+            "delta": {
+              "coarse_calls": 0,
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0
+            },
+            "z": 65536,
+            "ms": 0.0382,
+            "value": {
+              "p5_used": false,
+              "scale": 1,
+              "classification": "unclassified evidence",
+              "mean_metres": -104.77456336551242,
+              "version": "coarse-evidence-1",
+              "row": 258,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "neighborhood_range_metres": 1691.5316772460938,
+              "col": 253
+            },
+            "arm": "coarse"
+          },
+          {
+            "x": 65536,
+            "delta": {
+              "coarse_calls": 0,
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0
+            },
+            "z": 65536,
+            "ms": 0.0337,
+            "value": {
+              "p5_used": false,
+              "scale": 1,
+              "classification": "unclassified evidence",
+              "mean_metres": -104.77456336551242,
+              "version": "coarse-evidence-1",
+              "row": 258,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "neighborhood_range_metres": 1691.5316772460938,
+              "col": 253
+            },
+            "arm": "coarse"
+          },
+          {
+            "x": 65536,
+            "delta": {
+              "coarse_calls": 0,
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0
+            },
+            "z": 65536,
+            "ms": 0.0256,
+            "value": {
+              "p5_used": false,
+              "scale": 1,
+              "classification": "unclassified evidence",
+              "mean_metres": -104.77456336551242,
+              "version": "coarse-evidence-1",
+              "row": 258,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "neighborhood_range_metres": 1691.5316772460938,
+              "col": 253
+            },
+            "arm": "coarse"
+          },
+          {
+            "x": 65536,
+            "delta": {
+              "coarse_calls": 0,
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0
+            },
+            "z": 65536,
+            "ms": 0.0327,
+            "value": {
+              "p5_used": false,
+              "scale": 1,
+              "classification": "unclassified evidence",
+              "mean_metres": -104.77456336551242,
+              "version": "coarse-evidence-1",
+              "row": 258,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "neighborhood_range_metres": 1691.5316772460938,
+              "col": 253
+            },
+            "arm": "coarse"
+          }
+        ],
+        "environment": {
+          "max_heap": 6442450944,
+          "processors": 6,
+          "kind": "prepare",
+          "backend": "CPU"
+        },
+        "artifacts": {
+          "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+          "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+          "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+        },
+        "logs": {
+          "console-1.log": "beaea13dc7c04c2b3defb7c01c8b27c5e312cc7f430fbf73abe13ab0e9f98f0a"
+        },
+        "exit_code": 0
+      },
+      {
+        "name": "t1-current",
+        "arm": "current",
+        "trial": 1,
+        "settings": {
+          "kind": "settings",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "owner_matches": true,
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+        },
+        "cold": {
+          "ms": 15987.7843,
+          "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+          "arm": "current",
+          "x": 65536,
+          "delta": {
+            "computed_windows": 65,
+            "pipeline_data_calls": 1,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0
+          },
+          "z": 65536
+        },
+        "warm": [
+          {
+            "ms": 0.2412,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0543,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0402,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0377,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0387,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "computed_windows": 0,
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0
+            },
+            "z": 65536
+          }
+        ],
+        "environment": {
+          "kind": "prepare",
+          "backend": "CPU",
+          "max_heap": 6442450944,
+          "processors": 6
+        },
+        "artifacts": {
+          "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+          "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+          "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+        },
+        "logs": {
+          "console-1.log": "19c45049818eac95f5a71a476f99a3952d4d3afeae75fa12772ef3925944477d"
+        },
+        "exit_code": 0
+      },
+      {
+        "name": "t2-current",
+        "arm": "current",
+        "trial": 2,
+        "settings": {
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "owner_matches": true,
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings"
+        },
+        "cold": {
+          "ms": 15771.7329,
+          "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+          "arm": "current",
+          "x": 65536,
+          "delta": {
+            "pipeline_data_calls": 1,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 0,
+            "computed_windows": 65
+          },
+          "z": 65536
+        },
+        "warm": [
+          {
+            "ms": 0.1764,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0,
+              "computed_windows": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0434,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0,
+              "computed_windows": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0394,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0,
+              "computed_windows": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0524,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0,
+              "computed_windows": 0
+            },
+            "z": 65536
+          },
+          {
+            "ms": 0.0698,
+            "value": "Region[province=Province[cellX=31, cellZ=32, anchorX=64964, anchorZ=66256, identity=-4783064575449926457], stone=SLATE, elevationMetres=96.36, reliefMetres=931.0]",
+            "arm": "current",
+            "x": 65536,
+            "delta": {
+              "pipeline_data_calls": 0,
+              "heightmap_calls": 0,
+              "anchor_heightmap_calls": 0,
+              "coarse_calls": 0,
+              "computed_windows": 0
+            },
+            "z": 65536
+          }
+        ],
+        "environment": {
+          "kind": "prepare",
+          "backend": "CPU",
+          "max_heap": 6442450944,
+          "processors": 6
+        },
+        "artifacts": {
+          "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+          "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+          "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+        },
+        "logs": {
+          "console-1.log": "aded06f89b99261d78eea4ce5930c91a913b62aa58fbf6947a0bce99edab22c5"
+        },
+        "exit_code": 0
+      },
+      {
+        "name": "t2-coarse",
+        "arm": "coarse",
+        "trial": 2,
+        "settings": {
+          "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "owner_matches": true,
+          "context": "GenerationContext[generator=geology-1, seed=-1550453200536840819, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+          "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+          "kind": "settings"
+        },
+        "cold": {
+          "x": 65536,
+          "arm": "coarse",
+          "value": {
+            "mean_metres": -104.77456336551242,
+            "classification": "unclassified evidence",
+            "scale": 1,
+            "p5_used": false,
+            "col": 253,
+            "neighborhood_range_metres": 1691.5316772460938,
+            "elevations": [
+              8.362157821655273,
+              4.659595489501953,
+              -179.87359619140625,
+              56.301475524902344,
+              22.17335319519043,
+              -428.1913757324219,
+              627.7742309570312,
+              9.580534934997559,
+              -1063.7574462890625
+            ],
+            "row": 258,
+            "version": "coarse-evidence-1"
+          },
+          "ms": 816.0987,
+          "z": 65536,
+          "delta": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 2,
+            "coarse_calls": 1
+          }
+        },
+        "warm": [
+          {
+            "x": 65536,
+            "arm": "coarse",
+            "value": {
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false,
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1"
+            },
+            "ms": 0.1659,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            }
+          },
+          {
+            "x": 65536,
+            "arm": "coarse",
+            "value": {
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false,
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1"
+            },
+            "ms": 0.0361,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            }
+          },
+          {
+            "x": 65536,
+            "arm": "coarse",
+            "value": {
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false,
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1"
+            },
+            "ms": 0.0351,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            }
+          },
+          {
+            "x": 65536,
+            "arm": "coarse",
+            "value": {
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false,
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1"
+            },
+            "ms": 0.0254,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            }
+          },
+          {
+            "x": 65536,
+            "arm": "coarse",
+            "value": {
+              "mean_metres": -104.77456336551242,
+              "classification": "unclassified evidence",
+              "scale": 1,
+              "p5_used": false,
+              "col": 253,
+              "neighborhood_range_metres": 1691.5316772460938,
+              "elevations": [
+                8.362157821655273,
+                4.659595489501953,
+                -179.87359619140625,
+                56.301475524902344,
+                22.17335319519043,
+                -428.1913757324219,
+                627.7742309570312,
+                9.580534934997559,
+                -1063.7574462890625
+              ],
+              "row": 258,
+              "version": "coarse-evidence-1"
+            },
+            "ms": 0.0278,
+            "z": 65536,
+            "delta": {
+              "anchor_heightmap_calls": 0,
+              "heightmap_calls": 0,
+              "pipeline_data_calls": 0,
+              "computed_windows": 0,
+              "coarse_calls": 0
+            }
+          }
+        ],
+        "environment": {
+          "max_heap": 6442450944,
+          "backend": "CPU",
+          "kind": "prepare",
+          "processors": 6
+        },
+        "artifacts": {
+          "geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+          "geology-runtime-probe-0.2.2-dev.jar": "3b927892a54e958ed16a3ec048659c227e78869d970df62cd3efde4fb5142155",
+          "NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+        },
+        "logs": {
+          "console-1.log": "6a49a846345f37937bda54734f05649d3d80b1809df89a557ec72fdfd900b9ee"
+        },
+        "exit_code": 0
+      }
+    ],
+    "sources": {
+      "verify-coarse-cold.py": "8b8f666d7d8a7add6a0eec50364b98de0643038f5e2b28c57e80a83a10113d20",
+      "verify-coarse-prototype.py": "bab160c1f5b3d94083c28153d39274f2445c4130d6340dbac5f90a9f9f0dbaa4",
+      "runtime-acceptance.py": "c5785e5a87ccd01be2d360c54d0e649ec3556f45af2ac6079bb2b6e2549eaa24"
+    },
+    "shared_inputs_unchanged": true,
+    "pairs": [
+      {
+        "trial": 0,
+        "current_ms": 16561.5619,
+        "coarse_ms": 1240.4749,
+        "paired_saving_ms": 15321.087000000001,
+        "current_delta": {
+          "computed_windows": 65,
+          "coarse_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "heightmap_calls": 0,
+          "pipeline_data_calls": 1
+        },
+        "coarse_delta": {
+          "anchor_heightmap_calls": 0,
+          "heightmap_calls": 0,
+          "pipeline_data_calls": 0,
+          "computed_windows": 2,
+          "coarse_calls": 1
+        }
+      },
+      {
+        "trial": 1,
+        "current_ms": 15987.7843,
+        "coarse_ms": 811.6685,
+        "paired_saving_ms": 15176.1158,
+        "current_delta": {
+          "computed_windows": 65,
+          "pipeline_data_calls": 1,
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 0
+        },
+        "coarse_delta": {
+          "coarse_calls": 1,
+          "computed_windows": 2,
+          "pipeline_data_calls": 0,
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0
+        }
+      },
+      {
+        "trial": 2,
+        "current_ms": 15771.7329,
+        "coarse_ms": 816.0987,
+        "paired_saving_ms": 14955.6342,
+        "current_delta": {
+          "pipeline_data_calls": 1,
+          "heightmap_calls": 0,
+          "anchor_heightmap_calls": 0,
+          "coarse_calls": 0,
+          "computed_windows": 65
+        },
+        "coarse_delta": {
+          "anchor_heightmap_calls": 0,
+          "heightmap_calls": 0,
+          "pipeline_data_calls": 0,
+          "computed_windows": 2,
+          "coarse_calls": 1
+        }
+      }
+    ],
+    "median_paired_saving_ms": 15176.1158,
+    "raw_results_sha256": "ad9d41b1e010243b8d15210adda7a640d41204e6a3af4cedf1791e230d51f978"
+  },
+  "production_comparison": {
+    "baseline_sha256": "6f1a143a8b117abdabdfd1c72270d5270c19e18f7920a7df3aab908d3f6ec1ae",
+    "addon_sha256": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+    "unchanged_existing_classes": 31,
+    "added_classes": [
+      "dev/wilyjeb/geology/domain/CoarseEvidence.class"
+    ],
+    "alternate_only_generator_constants": true
+  }
+}
