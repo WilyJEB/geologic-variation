@@ -120,3 +120,7 @@ not yet change the running four-rock generator. See
 The [multi-seed terrain diagnostics](docs/terrain-diagnostics-2026-11-03.md)
 compare supported coarse evidence with geology-1 at scales 1/6. They remain
 diagnostic only: synthetic terrane hypotheses do not select new worldgen blocks.
+
+The [bounded TD ridge/basin coverage diagnostic](docs/td-landforms-2026-11-03.md)
+tests cross-axis extrema and finite longitudinal support before geological
+classification. It preserves failed coverage gates and leaves geology-1 unchanged.
