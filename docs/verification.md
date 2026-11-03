@@ -1,3 +1,16 @@
+# Bounded coarse evidence prototype — 2026-11-02 (#11)
+
+The [coarse prototype report](coarse-prototype-2026-11-02.md) validates the supported
+coarse API's coordinates, blend normalization and signals, bounded real caching,
+concurrent deduplication and reverse traversal at scales 1/6. Three alternating
+far cold CPU pairs compute 65 versus 2 windows, with 15.176 s median paired
+isolated-query saving. Eight new production fixtures preserve 529 terrain records
+each through reopen; a generator-only artifact is rejected before Ready and exact
+original restoration reopens unchanged. All 31 existing production classes remain
+byte-identical. Coarse evidence is unclassified and opt-in: its broader statistics
+do not replace geology-1's sampler/classifier. #9 and the broader #11 remain open;
+#5's stronger failed assertion and historical route-performance scope are preserved.
+
 # Exact native-scale anchor sampling — 2026-11-02 (#11)
 
 The [focused performance report](anchor-performance-2026-11-02.md) records clean

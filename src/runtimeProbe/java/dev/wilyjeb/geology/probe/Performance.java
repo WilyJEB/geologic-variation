@@ -9,6 +9,7 @@ public final class Performance {
     public static final AtomicLong HEIGHTMAP = new AtomicLong();
     public static final AtomicLong ANCHOR = new AtomicLong();
     public static final AtomicLong DATA = new AtomicLong();
+    public static final AtomicLong COARSE = new AtomicLong();
     private Performance() {}
     /** Same JVM, warm tensor windows, empty provider heightmap cache in both arms.
      * Measures only accessor + exact 25-value extraction, not full chunk generation. */
@@ -74,7 +75,7 @@ public final class Performance {
             var pipeline = (com.github.xandergos.terraindiffusionmc.pipeline.WorldPipeline)
                     field.get(LocalTerrainProvider.getInstance());
             return Map.of("heightmap_calls", HEIGHTMAP.get(), "anchor_heightmap_calls", ANCHOR.get(),
-                    "pipeline_data_calls", DATA.get(), "computed_windows", pipeline.getTotalComputedWindowCount());
+                    "pipeline_data_calls", DATA.get(), "coarse_calls", COARSE.get(), "computed_windows", pipeline.getTotalComputedWindowCount());
         } catch (ReflectiveOperationException e) { throw new RuntimeException(e); }
     }
 }

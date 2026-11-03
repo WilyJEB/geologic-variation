@@ -31,6 +31,11 @@ public abstract class HeightmapProbeMixin {
                 "TD_DATA x={} z={} width={} height={} climate={} thread={}", x0,z0,x1-x0,z1-z0,climate,Thread.currentThread().getName());
     }
 
+    @Inject(method = "getPipelineCoarse", at = @At("HEAD"), remap = false)
+    private static void probe$coarse(int z0,int x0,int z1,int x1,CallbackInfoReturnable<Object> ci) {
+        dev.wilyjeb.geology.probe.Performance.COARSE.incrementAndGet();
+    }
+
     @Inject(method = "fetchHeightmap", at = @At("RETURN"), remap = false)
     private void probe$end(int z0, int x0, int z1, int x1, CallbackInfoReturnable<Object> ci) {
         double ms = (System.nanoTime() - probe$start.get()) / 1e6;

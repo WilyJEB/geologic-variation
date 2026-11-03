@@ -8,7 +8,7 @@ in newly explored chunks. There is no general migration tool.
 | --- | --- | --- |
 | New, uninitialized TD world | Writes schema 2 with resolved generation context and validated requested settings | Keep the snapshot with world backups |
 | Valid schema 2, `generator=geology-1`, exact matching context | Loads saved settings; common-config edits apply only to new worlds | Continue with the same installation and world inputs |
-| Schema 2 with changed seed, scale, tile size, TD bytes, model bytes or backend identity | Rejects loading without rewriting the snapshot | Restore the exact original context from backup |
+| Schema 2 with changed generator, seed, scale, tile size, TD bytes, model bytes or backend identity | Rejects loading without rewriting the snapshot | Restore the exact original context from backup |
 | Schema 1 or a continuing world without a snapshot | Rejects unverifiable provenance | Use its original installation; a separately designed and reviewed migration is required |
 | Snapshot with an unresolved `unknown` backend | Rejects loading | Preserve evidence and request provenance review; see the narrow historical recovery below |
 | Malformed, incomplete, oversized or unsupported-schema snapshot | Rejects loading | Restore a known valid backup together with its matching installation |
@@ -66,6 +66,14 @@ unchanged remaining context, a recorded minimal change and explicit review.
 Schema-1/snapshotless worlds lack more context and need a separate migration design.
 
 ## Evidence and reporting
+
+The [bounded coarse prototype](coarse-prototype-2026-11-02.md) remains an
+unclassified diagnostic; it does not replace geology-1. A generator-only
+test-derived addon is rejected before Ready with only the generator context
+field differing. Exact original-addon restoration reopens the continuing
+fixture with unchanged snapshot bytes, complete sampled blocks and all 529
+persisted terrain records. This verifies the version boundary and restoration,
+not migration or acceptance of a new geological algorithm. #9 remains open.
 
 The [official artifact substitution test](td-artifact-2026-11-01.md) independently
 confirms startup rejection when a CPU-resolved official CUDA distribution replaces
