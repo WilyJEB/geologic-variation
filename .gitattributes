@@ -24,6 +24,7 @@ scripts/td-landform-selector.py text eol=lf
 scripts/verify-td-landforms.py text eol=lf
 scripts/summarize-td-landforms.py text eol=lf
 scripts/test-td-landforms.py text eol=lf
+scripts/export-negative-td-landforms.py text eol=lf
 *.gradle text eol=lf
 *.json text eol=lf
 *.md text eol=lf
