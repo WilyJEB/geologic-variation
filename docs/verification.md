@@ -1,3 +1,10 @@
+# Sampling support diagnostic — 2026-11-03 (#11)
+
+The [sampling support report](sampling-support-2026-11-03.md) defines the bounded
+province-anchor/actual-target/fixed-grid comparison, matched native fine support,
+development and held-out seed protocol, and separate geological adoption gates.
+It leaves geology-1 and its strict guards unchanged. #9 and #11 remain open.
+
 # Bounded coarse evidence prototype — 2026-11-02 (#11)
 
 The [coarse prototype report](coarse-prototype-2026-11-02.md) validates the supported
