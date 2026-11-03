@@ -5,6 +5,57 @@
 Production remains geology-1. This experiment changes only the opt-in probe and
 offline analysis. No geological classifier or new-world generator is adopted.
 
+**Selected policy: actual-target terrain evidence for point diagnostics;
+geological classification abstains.** Keep the existing bounded 3x3 getter,
+centered on the target-containing native coarse cell, and distinguish its central
+mean from neighborhood context. Retain independently collected target fine cells
+and tiles for validation. Province-anchor terrain is retained as a comparison,
+not substituted for target terrain. The tested four-cell representative grid
+does not improve the held-out point diagnostics. Geology-1 remains a regional
+assignment with its original anchor, thresholds and generated output.
+
+[Portable evidence](evidence/sampling-support-2026-11-03.json) contains the raw
+numeric observations, selections, source/artifact/log hashes, request accounting,
+paired-scale checks, analytical controls and persistence outcomes.
+
+## Terrain agreement results
+
+Cells below show central coarse versus actual-target full native fine-cell
+**mean absolute error in metres; central sign agreements / selection rows**.
+Only scale-1 rows enter this native comparison; scale 6 is paired sensitivity,
+not additional independent native observations.
+
+| Native cohort | Province anchor | Actual target | Fixed grid 4 |
+| --- | ---: | ---: | ---: |
+| Development fixed coverage | 1289.53; 5/10 | 124.58; 10/10 | 978.00; 8/10 |
+| Development selected contrasts | 1335.75; 9/14 | 80.06; 14/14 | 875.88; 10/14 |
+| Held-out fixed coverage | 1282.66; 3/5 | 50.49; 5/5 | 672.42; 3/5 |
+| Held-out selected contrasts | 1855.87; 4/7 | 106.31; 7/7 | 693.89; 6/7 |
+
+Target evidence passes the frozen held-out rule in both groups. These fixed
+transects and selected contrasts are descriptive observations, not a population
+accuracy estimate. Boundary stress cases are evaluated separately below.
+
+In development coverage, anchor coarse means agree with their own matched fine
+support to 44.27 m MAE, while their error at targets is 1289.53 m. The fine anchor
+means themselves differ from fine target means by 1306.11 m MAE. This separates
+the displacement problem from coarse/fine model-product disagreement. Changing
+relief cutoffs would leave that displacement intact. Even target means retain
+model-product residuals, and sign agreement of averages does not validate fine
+shoreline exposure or discriminate geological histories.
+
+Target 3x3 neighborhood tendency agrees with the target fine-cell pixel-sign
+tendency at 9/10 development coverage locations, 14/14 selected contrasts,
+4/5 held-out coverage locations and 7/7 held-out contrasts. This is explicitly
+**different support**, not shoreline accuracy: a mixed-sign neighborhood can
+surround a wholly positive or negative fine cell. Fine-cell below-zero fractions
+and all three policies' corresponding comparisons remain in the portable data.
+
+The selection and recommendation rules were committed and pushed in
+`c4cdd43928267aad72f1fced36774579985fe123` before held-out collection. The portable
+export identifies that protocol and the exact executed source/probe bytes;
+exporter serialization normalization does not change the selections or criteria.
+
 ## Reconciliation and retained evidence
 
 Fetched main and local base are PR #49 merge
@@ -54,6 +105,8 @@ its grid seams must be measured, not assumed smooth.
 
 For each policy obtain the full 256x256 native fine elevation cell at its
 representative location and compare its mean to the central coarse elevation.
+The complete-cell fingerprint encodes all 65,536 IEEE-754 float32 values in
+row-major, big-endian order; the 25 quantized fine-tile values are retained directly.
 These rectangles have matched coordinate support. The learned coarse average
 and generated native fine elevation remain different model products, so equality
 is not assumed. The policy's central coarse elevation is also compared to the
@@ -67,7 +120,11 @@ measurement of final Minecraft surface blocks.
 
 Also retain geology-1-compatible 25 quantized samples in the 256-block fine tile
 at the actual target and province anchor. Scale 6 retains TD's upsample/noise
-path. These tiles do not match a 3x3 coarse neighborhood; neighborhood range and
+path. Tiles are floor-aligned to the 256-block world grid; their actual origins
+and sample values are retained. Their nominal native footprint is 256 pixels at
+scale 1 and about 42.7 at scale 6. The matched native cell remains a separate
+model-native statistic, not a complete scaled Minecraft surface. These tiles do
+not match a 3x3 coarse neighborhood; neighborhood range and
 fine-tile relief remain distinct. p5 is excluded. No geology-1 threshold transfers.
 
 Evaluation is descriptive, split by development/held-out and coverage/selected
@@ -150,6 +207,88 @@ Python/Java source LF attributes preserve executed bytes after Windows checkout.
 CI runs build/probe/domain/resource/catalog and offline diagnostic checks;
 dedicated inference and save/reopen remain local runtime evidence.
 
+## Runtime outcomes and request accounting
+
+All six NEW fixtures / twelve JVM launches pass. There are 486 screened
+neighborhood rows but only 243 distinct seed/native screen locations; 144 forward
+comparison rows cover 66 distinct seed/native target cells and 166 distinct
+seed/native policy representatives. Another 144 rows reverse traversal after both
+diagnostic LRUs are cleared. Distinct cells also share spatial context; these
+counts do not establish statistical independence.
+
+For each seed, all 36 paired selected-location/policy rows have identical complete
+native-cell hashes across scales, with zero mean difference. The sixteen repeated
+development anchor mean/relief pairs exactly match retained PR #48 geology-1.
+Every fixture preserves exact snapshot bytes, complete sampled blocks and all
+529 persisted terrain records' coverage/status/block-state containers through
+fresh-process reopen. Shared model/template manifests remain unchanged.
+
+Each fixture performs 72 forward policy lookups. Actual public coarse calls
+equal 54 or 56 deduplicated 3x3 requests, independently reproduced by the exporter.
+Native-cell misses also equal 54 or 56; two additional fine-tile reads occur per
+location. The table covers only the 24 forward comparisons and their reverse
+recomputation, excluding startup, the screening lattice, cache/oracle suites and
+production chunk generation.
+
+| Seed | Scale | Coarse API calls | Direct fine-data API calls | Heightmap API calls | New windows forward / reverse |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| -1550453200536840819 | 1 | 54 | 102 | 0 | 2300 / 241 |
+| -1550453200536840819 | 6 | 54 | 54 | 48 | 2300 / 246 |
+| 8675309 | 1 | 56 | 104 | 0 | 2287 / 253 |
+| 8675309 | 6 | 56 | 56 | 48 | 2284 / 249 |
+| 20261103 | 1 | 56 | 104 | 0 | 2367 / 258 |
+| 20261103 | 6 | 56 | 56 | 48 | 2361 / 265 |
+
+Reverse traversal reproduces complete evidence exactly while generating additional
+windows: visited support is not guaranteed to remain cached. All shared-cell
+coarse/native evidence is identical. Each real coarse suite deduplicates four
+callers to one request, retains 128 entries after 129 misses and requests an
+evicted entry again. The new native-cell LRU is capped at 128; its observed peak
+is 56, so this slice does not claim a separate 129-cell native eviction runtime test.
+Unique halo cells, representative cells, public API requests and model windows
+are retained as distinct units.
+
+These are combined serial diagnostic workloads sharing TD caches, not independent
+per-policy CPU benchmarks. Positive new-window counts prove actual computation;
+they do not isolate genuine cold tensor timing, warm accessor cost or full-route
+savings. No integrated candidate or alternating paired route benchmark is claimed.
+
+## Elongated morphology coverage and its limit
+
+The six distinct TD ridge/basin candidates (repeated at scales 1/6) all have axial
+curvature ratios above two, but **none is a cross-axis local extremum**. Strong
+anisotropic second differences can select a curved slope. This is a failed TD
+ridge/basin selection gate, not validated extended landform coverage; the frozen
+selector was not retuned on held-out results.
+
+The supplementary analytical controls supply two known elongated shapes, each
+repeated with two seeded province layouts. Across each fixed 45-location survey,
+target-cell errors are 9.57 m MAE with 45/45 sign agreements. The tested fixed
+grid has about 316.5 m MAE and 27/45 agreements; anchors span 306.9–438.6 m MAE
+and 20–28/45 agreements. The two shapes and repeated layouts are not four
+independent TD landforms. Their nonzero target error also reflects full-cell
+averaging versus 25-point fine sampling. They demonstrate narrow-feature
+displacement under known geometry, not geological plausibility or TD accuracy.
+
+The concrete morphology gate is now sharper: predefine a bounded TD selector
+requiring actual cross-axis extrema plus longitudinal support and validate it
+on new seeds with fine observations along the selected features. The present
+evidence supports actual-target point diagnostics but not a coherent terrane or
+contact classifier.
+
+## Verification boundary
+
+JDK 21 build/domain/settings/coarse/probe checks, resource checks (64 blocks,
+158 recipes, 711 JSON), research catalog, Python syntax, existing diagnostic
+tests, eight new semantic/portable-evidence tests and strict raw export pass.
+All production JAR entries equal the retained main artifact; the probe SHA-256 is
+`abf66093bc7cdca8254c7fc6c8178358628d7dcdc381f544203278276c553a9c`.
+All test Java/Python processes exit. Only stopped disposable optimization caches
+are removed; about 2.26 GiB free remains after collection. Broad ore/carver,
+client and pack coverage is retained historical evidence, not newly run here.
+The stronger #5 failure, optional Ulti-World, unrelated temp/ and strict guards
+remain unchanged. #9 and #11 remain open.
+
 ## Boundary interpretation
 
 For the original development seed at scale 1, two preselected edges illustrate
@@ -166,3 +305,26 @@ fixed. The four-cell grid can impose a much larger representative jump at its ow
 seam. Target-cell evidence also steps at coarse-cell edges; it is not a validated
 continuous-contact algorithm. Constant evidence within a cell is a cache/coherence
 property, not proof that it represents every fine pixel in that cell.
+
+## Concrete remaining geological gate
+
+The synthetic priors have no independent geological calibration. Even exact
+terrain-mean agreement cannot distinguish a sedimentary domain from a mafic or
+inherited belt. No posterior, geological confidence or rock selection is supported.
+Before classification, pre-register a seeded synthetic-history model and explicit
+plausibility constraints independent of current elevation, then test competing
+hypotheses, ambiguity and abstention on new held-out terrain. In particular,
+measure domain connectivity, contact continuity/orientation and coherent competing
+interpretations over two-dimensional transects rather than rewarding constant
+labels or assuming present elevation is formation depth. The current cellwise
+prior demonstration is not a coherent terrane model and passes no such gate.
+
+Morphological gates also remain narrower than geological adoption: denser
+two-dimensional fine coverage of coast/island exposure and long TD ridges/basins,
+plus a declared contact bandwidth, are needed before claiming continuous
+terrain-informed contacts. The five fixed fine coverage points are a diagonal
+transect; selected extremes and analytical elongated controls cannot establish
+population accuracy. Matched central-cell support does not make a whole 3x3
+neighborhood equivalent to a fine tile. No conversion factor or geological
+threshold is fitted from these different ranges. Palettes, dikes, mineral systems
+and integrations remain outside this slice.

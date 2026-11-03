@@ -107,6 +107,8 @@ def validate_counts(case):
     require(total=={k:sum(row['delta'][k] for row in case['observations']) for k in total},'Unaccounted diagnostic requests')
     return {'forward_actual_delta':total,'expected_deduplicated_coarse_requests':expected_coarse,
             'expected_deduplicated_native_fine_requests':expected_fine,'unique_native_cells':len(unique),
+            'unique_coarse_halo_cells':len({(row+dy,col+dx) for row,col in unique for dy in (-1,0,1) for dx in (-1,0,1)}),
+            'coarse_api_shape':'Each cache miss requests one 3x3 rectangle; halo cells and model windows are different units',
             'policy_lookups':len(case['observations'])*3,'max_retained_fine_entries':max(v['fine_cache_entries'] for v in case['observations']),
             'reverse_actual_delta':{k:sum(row[k] for row in case['reverse_deltas']) for k in total},
             'attribution':'Combined serial diagnostic workload with shared TD tensor caches; not independent policy timings or route benchmarks.'}
@@ -168,7 +170,8 @@ def export(source):
         require(case['traversal_equal'] and case['terrain_snapshot_unchanged'] and case['persisted_records']>0 and case['exit_code']==0,'Acceptance incomplete')
         require(case['sample']['blocks_sha256']==case['reopened']['blocks_sha256'],'Complete sample changed')
         require(len(case['scan'])==81 and len(case['observations'])==24,'Incomplete support experiment')
-        require(case['selection']==d['select'](case['scan'])+d['boundary_points'](case['seed'],case['scale']),'Selection drift')
+        expected_selection=json.loads(json.dumps(d['select'](case['scan'])+d['boundary_points'](case['seed'],case['scale'])))
+        require(case['selection']==expected_selection,'Selection drift')
         suite=case['suite'];require(suite['concurrent_requests']==1 and suite['real_cache_entries']==128 and suite['evicted_recomputed'] and suite['traversal_equal'] and case['oracle']['equal'],'Coarse contract failure')
         case['request_accounting']=validate_counts(case);case['boundary_evaluation']=boundaries(case)
         require(case['request_accounting']['forward_actual_delta']['computed_windows']>0,'No genuine new fine work')
@@ -194,14 +197,16 @@ def export(source):
     for seed,split in d['SEEDS']:
         small=next(c for c in data['cases'] if c['seed']==seed and c['scale']==1)
         large=next(c for c in data['cases'] if c['seed']==seed and c['scale']==6)
-        shared=0;max_native_mean_difference=0
+        shared=0;native_hash_matches=0;max_native_mean_difference=0
         for a,b in zip(small['observations'][:12],large['observations'][:12]):
             for policy in POLICIES:
                 ca=a['policies'][policy]['coarse'];cb=b['policies'][policy]['coarse']
                 require(ca['elevations']==cb['elevations'],'Repeated native coarse values changed')
                 fa=a['policies'][policy]['matched_native_cell'];fb=b['policies'][policy]['matched_native_cell']
+                native_hash_matches+=fa['float_sha256']==fb['float_sha256']
                 shared+=1;max_native_mean_difference=max(max_native_mean_difference,abs(fa['mean_metres']-fb['mean_metres']))
         paired.append({'seed':seed,'split':split,'paired_policy_observations':shared,
+                       'native_fine_complete_hash_pair_matches':native_hash_matches,
                        'native_fine_max_mean_difference_metres':max_native_mean_difference})
     data['cross_scale_pairs']=paired
     data['observation_units']={
@@ -221,6 +226,13 @@ def export(source):
                 'distinct_seed_native_target_cells':len({(c['seed'],v['policies']['target']['coarse']['row'],v['policies']['target']['coarse']['col']) for c in cases for v in c['observations'][lo:hi]}),
                 'policies':{policy:metrics(rows,policy) for policy in POLICIES}}
     data['sampling_recommendation']=recommend(data['native_scale_summary'])
+    candidates=[v for c in data['cases'] if c['scale']==1 for v in c['elongated_candidate_evaluation']]
+    data['td_landform_coverage_gate']={
+        'distinct_seed_candidate_rows':len(candidates),
+        'anisotropy_at_least_2':sum(v['anisotropy_at_least_2'] for v in candidates),
+        'cross_axis_local_extrema':sum(v['cross_axis_local_extremum'] for v in candidates),
+        'extended_ridge_basin_coverage_accepted':False,
+        'remaining_gate':'Predefined extrema plus longitudinal-support selector on new seeds with along-feature fine observations; do not retune this held-out matrix.'}
     retained_path=ROOT/'docs/evidence/terrain-diagnostics-2026-11-03.json'
     retained=json.loads(retained_path.read_text());checks=0
     for case in data['cases']:
@@ -240,8 +252,9 @@ def export(source):
     data['elongated_reference_fields']=runpy.run_path(str(reference))['experiment']()
     data['elongated_reference_source_sha256']=sha(reference)
     data['analysis_identity']='sampling-support-diagnostic-1'
+    data['protocol_commit']='c4cdd43928267aad72f1fced36774579985fe123'
     data['decision']={'production_caller':False,'generator_adopted':False,'geological_selection':'abstain',
-        'remaining_gate':'Independent geological plausibility/coherence criteria and calibration; morphology alone cannot identify terranes. Any output change additionally needs version/new-world/save and paired route acceptance.'}
+        'remaining_gate':'Validated TD ridge/basin coverage and independent geological plausibility/coherence criteria and calibration; morphology alone cannot identify terranes. Any output change additionally needs version/new-world/save and paired route acceptance.'}
     data['raw_results_sha256']=sha(source/'results.json');data['exporter_sha256']=sha(Path(__file__))
     def scrub(value):
         if isinstance(value,dict):return {k:scrub(v) for k,v in value.items() if k!='addon_origin'}

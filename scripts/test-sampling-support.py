@@ -80,5 +80,29 @@ class SamplingTests(unittest.TestCase):
         data['held_out']['selected_contrasts']['policies']['fixed_grid_4']['central_sign_agreements']=6
         self.assertEqual(s['recommend'](data)['policy'],'no supported winner')
 
+    def test_portable_runtime_evidence_replays(self):
+        import json
+        data=json.loads((s['ROOT']/'docs/evidence/sampling-support-2026-11-03.json').read_text())
+        self.assertEqual(len(data['cases']),6)
+        self.assertEqual(data['observation_units']['screened_neighborhood_rows'],486)
+        self.assertEqual(data['observation_units']['distinct_seed_native_screen_locations'],243)
+        self.assertEqual(data['observation_units']['comparison_rows'],144)
+        for name,digest in data['sources'].items():
+            # These sources are explicitly LF-pinned, including in Windows CI.
+            if name.startswith('src/runtimeProbe/') or name=='scripts/verify-sampling-support.py':
+                self.assertEqual(s['sha'](s['ROOT']/name),digest,name)
+        self.assertEqual(s['sha'](Path(__file__).with_name('summarize-sampling-support.py')),data['exporter_sha256'])
+        self.assertEqual(s['sha'](Path(__file__).with_name('sampling-reference-fields.py')),data['elongated_reference_source_sha256'])
+        for case in data['cases']:
+            self.assertEqual(s['validate_counts'](case),case['request_accounting'])
+            self.assertEqual(s['boundaries'](case),case['boundary_evaluation'])
+            self.assertEqual(s['coherence'](case['observations']),case['coherence'])
+            expected=s['d']['select'](case['scan'])+s['d']['boundary_points'](case['seed'],case['scale'])
+            self.assertEqual(case['selection'],json.loads(json.dumps(expected)))
+            for row in case['observations']:
+                self.assertIsNone(row['synthetic_geology']['stone_selection'])
+                self.assertIsNone(row['synthetic_geology']['posterior'])
+        self.assertEqual(s['recommend'](data['native_scale_summary']),data['sampling_recommendation'])
+
 
 if __name__=='__main__':unittest.main()
