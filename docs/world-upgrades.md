@@ -75,6 +75,13 @@ fixture with unchanged snapshot bytes, complete sampled blocks and all 529
 persisted terrain records. This verifies the version boundary and restoration,
 not migration or acceptance of a new geological algorithm. #9 remains open.
 
+The [multi-seed diagnostic classifier](terrain-diagnostics-2026-11-03.md) also
+leaves geology-1 unchanged. Its offline terrain-tendency identity is never saved
+as a generator and is not a new-world option. Output-changing adoption still
+requires an immutable generator identity, explicit new-world selection and real
+continuing-save rejection/restoration in both version directions. No geology-1
+snapshot migration or rewrite is authorized by these diagnostics.
+
 The [official artifact substitution test](td-artifact-2026-11-01.md) independently
 confirms startup rejection when a CPU-resolved official CUDA distribution replaces
 the original CPU JAR. Only the artifact hash differs. Restoring the exact original

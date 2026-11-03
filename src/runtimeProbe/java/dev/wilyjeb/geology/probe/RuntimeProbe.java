@@ -33,6 +33,9 @@ public final class RuntimeProbe {
     private static void commands(RegisterCommandsEvent event) {
         HotConfig.attach();
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
+            .then(Commands.literal("terrain-compare").then(Commands.argument("x",IntegerArgumentType.integer())
+                .then(Commands.argument("z",IntegerArgumentType.integer()).executes(c -> send(c.getSource(),
+                    CoarseSampler.comparison(c.getSource().getServer(),IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z")))))))
             .then(Commands.literal("coarse-check").executes(c -> {
                 try { return send(c.getSource(),CoarseSampler.check(c.getSource().getServer())); }
                 catch(Exception e) { throw new RuntimeException(e); }
