@@ -37,6 +37,12 @@ PR #46 baseline artifact. Source/artifact/raw-log and rejection/restoration
 validation passes; exported JSON values equal the committed PR #47 evidence.
 This is revalidation of retained evidence, not a rerun of its JVM matrix.
 
+A post-merge Windows checkout exposed automatic CRLF conversion of the new
+Python sources. The three new scripts are now pinned to LF in `.gitattributes`,
+matching their exact executed bytes. Re-export after restoring those checkout
+bytes passes strict source hashes and reproduces all committed JSON values;
+no raw result, artifact or recorded source digest was changed.
+
 PR #47 established the supported blocking coarse API, signed coordinates,
 Explorer channel oracle, bounded/deduplicated evidence caching and isolated CPU
 query measurements. Its numerical savings are not route savings. Its alternate
