@@ -37,6 +37,10 @@ jobs:
         run: python -m py_compile scripts/verify-terrain-diagnostics.py scripts/summarize-terrain-diagnostics.py
       - shell: pwsh
         run: python scripts/test-terrain-diagnostics.py
+      - shell: pwsh
+        run: python -m py_compile scripts/verify-sampling-support.py scripts/summarize-sampling-support.py
+      - shell: pwsh
+        run: python scripts/test-sampling-support.py
       - uses: actions/upload-artifact@v4
         with:
           name: geologic-variation-dev

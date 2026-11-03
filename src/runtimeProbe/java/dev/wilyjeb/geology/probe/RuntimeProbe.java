@@ -33,6 +33,10 @@ public final class RuntimeProbe {
     private static void commands(RegisterCommandsEvent event) {
         HotConfig.attach();
         event.getDispatcher().register(Commands.literal("acceptance").requires(s -> s.hasPermission(4))
+            .then(Commands.literal("sampling-clear").executes(c -> { SamplingDiagnostic.clear(); return send(c.getSource(),Map.of("cleared",true)); }))
+            .then(Commands.literal("sampling-compare").then(Commands.argument("x",IntegerArgumentType.integer())
+                .then(Commands.argument("z",IntegerArgumentType.integer()).executes(c -> send(c.getSource(),
+                    SamplingDiagnostic.compare(c.getSource().getServer(),IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z")))))))
             .then(Commands.literal("terrain-compare").then(Commands.argument("x",IntegerArgumentType.integer())
                 .then(Commands.argument("z",IntegerArgumentType.integer()).executes(c -> send(c.getSource(),
                     CoarseSampler.comparison(c.getSource().getServer(),IntegerArgumentType.getInteger(c,"x"),IntegerArgumentType.getInteger(c,"z")))))))
