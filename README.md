@@ -116,3 +116,7 @@ The next versioned design has four regional stones per layer alongside vanilla,
 plus a sourced library of future mineral-enrichment systems. This catalog does
 not yet change the running four-rock generator. See
 [geology research and implementation issues](docs/geology-research.md).
+
+The [multi-seed terrain diagnostics](docs/terrain-diagnostics-2026-11-03.md)
+compare supported coarse evidence with geology-1 at scales 1/6. They remain
+diagnostic only: synthetic terrane hypotheses do not select new worldgen blocks.

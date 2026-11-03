@@ -32,6 +32,15 @@ public final class CoarseSampler {
         return Map.of("arm",arm,"x",x,"z",z,"ms",ms,"delta",delta,"value",value);
     }
     public static void clear() { synchronized(CACHE) { CACHE.clear(); } }
+    /** Compare identical province anchors. Diagnostic only; never select blocks. */
+    public static Map<String,Object> comparison(MinecraftServer server,int x,int z) {
+        var region=dev.wilyjeb.geology.Geology.regionAt(server,x,z);
+        var p=region.province();
+        return Map.of("x",x,"z",z,"province",Map.of("cell_x",p.cellX(),"cell_z",p.cellZ(),
+            "anchor_x",p.anchorX(),"anchor_z",p.anchorZ(),"identity",p.identity()),
+            "fine_mean_metres",region.elevationMetres(),"fine_tile_relief_metres",region.reliefMetres(),
+            "geology_1_stone",region.stone().id(),"coarse",sample(server,p.anchorX(),p.anchorZ()));
+    }
     public static Map<String,Object> suite(MinecraftServer server) throws Exception {
         int scale=WorldScaleManager.getCurrentScale(),stride=256*scale;
         clear();
