@@ -43,6 +43,8 @@ jobs:
         run: python scripts/test-sampling-support.py
       - shell: pwsh
         run: python scripts/test-td-landforms.py
+      - shell: pwsh
+        run: python scripts/test-td-tracking.py
       - uses: actions/upload-artifact@v4
         with:
           name: geologic-variation-dev
