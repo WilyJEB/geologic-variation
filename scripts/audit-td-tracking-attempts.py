@@ -2,6 +2,7 @@
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -14,7 +15,14 @@ def audit():
         folder=ROOT/f'runs/acceptance/td-tracking-2026-11-04-{suffix}'
         files=list(folder.glob('seed*/console-1.log'))
         item=dict(attempt=folder.relative_to(ROOT).as_posix(),accepted=False,reason=reason,
-            fresh_seeds_inspected=False,logs={},raw_acceptance=[])
+            fresh_seeds_inspected=False,logs={},raw_acceptance=[],artifacts={})
+        if suffix!='01':
+            ref='ecad7da' if suffix=='02' else '2a52336'
+            item['source_commit']=subprocess.check_output(['git','rev-parse',ref],cwd=ROOT,text=True).strip()
+            item['source_manifest_complete']=False
+            item['source_manifest_note']='No completed runtime result manifest; source commit and copied artifact hashes retained. Excluded from coverage.'
+        for file in folder.glob('seed*/mods/*.jar'):
+            item['artifacts'][file.relative_to(folder).as_posix()]=hashlib.sha256(file.read_bytes()).hexdigest()
         for file in files:
             text=file.read_text(errors='replace');item['logs'][file.relative_to(folder).as_posix()]=hashlib.sha256(file.read_bytes()).hexdigest()
             item['raw_acceptance'] += [json.loads(line.split('ACCEPTANCE ',1)[1]) for line in text.splitlines() if 'ACCEPTANCE {' in line]

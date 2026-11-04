@@ -7,14 +7,14 @@ ROOT=Path(__file__).resolve().parents[1]
 
 
 def plot():
-    data=json.loads((ROOT/'docs/evidence/td-tracking.json').read_text())
+    data=json.loads((ROOT/'docs/evidence/td-tracking-negative.json').read_text())
     cases=[c for c in data['cases'] if c['scale']==1]
     image=Image.new('RGB',(1240,2140),'white');draw=ImageDraw.Draw(image)
     font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',19)
     small=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',16)
     draw.text((25,15),'TD fine-point patches: bounded localization and axis tracking',fill='black',font=font)
     draw.text((25,46),'64 native-pixel samples; x right, z down; per-panel gray range. No interpolation.',fill='black',font=small)
-    draw.text((25,71),'Blue: straight. Orange: localized fixed axis. Magenta: tracked; shoulders dashed.',fill='black',font=small)
+    draw.text((25,71),'Blue: original straight tests (X = failed side). Orange: localized. Magenta: tracked.',fill='black',font=small)
     colors=dict(straight='#0077cc',localized='#ef8a00',tracked='#c00090')
     for row,c in enumerate(cases):
         for col,a in enumerate(c['attempts']):
@@ -28,6 +28,16 @@ def plot():
                     draw.rectangle((left+x*10,top+z*10,left+x*10+9,top+z*10+9),fill=(gray,gray,gray))
             ox=a['candidate']['col']*256+128-1536;oz=a['candidate']['row']*256+128-1536
             def pos(p):return (left+(p[0]-ox)/64*10+5,top+(p[1]-oz)/64*10+5)
+            cx=a['candidate']['col']*256+128;cz=a['candidate']['row']*256+128
+            ax,az=[v*256 for v in a['candidate']['axis']]
+            sample=lambda x,z:values[(z-oz)//64][(x-ox)//64]
+            for t in range(-2,3):
+                px,pz=cx+t*ax,cz+t*az;x,y=pos((px,pz));center=sample(px,pz)
+                sides=[a['candidate']['sign']*(center-sample(px-az,pz+ax)),a['candidate']['sign']*(center-sample(px+az,pz-ax))]
+                if min(sides)<50:
+                    draw.line((x-6,y-6,x+6,y+6),fill=colors['straight'],width=3)
+                    draw.line((x-6,y+6,x+6,y-6),fill=colors['straight'],width=3)
+                else:draw.ellipse((x-5,y-5,x+5,y+5),outline=colors['straight'],width=2)
             for mode,color in colors.items():
                 run=a['diagnosis']['runs'][mode];points=[pos(p['point']) for p in run['stations']]
                 if len(points)>1:draw.line(points,fill=color,width=3)

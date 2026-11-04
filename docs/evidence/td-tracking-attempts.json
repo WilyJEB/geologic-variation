@@ -6,7 +6,8 @@
       "reason": "sandbox denied immutable hardlink before launch",
       "fresh_seeds_inspected": false,
       "logs": {},
-      "raw_acceptance": []
+      "raw_acceptance": [],
+      "artifacts": {}
     },
     {
       "attempt": "runs/acceptance/td-tracking-2026-11-04-02",
@@ -2156,6 +2157,14 @@
           "fine_cache_entries": 3
         }
       ],
+      "artifacts": {
+        "seed8675309-s1/mods/geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "seed8675309-s1/mods/geology-runtime-probe-0.2.2-dev.jar": "59ab2e98d2ba5bf03b9822f3a4d9038f1957eea8ee8d0d835969265b5310f527",
+        "seed8675309-s1/mods/NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "source_commit": "ecad7da7162d329132e48d74ca16256198041d5e",
+      "source_manifest_complete": false,
+      "source_manifest_note": "No completed runtime result manifest; source commit and copied artifact hashes retained. Excluded from coverage.",
       "completed_model_return_log_rows": 1282,
       "model_return_rows_are_not_new_window_counts": true,
       "new_window_total": null,
@@ -4055,6 +4064,14 @@
           "col": 16
         }
       ],
+      "artifacts": {
+        "seed8675309-s1/mods/geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+        "seed8675309-s1/mods/geology-runtime-probe-0.2.2-dev.jar": "d177a368ec26ec3f2cc09ca701219ae3e938f4b8194e156da27d904ef20f5065",
+        "seed8675309-s1/mods/NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8"
+      },
+      "source_commit": "2a52336fb926a89e15e13940cd2fddd339341e0d",
+      "source_manifest_complete": false,
+      "source_manifest_note": "No completed runtime result manifest; source commit and copied artifact hashes retained. Excluded from coverage.",
       "completed_model_return_log_rows": 754,
       "model_return_rows_are_not_new_window_counts": true,
       "new_window_total": null,

@@ -32,5 +32,5 @@ def audit(data):
 
 
 if __name__=='__main__':
-    data=json.loads((ROOT/'docs/evidence/td-tracking.json').read_text())
+    data=json.loads((ROOT/'docs/evidence/td-tracking-negative.json').read_text())
     (ROOT/'docs/evidence/td-tracking-retained.json').write_text(json.dumps(audit(data),indent=2)+'\n')

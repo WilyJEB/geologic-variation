@@ -124,3 +124,8 @@ diagnostic only: synthetic terrane hypotheses do not select new worldgen blocks.
 The [bounded TD ridge/basin coverage diagnostic](docs/td-landforms-2026-11-03.md)
 tests cross-axis extrema and finite longitudinal support before geological
 classification. It preserves failed coverage gates and leaves geology-1 unchanged.
+
+The [bounded center/orientation follow-up](docs/td-tracking.md) separates
+off-center recovery, turning paths and unresolved interruptions. Fine points,
+native-cell means and scaled tiles remain separate; failed strict criteria and
+geological abstention remain visible.
