@@ -27,6 +27,7 @@ public final class TrackingPatch {
             .then(Commands.literal("track-clear").executes(c -> {
                 grid=null;owner=null;
                 String json="ACCEPTANCE {\"cleared\":true}";
+                org.slf4j.LoggerFactory.getLogger("GeologyRuntimeProbe").info(json);
                 c.getSource().sendSuccess(() -> Component.literal(json),false);return 1;
             }))
             .then(Commands.literal("track-patch").then(Commands.argument("col",IntegerArgumentType.integer(-80,80))
@@ -35,6 +36,7 @@ public final class TrackingPatch {
                         var value=band(c.getSource().getServer(),IntegerArgumentType.getInteger(c,"col"),
                             IntegerArgumentType.getInteger(c,"row"),IntegerArgumentType.getInteger(c,"band"));
                         String json="ACCEPTANCE "+new Gson().toJson(value);
+                        org.slf4j.LoggerFactory.getLogger("GeologyRuntimeProbe").info(json);
                         c.getSource().sendSuccess(() -> Component.literal(json),false);return 1;
                     }))))));
     }
