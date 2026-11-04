@@ -23,9 +23,14 @@ def angle(a, b):
 def track(sample, origin, axis, sign):
     norm=math.hypot(*axis); axis=tuple(v/norm for v in axis)
     decisions=[]
-    def options(expected, previous, initial=False):
+    def options(expected, previous, initial=False, direction=1):
         offsets=[(x,z) for z in range(-128,129,64) for x in range(-128,129,64)
-                 if math.hypot(x,z)<=128] if initial else [(-previous[1]*v,previous[0]*v) for v in (-64,0,64)]
+                 if math.hypot(x,z)<=128] if initial else [
+                    # Retreat along the predicted tangent to keep every actual
+                    # center-to-center step exactly 256 after a lateral search.
+                    (direction*(math.sqrt(256**2-v**2)-256)*previous[0]-previous[1]*v,
+                     direction*(math.sqrt(256**2-v**2)-256)*previous[1]+previous[0]*v)
+                    for v in (-64,0,64)]
         out=[]
         for dx,dz in offsets:
             p=(expected[0]+dx,expected[1]+dz)
@@ -56,7 +61,8 @@ def track(sample, origin, axis, sign):
         for step in (1,2):
             expected=tuple(previous['point'][i]+direction*256*previous['axis'][i] for i in (0,1))
             ref=tuple(origin[i]+direction*step*256*axis[i] for i in (0,1))
-            opts=[p for p in options(expected,previous['axis']) if math.dist(p['point'],ref)<=256]
+            opts=options(expected,previous['axis'],direction=direction)
+            opts=[p for p in opts if math.dist(p['point'],ref)<=256]
             decisions.append(opts);p=choose(opts)
             if p is None:break
             total_turn+=angle(p['axis'],previous['axis']);branch.append(p);previous=p

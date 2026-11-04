@@ -50,3 +50,4 @@ scripts/verify-td-numerics.py text eol=lf
 scripts/export-td-numerics.py text eol=lf
 scripts/test-td-geometry-numerics.py text eol=lf
 *.bin binary
+scripts/audit-td-geometry-sensitivity.py text eol=lf

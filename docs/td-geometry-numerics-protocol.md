@@ -58,3 +58,12 @@ bidirectional continuing-save rejection, exact restoration/reopen and complete
 snapshot/block/persisted-container preservation. Never migrate geology-1.
 Integrated candidates require alternating paired CPU startup/cold/warm/full-route
 benchmarks on NEW fixtures; isolated-query savings are not route savings.
+
+Offline implementation correction after numerical collection (no new TD run):
+lateral +/-64px center alternatives now retreat along the tangent by
+256-sqrt(256^2-64^2), so actual center-to-center distance is exactly256, including
+the backwards branch. The earlier implementation kept predicted distance256 but
+actual lateral steps were263.88. Revised calibration remains development data;
+its saddle/isolated-extremum failures remain visible. Numerical collection used
+56cfca7 source bytes, retained verbatim inside the portable archive. The numerical
+probe/collector were not changed; this geometry correction did not execute TD.

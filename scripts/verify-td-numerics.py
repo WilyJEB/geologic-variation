@@ -22,6 +22,10 @@ def run(args):
     data=dict(protocol_commit='fff65b4',base='6c5f105',sources={n:r['sha'](ROOT/n) for n in sources},
         artifacts={str(p.relative_to(ROOT)):r['sha'](p) for p in (args.td,args.addon,args.probe)},
         models=base['manifest'](args.models),template=base['manifest'](args.template),cases=[],requests=0)
+    data['source_commit']=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+    for name in sources:
+        target=args.output/'executed-sources'/name;target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_bytes((ROOT/name).read_bytes())
     def save():
         data['elapsed_seconds']=time.monotonic()-start;data['requests']=requests
         (args.output/'results.json').write_text(json.dumps(data,indent=2)+'\n')

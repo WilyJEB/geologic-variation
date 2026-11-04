@@ -1,0 +1,499 @@
+{
+  "rows": [
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "role": "reused development",
+      "runs": [
+        {
+          "perturbation_metres": 0,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "points": [
+            [
+              3889.472472493293,
+              12726.510442345161
+            ],
+            [
+              4019.4888568990073,
+              12505.984389947569
+            ],
+            [
+              4224,
+              12352
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": -0.1,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "points": [
+            [
+              3889.472472493293,
+              12726.510442345161
+            ],
+            [
+              4019.4888568990073,
+              12505.984389947569
+            ],
+            [
+              4224,
+              12352
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": 0.1,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "points": [
+            [
+              3889.472472493293,
+              12726.510442345161
+            ],
+            [
+              4019.4888568990073,
+              12505.984389947569
+            ],
+            [
+              4224,
+              12352
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "role": "reused development",
+      "runs": [
+        {
+          "perturbation_metres": 0,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "points": [
+            [
+              -8028.272190213875,
+              -8445.494622443724
+            ],
+            [
+              -8064,
+              -8192
+            ],
+            [
+              -8099.727809786125,
+              -7938.505377556276
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": -0.1,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "points": [
+            [
+              -8028.272190213875,
+              -8445.494622443724
+            ],
+            [
+              -8064,
+              -8192
+            ],
+            [
+              -8099.727809786125,
+              -7938.505377556276
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": 0.1,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "points": [
+            [
+              -8028.272190213875,
+              -8445.494622443724
+            ],
+            [
+              -8064,
+              -8192
+            ],
+            [
+              -8099.727809786125,
+              -7938.505377556276
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "role": "reused development",
+      "runs": [
+        {
+          "perturbation_metres": 0,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "points": [
+            [
+              92.27219021387529,
+              12290.505377556276
+            ],
+            [
+              128,
+              12544
+            ],
+            [
+              225.966958685463,
+              12780.51316032289
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": -0.1,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "points": [
+            [
+              92.27219021387529,
+              12290.505377556276
+            ],
+            [
+              128,
+              12544
+            ],
+            [
+              225.966958685463,
+              12780.51316032289
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": 0.1,
+          "supported": false,
+          "stations": 3,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "points": [
+            [
+              92.27219021387529,
+              12290.505377556276
+            ],
+            [
+              128,
+              12544
+            ],
+            [
+              225.966958685463,
+              12780.51316032289
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "role": "reused development",
+      "runs": [
+        {
+          "perturbation_metres": 0,
+          "supported": false,
+          "stations": 4,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "points": [
+            [
+              16476.272190213876,
+              4413.494622443724
+            ],
+            [
+              16512,
+              4160
+            ],
+            [
+              16665.984389947567,
+              3955.4888568990073
+            ],
+            [
+              16701.71219973369,
+              3701.994234455283
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": -0.1,
+          "supported": false,
+          "stations": 4,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "points": [
+            [
+              16476.272190213876,
+              4413.494622443724
+            ],
+            [
+              16512,
+              4160
+            ],
+            [
+              16665.984389947567,
+              3955.4888568990073
+            ],
+            [
+              16701.71219973369,
+              3701.994234455283
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": 0.1,
+          "supported": false,
+          "stations": 4,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "points": [
+            [
+              16476.272190213876,
+              4413.494622443724
+            ],
+            [
+              16512,
+              4160
+            ],
+            [
+              16665.984389947567,
+              3955.4888568990073
+            ],
+            [
+              16701.71219973369,
+              3701.994234455283
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "role": "reused development",
+      "runs": [
+        {
+          "perturbation_metres": 0,
+          "supported": true,
+          "stations": 5,
+          "reasons": [],
+          "points": [
+            [
+              -410.02067484131675,
+              -7834.255805808161
+            ],
+            [
+              -156.52605239759217,
+              -7869.983615594287
+            ],
+            [
+              64,
+              -8000
+            ],
+            [
+              284.5260523975922,
+              -8130.016384405713
+            ],
+            [
+              320.253862183717,
+              -8383.511006849438
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": -0.1,
+          "supported": true,
+          "stations": 5,
+          "reasons": [],
+          "points": [
+            [
+              -410.02067484131675,
+              -7834.255805808161
+            ],
+            [
+              -156.52605239759217,
+              -7869.983615594287
+            ],
+            [
+              64,
+              -8000
+            ],
+            [
+              284.5260523975922,
+              -8130.016384405713
+            ],
+            [
+              320.253862183717,
+              -8383.511006849438
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": 0.1,
+          "supported": true,
+          "stations": 5,
+          "reasons": [],
+          "points": [
+            [
+              -410.02067484131675,
+              -7834.255805808161
+            ],
+            [
+              -156.52605239759217,
+              -7869.983615594287
+            ],
+            [
+              64,
+              -8000
+            ],
+            [
+              284.5260523975922,
+              -8130.016384405713
+            ],
+            [
+              320.253862183717,
+              -8383.511006849438
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "role": "reused development",
+      "runs": [
+        {
+          "perturbation_metres": 0,
+          "supported": true,
+          "stations": 5,
+          "reasons": [],
+          "points": [
+            [
+              -92.00077435328353,
+              -4457.037195498585
+            ],
+            [
+              38.01561005243058,
+              -4236.511143100993
+            ],
+            [
+              192,
+              -4032
+            ],
+            [
+              227.7278097861247,
+              -3778.5053775562756
+            ],
+            [
+              448.25386218371693,
+              -3648.4889931505613
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": -0.1,
+          "supported": true,
+          "stations": 5,
+          "reasons": [],
+          "points": [
+            [
+              -92.00077435328353,
+              -4457.037195498585
+            ],
+            [
+              38.01561005243058,
+              -4236.511143100993
+            ],
+            [
+              192,
+              -4032
+            ],
+            [
+              227.7278097861247,
+              -3778.5053775562756
+            ],
+            [
+              448.25386218371693,
+              -3648.4889931505613
+            ]
+          ]
+        },
+        {
+          "perturbation_metres": 0.1,
+          "supported": true,
+          "stations": 5,
+          "reasons": [],
+          "points": [
+            [
+              -92.00077435328353,
+              -4457.037195498585
+            ],
+            [
+              38.01561005243058,
+              -4236.511143100993
+            ],
+            [
+              192,
+              -4032
+            ],
+            [
+              227.7278097861247,
+              -3778.5053775562756
+            ],
+            [
+              448.25386218371693,
+              -3648.4889931505613
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "td_execution": false,
+  "confirmed_extrema": false,
+  "interpretation": "Two checkerboard perturbations are sensitivity cases, not a worst-case bound, tolerance, or repaired strict equality"
+}
