@@ -44,3 +44,10 @@ scripts/test-negative-td-tracking.py text eol=lf
 gradlew text eol=lf
 *.bat text eol=crlf
 *.jar binary
+scripts/td-geometry-arc.py text eol=lf
+scripts/calibrate-td-geometry.py text eol=lf
+scripts/verify-td-numerics.py text eol=lf
+scripts/export-td-numerics.py text eol=lf
+scripts/test-td-geometry-numerics.py text eol=lf
+*.bin binary
+scripts/audit-td-geometry-sensitivity.py text eol=lf

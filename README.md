@@ -129,3 +129,7 @@ The [bounded center/orientation follow-up](docs/td-tracking.md) separates
 off-center recovery, turning paths and unresolved interruptions. Fine points,
 native-cell means and scaled tiles remain separate; failed strict criteria and
 geological abstention remain visible.
+
+The [constant-support geometry and numerical calibration](docs/td-geometry-numerics.md)
+retains analytical false positives and a small exact-bit request-shape reproducer.
+Fresh validation remains gated; geology-1 is unchanged.
