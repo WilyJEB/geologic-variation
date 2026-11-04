@@ -1,0 +1,4931 @@
+{
+  "rows": [
+    {
+      "seed": 8675309,
+      "split": "development",
+      "kind": "ridge",
+      "original_stations": [
+        {
+          "point": [
+            3712,
+            12928
+          ],
+          "height": -463.2418,
+          "margins": [
+            331.94489999999996,
+            616.7947999999999
+          ]
+        },
+        {
+          "point": [
+            3968,
+            12672
+          ],
+          "height": -1040.9563,
+          "margins": [
+            444.67740000000003,
+            1493.5183
+          ]
+        },
+        {
+          "point": [
+            4224,
+            12416
+          ],
+          "height": -903.5681,
+          "margins": [
+            1221.0124999999998,
+            1202.7481000000002
+          ]
+        },
+        {
+          "point": [
+            4480,
+            12160
+          ],
+          "height": -2133.6992,
+          "margins": [
+            315.03780000000006,
+            84.54860000000008
+          ]
+        },
+        {
+          "point": [
+            4736,
+            11904
+          ],
+          "height": -2406.1162,
+          "margins": [
+            -778.9348,
+            -65.1875
+          ]
+        }
+      ],
+      "original_fine_point_strict": {
+        "supported": false,
+        "reasons": [
+          "two-sided extremum below 50 m",
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            331.94489999999996,
+            616.7947999999999
+          ],
+          [
+            444.67740000000003,
+            1493.5183
+          ],
+          [
+            1221.0124999999998,
+            1202.7481000000002
+          ],
+          [
+            315.03780000000006,
+            84.54860000000008
+          ],
+          [
+            -778.9348,
+            -65.1875
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": -778.9348,
+        "longitudinal_range_metres": 1942.8744,
+        "longitudinal_linear_residual_metres": 531.1109000000001
+      },
+      "original_two_sided_stations": 4,
+      "localized_two_sided_stations": 5,
+      "tracked_two_sided_stations": 5,
+      "frozen_original_straight_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path",
+          "longitudinal range exceeds twice weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            331.94489999999996,
+            616.7947999999999
+          ],
+          [
+            444.67740000000003,
+            1493.5183
+          ],
+          [
+            1221.0124999999998,
+            1202.7481000000002
+          ],
+          [
+            315.03780000000006,
+            84.54860000000008
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 84.54860000000008,
+        "longitudinal_range_metres": 1670.4574,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "straight",
+        "stations": [
+          {
+            "point": [
+              3712,
+              12928
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -463.2418,
+            "margins": [
+              331.94489999999996,
+              616.7947999999999
+            ],
+            "score": 331.94489999999996
+          },
+          {
+            "point": [
+              3968,
+              12672
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -1040.9563,
+            "margins": [
+              444.67740000000003,
+              1493.5183
+            ],
+            "score": 444.67740000000003
+          },
+          {
+            "point": [
+              4224,
+              12416
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -903.5681,
+            "margins": [
+              1221.0124999999998,
+              1202.7481000000002
+            ],
+            "score": 1202.7481000000002
+          },
+          {
+            "point": [
+              4480,
+              12160
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -2133.6992,
+            "margins": [
+              315.03780000000006,
+              84.54860000000008
+            ],
+            "score": 84.54860000000008
+          }
+        ],
+        "center_displacement_native_pixels": 0.0,
+        "total_turn_degrees": 2.5613209387547816e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1086.1160159025371
+      },
+      "frozen_localized_result": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            418.13356,
+            336.88645999999994
+          ],
+          [
+            1326.0806,
+            1363.1211
+          ],
+          [
+            1382.4208600000002,
+            1327.07706
+          ],
+          [
+            382.74749999999995,
+            1005.8400999999999
+          ],
+          [
+            421.34090000000015,
+            1351.7304
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 336.88645999999994,
+        "longitudinal_range_metres": 867.8088600000001,
+        "longitudinal_linear_residual_metres": 312.62447999999995,
+        "mode": "localized",
+        "stations": [
+          {
+            "point": [
+              3840,
+              12928
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -769.03784,
+            "margins": [
+              418.13356,
+              336.88645999999994
+            ],
+            "score": 336.88645999999994
+          },
+          {
+            "point": [
+              4096,
+              12544
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -1153.2937,
+            "margins": [
+              1326.0806,
+              1363.1211
+            ],
+            "score": 1326.0806
+          },
+          {
+            "point": [
+              4288,
+              12352
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -872.58844,
+            "margins": [
+              1382.4208600000002,
+              1327.07706
+            ],
+            "score": 1327.07706
+          },
+          {
+            "point": [
+              4416,
+              12096
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -1636.8467,
+            "margins": [
+              382.74749999999995,
+              1005.8400999999999
+            ],
+            "score": 382.74749999999995
+          },
+          {
+            "point": [
+              4544,
+              11840
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -1601.388,
+            "margins": [
+              421.34090000000015,
+              1351.7304
+            ],
+            "score": 421.34090000000015
+          }
+        ],
+        "center_displacement_native_pixels": 90.50966799187809,
+        "total_turn_degrees": 3.4150945850063755e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1305.472969474971
+      },
+      "frozen_tracked_result": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            418.13356,
+            336.88645999999994
+          ],
+          [
+            1326.0806,
+            1363.1211
+          ],
+          [
+            1382.4208600000002,
+            1327.07706
+          ],
+          [
+            454.5571,
+            573.5801000000001
+          ],
+          [
+            216.5114000000001,
+            404.2093000000002
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 216.5114000000001,
+        "longitudinal_range_metres": 1037.17966,
+        "longitudinal_linear_residual_metres": 415.03922999999986,
+        "mode": "tracked",
+        "stations": [
+          {
+            "point": [
+              3840,
+              12928
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -769.03784,
+            "margins": [
+              418.13356,
+              336.88645999999994
+            ],
+            "score": 336.88645999999994
+          },
+          {
+            "point": [
+              4096,
+              12544
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -1153.2937,
+            "margins": [
+              1326.0806,
+              1363.1211
+            ],
+            "score": 1326.0806
+          },
+          {
+            "point": [
+              4288,
+              12352
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -872.58844,
+            "margins": [
+              1382.4208600000002,
+              1327.07706
+            ],
+            "score": 1327.07706
+          },
+          {
+            "point": [
+              4416,
+              12096
+            ],
+            "axis": [
+              256,
+              -128
+            ],
+            "height": -1636.8467,
+            "margins": [
+              454.5571,
+              573.5801000000001
+            ],
+            "score": 454.5571
+          },
+          {
+            "point": [
+              4544,
+              11968
+            ],
+            "axis": [
+              128,
+              -256
+            ],
+            "height": -1806.2175,
+            "margins": [
+              216.5114000000001,
+              404.2093000000002
+            ],
+            "score": 216.5114000000001
+          }
+        ],
+        "center_displacement_native_pixels": 90.50966799187809,
+        "total_turn_degrees": 55.304848176313335,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1200.2756043387542
+      }
+    },
+    {
+      "seed": 8675309,
+      "split": "development",
+      "kind": "basin",
+      "original_stations": [
+        {
+          "point": [
+            -8064,
+            -8576
+          ],
+          "height": -2626.7744,
+          "margins": [
+            632.6509999999998,
+            -319.48590000000013
+          ]
+        },
+        {
+          "point": [
+            -8064,
+            -8320
+          ],
+          "height": -2375.3315,
+          "margins": [
+            1316.8048,
+            -57.34280000000035
+          ]
+        },
+        {
+          "point": [
+            -8064,
+            -8064
+          ],
+          "height": -1596.6321,
+          "margins": [
+            893.71846,
+            809.13234
+          ]
+        },
+        {
+          "point": [
+            -8064,
+            -7808
+          ],
+          "height": -18.939644,
+          "margins": [
+            43.476521000000005,
+            1.2951180000000022
+          ]
+        },
+        {
+          "point": [
+            -8064,
+            -7552
+          ],
+          "height": 34.20848,
+          "margins": [
+            -2.8390060000000013,
+            -3.707220000000003
+          ]
+        }
+      ],
+      "original_fine_point_strict": {
+        "supported": false,
+        "reasons": [
+          "two-sided extremum below 50 m",
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            632.6509999999998,
+            -319.48590000000013
+          ],
+          [
+            1316.8048,
+            -57.34280000000035
+          ],
+          [
+            893.71846,
+            809.13234
+          ],
+          [
+            43.476521000000005,
+            1.2951180000000022
+          ],
+          [
+            -2.8390060000000013,
+            -3.707220000000003
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": -319.48590000000013,
+        "longitudinal_range_metres": 2660.9828799999996,
+        "longitudinal_linear_residual_metres": 612.0975960000001
+      },
+      "original_two_sided_stations": 1,
+      "localized_two_sided_stations": 3,
+      "tracked_two_sided_stations": 3,
+      "frozen_original_straight_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path"
+        ],
+        "station_margins_metres": [
+          [
+            893.71846,
+            809.13234
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 809.13234,
+        "longitudinal_range_metres": 0.0,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "straight",
+        "stations": [
+          {
+            "point": [
+              -8064,
+              -8064
+            ],
+            "axis": [
+              0,
+              256
+            ],
+            "height": -1596.6321,
+            "margins": [
+              893.71846,
+              809.13234
+            ],
+            "score": 809.13234
+          }
+        ],
+        "center_displacement_native_pixels": 0.0,
+        "total_turn_degrees": 0,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 0
+      },
+      "frozen_localized_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path",
+          "longitudinal range exceeds twice weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            1525.5634599999998,
+            74.95019999999977
+          ],
+          [
+            893.71846,
+            809.13234
+          ],
+          [
+            512.418967,
+            460.84958
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 74.95019999999977,
+        "longitudinal_range_metres": 1941.84548,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "localized",
+        "stations": [
+          {
+            "point": [
+              -8128,
+              -8320
+            ],
+            "axis": [
+              0,
+              256
+            ],
+            "height": -2444.7495,
+            "margins": [
+              1525.5634599999998,
+              74.95019999999977
+            ],
+            "score": 74.95019999999977
+          },
+          {
+            "point": [
+              -8064,
+              -8064
+            ],
+            "axis": [
+              0,
+              256
+            ],
+            "height": -1596.6321,
+            "margins": [
+              893.71846,
+              809.13234
+            ],
+            "score": 809.13234
+          },
+          {
+            "point": [
+              -8064,
+              -7936
+            ],
+            "axis": [
+              0,
+              256
+            ],
+            "height": -502.90402,
+            "margins": [
+              512.418967,
+              460.84958
+            ],
+            "score": 460.84958
+          }
+        ],
+        "center_displacement_native_pixels": 0.0,
+        "total_turn_degrees": 0.0,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 391.8787600395303
+      },
+      "frozen_tracked_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path",
+          "longitudinal range exceeds twice weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            601.8240000000001,
+            824.3179
+          ],
+          [
+            1356.9849599999998,
+            1245.5648999999999
+          ],
+          [
+            396.132752,
+            333.34425
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 333.34425,
+        "longitudinal_range_metres": 2156.775,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "tracked",
+        "stations": [
+          {
+            "point": [
+              -8064,
+              -8384
+            ],
+            "axis": [
+              -256,
+              256
+            ],
+            "height": -2558.6646,
+            "margins": [
+              601.8240000000001,
+              824.3179
+            ],
+            "score": 601.8240000000001
+          },
+          {
+            "point": [
+              -8128,
+              -8192
+            ],
+            "axis": [
+              -128,
+              256
+            ],
+            "height": -2276.171,
+            "margins": [
+              1356.9849599999998,
+              1245.5648999999999
+            ],
+            "score": 1245.5648999999999
+          },
+          {
+            "point": [
+              -8128,
+              -7936
+            ],
+            "axis": [
+              0,
+              256
+            ],
+            "height": -401.8896,
+            "margins": [
+              396.132752,
+              333.34425
+            ],
+            "score": 333.34425
+          }
+        ],
+        "center_displacement_native_pixels": 143.10835055998655,
+        "total_turn_degrees": 45.00000000000003,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 458.3857702507763
+      }
+    },
+    {
+      "seed": 2026110407,
+      "split": "held_out",
+      "kind": "ridge",
+      "original_stations": [
+        {
+          "point": [
+            -384,
+            11904
+          ],
+          "height": -1593.345,
+          "margins": [
+            1980.6319999999998,
+            483.3680999999999
+          ]
+        },
+        {
+          "point": [
+            -128,
+            12160
+          ],
+          "height": -1564.7589,
+          "margins": [
+            688.7900999999999,
+            197.43079999999986
+          ]
+        },
+        {
+          "point": [
+            128,
+            12416
+          ],
+          "height": -1068.1652,
+          "margins": [
+            1955.7024999999999,
+            837.8095000000001
+          ]
+        },
+        {
+          "point": [
+            384,
+            12672
+          ],
+          "height": -3428.894,
+          "margins": [
+            -59.25799999999981,
+            -737.3163999999997
+          ]
+        },
+        {
+          "point": [
+            640,
+            12928
+          ],
+          "height": -3852.9453,
+          "margins": [
+            422.0287000000003,
+            -345.1234999999997
+          ]
+        }
+      ],
+      "original_fine_point_strict": {
+        "supported": false,
+        "reasons": [
+          "two-sided extremum below 50 m",
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            1980.6319999999998,
+            483.3680999999999
+          ],
+          [
+            688.7900999999999,
+            197.43079999999986
+          ],
+          [
+            1955.7024999999999,
+            837.8095000000001
+          ],
+          [
+            -59.25799999999981,
+            -737.3163999999997
+          ],
+          [
+            422.0287000000003,
+            -345.1234999999997
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": -737.3163999999997,
+        "longitudinal_range_metres": 2784.7801,
+        "longitudinal_linear_residual_metres": 1654.9799500000004
+      },
+      "original_two_sided_stations": 3,
+      "localized_two_sided_stations": 3,
+      "tracked_two_sided_stations": 4,
+      "frozen_original_straight_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path",
+          "longitudinal range exceeds twice weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            1980.6319999999998,
+            483.3680999999999
+          ],
+          [
+            688.7900999999999,
+            197.43079999999986
+          ],
+          [
+            1955.7024999999999,
+            837.8095000000001
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 197.43079999999986,
+        "longitudinal_range_metres": 525.1798000000001,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "straight",
+        "stations": [
+          {
+            "point": [
+              -384,
+              11904
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1593.345,
+            "margins": [
+              1980.6319999999998,
+              483.3680999999999
+            ],
+            "score": 483.3680999999999
+          },
+          {
+            "point": [
+              -128,
+              12160
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1564.7589,
+            "margins": [
+              688.7900999999999,
+              197.43079999999986
+            ],
+            "score": 197.43079999999986
+          },
+          {
+            "point": [
+              128,
+              12416
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1068.1652,
+            "margins": [
+              1955.7024999999999,
+              837.8095000000001
+            ],
+            "score": 837.8095000000001
+          }
+        ],
+        "center_displacement_native_pixels": 0.0,
+        "total_turn_degrees": 1.7075472925031877e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 724.0773439350247
+      },
+      "frozen_localized_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path"
+        ],
+        "station_margins_metres": [
+          [
+            2141.5137999999997,
+            547.7205999999999
+          ],
+          [
+            622.8608000000002,
+            383.39909999999986
+          ],
+          [
+            1690.7450999999999,
+            1492.3176
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 383.39909999999986,
+        "longitudinal_range_metres": 546.6408000000001,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "localized",
+        "stations": [
+          {
+            "point": [
+              -384,
+              11968
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1573.9772,
+            "margins": [
+              2141.5137999999997,
+              547.7205999999999
+            ],
+            "score": 547.7205999999999
+          },
+          {
+            "point": [
+              -128,
+              12096
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1565.0822,
+            "margins": [
+              622.8608000000002,
+              383.39909999999986
+            ],
+            "score": 383.39909999999986
+          },
+          {
+            "point": [
+              192,
+              12416
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1027.3364,
+            "margins": [
+              1690.7450999999999,
+              1492.3176
+            ],
+            "score": 1492.3176
+          }
+        ],
+        "center_displacement_native_pixels": 64.0,
+        "total_turn_degrees": 1.7075472925031877e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 738.7650410793635
+      },
+      "frozen_tracked_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path",
+          "longitudinal range exceeds twice weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            1659.3137,
+            582.6202999999998
+          ],
+          [
+            622.8608000000002,
+            383.39909999999986
+          ],
+          [
+            1690.7450999999999,
+            1492.3176
+          ],
+          [
+            312.78099999999995,
+            128.88549999999987
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 128.88549999999987,
+        "longitudinal_range_metres": 1923.0501000000002,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "tracked",
+        "stations": [
+          {
+            "point": [
+              -384,
+              11904
+            ],
+            "axis": [
+              256,
+              128
+            ],
+            "height": -1593.345,
+            "margins": [
+              1659.3137,
+              582.6202999999998
+            ],
+            "score": 582.6202999999998
+          },
+          {
+            "point": [
+              -128,
+              12096
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1565.0822,
+            "margins": [
+              622.8608000000002,
+              383.39909999999986
+            ],
+            "score": 383.39909999999986
+          },
+          {
+            "point": [
+              192,
+              12416
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1027.3364,
+            "margins": [
+              1690.7450999999999,
+              1492.3176
+            ],
+            "score": 1492.3176
+          },
+          {
+            "point": [
+              320,
+              12672
+            ],
+            "axis": [
+              256,
+              128
+            ],
+            "height": -2950.3865,
+            "margins": [
+              312.78099999999995,
+              128.88549999999987
+            ],
+            "score": 128.88549999999987
+          }
+        ],
+        "center_displacement_native_pixels": 64.0,
+        "total_turn_degrees": 36.869898499617676,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1058.7650410793635
+      }
+    },
+    {
+      "seed": 2026110407,
+      "split": "held_out",
+      "kind": "basin",
+      "original_stations": [
+        {
+          "point": [
+            16000,
+            4736
+          ],
+          "height": 250.86975,
+          "margins": [
+            -223.34932,
+            -273.308133
+          ]
+        },
+        {
+          "point": [
+            16256,
+            4480
+          ],
+          "height": -1284.7654,
+          "margins": [
+            1192.19562,
+            480.0684
+          ]
+        },
+        {
+          "point": [
+            16512,
+            4224
+          ],
+          "height": -3019.3826,
+          "margins": [
+            2285.3215999999998,
+            1709.0655
+          ]
+        },
+        {
+          "point": [
+            16768,
+            3968
+          ],
+          "height": -3046.0925,
+          "margins": [
+            2444.0983,
+            603.2368000000001
+          ]
+        },
+        {
+          "point": [
+            17024,
+            3712
+          ],
+          "height": -1374.1865,
+          "margins": [
+            445.20774000000006,
+            -1221.1438
+          ]
+        }
+      ],
+      "original_fine_point_strict": {
+        "supported": false,
+        "reasons": [
+          "two-sided extremum below 50 m",
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            -223.34932,
+            -273.308133
+          ],
+          [
+            1192.19562,
+            480.0684
+          ],
+          [
+            2285.3215999999998,
+            1709.0655
+          ],
+          [
+            2444.0983,
+            603.2368000000001
+          ],
+          [
+            445.20774000000006,
+            -1221.1438
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": -1221.1438,
+        "longitudinal_range_metres": 3296.96225,
+        "longitudinal_linear_residual_metres": 2457.724225
+      },
+      "original_two_sided_stations": 3,
+      "localized_two_sided_stations": 4,
+      "tracked_two_sided_stations": 5,
+      "frozen_original_straight_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path",
+          "longitudinal range exceeds twice weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            1192.19562,
+            480.0684
+          ],
+          [
+            2285.3215999999998,
+            1709.0655
+          ],
+          [
+            2444.0983,
+            603.2368000000001
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 480.0684,
+        "longitudinal_range_metres": 1761.3271000000002,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "straight",
+        "stations": [
+          {
+            "point": [
+              16256,
+              4480
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -1284.7654,
+            "margins": [
+              1192.19562,
+              480.0684
+            ],
+            "score": 480.0684
+          },
+          {
+            "point": [
+              16512,
+              4224
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -3019.3826,
+            "margins": [
+              2285.3215999999998,
+              1709.0655
+            ],
+            "score": 1709.0655
+          },
+          {
+            "point": [
+              16768,
+              3968
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -3046.0925,
+            "margins": [
+              2444.0983,
+              603.2368000000001
+            ],
+            "score": 603.2368000000001
+          }
+        ],
+        "center_displacement_native_pixels": 0.0,
+        "total_turn_degrees": 1.7075472925031877e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 724.0773439350247
+      },
+      "frozen_localized_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path"
+        ],
+        "station_margins_metres": [
+          [
+            1347.2498,
+            1419.6211
+          ],
+          [
+            2424.2637000000004,
+            2874.9239000000002
+          ],
+          [
+            1983.6530000000002,
+            979.5827000000004
+          ],
+          [
+            1118.593,
+            547.1055000000001
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 547.1055000000001,
+        "longitudinal_range_metres": 961.8006,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "localized",
+        "stations": [
+          {
+            "point": [
+              16384,
+              4352
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -2503.8901,
+            "margins": [
+              1347.2498,
+              1419.6211
+            ],
+            "score": 1347.2498
+          },
+          {
+            "point": [
+              16576,
+              4032
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -3465.6907,
+            "margins": [
+              2424.2637000000004,
+              2874.9239000000002
+            ],
+            "score": 2424.2637000000004
+          },
+          {
+            "point": [
+              16704,
+              3776
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -3331.184,
+            "margins": [
+              1983.6530000000002,
+              979.5827000000004
+            ],
+            "score": 979.5827000000004
+          },
+          {
+            "point": [
+              17024,
+              3520
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -2689.94,
+            "margins": [
+              1118.593,
+              547.1055000000001
+            ],
+            "score": 547.1055000000001
+          }
+        ],
+        "center_displacement_native_pixels": 202.3857702507763,
+        "total_turn_degrees": 2.5613209387547816e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1069.1975735857745
+      },
+      "frozen_tracked_result": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            405.65826,
+            211.39076
+          ],
+          [
+            1347.2498,
+            1419.6211
+          ],
+          [
+            2424.2637000000004,
+            2874.9239000000002
+          ],
+          [
+            1496.4194000000002,
+            1571.1388000000002
+          ],
+          [
+            1402.9875000000002,
+            586.5451000000003
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 211.39076,
+        "longitudinal_range_metres": 3112.97857,
+        "longitudinal_linear_residual_metres": 1924.644835,
+        "mode": "tracked",
+        "stations": [
+          {
+            "point": [
+              16064,
+              4544
+            ],
+            "axis": [
+              128,
+              -256
+            ],
+            "height": -352.71213,
+            "margins": [
+              405.65826,
+              211.39076
+            ],
+            "score": 211.39076
+          },
+          {
+            "point": [
+              16384,
+              4352
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -2503.8901,
+            "margins": [
+              1347.2498,
+              1419.6211
+            ],
+            "score": 1347.2498
+          },
+          {
+            "point": [
+              16576,
+              4032
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": -3465.6907,
+            "margins": [
+              2424.2637000000004,
+              2874.9239000000002
+            ],
+            "score": 2424.2637000000004
+          },
+          {
+            "point": [
+              16704,
+              3776
+            ],
+            "axis": [
+              128,
+              -256
+            ],
+            "height": -3331.184,
+            "margins": [
+              1496.4194000000002,
+              1571.1388000000002
+            ],
+            "score": 1496.4194000000002
+          },
+          {
+            "point": [
+              16896,
+              3520
+            ],
+            "axis": [
+              256,
+              -128
+            ],
+            "height": -2729.3796,
+            "margins": [
+              1402.9875000000002,
+              586.5451000000003
+            ],
+            "score": 586.5451000000003
+          }
+        ],
+        "center_displacement_native_pixels": 202.3857702507763,
+        "total_turn_degrees": 73.73979614546171,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1352.5785436601716
+      }
+    },
+    {
+      "seed": -2026110411,
+      "split": "held_out",
+      "kind": "ridge",
+      "original_stations": [
+        {
+          "point": [
+            -384,
+            -7552
+          ],
+          "height": 2212.3098,
+          "margins": [
+            847.4546,
+            -1074.96
+          ]
+        },
+        {
+          "point": [
+            -128,
+            -7808
+          ],
+          "height": 3819.8557,
+          "margins": [
+            1600.9712,
+            759.7123999999999
+          ]
+        },
+        {
+          "point": [
+            128,
+            -8064
+          ],
+          "height": 4204.6743,
+          "margins": [
+            1208.3905999999997,
+            282.29299999999967
+          ]
+        },
+        {
+          "point": [
+            384,
+            -8320
+          ],
+          "height": 4013.4138,
+          "margins": [
+            1331.0202,
+            -1043.2366000000006
+          ]
+        },
+        {
+          "point": [
+            640,
+            -8576
+          ],
+          "height": 3977.328,
+          "margins": [
+            606.6217000000001,
+            2169.6426
+          ]
+        }
+      ],
+      "original_fine_point_strict": {
+        "supported": false,
+        "reasons": [
+          "two-sided extremum below 50 m",
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            847.4546,
+            -1074.96
+          ],
+          [
+            1600.9712,
+            759.7123999999999
+          ],
+          [
+            1208.3905999999997,
+            282.29299999999967
+          ],
+          [
+            1331.0202,
+            -1043.2366000000006
+          ],
+          [
+            606.6217000000001,
+            2169.6426
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": -1074.96,
+        "longitudinal_range_metres": 1992.3644999999997,
+        "longitudinal_linear_residual_metres": 1166.29135
+      },
+      "original_two_sided_stations": 3,
+      "localized_two_sided_stations": 4,
+      "tracked_two_sided_stations": 5,
+      "frozen_original_straight_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path"
+        ],
+        "station_margins_metres": [
+          [
+            1600.9712,
+            759.7123999999999
+          ],
+          [
+            1208.3905999999997,
+            282.29299999999967
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 282.29299999999967,
+        "longitudinal_range_metres": 384.8185999999996,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "straight",
+        "stations": [
+          {
+            "point": [
+              -128,
+              -7808
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 3819.8557,
+            "margins": [
+              1600.9712,
+              759.7123999999999
+            ],
+            "score": 759.7123999999999
+          },
+          {
+            "point": [
+              128,
+              -8064
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 4204.6743,
+            "margins": [
+              1208.3905999999997,
+              282.29299999999967
+            ],
+            "score": 282.29299999999967
+          }
+        ],
+        "center_displacement_native_pixels": 0.0,
+        "total_turn_degrees": 8.537736462515939e-07,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 362.03867196751236
+      },
+      "frozen_localized_result": {
+        "supported": false,
+        "reasons": [
+          "incomplete finite path"
+        ],
+        "station_margins_metres": [
+          [
+            1600.9712,
+            759.7123999999999
+          ],
+          [
+            1764.6608999999999,
+            1590.7988999999998
+          ],
+          [
+            1292.1774999999998,
+            1023.3548000000001
+          ],
+          [
+            606.6217000000001,
+            2169.6426
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 606.6217000000001,
+        "longitudinal_range_metres": 826.2287999999999,
+        "longitudinal_linear_residual_metres": null,
+        "mode": "localized",
+        "stations": [
+          {
+            "point": [
+              -128,
+              -7808
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 3819.8557,
+            "margins": [
+              1600.9712,
+              759.7123999999999
+            ],
+            "score": 759.7123999999999
+          },
+          {
+            "point": [
+              0,
+              -8064
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 4449.1685,
+            "margins": [
+              1764.6608999999999,
+              1590.7988999999998
+            ],
+            "score": 1590.7988999999998
+          },
+          {
+            "point": [
+              256,
+              -8320
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 4646.0845,
+            "margins": [
+              1292.1774999999998,
+              1023.3548000000001
+            ],
+            "score": 1023.3548000000001
+          },
+          {
+            "point": [
+              640,
+              -8576
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 3977.328,
+            "margins": [
+              606.6217000000001,
+              2169.6426
+            ],
+            "score": 606.6217000000001
+          }
+        ],
+        "center_displacement_native_pixels": 128.0,
+        "total_turn_degrees": 2.5613209387547816e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1109.765936346876
+      },
+      "frozen_tracked_result": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side",
+          "total turning exceeds 90 degrees"
+        ],
+        "station_margins_metres": [
+          [
+            947.3779999999999,
+            73.52779999999984
+          ],
+          [
+            1935.71,
+            1031.9539
+          ],
+          [
+            1764.6608999999999,
+            1590.7988999999998
+          ],
+          [
+            1977.0914999999995,
+            1984.0668999999994
+          ],
+          [
+            275.96349999999984,
+            599.1741999999999
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 73.52779999999984,
+        "longitudinal_range_metres": 2754.7670999999996,
+        "longitudinal_linear_residual_metres": 2280.0142499999997,
+        "mode": "tracked",
+        "stations": [
+          {
+            "point": [
+              -512,
+              -7744
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 2962.2192,
+            "margins": [
+              947.3779999999999,
+              73.52779999999984
+            ],
+            "score": 73.52779999999984
+          },
+          {
+            "point": [
+              -256,
+              -7872
+            ],
+            "axis": [
+              256,
+              0
+            ],
+            "height": 3830.4834,
+            "margins": [
+              1935.71,
+              1031.9539
+            ],
+            "score": 1031.9539
+          },
+          {
+            "point": [
+              0,
+              -8064
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 4449.1685,
+            "margins": [
+              1764.6608999999999,
+              1590.7988999999998
+            ],
+            "score": 1590.7988999999998
+          },
+          {
+            "point": [
+              320,
+              -8256
+            ],
+            "axis": [
+              0,
+              -256
+            ],
+            "height": 5716.9863,
+            "margins": [
+              1977.0914999999995,
+              1984.0668999999994
+            ],
+            "score": 1977.0914999999995
+          },
+          {
+            "point": [
+              448,
+              -8512
+            ],
+            "axis": [
+              256,
+              -256
+            ],
+            "height": 3595.223,
+            "margins": [
+              275.96349999999984,
+              599.1741999999999
+            ],
+            "score": 275.96349999999984
+          }
+        ],
+        "center_displacement_native_pixels": 128.0,
+        "total_turn_degrees": 180.00000000000003,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1265.6143235100453
+      }
+    },
+    {
+      "seed": -2026110411,
+      "split": "held_out",
+      "kind": "basin",
+      "original_stations": [
+        {
+          "point": [
+            -384,
+            -4480
+          ],
+          "height": -3750.9373,
+          "margins": [
+            215.81770000000006,
+            582.1158
+          ]
+        },
+        {
+          "point": [
+            -128,
+            -4224
+          ],
+          "height": -2147.3489,
+          "margins": [
+            925.8423,
+            831.7659999999998
+          ]
+        },
+        {
+          "point": [
+            128,
+            -3968
+          ],
+          "height": -1800.0078,
+          "margins": [
+            1221.2348000000002,
+            1081.9789
+          ]
+        },
+        {
+          "point": [
+            384,
+            -3712
+          ],
+          "height": -2721.2754,
+          "margins": [
+            728.9337,
+            309.33399999999983
+          ]
+        },
+        {
+          "point": [
+            640,
+            -3456
+          ],
+          "height": -3266.86,
+          "margins": [
+            195.52260000000024,
+            141.66800000000012
+          ]
+        }
+      ],
+      "original_fine_point_strict": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            215.81770000000006,
+            582.1158
+          ],
+          [
+            925.8423,
+            831.7659999999998
+          ],
+          [
+            1221.2348000000002,
+            1081.9789
+          ],
+          [
+            728.9337,
+            309.33399999999983
+          ],
+          [
+            195.52260000000024,
+            141.66800000000012
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 141.66800000000012,
+        "longitudinal_range_metres": 1950.9295,
+        "longitudinal_linear_residual_metres": 1708.89085
+      },
+      "original_two_sided_stations": 5,
+      "localized_two_sided_stations": 5,
+      "tracked_two_sided_stations": 5,
+      "frozen_original_straight_result": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            215.81770000000006,
+            582.1158
+          ],
+          [
+            925.8423,
+            831.7659999999998
+          ],
+          [
+            1221.2348000000002,
+            1081.9789
+          ],
+          [
+            728.9337,
+            309.33399999999983
+          ],
+          [
+            195.52260000000024,
+            141.66800000000012
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 141.66800000000012,
+        "longitudinal_range_metres": 1950.9295,
+        "longitudinal_linear_residual_metres": 1708.89085,
+        "mode": "straight",
+        "stations": [
+          {
+            "point": [
+              -384,
+              -4480
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -3750.9373,
+            "margins": [
+              215.81770000000006,
+              582.1158
+            ],
+            "score": 215.81770000000006
+          },
+          {
+            "point": [
+              -128,
+              -4224
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -2147.3489,
+            "margins": [
+              925.8423,
+              831.7659999999998
+            ],
+            "score": 831.7659999999998
+          },
+          {
+            "point": [
+              128,
+              -3968
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -1800.0078,
+            "margins": [
+              1221.2348000000002,
+              1081.9789
+            ],
+            "score": 1081.9789
+          },
+          {
+            "point": [
+              384,
+              -3712
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -2721.2754,
+            "margins": [
+              728.9337,
+              309.33399999999983
+            ],
+            "score": 309.33399999999983
+          },
+          {
+            "point": [
+              640,
+              -3456
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -3266.86,
+            "margins": [
+              195.52260000000024,
+              141.66800000000012
+            ],
+            "score": 141.66800000000012
+          }
+        ],
+        "center_displacement_native_pixels": 0.0,
+        "total_turn_degrees": 3.4150945850063755e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1448.1546878700494
+      },
+      "frozen_localized_result": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            997.0742,
+            1036.4802
+          ],
+          [
+            1419.2218,
+            1040.1711
+          ],
+          [
+            1577.4403000000002,
+            1398.8140700000001
+          ],
+          [
+            643.2486999999996,
+            755.1907999999999
+          ],
+          [
+            168.92830000000004,
+            179.3685999999998
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 168.92830000000004,
+        "longitudinal_range_metres": 1956.7105999999999,
+        "longitudinal_linear_residual_metres": 1794.166475,
+        "mode": "localized",
+        "stations": [
+          {
+            "point": [
+              -448,
+              -4544
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -4008.7668,
+            "margins": [
+              997.0742,
+              1036.4802
+            ],
+            "score": 997.0742
+          },
+          {
+            "point": [
+              -64,
+              -4288
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -2052.0562,
+            "margins": [
+              1419.2218,
+              1040.1711
+            ],
+            "score": 1040.1711
+          },
+          {
+            "point": [
+              192,
+              -3904
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -2384.0684,
+            "margins": [
+              1577.4403000000002,
+              1398.8140700000001
+            ],
+            "score": 1398.8140700000001
+          },
+          {
+            "point": [
+              448,
+              -3776
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -3032.256,
+            "margins": [
+              643.2486999999996,
+              755.1907999999999
+            ],
+            "score": 643.2486999999996
+          },
+          {
+            "point": [
+              704,
+              -3392
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -3358.5903,
+            "margins": [
+              168.92830000000004,
+              179.3685999999998
+            ],
+            "score": 168.92830000000004
+          }
+        ],
+        "center_displacement_native_pixels": 90.50966799187809,
+        "total_turn_degrees": 3.4150945850063755e-06,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1670.7483908981449
+      },
+      "frozen_tracked_result": {
+        "supported": false,
+        "reasons": [
+          "longitudinal range exceeds twice weakest side",
+          "longitudinal residual exceeds weakest side"
+        ],
+        "station_margins_metres": [
+          [
+            997.0742,
+            1036.4802
+          ],
+          [
+            1419.2218,
+            1040.1711
+          ],
+          [
+            1577.4403000000002,
+            1398.8140700000001
+          ],
+          [
+            643.2486999999996,
+            755.1907999999999
+          ],
+          [
+            302.75440000000026,
+            300.7962000000002
+          ]
+        ],
+        "minimum_prominence_or_depth_metres": 300.7962000000002,
+        "longitudinal_range_metres": 1956.7105999999999,
+        "longitudinal_linear_residual_metres": 1822.95635,
+        "mode": "tracked",
+        "stations": [
+          {
+            "point": [
+              -448,
+              -4544
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -4008.7668,
+            "margins": [
+              997.0742,
+              1036.4802
+            ],
+            "score": 997.0742
+          },
+          {
+            "point": [
+              -64,
+              -4288
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -2052.0562,
+            "margins": [
+              1419.2218,
+              1040.1711
+            ],
+            "score": 1040.1711
+          },
+          {
+            "point": [
+              192,
+              -3904
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -2384.0684,
+            "margins": [
+              1577.4403000000002,
+              1398.8140700000001
+            ],
+            "score": 1398.8140700000001
+          },
+          {
+            "point": [
+              448,
+              -3776
+            ],
+            "axis": [
+              256,
+              256
+            ],
+            "height": -3032.256,
+            "margins": [
+              643.2486999999996,
+              755.1907999999999
+            ],
+            "score": 643.2486999999996
+          },
+          {
+            "point": [
+              832,
+              -3520
+            ],
+            "axis": [
+              0,
+              256
+            ],
+            "height": -3473.7498,
+            "margins": [
+              302.75440000000026,
+              300.7962000000002
+            ],
+            "score": 300.7962000000002
+          }
+        ],
+        "center_displacement_native_pixels": 90.50966799187809,
+        "total_turn_degrees": 45.00000256132095,
+        "localization_grid_uncertainty_native_pixels": 45.254833995939045,
+        "longitudinal_distance_native_pixels": 1670.7483908981449
+      }
+    }
+  ],
+  "tile_origin_corner_checks": [
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        3584,
+        12672
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        3584,
+        12544
+      ],
+      "patch_elevation_metres": -2184.682,
+      "patch_quantized": -2185,
+      "tile_corner_height": -2185,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        3584,
+        12672
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        2816,
+        13056
+      ],
+      "patch_elevation_metres": -453.66827,
+      "patch_quantized": -454,
+      "tile_corner_height": -454,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        3840,
+        12928
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        3840,
+        12800
+      ],
+      "patch_elevation_metres": -1166.4133,
+      "patch_quantized": -1167,
+      "tile_corner_height": -1167,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        3840,
+        12928
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        2816,
+        13056
+      ],
+      "patch_elevation_metres": -453.66827,
+      "patch_quantized": -454,
+      "tile_corner_height": -454,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4096,
+        13184
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4096,
+        13056
+      ],
+      "patch_elevation_metres": -728.7793,
+      "patch_quantized": -729,
+      "tile_corner_height": -729,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4096,
+        13184
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        2816,
+        13056
+      ],
+      "patch_elevation_metres": -453.66827,
+      "patch_quantized": -454,
+      "tile_corner_height": -454,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        3840,
+        12288
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        3840,
+        12288
+      ],
+      "patch_elevation_metres": -2516.4148,
+      "patch_quantized": -2517,
+      "tile_corner_height": -2517,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        3840,
+        12288
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        2816,
+        13056
+      ],
+      "patch_elevation_metres": -453.66827,
+      "patch_quantized": -454,
+      "tile_corner_height": -454,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4096,
+        12544
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4096,
+        12544
+      ],
+      "patch_elevation_metres": -1153.2937,
+      "patch_quantized": -1154,
+      "tile_corner_height": -1154,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4096,
+        12544
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        2816,
+        13056
+      ],
+      "patch_elevation_metres": -453.66827,
+      "patch_quantized": -454,
+      "tile_corner_height": -454,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4352,
+        12800
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4352,
+        12800
+      ],
+      "patch_elevation_metres": -2479.3743,
+      "patch_quantized": -2480,
+      "tile_corner_height": -2480,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4352,
+        12800
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        5376,
+        12800
+      ],
+      "patch_elevation_metres": -3980.8792,
+      "patch_quantized": -3981,
+      "tile_corner_height": -3981,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4032,
+        12096
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        3840,
+        12032
+      ],
+      "patch_elevation_metres": -2880.5857,
+      "patch_quantized": -2881,
+      "tile_corner_height": -2881,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4032,
+        12096
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        2816,
+        13056
+      ],
+      "patch_elevation_metres": -453.66827,
+      "patch_quantized": -454,
+      "tile_corner_height": -454,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4288,
+        12352
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4096,
+        12288
+      ],
+      "patch_elevation_metres": -1229.7662,
+      "patch_quantized": -1230,
+      "tile_corner_height": -1230,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4288,
+        12352
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        5376,
+        12800
+      ],
+      "patch_elevation_metres": -3980.8792,
+      "patch_quantized": -3981,
+      "tile_corner_height": -3981,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4544,
+        12608
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4352,
+        12544
+      ],
+      "patch_elevation_metres": -1641.5988,
+      "patch_quantized": -1642,
+      "tile_corner_height": -1642,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4544,
+        12608
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        5376,
+        12800
+      ],
+      "patch_elevation_metres": -3980.8792,
+      "patch_quantized": -3981,
+      "tile_corner_height": -3981,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4288,
+        11840
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4096,
+        11776
+      ],
+      "patch_elevation_metres": -2937.889,
+      "patch_quantized": -2938,
+      "tile_corner_height": -2938,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4416,
+        12096
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4352,
+        12032
+      ],
+      "patch_elevation_metres": -1506.7297,
+      "patch_quantized": -1507,
+      "tile_corner_height": -1507,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4416,
+        12096
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        5376,
+        12800
+      ],
+      "patch_elevation_metres": -3980.8792,
+      "patch_quantized": -3981,
+      "tile_corner_height": -3981,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4544,
+        12352
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4352,
+        12288
+      ],
+      "patch_elevation_metres": -1547.4601,
+      "patch_quantized": -1548,
+      "tile_corner_height": -1548,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4544,
+        12352
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        5376,
+        12800
+      ],
+      "patch_elevation_metres": -3980.8792,
+      "patch_quantized": -3981,
+      "tile_corner_height": -3981,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4544,
+        11968
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4352,
+        11776
+      ],
+      "patch_elevation_metres": -2212.253,
+      "patch_quantized": -2213,
+      "tile_corner_height": -2213,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4544,
+        11968
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        5376,
+        12800
+      ],
+      "patch_elevation_metres": -3980.8792,
+      "patch_quantized": -3981,
+      "tile_corner_height": -3981,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4800,
+        12096
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        4608,
+        12032
+      ],
+      "patch_elevation_metres": -2126.363,
+      "patch_quantized": -2127,
+      "tile_corner_height": -2127,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "query": [
+        4800,
+        12096
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        5376,
+        12800
+      ],
+      "patch_elevation_metres": -3980.8792,
+      "patch_quantized": -3981,
+      "tile_corner_height": -3981,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8192,
+        -8192
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -8192,
+        -8192
+      ],
+      "patch_elevation_metres": -2172.247,
+      "patch_quantized": -2173,
+      "tile_corner_height": -2173,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8192,
+        -8192
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -7808,
+        -8128
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -7936,
+        -8192
+      ],
+      "patch_elevation_metres": -2250.356,
+      "patch_quantized": -2251,
+      "tile_corner_height": -2251,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -7808,
+        -8128
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8064,
+        -8384
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -8192,
+        -8448
+      ],
+      "patch_elevation_metres": -2164.8162,
+      "patch_quantized": -2165,
+      "tile_corner_height": -2165,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8064,
+        -8384
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8320,
+        -8640
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -8448,
+        -8704
+      ],
+      "patch_elevation_metres": -1704.208,
+      "patch_quantized": -1705,
+      "tile_corner_height": -1705,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -7872,
+        -8064
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -7936,
+        -8192
+      ],
+      "patch_elevation_metres": -2250.356,
+      "patch_quantized": -2251,
+      "tile_corner_height": -2251,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -7872,
+        -8064
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8128,
+        -8192
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -8192,
+        -8192
+      ],
+      "patch_elevation_metres": -2172.247,
+      "patch_quantized": -2173,
+      "tile_corner_height": -2173,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8128,
+        -8192
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8384,
+        -8320
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -8448,
+        -8448
+      ],
+      "patch_elevation_metres": -1642.6211,
+      "patch_quantized": -1643,
+      "tile_corner_height": -1643,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8384,
+        -8320
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -7872,
+        -7936
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -7936,
+        -7936
+      ],
+      "patch_elevation_metres": -143.1032,
+      "patch_quantized": -144,
+      "tile_corner_height": -144,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -7872,
+        -7936
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8128,
+        -7936
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -8192,
+        -7936
+      ],
+      "patch_elevation_metres": -198.61726,
+      "patch_quantized": -199,
+      "tile_corner_height": -199,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8128,
+        -7936
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8384,
+        -7936
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -8448,
+        -7936
+      ],
+      "patch_elevation_metres": -7.2928615,
+      "patch_quantized": -8,
+      "tile_corner_height": -8,
+      "equal": true
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "query": [
+        -8384,
+        -7936
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -9216,
+        -7424
+      ],
+      "patch_elevation_metres": -349.23813,
+      "patch_quantized": -350,
+      "tile_corner_height": -350,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -256,
+        11648
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        11520
+      ],
+      "patch_elevation_metres": -1930.7664,
+      "patch_quantized": -1931,
+      "tile_corner_height": -1931,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -384,
+        11904
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -512,
+        11776
+      ],
+      "patch_elevation_metres": -2239.7778,
+      "patch_quantized": -2240,
+      "tile_corner_height": -2240,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -512,
+        12160
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -512,
+        12032
+      ],
+      "patch_elevation_metres": -2670.1802,
+      "patch_quantized": -2671,
+      "tile_corner_height": -2671,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        128,
+        11840
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        11776
+      ],
+      "patch_elevation_metres": -2039.7246,
+      "patch_quantized": -2040,
+      "tile_corner_height": -2040,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        128,
+        11840
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        11264
+      ],
+      "patch_elevation_metres": -4095.6348,
+      "patch_quantized": -4096,
+      "tile_corner_height": -4096,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -128,
+        12096
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        12032
+      ],
+      "patch_elevation_metres": -1485.8542,
+      "patch_quantized": -1486,
+      "tile_corner_height": -1486,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -128,
+        12096
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        11264
+      ],
+      "patch_elevation_metres": -4095.6348,
+      "patch_quantized": -4096,
+      "tile_corner_height": -4096,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -384,
+        12352
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -512,
+        12288
+      ],
+      "patch_elevation_metres": -3556.117,
+      "patch_quantized": -3557,
+      "tile_corner_height": -3557,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -384,
+        12352
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -768,
+        13312
+      ],
+      "patch_elevation_metres": -4819.5024,
+      "patch_quantized": -4820,
+      "tile_corner_height": -4820,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        448,
+        12160
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        12032
+      ],
+      "patch_elevation_metres": -1122.385,
+      "patch_quantized": -1123,
+      "tile_corner_height": -1123,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        448,
+        12160
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        11264
+      ],
+      "patch_elevation_metres": -4095.6348,
+      "patch_quantized": -4096,
+      "tile_corner_height": -4096,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        192,
+        12416
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        12288
+      ],
+      "patch_elevation_metres": -1375.4231,
+      "patch_quantized": -1376,
+      "tile_corner_height": -1376,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        192,
+        12416
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        13312
+      ],
+      "patch_elevation_metres": -4243.176,
+      "patch_quantized": -4244,
+      "tile_corner_height": -4244,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -64,
+        12672
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        12544
+      ],
+      "patch_elevation_metres": -2335.5693,
+      "patch_quantized": -2336,
+      "tile_corner_height": -2336,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        -64,
+        12672
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        13312
+      ],
+      "patch_elevation_metres": -4243.176,
+      "patch_quantized": -4244,
+      "tile_corner_height": -4244,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        448,
+        12416
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        12288
+      ],
+      "patch_elevation_metres": -858.56885,
+      "patch_quantized": -859,
+      "tile_corner_height": -859,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        448,
+        12416
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        13312
+      ],
+      "patch_elevation_metres": -4243.176,
+      "patch_quantized": -4244,
+      "tile_corner_height": -4244,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        320,
+        12672
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        12544
+      ],
+      "patch_elevation_metres": -1827.9027,
+      "patch_quantized": -1828,
+      "tile_corner_height": -1828,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        320,
+        12672
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        13312
+      ],
+      "patch_elevation_metres": -4243.176,
+      "patch_quantized": -4244,
+      "tile_corner_height": -4244,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        192,
+        12928
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        12800
+      ],
+      "patch_elevation_metres": -3389.1328,
+      "patch_quantized": -3390,
+      "tile_corner_height": -3390,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "query": [
+        192,
+        12928
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        13312
+      ],
+      "patch_elevation_metres": -4243.176,
+      "patch_quantized": -4244,
+      "tile_corner_height": -4244,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        15808,
+        4416
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        15616,
+        4352
+      ],
+      "patch_elevation_metres": -27.73221,
+      "patch_quantized": -28,
+      "tile_corner_height": -28,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        15808,
+        4416
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        15616,
+        4608
+      ],
+      "patch_elevation_metres": 129.94786,
+      "patch_quantized": 129,
+      "tile_corner_height": 129,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16064,
+        4544
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        15872,
+        4352
+      ],
+      "patch_elevation_metres": -587.0843,
+      "patch_quantized": -588,
+      "tile_corner_height": -588,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16064,
+        4544
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        15616,
+        4608
+      ],
+      "patch_elevation_metres": 129.94786,
+      "patch_quantized": 129,
+      "tile_corner_height": 129,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16320,
+        4672
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16128,
+        4608
+      ],
+      "patch_elevation_metres": -55.581417,
+      "patch_quantized": -56,
+      "tile_corner_height": -56,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16320,
+        4672
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        15616,
+        4608
+      ],
+      "patch_elevation_metres": 129.94786,
+      "patch_quantized": 129,
+      "tile_corner_height": 129,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16128,
+        4096
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16128,
+        4096
+      ],
+      "patch_elevation_metres": -1084.269,
+      "patch_quantized": -1085,
+      "tile_corner_height": -1085,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16128,
+        4096
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        15616,
+        4608
+      ],
+      "patch_elevation_metres": 129.94786,
+      "patch_quantized": 129,
+      "tile_corner_height": 129,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16384,
+        4352
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16384,
+        4352
+      ],
+      "patch_elevation_metres": -2503.8901,
+      "patch_quantized": -2504,
+      "tile_corner_height": -2504,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16384,
+        4352
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        15616,
+        4608
+      ],
+      "patch_elevation_metres": 129.94786,
+      "patch_quantized": 129,
+      "tile_corner_height": 129,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16640,
+        4608
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16640,
+        4608
+      ],
+      "patch_elevation_metres": -1156.6403,
+      "patch_quantized": -1157,
+      "tile_corner_height": -1157,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16640,
+        4608
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        15616,
+        4608
+      ],
+      "patch_elevation_metres": 129.94786,
+      "patch_quantized": 129,
+      "tile_corner_height": 129,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16320,
+        3776
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16128,
+        3584
+      ],
+      "patch_elevation_metres": -7.8236356,
+      "patch_quantized": -8,
+      "tile_corner_height": -8,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16320,
+        3776
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16576,
+        4032
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16384,
+        3840
+      ],
+      "patch_elevation_metres": -1465.2079,
+      "patch_quantized": -1466,
+      "tile_corner_height": -1466,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16576,
+        4032
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16832,
+        4288
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16640,
+        4096
+      ],
+      "patch_elevation_metres": -3207.057,
+      "patch_quantized": -3208,
+      "tile_corner_height": -3208,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16832,
+        4288
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16448,
+        3648
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16384,
+        3584
+      ],
+      "patch_elevation_metres": -1511.2087,
+      "patch_quantized": -1512,
+      "tile_corner_height": -1512,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16448,
+        3648
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16704,
+        3776
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16640,
+        3584
+      ],
+      "patch_elevation_metres": -3103.8752,
+      "patch_quantized": -3104,
+      "tile_corner_height": -3104,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16704,
+        3776
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16960,
+        3904
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16896,
+        3840
+      ],
+      "patch_elevation_metres": -2598.247,
+      "patch_quantized": -2599,
+      "tile_corner_height": -2599,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16960,
+        3904
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16768,
+        3264
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16640,
+        3072
+      ],
+      "patch_elevation_metres": -1605.0055,
+      "patch_quantized": -1606,
+      "tile_corner_height": -1605,
+      "equal": false
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16768,
+        3264
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16896,
+        3520
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16896,
+        3328
+      ],
+      "patch_elevation_metres": -2386.297,
+      "patch_quantized": -2387,
+      "tile_corner_height": -2387,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        16896,
+        3520
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        17024,
+        3776
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        16896,
+        3584
+      ],
+      "patch_elevation_metres": -2805.0046,
+      "patch_quantized": -2806,
+      "tile_corner_height": -2806,
+      "equal": true
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "query": [
+        17024,
+        3776
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        17152,
+        3328
+      ],
+      "patch_elevation_metres": -1838.9795,
+      "patch_quantized": -1839,
+      "tile_corner_height": -1839,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        0,
+        -8192
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        -8192
+      ],
+      "patch_elevation_metres": 3377.2722,
+      "patch_quantized": 3377,
+      "tile_corner_height": 3377,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        0,
+        -8192
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -768,
+        -8000
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -768,
+        -8192
+      ],
+      "patch_elevation_metres": 2486.4514,
+      "patch_quantized": 2486,
+      "tile_corner_height": 2486,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -512,
+        -7744
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -512,
+        -7936
+      ],
+      "patch_elevation_metres": 3247.053,
+      "patch_quantized": 3247,
+      "tile_corner_height": 3247,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -7488
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -7680
+      ],
+      "patch_elevation_metres": 2700.3533,
+      "patch_quantized": 2700,
+      "tile_corner_height": 2700,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -7488
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -8128
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -8192
+      ],
+      "patch_elevation_metres": 4013.9182,
+      "patch_quantized": 4013,
+      "tile_corner_height": 4013,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -8128
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -7872
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -7936
+      ],
+      "patch_elevation_metres": 3971.9644,
+      "patch_quantized": 3971,
+      "tile_corner_height": 3971,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -7872
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -7616
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -7680
+      ],
+      "patch_elevation_metres": 2700.3533,
+      "patch_quantized": 2700,
+      "tile_corner_height": 2700,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -7616
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -8320
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -8448
+      ],
+      "patch_elevation_metres": 3749.8901,
+      "patch_quantized": 3749,
+      "tile_corner_height": 3749,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        -256,
+        -8320
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        0,
+        -8064
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        -8192
+      ],
+      "patch_elevation_metres": 3377.2722,
+      "patch_quantized": 3377,
+      "tile_corner_height": 3377,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        0,
+        -8064
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        256,
+        -7808
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        -7936
+      ],
+      "patch_elevation_metres": 3448.958,
+      "patch_quantized": 3448,
+      "tile_corner_height": 3448,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        256,
+        -7808
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        64,
+        -8256
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        -8448
+      ],
+      "patch_elevation_metres": 4205.254,
+      "patch_quantized": 4205,
+      "tile_corner_height": 4205,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        64,
+        -8256
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        320,
+        -8256
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        -8448
+      ],
+      "patch_elevation_metres": 4027.5186,
+      "patch_quantized": 4027,
+      "tile_corner_height": 4027,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        320,
+        -8256
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        576,
+        -8256
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        512,
+        -8448
+      ],
+      "patch_elevation_metres": 3339.5383,
+      "patch_quantized": 3339,
+      "tile_corner_height": 3339,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        576,
+        -8256
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        192,
+        -8768
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        -8960
+      ],
+      "patch_elevation_metres": 3184.888,
+      "patch_quantized": 3184,
+      "tile_corner_height": 3184,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        192,
+        -8768
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        1280,
+        -9472
+      ],
+      "patch_elevation_metres": 1249.6545,
+      "patch_quantized": 1249,
+      "tile_corner_height": 1249,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        448,
+        -8512
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        -8704
+      ],
+      "patch_elevation_metres": 2856.2754,
+      "patch_quantized": 2856,
+      "tile_corner_height": 2856,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        448,
+        -8512
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        704,
+        -8256
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        512,
+        -8448
+      ],
+      "patch_elevation_metres": 3339.5383,
+      "patch_quantized": 3339,
+      "tile_corner_height": 3339,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "query": [
+        704,
+        -8256
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        768,
+        -7680
+      ],
+      "patch_elevation_metres": 2497.5073,
+      "patch_quantized": 2497,
+      "tile_corner_height": 2497,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -192,
+        -4800
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -4864
+      ],
+      "patch_elevation_metres": -3517.3042,
+      "patch_quantized": -3518,
+      "tile_corner_height": -3518,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -192,
+        -4800
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -768,
+        -5376
+      ],
+      "patch_elevation_metres": -2067.2507,
+      "patch_quantized": -2068,
+      "tile_corner_height": -2068,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -448,
+        -4544
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -512,
+        -4608
+      ],
+      "patch_elevation_metres": -3434.52,
+      "patch_quantized": -3435,
+      "tile_corner_height": -3435,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -448,
+        -4544
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -768,
+        -5376
+      ],
+      "patch_elevation_metres": -2067.2507,
+      "patch_quantized": -2068,
+      "tile_corner_height": -2068,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -704,
+        -4288
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -768,
+        -4352
+      ],
+      "patch_elevation_metres": -2642.4912,
+      "patch_quantized": -2643,
+      "tile_corner_height": -2643,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -704,
+        -4288
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -768,
+        -5376
+      ],
+      "patch_elevation_metres": -2067.2507,
+      "patch_quantized": -2068,
+      "tile_corner_height": -2068,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        192,
+        -4544
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        -4608
+      ],
+      "patch_elevation_metres": -3110.9653,
+      "patch_quantized": -3111,
+      "tile_corner_height": -3111,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        192,
+        -4544
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -768,
+        -5376
+      ],
+      "patch_elevation_metres": -2067.2507,
+      "patch_quantized": -2068,
+      "tile_corner_height": -2068,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -64,
+        -4288
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -4352
+      ],
+      "patch_elevation_metres": -3274.6025,
+      "patch_quantized": -3275,
+      "tile_corner_height": -3275,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -64,
+        -4288
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -768,
+        -5376
+      ],
+      "patch_elevation_metres": -2067.2507,
+      "patch_quantized": -2068,
+      "tile_corner_height": -2068,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -320,
+        -4032
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -512,
+        -4096
+      ],
+      "patch_elevation_metres": -2716.5508,
+      "patch_quantized": -2717,
+      "tile_corner_height": -2717,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        448,
+        -4160
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        -4352
+      ],
+      "patch_elevation_metres": -931.5295,
+      "patch_quantized": -932,
+      "tile_corner_height": -932,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        192,
+        -3904
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        -4096
+      ],
+      "patch_elevation_metres": -1348.746,
+      "patch_quantized": -1349,
+      "tile_corner_height": -1349,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        192,
+        -3904
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        -768,
+        -5376
+      ],
+      "patch_elevation_metres": -2067.2507,
+      "patch_quantized": -2068,
+      "tile_corner_height": -2068,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        -64,
+        -3648
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        -256,
+        -3840
+      ],
+      "patch_elevation_metres": -1067.251,
+      "patch_quantized": -1068,
+      "tile_corner_height": -1068,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        704,
+        -4032
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        512,
+        -4096
+      ],
+      "patch_elevation_metres": -1554.2893,
+      "patch_quantized": -1555,
+      "tile_corner_height": -1555,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        704,
+        -4032
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        1024,
+        -2816
+      ],
+      "patch_elevation_metres": -3720.7053,
+      "patch_quantized": -3721,
+      "tile_corner_height": -3721,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        448,
+        -3776
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        256,
+        -3840
+      ],
+      "patch_elevation_metres": -2627.974,
+      "patch_quantized": -2628,
+      "tile_corner_height": -2628,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        448,
+        -3776
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        1024,
+        -2816
+      ],
+      "patch_elevation_metres": -3720.7053,
+      "patch_quantized": -3721,
+      "tile_corner_height": -3721,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        192,
+        -3520
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        0,
+        -3584
+      ],
+      "patch_elevation_metres": -1595.7435,
+      "patch_quantized": -1596,
+      "tile_corner_height": -1596,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        192,
+        -3520
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        1024,
+        -2816
+      ],
+      "patch_elevation_metres": -3720.7053,
+      "patch_quantized": -3721,
+      "tile_corner_height": -3721,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        1088,
+        -3520
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        1024,
+        -3584
+      ],
+      "patch_elevation_metres": -3162.5054,
+      "patch_quantized": -3163,
+      "tile_corner_height": -3163,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        1088,
+        -3520
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        1024,
+        -2816
+      ],
+      "patch_elevation_metres": -3720.7053,
+      "patch_quantized": -3721,
+      "tile_corner_height": -3721,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        832,
+        -3520
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        768,
+        -3584
+      ],
+      "patch_elevation_metres": -3397.428,
+      "patch_quantized": -3398,
+      "tile_corner_height": -3398,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        832,
+        -3520
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        1024,
+        -2816
+      ],
+      "patch_elevation_metres": -3720.7053,
+      "patch_quantized": -3721,
+      "tile_corner_height": -3721,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        576,
+        -3520
+      ],
+      "tile": "target_fine_tile",
+      "native_corner": [
+        512,
+        -3584
+      ],
+      "patch_elevation_metres": -3076.343,
+      "patch_quantized": -3077,
+      "tile_corner_height": -3077,
+      "equal": true
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "query": [
+        576,
+        -3520
+      ],
+      "tile": "anchor_fine_tile",
+      "native_corner": [
+        1024,
+        -2816
+      ],
+      "patch_elevation_metres": -3720.7053,
+      "patch_quantized": -3721,
+      "tile_corner_height": -3721,
+      "equal": true
+    }
+  ],
+  "role": "Descriptive full-station/corner audit, not a postinspection replacement acceptance rule",
+  "thresholds_changed": false,
+  "geological_selection": "abstain"
+}

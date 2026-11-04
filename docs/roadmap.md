@@ -30,3 +30,9 @@ The researched target is four regional families per host layer alongside vanilla
 (#22), coarse-terrain-derived terranes (#11), and future regional mineral systems
 (#23). See docs/geology-research.md and planning/geology. These are planned
 versioned changes, not features of the current four-rock prototype.
+
+Issue #11's [bounded center/orientation diagnostic](td-tracking.md) remains
+evidence only. Localizing extrema does not waive longitudinal continuity or
+resolve geological history. New held-out morphology coverage and independent
+geological plausibility/coherence remain gates; #9/#11 stay open. No continuing
+geology-1 snapshot is migrated, and isolated sampling work is not route savings.
