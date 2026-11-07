@@ -51,3 +51,10 @@ scripts/export-td-numerics.py text eol=lf
 scripts/test-td-geometry-numerics.py text eol=lf
 *.bin binary
 scripts/audit-td-geometry-sensitivity.py text eol=lf
+scripts/td-axis-confinement.py text eol=lf
+scripts/evaluate-td-axis.py text eol=lf
+scripts/collect-td-identical.py text eol=lf
+scripts/export-td-identical.py text eol=lf
+scripts/test-td-axis-identical.py text eol=lf
+scripts/export-td-axis.py text eol=lf
+scripts/reexport-td-bounded.py text eol=lf
