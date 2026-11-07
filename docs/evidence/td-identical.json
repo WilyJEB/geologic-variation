@@ -1,0 +1,2653 @@
+{
+  "base": "1c31c0f",
+  "source_commit": "4a2fa1cc6aacd89079eb00f3432159ca5b5f4943",
+  "sources": {
+    "docs/td-axis-numerical-protocol.md": "f04f791918dd5722d7ae4ecf46d68cdb2a8744412b199bcd49dd46c52893e597",
+    "scripts/audit-host-feature-rules.py": "589adc92fd640c13964cbd56f116f130889dc721c01986ac97dda1e121077f4d",
+    "scripts/audit-td-geometry-sensitivity.py": "b70c1f1a5dad42097bde9b75f6a54e13bbad4deb21748344242af4ff94c745b4",
+    "scripts/audit-td-tracking-attempts.py": "ac0bbe1f79961a129f2e2deb56e91d1594f1be8af959be2ae8cad81235378ad6",
+    "scripts/audit-td-tracking-profiles.py": "dbc1d1b9813f6404147f37aa6c96282c9fffb6f6f5874e7ae8e633f96368a367",
+    "scripts/audit-td-tracking-retained.py": "4a47c04f0bd16ea6617bbc1976da8ff0bdce4ad07453387d3ee1359a5ed93664",
+    "scripts/calibrate-td-geometry.py": "701f4ee972914adb5651cc090d6424fb380a578449843220fe075dc8e19406bf",
+    "scripts/check-geology-library.py": "3b4da104ed2d4b7e0617cc41d698cf31253080d76405e188d48b99855e746afa",
+    "scripts/collect-td-identical.py": "4b97095607298d566e819152156cad1b17e9cb040eb27781fa1c7e2589cba227",
+    "scripts/compare-runtime-chunks.py": "14893e275460925a23bf2abe60e9b6390b0d7e5a5cc026f667f53b3818cb8a54",
+    "scripts/evaluate-td-axis.py": "73e6ddb1674a01dfe4e48a5396c9a3451d58c81ad73a287ae5a121a8fb4e4f3a",
+    "scripts/export-negative-td-landforms.py": "604b57d560c3d69b3cd0d7814ee49907291ab55d5d0d596cc4ef659ab973c7f5",
+    "scripts/export-negative-td-tracking.py": "fb5613c32eb7717e9931c00d32b3baee8b5e328c666cd7c7b898cfff13823c5f",
+    "scripts/export-td-numerics.py": "1e9658a0c5201b801685f223a30eedd4ff2b12a2ba3ed61d9144d643e3d8361a",
+    "scripts/generate-masonry.py": "8e60ce2fa74f53cc626740ef2880628b8fe16a9629d5f6ee3ecbfb3ddb2a66aa",
+    "scripts/inspect-backend-feasibility.py": "0aeb0312e409398b10456d8164202be411a3f1e3d0ff3745062bc948580dc773",
+    "scripts/launch-acceptance-client.py": "bfec29cb930b643890ef36cf75dbaee695b980207fe7b306bb01004ee4a5f4ed",
+    "scripts/plot-td-tracking.py": "967318701970f79fb80b947ef7460147e19868bea685e19d2f6437ea90f1f53b",
+    "scripts/prepare-directml-java.py": "0f275449494c541305ae0e3b0b3cafbe4c423f83aee61b38d56552df27fdcee8",
+    "scripts/reexport-retained-terrain.py": "1c9dd6f61c7c55668cc5511936a5db15c65d29ada714f77b936e083a81e0498d",
+    "scripts/report-td-tracking.py": "638dbf760cab51d3bd25db35537be1fca72c782db4726496e04e0a04ea3b4774",
+    "scripts/runtime-acceptance.py": "c5785e5a87ccd01be2d360c54d0e649ec3556f45af2ac6079bb2b6e2549eaa24",
+    "scripts/sampling-reference-fields.py": "a5638875a98019a3d5457a1f8ce39b114fab8c9ae5d4b5a921ea7ffbd430581e",
+    "scripts/summarize-anchor-performance.py": "08667c2082bc1584908b05ee781c04c6044faa61d872d46a49bf09320abc946a",
+    "scripts/summarize-backend-feasibility.py": "ad08ea710e48b3217ae8d03e9e6d5fde8e3f01e084356180f2a7c515b544305b",
+    "scripts/summarize-backend.py": "8c379c3ced20f9bb9c6f22cdd76034cf8bc0401527c3526511dc620d8aaaeb7c",
+    "scripts/summarize-coarse-prototype.py": "65eb8ccff2a87de1386841206c77bbdda10acffc5b169588e1b33d37152706b9",
+    "scripts/summarize-context-startup.py": "65138da848e56e0a567258b9f12d0e501de950fa4ec838ad65fccbe247501945",
+    "scripts/summarize-host-acceptance.py": "a6253ce12cb0ef06c5812e75f007a08d8b8e3080e38b29fbeab2ae6b24c8d4f7",
+    "scripts/summarize-hot-config.py": "c63e49e2150355ec81a28e8cb9a33e5bd1e6df7b2d2a8760d06a569906f51920",
+    "scripts/summarize-integrated-lifecycle.py": "033397802d6daf03787098652c3a47d5e69c6a23fb11a0d072e627dfb9c3321d",
+    "scripts/summarize-live-context.py": "56360db4eb7ef454ebc17fd9aabb7c70bc6bf567bbd830ff3d1ca4e7c6536902",
+    "scripts/summarize-model-config.py": "762626d012cfa9442b6388d58b189a75ab00c17c16fb67a3306d0cf6cf981270",
+    "scripts/summarize-natural-coal.py": "2290f1e95c6d0be5947def9acf8b5b9f29c87d96a519a38769d77c226f4663dd",
+    "scripts/summarize-runtime-acceptance.py": "8dbb49fecc5686d4c90696dccc6be5052b2edd040b007b86529f806294bccf63",
+    "scripts/summarize-sampling-support.py": "5817f968fc4fe6cfeb6c50ca33aec91235377f53b0f8f69a2575dd59532bd0b0",
+    "scripts/summarize-td-artifact.py": "02500dd22a8f9b3bc8b4de523ce8e9fd99b234b10981997bf12b1101c0ee31d4",
+    "scripts/summarize-td-landforms.py": "6f7457c9cfdeec3c41b61c1606e9cd6791e08fa8108f663b370b9ca2ab7c466e",
+    "scripts/summarize-td-tracking.py": "cc378bc2b8bc559eb75074b78b2fbfdd044da85e5cf8f15680d92426e24ceef2",
+    "scripts/summarize-terrain-diagnostics.py": "3c9bb63a2ea9de2bd292b18a3d9ba3f0a0c62b4a85e8fa307b0f6176668a2392",
+    "scripts/td-axis-confinement.py": "4dac3add3c2f3bd5396046a04017736815b04976b3bfe9702fd4e7eb751314fa",
+    "scripts/td-geometry-arc.py": "af9e6617742bb724e09f942827bf82285e7e173f6afdfc8c87e41cc95663cfe4",
+    "scripts/td-landform-selector.py": "c1f60ac2a12df85d2cf7325e764c76f7d9bc2b7e8e651f2f75102badefac53e1",
+    "scripts/td-tracking-selector.py": "c100c26c31e43014c50fe70d8604f564dae4dfa1514062d27c8e837eaff773e0",
+    "scripts/test-negative-td-tracking.py": "ba47add80678f605b7602e04a1d64ea4fcf2e4f6c5c2a9466ad778a52dd6f101",
+    "scripts/test-sampling-support.py": "8f6536a7ecc324ea240805272dbfa077de6c670c81f4b73ca5b873ace863e4e2",
+    "scripts/test-td-geometry-numerics.py": "613b6a0cf7c093cc49e76d4855b9f2c7a79eeecb0d10fcac3ee4554bb43ea705",
+    "scripts/test-td-landforms.py": "46f00727e3da925dfeda3d578f070116dec1be1598e4cc8219657b8407978cf2",
+    "scripts/test-td-tracking-controls.py": "81641c636feba5687107b344ac220540f563d4dab21324c9dd9ae4b80823e958",
+    "scripts/test-td-tracking.py": "eace0558d704d56a9d95bc9c9476f3bbc513827d6ce2110966f0ffe6adc14ea2",
+    "scripts/test-terrain-diagnostics.py": "b3be569b986cafe2261a93d4ade56f00224a451e0ccf47e3868e93e1c36f05e9",
+    "scripts/trace-natural-coal.py": "dc9cf40ba6698f8e3651629a58df6367259e44dde2cafda59e319abb8323fe44",
+    "scripts/verify-anchor-performance.py": "72b51625ea6eaed939ea1d149439dbb290a60114fb4514e3ea52878d490cb121",
+    "scripts/verify-backend.py": "51f5db902786cc60245a8afbf1a8f345b7886e2fba443c2754cdd23be7a51ead",
+    "scripts/verify-coarse-cold.py": "8b8f666d7d8a7add6a0eec50364b98de0643038f5e2b28c57e80a83a10113d20",
+    "scripts/verify-coarse-prototype.py": "bab160c1f5b3d94083c28153d39274f2445c4130d6340dbac5f90a9f9f0dbaa4",
+    "scripts/verify-context-startup.py": "5e7deea496a2d916039a18e1283070b3e4819dd80d665afd005899c2e52aaeed",
+    "scripts/verify-hot-config.py": "86c125c3f9ce5dc4c1a75d66751b3155df567f293e31040bd00d53bea02e56dc",
+    "scripts/verify-integrated-lifecycle.py": "dc2795d72106a92cab418dad08b97e2f93b8b157a1cbcd60b699f53179438e8f",
+    "scripts/verify-live-context.py": "41f42deb215c9414fe745042a689d6432fae20942033acda2eb179c19ed7809f",
+    "scripts/verify-model-config.py": "0436c8e0e3c6be110029937b1a1de2d11b85bb10bf7ca2c483107a0387314799",
+    "scripts/verify-ore-hosts.py": "a410a8e6112d68349b8ae5054e7aef1ed70631fcb271c5616a3af22addf44ae7",
+    "scripts/verify-sampling-support.py": "2e1f96ed03e44c5985b131da3627b6a4fecf8ece0870daa51ff34a27b642c584",
+    "scripts/verify-td-artifact.py": "1fa5db842d4fe14a1948b1bf6080fa6c6ca04c2d5e49a5096c6159a536d3ccfa",
+    "scripts/verify-td-landforms.py": "31ba6e8376c37134002bc0641a0681e9990b51a6650fbdcbda3f392423d4c456",
+    "scripts/verify-td-numerics.py": "ae2005e3a63818c6923d851624c007791cd745f65af1216e52f3d5a2ee599a73",
+    "scripts/verify-td-tracking.py": "f834537112da4301ff6fbb7edccf5e7c5a07960b9b4e37554a982c4e45dfd5a4",
+    "scripts/verify-terrain-diagnostics.py": "e2878128b213ff08c604b1f26db8c8f94a4ce0cf62bbe3742670c4ab0c2e3ef7",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/CoalTrace.java": "33a4b609fd42db8592bc14da06cb0fd000d44c0c08d77a25e1424ce6e7e240c7",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/CoarseSampler.java": "11cc398878ebe724899cd6d6bf37c5f273839e0c5471a07290b81117afbfc365",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/HostAcceptance.java": "c7c5bedd9ecb2d5f7f6d1131727d57c5518caad30066256aeda67c478fa48f8c",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/HotConfig.java": "e7365dc1b533d6a2c6d114ca1237034fac0353044332c04bbfa467c8d81d35f9",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/IntegratedLifecycle.java": "1fb7dea7d97aa425c54538dbbd05bf75db4f8c41116d7f74bb75a7080792872e",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/LiveContext.java": "63a7f13b5bdbc87c6d1dbfd7cdf7529fcd20c34c28bc5a128f1417ce7f442689",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/NumericalSupport.java": "6d62b0b07368dabee8a8d86e48ccddd5c02137439d72c2cecfac59f6cba81051",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/Performance.java": "0ae2cf492a4e5b0db68f99dc699731799542a2015546d3da0857f27afe42b242",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/RuntimeProbe.java": "a49c653ce56ac1f3d23ff5d9198552a7048600906461abbdb2e71cff95dfdecf",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/SamplingDiagnostic.java": "2539ee7d5583119ba19449de300b02a09e3de415331957969a0c716a96f1d15d",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/TrackingPatch.java": "9bc59042356233cdc616e6b110d739a814e3dce9535b4e97507c77c6271831a8",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/mixin/BackendExecutionProbeMixin.java": "5f9c640dc25a9ef247fcebb368070036a2f627a3b6d68c455d2f00c5b75b79f2",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/mixin/FeatureSeedTraceMixin.java": "f8455ca3ebce60054e8cb1bcfac60889a6559cf0065d826071f41ddfb8812e81",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/mixin/HeightmapProbeMixin.java": "3e61e6b7d6355819333b6dc0ae705ef54644f2287d950f31213eaaaa104b39b4",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/mixin/IntegratedClientProbeMixin.java": "ff2a03b7b9fb960be4a1cf3c9e9202f340da7e21c249b45bb64c6d0a8b577534",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/mixin/ModelConfigProbeMixin.java": "3b1414ba316c295c4bc482252f2e26f8cf3688436938d30ae7d3953de0f0819d",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/mixin/OreTraceMixin.java": "eb0ad44bdb505c48103f90420bf3c71d8a57d02e4eaec59bc3a2040ef43b6ea1",
+    "src/runtimeProbe/resources/geology-runtime-probe.mixins.json": "dd7ad4554c58d284a6fcd84e4a2ce33a1f3281ba536f2c4eb47161e290543679"
+  },
+  "artifacts": {
+    "runs\\acceptance\\td-numerics-2026-11-04-02\\cpu-0\\mods\\NeoForge-terrain-diffusion-mc-2.3.0-cpu+1.21.1.jar": "3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8",
+    "build\\libs\\geologic-variation-0.2.2-dev.jar": "c5775ecafaefaaebb192d81152ab128d291d98e824fd4794e4b8d61f20850fa2",
+    "build\\runtime-probe\\geology-runtime-probe-0.2.2-dev.jar": "5744db232a2d64af0755cf7a67dddd79f953d2ca7c38c32082073433952a6acb"
+  },
+  "retained_inputs": {
+    "docs/evidence/td-numerics.zip": "f68d18def50f4452e270f0bc40f36e8fd508320c60afbe379afe644976419331",
+    "docs/evidence/td-tracking-negative.json": "90c465dc41c4a1582fb7a3aef59cc1610dd2e00117d40077b36c4c864ee6c000"
+  },
+  "exporter_sha256": "6b926f3d471c61e556cb336bbb2001e21ae027b547c30e0f2e0f01044521e941",
+  "cases": [
+    {
+      "index": 0,
+      "seed": -2026110411,
+      "scale": 1,
+      "role": "development",
+      "events": [
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 4,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance settings",
+          "result": {
+            "owner_matches": true,
+            "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+            "kind": "settings",
+            "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+            "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]"
+          }
+        },
+        {
+          "command": "acceptance numeric-control observe",
+          "result": {
+            "provider_before": 0,
+            "action": "observe",
+            "pending": 0,
+            "tensor_reset": false,
+            "fine_after": 0,
+            "fine_before": 0,
+            "provider_after": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "001-c-6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 65,
+            "pipeline_data_calls": 1,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "002-c6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 2,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "003-c-6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 3,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "004-c6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 4,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric-control prime-left",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "005-c-6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 5,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric-control prime-right",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "006-c6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 6,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric-control observe",
+          "result": {
+            "provider_before": 0,
+            "action": "observe",
+            "pending": 0,
+            "tensor_reset": false,
+            "fine_after": 2,
+            "fine_before": 2,
+            "provider_after": 0
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 6,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "007-c-6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 7,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "008-c6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 8,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric-control diagnostic-clear",
+          "result": {
+            "provider_before": 0,
+            "action": "diagnostic-clear",
+            "pending": 0,
+            "tensor_reset": false,
+            "fine_after": 0,
+            "fine_before": 2,
+            "provider_after": 0
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 8,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric-control observe",
+          "result": {
+            "provider_before": 0,
+            "action": "observe",
+            "pending": 0,
+            "tensor_reset": false,
+            "fine_after": 0,
+            "fine_before": 0,
+            "provider_after": 0
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 8,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "009-c-6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 9,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "010-c6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 10,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "011-c-6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 11,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "012-c6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 12,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric-control provider-clear",
+          "result": {
+            "provider_before": 0,
+            "action": "provider-clear",
+            "pending": 0,
+            "tensor_reset": false,
+            "fine_after": 0,
+            "fine_before": 0,
+            "provider_after": 0
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 12,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric-control observe",
+          "result": {
+            "provider_before": 0,
+            "action": "observe",
+            "pending": 0,
+            "tensor_reset": false,
+            "fine_after": 0,
+            "fine_before": 0,
+            "provider_after": 0
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 12,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "013-c-6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 13,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "014-c6-r-14-m0.bin",
+            "row": -14,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 14,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 14,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        }
+      ],
+      "planned_sequence": [
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric-control prime-left",
+        "acceptance numeric-control prime-right",
+        "acceptance numeric-control observe",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric-control diagnostic-clear",
+        "acceptance numeric-control observe",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric-control provider-clear",
+        "acceptance numeric-control observe",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0"
+      ],
+      "config_before": {
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "initial_metrics": {
+        "coarse_calls": 1,
+        "computed_windows": 4,
+        "pipeline_data_calls": 0,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0
+      },
+      "settings": {
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]"
+      },
+      "final_metrics": {
+        "coarse_calls": 1,
+        "computed_windows": 126,
+        "pipeline_data_calls": 14,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0
+      },
+      "exit_code": 0,
+      "snapshot_unchanged": true,
+      "config": {
+        "fml.toml": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
+        "geologic_variation-common.toml": "4389d6e571286b2baeece4c2507a52f5e783f9a60c9c58c36c175f6a22588caa",
+        "neoforge-common.toml": "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4",
+        "neoforge-server.toml": "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f",
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "logs": {
+        "console-1.log": "10f947fdc29771fff9fdcf557c3d8fdc82b4750a68db2ff8c0f1dbd67d21c88b"
+      },
+      "launch_args_sha256": "8390cacc3b3abae75f721b33991faf95c95369d6e0e1331e28182e4b149bf993"
+    },
+    {
+      "index": 1,
+      "seed": -2026110411,
+      "scale": 1,
+      "role": "development",
+      "events": [
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 4,
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance settings",
+          "result": {
+            "kind": "settings",
+            "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+            "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+            "owner_matches": true,
+            "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+          }
+        },
+        {
+          "command": "acceptance numeric-control observe",
+          "result": {
+            "pending": 0,
+            "tensor_reset": false,
+            "fine_after": 0,
+            "fine_before": 0,
+            "provider_after": 0,
+            "provider_before": 0,
+            "action": "observe"
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "001-c-6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 65,
+            "pipeline_data_calls": 1,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "002-c6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 2,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "col": -6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "003-c-6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 3,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "col": 6,
+            "mode": 0,
+            "seed": -2026110411,
+            "file": "004-c6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 4,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "coarse_calls": 1,
+            "computed_windows": 126,
+            "pipeline_data_calls": 4,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0
+          }
+        }
+      ],
+      "planned_sequence": [
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0"
+      ],
+      "config_before": {
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "initial_metrics": {
+        "coarse_calls": 1,
+        "computed_windows": 4,
+        "pipeline_data_calls": 0,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0
+      },
+      "settings": {
+        "kind": "settings",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]"
+      },
+      "final_metrics": {
+        "coarse_calls": 1,
+        "computed_windows": 126,
+        "pipeline_data_calls": 4,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0
+      },
+      "exit_code": 0,
+      "snapshot_unchanged": true,
+      "config": {
+        "fml.toml": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
+        "geologic_variation-common.toml": "4389d6e571286b2baeece4c2507a52f5e783f9a60c9c58c36c175f6a22588caa",
+        "neoforge-common.toml": "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4",
+        "neoforge-server.toml": "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f",
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "logs": {
+        "console-1.log": "259a9fe5c2fef1b3e18c3cf4f986ec1a5fa77cdd1424dc035d72515b749ea8af"
+      },
+      "launch_args_sha256": "8390cacc3b3abae75f721b33991faf95c95369d6e0e1331e28182e4b149bf993"
+    },
+    {
+      "index": 2,
+      "seed": -2026110411,
+      "scale": 1,
+      "role": "development",
+      "events": [
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "pipeline_data_calls": 0,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 1,
+            "computed_windows": 4
+          }
+        },
+        {
+          "command": "acceptance settings",
+          "result": {
+            "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+            "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+            "owner_matches": true,
+            "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+            "kind": "settings"
+          }
+        },
+        {
+          "command": "acceptance numeric-control observe",
+          "result": {
+            "fine_after": 0,
+            "fine_before": 0,
+            "provider_after": 0,
+            "provider_before": 0,
+            "action": "observe",
+            "pending": 0,
+            "tensor_reset": false
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "seed": -2026110411,
+            "file": "001-c6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "pipeline_data_calls": 1,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 1,
+            "computed_windows": 65
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "seed": -2026110411,
+            "file": "002-c-6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "pipeline_data_calls": 2,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 1,
+            "computed_windows": 126
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "seed": -2026110411,
+            "file": "003-c6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "samples": 65536,
+            "col": 6,
+            "mode": 0,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "pipeline_data_calls": 3,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 1,
+            "computed_windows": 126
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "seed": -2026110411,
+            "file": "004-c-6-r-14-m0.bin",
+            "row": -14,
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "samples": 65536,
+            "col": -6,
+            "mode": 0,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "pipeline_data_calls": 4,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 1,
+            "computed_windows": 126
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "pipeline_data_calls": 4,
+            "heightmap_calls": 0,
+            "anchor_heightmap_calls": 0,
+            "coarse_calls": 1,
+            "computed_windows": 126
+          }
+        }
+      ],
+      "planned_sequence": [
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric -6 -14 0"
+      ],
+      "config_before": {
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "initial_metrics": {
+        "pipeline_data_calls": 0,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0,
+        "coarse_calls": 1,
+        "computed_windows": 4
+      },
+      "settings": {
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=1, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "owner_matches": true,
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings"
+      },
+      "final_metrics": {
+        "pipeline_data_calls": 4,
+        "heightmap_calls": 0,
+        "anchor_heightmap_calls": 0,
+        "coarse_calls": 1,
+        "computed_windows": 126
+      },
+      "exit_code": 0,
+      "snapshot_unchanged": true,
+      "config": {
+        "fml.toml": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
+        "geologic_variation-common.toml": "4389d6e571286b2baeece4c2507a52f5e783f9a60c9c58c36c175f6a22588caa",
+        "neoforge-common.toml": "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4",
+        "neoforge-server.toml": "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f",
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "logs": {
+        "console-1.log": "bfd86817ef75815f16b8b57175e795e1dc52a99e6c6ee122e2f5dffb3570aea2"
+      },
+      "launch_args_sha256": "8390cacc3b3abae75f721b33991faf95c95369d6e0e1331e28182e4b149bf993"
+    },
+    {
+      "index": 3,
+      "seed": -2026110411,
+      "scale": 6,
+      "role": "development",
+      "events": [
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 0,
+            "computed_windows": 4,
+            "coarse_calls": 1
+          }
+        },
+        {
+          "command": "acceptance settings",
+          "result": {
+            "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=6, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+            "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+            "kind": "settings",
+            "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+            "owner_matches": true
+          }
+        },
+        {
+          "command": "acceptance numeric-control observe",
+          "result": {
+            "provider_after": 0,
+            "fine_before": 0,
+            "fine_after": 0,
+            "tensor_reset": false,
+            "pending": 0,
+            "action": "observe",
+            "provider_before": 0
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "row": -14,
+            "file": "001-c-6-r-14-m0.bin",
+            "seed": -2026110411,
+            "mode": 0,
+            "col": -6,
+            "samples": 65536,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 1,
+            "computed_windows": 65,
+            "coarse_calls": 1
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "row": -14,
+            "file": "002-c6-r-14-m0.bin",
+            "seed": -2026110411,
+            "mode": 0,
+            "col": 6,
+            "samples": 65536,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 2,
+            "computed_windows": 126,
+            "coarse_calls": 1
+          }
+        },
+        {
+          "command": "acceptance numeric -6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                -1536,
+                -3328,
+                -1280
+              ]
+            ],
+            "row": -14,
+            "file": "003-c-6-r-14-m0.bin",
+            "seed": -2026110411,
+            "mode": 0,
+            "col": -6,
+            "samples": 65536,
+            "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 3,
+            "computed_windows": 126,
+            "coarse_calls": 1
+          }
+        },
+        {
+          "command": "acceptance numeric 6 -14 0",
+          "result": {
+            "requests": [
+              [
+                -3584,
+                1536,
+                -3328,
+                1792
+              ]
+            ],
+            "row": -14,
+            "file": "004-c6-r-14-m0.bin",
+            "seed": -2026110411,
+            "mode": 0,
+            "col": 6,
+            "samples": 65536,
+            "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 4,
+            "computed_windows": 126,
+            "coarse_calls": 1
+          }
+        },
+        {
+          "command": "acceptance metrics",
+          "result": {
+            "anchor_heightmap_calls": 0,
+            "heightmap_calls": 0,
+            "pipeline_data_calls": 4,
+            "computed_windows": 126,
+            "coarse_calls": 1
+          }
+        }
+      ],
+      "planned_sequence": [
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0",
+        "acceptance numeric -6 -14 0",
+        "acceptance numeric 6 -14 0"
+      ],
+      "config_before": {
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "initial_metrics": {
+        "anchor_heightmap_calls": 0,
+        "heightmap_calls": 0,
+        "pipeline_data_calls": 0,
+        "computed_windows": 4,
+        "coarse_calls": 1
+      },
+      "settings": {
+        "context": "GenerationContext[generator=geology-1, seed=-2026110411, scale=6, tileSize=256, dependency=3212b53cc1af656e37fb73511aa64f9623ea38e274705d102ce7cd9944092fe8, models=64fe6b1af2462a8a53edca28d72b96cf2a6e9534d0be475c90028cb5939601d9, backend=CPU/Windows 11/amd64]",
+        "requested": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "kind": "settings",
+        "active": "GeologySettings[provinceSpacingBlocks=2048, oceanCeilingMetres=-200.0, lowlandCeilingMetres=600.0, mountainFloorMetres=1800.0, gentleReliefMetres=300.0, ruggedReliefMetres=600.0]",
+        "owner_matches": true
+      },
+      "final_metrics": {
+        "anchor_heightmap_calls": 0,
+        "heightmap_calls": 0,
+        "pipeline_data_calls": 4,
+        "computed_windows": 126,
+        "coarse_calls": 1
+      },
+      "exit_code": 0,
+      "snapshot_unchanged": true,
+      "config": {
+        "fml.toml": "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825",
+        "geologic_variation-common.toml": "4389d6e571286b2baeece4c2507a52f5e783f9a60c9c58c36c175f6a22588caa",
+        "neoforge-common.toml": "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4",
+        "neoforge-server.toml": "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f",
+        "terrain-diffusion-mc.properties": "02d3b2f0540cfe097e08872c9af9705c38def9868ae4e422a0ec991f5c7d6baf"
+      },
+      "logs": {
+        "console-1.log": "203072760adb3b2f775a91ba32c7f76773af9293de49395573ca22ecbeb7adcc"
+      },
+      "launch_args_sha256": "8390cacc3b3abae75f721b33991faf95c95369d6e0e1331e28182e4b149bf993"
+    }
+  ],
+  "arrays": [
+    {
+      "case": 0,
+      "position": 0,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "001-c-6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 0,
+      "position": 1,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "002-c6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 0,
+      "position": 2,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "003-c-6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 0,
+      "position": 3,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "004-c6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 0,
+      "position": 4,
+      "command": "acceptance numeric-control prime-left",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "005-c-6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 0,
+      "position": 5,
+      "command": "acceptance numeric-control prime-right",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "006-c6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 0,
+      "position": 6,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "007-c-6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 0,
+      "position": 7,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "008-c6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 0,
+      "position": 8,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "009-c-6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 0,
+      "position": 9,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "010-c6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 0,
+      "position": 10,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "011-c-6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 0,
+      "position": 11,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "012-c6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 0,
+      "position": 12,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "013-c-6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 0,
+      "position": 13,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "014-c6-r-14-m0.bin",
+      "row": -14,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 1,
+      "position": 0,
+      "command": "acceptance numeric -6 -14 0",
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "001-c-6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 1,
+      "position": 1,
+      "command": "acceptance numeric 6 -14 0",
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "002-c6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 1,
+      "position": 2,
+      "command": "acceptance numeric -6 -14 0",
+      "col": -6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "003-c-6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 1,
+      "position": 3,
+      "command": "acceptance numeric 6 -14 0",
+      "col": 6,
+      "mode": 0,
+      "seed": -2026110411,
+      "file": "004-c6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 2,
+      "position": 0,
+      "command": "acceptance numeric 6 -14 0",
+      "seed": -2026110411,
+      "file": "001-c6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 2,
+      "position": 1,
+      "command": "acceptance numeric -6 -14 0",
+      "seed": -2026110411,
+      "file": "002-c-6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 2,
+      "position": 2,
+      "command": "acceptance numeric 6 -14 0",
+      "seed": -2026110411,
+      "file": "003-c6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "samples": 65536,
+      "col": 6,
+      "mode": 0,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 2,
+      "position": 3,
+      "command": "acceptance numeric -6 -14 0",
+      "seed": -2026110411,
+      "file": "004-c-6-r-14-m0.bin",
+      "row": -14,
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "samples": 65536,
+      "col": -6,
+      "mode": 0,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 3,
+      "position": 0,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "row": -14,
+      "file": "001-c-6-r-14-m0.bin",
+      "seed": -2026110411,
+      "mode": 0,
+      "col": -6,
+      "samples": 65536,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 3,
+      "position": 1,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "row": -14,
+      "file": "002-c6-r-14-m0.bin",
+      "seed": -2026110411,
+      "mode": 0,
+      "col": 6,
+      "samples": 65536,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    },
+    {
+      "case": 3,
+      "position": 2,
+      "command": "acceptance numeric -6 -14 0",
+      "requests": [
+        [
+          -3584,
+          -1536,
+          -3328,
+          -1280
+        ]
+      ],
+      "row": -14,
+      "file": "003-c-6-r-14-m0.bin",
+      "seed": -2026110411,
+      "mode": 0,
+      "col": -6,
+      "samples": 65536,
+      "sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad"
+    },
+    {
+      "case": 3,
+      "position": 3,
+      "command": "acceptance numeric 6 -14 0",
+      "requests": [
+        [
+          -3584,
+          1536,
+          -3328,
+          1792
+        ]
+      ],
+      "row": -14,
+      "file": "004-c6-r-14-m0.bin",
+      "seed": -2026110411,
+      "mode": 0,
+      "col": 6,
+      "samples": 65536,
+      "sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738"
+    }
+  ],
+  "comparisons": [
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        0,
+        0
+      ],
+      "intervention": [
+        0,
+        2
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        1,
+        0
+      ],
+      "intervention": [
+        1,
+        2
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        2,
+        0
+      ],
+      "intervention": [
+        2,
+        2
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        3,
+        0
+      ],
+      "intervention": [
+        3,
+        2
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "fresh process same order/scale",
+      "reference": [
+        0,
+        0
+      ],
+      "intervention": [
+        1,
+        0
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "request order only versus fresh repeat",
+      "reference": [
+        1,
+        0
+      ],
+      "intervention": [
+        2,
+        1
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "scale only versus fresh repeat",
+      "reference": [
+        1,
+        0
+      ],
+      "intervention": [
+        3,
+        0
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "real diagnostic cache population",
+      "reference": [
+        0,
+        0
+      ],
+      "intervention": [
+        0,
+        4
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "diagnostic clear only",
+      "reference": [
+        0,
+        6
+      ],
+      "intervention": [
+        0,
+        8
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "no-clear temporal control",
+      "reference": [
+        0,
+        8
+      ],
+      "intervention": [
+        0,
+        10
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "provider public clear only (tensor store unchanged)",
+      "reference": [
+        0,
+        10
+      ],
+      "intervention": [
+        0,
+        12
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        0,
+        1
+      ],
+      "intervention": [
+        0,
+        3
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        1,
+        1
+      ],
+      "intervention": [
+        1,
+        3
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        2,
+        1
+      ],
+      "intervention": [
+        2,
+        3
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2550.060099856928,
+      "mean_b": -2550.060099856928,
+      "relief_a": 1704.932861328125,
+      "relief_b": 1704.932861328125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "same-process repeated identical read",
+      "reference": [
+        3,
+        1
+      ],
+      "intervention": [
+        3,
+        3
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "fresh process same order/scale",
+      "reference": [
+        0,
+        1
+      ],
+      "intervention": [
+        1,
+        1
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "request order only versus fresh repeat",
+      "reference": [
+        1,
+        1
+      ],
+      "intervention": [
+        2,
+        0
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "scale only versus fresh repeat",
+      "reference": [
+        1,
+        1
+      ],
+      "intervention": [
+        3,
+        1
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "real diagnostic cache population",
+      "reference": [
+        0,
+        1
+      ],
+      "intervention": [
+        0,
+        5
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "diagnostic clear only",
+      "reference": [
+        0,
+        7
+      ],
+      "intervention": [
+        0,
+        9
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "no-clear temporal control",
+      "reference": [
+        0,
+        9
+      ],
+      "intervention": [
+        0,
+        11
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    },
+    {
+      "factor": "provider public clear only (tensor store unchanged)",
+      "reference": [
+        0,
+        11
+      ],
+      "intervention": [
+        0,
+        13
+      ],
+      "exact_equal": true,
+      "differing_indices": [],
+      "maximum_absolute_difference_metres": 0.0,
+      "maximum_ulp_difference": 0,
+      "mean_a": -2495.4526936002076,
+      "mean_b": -2495.4526936002076,
+      "relief_a": 833.882080078125,
+      "relief_b": 833.882080078125,
+      "quantized_differing_indices": []
+    }
+  ],
+  "reused_pr53": [
+    {
+      "col": -6,
+      "pr53_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "comparison": {
+        "exact_equal": true,
+        "differing_indices": [],
+        "maximum_absolute_difference_metres": 0.0,
+        "maximum_ulp_difference": 0,
+        "mean_a": -2550.060099856928,
+        "mean_b": -2550.060099856928,
+        "relief_a": 1704.932861328125,
+        "relief_b": 1704.932861328125,
+        "quantized_differing_indices": []
+      }
+    },
+    {
+      "col": 6,
+      "pr53_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "comparison": {
+        "exact_equal": true,
+        "differing_indices": [],
+        "maximum_absolute_difference_metres": 0.0,
+        "maximum_ulp_difference": 0,
+        "mean_a": -2495.4526936002076,
+        "mean_b": -2495.4526936002076,
+        "relief_a": 833.882080078125,
+        "relief_b": 833.882080078125,
+        "quantized_differing_indices": []
+      }
+    }
+  ],
+  "historical_hashes": [
+    {
+      "case": 0,
+      "position": 0,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 2,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 4,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 6,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 8,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 10,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 12,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 1,
+      "position": 0,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 1,
+      "position": 2,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 2,
+      "position": 1,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 2,
+      "position": 3,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 3,
+      "position": 0,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 3,
+      "position": 2,
+      "col": -6,
+      "old_scale1_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+      "old_scale6_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 1,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 3,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 5,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 7,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 9,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 11,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 0,
+      "position": 13,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 1,
+      "position": 1,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 1,
+      "position": 3,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 2,
+      "position": 0,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 2,
+      "position": 2,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 3,
+      "position": 1,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    },
+    {
+      "case": 3,
+      "position": 3,
+      "col": 6,
+      "old_scale1_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+      "old_scale6_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+      "matches_old_scale1": false,
+      "matches_old_scale6": true,
+      "historical_indices_and_ulps": null
+    }
+  ],
+  "launches": 4,
+  "direct_requests": 26,
+  "unique_native_supports": 2,
+  "computed_windows_including_startup": 504,
+  "startup_windows": 16,
+  "elapsed_seconds": 221.5470000000205,
+  "sampled_peak_working_set": 12606472192,
+  "shared_inputs_unchanged": true,
+  "fresh_validation": false,
+  "geological_selection": "abstain",
+  "historical_cause": "unresolved; no historical full arrays",
+  "corner": "unresolved; no new corner query",
+  "failure_preserved": "PR51 Paired coarse drift and PR52 Actual matching native support changed remain failed",
+  "archive_sha256": "cfa9fb9091cbc61306649078f45290bb705dfbf1fddc78ac6b5693b60d52d903"
+}

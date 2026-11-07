@@ -18,7 +18,7 @@ public final class NumericalSupport {
     private static int serial;
     private static boolean capture;
     private static Map<String,Object> captured;
-    static void captureNative(int row,int col,float[] values) throws Exception {
+    public static void captureNative(int row,int col,float[] values) throws Exception {
         if(capture)captured=write(row,col,values);
     }
     private static Map<String,Object> write(int row,int col,float[] values) throws Exception {

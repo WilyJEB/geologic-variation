@@ -1,0 +1,4547 @@
+{
+  "diagnostic": "axis-confinement-1",
+  "sources": {
+    "scripts/td-axis-confinement.py": "4dac3add3c2f3bd5396046a04017736815b04976b3bfe9702fd4e7eb751314fa",
+    "scripts/evaluate-td-axis.py": "73e6ddb1674a01dfe4e48a5396c9a3451d58c81ad73a287ae5a121a8fb4e4f3a",
+    "docs/td-axis-numerical-protocol.md": "f04f791918dd5722d7ae4ecf46d68cdb2a8744412b199bcd49dd46c52893e597",
+    "docs/evidence/td-geometry-arc.json": "a8bfb93e14056a16cbdbeda323258377c37dad001a0ad3afab6efe587c781f4f"
+  },
+  "summary": [
+    {
+      "split": "development",
+      "shape": "straight",
+      "cases": 20,
+      "outcomes": {
+        "success": 20,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "curve",
+      "cases": 20,
+      "outcomes": {
+        "success": 20,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "linear",
+      "cases": 20,
+      "outcomes": {
+        "success": 20,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "quadratic",
+      "cases": 20,
+      "outcomes": {
+        "success": 20,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "sinusoidal",
+      "cases": 20,
+      "outcomes": {
+        "success": 20,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "slope",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 20
+      },
+      "incomplete": 20
+    },
+    {
+      "split": "development",
+      "shape": "isolated",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 20,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "saddle",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 20,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "crossing",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 20
+      },
+      "incomplete": 12
+    },
+    {
+      "split": "development",
+      "shape": "parallel",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 20
+      },
+      "incomplete": 20
+    },
+    {
+      "split": "development",
+      "shape": "gap",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 20
+      },
+      "incomplete": 20
+    },
+    {
+      "split": "development",
+      "shape": "elongated_isolated",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 20,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "shallow_saddle",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 20,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "strong_nonlinear",
+      "cases": 20,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 20,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "development",
+      "shape": "asymmetric",
+      "cases": 20,
+      "outcomes": {
+        "success": 20,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "straight",
+      "cases": 16,
+      "outcomes": {
+        "success": 16,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "curve",
+      "cases": 16,
+      "outcomes": {
+        "success": 16,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "linear",
+      "cases": 16,
+      "outcomes": {
+        "success": 12,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 4
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "quadratic",
+      "cases": 16,
+      "outcomes": {
+        "success": 12,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 4
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "sinusoidal",
+      "cases": 16,
+      "outcomes": {
+        "success": 8,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 8
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "slope",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 16
+      },
+      "incomplete": 16
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "isolated",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 16,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "saddle",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 16,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "crossing",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 16
+      },
+      "incomplete": 16
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "parallel",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 16
+      },
+      "incomplete": 16
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "gap",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 16
+      },
+      "incomplete": 16
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "elongated_isolated",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 16,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "shallow_saddle",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 16,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "strong_nonlinear",
+      "cases": 16,
+      "outcomes": {
+        "success": 0,
+        "false positive": 0,
+        "false negative": 8,
+        "correct rejection": 0,
+        "abstention": 8
+      },
+      "incomplete": 0
+    },
+    {
+      "split": "frozen analytical validation",
+      "shape": "asymmetric",
+      "cases": 16,
+      "outcomes": {
+        "success": 16,
+        "false positive": 0,
+        "false negative": 0,
+        "correct rejection": 0,
+        "abstention": 0
+      },
+      "incomplete": 0
+    }
+  ],
+  "retained": [
+    {
+      "seed": 8675309,
+      "kind": "ridge",
+      "role": "reused development",
+      "descriptive": {
+        "path": {
+          "supported": false,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "stations": [
+            {
+              "point": [
+                3889.472472493293,
+                12726.510442345161
+              ],
+              "axis": [
+                0.38268343236509,
+                -0.9238795325112866
+              ],
+              "height": -1110.7239993451822,
+              "sides": [
+                374.05712257323717,
+                169.96669217323824
+              ],
+              "score": 169.96669217323824
+            },
+            {
+              "point": [
+                4019.4888568990073,
+                12505.984389947569
+              ],
+              "axis": [
+                0.7071067811865474,
+                -0.7071067811865477
+              ],
+              "height": -1280.468456071481,
+              "sides": [
+                1167.943641411714,
+                51.24889219132024
+              ],
+              "score": 51.24889219132024
+            },
+            {
+              "point": [
+                4224,
+                12352
+              ],
+              "axis": [
+                0.9238795325112865,
+                -0.3826834323650904
+              ],
+              "height": -892.0398,
+              "sides": [
+                975.6321633905659,
+                891.9788867191319
+              ],
+              "score": 891.9788867191319
+            }
+          ],
+          "decisions": [
+            [
+              {
+                "point": [
+                  4224,
+                  12352
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -892.0398,
+                "sides": [
+                  975.6321633905659,
+                  891.9788867191319
+                ],
+                "score": 891.9788867191319
+              },
+              {
+                "point": [
+                  4288,
+                  12352
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -872.58844,
+                "sides": [
+                  854.5249522753131,
+                  992.4397974598485
+                ],
+                "score": 854.5249522753131
+              },
+              {
+                "point": [
+                  4160,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -993.6888,
+                "sides": [
+                  852.2920703307647,
+                  860.7480255241236
+                ],
+                "score": 852.2920703307647
+              },
+              {
+                "point": [
+                  4224,
+                  12352
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -892.0398,
+                "sides": [
+                  973.9662569854422,
+                  785.1076005748962
+                ],
+                "score": 785.1076005748962
+              },
+              {
+                "point": [
+                  4288,
+                  12352
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -872.58844,
+                "sides": [
+                  773.4015031480478,
+                  947.1931921650971
+                ],
+                "score": 773.4015031480478
+              },
+              {
+                "point": [
+                  4224,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -903.5681,
+                "sides": [
+                  696.9581140510916,
+                  1005.8354138188465
+                ],
+                "score": 696.9581140510916
+              },
+              {
+                "point": [
+                  4160,
+                  12480
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -1085.1514,
+                "sides": [
+                  678.5437111690173,
+                  750.8132689401891
+                ],
+                "score": 678.5437111690173
+              },
+              {
+                "point": [
+                  4160,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -993.6888,
+                "sides": [
+                  765.7970328973873,
+                  665.2275885420739
+                ],
+                "score": 665.2275885420739
+              },
+              {
+                "point": [
+                  4224,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -903.5681,
+                "sides": [
+                  663.977361268657,
+                  824.8304962675038
+                ],
+                "score": 663.977361268657
+              },
+              {
+                "point": [
+                  4224,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -903.5681,
+                "sides": [
+                  656.7663657021164,
+                  1018.3168886333156
+                ],
+                "score": 656.7663657021164
+              },
+              {
+                "point": [
+                  4224,
+                  12352
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -892.0398,
+                "sides": [
+                  861.1570951942902,
+                  637.8608876329195
+                ],
+                "score": 637.8608876329195
+              },
+              {
+                "point": [
+                  4160,
+                  12352
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -977.9123,
+                "sides": [
+                  1060.9419638255774,
+                  629.3176372244225
+                ],
+                "score": 629.3176372244225
+              },
+              {
+                "point": [
+                  4288,
+                  12352
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -872.58844,
+                "sides": [
+                  625.233851346921,
+                  999.3684519424237
+                ],
+                "score": 625.233851346921
+              },
+              {
+                "point": [
+                  4160,
+                  12352
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -977.9123,
+                "sides": [
+                  1067.4236258189387,
+                  592.2105803396496
+                ],
+                "score": 592.2105803396496
+              },
+              {
+                "point": [
+                  4160,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -993.6888,
+                "sides": [
+                  946.7618596207673,
+                  577.495171619906
+                ],
+                "score": 577.495171619906
+              },
+              {
+                "point": [
+                  4096,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -1135.1329,
+                "sides": [
+                  969.2622566301552,
+                  575.2454715773995
+                ],
+                "score": 575.2454715773995
+              },
+              {
+                "point": [
+                  4160,
+                  12480
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -1085.1514,
+                "sides": [
+                  570.0724551448288,
+                  903.1588908340191
+                ],
+                "score": 570.0724551448288
+              },
+              {
+                "point": [
+                  4288,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -896.2941,
+                "sides": [
+                  562.2040876713969,
+                  1121.8977837384678
+                ],
+                "score": 562.2040876713969
+              },
+              {
+                "point": [
+                  4352,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -980.5042,
+                "sides": [
+                  488.19254747972275,
+                  1085.7860548693184
+                ],
+                "score": 488.19254747972275
+              },
+              {
+                "point": [
+                  4288,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -896.2941,
+                "sides": [
+                  472.46645233197194,
+                  1098.7705992362312
+                ],
+                "score": 472.46645233197194
+              },
+              {
+                "point": [
+                  4224,
+                  12288
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -1111.3417,
+                "sides": [
+                  848.8418451884588,
+                  447.9213802003069
+                ],
+                "score": 447.9213802003069
+              },
+              {
+                "point": [
+                  4288,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -896.2941,
+                "sides": [
+                  428.081493173726,
+                  1073.32582056899
+                ],
+                "score": 428.081493173726
+              },
+              {
+                "point": [
+                  4160,
+                  12480
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -1085.1514,
+                "sides": [
+                  410.9613191046126,
+                  647.7131028750166
+                ],
+                "score": 410.9613191046126
+              },
+              {
+                "point": [
+                  4224,
+                  12288
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -1111.3417,
+                "sides": [
+                  1024.5094929527804,
+                  388.5806690566483
+                ],
+                "score": 388.5806690566483
+              },
+              {
+                "point": [
+                  4096,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -1135.1329,
+                "sides": [
+                  1204.0626776842537,
+                  324.1382779663072
+                ],
+                "score": 324.1382779663072
+              },
+              {
+                "point": [
+                  4224,
+                  12480
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -1116.87,
+                "sides": [
+                  322.52294912467187,
+                  814.8356537708139
+                ],
+                "score": 322.52294912467187
+              },
+              {
+                "point": [
+                  4160,
+                  12352
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -977.9123,
+                "sides": [
+                  1078.7551444565893,
+                  301.91432496779726
+                ],
+                "score": 301.91432496779726
+              },
+              {
+                "point": [
+                  4352,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -980.5042,
+                "sides": [
+                  275.54483905733775,
+                  1211.7868893536897
+                ],
+                "score": 275.54483905733775
+              },
+              {
+                "point": [
+                  4224,
+                  12288
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -1111.3417,
+                "sides": [
+                  1016.0643786186884,
+                  270.73401371548425
+                ],
+                "score": 270.73401371548425
+              },
+              {
+                "point": [
+                  4224,
+                  12480
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -1116.87,
+                "sides": [
+                  266.02071177648827,
+                  924.0200313112905
+                ],
+                "score": 266.02071177648827
+              },
+              {
+                "point": [
+                  4096,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -1135.1329,
+                "sides": [
+                  830.364217055954,
+                  185.20805368175525
+                ],
+                "score": 185.20805368175525
+              },
+              {
+                "point": [
+                  4224,
+                  12480
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -1116.87,
+                "sides": [
+                  184.10420835752234,
+                  962.1308330316947
+                ],
+                "score": 184.10420835752234
+              },
+              {
+                "point": [
+                  4352,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -980.5042,
+                "sides": [
+                  162.8013329099805,
+                  1290.219199884607
+                ],
+                "score": 162.8013329099805
+              }
+            ],
+            [
+              {
+                "point": [
+                  4019.4888568990073,
+                  12505.984389947569
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -1280.468456071481,
+                "sides": [
+                  1167.943641411714,
+                  51.24889219132024
+                ],
+                "score": 51.24889219132024
+              }
+            ],
+            [
+              {
+                "point": [
+                  3889.472472493293,
+                  12726.510442345161
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -1110.7239993451822,
+                "sides": [
+                  374.05712257323717,
+                  169.96669217323824
+                ],
+                "score": 169.96669217323824
+              }
+            ],
+            []
+          ],
+          "path_distances": [
+            0.0,
+            256.0,
+            511.9999999999995
+          ],
+          "total_turn_degrees": 44.99999999999994,
+          "weakest_side_metres": 51.24889219132024,
+          "height_range_metres": 388.4286560714809,
+          "arc_endpoint_residual_metres": 279.0865563988899,
+          "legacy_height_range_passed": false,
+          "arc_height_residual_passed": false,
+          "support": "interpolated point contrast; no confirmed unsampled extremum",
+          "geological_selection": "abstain"
+        },
+        "ratios": [],
+        "decision": "abstain",
+        "reasons": [
+          "incomplete path; no gap bridging"
+        ]
+      },
+      "confirmed_extrema": false,
+      "coverage_passed": false,
+      "decision": "abstain",
+      "reason": "Unknown TD interpolation error; no new fine support authorized"
+    },
+    {
+      "seed": 8675309,
+      "kind": "basin",
+      "role": "reused development",
+      "descriptive": {
+        "path": {
+          "supported": false,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "stations": [
+            {
+              "point": [
+                -8028.272190213875,
+                -8445.494622443724
+              ],
+              "axis": [
+                -0.7071067811865475,
+                0.7071067811865476
+              ],
+              "height": -2627.712455569401,
+              "sides": [
+                286.9549962940391,
+                233.6158866600931
+              ],
+              "score": 233.6158866600931
+            },
+            {
+              "point": [
+                -8064,
+                -8192
+              ],
+              "axis": [
+                -0.3826834323650897,
+                0.9238795325112867
+              ],
+              "height": -2248.9355,
+              "sides": [
+                942.6723358738257,
+                993.9966223517058
+              ],
+              "score": 942.6723358738257
+            },
+            {
+              "point": [
+                -8099.727809786125,
+                -7938.505377556276
+              ],
+              "axis": [
+                6.123233995736766e-17,
+                1.0
+              ],
+              "height": -466.09274708073235,
+              "sides": [
+                402.2275340302714,
+                458.90832435828867
+              ],
+              "score": 402.2275340302714
+            }
+          ],
+          "decisions": [
+            [
+              {
+                "point": [
+                  -8064,
+                  -8192
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -2248.9355,
+                "sides": [
+                  942.6723358738257,
+                  993.9966223517058
+                ],
+                "score": 942.6723358738257
+              },
+              {
+                "point": [
+                  -8064,
+                  -8064
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -1596.6321,
+                "sides": [
+                  809.13234,
+                  893.71846
+                ],
+                "score": 809.13234
+              },
+              {
+                "point": [
+                  -8064,
+                  -8000
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -1023.6436,
+                "sides": [
+                  841.19394,
+                  767.7526
+                ],
+                "score": 767.7526
+              },
+              {
+                "point": [
+                  -8000,
+                  -8064
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -1623.9707,
+                "sides": [
+                  991.7817000000001,
+                  740.58496
+                ],
+                "score": 740.58496
+              },
+              {
+                "point": [
+                  -8128,
+                  -8128
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -1886.8344,
+                "sides": [
+                  1165.3944517760735,
+                  721.8747900968417
+                ],
+                "score": 721.8747900968417
+              },
+              {
+                "point": [
+                  -8064,
+                  -8128
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -2094.0205,
+                "sides": [
+                  1577.3379580800806,
+                  631.3155433247466
+                ],
+                "score": 631.3155433247466
+              },
+              {
+                "point": [
+                  -8128,
+                  -8000
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -885.77374,
+                "sides": [
+                  606.98984,
+                  716.00394
+                ],
+                "score": 606.98984
+              },
+              {
+                "point": [
+                  -8000,
+                  -8128
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -2112.8352,
+                "sides": [
+                  600.6494,
+                  595.8675000000001
+                ],
+                "score": 595.8675000000001
+              },
+              {
+                "point": [
+                  -8064,
+                  -7936
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -502.90402,
+                "sides": [
+                  460.84958,
+                  512.418967
+                ],
+                "score": 460.84958
+              },
+              {
+                "point": [
+                  -8000,
+                  -8000
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -860.12415,
+                "sides": [
+                  732.2979799999999,
+                  448.85407
+                ],
+                "score": 448.85407
+              },
+              {
+                "point": [
+                  -8064,
+                  -8128
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -2094.0205,
+                "sides": [
+                  359.6738,
+                  745.6393
+                ],
+                "score": 359.6738
+              },
+              {
+                "point": [
+                  -8000,
+                  -8128
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -2112.8352,
+                "sides": [
+                  1717.3101969837676,
+                  327.2848205725013
+                ],
+                "score": 327.2848205725013
+              },
+              {
+                "point": [
+                  -7936,
+                  -8064
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -1374.4974,
+                "sides": [
+                  815.28,
+                  319.7961
+                ],
+                "score": 319.7961
+              },
+              {
+                "point": [
+                  -8128,
+                  -8064
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -1305.8296,
+                "sides": [
+                  275.22350000000006,
+                  763.2092
+                ],
+                "score": 275.22350000000006
+              },
+              {
+                "point": [
+                  -8192,
+                  -8064
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -1054.7013,
+                "sides": [
+                  650.7788160370437,
+                  183.27472422001892
+                ],
+                "score": 183.27472422001892
+              },
+              {
+                "point": [
+                  -8128,
+                  -8064
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -1305.8296,
+                "sides": [
+                  1090.5783765517463,
+                  97.61830118904845
+                ],
+                "score": 97.61830118904845
+              },
+              {
+                "point": [
+                  -8064,
+                  -8064
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -1596.6321,
+                "sides": [
+                  1470.6494873769786,
+                  69.27953388396963
+                ],
+                "score": 69.27953388396963
+              }
+            ],
+            [
+              {
+                "point": [
+                  -8028.272190213875,
+                  -8445.494622443724
+                ],
+                "axis": [
+                  -0.7071067811865475,
+                  0.7071067811865476
+                ],
+                "height": -2627.712455569401,
+                "sides": [
+                  286.9549962940391,
+                  233.6158866600931
+                ],
+                "score": 233.6158866600931
+              },
+              {
+                "point": [
+                  -7966.033041314537,
+                  -8428.51316032289
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -2652.3403192553405,
+                "sides": [
+                  152.66491031108308,
+                  432.84314651065506
+                ],
+                "score": 152.66491031108308
+              },
+              {
+                "point": [
+                  -8028.272190213875,
+                  -8445.494622443724
+                ],
+                "axis": [
+                  -0.3826834323650897,
+                  0.9238795325112867
+                ],
+                "height": -2627.712455569401,
+                "sides": [
+                  133.2853797899611,
+                  488.86937823740436
+                ],
+                "score": 133.2853797899611
+              },
+              {
+                "point": [
+                  -7966.033041314537,
+                  -8428.51316032289
+                ],
+                "axis": [
+                  -0.7071067811865475,
+                  0.7071067811865476
+                ],
+                "height": -2652.3403192553405,
+                "sides": [
+                  270.9610154208758,
+                  108.29005341577249
+                ],
+                "score": 108.29005341577249
+              }
+            ],
+            [],
+            [
+              {
+                "point": [
+                  -8099.727809786125,
+                  -7938.505377556276
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -466.09274708073235,
+                "sides": [
+                  402.2275340302714,
+                  458.90832435828867
+                ],
+                "score": 402.2275340302714
+              },
+              {
+                "point": [
+                  -8161.966958685463,
+                  -7955.486839677111
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -430.82537630876527,
+                "sides": [
+                  230.0292895539383,
+                  377.5026692796905
+                ],
+                "score": 230.0292895539383
+              }
+            ],
+            []
+          ],
+          "path_distances": [
+            0.0,
+            255.99999999999991,
+            511.99999999999983
+          ],
+          "total_turn_degrees": 45.00000000000001,
+          "weakest_side_metres": 233.6158866600931,
+          "height_range_metres": 2161.6197084886685,
+          "arc_endpoint_residual_metres": 702.0328986749334,
+          "legacy_height_range_passed": false,
+          "arc_height_residual_passed": false,
+          "support": "interpolated point contrast; no confirmed unsampled extremum",
+          "geological_selection": "abstain"
+        },
+        "ratios": [],
+        "decision": "abstain",
+        "reasons": [
+          "incomplete path; no gap bridging",
+          "center search edge"
+        ]
+      },
+      "confirmed_extrema": false,
+      "coverage_passed": false,
+      "decision": "abstain",
+      "reason": "Unknown TD interpolation error; no new fine support authorized"
+    },
+    {
+      "seed": 2026110407,
+      "kind": "ridge",
+      "role": "reused development",
+      "descriptive": {
+        "path": {
+          "supported": false,
+          "reasons": [
+            "incomplete path; no gap bridging",
+            "center search edge"
+          ],
+          "stations": [
+            {
+              "point": [
+                92.27219021387529,
+                12290.505377556276
+              ],
+              "axis": [
+                6.123233995736766e-17,
+                1.0
+              ],
+              "height": -1196.952871014428,
+              "sides": [
+                451.7993242185944,
+                295.9187970932246
+              ],
+              "score": 295.9187970932246
+            },
+            {
+              "point": [
+                128,
+                12544
+              ],
+              "axis": [
+                0.38268343236508984,
+                0.9238795325112867
+              ],
+              "height": -1378.0065,
+              "sides": [
+                1140.399407292416,
+                1393.6152300729013
+              ],
+              "score": 1140.399407292416
+            },
+            {
+              "point": [
+                225.966958685463,
+                12780.51316032289
+              ],
+              "axis": [
+                0.38268343236508984,
+                0.9238795325112867
+              ],
+              "height": -2869.8347889131082,
+              "sides": [
+                894.1306907016487,
+                819.8383836379444
+              ],
+              "score": 819.8383836379444
+            }
+          ],
+          "decisions": [
+            [
+              {
+                "point": [
+                  128,
+                  12544
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1378.0065,
+                "sides": [
+                  1140.399407292416,
+                  1393.6152300729013
+                ],
+                "score": 1140.399407292416
+              },
+              {
+                "point": [
+                  128,
+                  12480
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1148.3811,
+                "sides": [
+                  1066.9264504400162,
+                  1229.8502803385218
+                ],
+                "score": 1066.9264504400162
+              },
+              {
+                "point": [
+                  192,
+                  12480
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1229.5929,
+                "sides": [
+                  1507.1704620591395,
+                  867.6735754758015
+                ],
+                "score": 867.6735754758015
+              },
+              {
+                "point": [
+                  128,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1068.1652,
+                "sides": [
+                  850.6786345263758,
+                  894.2456563150304
+                ],
+                "score": 850.6786345263758
+              },
+              {
+                "point": [
+                  192,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1027.3364,
+                "sides": [
+                  754.5862324450743,
+                  937.3735108948651
+                ],
+                "score": 754.5862324450743
+              },
+              {
+                "point": [
+                  192,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1027.3364,
+                "sides": [
+                  1326.018597327675,
+                  694.0519271325584
+                ],
+                "score": 694.0519271325584
+              },
+              {
+                "point": [
+                  192,
+                  12480
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1229.5929,
+                "sides": [
+                  685.6636304878925,
+                  1196.5951881397395
+                ],
+                "score": 685.6636304878925
+              },
+              {
+                "point": [
+                  192,
+                  12352
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -899.3763,
+                "sides": [
+                  880.1085938660646,
+                  667.8463792063066
+                ],
+                "score": 667.8463792063066
+              },
+              {
+                "point": [
+                  128,
+                  12352
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1056.3281,
+                "sides": [
+                  676.6520516267642,
+                  602.8123013845118
+                ],
+                "score": 602.8123013845118
+              },
+              {
+                "point": [
+                  256,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1207.0098,
+                "sides": [
+                  997.4904631892821,
+                  594.7204468734205
+                ],
+                "score": 594.7204468734205
+              },
+              {
+                "point": [
+                  192,
+                  12352
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -899.3763,
+                "sides": [
+                  1260.7908013179008,
+                  560.48115850377
+                ],
+                "score": 560.48115850377
+              },
+              {
+                "point": [
+                  128,
+                  12288
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1106.8094,
+                "sides": [
+                  579.2704099459233,
+                  396.3071716715017
+                ],
+                "score": 396.3071716715017
+              },
+              {
+                "point": [
+                  256,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -1207.0098,
+                "sides": [
+                  366.8441212377345,
+                  928.9208075088043
+                ],
+                "score": 366.8441212377345
+              },
+              {
+                "point": [
+                  64,
+                  12480
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1194.1198,
+                "sides": [
+                  321.774938165976,
+                  1314.820294122661
+                ],
+                "score": 321.774938165976
+              },
+              {
+                "point": [
+                  256,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1207.0098,
+                "sides": [
+                  1309.2804461740182,
+                  248.01257757729627
+                ],
+                "score": 248.01257757729627
+              },
+              {
+                "point": [
+                  64,
+                  12416
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1127.8584,
+                "sides": [
+                  177.56993756032625,
+                  942.7741811321971
+                ],
+                "score": 177.56993756032625
+              },
+              {
+                "point": [
+                  128,
+                  12480
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1148.3811,
+                "sides": [
+                  175.63505530358975,
+                  1476.2044475452894
+                ],
+                "score": 175.63505530358975
+              },
+              {
+                "point": [
+                  192,
+                  12352
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -899.3763,
+                "sides": [
+                  166.3699814526732,
+                  814.1968296639133
+                ],
+                "score": 166.3699814526732
+              },
+              {
+                "point": [
+                  128,
+                  12544
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1378.0065,
+                "sides": [
+                  147.77614309557202,
+                  1594.8121129558194
+                ],
+                "score": 147.77614309557202
+              },
+              {
+                "point": [
+                  128,
+                  12416
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1068.1652,
+                "sides": [
+                  145.30030331747912,
+                  1194.0091716541374
+                ],
+                "score": 145.30030331747912
+              },
+              {
+                "point": [
+                  0,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -1225.907,
+                "sides": [
+                  88.38662096281405,
+                  1551.8348721459367
+                ],
+                "score": 88.38662096281405
+              },
+              {
+                "point": [
+                  128,
+                  12352
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1056.3281,
+                "sides": [
+                  83.27339375409542,
+                  807.9086291237525
+                ],
+                "score": 83.27339375409542
+              },
+              {
+                "point": [
+                  64,
+                  12416
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -1127.8584,
+                "sides": [
+                  71.55036594103285,
+                  1380.8543088887977
+                ],
+                "score": 71.55036594103285
+              },
+              {
+                "point": [
+                  64,
+                  12352
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -1203.4336,
+                "sides": [
+                  70.02910599079837,
+                  908.0549062586281
+                ],
+                "score": 70.02910599079837
+              },
+              {
+                "point": [
+                  128,
+                  12288
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1106.8094,
+                "sides": [
+                  62.20012206395495,
+                  440.8503982609186
+                ],
+                "score": 62.20012206395495
+              }
+            ],
+            [
+              {
+                "point": [
+                  92.27219021387529,
+                  12290.505377556276
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -1196.952871014428,
+                "sides": [
+                  451.7993242185944,
+                  295.9187970932246
+                ],
+                "score": 295.9187970932246
+              },
+              {
+                "point": [
+                  92.27219021387529,
+                  12290.505377556276
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1196.952871014428,
+                "sides": [
+                  121.58304751790024,
+                  363.5843230084504
+                ],
+                "score": 121.58304751790024
+              }
+            ],
+            [],
+            [
+              {
+                "point": [
+                  225.966958685463,
+                  12780.51316032289
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -2869.8347889131082,
+                "sides": [
+                  894.1306907016487,
+                  819.8383836379444
+                ],
+                "score": 819.8383836379444
+              },
+              {
+                "point": [
+                  163.7278097861247,
+                  12797.494622443724
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -2933.7980632687713,
+                "sides": [
+                  595.1793697223493,
+                  811.9860456014931
+                ],
+                "score": 595.1793697223493
+              },
+              {
+                "point": [
+                  281.9843899475694,
+                  12748.511143100994
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -2943.883005974977,
+                "sides": [
+                  761.649833921032,
+                  551.7775967299049
+                ],
+                "score": 551.7775967299049
+              },
+              {
+                "point": [
+                  281.9843899475694,
+                  12748.511143100994
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2943.883005974977,
+                "sides": [
+                  609.2894907422533,
+                  537.9887083544327
+                ],
+                "score": 537.9887083544327
+              },
+              {
+                "point": [
+                  225.966958685463,
+                  12780.51316032289
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2869.8347889131082,
+                "sides": [
+                  527.6152998775324,
+                  814.3317186867653
+                ],
+                "score": 527.6152998775324
+              },
+              {
+                "point": [
+                  163.7278097861247,
+                  12797.494622443724
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -2933.7980632687713,
+                "sides": [
+                  715.4548323753816,
+                  480.66678783608677
+                ],
+                "score": 480.66678783608677
+              },
+              {
+                "point": [
+                  225.966958685463,
+                  12780.51316032289
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -2869.8347889131082,
+                "sides": [
+                  964.5742904655426,
+                  397.39375462599855
+                ],
+                "score": 397.39375462599855
+              },
+              {
+                "point": [
+                  281.9843899475694,
+                  12748.511143100994
+                ],
+                "axis": [
+                  6.123233995736766e-17,
+                  1.0
+                ],
+                "height": -2943.883005974977,
+                "sides": [
+                  932.3418233360885,
+                  91.32414315618462
+                ],
+                "score": 91.32414315618462
+              }
+            ],
+            []
+          ],
+          "path_distances": [
+            0.0,
+            255.99999999999983,
+            511.99999999999966
+          ],
+          "total_turn_degrees": 22.500000000000004,
+          "weakest_side_metres": 295.9187970932246,
+          "height_range_metres": 1672.8819178986803,
+          "arc_endpoint_residual_metres": 655.387329963768,
+          "legacy_height_range_passed": false,
+          "arc_height_residual_passed": false,
+          "support": "interpolated point contrast; no confirmed unsampled extremum",
+          "geological_selection": "abstain"
+        },
+        "ratios": [],
+        "decision": "abstain",
+        "reasons": [
+          "incomplete path; no gap bridging",
+          "center search edge"
+        ]
+      },
+      "confirmed_extrema": false,
+      "coverage_passed": false,
+      "decision": "abstain",
+      "reason": "Unknown TD interpolation error; no new fine support authorized"
+    },
+    {
+      "seed": 2026110407,
+      "kind": "basin",
+      "role": "reused development",
+      "descriptive": {
+        "path": {
+          "supported": false,
+          "reasons": [
+            "incomplete path; no gap bridging"
+          ],
+          "stations": [
+            {
+              "point": [
+                16476.272190213876,
+                4413.494622443724
+              ],
+              "axis": [
+                -1.8369701987210297e-16,
+                -1.0
+              ],
+              "height": -2830.7509025082873,
+              "sides": [
+                1060.079992364972,
+                1490.4610685066057
+              ],
+              "score": 1060.079992364972
+            },
+            {
+              "point": [
+                16512,
+                4160
+              ],
+              "axis": [
+                0.38268343236509,
+                -0.9238795325112866
+              ],
+              "height": -3218.6335,
+              "sides": [
+                1645.510699209226,
+                1340.8424443878166
+              ],
+              "score": 1340.8424443878166
+            },
+            {
+              "point": [
+                16665.984389947567,
+                3955.4888568990073
+              ],
+              "axis": [
+                0.38268343236509,
+                -0.9238795325112866
+              ],
+              "height": -3413.2305322067123,
+              "sides": [
+                1423.326986721414,
+                1629.9958739096626
+              ],
+              "score": 1423.326986721414
+            },
+            {
+              "point": [
+                16701.71219973369,
+                3701.994234455283
+              ],
+              "axis": [
+                -1.8369701987210297e-16,
+                -1.0
+              ],
+              "height": -3203.435477748214,
+              "sides": [
+                1680.4815548232561,
+                1053.492304497352
+              ],
+              "score": 1053.492304497352
+            }
+          ],
+          "decisions": [
+            [
+              {
+                "point": [
+                  16512,
+                  4160
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3218.6335,
+                "sides": [
+                  1645.510699209226,
+                  1340.8424443878166
+                ],
+                "score": 1340.8424443878166
+              },
+              {
+                "point": [
+                  16512,
+                  4224
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3019.3826,
+                "sides": [
+                  1274.0709189216577,
+                  1220.9833257313169
+                ],
+                "score": 1220.9833257313169
+              },
+              {
+                "point": [
+                  16512,
+                  4160
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3218.6335,
+                "sides": [
+                  1563.496646134285,
+                  1210.8386673981272
+                ],
+                "score": 1210.8386673981272
+              },
+              {
+                "point": [
+                  16576,
+                  4160
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3159.9788,
+                "sides": [
+                  1209.7957997958424,
+                  1808.8187214281093
+                ],
+                "score": 1209.7957997958424
+              },
+              {
+                "point": [
+                  16576,
+                  4160
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3159.9788,
+                "sides": [
+                  1108.4794340929743,
+                  1775.9396139613964
+                ],
+                "score": 1108.4794340929743
+              },
+              {
+                "point": [
+                  16512,
+                  4224
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3019.3826,
+                "sides": [
+                  1096.2873676393313,
+                  1481.3298541673857
+                ],
+                "score": 1096.2873676393313
+              },
+              {
+                "point": [
+                  16512,
+                  4096
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3341.0225,
+                "sides": [
+                  1816.4535927224138,
+                  1091.5044418886855
+                ],
+                "score": 1091.5044418886855
+              },
+              {
+                "point": [
+                  16512,
+                  4096
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3341.0225,
+                "sides": [
+                  1926.8922295311836,
+                  992.2618872503995
+                ],
+                "score": 992.2618872503995
+              },
+              {
+                "point": [
+                  16448,
+                  4224
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2966.5215,
+                "sides": [
+                  1328.9105683386406,
+                  805.0553836467952
+                ],
+                "score": 805.0553836467952
+              },
+              {
+                "point": [
+                  16448,
+                  4288
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2773.7903,
+                "sides": [
+                  877.3314843361889,
+                  794.8102995591839
+                ],
+                "score": 794.8102995591839
+              },
+              {
+                "point": [
+                  16512,
+                  4288
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2943.8364,
+                "sides": [
+                  767.2253853568313,
+                  1514.2252595253171
+                ],
+                "score": 767.2253853568313
+              },
+              {
+                "point": [
+                  16512,
+                  4352
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3018.818,
+                "sides": [
+                  762.1070389787651,
+                  1999.2803352103842
+                ],
+                "score": 762.1070389787651
+              },
+              {
+                "point": [
+                  16512,
+                  4288
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2943.8364,
+                "sides": [
+                  745.5999088514509,
+                  1653.4713275765746
+                ],
+                "score": 745.5999088514509
+              },
+              {
+                "point": [
+                  16448,
+                  4160
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3166.6697,
+                "sides": [
+                  1835.6281150889097,
+                  741.5197669468666
+                ],
+                "score": 741.5197669468666
+              },
+              {
+                "point": [
+                  16576,
+                  4224
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2958.079,
+                "sides": [
+                  639.1302363819646,
+                  1820.6530337136887
+                ],
+                "score": 639.1302363819646
+              },
+              {
+                "point": [
+                  16576,
+                  4224
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2958.079,
+                "sides": [
+                  587.519002464443,
+                  1899.988889297316
+                ],
+                "score": 587.519002464443
+              },
+              {
+                "point": [
+                  16512,
+                  4096
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -3341.0225,
+                "sides": [
+                  1489.1566602782348,
+                  524.5680416730615
+                ],
+                "score": 524.5680416730615
+              },
+              {
+                "point": [
+                  16448,
+                  4288
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2773.7903,
+                "sides": [
+                  1022.1380335611184,
+                  516.4557396896848
+                ],
+                "score": 516.4557396896848
+              },
+              {
+                "point": [
+                  16512,
+                  4352
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3018.818,
+                "sides": [
+                  508.2766158379768,
+                  2065.9435827696466
+                ],
+                "score": 508.2766158379768
+              },
+              {
+                "point": [
+                  16512,
+                  4224
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -3019.3826,
+                "sides": [
+                  707.96932510733,
+                  507.6557248146041
+                ],
+                "score": 507.6557248146041
+              },
+              {
+                "point": [
+                  16448,
+                  4160
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3166.6697,
+                "sides": [
+                  1798.9752211204038,
+                  451.1511594271301
+                ],
+                "score": 451.1511594271301
+              },
+              {
+                "point": [
+                  16448,
+                  4288
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -2773.7903,
+                "sides": [
+                  808.1993651173268,
+                  437.5992321292465
+                ],
+                "score": 437.5992321292465
+              },
+              {
+                "point": [
+                  16512,
+                  4160
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -3218.6335,
+                "sides": [
+                  1095.6180180944712,
+                  413.83388053186445
+                ],
+                "score": 413.83388053186445
+              },
+              {
+                "point": [
+                  16576,
+                  4160
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -3159.9788,
+                "sides": [
+                  406.6629785686282,
+                  1063.097983271412
+                ],
+                "score": 406.6629785686282
+              },
+              {
+                "point": [
+                  16512,
+                  4288
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -2943.8364,
+                "sides": [
+                  342.78212954038463,
+                  935.3452962606993
+                ],
+                "score": 342.78212954038463
+              },
+              {
+                "point": [
+                  16576,
+                  4288
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2898.495,
+                "sides": [
+                  324.92473685551295,
+                  2053.4168350022373
+                ],
+                "score": 324.92473685551295
+              },
+              {
+                "point": [
+                  16448,
+                  4224
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2966.5215,
+                "sides": [
+                  1516.6901687110735,
+                  316.7667786248294
+                ],
+                "score": 316.7667786248294
+              },
+              {
+                "point": [
+                  16384,
+                  4224
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -2799.8782,
+                "sides": [
+                  1346.241957068027,
+                  214.20547939327025
+                ],
+                "score": 214.20547939327025
+              },
+              {
+                "point": [
+                  16448,
+                  4224
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -2966.5215,
+                "sides": [
+                  1204.2382789511496,
+                  149.04163442719982
+                ],
+                "score": 149.04163442719982
+              },
+              {
+                "point": [
+                  16576,
+                  4288
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2898.495,
+                "sides": [
+                  145.7355592964368,
+                  2033.8952510095949
+                ],
+                "score": 145.7355592964368
+              },
+              {
+                "point": [
+                  16448,
+                  4160
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -3166.6697,
+                "sides": [
+                  1522.973364434285,
+                  120.63046165082005
+                ],
+                "score": 120.63046165082005
+              },
+              {
+                "point": [
+                  16512,
+                  4352
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": -3018.818,
+                "sides": [
+                  98.22209200409316,
+                  1510.4851903476097
+                ],
+                "score": 98.22209200409316
+              },
+              {
+                "point": [
+                  16384,
+                  4224
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2799.8782,
+                "sides": [
+                  1452.9747035866624,
+                  54.884309615076745
+                ],
+                "score": 54.884309615076745
+              }
+            ],
+            [
+              {
+                "point": [
+                  16476.272190213876,
+                  4413.494622443724
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": -2830.7509025082873,
+                "sides": [
+                  1060.079992364972,
+                  1490.4610685066057
+                ],
+                "score": 1060.079992364972
+              },
+              {
+                "point": [
+                  16476.272190213876,
+                  4413.494622443724
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2830.7509025082873,
+                "sides": [
+                  730.3558219837105,
+                  1905.141752446389
+                ],
+                "score": 730.3558219837105
+              },
+              {
+                "point": [
+                  16414.03304131454,
+                  4396.513160322889
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -2505.2703244558015,
+                "sides": [
+                  600.1219825294465,
+                  712.9953017268977
+                ],
+                "score": 600.1219825294465
+              },
+              {
+                "point": [
+                  16476.272190213876,
+                  4413.494622443724
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2830.7509025082873,
+                "sides": [
+                  477.8774483407715,
+                  1773.163243248548
+                ],
+                "score": 477.8774483407715
+              },
+              {
+                "point": [
+                  16414.03304131454,
+                  4396.513160322889
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2505.2703244558015,
+                "sides": [
+                  455.9603013579117,
+                  776.3701369394901
+                ],
+                "score": 455.9603013579117
+              },
+              {
+                "point": [
+                  16414.03304131454,
+                  4396.513160322889
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": -2505.2703244558015,
+                "sides": [
+                  804.7390698285883,
+                  352.51086989910755
+                ],
+                "score": 352.51086989910755
+              },
+              {
+                "point": [
+                  16358.015610052433,
+                  4364.511143100993
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -2360.0205836431587,
+                "sides": [
+                  631.8192931305164,
+                  224.3243497344033
+                ],
+                "score": 224.3243497344033
+              }
+            ],
+            [],
+            [
+              {
+                "point": [
+                  16665.984389947567,
+                  3955.4888568990073
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3413.2305322067123,
+                "sides": [
+                  1423.326986721414,
+                  1629.9958739096626
+                ],
+                "score": 1423.326986721414
+              },
+              {
+                "point": [
+                  16665.984389947567,
+                  3955.4888568990073
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": -3413.2305322067123,
+                "sides": [
+                  1254.8158685276912,
+                  1357.1598042920355
+                ],
+                "score": 1254.8158685276912
+              },
+              {
+                "point": [
+                  16665.984389947567,
+                  3955.4888568990073
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3413.2305322067123,
+                "sides": [
+                  1239.0870400384874,
+                  1507.7707383721377
+                ],
+                "score": 1239.0870400384874
+              },
+              {
+                "point": [
+                  16609.96695868546,
+                  3923.4868396771108
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3440.8433173829508,
+                "sides": [
+                  2159.050422752306,
+                  955.6044427636393
+                ],
+                "score": 955.6044427636393
+              },
+              {
+                "point": [
+                  16609.96695868546,
+                  3923.4868396771108
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3440.8433173829508,
+                "sides": [
+                  2055.5650174451307,
+                  870.9433780101413
+                ],
+                "score": 870.9433780101413
+              },
+              {
+                "point": [
+                  16609.96695868546,
+                  3923.4868396771108
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": -3440.8433173829508,
+                "sides": [
+                  1776.7718845037812,
+                  845.2076913092201
+                ],
+                "score": 845.2076913092201
+              },
+              {
+                "point": [
+                  16547.727809786124,
+                  3906.5053775562756
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3214.010347909667,
+                "sides": [
+                  2469.0783002134335,
+                  308.5347287740419
+                ],
+                "score": 308.5347287740419
+              },
+              {
+                "point": [
+                  16547.727809786124,
+                  3906.5053775562756
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3214.010347909667,
+                "sides": [
+                  2465.3491672510463,
+                  258.7500992894966
+                ],
+                "score": 258.7500992894966
+              },
+              {
+                "point": [
+                  16547.727809786124,
+                  3906.5053775562756
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": -3214.010347909667,
+                "sides": [
+                  1909.379859444597,
+                  208.25775410201186
+                ],
+                "score": 208.25775410201186
+              }
+            ],
+            [
+              {
+                "point": [
+                  16701.71219973369,
+                  3701.994234455283
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": -3203.435477748214,
+                "sides": [
+                  1680.4815548232561,
+                  1053.492304497352
+                ],
+                "score": 1053.492304497352
+              },
+              {
+                "point": [
+                  16701.71219973369,
+                  3701.994234455283
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3203.435477748214,
+                "sides": [
+                  1008.9819610289378,
+                  956.1775325633616
+                ],
+                "score": 956.1775325633616
+              },
+              {
+                "point": [
+                  16763.95134863303,
+                  3718.975696576118
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": -3125.797774698529,
+                "sides": [
+                  731.2508561453833,
+                  1711.7492874416996
+                ],
+                "score": 731.2508561453833
+              },
+              {
+                "point": [
+                  16701.71219973369,
+                  3701.994234455283
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3203.435477748214,
+                "sides": [
+                  457.902844188347,
+                  627.8202183929125
+                ],
+                "score": 457.902844188347
+              },
+              {
+                "point": [
+                  16763.95134863303,
+                  3718.975696576118
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": -3125.797774698529,
+                "sides": [
+                  361.68599898811954,
+                  1498.1041415256645
+                ],
+                "score": 361.68599898811954
+              },
+              {
+                "point": [
+                  16763.95134863303,
+                  3718.975696576118
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": -3125.797774698529,
+                "sides": [
+                  147.25262444267037,
+                  1137.0919360713738
+                ],
+                "score": 147.25262444267037
+              }
+            ]
+          ],
+          "path_distances": [
+            0.0,
+            255.99999999999966,
+            511.99999999999807,
+            767.9999999999977
+          ],
+          "total_turn_degrees": 45.00000085377373,
+          "weakest_side_metres": 1053.492304497352,
+          "height_range_metres": 582.479629698425,
+          "arc_endpoint_residual_metres": 334.0232462051408,
+          "legacy_height_range_passed": true,
+          "arc_height_residual_passed": true,
+          "support": "interpolated point contrast; no confirmed unsampled extremum",
+          "geological_selection": "abstain"
+        },
+        "ratios": [],
+        "decision": "abstain",
+        "reasons": [
+          "incomplete path; no gap bridging"
+        ]
+      },
+      "confirmed_extrema": false,
+      "coverage_passed": false,
+      "decision": "abstain",
+      "reason": "Unknown TD interpolation error; no new fine support authorized"
+    },
+    {
+      "seed": -2026110411,
+      "kind": "ridge",
+      "role": "reused development",
+      "descriptive": {
+        "path": {
+          "supported": true,
+          "reasons": [],
+          "stations": [
+            {
+              "point": [
+                -410.02067484131675,
+                -7834.255805808161
+              ],
+              "axis": [
+                0.9238795325112865,
+                -0.3826834323650904
+              ],
+              "height": 3434.2878248132765,
+              "sides": [
+                617.2897652195466,
+                1113.1291245210218
+              ],
+              "score": 617.2897652195466
+            },
+            {
+              "point": [
+                -156.52605239759217,
+                -7869.983615594287
+              ],
+              "axis": [
+                0.9238795325112865,
+                -0.3826834323650904
+              ],
+              "height": 3460.094924099625,
+              "sides": [
+                364.2884525648833,
+                1380.5032946885858
+              ],
+              "score": 364.2884525648833
+            },
+            {
+              "point": [
+                64,
+                -8000
+              ],
+              "axis": [
+                0.7071067811865474,
+                -0.7071067811865477
+              ],
+              "height": 4341.672,
+              "sides": [
+                991.595967817776,
+                1489.7316232630556
+              ],
+              "score": 991.595967817776
+            },
+            {
+              "point": [
+                284.5260523975922,
+                -8130.016384405713
+              ],
+              "axis": [
+                0.38268343236509,
+                -0.9238795325112866
+              ],
+              "height": 4581.330793984731,
+              "sides": [
+                720.8512084077097,
+                1138.4560685006982
+              ],
+              "score": 720.8512084077097
+            },
+            {
+              "point": [
+                320.253862183717,
+                -8383.511006849438
+              ],
+              "axis": [
+                -1.8369701987210297e-16,
+                -1.0
+              ],
+              "height": 4916.609460075813,
+              "sides": [
+                622.2972514276853,
+                490.6165863787264
+              ],
+              "score": 490.6165863787264
+            }
+          ],
+          "decisions": [
+            [
+              {
+                "point": [
+                  64,
+                  -8000
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4341.672,
+                "sides": [
+                  991.595967817776,
+                  1489.7316232630556
+                ],
+                "score": 991.595967817776
+              },
+              {
+                "point": [
+                  64,
+                  -8064
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4435.376,
+                "sides": [
+                  880.9345262292782,
+                  1262.0301956731073
+                ],
+                "score": 880.9345262292782
+              },
+              {
+                "point": [
+                  64,
+                  -8000
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 4341.672,
+                "sides": [
+                  873.2140869281093,
+                  1270.066394564783
+                ],
+                "score": 873.2140869281093
+              },
+              {
+                "point": [
+                  192,
+                  -8128
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4768.418,
+                "sides": [
+                  837.1954149194025,
+                  1227.6553299670254
+                ],
+                "score": 837.1954149194025
+              },
+              {
+                "point": [
+                  0,
+                  -8064
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4449.1685,
+                "sides": [
+                  1129.2042017798185,
+                  800.960949228026
+                ],
+                "score": 800.960949228026
+              },
+              {
+                "point": [
+                  64,
+                  -8000
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4341.672,
+                "sides": [
+                  983.987554733897,
+                  735.5612522324486
+                ],
+                "score": 735.5612522324486
+              },
+              {
+                "point": [
+                  128,
+                  -8064
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4204.6743,
+                "sides": [
+                  786.7432626646146,
+                  662.6713682190302
+                ],
+                "score": 662.6713682190302
+              },
+              {
+                "point": [
+                  0,
+                  -8064
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 4449.1685,
+                "sides": [
+                  621.6207824432158,
+                  1046.7572220771117
+                ],
+                "score": 621.6207824432158
+              },
+              {
+                "point": [
+                  0,
+                  -8064
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4449.1685,
+                "sides": [
+                  601.4280120963872,
+                  1125.584644468298
+                ],
+                "score": 601.4280120963872
+              },
+              {
+                "point": [
+                  64,
+                  -8064
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 4435.376,
+                "sides": [
+                  571.393668866458,
+                  1089.9882196233707
+                ],
+                "score": 571.393668866458
+              },
+              {
+                "point": [
+                  192,
+                  -8128
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4768.418,
+                "sides": [
+                  1321.3735396506213,
+                  512.4847285648812
+                ],
+                "score": 512.4847285648812
+              },
+              {
+                "point": [
+                  192,
+                  -8000
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4041.4893,
+                "sides": [
+                  433.72161586383527,
+                  1010.1515780058808
+                ],
+                "score": 433.72161586383527
+              },
+              {
+                "point": [
+                  192,
+                  -8064
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4050.4194,
+                "sides": [
+                  431.1183887013035,
+                  666.0433654172489
+                ],
+                "score": 431.1183887013035
+              },
+              {
+                "point": [
+                  256,
+                  -8064
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4220.3545,
+                "sides": [
+                  422.9308829525894,
+                  720.8319063175877
+                ],
+                "score": 422.9308829525894
+              },
+              {
+                "point": [
+                  128,
+                  -8000
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 3987.3137,
+                "sides": [
+                  422.6196985157153,
+                  1093.5529071517653
+                ],
+                "score": 422.6196985157153
+              },
+              {
+                "point": [
+                  128,
+                  -8064
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4204.6743,
+                "sides": [
+                  611.3586959324721,
+                  419.9480244615329
+                ],
+                "score": 419.9480244615329
+              },
+              {
+                "point": [
+                  192,
+                  -8128
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 4768.418,
+                "sides": [
+                  408.4483982976035,
+                  1310.7301767262861
+                ],
+                "score": 408.4483982976035
+              },
+              {
+                "point": [
+                  128,
+                  -8064
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 4204.6743,
+                "sides": [
+                  401.1994040533418,
+                  1161.9177638916153
+                ],
+                "score": 401.1994040533418
+              },
+              {
+                "point": [
+                  192,
+                  -8064
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4050.4194,
+                "sides": [
+                  330.5401182487153,
+                  346.3301808338142
+                ],
+                "score": 330.5401182487153
+              },
+              {
+                "point": [
+                  256,
+                  -8064
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4220.3545,
+                "sides": [
+                  323.4967662337963,
+                  990.1088919607664
+                ],
+                "score": 323.4967662337963
+              },
+              {
+                "point": [
+                  64,
+                  -8064
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4435.376,
+                "sides": [
+                  1249.1008522461575,
+                  304.9755780476453
+                ],
+                "score": 304.9755780476453
+              },
+              {
+                "point": [
+                  128,
+                  -8000
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 3987.3137,
+                "sides": [
+                  275.1051813967665,
+                  1127.3236160233091
+                ],
+                "score": 275.1051813967665
+              },
+              {
+                "point": [
+                  64,
+                  -8128
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 3923.8704,
+                "sides": [
+                  252.26397501725023,
+                  468.14195893559827
+                ],
+                "score": 252.26397501725023
+              },
+              {
+                "point": [
+                  128,
+                  -8000
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 3987.3137,
+                "sides": [
+                  184.95396557593676,
+                  519.895068530162
+                ],
+                "score": 184.95396557593676
+              },
+              {
+                "point": [
+                  128,
+                  -8128
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 4076.5662,
+                "sides": [
+                  167.99228152779233,
+                  845.7215082631583
+                ],
+                "score": 167.99228152779233
+              },
+              {
+                "point": [
+                  128,
+                  -8192
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 4193.773,
+                "sides": [
+                  155.6067451224826,
+                  636.9272434483669
+                ],
+                "score": 155.6067451224826
+              },
+              {
+                "point": [
+                  128,
+                  -8128
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4076.5662,
+                "sides": [
+                  169.75425475837164,
+                  56.29621073541375
+                ],
+                "score": 56.29621073541375
+              }
+            ],
+            [
+              {
+                "point": [
+                  -156.52605239759217,
+                  -7869.983615594287
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 3460.094924099625,
+                "sides": [
+                  364.2884525648833,
+                  1380.5032946885858
+                ],
+                "score": 364.2884525648833
+              },
+              {
+                "point": [
+                  -117.01933598375612,
+                  -7818.980664016244
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 3794.4391619383023,
+                "sides": [
+                  344.2004745139857,
+                  889.7483097706354
+                ],
+                "score": 344.2004745139857
+              },
+              {
+                "point": [
+                  -117.01933598375612,
+                  -7818.980664016244
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 3794.4391619383023,
+                "sides": [
+                  262.39203921726494,
+                  2091.752179204445
+                ],
+                "score": 262.39203921726494
+              },
+              {
+                "point": [
+                  -156.52605239759217,
+                  -7869.983615594287
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 3460.094924099625,
+                "sides": [
+                  206.70704501852515,
+                  711.0554060524537
+                ],
+                "score": 206.70704501852515
+              },
+              {
+                "point": [
+                  -66.01638440571406,
+                  -7779.473947602408
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 3651.1211844238683,
+                "sides": [
+                  186.43877910336096,
+                  1980.6878550652493
+                ],
+                "score": 186.43877910336096
+              }
+            ],
+            [
+              {
+                "point": [
+                  -410.02067484131675,
+                  -7834.255805808161
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 3434.2878248132765,
+                "sides": [
+                  617.2897652195466,
+                  1113.1291245210218
+                ],
+                "score": 617.2897652195466
+              },
+              {
+                "point": [
+                  -361.03719549858516,
+                  -7715.999225646717
+                ],
+                "axis": [
+                  0.9238795325112865,
+                  -0.3826834323650904
+                ],
+                "height": 3465.7090672036047,
+                "sides": [
+                  271.3941910248627,
+                  1498.9343009822442
+                ],
+                "score": 271.3941910248627
+              },
+              {
+                "point": [
+                  -410.02067484131675,
+                  -7834.255805808161
+                ],
+                "axis": [
+                  1.0,
+                  0.0
+                ],
+                "height": 3434.2878248132765,
+                "sides": [
+                  145.58031809630984,
+                  1128.8086307621406
+                ],
+                "score": 145.58031809630984
+              }
+            ],
+            [
+              {
+                "point": [
+                  284.5260523975922,
+                  -8130.016384405713
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4581.330793984731,
+                "sides": [
+                  720.8512084077097,
+                  1138.4560685006982
+                ],
+                "score": 720.8512084077097
+              },
+              {
+                "point": [
+                  245.01933598375612,
+                  -8181.019335983756
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4216.3222683465965,
+                "sides": [
+                  448.5143550332368,
+                  315.9455571171511
+                ],
+                "score": 315.9455571171511
+              },
+              {
+                "point": [
+                  284.5260523975922,
+                  -8130.016384405713
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4581.330793984731,
+                "sides": [
+                  312.4163515821883,
+                  1050.8358720292526
+                ],
+                "score": 312.4163515821883
+              },
+              {
+                "point": [
+                  245.01933598375612,
+                  -8181.019335983756
+                ],
+                "axis": [
+                  0.7071067811865474,
+                  -0.7071067811865477
+                ],
+                "height": 4216.3222683465965,
+                "sides": [
+                  148.21010416067975,
+                  283.0401397232549
+                ],
+                "score": 148.21010416067975
+              }
+            ],
+            [
+              {
+                "point": [
+                  320.253862183717,
+                  -8383.511006849438
+                ],
+                "axis": [
+                  -1.8369701987210297e-16,
+                  -1.0
+                ],
+                "height": 4916.609460075813,
+                "sides": [
+                  622.2972514276853,
+                  490.6165863787264
+                ],
+                "score": 490.6165863787264
+              },
+              {
+                "point": [
+                  320.253862183717,
+                  -8383.511006849438
+                ],
+                "axis": [
+                  0.38268343236509,
+                  -0.9238795325112866
+                ],
+                "height": 4916.609460075813,
+                "sides": [
+                  229.98182737666866,
+                  480.63287975780804
+                ],
+                "score": 229.98182737666866
+              }
+            ]
+          ],
+          "path_distances": [
+            0.0,
+            256.00000000000006,
+            511.99999999999966,
+            767.9999999999993,
+            1023.9999999999991
+          ],
+          "total_turn_degrees": 67.49999999999999,
+          "weakest_side_metres": 364.2884525648833,
+          "height_range_metres": 1482.3216352625368,
+          "arc_endpoint_residual_metres": 344.77330952928605,
+          "legacy_height_range_passed": false,
+          "arc_height_residual_passed": true,
+          "support": "interpolated point contrast; no confirmed unsampled extremum",
+          "geological_selection": "abstain"
+        },
+        "ratios": [
+          0.49047112812238014,
+          0.258699530131785,
+          0.051427686694877336
+        ],
+        "decision": "abstain",
+        "reasons": [
+          "longitudinal curvature comparable to transverse confinement"
+        ]
+      },
+      "confirmed_extrema": false,
+      "coverage_passed": false,
+      "decision": "abstain",
+      "reason": "Unknown TD interpolation error; no new fine support authorized"
+    },
+    {
+      "seed": -2026110411,
+      "kind": "basin",
+      "role": "reused development",
+      "descriptive": {
+        "path": {
+          "supported": true,
+          "reasons": [],
+          "stations": [
+            {
+              "point": [
+                -92.00077435328353,
+                -4457.037195498585
+              ],
+              "axis": [
+                0.9238795325112867,
+                0.3826834323650898
+              ],
+              "height": -3005.6012547056516,
+              "sides": [
+                156.0114484939004,
+                443.61775452632855
+              ],
+              "score": 156.0114484939004
+            },
+            {
+              "point": [
+                38.01561005243058,
+                -4236.511143100993
+              ],
+              "axis": [
+                0.7071067811865476,
+                0.7071067811865476
+              ],
+              "height": -1375.631018160422,
+              "sides": [
+                294.28253088946985,
+                288.11795140198797
+              ],
+              "score": 288.11795140198797
+            },
+            {
+              "point": [
+                192,
+                -4032
+              ],
+              "axis": [
+                0.38268343236508984,
+                0.9238795325112867
+              ],
+              "height": -1787.8812,
+              "sides": [
+                628.8446706448647,
+                722.9280078054564
+              ],
+              "score": 628.8446706448647
+            },
+            {
+              "point": [
+                227.7278097861247,
+                -3778.5053775562756
+              ],
+              "axis": [
+                0.7071067811865476,
+                0.7071067811865476
+              ],
+              "height": -2649.9546331372194,
+              "sides": [
+                141.47768821586578,
+                521.8794228176876
+              ],
+              "score": 141.47768821586578
+            },
+            {
+              "point": [
+                448.25386218371693,
+                -3648.4889931505613
+              ],
+              "axis": [
+                0.7071067811865476,
+                0.7071067811865476
+              ],
+              "height": -2898.9719406314107,
+              "sides": [
+                124.89435203132416,
+                111.58652431131395
+              ],
+              "score": 111.58652431131395
+            }
+          ],
+          "decisions": [
+            [
+              {
+                "point": [
+                  192,
+                  -4032
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1787.8812,
+                "sides": [
+                  628.8446706448647,
+                  722.9280078054564
+                ],
+                "score": 628.8446706448647
+              },
+              {
+                "point": [
+                  128,
+                  -3904
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2049.6023,
+                "sides": [
+                  615.2781212011723,
+                  755.2547347348514
+                ],
+                "score": 615.2781212011723
+              },
+              {
+                "point": [
+                  128,
+                  -4032
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1659.4923,
+                "sides": [
+                  623.3013767132309,
+                  550.3832332150148
+                ],
+                "score": 550.3832332150148
+              },
+              {
+                "point": [
+                  256,
+                  -3968
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -2195.9448,
+                "sides": [
+                  426.64952563580846,
+                  775.9481637143267
+                ],
+                "score": 426.64952563580846
+              },
+              {
+                "point": [
+                  64,
+                  -4032
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1467.458,
+                "sides": [
+                  490.89619756055663,
+                  422.8357970506029
+                ],
+                "score": 422.8357970506029
+              },
+              {
+                "point": [
+                  192,
+                  -3968
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -2118.6895,
+                "sides": [
+                  416.5084275941117,
+                  832.8703024500498
+                ],
+                "score": 416.5084275941117
+              },
+              {
+                "point": [
+                  128,
+                  -3840
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -2402.711,
+                "sides": [
+                  922.0519188333892,
+                  412.5930833871439
+                ],
+                "score": 412.5930833871439
+              },
+              {
+                "point": [
+                  128,
+                  -3840
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2402.711,
+                "sides": [
+                  395.5829524804253,
+                  1370.9853397544584
+                ],
+                "score": 395.5829524804253
+              },
+              {
+                "point": [
+                  192,
+                  -3904
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2384.0684,
+                "sides": [
+                  922.3455358259391,
+                  335.71904743573486
+                ],
+                "score": 335.71904743573486
+              },
+              {
+                "point": [
+                  128,
+                  -3968
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1800.0078,
+                "sides": [
+                  1026.8914786657774,
+                  326.5643704374231
+                ],
+                "score": 326.5643704374231
+              },
+              {
+                "point": [
+                  192,
+                  -4032
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1787.8812,
+                "sides": [
+                  1087.9185501778481,
+                  299.9195847006854
+                ],
+                "score": 299.9195847006854
+              },
+              {
+                "point": [
+                  128,
+                  -4032
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1659.4923,
+                "sides": [
+                  1124.7178383654093,
+                  274.0542662647533
+                ],
+                "score": 274.0542662647533
+              },
+              {
+                "point": [
+                  128,
+                  -4096
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1299.9834,
+                "sides": [
+                  593.2499864440683,
+                  258.9011197457098
+                ],
+                "score": 258.9011197457098
+              },
+              {
+                "point": [
+                  192,
+                  -3968
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2118.6895,
+                "sides": [
+                  1234.2849086345002,
+                  254.86089494792873
+                ],
+                "score": 254.86089494792873
+              },
+              {
+                "point": [
+                  128,
+                  -4096
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1299.9834,
+                "sides": [
+                  554.7827040341562,
+                  210.13706918558864
+                ],
+                "score": 210.13706918558864
+              },
+              {
+                "point": [
+                  64,
+                  -3968
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1350.5547,
+                "sides": [
+                  530.6010809194902,
+                  208.08273510446588
+                ],
+                "score": 208.08273510446588
+              },
+              {
+                "point": [
+                  64,
+                  -4032
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1467.458,
+                "sides": [
+                  884.2886531321345,
+                  151.33916369218423
+                ],
+                "score": 151.33916369218423
+              },
+              {
+                "point": [
+                  192,
+                  -3904
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -2384.0684,
+                "sides": [
+                  146.52539345695004,
+                  887.6800062913092
+                ],
+                "score": 146.52539345695004
+              },
+              {
+                "point": [
+                  128,
+                  -3968
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -1800.0078,
+                "sides": [
+                  139.85370161672972,
+                  526.0430641326648
+                ],
+                "score": 139.85370161672972
+              },
+              {
+                "point": [
+                  0,
+                  -3968
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1068.3715,
+                "sides": [
+                  130.14469658597864,
+                  140.642923923004
+                ],
+                "score": 130.14469658597864
+              },
+              {
+                "point": [
+                  64,
+                  -3904
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -1469.9176,
+                "sides": [
+                  437.31582274968787,
+                  111.29521248397805
+                ],
+                "score": 111.29521248397805
+              }
+            ],
+            [
+              {
+                "point": [
+                  38.01561005243058,
+                  -4236.511143100993
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -1375.631018160422,
+                "sides": [
+                  294.28253088946985,
+                  288.11795140198797
+                ],
+                "score": 288.11795140198797
+              }
+            ],
+            [
+              {
+                "point": [
+                  -92.00077435328353,
+                  -4457.037195498585
+                ],
+                "axis": [
+                  0.9238795325112867,
+                  0.3826834323650898
+                ],
+                "height": -3005.6012547056516,
+                "sides": [
+                  156.0114484939004,
+                  443.61775452632855
+                ],
+                "score": 156.0114484939004
+              }
+            ],
+            [
+              {
+                "point": [
+                  227.7278097861247,
+                  -3778.5053775562756
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2649.9546331372194,
+                "sides": [
+                  141.47768821586578,
+                  521.8794228176876
+                ],
+                "score": 141.47768821586578
+              },
+              {
+                "point": [
+                  289.966958685463,
+                  -3795.4868396771108
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2663.7689379713074,
+                "sides": [
+                  240.89862207595388,
+                  97.519890430744
+                ],
+                "score": 97.519890430744
+              },
+              {
+                "point": [
+                  345.9843899475694,
+                  -3827.4888568990073
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2816.658776403514,
+                "sides": [
+                  594.1696663732355,
+                  95.10839654722577
+                ],
+                "score": 95.10839654722577
+              },
+              {
+                "point": [
+                  345.9843899475694,
+                  -3827.4888568990073
+                ],
+                "axis": [
+                  0.38268343236508984,
+                  0.9238795325112867
+                ],
+                "height": -2816.658776403514,
+                "sides": [
+                  201.78096184795777,
+                  66.46617419690892
+                ],
+                "score": 66.46617419690892
+              }
+            ],
+            [
+              {
+                "point": [
+                  448.25386218371693,
+                  -3648.4889931505613
+                ],
+                "axis": [
+                  0.7071067811865476,
+                  0.7071067811865476
+                ],
+                "height": -2898.9719406314107,
+                "sides": [
+                  124.89435203132416,
+                  111.58652431131395
+                ],
+                "score": 111.58652431131395
+              }
+            ]
+          ],
+          "path_distances": [
+            0.0,
+            255.99999999999994,
+            511.99999999999966,
+            767.9999999999995,
+            1023.9999999999995
+          ],
+          "total_turn_degrees": 67.49999999999997,
+          "weakest_side_metres": 111.58652431131395,
+          "height_range_metres": 1629.9702365452297,
+          "arc_endpoint_residual_metres": 1603.3129080266692,
+          "legacy_height_range_passed": false,
+          "arc_height_residual_passed": false,
+          "support": "interpolated point contrast; no confirmed unsampled extremum",
+          "geological_selection": "abstain"
+        },
+        "ratios": [
+          3.5065568804985925,
+          0.33276545566324145,
+          0.9241720868686361
+        ],
+        "decision": "reject",
+        "reasons": [
+          "longitudinal curvature comparable to transverse confinement"
+        ]
+      },
+      "confirmed_extrema": false,
+      "coverage_passed": false,
+      "decision": "abstain",
+      "reason": "Unknown TD interpolation error; no new fine support authorized"
+    }
+  ],
+  "archive_sha256": "bbefcc038f984512ccba35d818109250917447770b425a5a72e89f94702effa2",
+  "archive_exporter_sha256": "0ae49627cfb3e3fd41922eb49d3c20ac9e89cd5cf4fb252bb4289011272a6e9e",
+  "fresh_td_validation": false,
+  "geological_selection": "abstain",
+  "gate": "Finite-support shallow saddles/closed extrema and unknown TD error remain"
+}

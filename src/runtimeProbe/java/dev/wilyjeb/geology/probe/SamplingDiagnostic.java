@@ -22,7 +22,6 @@ public final class SamplingDiagnostic {
             var found=FINE.get(key); if(found!=null)return found;
             // Native pipeline coordinates, independently of Minecraft world scale.
             var values=LocalTerrainProvider.getPipelineData(row*256,col*256,(row+1)*256,(col+1)*256,false)[0];
-            NumericalSupport.captureNative(row,col,values);
             if(values.length!=65536)throw new IllegalStateException("Native cell support");
             double sum=0,lo=Double.POSITIVE_INFINITY,hi=Double.NEGATIVE_INFINITY;int wet=0;
             var digest=java.security.MessageDigest.getInstance("SHA-256");
