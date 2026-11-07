@@ -1,0 +1,13 @@
+{
+  "browser_interaction_verified": false,
+  "dimensions": [
+    2100,
+    1350
+  ],
+  "matplotlib": "3.10.7",
+  "numpy": "2.5.4",
+  "png_sha256": "b3dd5c0e6c79e7c8e5035cf93e108d106f15476ce3756f02522e99c3d05217f6",
+  "renderer_sha256": "653264a233cd71fad4fdd43f392b1dd3d8f4f8d0a50fe6eb6082ebf4e8335b93",
+  "result_sha256": "d0853fba10ca350e353d9a2786a6362d99f80363aa7b12a071d470b89e56819c",
+  "same_comparison": true
+}
