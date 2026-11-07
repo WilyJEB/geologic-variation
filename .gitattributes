@@ -58,3 +58,5 @@ scripts/export-td-identical.py text eol=lf
 scripts/test-td-axis-identical.py text eol=lf
 scripts/export-td-axis.py text eol=lf
 scripts/reexport-td-bounded.py text eol=lf
+scripts/audit-td-history.py text eol=lf
+scripts/test-td-history.py text eol=lf
