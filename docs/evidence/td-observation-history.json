@@ -1,0 +1,98 @@
+{
+  "archive_sha256": "7c07e6972e02c8e751faeb62758589e26281fd21b57d4e93cc97cd67441bf2e3",
+  "members": {
+    "pr52-results.json": "c8e82eaef10cb6e97bea3f70049248cc4e56181817ea929bc71c302fb56c4f57",
+    "pinned-tensor-javap.txt": "9b58aeca0a39c6308fbcf03ccac013907fd848ba9aedc3c0986f950e604c9185",
+    "pr53-results.json": "7ee48576a178bad5153ad630c25764ca67866e34601e846dbab2dd7cde7eaf20",
+    "pr54-results.json": "ae4cb4ea3220c7c4732cb2523f5b507df134feb7793a6bd725b5c9971ba27994",
+    "pinned-provider-javap.txt": "9b514a3c70c0ea395cdede83fffdb095c638bd2283a4dc133f3f2165f5379816",
+    "seed-2026110411-s1/console-1.log": "4c38b969f55906cf2f9ffee5de3eb4d338993ac7b61cfc60d04e8049beea8fe4",
+    "seed-2026110411-s6/console-1.log": "2ef5a1e53444ebecd6982963c7a23cffa184a8a3556e5b427f9c45dd954afb73",
+    "sources/scripts/audit-td-history.py": "6b9a9360284dc153d237f21193d7140aa8a21eda96815bb06f8e87e6709ab158",
+    "sources/src/runtimeProbe/java/dev/wilyjeb/geology/probe/SamplingDiagnostic.java": "5dc19e0d06269d32adc3ab90053822ebabc4b5eca3d0467565893241c512001f",
+    "sources/src/runtimeProbe/java/dev/wilyjeb/geology/probe/CoarseSampler.java": "11cc398878ebe724899cd6d6bf37c5f273839e0c5471a07290b81117afbfc365",
+    "sources/src/runtimeProbe/java/dev/wilyjeb/geology/probe/TrackingPatch.java": "9bc59042356233cdc616e6b110d739a814e3dce9535b4e97507c77c6271831a8",
+    "reconstruction.json": "93047a55aa7a03ad2afa4e79a6678b46fae18ba9c4bf18b7790c6d37ae6b13e1"
+  },
+  "new_td_launches": 0,
+  "cases": [
+    {
+      "scale": 1,
+      "targets": [
+        {
+          "col": -6,
+          "event": 280,
+          "ordinal": 326,
+          "command": "acceptance sampling-compare -320 -4032",
+          "policy": "province_anchor",
+          "cell": {
+            "fine_cell_relief_metres": 1704.932861328125,
+            "row": -14,
+            "below_zero_fraction": 1.0,
+            "samples": 65536,
+            "float_sha256": "cdd63286d414232456b905b139097b71e7685433f67325fd594a98b5c7772c57",
+            "col": -6,
+            "mean_metres": -2550.0600990820676
+          }
+        },
+        {
+          "col": 6,
+          "event": 294,
+          "ordinal": 366,
+          "command": "acceptance sampling-compare 1088 -3520",
+          "policy": "fixed_grid_4",
+          "cell": {
+            "fine_cell_relief_metres": 833.882080078125,
+            "row": -14,
+            "below_zero_fraction": 1.0,
+            "samples": 65536,
+            "float_sha256": "2abf662312e9f63ff8feb9586c48a219da03cb4dca833ae28aa4e5403b0d31d7",
+            "col": 6,
+            "mean_metres": -2495.452692899853
+          }
+        }
+      ],
+      "public_prefix_requests": 369,
+      "patch_requests": 2
+    },
+    {
+      "scale": 6,
+      "targets": [
+        {
+          "col": -6,
+          "event": 280,
+          "ordinal": 322,
+          "command": "acceptance sampling-compare -1920 -24192",
+          "policy": "province_anchor",
+          "cell": {
+            "below_zero_fraction": 1.0,
+            "samples": 65536,
+            "float_sha256": "8d4959a72c842dd9d026288dd1d429df05edf97f285cf7570fbe1c48a5c702ad",
+            "col": -6,
+            "mean_metres": -2550.060099856928,
+            "fine_cell_relief_metres": 1704.932861328125,
+            "row": -14
+          }
+        },
+        {
+          "col": 6,
+          "event": 294,
+          "ordinal": 362,
+          "command": "acceptance sampling-compare 6528 -21120",
+          "policy": "fixed_grid_4",
+          "cell": {
+            "below_zero_fraction": 1.0,
+            "samples": 65536,
+            "float_sha256": "8bdc29080eeb5dcc3beab568097797e1e61e97f669cad34ef0d9d03828b2a738",
+            "col": 6,
+            "mean_metres": -2495.4526936002076,
+            "fine_cell_relief_metres": 833.882080078125,
+            "row": -14
+          }
+        }
+      ],
+      "public_prefix_requests": 365,
+      "patch_requests": 2
+    }
+  ]
+}
