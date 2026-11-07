@@ -90,9 +90,11 @@ def trace(case, requests):
     targets={t['ordinal'] for t in case['targets']}
     for q in requests:
         before=m.snapshot() if q['ordinal'] in targets else None
+        provider_before=list(m.provider) if q['ordinal'] in targets else None
         m.request(q,case['scale'])
         m.checkpoints.append(dict(ordinal=q['ordinal'], total=m.total,
             sizes={s:len(c) for s,c in m.cache.items()},
+            provider_order_after=list(m.provider),provider_before_target=provider_before,
             distinguishing_init=[dict(key=k, present=k in m.cache['init'],
                 lru_rank=list(m.cache['init']).index(k) if k in m.cache['init'] else None)
                 for k in KEYS], before_target=before,

@@ -66,6 +66,8 @@ read is not the entire pressure history. At request237, the A keys occupy eldest
 ranks12/13 and B keys26/27 (zero-based access order). Contains checks do not
 promote them; actual getSlice reads do. Complete per-request membership/ranks,
 ordered dependency reads and all per-slice eviction decisions are portable.
+Serial provider-cache membership/access order is also retained after every
+request and before each target; it is distinct from the tensor stores.
 
 | Full scale1 trigger | Native public request | Init slice returning/evicting | Pressure at eviction |
 | --- | --- | --- | --- |
@@ -96,6 +98,8 @@ Paired scale6: **85,90,231..240 inclusive,322,362** (14 requests).
 Each uses the same source-derived startup and exact retained request objects.
 The middle intervals contain every call of events238/240, not just their fine
 reads. The archive retains exact bounds, flags, role and order for every call.
+Any float hashes within those retained request objects describe the original
+full-history observations, not predicted outputs of the reduced sequences.
 
 This selection tests whether the two patches plus the local pre-eviction/eviction
 episode suffice. It intentionally omits older accumulated pressure and the long
