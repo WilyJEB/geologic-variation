@@ -92,7 +92,9 @@ are counted independently below. The sheared lattice is an authored extension
 even outside observed x support, with no claim of terrain knowledge there.
 At most2 rows/98 retained heights support a displacement,5 heights a difference
 and9 IDs the declared regional neighborhood. The finite retained model uses two
-2401-site arrays and49 row descriptors, no flood fill or discovery-dependent search.
+2401-site arrays and49 row descriptors. Region construction uses no flood fill
+or discovery-dependent search. The separate component audit traverses only the
+fixed2401-site graph; that bounded audit does not discover or assign regions.
 There is no tiling policy for other observation fields, and none is implied.
 
 ## Fixed computed result
