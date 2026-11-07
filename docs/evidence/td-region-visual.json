@@ -1,0 +1,66 @@
+{
+  "archive_sha256": "f939c32cefe3a4e4f06320c056dcf5cb33e96ab6c50dcc76cc9640f297b1f1d8",
+  "members": {
+    "api/pinned-provider-javap.txt": "9b514a3c70c0ea395cdede83fffdb095c638bd2283a4dc133f3f2165f5379816",
+    "api/upstream-source/pipeline/LocalTerrainProvider.java": "222dfedcf0de5f8a1c2c2a35e0e39b70fa0ba6299784fc19bfe0340b89106c36",
+    "api/upstream-source/pipeline/WorldPipeline.java": "f8106d8999ad46ed886ebe0422de3ccd16739f4c2584f3e39882e745360ad024",
+    "input/visual-data.json": "8dc1e0a9f98edd1dc6b2ce74cc1d795c117c15feb9503b0260a5c5ef23a701d6",
+    "result.json": "d0853fba10ca350e353d9a2786a6362d99f80363aa7b12a071d470b89e56819c",
+    "sources/docs/td-region-visual-protocol.md": "30aa3a2d2626334584635396bc3c58a454c7cb93468668dcf30f642e37f01e32",
+    "sources/scripts/build-td-region-visual.py": "77d31c9fa47cd76b2b47d5c6d2b46587be76e11e04a8f375c08117dea0131c60",
+    "sources/scripts/reexport-td-region-visual.py": "054362d1b06ca9ebe151b940eec1988d46f74dc8fc09cd7beb94822555f18371",
+    "sources/scripts/render-td-region-visual.py": "653264a233cd71fad4fdd43f392b1dd3d8f4f8d0a50fe6eb6082ebf4e8335b93",
+    "sources/scripts/td-region-viewer.html": "8bbb7f29e4b1c26a7746437f693f179bf4afb3e788b365c171cb394f678c453a",
+    "sources/scripts/test-td-region-viewer.cjs": "e67d6bd0b331b3b2c13fc39fdec01dde76dfbd5e9b413af1621db20c64ff0662",
+    "sources/scripts/test-td-region-visual.py": "21b56ae78ce47e0f648ba2a48bb85593e60648cdf2429f2b28b0588523b2dce2",
+    "viewer.html": "be892407826339c50ec78ac7f5fb747d77516c25e482454d9e039424a15b8ffa",
+    "visual/td-region-visual-image.json": "fefde03154c827ce5f1061fc19b3a299cac78ce8e519785cd1c8276e51e478ea",
+    "visual/td-region-visual.png": "b3dd5c0e6c79e7c8e5035cf93e108d106f15476ce3756f02522e99c3d05217f6"
+  },
+  "result": {
+    "changed_sites": 149,
+    "max_abs_displacement": 256.0,
+    "missing_query_values": 9440928,
+    "observation_error": null,
+    "support": {
+      "difference_max_heights": 5,
+      "point_arrays": 2,
+      "regional_neighborhood_ids": 9,
+      "sites_per_array": 2401,
+      "warp_max_heights": 98,
+      "warp_max_rows": 2
+    },
+    "topology": [
+      {
+        "adjacent_id_transitions": 98,
+        "sample_components": {
+          "0,4": 1,
+          "0,5": 1,
+          "1,4": 1,
+          "1,5": 1
+        },
+        "site_counts": {
+          "0,4": 420,
+          "0,5": 609,
+          "1,4": 560,
+          "1,5": 812
+        }
+      },
+      {
+        "adjacent_id_transitions": 116,
+        "sample_components": {
+          "0,4": 1,
+          "0,5": 1,
+          "1,4": 1,
+          "1,5": 1
+        },
+        "site_counts": {
+          "0,4": 476,
+          "0,5": 552,
+          "1,4": 504,
+          "1,5": 869
+        }
+      }
+    ]
+  }
+}
