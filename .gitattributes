@@ -63,3 +63,7 @@ scripts/test-td-history.py text eol=lf
 scripts/model-td-window-history.py text eol=lf
 scripts/test-td-window-history.py text eol=lf
 scripts/reexport-td-window-history.py text eol=lf
+scripts/analyze-td-pressure.py text eol=lf
+scripts/render-td-pressure-visual.py text eol=lf
+scripts/test-td-pressure.py text eol=lf
+scripts/reexport-td-pressure.py text eol=lf

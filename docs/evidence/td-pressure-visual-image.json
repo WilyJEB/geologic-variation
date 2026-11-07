@@ -1,0 +1,13 @@
+{
+  "png_sha256": "45c200a98362be73c09a985e7a29e3eeb98b4e87f9c7c75eead78210051421d3",
+  "visual_data_sha256": "8dc1e0a9f98edd1dc6b2ce74cc1d795c117c15feb9503b0260a5c5ef23a701d6",
+  "renderer_sha256": "2310eb9b0b9c3ca3c46a77765fd0fcb4fd3fff690fdcb80531872879b3dca8ed",
+  "matplotlib": "3.10.7",
+  "numpy": "2.5.4",
+  "dimensions": [
+    2560,
+    1360
+  ],
+  "computed_geometry_confirmed": false,
+  "conceptual_annotations": true
+}
