@@ -60,3 +60,6 @@ scripts/export-td-axis.py text eol=lf
 scripts/reexport-td-bounded.py text eol=lf
 scripts/audit-td-history.py text eol=lf
 scripts/test-td-history.py text eol=lf
+scripts/model-td-window-history.py text eol=lf
+scripts/test-td-window-history.py text eol=lf
+scripts/reexport-td-window-history.py text eol=lf

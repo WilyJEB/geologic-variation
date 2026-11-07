@@ -55,6 +55,8 @@ jobs:
         run: python scripts/test-td-axis-identical.py
       - shell: pwsh
         run: python scripts/test-td-history.py
+      - shell: pwsh
+        run: python scripts/test-td-window-history.py
       - uses: actions/upload-artifact@v4
         with:
           name: geologic-variation-dev

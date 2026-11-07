@@ -1,0 +1,2025 @@
+{
+  "archive_sha256": "7a53b11fcbcb1f2825e1a2b1807221d4b3efe070df8e5c6f058efa48d7486c65",
+  "input_archive_sha256": "7c07e6972e02c8e751faeb62758589e26281fd21b57d4e93cc97cd67441bf2e3",
+  "members": {
+    "reconstruction.json": "93047a55aa7a03ad2afa4e79a6678b46fae18ba9c4bf18b7790c6d37ae6b13e1",
+    "pr53-results.json": "7ee48576a178bad5153ad630c25764ca67866e34601e846dbab2dd7cde7eaf20",
+    "pr54-results.json": "ae4cb4ea3220c7c4732cb2523f5b507df134feb7793a6bd725b5c9971ba27994",
+    "pinned-provider-javap.txt": "9b514a3c70c0ea395cdede83fffdb095c638bd2283a4dc133f3f2165f5379816",
+    "pinned-tensor-javap.txt": "9b58aeca0a39c6308fbcf03ccac013907fd848ba9aedc3c0986f950e604c9185",
+    "result.json": "e20fe0526addae707262ad1c1ca37780587bfb3801a088ffdbab348b7cc84c08",
+    "sources/scripts/model-td-window-history.py": "15668520d65dfe6173db9904caf48f5631cfe5084ecd38f7d0f6f6a9b0d503e8",
+    "sources/scripts/test-td-window-history.py": "71fa246be1c2d0a74b4a614ca9755034e9e02366fa017a1607aafae70fdf3ef5",
+    "sources/scripts/reexport-td-window-history.py": "d2eafcb768f8b03beee6726aa8904b40fcd0a545ffa521009eb12c5f9dc97efd",
+    "sources/docs/td-window-history-protocol.md": "e9ffed732ac29e35b7c9255fe45afda59e30a872279aea7a208f952be612f334",
+    "pinned-layout-javap.txt": "9fc7ab694dfdfa7a47eb90f8adb59003e773a5c74d5e15fdf70ca8e8b741790b",
+    "world_pipeline_config.json": "c60f0b74d89317e64cfc623fbfdd828f1b5b2e50aa75020ac4001103381853bd",
+    "source-rules.json": "4744561a4506cf5a93ea0ce8b594d1c756b3b29765996e3f6fa7621e168dc198",
+    "upstream-source/infinitetensor/InfiniteTensor.java": "455858b407b67ffcddbdfd14903a87fc4113c1a60132250e332d3d2f015fbab2",
+    "upstream-source/infinitetensor/MemoryTileStore.java": "b65db6c870f7933a994e1d55dd3bd82c8180045831e0b83bbbf53bb4c60fd6b0",
+    "upstream-source/infinitetensor/TensorWindow.java": "345e8c8fe13f2709a8d17c2cb5e89a9997cbb965a75d05525664cd01344e34d8",
+    "upstream-source/pipeline/WorldPipeline.java": "f8106d8999ad46ed886ebe0422de3ccd16739f4c2584f3e39882e745360ad024",
+    "upstream-source/pipeline/LocalTerrainProvider.java": "222dfedcf0de5f8a1c2c2a35e0e39b70fa0ba6299784fc19bfe0340b89106c36",
+    "startup-RuntimeProbe.java": "a49c653ce56ac1f3d23ff5d9198552a7048600906461abbdb2e71cff95dfdecf"
+  },
+  "controls": [
+    {
+      "history": "pr53",
+      "case": 0,
+      "checks": [
+        {
+          "event": 0,
+          "observed": 4,
+          "predicted": 4,
+          "passed": true
+        },
+        {
+          "event": 3,
+          "observed": 65,
+          "predicted": 65,
+          "passed": true
+        },
+        {
+          "event": 5,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 7,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 9,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 11,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 13,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 15,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 17,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 20,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 22,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 23,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        }
+      ],
+      "counter_gate": true
+    },
+    {
+      "history": "pr53",
+      "case": 1,
+      "checks": [
+        {
+          "event": 0,
+          "observed": 4,
+          "predicted": 4,
+          "passed": true
+        },
+        {
+          "event": 3,
+          "observed": 65,
+          "predicted": 65,
+          "passed": true
+        },
+        {
+          "event": 5,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 7,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 9,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 11,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 13,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 15,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 17,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 20,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 22,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 23,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        }
+      ],
+      "counter_gate": true
+    },
+    {
+      "history": "pr53",
+      "case": 2,
+      "checks": [
+        {
+          "event": 0,
+          "observed": 4,
+          "predicted": 4,
+          "passed": true
+        },
+        {
+          "event": 3,
+          "observed": 67,
+          "predicted": 67,
+          "passed": true
+        },
+        {
+          "event": 5,
+          "observed": 67,
+          "predicted": 67,
+          "passed": true
+        },
+        {
+          "event": 7,
+          "observed": 67,
+          "predicted": 67,
+          "passed": true
+        },
+        {
+          "event": 9,
+          "observed": 67,
+          "predicted": 67,
+          "passed": true
+        },
+        {
+          "event": 10,
+          "observed": 67,
+          "predicted": 67,
+          "passed": true
+        }
+      ],
+      "counter_gate": true
+    },
+    {
+      "history": "pr54",
+      "case": 0,
+      "checks": [
+        {
+          "event": 0,
+          "observed": 4,
+          "predicted": 4,
+          "passed": true
+        },
+        {
+          "event": 4,
+          "observed": 65,
+          "predicted": 65,
+          "passed": true
+        },
+        {
+          "event": 6,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 8,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 10,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 12,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 14,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 16,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 18,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 20,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 22,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 24,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 26,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 28,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 30,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 32,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 34,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 36,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 38,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 40,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 41,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        }
+      ],
+      "counter_gate": true
+    },
+    {
+      "history": "pr54",
+      "case": 1,
+      "checks": [
+        {
+          "event": 0,
+          "observed": 4,
+          "predicted": 4,
+          "passed": true
+        },
+        {
+          "event": 4,
+          "observed": 65,
+          "predicted": 65,
+          "passed": true
+        },
+        {
+          "event": 6,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 8,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 10,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 11,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        }
+      ],
+      "counter_gate": true
+    },
+    {
+      "history": "pr54",
+      "case": 2,
+      "checks": [
+        {
+          "event": 0,
+          "observed": 4,
+          "predicted": 4,
+          "passed": true
+        },
+        {
+          "event": 4,
+          "observed": 65,
+          "predicted": 65,
+          "passed": true
+        },
+        {
+          "event": 6,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 8,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 10,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 11,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        }
+      ],
+      "counter_gate": true
+    },
+    {
+      "history": "pr54",
+      "case": 3,
+      "checks": [
+        {
+          "event": 0,
+          "observed": 4,
+          "predicted": 4,
+          "passed": true
+        },
+        {
+          "event": 4,
+          "observed": 65,
+          "predicted": 65,
+          "passed": true
+        },
+        {
+          "event": 6,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 8,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 10,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        },
+        {
+          "event": 11,
+          "observed": 126,
+          "predicted": 126,
+          "passed": true
+        }
+      ],
+      "counter_gate": true
+    }
+  ],
+  "reduction": {
+    "public_ordinals": [
+      90,
+      326
+    ],
+    "predicted_target_batches": [
+      {
+        "request": 326,
+        "stage": "init",
+        "keys": [
+          [
+            -17,
+            -9
+          ],
+          [
+            -16,
+            -9
+          ],
+          [
+            -15,
+            -9
+          ],
+          [
+            -14,
+            -9
+          ]
+        ]
+      },
+      {
+        "request": 326,
+        "stage": "init",
+        "keys": [
+          [
+            -13,
+            -9
+          ],
+          [
+            -12,
+            -9
+          ]
+        ]
+      },
+      {
+        "request": 326,
+        "stage": "step",
+        "keys": [
+          [
+            -16,
+            -8
+          ],
+          [
+            -15,
+            -8
+          ],
+          [
+            -14,
+            -8
+          ],
+          [
+            -13,
+            -8
+          ]
+        ]
+      }
+    ],
+    "preserves_either_full_prefix_target_grouping": false,
+    "total_windows": 835,
+    "note": "One offline candidate only; no pressure-prefix search"
+  },
+  "new_td_launches": 0,
+  "runtime_experiment_justified": false,
+  "historical_assertion_passed": false,
+  "historical_indices_and_ulps": null,
+  "geometry_adoption": false,
+  "numerical_cause_established": false,
+  "cases": [
+    {
+      "scale": 1,
+      "startup": "source-derived candidate; internal trace unavailable",
+      "counter_checks": [
+        {
+          "event": 137,
+          "kind": "absolute",
+          "observed": 834,
+          "predicted": 834,
+          "passed": true
+        },
+        {
+          "event": 193,
+          "kind": "absolute",
+          "observed": 1620,
+          "predicted": 1620,
+          "passed": true
+        },
+        {
+          "event": 195,
+          "kind": "absolute",
+          "observed": 1620,
+          "predicted": 1620,
+          "passed": true
+        },
+        {
+          "event": 196,
+          "kind": "command_delta",
+          "observed": 158,
+          "predicted": 158,
+          "passed": true
+        },
+        {
+          "event": 197,
+          "kind": "absolute",
+          "observed": 1778,
+          "predicted": 1778,
+          "passed": true
+        },
+        {
+          "event": 198,
+          "kind": "command_delta",
+          "observed": 151,
+          "predicted": 151,
+          "passed": true
+        },
+        {
+          "event": 199,
+          "kind": "absolute",
+          "observed": 1929,
+          "predicted": 1929,
+          "passed": true
+        },
+        {
+          "event": 200,
+          "kind": "command_delta",
+          "observed": 151,
+          "predicted": 151,
+          "passed": true
+        },
+        {
+          "event": 201,
+          "kind": "absolute",
+          "observed": 2080,
+          "predicted": 2080,
+          "passed": true
+        },
+        {
+          "event": 202,
+          "kind": "command_delta",
+          "observed": 117,
+          "predicted": 117,
+          "passed": true
+        },
+        {
+          "event": 203,
+          "kind": "absolute",
+          "observed": 2197,
+          "predicted": 2197,
+          "passed": true
+        },
+        {
+          "event": 204,
+          "kind": "command_delta",
+          "observed": 159,
+          "predicted": 159,
+          "passed": true
+        },
+        {
+          "event": 205,
+          "kind": "absolute",
+          "observed": 2356,
+          "predicted": 2356,
+          "passed": true
+        },
+        {
+          "event": 206,
+          "kind": "command_delta",
+          "observed": 102,
+          "predicted": 102,
+          "passed": true
+        },
+        {
+          "event": 207,
+          "kind": "absolute",
+          "observed": 2458,
+          "predicted": 2458,
+          "passed": true
+        },
+        {
+          "event": 208,
+          "kind": "command_delta",
+          "observed": 147,
+          "predicted": 147,
+          "passed": true
+        },
+        {
+          "event": 209,
+          "kind": "absolute",
+          "observed": 2605,
+          "predicted": 2605,
+          "passed": true
+        },
+        {
+          "event": 210,
+          "kind": "command_delta",
+          "observed": 155,
+          "predicted": 155,
+          "passed": true
+        },
+        {
+          "event": 211,
+          "kind": "absolute",
+          "observed": 2760,
+          "predicted": 2760,
+          "passed": true
+        },
+        {
+          "event": 212,
+          "kind": "command_delta",
+          "observed": 21,
+          "predicted": 21,
+          "passed": true
+        },
+        {
+          "event": 213,
+          "kind": "absolute",
+          "observed": 2781,
+          "predicted": 2781,
+          "passed": true
+        },
+        {
+          "event": 214,
+          "kind": "command_delta",
+          "observed": 101,
+          "predicted": 101,
+          "passed": true
+        },
+        {
+          "event": 215,
+          "kind": "absolute",
+          "observed": 2882,
+          "predicted": 2882,
+          "passed": true
+        },
+        {
+          "event": 216,
+          "kind": "command_delta",
+          "observed": 93,
+          "predicted": 93,
+          "passed": true
+        },
+        {
+          "event": 217,
+          "kind": "absolute",
+          "observed": 2975,
+          "predicted": 2975,
+          "passed": true
+        },
+        {
+          "event": 218,
+          "kind": "command_delta",
+          "observed": 8,
+          "predicted": 8,
+          "passed": true
+        },
+        {
+          "event": 219,
+          "kind": "absolute",
+          "observed": 2983,
+          "predicted": 2983,
+          "passed": true
+        },
+        {
+          "event": 220,
+          "kind": "command_delta",
+          "observed": 17,
+          "predicted": 17,
+          "passed": true
+        },
+        {
+          "event": 221,
+          "kind": "absolute",
+          "observed": 3000,
+          "predicted": 3000,
+          "passed": true
+        },
+        {
+          "event": 222,
+          "kind": "command_delta",
+          "observed": 2,
+          "predicted": 2,
+          "passed": true
+        },
+        {
+          "event": 223,
+          "kind": "absolute",
+          "observed": 3002,
+          "predicted": 3002,
+          "passed": true
+        },
+        {
+          "event": 224,
+          "kind": "command_delta",
+          "observed": 96,
+          "predicted": 96,
+          "passed": true
+        },
+        {
+          "event": 225,
+          "kind": "absolute",
+          "observed": 3098,
+          "predicted": 3098,
+          "passed": true
+        },
+        {
+          "event": 226,
+          "kind": "command_delta",
+          "observed": 23,
+          "predicted": 23,
+          "passed": true
+        },
+        {
+          "event": 227,
+          "kind": "absolute",
+          "observed": 3121,
+          "predicted": 3121,
+          "passed": true
+        },
+        {
+          "event": 228,
+          "kind": "command_delta",
+          "observed": 29,
+          "predicted": 29,
+          "passed": true
+        },
+        {
+          "event": 229,
+          "kind": "absolute",
+          "observed": 3150,
+          "predicted": 3150,
+          "passed": true
+        },
+        {
+          "event": 230,
+          "kind": "command_delta",
+          "observed": 42,
+          "predicted": 42,
+          "passed": true
+        },
+        {
+          "event": 231,
+          "kind": "absolute",
+          "observed": 3192,
+          "predicted": 3192,
+          "passed": true
+        },
+        {
+          "event": 232,
+          "kind": "command_delta",
+          "observed": 117,
+          "predicted": 117,
+          "passed": true
+        },
+        {
+          "event": 233,
+          "kind": "absolute",
+          "observed": 3309,
+          "predicted": 3309,
+          "passed": true
+        },
+        {
+          "event": 234,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 235,
+          "kind": "absolute",
+          "observed": 3309,
+          "predicted": 3309,
+          "passed": true
+        },
+        {
+          "event": 236,
+          "kind": "command_delta",
+          "observed": 121,
+          "predicted": 121,
+          "passed": true
+        },
+        {
+          "event": 237,
+          "kind": "absolute",
+          "observed": 3430,
+          "predicted": 3430,
+          "passed": true
+        },
+        {
+          "event": 238,
+          "kind": "command_delta",
+          "observed": 28,
+          "predicted": 28,
+          "passed": true
+        },
+        {
+          "event": 239,
+          "kind": "absolute",
+          "observed": 3458,
+          "predicted": 3458,
+          "passed": true
+        },
+        {
+          "event": 240,
+          "kind": "command_delta",
+          "observed": 49,
+          "predicted": 49,
+          "passed": true
+        },
+        {
+          "event": 241,
+          "kind": "absolute",
+          "observed": 3507,
+          "predicted": 3507,
+          "passed": true
+        },
+        {
+          "event": 242,
+          "kind": "command_delta",
+          "observed": 1,
+          "predicted": 1,
+          "passed": true
+        },
+        {
+          "event": 243,
+          "kind": "absolute",
+          "observed": 3508,
+          "predicted": 3508,
+          "passed": true
+        },
+        {
+          "event": 244,
+          "kind": "command_delta",
+          "observed": 15,
+          "predicted": 15,
+          "passed": true
+        },
+        {
+          "event": 245,
+          "kind": "absolute",
+          "observed": 3523,
+          "predicted": 3523,
+          "passed": true
+        },
+        {
+          "event": 246,
+          "kind": "command_delta",
+          "observed": 8,
+          "predicted": 8,
+          "passed": true
+        },
+        {
+          "event": 247,
+          "kind": "absolute",
+          "observed": 3531,
+          "predicted": 3531,
+          "passed": true
+        },
+        {
+          "event": 248,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 249,
+          "kind": "absolute",
+          "observed": 3531,
+          "predicted": 3531,
+          "passed": true
+        },
+        {
+          "event": 250,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 251,
+          "kind": "absolute",
+          "observed": 3531,
+          "predicted": 3531,
+          "passed": true
+        },
+        {
+          "event": 252,
+          "kind": "command_delta",
+          "observed": 8,
+          "predicted": 8,
+          "passed": true
+        },
+        {
+          "event": 253,
+          "kind": "absolute",
+          "observed": 3539,
+          "predicted": 3539,
+          "passed": true
+        },
+        {
+          "event": 254,
+          "kind": "command_delta",
+          "observed": 3,
+          "predicted": 3,
+          "passed": true
+        },
+        {
+          "event": 255,
+          "kind": "absolute",
+          "observed": 3542,
+          "predicted": 3542,
+          "passed": true
+        },
+        {
+          "event": 256,
+          "kind": "command_delta",
+          "observed": 5,
+          "predicted": 5,
+          "passed": true
+        },
+        {
+          "event": 257,
+          "kind": "absolute",
+          "observed": 3547,
+          "predicted": 3547,
+          "passed": true
+        },
+        {
+          "event": 258,
+          "kind": "command_delta",
+          "observed": 10,
+          "predicted": 10,
+          "passed": true
+        },
+        {
+          "event": 259,
+          "kind": "absolute",
+          "observed": 3557,
+          "predicted": 3557,
+          "passed": true
+        },
+        {
+          "event": 260,
+          "kind": "command_delta",
+          "observed": 1,
+          "predicted": 1,
+          "passed": true
+        },
+        {
+          "event": 261,
+          "kind": "absolute",
+          "observed": 3558,
+          "predicted": 3558,
+          "passed": true
+        },
+        {
+          "event": 262,
+          "kind": "command_delta",
+          "observed": 2,
+          "predicted": 2,
+          "passed": true
+        },
+        {
+          "event": 263,
+          "kind": "absolute",
+          "observed": 3560,
+          "predicted": 3560,
+          "passed": true
+        },
+        {
+          "event": 264,
+          "kind": "command_delta",
+          "observed": 18,
+          "predicted": 18,
+          "passed": true
+        },
+        {
+          "event": 265,
+          "kind": "absolute",
+          "observed": 3578,
+          "predicted": 3578,
+          "passed": true
+        },
+        {
+          "event": 266,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 267,
+          "kind": "absolute",
+          "observed": 3578,
+          "predicted": 3578,
+          "passed": true
+        },
+        {
+          "event": 268,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 269,
+          "kind": "absolute",
+          "observed": 3578,
+          "predicted": 3578,
+          "passed": true
+        },
+        {
+          "event": 270,
+          "kind": "command_delta",
+          "observed": 25,
+          "predicted": 25,
+          "passed": true
+        },
+        {
+          "event": 271,
+          "kind": "absolute",
+          "observed": 3603,
+          "predicted": 3603,
+          "passed": true
+        },
+        {
+          "event": 272,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 273,
+          "kind": "absolute",
+          "observed": 3603,
+          "predicted": 3603,
+          "passed": true
+        },
+        {
+          "event": 274,
+          "kind": "command_delta",
+          "observed": 5,
+          "predicted": 5,
+          "passed": true
+        },
+        {
+          "event": 275,
+          "kind": "absolute",
+          "observed": 3608,
+          "predicted": 3608,
+          "passed": true
+        },
+        {
+          "event": 276,
+          "kind": "command_delta",
+          "observed": 14,
+          "predicted": 14,
+          "passed": true
+        },
+        {
+          "event": 277,
+          "kind": "absolute",
+          "observed": 3622,
+          "predicted": 3622,
+          "passed": true
+        },
+        {
+          "event": 278,
+          "kind": "command_delta",
+          "observed": 3,
+          "predicted": 3,
+          "passed": true
+        },
+        {
+          "event": 279,
+          "kind": "absolute",
+          "observed": 3625,
+          "predicted": 3625,
+          "passed": true
+        },
+        {
+          "event": 280,
+          "kind": "command_delta",
+          "observed": 35,
+          "predicted": 35,
+          "passed": true
+        },
+        {
+          "event": 281,
+          "kind": "absolute",
+          "observed": 3660,
+          "predicted": 3660,
+          "passed": true
+        },
+        {
+          "event": 282,
+          "kind": "command_delta",
+          "observed": 11,
+          "predicted": 11,
+          "passed": true
+        },
+        {
+          "event": 283,
+          "kind": "absolute",
+          "observed": 3671,
+          "predicted": 3671,
+          "passed": true
+        },
+        {
+          "event": 284,
+          "kind": "command_delta",
+          "observed": 15,
+          "predicted": 15,
+          "passed": true
+        },
+        {
+          "event": 285,
+          "kind": "absolute",
+          "observed": 3686,
+          "predicted": 3686,
+          "passed": true
+        },
+        {
+          "event": 286,
+          "kind": "command_delta",
+          "observed": 2,
+          "predicted": 2,
+          "passed": true
+        },
+        {
+          "event": 287,
+          "kind": "absolute",
+          "observed": 3688,
+          "predicted": 3688,
+          "passed": true
+        },
+        {
+          "event": 288,
+          "kind": "command_delta",
+          "observed": 14,
+          "predicted": 14,
+          "passed": true
+        },
+        {
+          "event": 289,
+          "kind": "absolute",
+          "observed": 3702,
+          "predicted": 3702,
+          "passed": true
+        },
+        {
+          "event": 290,
+          "kind": "command_delta",
+          "observed": 1,
+          "predicted": 1,
+          "passed": true
+        },
+        {
+          "event": 291,
+          "kind": "absolute",
+          "observed": 3703,
+          "predicted": 3703,
+          "passed": true
+        },
+        {
+          "event": 292,
+          "kind": "command_delta",
+          "observed": 3,
+          "predicted": 3,
+          "passed": true
+        },
+        {
+          "event": 293,
+          "kind": "absolute",
+          "observed": 3706,
+          "predicted": 3706,
+          "passed": true
+        },
+        {
+          "event": 294,
+          "kind": "command_delta",
+          "observed": 29,
+          "predicted": 29,
+          "passed": true
+        }
+      ],
+      "counter_gate": true,
+      "stopped_at_first_mismatch": false,
+      "final_count": 3735,
+      "stage_counts": {
+        "coarse": 16,
+        "init": 1492,
+        "step": 989,
+        "residual": 1238
+      }
+    },
+    {
+      "scale": 6,
+      "startup": "source-derived candidate; internal trace unavailable",
+      "counter_checks": [
+        {
+          "event": 137,
+          "kind": "absolute",
+          "observed": 834,
+          "predicted": 834,
+          "passed": true
+        },
+        {
+          "event": 193,
+          "kind": "absolute",
+          "observed": 1620,
+          "predicted": 1620,
+          "passed": true
+        },
+        {
+          "event": 195,
+          "kind": "absolute",
+          "observed": 1620,
+          "predicted": 1620,
+          "passed": true
+        },
+        {
+          "event": 196,
+          "kind": "command_delta",
+          "observed": 158,
+          "predicted": 158,
+          "passed": true
+        },
+        {
+          "event": 197,
+          "kind": "absolute",
+          "observed": 1778,
+          "predicted": 1778,
+          "passed": true
+        },
+        {
+          "event": 198,
+          "kind": "command_delta",
+          "observed": 151,
+          "predicted": 151,
+          "passed": true
+        },
+        {
+          "event": 199,
+          "kind": "absolute",
+          "observed": 1929,
+          "predicted": 1929,
+          "passed": true
+        },
+        {
+          "event": 200,
+          "kind": "command_delta",
+          "observed": 151,
+          "predicted": 151,
+          "passed": true
+        },
+        {
+          "event": 201,
+          "kind": "absolute",
+          "observed": 2080,
+          "predicted": 2080,
+          "passed": true
+        },
+        {
+          "event": 202,
+          "kind": "command_delta",
+          "observed": 117,
+          "predicted": 117,
+          "passed": true
+        },
+        {
+          "event": 203,
+          "kind": "absolute",
+          "observed": 2197,
+          "predicted": 2197,
+          "passed": true
+        },
+        {
+          "event": 204,
+          "kind": "command_delta",
+          "observed": 159,
+          "predicted": 159,
+          "passed": true
+        },
+        {
+          "event": 205,
+          "kind": "absolute",
+          "observed": 2356,
+          "predicted": 2356,
+          "passed": true
+        },
+        {
+          "event": 206,
+          "kind": "command_delta",
+          "observed": 102,
+          "predicted": 102,
+          "passed": true
+        },
+        {
+          "event": 207,
+          "kind": "absolute",
+          "observed": 2458,
+          "predicted": 2458,
+          "passed": true
+        },
+        {
+          "event": 208,
+          "kind": "command_delta",
+          "observed": 147,
+          "predicted": 147,
+          "passed": true
+        },
+        {
+          "event": 209,
+          "kind": "absolute",
+          "observed": 2605,
+          "predicted": 2605,
+          "passed": true
+        },
+        {
+          "event": 210,
+          "kind": "command_delta",
+          "observed": 155,
+          "predicted": 155,
+          "passed": true
+        },
+        {
+          "event": 211,
+          "kind": "absolute",
+          "observed": 2760,
+          "predicted": 2760,
+          "passed": true
+        },
+        {
+          "event": 212,
+          "kind": "command_delta",
+          "observed": 21,
+          "predicted": 21,
+          "passed": true
+        },
+        {
+          "event": 213,
+          "kind": "absolute",
+          "observed": 2781,
+          "predicted": 2781,
+          "passed": true
+        },
+        {
+          "event": 214,
+          "kind": "command_delta",
+          "observed": 101,
+          "predicted": 101,
+          "passed": true
+        },
+        {
+          "event": 215,
+          "kind": "absolute",
+          "observed": 2882,
+          "predicted": 2882,
+          "passed": true
+        },
+        {
+          "event": 216,
+          "kind": "command_delta",
+          "observed": 93,
+          "predicted": 93,
+          "passed": true
+        },
+        {
+          "event": 217,
+          "kind": "absolute",
+          "observed": 2975,
+          "predicted": 2975,
+          "passed": true
+        },
+        {
+          "event": 218,
+          "kind": "command_delta",
+          "observed": 8,
+          "predicted": 8,
+          "passed": true
+        },
+        {
+          "event": 219,
+          "kind": "absolute",
+          "observed": 2983,
+          "predicted": 2983,
+          "passed": true
+        },
+        {
+          "event": 220,
+          "kind": "command_delta",
+          "observed": 17,
+          "predicted": 17,
+          "passed": true
+        },
+        {
+          "event": 221,
+          "kind": "absolute",
+          "observed": 3000,
+          "predicted": 3000,
+          "passed": true
+        },
+        {
+          "event": 222,
+          "kind": "command_delta",
+          "observed": 2,
+          "predicted": 2,
+          "passed": true
+        },
+        {
+          "event": 223,
+          "kind": "absolute",
+          "observed": 3002,
+          "predicted": 3002,
+          "passed": true
+        },
+        {
+          "event": 224,
+          "kind": "command_delta",
+          "observed": 96,
+          "predicted": 96,
+          "passed": true
+        },
+        {
+          "event": 225,
+          "kind": "absolute",
+          "observed": 3098,
+          "predicted": 3098,
+          "passed": true
+        },
+        {
+          "event": 226,
+          "kind": "command_delta",
+          "observed": 23,
+          "predicted": 23,
+          "passed": true
+        },
+        {
+          "event": 227,
+          "kind": "absolute",
+          "observed": 3121,
+          "predicted": 3121,
+          "passed": true
+        },
+        {
+          "event": 228,
+          "kind": "command_delta",
+          "observed": 29,
+          "predicted": 29,
+          "passed": true
+        },
+        {
+          "event": 229,
+          "kind": "absolute",
+          "observed": 3150,
+          "predicted": 3150,
+          "passed": true
+        },
+        {
+          "event": 230,
+          "kind": "command_delta",
+          "observed": 42,
+          "predicted": 42,
+          "passed": true
+        },
+        {
+          "event": 231,
+          "kind": "absolute",
+          "observed": 3192,
+          "predicted": 3192,
+          "passed": true
+        },
+        {
+          "event": 232,
+          "kind": "command_delta",
+          "observed": 117,
+          "predicted": 117,
+          "passed": true
+        },
+        {
+          "event": 233,
+          "kind": "absolute",
+          "observed": 3309,
+          "predicted": 3309,
+          "passed": true
+        },
+        {
+          "event": 234,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 235,
+          "kind": "absolute",
+          "observed": 3309,
+          "predicted": 3309,
+          "passed": true
+        },
+        {
+          "event": 236,
+          "kind": "command_delta",
+          "observed": 121,
+          "predicted": 121,
+          "passed": true
+        },
+        {
+          "event": 237,
+          "kind": "absolute",
+          "observed": 3430,
+          "predicted": 3430,
+          "passed": true
+        },
+        {
+          "event": 238,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 239,
+          "kind": "absolute",
+          "observed": 3430,
+          "predicted": 3430,
+          "passed": true
+        },
+        {
+          "event": 240,
+          "kind": "command_delta",
+          "observed": 49,
+          "predicted": 49,
+          "passed": true
+        },
+        {
+          "event": 241,
+          "kind": "absolute",
+          "observed": 3479,
+          "predicted": 3479,
+          "passed": true
+        },
+        {
+          "event": 242,
+          "kind": "command_delta",
+          "observed": 1,
+          "predicted": 1,
+          "passed": true
+        },
+        {
+          "event": 243,
+          "kind": "absolute",
+          "observed": 3480,
+          "predicted": 3480,
+          "passed": true
+        },
+        {
+          "event": 244,
+          "kind": "command_delta",
+          "observed": 6,
+          "predicted": 6,
+          "passed": true
+        },
+        {
+          "event": 245,
+          "kind": "absolute",
+          "observed": 3486,
+          "predicted": 3486,
+          "passed": true
+        },
+        {
+          "event": 246,
+          "kind": "command_delta",
+          "observed": 8,
+          "predicted": 8,
+          "passed": true
+        },
+        {
+          "event": 247,
+          "kind": "absolute",
+          "observed": 3494,
+          "predicted": 3494,
+          "passed": true
+        },
+        {
+          "event": 248,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 249,
+          "kind": "absolute",
+          "observed": 3494,
+          "predicted": 3494,
+          "passed": true
+        },
+        {
+          "event": 250,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 251,
+          "kind": "absolute",
+          "observed": 3494,
+          "predicted": 3494,
+          "passed": true
+        },
+        {
+          "event": 252,
+          "kind": "command_delta",
+          "observed": 8,
+          "predicted": 8,
+          "passed": true
+        },
+        {
+          "event": 253,
+          "kind": "absolute",
+          "observed": 3502,
+          "predicted": 3502,
+          "passed": true
+        },
+        {
+          "event": 254,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 255,
+          "kind": "absolute",
+          "observed": 3502,
+          "predicted": 3502,
+          "passed": true
+        },
+        {
+          "event": 256,
+          "kind": "command_delta",
+          "observed": 6,
+          "predicted": 6,
+          "passed": true
+        },
+        {
+          "event": 257,
+          "kind": "absolute",
+          "observed": 3508,
+          "predicted": 3508,
+          "passed": true
+        },
+        {
+          "event": 258,
+          "kind": "command_delta",
+          "observed": 12,
+          "predicted": 12,
+          "passed": true
+        },
+        {
+          "event": 259,
+          "kind": "absolute",
+          "observed": 3520,
+          "predicted": 3520,
+          "passed": true
+        },
+        {
+          "event": 260,
+          "kind": "command_delta",
+          "observed": 1,
+          "predicted": 1,
+          "passed": true
+        },
+        {
+          "event": 261,
+          "kind": "absolute",
+          "observed": 3521,
+          "predicted": 3521,
+          "passed": true
+        },
+        {
+          "event": 262,
+          "kind": "command_delta",
+          "observed": 2,
+          "predicted": 2,
+          "passed": true
+        },
+        {
+          "event": 263,
+          "kind": "absolute",
+          "observed": 3523,
+          "predicted": 3523,
+          "passed": true
+        },
+        {
+          "event": 264,
+          "kind": "command_delta",
+          "observed": 18,
+          "predicted": 18,
+          "passed": true
+        },
+        {
+          "event": 265,
+          "kind": "absolute",
+          "observed": 3541,
+          "predicted": 3541,
+          "passed": true
+        },
+        {
+          "event": 266,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 267,
+          "kind": "absolute",
+          "observed": 3541,
+          "predicted": 3541,
+          "passed": true
+        },
+        {
+          "event": 268,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 269,
+          "kind": "absolute",
+          "observed": 3541,
+          "predicted": 3541,
+          "passed": true
+        },
+        {
+          "event": 270,
+          "kind": "command_delta",
+          "observed": 25,
+          "predicted": 25,
+          "passed": true
+        },
+        {
+          "event": 271,
+          "kind": "absolute",
+          "observed": 3566,
+          "predicted": 3566,
+          "passed": true
+        },
+        {
+          "event": 272,
+          "kind": "command_delta",
+          "observed": 0,
+          "predicted": 0,
+          "passed": true
+        },
+        {
+          "event": 273,
+          "kind": "absolute",
+          "observed": 3566,
+          "predicted": 3566,
+          "passed": true
+        },
+        {
+          "event": 274,
+          "kind": "command_delta",
+          "observed": 5,
+          "predicted": 5,
+          "passed": true
+        },
+        {
+          "event": 275,
+          "kind": "absolute",
+          "observed": 3571,
+          "predicted": 3571,
+          "passed": true
+        },
+        {
+          "event": 276,
+          "kind": "command_delta",
+          "observed": 14,
+          "predicted": 14,
+          "passed": true
+        },
+        {
+          "event": 277,
+          "kind": "absolute",
+          "observed": 3585,
+          "predicted": 3585,
+          "passed": true
+        },
+        {
+          "event": 278,
+          "kind": "command_delta",
+          "observed": 3,
+          "predicted": 3,
+          "passed": true
+        },
+        {
+          "event": 279,
+          "kind": "absolute",
+          "observed": 3588,
+          "predicted": 3588,
+          "passed": true
+        },
+        {
+          "event": 280,
+          "kind": "command_delta",
+          "observed": 33,
+          "predicted": 33,
+          "passed": true
+        },
+        {
+          "event": 281,
+          "kind": "absolute",
+          "observed": 3621,
+          "predicted": 3621,
+          "passed": true
+        },
+        {
+          "event": 282,
+          "kind": "command_delta",
+          "observed": 11,
+          "predicted": 11,
+          "passed": true
+        },
+        {
+          "event": 283,
+          "kind": "absolute",
+          "observed": 3632,
+          "predicted": 3632,
+          "passed": true
+        },
+        {
+          "event": 284,
+          "kind": "command_delta",
+          "observed": 15,
+          "predicted": 15,
+          "passed": true
+        },
+        {
+          "event": 285,
+          "kind": "absolute",
+          "observed": 3647,
+          "predicted": 3647,
+          "passed": true
+        },
+        {
+          "event": 286,
+          "kind": "command_delta",
+          "observed": 2,
+          "predicted": 2,
+          "passed": true
+        },
+        {
+          "event": 287,
+          "kind": "absolute",
+          "observed": 3649,
+          "predicted": 3649,
+          "passed": true
+        },
+        {
+          "event": 288,
+          "kind": "command_delta",
+          "observed": 14,
+          "predicted": 14,
+          "passed": true
+        },
+        {
+          "event": 289,
+          "kind": "absolute",
+          "observed": 3663,
+          "predicted": 3663,
+          "passed": true
+        },
+        {
+          "event": 290,
+          "kind": "command_delta",
+          "observed": 1,
+          "predicted": 1,
+          "passed": true
+        },
+        {
+          "event": 291,
+          "kind": "absolute",
+          "observed": 3664,
+          "predicted": 3664,
+          "passed": true
+        },
+        {
+          "event": 292,
+          "kind": "command_delta",
+          "observed": 3,
+          "predicted": 3,
+          "passed": true
+        },
+        {
+          "event": 293,
+          "kind": "absolute",
+          "observed": 3667,
+          "predicted": 3667,
+          "passed": true
+        },
+        {
+          "event": 294,
+          "kind": "command_delta",
+          "observed": 27,
+          "predicted": 27,
+          "passed": true
+        }
+      ],
+      "counter_gate": true,
+      "stopped_at_first_mismatch": false,
+      "final_count": 3694,
+      "stage_counts": {
+        "coarse": 16,
+        "init": 1480,
+        "step": 981,
+        "residual": 1217
+      }
+    }
+  ]
+}
