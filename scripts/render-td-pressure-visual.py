@@ -74,7 +74,7 @@ def render(output):
         matplotlib=matplotlib.__version__,numpy=np.__version__,
         dimensions=[2560,1360],computed_geometry_confirmed=False,
         conceptual_annotations=True)
-    output.with_name(output.stem+'-image.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    output.with_name(output.stem+'-image.json').write_bytes((json.dumps(manifest,indent=2)+'\n').encode())
 
 
 if __name__=='__main__':
