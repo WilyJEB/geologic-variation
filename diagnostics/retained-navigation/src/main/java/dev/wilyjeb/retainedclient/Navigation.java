@@ -58,9 +58,10 @@ public final class Navigation {
                 registry -> registry.registryOrThrow(Registries.WORLD_PRESET).getHolderOrThrow(WorldPresets.FLAT).value().createWorldDimensions(),parent);
         } finally {creating=false;}
     }
-    public static void panel() {
+    public static void panel() { panel(null); }
+    public static void panel(Screen parent) {
         System.out.println("RETAINED_NAV panel");
-        Minecraft.getInstance().setScreen(new RetainedMapScreen(null));
+        Minecraft.getInstance().setScreen(new RetainedMapScreen(parent));
     }
     private static boolean down(int k){return GLFW.glfwGetKey(Minecraft.getInstance().getWindow().getWindow(),k)==GLFW.GLFW_PRESS;}
     public static void draw(GuiGraphics g) {

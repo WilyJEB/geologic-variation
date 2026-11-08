@@ -102,7 +102,7 @@ def main(check=False, small=False):
     shutil.copytree(META/'natives'/manifest['id'], attempt/'natives')
     width, height, gui = (1200, 900, 1) if small else (1600, 1000, 2)
     (attempt/'options.txt').write_text(f'version:3955\nguiScale:{gui}\nrenderDistance:2\nsimulationDistance:5\ntutorialStep:none\nonboardAccessibility:false\nmaxFps:30\n')
-    repl = dict(auth_player_name='RetainedDiagnostic', auth_uuid='00000000-0000-3000-8000-000000000001',
+    repl = dict(auth_player_name='RetainedNav', auth_uuid='00000000-0000-3000-8000-000000000001',
         auth_access_token='0', clientid='0', auth_xuid='0', user_type='legacy',
         version_name=manifest['id'], version_type='release', game_directory=str(attempt),
         assets_root=str(META/'assets'), assets_index_name=manifest['assetIndex']['id'],
