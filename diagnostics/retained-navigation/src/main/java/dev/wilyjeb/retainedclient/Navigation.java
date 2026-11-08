@@ -26,7 +26,7 @@ public final class Navigation {
     public static Path root() {
         Path expected=Path.of(System.getProperty("retained.navigation.root", "INVALID")).toAbsolutePath().normalize();
         Path actual=Minecraft.getInstance().gameDirectory.toPath().toAbsolutePath().normalize();
-        if(!expected.equals(actual) || !expected.getParent().getFileName().toString().equals("td-navigation-1")
+        if(!expected.equals(actual) || !expected.getParent().getFileName().toString().equals("td-navigation-2")
             || !expected.getFileName().toString().matches("attempt-0[12]")) throw new IllegalStateException("Navigation root rejected");
         try {for(Path q=expected;q!=null;q=q.getParent()) if(Files.isSymbolicLink(q) || (Files.exists(q) && !q.toRealPath().equals(q))) throw new IllegalStateException("Redirected root");}
         catch(java.io.IOException e){throw new IllegalStateException(e);}
