@@ -85,6 +85,7 @@ def main(check=False, small=False):
     OUTPUT.mkdir(parents=True, exist_ok=True)
     ledger = OUTPUT/'ledger.json'
     attempts = json.loads(ledger.read_text()) if ledger.exists() else []
+    assert all(v['status'] != 'allocated-before-spawn' for v in attempts), 'Previous attempt not finalized'
     assert len(attempts) < 3 and sum(v.get('elapsed', 900) for v in attempts) < 2700, 'Launch budget exhausted'
     attempt = OUTPUT/f'attempt-{len(attempts)+1:02}'
     attempt.mkdir(exist_ok=False)
@@ -165,7 +166,8 @@ def main(check=False, small=False):
         record.update(status=status, elapsed=time.monotonic()-started)
         dump(ledger, attempts)
         dump(attempt/'inventory.json', inventory(attempt))
-    assert status == 'exit-0', status
+    console = (attempt/'console.log').read_text(errors='replace')
+    assert status == 'exit-0' and 'RETAINED_CLIENT enter panel' in console and 'FATAL' not in console, 'Client did not complete panel entry: '+status
 
 
 if __name__ == '__main__':

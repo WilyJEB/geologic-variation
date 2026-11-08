@@ -1,0 +1,34 @@
+{
+  "source": "actual Minecraft window screenshots and UI actions",
+  "tool": "computer-use skill, node_repl @oai/sky",
+  "attempt_1": "Actual mod-loading error screen captured; quit. Reserved mixin package included Diagnostic class. Corrected without changing display sources. Exit zero is not a successful client verification.",
+  "attempt_2": {
+    "client": [1600, 1000],
+    "gui_scale": 2,
+    "sequence": [
+      "Title contains only retained entry and quit. Click 809,500 opens panel.",
+      "Click 90,866 selects native2944,13824, PR59 ID-3, exposure, height2090.142m; both token halves visible.",
+      "Click scale toggle330,71 retains sample, changes blocks to17664,82944; chunks1104,5184; spacing384/24chunks; footprint18438; width12288/768chunks alongX.",
+      "Click comparison120,71 changes to PR58 ID0,5 at the same native sample and scale; full token visible.",
+      "Click120,71 returns PR59 at same sample.",
+      "Click23,100 selects native2688,10880 PR59 ID-2 cover, blocks16128,65280, chunks1008,4080, local0,0; token visible.",
+      "Click820,100 selects native5760,10880 PR59 ID-1 cover substrateA; blocks34560,65280 chunks2160,4080; different token visible.",
+      "Click31,108 between sites clears card: No retained sample selected; support unknown.",
+      "Click10,480 outside footprint remains unknown.",
+      "Escape returns to title. Reopen succeeds, resets transient model to PR59 scale1 first sample. Escape then quit closes client."
+    ]
+  },
+  "attempt_3": {
+    "client": [1200, 900],
+    "gui_scale": 1,
+    "sequence": [
+      "Title entry600,465 opens unchanged panel, all notes/card/footer fit.",
+      "Click81,782 selects same exposure2944,13824; scale toggle300,67 preserves it at6.",
+      "Comparison100,67 shows PR58 ID0,5 at same native sample, full token and card visible.",
+      "Gap28,101 clears selection. Escape returns to title. Quit600,495 closes client."
+    ]
+  },
+  "visual_judgment": "Diagnostic size, contacts and shared surface/deep references are legible in both tested configurations. Text is small, and the unchanged fixed-aspect canvas leaves title panorama on the right at1600x1000. No clipping observed. PR59 straight contacts visibly cut curving relief; PR58 has a bent contact but retains a horizontal seam. This is not player recognition, geological validity or gameplay acceptance.",
+  "cleanup": "Both completed clients quit through UI. All three launched PIDs19620,14940,10872 absent in subsequent CIM query; no Minecraft window remains. Empty vanilla saves directories only, no save files.",
+  "evidence_distinction": "Images are captured actual Minecraft windows. Computer Use supplied JPEG bytes initially saved under raw .png filenames; bytes and original names retained, public copies use .jpg. Token/coordinate identity and absence of forbidden loaded classes are computed record/log/hash checks. Readability/contact assessment is visual judgment. No new terrain observations or TD execution."
+}
