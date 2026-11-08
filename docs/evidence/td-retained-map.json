@@ -1,0 +1,32 @@
+{
+  "archive_sha256": "fafa93f9a8a4865e2e2592cce3a54a1f5937822a059f23a3dfbec31981e9e05a",
+  "contract": "retained-map-1",
+  "history_cards": 7,
+  "members": {
+    "build.gradle": "25a8e2a46d3ab31d85db7765fb4458571fa27a3fe8257590ede947accc17f197",
+    "display/executed-RetainedMap.java": "fabe0ae27789279570b8b3b5d52dffc401da188ad0b019cf64f01db142da43e6",
+    "display/td-retained-map-0-1.png": "82ffcaec89e663733f5a3ac3f479752a8280cf6b6e0142afbd3b2e03e5ec5039",
+    "display/td-retained-map-0-6.png": "993ea58955b064e747184b96b62799f8a12166a326fad4d68f900ed13232fdee",
+    "display/td-retained-map-1-1.png": "ff87bada7bd72f3098b6d686a69b723fa81c45cca49f994d56e5ae1d7083758d",
+    "display/td-retained-map-1-6.png": "86e6d706105aefbefdb992aa0ebe7d9850e5d6aed761d03bb47356da26d48146",
+    "display/td-retained-map-desktop-pr58.png": "fc207f13590b78c205586fb479b7c9e0d6b250789d299cf7ed5faea820f1494d",
+    "display/td-retained-map-desktop-pr59.png": "cce81aabf46f3b92c13f0a27b8d71475aae01bf1a067cae074ead3aed57946a1",
+    "display/td-retained-map-desktop-unknown.png": "90be2cbd9aaac3bfc1afb41e13415e6a2117295753f00c98b4a4ef752953a244",
+    "display/verification.json": "a4f31840520ce0249448306d5899da68d9bb60609e06d9608e4f4bbb618fe329",
+    "docs/td-retained-map-protocol.md": "92aa6978fd3d06cf4861fe598bb7f84fc1edfb4de00fbf995933ee5b49bfc706",
+    "input/td-story.zip": "fec51d36faeb1d8b99e7624c2daab5cbd2b614227c6df9527dfe0f7c7954da47",
+    "retained-map.tsv": "ab7168c07af32e981601d2e2fecb7a8457ec3607e68e2dec0731a6c86a67b872",
+    "scripts/build-td-retained-map.py": "368bd130208354b6079cbb338cf01c8aea5de4530c702a0086f7272d06bacc38",
+    "scripts/reexport-td-retained-map.py": "c6e4e27a43f99e14560ac3c15baa742718f0c4c73fa1e321c74d65c4184e77a2",
+    "scripts/test-td-retained-map.py": "528b132bcd51111d588e85a57387f295091036c8e7cb340bd9920d0b0e10fa90",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/RetainedMap.java": "59573cb79b24c1c1526018a237cfa0d3331f9fdc59311b0afbea7c6f54b69407",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/RetainedMapScreen.java": "e2e674602aea6004144fa18a0f30bc365475757b88cea388d378db7ca52bb3d2",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/mixin/RetainedMapTitleMixin.java": "558d875afe3a6f8e38ac014355ecd6b419b2348afd669c8fa1e5f9ba028058d6",
+    "src/runtimeProbe/resources/geology-runtime-probe.mixins.json": "4e72dd86807e194f7bfc0ecb3406253b8126b0c66d8c535688342aa736f0f31f"
+  },
+  "minecraft_client_verified": false,
+  "resource_sha256": "ab7168c07af32e981601d2e2fecb7a8457ec3607e68e2dec0731a6c86a67b872",
+  "segments": 298,
+  "sites": 2401,
+  "td_executed": false
+}

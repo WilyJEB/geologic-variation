@@ -1,0 +1,27 @@
+{
+  "route": "isolated JDK Swing retained map; no Minecraft/TD classes on classpath",
+  "java": "local Java 21, -Xmx128m",
+  "actual_desktop_verified": true,
+  "minecraft_screen": "compile verified only; no Minecraft launch",
+  "interactions": [
+    "PR59 scale1 initial card",
+    "scale6 toggle and distances",
+    "select actual exposure site native 2944,13824",
+    "toggle unchanged PR58 at same selected sample",
+    "toggle back PR59",
+    "gap click clears selection"
+  ],
+  "screenshots": [
+    "td-retained-map-desktop-pr58.png",
+    "td-retained-map-desktop-pr59.png",
+    "td-retained-map-desktop-unknown.png"
+  ],
+  "rendered_images": "Four -mode-scale PNGs are separate headless renders of the same Java drawing commands, not Minecraft screenshots",
+  "computed_checks": "Four Python tests; Java --check; existing retained story/connectivity suites reused and rerun offline",
+  "td_execution": false,
+  "new_terrain_queries": 0,
+  "production_selection_changed": false,
+  "judgment": "Map sizes, contacts and shared surface/deep token are legible; does not establish better landscape-related contacts, player recognition or gameplay acceptance",
+  "desktop_executed_source_sha256": "fabe0ae27789279570b8b3b5d52dffc401da188ad0b019cf64f01db142da43e6",
+  "final_source_delta": "Added immutable resource SHA256 guard and coordinate cap assertions only; final source compile and Java checks passed. Drawing/control behavior unchanged."
+}
