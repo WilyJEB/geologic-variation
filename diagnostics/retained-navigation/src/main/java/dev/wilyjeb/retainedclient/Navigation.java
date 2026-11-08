@@ -72,7 +72,7 @@ public final class Navigation {
             case GLFW.GLFW_KEY_P -> panel();
             case GLFW.GLFW_KEY_V -> map.mode=1-map.mode;
             case GLFW.GLFW_KEY_B -> map.scale=7-map.scale;
-            case GLFW.GLFW_KEY_R -> {int[] pos=ROUTE[route];map.scale=route==6?6:1;mc.player.connection.sendCommand("tp @s "+pos[0]+" 100 "+pos[1]+" 0 0");System.out.println("RETAINED_NAV route "+route);route=(route+1)%ROUTE.length;}
+            case GLFW.GLFW_KEY_R -> {int[] pos=ROUTE[route];map.scale=route==6?6:1;mc.player.connection.sendCommand("tp @s "+pos[0]+".0 100.0 "+pos[1]+".0 0 0");System.out.println("RETAINED_NAV route "+route);route=(route+1)%ROUTE.length;}
             default -> {return false;}
         }
         return true;
