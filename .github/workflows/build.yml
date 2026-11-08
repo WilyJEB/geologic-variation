@@ -61,11 +61,15 @@ jobs:
         run: python scripts/test-td-pressure.py
       - shell: pwsh
         run: python scripts/test-td-region-visual.py
+      - shell: pwsh
+        run: python scripts/test-td-story.py
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - shell: pwsh
         run: node scripts/test-td-region-viewer.cjs
+      - shell: pwsh
+        run: node scripts/test-td-story-viewer.cjs
       - uses: actions/upload-artifact@v4
         with:
           name: geologic-variation-dev
