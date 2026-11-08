@@ -1,5 +1,74 @@
 # Retained navigation attempt: acceptance failed (#11)
 
+## Supplemental navigation-2: partial human-assisted observation
+
+PR62 remains draft. [Supplemental contract](td-navigation-supplement.md) and
+executable launcher were pushed at068c5cb before implementation/launch; artifact
+path preflight repair at a81bf6e preceded the launch. GitHub PR metadata and fetch
+confirmed main513c4ca and branch ed42ef0. Existing navigation-1 failures below
+remain unchanged. No new TD execution or geological construction occurred.
+
+The Windows tools support key taps, but neither supports held movement (CUA
+explicitly rejects duration on Windows). The user agreed to supply held W.
+One of two NEW navigation-2 attempts ran126.969 seconds; one remains unused.
+Startup/world entry completed within180 seconds. Heap2GiB; sampled working-set,
+disk/free-space and1200-second caps passed portable checks. Exact reused/planned
+source/resource hashes were pushed with the contract. Only the isolated root
+name changed before this attempt; PR61 and production barriers are untouched.
+
+Actual client: fresh unrelated flat world,1600x1000 GUI2; HUD entry and short R
+event control worked. Setup reached2944.5,13824.5 because vanilla centers integer
+teleport X/Z. The unchanged exact-site rule correctly showed UNSUPPORTED GAP.
+This is a setup failure, not a retained sample or approximate identity.
+The user confirmed holding W and possibly moving the mouse slightly. Logs record
+movement from2944.5,13824.5 to2922.054713,13824.447234, displacement22.445349 blocks,
+blocks2944,13824 to2922,13824 and chunks184,864 to182,864. This is human-controlled
+vanilla movement recorded by the client, separate from the setup teleport.
+
+Title, HUD entry and before-movement images are retained. The next capture/H
+operation was interrupted by physical Escape; no image or action result returned.
+Do not claim H was delivered, HUD return, marker coherence or after-movement visual
+verification. No further UI actions occurred. Exact command-line-checked PID2788
+and child28560 were forcibly terminated; launcher finalized exit-1, partial logs,
+inventory and failed route check. Exact PID queries afterward found both absent.
+Normal local-server shutdown was NOT verified. The save is disposable and will
+never be reopened. No after image exists; none is reconstructed or substituted.
+
+Before any second attempt, the decimal-coordinate correction contract/hash was
+pushed at19020e1; narrow source fix at196eccb appends .0 to the same fixed X/Z
+setup commands. It compiles with Java retained-coordinate checks but has never
+run. Panel, model, immutable resource, origin, histories and drawing are unchanged.
+TD metres remain distinct from Minecraft Y. Final slot is preserved while the
+user is unavailable; short tool inputs do not replace held movement.
+
+[Portable partial archive](evidence/td-navigation-supplement.zip) ·
+[computed checks and hashes](evidence/td-navigation-supplement.json) ·
+[observations and limitations](evidence/td-navigation-supplement-actions.json).
+The archive retains exact executed event-adapter source/JAR separately from final
+compile-only decimal source/JAR, command/dependencies, class/guard logs, complete
+position sequence, monitor, save/file inventories, original attempt contract and
+hashes, cleanup and three actual-client screenshots. All129 supplied dependency
+hashes, retained input archives and both pre-existing viewer repairs still match.
+Forbidden executable/class scans and fresh-save/local-server guards pass offline
+audit; no universal filesystem-write trace is claimed.
+
+Seven supplemental replay/corruption tests cover byte replay, forbidden classes,
+coordinates, continuing-save paths, immutable records, keyboard guard and cleanup.
+Original navigation-1 portable failure checks remain separate. CI is build/offline
+replay only. No merge or merged-main audit is justified without full acceptance.
+Visual judgment remains limited: live coordinate/status lines readable, shrunken
+HUD labels too small; movement's benefit for contacts/shared history is unassessed.
+The full unchanged panel is still the intended readable history-card view.
+
+Smallest remaining step: finish the same frozen route, exact-site decimal setup,
+scale6 held movement, HUD/panel return, full token cards, configurations and normal
+shutdown using the final slot with human held input or a supported held-key API.
+This is a UI diagnostic gate toward a visible terrain-aware prototype, not a new
+regional construction or evidence for PR59 contacts. All carried gates below,
+geology-1, optional Ulti-World and #9/#11 remain unchanged/open.
+
+## Original navigation-1 result (preserved)
+
 **The no-TD client creates a disposable vanilla world and draws the exact retained
 comparison, but the requested movement inspection is NOT verified.** Two launches
 consumed the new budget, including failures. No further client or TD launch is

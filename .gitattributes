@@ -99,3 +99,6 @@ scripts/export-retained-navigation.py text eol=lf
 scripts/test-retained-navigation.py text eol=lf
 docs/td-navigation.md text eol=lf
 docs/evidence/td-navigation-actions.json text eol=lf
+scripts/launch-retained-navigation-supplement.py text eol=lf
+scripts/export-navigation-supplement.py text eol=lf
+scripts/test-navigation-supplement.py text eol=lf

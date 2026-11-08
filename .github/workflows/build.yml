@@ -73,6 +73,8 @@ jobs:
         run: ./gradlew.bat -p diagnostics/retained-navigation build
       - shell: pwsh
         run: python scripts/test-retained-navigation.py
+      - shell: pwsh
+        run: python scripts/test-navigation-supplement.py
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
