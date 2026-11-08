@@ -1,0 +1,1 @@
+{"required":true,"minVersion":"0.8","package":"dev.wilyjeb.retainedclient.mixin","compatibilityLevel":"JAVA_21","client":["TitleOnly","SaveBarrier","WorldBarrier","Hud","LanBarrier"],"injectors":{"defaultRequire":1}}
