@@ -11,6 +11,8 @@ No production mod, TD, ONNX/model/provider classes, model files or production
 mixins may enter the mod directory, classpath or module path. Launcher validates
 installed profile manifest SHA1s, scans all supplied JAR entries (including nested
 JARs), records SHA256s, rejects TD/ONNX and unexpected diagnostic class entries.
+Installed profile manifest SHA256 is
+706a7b7be2f110a87449f0ea090b6daf3882106f0d39acbe2c18b8a37d254924.
 No inherited JVM injection variables, extra mods, account credentials or profile
 settings. Only installed vanilla/NeoForge libraries/assets are reused read-only.
 
@@ -61,7 +63,9 @@ geological validity, performance or gameplay acceptance claim.
 
 Archive actual client screenshots, console/latest/debug/class-load logs, manifest,
 JAR entry list, exact executed sources/artifact, inputs, launcher/contract, action
-record and output inventory. Verify no world/save files, production mod, TD/model
+record and output inventory. Vanilla may create an empty saves directory during
+storage-source construction; no world/save files or world access are allowed.
+Verify no world/save files, production mod, TD/model
 initialization/inference/query classes. Package deterministic portable replay and
 corruption checks; passing CI before merge, strict old/new re-export after final
 Windows checkout. Keep #9/#11 open and all carried-forward gates in td-retained-map.md.

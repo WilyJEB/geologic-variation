@@ -48,6 +48,7 @@ def main(check=False, small=False):
     if any(os.environ.get(k) for k in ('JAVA_TOOL_OPTIONS', '_JAVA_OPTIONS', 'JDK_JAVA_OPTIONS', 'CLASSPATH')):
         raise ValueError('Inherited JVM injection is prohibited')
     manifest = json.loads(MANIFEST.read_text())
+    assert sha(MANIFEST) == '706a7b7be2f110a87449f0ea090b6daf3882106f0d39acbe2c18b8a37d254924'
     assert manifest['id'] == '1.21.1-21.1.251'
     allowed = runpy.run_path(str(ROOT/'scripts/launch-acceptance-client.py'))['allowed']
     paths = []
@@ -66,7 +67,7 @@ def main(check=False, small=False):
     supplied = set(paths)
     for lib in manifest['libraries']:
         art = lib.get('downloads', {}).get('artifact')
-        if art and (META/'libraries'/art['path']).is_file():
+        if art and art.get('path') and (META/'libraries'/art['path']).is_file():
             p = META/'libraries'/art['path']
             assert hashlib.sha1(p.read_bytes()).hexdigest() == art['sha1'], p
             supplied.add(p)
@@ -153,7 +154,7 @@ def main(check=False, small=False):
                               free=shutil.disk_usage(OUTPUT).free)
                 monitor.write(json.dumps(sample)+'\n'); monitor.flush()
                 assert elapsed <= 900 and used <= 2*1024**3 and working <= 6*1024**3 and sample['free'] >= 4*1024**3, sample
-                assert not (attempt/'saves').exists(), 'World/save write prohibited'
+                assert not any(p.is_file() for p in (attempt/'saves').rglob('*')), 'World/save write prohibited'
                 time.sleep(1)
             status = f'exit-{process.returncode}'
     finally:

@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.wilyjeb.retainedclient",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["TitleOnly", "WorldBarrier", "SaveBarrier"],
+  "injectors": {"defaultRequire": 1}
+}

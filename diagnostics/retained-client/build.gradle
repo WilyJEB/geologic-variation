@@ -1,0 +1,39 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.147'
+}
+version = '1'
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+neoForge {
+    version = '21.1.251'
+    mods { retained_client { sourceSet sourceSets.main } }
+}
+// Explicit display-only whitelist; no dependency on either parent source set.
+sourceSets.main {
+    java {
+        srcDir '../../src/runtimeProbe/java'
+        include 'dev/wilyjeb/retainedclient/**'
+        include 'dev/wilyjeb/geology/probe/RetainedMap.java'
+        include 'dev/wilyjeb/geology/probe/RetainedMapScreen.java'
+    }
+    resources {
+        srcDir '../../src/runtimeProbe/resources'
+        include 'retained-client.mixins.json'
+        include 'retained-map.tsv'
+        exclude 'geology-runtime-probe.mixins.json'
+    }
+}
+// Resource roots cannot share the probe mod descriptor.
+tasks.named('processResources') {
+    from('src/main/descriptor') { into 'META-INF' }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar') { preserveFileTimestamps = false; reproducibleFileOrder = true }
+tasks.register('checkRetained', JavaExec) {
+    dependsOn classes
+    classpath = sourceSets.main.output
+    mainClass = 'dev.wilyjeb.geology.probe.RetainedMap'
+    args '--check'
+    maxHeapSize = '128m'
+}
+tasks.named('check') { dependsOn checkRetained }
