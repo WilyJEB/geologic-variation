@@ -88,7 +88,8 @@ def main(check=False, small=False):
         assert sha(ROOT/name) == expected, name
     frozen=json.loads((ROOT/'docs/td-navigation-supplement-hashes.json').read_text())
     for name,h in frozen['reused'].items():
-        expected=frozen['planned_changed'].get(name,h)
+        changed=frozen['attempt_2_planned_changed'] if (OUTPUT/'attempt-01').exists() else frozen['planned_changed']
+        expected=changed.get(name,h)
         assert sha(ROOT/name)==expected, name
     if check:
         print('PASS scanned installed libraries and isolated display JAR; no client launched')

@@ -74,3 +74,12 @@ launches exhausted, ran4a2fa1c; final capture mixin compile-only; historical
 arrays/indices/ULPs unavailable. #9/#11 remain open. CI before any merge; strict
 retained/new re-export after final Windows checkout. Movement can inform diagnostic
 legibility only, not player recognition, geological validity or gameplay acceptance.
+
+## Pre-attempt2 setup correction
+
+Attempt1 actual client showed vanilla integer teleport centering (+0.5 X/Z).
+Retain that failure; never relax exact sample identity. Before attempt2, push
+this amendment and planned source hash, then append .0 to both fixed X/Z
+command literals (Y100.0 remains unrelated context). Same seven frozen sites,
+no new route/support/history. Launcher chooses the predeclared hash for attempt2.
+No additional launch slots. Human walking remains separate movement evidence.

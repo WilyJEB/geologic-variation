@@ -1,4 +1,7 @@
 {
+  "attempt_2_planned_changed": {
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Navigation.java": "1a2afd6c1e6927f909004668fabfcdf42e0e0d605ed93158510008d693769fa3"
+  },
   "base": "ed42ef0bb6de399a02438a67d6beacdf7735eead",
   "change": "Only navigation root ledger name td-navigation-1 -> td-navigation-2. All other adapter, full panel, records and drawing bytes reused.",
   "planned_changed": {
