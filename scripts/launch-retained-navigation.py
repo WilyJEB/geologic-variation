@@ -175,7 +175,10 @@ def main(check=False, small=False):
         dump(ledger, attempts)
         dump(attempt/'inventory.json', inventory(attempt))
     console = (attempt/'console.log').read_text(errors='replace')
-    assert status == 'exit-0' and 'RETAINED_NAV panel' in console and 'RETAINED_NAV position' in console and 'FATAL' not in console, 'Client did not complete panel entry: '+status
+    verified = status == 'exit-0' and all(v in console for v in ('RETAINED_NAV panel','RETAINED_NAV position','RETAINED_NAV route 6','RETAINED_NAV overlay false','RETAINED_NAV overlay true')) and 'FATAL' not in console
+    record['automatic_route_check'] = 'passed-log-presence-only' if verified else 'FAILED'
+    dump(ledger, attempts)
+    assert verified, 'Navigation actions not completed; normal exit alone is not acceptance: '+status
 
 
 if __name__ == '__main__':

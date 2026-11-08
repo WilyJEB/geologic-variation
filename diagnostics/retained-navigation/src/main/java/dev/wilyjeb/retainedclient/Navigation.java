@@ -17,7 +17,6 @@ import org.lwjgl.glfw.GLFW;
 public final class Navigation {
     public static boolean creating, started;
     public static boolean overlay=true;
-    private static boolean h,p,v,b,r;
     private static long logged;
     private static int route;
     private static final RetainedMap map=new RetainedMap();
@@ -63,18 +62,23 @@ public final class Navigation {
         System.out.println("RETAINED_NAV panel");
         Minecraft.getInstance().setScreen(new RetainedMapScreen(parent));
     }
-    private static boolean down(int k){return GLFW.glfwGetKey(Minecraft.getInstance().getWindow().getWindow(),k)==GLFW.GLFW_PRESS;}
+    // Event-driven controls retain short taps; the executed polling revision is
+    // separately retained in the evidence. This correction is compile-only.
+    public static boolean key(int key,int action) {
+        var mc=Minecraft.getInstance();
+        if(action!=GLFW.GLFW_PRESS || mc.player==null || mc.screen!=null)return false;
+        switch(key) {
+            case GLFW.GLFW_KEY_H -> {overlay=!overlay;System.out.println("RETAINED_NAV overlay "+overlay);}
+            case GLFW.GLFW_KEY_P -> panel();
+            case GLFW.GLFW_KEY_V -> map.mode=1-map.mode;
+            case GLFW.GLFW_KEY_B -> map.scale=7-map.scale;
+            case GLFW.GLFW_KEY_R -> {int[] pos=ROUTE[route];map.scale=route==6?6:1;mc.player.connection.sendCommand("tp @s "+pos[0]+" 100 "+pos[1]+" 0 0");System.out.println("RETAINED_NAV route "+route);route=(route+1)%ROUTE.length;}
+            default -> {return false;}
+        }
+        return true;
+    }
     public static void draw(GuiGraphics g) {
         var mc=Minecraft.getInstance(); if(mc.player==null || mc.level==null)return;
-        boolean hh=down(GLFW.GLFW_KEY_H),pp=down(GLFW.GLFW_KEY_P),vv=down(GLFW.GLFW_KEY_V),bb=down(GLFW.GLFW_KEY_B),rr=down(GLFW.GLFW_KEY_R);
-        if(mc.screen==null){
-            if(hh&&!h){overlay=!overlay;System.out.println("RETAINED_NAV overlay "+overlay);}
-            if(pp&&!p)panel();
-            if(vv&&!v)map.mode=1-map.mode;
-            if(bb&&!b)map.scale=7-map.scale;
-            if(rr&&!r){int[] pos=ROUTE[route];map.scale=route==6?6:1;mc.player.connection.sendCommand("tp @s "+pos[0]+" 100 "+pos[1]+" 0 0");System.out.println("RETAINED_NAV route "+route);route=(route+1)%ROUTE.length;}
-        }
-        h=hh;p=pp;v=vv;b=bb;r=rr;
         double x=mc.player.getX(),z=mc.player.getZ(),nx=x/map.scale,nz=z/map.scale;
         long bx=(long)Math.floor(x),bz=(long)Math.floor(z);
         boolean inside=nx>=2688&&nx<5761&&nz>=10880&&nz<13953;
