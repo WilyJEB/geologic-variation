@@ -80,3 +80,7 @@ scripts/test-td-story-viewer.cjs text eol=lf
 scripts/test-td-story.py text eol=lf
 scripts/reexport-td-story.py text eol=lf
 docs/evidence/td-story.html text eol=lf
+scripts/build-td-retained-map.py text eol=lf
+scripts/test-td-retained-map.py text eol=lf
+src/runtimeProbe/resources/retained-map.tsv text eol=lf
+scripts/reexport-td-retained-map.py text eol=lf

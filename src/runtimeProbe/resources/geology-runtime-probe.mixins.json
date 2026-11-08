@@ -3,6 +3,6 @@
   "package": "dev.wilyjeb.geology.probe.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["HeightmapProbeMixin", "OreTraceMixin", "FeatureSeedTraceMixin", "ModelConfigProbeMixin", "BackendExecutionProbeMixin", "NumericalCaptureMixin"],
-  "client": ["IntegratedClientProbeMixin"],
+  "client": ["IntegratedClientProbeMixin", "RetainedMapTitleMixin"],
   "injectors": {"defaultRequire": 1}
 }

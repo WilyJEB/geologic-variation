@@ -63,6 +63,8 @@ jobs:
         run: python scripts/test-td-region-visual.py
       - shell: pwsh
         run: python scripts/test-td-story.py
+      - shell: pwsh
+        run: python scripts/test-td-retained-map.py
       - uses: actions/setup-node@v4
         with:
           node-version: '20'

@@ -50,3 +50,13 @@ tasks.register('runtimeProbeJar', Jar) {
     preserveFileTimestamps = false
     reproducibleFileOrder = true
 }
+
+// Pure JDK retained display checks: no Minecraft/TD startup or model calls.
+tasks.register('testRetainedMap', JavaExec) {
+    dependsOn runtimeProbeClasses
+    classpath = sourceSets.runtimeProbe.output
+    mainClass = 'dev.wilyjeb.geology.probe.RetainedMap'
+    args '--check'
+    maxHeapSize = '128m'
+}
+tasks.named('check') { dependsOn testRetainedMap }
