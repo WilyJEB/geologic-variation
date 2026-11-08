@@ -17,7 +17,7 @@ OUTPUT = ROOT / 'runs/acceptance/td-navigation-2'
 META = Path.home() / 'AppData/Roaming/ModrinthApp/meta'
 MANIFEST = META / 'versions/1.21.1-21.1.251/1.21.1-21.1.251.json'
 JAVA = Path('C:/Program Files/Java/jdk-21/bin/java.exe')
-JAR = ROOT / 'diagnostics/retained-navigation/build/libs/retained-navigation-2.jar'
+JAR = ROOT / 'diagnostics/retained-navigation/build/libs/retained-navigation-1.jar'
 FORBIDDEN = ('terraindiffusion', 'terrain_diffusion', 'terrain-diffusion',
              'onnxruntime', 'ai/onnx', 'dev/wilyjeb/geology/domain/',
              'dev/wilyjeb/geology/world/', 'geologic_variation')
