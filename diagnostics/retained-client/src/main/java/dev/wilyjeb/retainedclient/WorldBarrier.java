@@ -1,4 +1,4 @@
-package dev.wilyjeb.retainedclient;
+package dev.wilyjeb.retainedclient.mixin;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;

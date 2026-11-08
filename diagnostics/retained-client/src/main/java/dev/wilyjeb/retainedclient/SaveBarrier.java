@@ -1,4 +1,4 @@
-package dev.wilyjeb.retainedclient;
+package dev.wilyjeb.retainedclient.mixin;
 
 import net.minecraft.world.level.storage.LevelStorageSource;
 import org.spongepowered.asm.mixin.Mixin;

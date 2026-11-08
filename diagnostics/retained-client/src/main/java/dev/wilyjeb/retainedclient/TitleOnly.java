@@ -1,4 +1,4 @@
-package dev.wilyjeb.retainedclient;
+package dev.wilyjeb.retainedclient.mixin;
 
 import dev.wilyjeb.geology.probe.RetainedMapScreen;
 import net.minecraft.client.gui.components.Button;
