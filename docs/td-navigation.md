@@ -26,7 +26,9 @@ the exact newly tested launcher, collector, tests and both context records.
 Four readiness regression tests cover pre-allocation failure for check/launch modes,
 socket timeout/cleanup, successful cleanup and preserved budget-guard expressions.
 An initial test fixture failed due to restricted system-temp access; the fixture
-now uses a temporary directory within the repository's acceptance root and passes.
+now uses a temporary directory within the repository root and passes. CI also
+caught the intermediate fixture's assumption that runs/acceptance already exists
+on a fresh checkout; using the always-present repository root fixes that failure.
 
 This narrows a local permission obstacle; it does not establish Java/Netty selector,
 IPv6, world entry, movement, UI or shutdown readiness. The new launcher has been

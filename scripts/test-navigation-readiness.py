@@ -13,7 +13,7 @@ M = runpy.run_path(str(ROOT/'scripts/launch-retained-navigation-supplement.py'))
 class Readiness(unittest.TestCase):
     def test_failure_before_any_allocation(self):
         for check in (False, True):
-            with tempfile.TemporaryDirectory(dir=ROOT/'runs/acceptance') as directory:
+            with tempfile.TemporaryDirectory(dir=ROOT) as directory:
                 output = Path(directory)/'existing'
                 output.mkdir()
                 (output/'attempt-01').mkdir()
