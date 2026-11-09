@@ -1,6 +1,6 @@
 {
   "acceptance": "INCOMPLETE",
-  "archive_sha256": "57c205c1b54c2a62da3995d17948226e90c679a94ad6c2e55cc5fe77c274d479",
+  "archive_sha256": "e0b0939f769fabf0d4fa2df7a3f14a10e1db54445c6bfb6f162abd8a72db50da",
   "attempts_remaining": 0,
   "attempts_used": 2,
   "charged_seconds": 169.0885127000074,
@@ -153,7 +153,7 @@
     "raw/pid-cleanup.json": "d3acf744a855a9f11a82239ebb6947ead768f43e62ee39bf599d2f9d2593fad7",
     "raw/post-checks.json": "3c337a4d9e273864049886d5f3c68703dcc9fbaf4d49cf0ebdcbc799232d5481",
     "scripts/export-navigation-supplement.py": "398da2da457b74fa89399095dff15d2825fa95d3adfe959e2e121a545c97451e",
-    "scripts/launch-retained-navigation-supplement.py": "7407cfdfa5debb9a8b4637ca33104f34a98171b0f61f73d092140c0dd2d83c06",
+    "scripts/launch-retained-navigation-supplement.py": "7a5c0d335a6b868f020a97c256d603473c622e4a1fb8e43868f3a3d50fb9bdd3",
     "scripts/test-navigation-supplement.py": "121e627aa48db986700cb7d248ea5b8724f9c1e0ee8ec339db556ff4b09536ac"
   },
   "start": [

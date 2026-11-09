@@ -8,6 +8,7 @@ from pathlib import Path
 import runpy
 import shutil
 import signal
+import socket
 import subprocess
 import time
 import zipfile
@@ -45,7 +46,30 @@ def inventory(directory):
             for p in sorted(directory.rglob('*')) if p.is_file()}
 
 
+def check_loopback():
+    """One IPv4 loopback handshake; no retries, threads, files or client."""
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as listener:
+            listener.settimeout(1.0)
+            listener.bind(('127.0.0.1', 0))
+            listener.listen(1)
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
+                client.settimeout(1.0)
+                client.connect(listener.getsockname())
+                connection, _ = listener.accept()
+                with connection:
+                    connection.settimeout(1.0)
+                    client.sendall(b'R')
+                    if connection.recv(1) != b'R':
+                        raise OSError('loopback handshake mismatch')
+    except OSError as error:
+        raise RuntimeError('Local-loopback readiness FAILED; no launch slot consumed. '
+                           'No automatic escalation or relaunch. '+str(error)) from error
+    print('PASS ephemeral IPv4 local-loopback handshake; not Minecraft readiness')
+
+
 def main(check=False, small=False):
+    check_loopback()
     if any(os.environ.get(k) for k in ('JAVA_TOOL_OPTIONS', '_JAVA_OPTIONS', 'JDK_JAVA_OPTIONS', 'CLASSPATH')):
         raise ValueError('Inherited JVM injection is prohibited')
     manifest = json.loads(MANIFEST.read_text())

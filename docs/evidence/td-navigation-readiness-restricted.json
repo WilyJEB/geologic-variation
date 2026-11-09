@@ -1,0 +1,42 @@
+{
+  "after": {
+    "td-navigation-1": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger_sha256": "733bee0b5b78a6774801a7c92d5202872ab22203251967a8fc55b2e851a31703"
+    },
+    "td-navigation-2": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger_sha256": "7817092a59e0d39837837d2b73de5f219e1ff77a6c0204d550f59686d00d3b12"
+    }
+  },
+  "allocation_unchanged": true,
+  "before": {
+    "td-navigation-1": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger_sha256": "733bee0b5b78a6774801a7c92d5202872ab22203251967a8fc55b2e851a31703"
+    },
+    "td-navigation-2": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger_sha256": "7817092a59e0d39837837d2b73de5f219e1ff77a6c0204d550f59686d00d3b12"
+    }
+  },
+  "client_launched": false,
+  "context": "restricted",
+  "elapsed": 0.02925249998224899,
+  "error": "RuntimeError: Local-loopback readiness FAILED; no launch slot consumed. No automatic escalation or relaunch. [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions",
+  "launcher_sha256": "7a5c0d335a6b868f020a97c256d603473c622e4a1fb8e43868f3a3d50fb9bdd3",
+  "mode": "check-only",
+  "stdout": ""
+}

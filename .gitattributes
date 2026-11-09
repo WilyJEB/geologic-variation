@@ -102,3 +102,6 @@ docs/evidence/td-navigation-actions.json text eol=lf
 scripts/launch-retained-navigation-supplement.py text eol=lf
 scripts/export-navigation-supplement.py text eol=lf
 scripts/test-navigation-supplement.py text eol=lf
+scripts/test-navigation-readiness.py text eol=lf
+scripts/record-navigation-readiness.py text eol=lf
+scripts/export-navigation-readiness.py text eol=lf

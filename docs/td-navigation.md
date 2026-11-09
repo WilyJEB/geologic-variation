@@ -1,5 +1,47 @@
 # Retained navigation attempt: acceptance failed (#11)
 
+## Non-client loopback readiness revision (no new launch authorization)
+
+Reconciled fetched main513c4ca, GitHub draft/open/unmerged PR62 and brancha17feef.
+Only pre-existing untracked viewer repairs and unrelated temp/ were present;
+they remain preserved. Both navigation budgets remain exhausted, all historical
+failures below remain failures. No Minecraft/TD process, world reopening, new seed
+or terrain observation occurred during this revision.
+
+The supplemental launcher now performs one ephemeral IPv4 127.0.0.1 TCP handshake
+before any attempt directory, ledger allocation or client process. Bind uses port0;
+listen backlog1; connect/accept/send/receive each have fixed1s timeouts, no retry,
+all sockets use context-managed cleanup (at most4s blocking socket operations,
+excluding OS scheduling). Failure raises a clear no-slot-consumed error. --check-only
+performs the readiness test and existing hash/isolation checks without allocation.
+No downloads, firewall/security changes, undocumented APIs or automatic escalation.
+Existing launch-budget/hash/isolation guards are unchanged.
+
+New explicit non-client observations: restricted --check-only failed in0.029s
+with WinError10013; separately approved --check-only passed in0.403s, including
+installed-library/nested-JAR and exact isolated artifact/source checks. Both frozen
+ledger SHA256 values and both attempt-directory lists matched before/after in each
+context. [Portable readiness evidence](evidence/td-navigation-readiness.zip) retains
+the exact newly tested launcher, collector, tests and both context records.
+Four readiness regression tests cover pre-allocation failure for check/launch modes,
+socket timeout/cleanup, successful cleanup and preserved budget-guard expressions.
+An initial test fixture failed due to restricted system-temp access; the fixture
+now uses a temporary directory within the repository's acceptance root and passes.
+
+This narrows a local permission obstacle; it does not establish Java/Netty selector,
+IPv6, world entry, movement, UI or shutdown readiness. The new launcher has been
+executed ONLY through non-client checks; it has never launched a client. The
+supplemental portable archive updates its top-level current launcher member only;
+raw attempt executed launcher bytes and all historical outcomes/actions remain
+distinct and unchanged. Navigation acceptance remains INCOMPLETE, PR62 draft.
+
+[Future single-attempt contract proposal](td-navigation-future-proposal.md) is
+separately reviewable and grants no authorization. Smallest next step: review that
+one-attempt proposal with a present human for held movement, then, only if explicitly
+authorized, finish the same frozen retained-display inspection. No new geological
+construction is needed for this gate toward a visible terrain-aware addon. PR59's
+negative contacts and every carried gate at the end of this report remain unchanged.
+
 ## Final supplemental slot: world entry failed; budget exhausted
 
 Reconciled GitHub/main513c4ca and branch4b5c2e2 before launch. Fixed source hashes,

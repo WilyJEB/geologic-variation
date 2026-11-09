@@ -75,6 +75,10 @@ jobs:
         run: python scripts/test-retained-navigation.py
       - shell: pwsh
         run: python scripts/test-navigation-supplement.py
+      - shell: pwsh
+        run: python scripts/test-navigation-readiness.py
+      - shell: pwsh
+        run: python scripts/export-navigation-readiness.py --strict
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
