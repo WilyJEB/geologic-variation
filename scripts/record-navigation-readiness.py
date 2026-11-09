@@ -41,7 +41,7 @@ def main():
                   launcher_sha256=hashlib.sha256(launcher.read_bytes()).hexdigest(),
                   elapsed=time.monotonic()-start, stdout=stream.getvalue(), error=error,
                   before=before, after=after, allocation_unchanged=before == after)
-    args.output.write_text(json.dumps(record, indent=2, sort_keys=True)+'\n')
+    args.output.write_bytes((json.dumps(record, indent=2, sort_keys=True)+'\n').encode())
     print(json.dumps(record, indent=2))
     assert before == after
 
