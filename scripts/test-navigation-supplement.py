@@ -56,6 +56,19 @@ class Evidence(unittest.TestCase):
         v = json.loads(self.members[n]); v['absent'] = False
         self.reject(n, json.dumps(v).encode())
 
+    def test_final_failure_not_success(self):
+        n = 'raw/attempt-02/console.log'
+        self.reject(n, self.members[n].replace(b'Permission denied: connect', b'connection accepted'))
+
+    def test_final_cleanup(self):
+        n = 'raw/attempt-02-post-checks.json'
+        v = json.loads(self.members[n]); v['absent'] = False
+        self.reject(n, json.dumps(v).encode())
+
+    def test_no_budget_reset(self):
+        n = 'raw/ledger.json'
+        self.reject(n, json.dumps(json.loads(self.members[n])[:1]).encode())
+
 
 if __name__ == '__main__':
     unittest.main()

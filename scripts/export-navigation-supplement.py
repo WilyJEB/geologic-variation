@@ -33,7 +33,7 @@ def scan(data):
 
 def audit(m):
     ledger = json.loads(m['raw/ledger.json'])
-    assert len(ledger) == 1
+    assert len(ledger) == 2
     row = ledger[0]
     assert row['attempt'] == 1 and row['status'] == 'exit-1'
     assert row['automatic_route_check'] == 'FAILED' and row['pid_absent']
@@ -102,17 +102,49 @@ def audit(m):
     assert len(post['dependencies']) == 129 and all(post['dependencies'].values())
     assert all(post['retained_inputs'].values())
     actions = json.loads(m['actions.json'])
-    assert actions['acceptance'] == 'INCOMPLETE' and actions['attempts_remaining'] == 1
+    assert actions['acceptance'] == 'INCOMPLETE' and actions['attempts_remaining'] == 0
     source = 'diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Navigation.java'
     assert sha(m[source]) == frozen['attempt_2_planned_changed'][source]
     assert b'pos[0]+".0 100.0 "+pos[1]+".0 0 0"' in m[source]
-    return dict(contract='navigation-2', acceptance='INCOMPLETE', attempts_used=1,
-                attempts_remaining=1, charged_seconds=row['elapsed'],
+    final = ledger[1]
+    assert final['attempt'] == 2 and final['status'] == 'exit-0'
+    assert final['automatic_route_check'] == 'FAILED' and final['pid_absent']
+    assert 0 < final['elapsed'] <= 1200
+    p2 = 'raw/attempt-02/'
+    log2 = m[p2+'console.log'].decode(errors='replace')
+    assert 'Permission denied: connect' in log2 and 'failed to create a child event loop' in log2
+    assert 'RETAINED_NAV position' not in log2 and 'RETAINED_NAV route' not in log2
+    assert 'Stopping!' in log2 and 'Stopping server' not in log2
+    assert not any(s in m[p2+'class-load.log'].decode(errors='replace').lower() for s in FORBIDDEN)
+    for n,h in frozen['reused'].items():
+        if n.startswith('src/runtimeProbe/') or (n.startswith('diagnostics/') and n.endswith('.java')):
+            assert sha(m[p2+'executed/'+Path(n).name]) == frozen['attempt_2_planned_changed'].get(n,h), n
+    assert m[p2+'executed/retained-navigation-1.jar'] == m['raw/final-compile-only.jar']
+    scan(m[p2+'executed/retained-navigation-1.jar'])
+    inv2 = json.loads(m[p2+'inventory.json'])
+    assert all(n.startswith('saves/navigation-only/') for n in inv2 if n.startswith('saves/'))
+    for n,info in inv2.items():
+        if p2+n in m:
+            assert sha(m[p2+n]) == info['sha256'], n
+    # Preserve capture filenames from the original inventory; sky returned JPEG.
+    for n in ('title.png','world-entry-failed-title.png'):
+        assert m[p2+n].startswith(b'\xff\xd8\xff')
+    samples2 = [json.loads(s) for s in m[p2+'monitor.jsonl'].decode().splitlines()]
+    for s in samples2:
+        assert s['elapsed'] <= 1200 and s['working_set'] <= 6*1024**3
+        assert s['output_bytes'] <= 2*1024**3 and s['free'] >= 4*1024**3
+    post2 = json.loads(m['raw/attempt-02-post-checks.json'])
+    assert post2['checked_pids'] == [29076] and post2['absent']
+    assert len(post2['dependencies']) == 129 and all(post2['dependencies'].values())
+    assert all(post2['retained_inputs'].values())
+    return dict(contract='navigation-2', acceptance='INCOMPLETE', attempts_used=2,
+                attempts_remaining=0, charged_seconds=sum(v['elapsed'] for v in ledger),
                 human_movement_log_displacement=distance, start=list(start), end=list(end),
                 log_coordinate_checks=True, visual_marker_coherence=False,
                 graceful_server_shutdown=False, exact_pid_cleanup=True,
-                decimal_setup_correction='compile-only', td_executed=False,
-                maximum_sampled_working_set=max(s['working_set'] for s in samples))
+                decimal_setup_correction='loaded; route never reached', td_executed=False,
+                final_attempt_failure='local loopback permission denied before world entry',
+                maximum_sampled_working_set=max(s['working_set'] for s in samples+samples2))
 
 
 def collect():

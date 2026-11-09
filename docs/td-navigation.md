@@ -1,6 +1,46 @@
 # Retained navigation attempt: acceptance failed (#11)
 
+## Final supplemental slot: world entry failed; budget exhausted
+
+Reconciled GitHub/main513c4ca and branch4b5c2e2 before launch. Fixed source hashes,
+installed dependency scans, exact decimal-correction JAR bytes, isolated build,
+Java retained checks and seven portable tests passed. Viewer repairs and temp/
+were preserved. Attempt2 consumed42.120 seconds; both navigation-2 slots are now
+exhausted (169.089 seconds total). Navigation-1 remains exhausted and failed.
+
+Actual observations:1600x1000 GUI2 title captured; clicked NEW navigation once.
+Fresh-save and integrated-server guards ran, but world entry failed while Netty
+created its event loop/selector: `Unable to establish loopback connection`, caused
+by `SocketException: Permission denied: connect`. The restricted title returned.
+The launcher ran under restricted execution; this local networking failure was
+not caught by its hash-only preflight. No retry or permission-changed relaunch
+was made. No player position, local attachment, teleport or movement occurred.
+Decimal correction bytes loaded, but exact decimal setup remains unverified.
+
+Clicked Quit diagnostic; client logged `Stopping!`, exited0 and launcher finalized
+the failed route. Exact PID29076 was absent and supported window inventory showed
+no Minecraft window. No child PID was observed. No `Stopping server` log exists:
+normal local-server shutdown remains unverified. Exit0 is not acceptance.
+Portable evidence retains both original failures and all final partial output,
+executed bytes, monitor, inventory, dependencies and two actual title screenshots.
+Post-run all129 dependency hashes and fixed retained/viewer inputs match.
+
+No human hold was requested. All previously unverified route, HUD, panel, token,
+configuration and shutdown checks remain unverified. No new visual judgment of
+movement or contacts is possible. PR62 remains draft and must not merge.
+No TD execution, seeds, observations, production changes or save migration.
+All carried gates below and PR59's negative contact result remain unchanged.
+
+Smallest next step: diagnose local loopback permission with a non-Minecraft,
+non-TD readiness check before proposing any separately authorized client budget.
+Then finish this same retained display gate; no new geological construction is
+needed for that check. A visible terrain-aware addon still needs the carried
+terrain interpretation, validation and adoption gates.
+
 ## Supplemental navigation-2: partial human-assisted observation
+
+Historical attempt1 checkpoint below; its formerly remaining slot was consumed
+by the final failure above. It is not an available launch authorization.
 
 PR62 remains draft. [Supplemental contract](td-navigation-supplement.md) and
 executable launcher were pushed at068c5cb before implementation/launch; artifact
