@@ -114,3 +114,6 @@ scripts/record-navigation-3.py text eol=lf
 scripts/windows_process_monitor.py text eol=lf
 scripts/test-windows-process-monitor.py text eol=lf
 scripts/audit-process-monitor-preparation.py text eol=lf
+scripts/windows_validation_harness.py text eol=lf
+scripts/test-windows-validation-harness.py text eol=lf
+scripts/audit-windows-harness-preparation.py text eol=lf
