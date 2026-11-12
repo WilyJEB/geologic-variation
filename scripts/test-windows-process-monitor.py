@@ -245,6 +245,21 @@ class Tests(unittest.TestCase):
         self.assertEqual(len(dog.step()['errors']), 1)
         self.assertIn(('terminate_process', (10,)), self.api.calls)
 
+    def test_watchdog_armed_before_atomic_creation(self):
+        dog = m.WatchdogControl(self.api, 31, None, 32, 1, self.clock)
+        self.assertIsNone(dog.step())
+        self.api.exited.add(32)  # controller dies before parent handoff
+        self.assertFalse(dog.step()['cleanup_verified'])
+        self.assertIn(('terminate_job', (31,)), self.api.calls)
+        self.assertFalse(any(n == 'terminate_process' for n, _ in self.api.calls))
+        with self.assertRaises(m.Incomplete): dog.adopt_parent(10)
+        dog.close()
+        self.assertNotIn(('close', (None,)), self.api.calls)
+        dog = m.WatchdogControl(self.api, 41, None, 42, 1, self.clock)
+        dog.adopt_parent(10)
+        with self.assertRaises(m.Incomplete): dog.adopt_parent(20)
+        dog.close()
+
     def test_sink_failure_cannot_lose_open_handle_or_prevent_close(self):
         def sink(row):
             if row.get('phase') == 'end' and row['api'] == 'open':

@@ -81,7 +81,9 @@ Documentation specifies semantics, not measured behavior or verified bindings he
 
 No hard deadline is claimed. `WatchdogControl` is a pure, fake-tested control step
 for a FUTURE independent process, not an activated thread/process. It has its own
-duplicate retained job, exact parent and controller handles. It polls only its
+duplicate retained job and controller handles, initially no parent, so it can be
+armed before atomic target creation. The exact parent duplicate transfers later,
+before resume; rejected transfers remain caller-owned. It polls only its
 deadline/controller wait, never calls a sampler method or waits for its lock, pipe,
 queue or evidence sink. At deadline, interruption, controller death or wait failure,
 it attempts retained-job termination and exact-parent termination independently,
@@ -198,7 +200,7 @@ Existing retained tests/replays remain reused or newly checked as explicitly
 reported, never native acceptance. No local Java build is needed for Python-only
 preparation; CI's usual builds are compile/offline checks.
 
-Preparation verification on Windows:22 new mock tests,5 retained process/evidence
+Preparation verification on Windows:23 new mock tests,5 retained process/evidence
 tests,2 observation-history tests and2 axis/identical-support tests passed.
 Strict navigation-3 preparation replay passed; runtime replay remained INCOMPLETE
 with zero remaining attempts. All39 frozen input bytes matched their manifest and

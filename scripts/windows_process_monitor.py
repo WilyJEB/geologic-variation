@@ -445,12 +445,25 @@ class WatchdogControl:
         errors = []
         # Parent duplicate covers failure BEFORE job assignment. It is the exact
         # created process, never a PID; terminating an exited handle may fail.
-        for operation, h in [('terminate_job', self.job), ('terminate_process', self.parent)]:
+        actions = [('terminate_job', self.job)]
+        if self.parent is not None:
+            actions.append(('terminate_process', self.parent))
+        for operation, h in actions:
             try:
                 getattr(self.api, operation)(h)
             except BaseException as error:
                 errors.append(dict(api=operation, error=repr(error)))
         return dict(reason=reason, errors=errors, cleanup_verified=False)
+
+    def adopt_parent(self, parent):
+        """Owner-process handoff after atomic job creation, before target resume.
+
+        None at construction permits arming job cleanup BEFORE any target exists.
+        This method transfers an already duplicated handle; it performs no IPC.
+        """
+        if self.closed or self.fired or self.parent is not None or parent is None:
+            raise Incomplete('invalid watchdog parent handoff; caller retains ownership')
+        self.parent = parent
 
     def close(self):
         if self.closed:
@@ -458,6 +471,8 @@ class WatchdogControl:
         self.closed = True
         errors = []
         for h in (self.parent, self.controller, self.job):
+            if h is None:
+                continue
             try:
                 self.api.close(h)
             except BaseException as error:
