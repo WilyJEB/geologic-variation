@@ -117,3 +117,6 @@ scripts/audit-process-monitor-preparation.py text eol=lf
 scripts/windows_validation_harness.py text eol=lf
 scripts/test-windows-validation-harness.py text eol=lf
 scripts/audit-windows-harness-preparation.py text eol=lf
+scripts/bootstrap_cleanup_boundary.py text eol=lf
+scripts/test-bootstrap-cleanup-boundary.py text eol=lf
+scripts/audit-bootstrap-boundary-preparation.py text eol=lf
