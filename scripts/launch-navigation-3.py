@@ -75,7 +75,7 @@ def old_state():
     for n in (1, 2):
         root = ROOT/f'runs/acceptance/td-navigation-{n}'
         state[str(n)] = dict(ledger=sha((root/'ledger.json').read_bytes()),
-                            directories=sorted(p.name for p in root.glob('attempt-*')))
+                            directories=sorted(p.name for p in root.glob('attempt-*') if p.is_dir()))
     return state
 
 

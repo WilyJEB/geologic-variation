@@ -173,6 +173,19 @@ class Preparation(unittest.TestCase):
     def test_no_allocation(self):
         self.assertFalse(L['OUTPUT'].exists())
 
+    def test_old_directory_snapshot_excludes_postcheck_files(self):
+        with tempfile.TemporaryDirectory(dir=ROOT) as tmp:
+            fixture=Path(tmp)
+            for n in (1,2):
+                old=fixture/f'runs/acceptance/td-navigation-{n}'
+                (old/'attempt-01').mkdir(parents=True)
+                (old/'ledger.json').write_text('[]')
+                (old/'attempt-01-post-checks.json').write_text('{}')
+            with patch.dict(L['old_state'].__globals__,ROOT=fixture):
+                state=L['old_state']()
+            self.assertEqual(state['1']['directories'],['attempt-01'])
+            self.assertEqual(state['2']['directories'],['attempt-01'])
+
     def test_single_slot_even_missing_ledger(self):
         with tempfile.TemporaryDirectory(dir=ROOT) as tmp:
             out=Path(tmp)/'fixture'

@@ -5,7 +5,7 @@ prior-head CI43177941172 successful. Preparation only is authorized. PR62 remain
 draft/unmerged; no execution authorization, installed-profile preflight, allocation,
 local Java/Minecraft/TD launch, save reopening, seed or terrain observation.
 
-New offline verification:23 fixture/corruption tests pass, including an in-memory
+New offline verification:24 fixture/corruption tests pass, including an in-memory
 synthetic complete-checklist path and removal of each required row.41 related
 historical/retained tests pass. Native process APIs are mocked, not runtime-tested.
 The mocked readiness suite prints a handshake success for fake sockets; it is
@@ -40,12 +40,12 @@ authorization is requested. No merge is authorized.
 
 Exact prepared SHA256 values:
 
-- `scripts/launch-navigation-3.py`: `cbea4a8dedd485d4e004d04b63494ceee7e2e85c124443b9d80f8738346d5a2f`
+- `scripts/launch-navigation-3.py`: `c3a6c104ecdb0f20a03742b864ae77c1371c3fb2f0c42ffb9bed4c4663387154`
 - `scripts/navigation-process.py`: `07ea16c77f07c87906081cde3c075f95a5b92deb14f9181707babfbcd7bdba95`
 - `scripts/replay-navigation-3.py`: `496899266334d4e94e43e994529ea50d56abe38703c9f2ee6b604dbf0ad0567b`
 - `docs/td-navigation-3-protocol.md`: `f8e5c6264eb75a4f7efa6269c6c90a054fc4718dd70ebbfca674b44875acf3b2`
-- `docs/td-navigation-3-hashes.json`: `886c8457f291fed2e98aa254b84a0dc16ff496798fc21a5b6ce370b2832df714`
-- `docs/evidence/td-navigation-3-preparation.zip`: `7bbfef09e2f48df6c4b3781d7ef0564134222321b2457de797dd364eccca1b2f`
+- `docs/td-navigation-3-hashes.json`: `594718716bd55bd90372cf57cf49c2a1751770822de9dcb5ff2f4e7e615be7b9`
+- `docs/evidence/td-navigation-3-preparation.zip`: `b0a16625887b2881304394b3662271acb9f1f21e5490f12cb21d28837a6698f5`
 
 Launch requires a separate explicit ONE-attempt approval in the named interactive
 Windows context in the protocol, immediate same-process/context preflight, and
