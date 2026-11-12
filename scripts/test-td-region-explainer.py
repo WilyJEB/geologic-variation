@@ -42,8 +42,30 @@ class Acceptance(unittest.TestCase):
             self.assertEqual(t['token'], t['deep_history'])
             self.assertEqual(t, next(v for v in s['histories'] if v['id'] == identity))
         rendered = B['build']().decode()
-        data = json.loads(html.unescape(re.search(r'<pre id="provenance">(.*?)</pre>', rendered, re.S)[1]))
+        data = json.loads(html.unescape(re.search(r'<pre id="provenance" tabindex="0">(.*?)</pre>', rendered, re.S)[1]))
         self.assertEqual(data['cards'], cards)
+        self.assertEqual(data['regional_summaries'], {k: s[k] for k in
+                         ('mean_elevation', 'gx', 'gz', 'slope_ratio', 'a', 'clamp_active')})
+
+    def test_reading_hierarchy_and_shared_event_comparison(self):
+        text = B['build']().decode()
+        primary = text.split('<h2>Secondary provenance')[0]
+        # Map SVGs retain exact original titles; only the explanatory prose changes.
+        prose = re.sub(r'<svg\b.*?</svg>', '', primary, flags=re.S)
+        self.assertNotRegex(prose, r'[0-9a-f]{64}|PR58 exact history:|gx=|gz=')
+        archives, s, _, cards = B['load']()
+        for card in cards:
+            self.assertIn(str(card['elevation_metres']), prose)
+            self.assertIn(f"{abs(card['pr59']['mean_contrast_metres']):,.1f} m", prose)
+        for phrase in ('regional summary, not a slope measured at any marker',
+                       'authored tilt stays at <strong>−0.5</strong>',
+                       'Compare Cards 2 and 3', 'distinct seeded identities',
+                       'Sharing that event does not establish geological necessity'):
+            self.assertIn(phrase, prose)
+        self.assertEqual(cards[1]['pr59']['authored_event'], cards[2]['pr59']['authored_event'])
+        self.assertNotEqual(cards[1]['pr59']['token'], cards[2]['pr59']['token'])
+        self.assertEqual(s['a'], -0.5)
+        self.assertTrue(s['clamp_active'])
 
     def test_unchanged_maps_with_only_three_marker_links_added(self):
         archives, *_ = B['load']()
@@ -66,8 +88,8 @@ class Acceptance(unittest.TestCase):
         self.assertFalse(any('hidden' in a or 'src' in a or any(k.startswith('on') for k in a) for t,a in d.tags))
         self.assertNotRegex(text, r'(?i)https?://|@import|url\((?!#)|display\s*:\s*none|visibility\s*:\s*hidden')
         for required in ('Negative contact comparison retained', 'did not establish better landscape-related contacts',
-                         'Regional summaries · not this point', '±0.5 clamp active', 'Unknown · interpretation abstains',
-                         'No depth scale', 'Shared token:', 'PR58 difference-mode edge stencil is unavailable here.'):
+                         'Regional summaries · not this point', '±0.5 limit is active', 'Unknown · interpretation abstains',
+                         'No depth scale', 'same inherited identity and history record', 'PR58 difference-mode edge stencil is unavailable here.'):
             self.assertIn(required, text)
         self.assertEqual(text.count('<h3>Observed here'), 3)
         self.assertIn('article:target', text)
