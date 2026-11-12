@@ -126,3 +126,4 @@ scripts/audit-bootstrap-containment-review.py text eol=lf
 scripts/staged_helper_interfaces.py text eol=lf
 scripts/test-staged-helper-interfaces.py text eol=lf
 scripts/audit-staged-helper-preparation.py text eol=lf
+scripts/audit-staged-helper-native-decision.py text eol=lf
