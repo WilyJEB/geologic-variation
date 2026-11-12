@@ -6,7 +6,7 @@ from pathlib import Path
 import subprocess
 from types import SimpleNamespace
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,11 +70,22 @@ class OfflineInvestigation(unittest.TestCase):
             self.assertEqual(len(cleanup['checks']), 2)
             self.assertTrue(all(c['absent'] for c in cleanup['checks']))
             manifest = json.loads((ROOT/'docs/td-navigation-3-hashes.json').read_bytes())
-            for name, digest in manifest['files'].items():
-                with self.subTest(name=name):
-                    data = (ROOT/name).read_bytes()
-                    self.assertEqual(hashlib.sha256(data).hexdigest(), digest)
-                    self.assertEqual(z.read('executed/'+name), data)
+            # These preserved user repairs are portable inputs, not tracked files.
+            external = {'docs/td-region-viewer.html', 'scripts/build-td-region-preview.py'}
+            with zipfile.ZipFile(ROOT/'docs/evidence/td-navigation-3-preparation.zip') as prepared:
+                for name, digest in manifest['files'].items():
+                    with self.subTest(name=name):
+                        data = z.read('executed/'+name)
+                        self.assertEqual(hashlib.sha256(data).hexdigest(), digest)
+                        self.assertEqual(prepared.read(name), data)
+                        if name not in external or (ROOT/name).exists():
+                            self.assertEqual((ROOT/name).read_bytes(), data)
+
+    def test_clean_checkout_without_external_viewer_repairs(self):
+        external = {ROOT/'docs/td-region-viewer.html', ROOT/'scripts/build-td-region-preview.py'}
+        original = Path.exists
+        with patch.object(Path, 'exists', lambda p: False if p in external else original(p)):
+            self.test_retained_sequence_and_frozen_bytes()
 
 
 if __name__ == '__main__':

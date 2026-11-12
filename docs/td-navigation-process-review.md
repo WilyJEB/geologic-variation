@@ -173,10 +173,16 @@ frozen identities method's AST and inject a mock subprocess. They verify exact
 argv/timeout, no retry, empty-PID bypass, JSON shapes, malformed output and query
 errors; retained archive/hash/sequence checks verify the report's evidence chain.
 No native helper import, OS process query or subprocess execution occurs in them.
-All four new tests passed locally; `git diff --check` passed. The CI workflow now
+All five new tests passed locally; `git diff --check` passed. The CI workflow now
 runs this offline suite alongside its existing build/offline checks. No local
 Java build or evidence re-export is needed for this report-only proposal and
 mocked regression addition. Final-head CI status is reported in the handoff.
+Initial CI [43271299889](https://github.com/WilyJEB/geologic-variation/actions/runs/43271299889)
+failed only the new test's assumption that two untracked viewer repairs exist in
+a clean checkout. The corrected test verifies their manifest hashes and exact
+preparation/runtime archive equality, plus local equality when present. Tracked
+frozen inputs still require local equality. No viewer repair was added or changed.
+A separate mock test now exercises the clean-checkout absence of both repairs.
 They do not test the proposed replacement. Existing FakeJob tests in
 `test-navigation-3.py` exercise orchestration/cleanup outcomes but bypass the real
 native helper and did not establish its latency or bindings. Do not rerun its
