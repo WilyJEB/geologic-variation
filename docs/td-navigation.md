@@ -1,4 +1,17 @@
-# Single-attempt preparation (no execution authorization)
+# navigation-3 authorization stopped before allocation
+
+The user subsequently authorized ONE attempt including failure at prepared
+951fcda and freshly confirmed presence. The invocation stopped at the frozen
+literal argv guard: the agent recorded a backslash authorization-file argument
+but supplied forward slashes. `ValueError: Authorized command differs` occurred
+before installed-profile preflight, allocation or Java creation. No retry or
+collector revision followed. Runtime root remains absent; the slot is unconsumed,
+and this stopped invocation does not authorize another. All live evidence remains
+missing. See [retained stopped outcome](td-navigation-3-outcome.md) and
+[portable external record](evidence/td-navigation-3-stopped.json).
+PR62 stays draft/unmerged; historical failures and all carried gates remain.
+
+# Single-attempt preparation (historical preparation status)
 
 User authorized preparation on2026-11-12. [navigation-3 frozen protocol](td-navigation-3-protocol.md),
 [exact manifest](td-navigation-3-hashes.json), executable launcher/recorder/replay,
