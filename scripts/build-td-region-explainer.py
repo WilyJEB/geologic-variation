@@ -104,7 +104,8 @@ if __name__ == '__main__':
     import sys
     raw = build()
     if '--check' in sys.argv:
-        assert OUTPUT.read_bytes() == raw, 'Companion differs from exact offline rebuild'
+        # Git's existing Windows checkout policy converts HTML LF to CRLF.
+        assert OUTPUT.read_text(encoding='utf-8').encode('utf-8') == raw, 'Companion differs from offline rebuild (LF canonical)'
     else:
         OUTPUT.write_bytes(raw)
-    print('Companion SHA256', sha(raw))
+    print('Companion LF-canonical SHA256', sha(raw))

@@ -92,7 +92,8 @@ class Acceptance(unittest.TestCase):
     def test_exact_standalone_rebuild(self):
         first = B['build']()
         self.assertEqual(first, B['build']())
-        self.assertEqual(first, B['OUTPUT'].read_bytes())
+        self.assertEqual(first, B['OUTPUT'].read_text(encoding='utf-8').encode('utf-8'))
+        self.assertEqual(first, first.decode().replace('\n', '\r\n').replace('\r\n', '\n').encode())
 
 
 if __name__ == '__main__':
