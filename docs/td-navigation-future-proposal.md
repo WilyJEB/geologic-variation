@@ -1,3 +1,9 @@
+> Preparation update2026-11-12: user has now authorized PREPARATION ONLY.
+> The separately frozen [navigation-3 contract](td-navigation-3-protocol.md)
+> implements that preparation. The proposal text below is retained as the prior
+> decision record; its earlier statements that preparation is unapproved are
+> historical. Client execution, preflight and allocation remain unauthorized.
+
 # Future retained-display attempt: proposal only, no authorization
 
 Navigation-1 and navigation-2 remain exhausted. This proposal allocates nothing,

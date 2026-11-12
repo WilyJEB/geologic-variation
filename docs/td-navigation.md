@@ -1,3 +1,23 @@
+# Single-attempt preparation (no execution authorization)
+
+User authorized preparation on2026-11-12. [navigation-3 frozen protocol](td-navigation-3-protocol.md),
+[exact manifest](td-navigation-3-hashes.json), executable launcher/recorder/replay,
+action/approval schema and portable preparation are separately reviewable.
+Independent one-slot root/ledger is NOT created. Both old budgets/failures remain
+unchanged. Existing decimal-corrected artifact is reused byte-for-byte beneath
+the new independent root using its required inner td-navigation-2/attempt-01
+suffix; no adapter rebuild or local Java execution is needed. Windows suspended
+creation/job containment remains offline mock-tested only. Full checklist and
+human visual review, not exit0/readiness/CI, determine later acceptance.
+
+Reconciled origin/main513c4ca and GitHub open/draft/unmerged PR62 atc91c76b;
+build/offline CI run43177941172 passed at that prior head. Viewer repairs and
+unrelated temp preserved. [Preparation results](td-navigation-3-preparation.md)
+distinguish new offline checks from historical runtime evidence. No installed
+preflight, attempt allocation, Java/Minecraft/TD launch, save reopening, new seed
+or terrain observation occurred. PR59 negative contacts and every carried gate
+below remain unchanged; PR62 draft/unmerged and #9/#11 open.
+
 # Retained navigation attempt: acceptance failed (#11)
 
 ## Future-proposal review only (no budget implemented)

@@ -1,0 +1,347 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "navigation-3 actions or external authorization",
+  "$defs": {
+    "reference": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "role": {
+          "type": "string"
+        }
+      }
+    },
+    "check": {
+      "type": "object",
+      "required": [
+        "result",
+        "observation",
+        "evidence"
+      ],
+      "properties": {
+        "result": {
+          "enum": [
+            "pass",
+            "unmet",
+            "not-observed"
+          ]
+        },
+        "observation": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference"
+          }
+        },
+        "observed_configuration": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "execution_kind",
+        "checks",
+        "events",
+        "actual_observations",
+        "computed_checks",
+        "visual_judgment",
+        "reviewer_confirmed_all_visual_checks"
+      ],
+      "properties": {
+        "execution_kind": {
+          "enum": [
+            "actual-client",
+            "offline-fixture"
+          ]
+        },
+        "checks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "entry_setup",
+            "movement_scale1",
+            "movement_scale6",
+            "hud_toggle",
+            "panel_return",
+            "seven_site_route",
+            "panel_pr58_pr59",
+            "exposure",
+            "cover_west",
+            "cover_east",
+            "token_first_half",
+            "token_second_half",
+            "configuration_1600_1000_gui2",
+            "configuration_1200_900_gui1",
+            "scale_arithmetic",
+            "normal_shutdown",
+            "isolation",
+            "pid_tree_cleanup"
+          ],
+          "properties": {
+            "entry_setup": {
+              "$ref": "#/$defs/check"
+            },
+            "movement_scale1": {
+              "$ref": "#/$defs/check"
+            },
+            "movement_scale6": {
+              "$ref": "#/$defs/check"
+            },
+            "hud_toggle": {
+              "$ref": "#/$defs/check"
+            },
+            "panel_return": {
+              "$ref": "#/$defs/check"
+            },
+            "seven_site_route": {
+              "$ref": "#/$defs/check"
+            },
+            "panel_pr58_pr59": {
+              "$ref": "#/$defs/check"
+            },
+            "exposure": {
+              "$ref": "#/$defs/check"
+            },
+            "cover_west": {
+              "$ref": "#/$defs/check"
+            },
+            "cover_east": {
+              "$ref": "#/$defs/check"
+            },
+            "token_first_half": {
+              "$ref": "#/$defs/check"
+            },
+            "token_second_half": {
+              "$ref": "#/$defs/check"
+            },
+            "configuration_1600_1000_gui2": {
+              "$ref": "#/$defs/check"
+            },
+            "configuration_1200_900_gui1": {
+              "$ref": "#/$defs/check"
+            },
+            "scale_arithmetic": {
+              "$ref": "#/$defs/check"
+            },
+            "normal_shutdown": {
+              "$ref": "#/$defs/check"
+            },
+            "isolation": {
+              "$ref": "#/$defs/check"
+            },
+            "pid_tree_cleanup": {
+              "$ref": "#/$defs/check"
+            }
+          }
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "sequence",
+              "unix",
+              "kind",
+              "actor",
+              "observation"
+            ],
+            "properties": {
+              "sequence": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "unix": {
+                "type": "number"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "actor": {
+                "enum": [
+                  "human",
+                  "agent",
+                  "collector"
+                ]
+              },
+              "observation": {
+                "type": "string"
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "kind": {
+                      "const": "human-movement"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "scale",
+                    "released",
+                    "held_seconds",
+                    "holds",
+                    "before_position_index",
+                    "after_position_index",
+                    "before_image",
+                    "after_image"
+                  ],
+                  "properties": {
+                    "scale": {
+                      "enum": [
+                        1,
+                        6
+                      ]
+                    },
+                    "released": {
+                      "const": true
+                    },
+                    "held_seconds": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 4
+                    },
+                    "holds": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "seconds",
+                          "released",
+                          "unix"
+                        ],
+                        "properties": {
+                          "seconds": {
+                            "type": "number",
+                            "exclusiveMinimum": 0,
+                            "maximum": 4
+                          },
+                          "released": {
+                            "const": true
+                          },
+                          "unix": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "actual_observations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "computed_checks": {
+          "type": "object"
+        },
+        "visual_judgment": {
+          "type": "string"
+        },
+        "reviewer_confirmed_all_visual_checks": {
+          "type": "boolean"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "explicit_client_launch_authorized",
+        "human_present",
+        "human_available_through_quit",
+        "human_confirmation_unix",
+        "contract",
+        "attempts_including_failure",
+        "pushed_commit",
+        "manifest_sha256",
+        "context",
+        "observed_context",
+        "permission_mode",
+        "command"
+      ],
+      "properties": {
+        "explicit_client_launch_authorized": {
+          "const": true
+        },
+        "human_present": {
+          "const": true
+        },
+        "human_available_through_quit": {
+          "const": true
+        },
+        "human_confirmation_unix": {
+          "type": "number"
+        },
+        "contract": {
+          "const": "navigation-3"
+        },
+        "attempts_including_failure": {
+          "const": 1
+        },
+        "pushed_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed_context": {
+          "type": "object",
+          "required": [
+            "account",
+            "computer",
+            "session",
+            "python",
+            "java",
+            "session_id"
+          ]
+        },
+        "permission_mode": {
+          "enum": [
+            "restricted",
+            "separately-approved"
+          ]
+        },
+        "command": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}
