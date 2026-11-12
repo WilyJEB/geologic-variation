@@ -64,6 +64,8 @@ jobs:
       - shell: pwsh
         run: python scripts/test-td-story.py
       - shell: pwsh
+        run: python scripts/test-td-region-explainer.py
+      - shell: pwsh
         run: python scripts/test-td-retained-map.py
       - shell: pwsh
         run: ./gradlew.bat -p diagnostics/retained-client build
