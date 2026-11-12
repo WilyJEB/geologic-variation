@@ -123,3 +123,6 @@ scripts/audit-bootstrap-boundary-preparation.py text eol=lf
 scripts/bootstrap_containment_model.py text eol=lf
 scripts/test-bootstrap-containment.py text eol=lf
 scripts/audit-bootstrap-containment-review.py text eol=lf
+scripts/staged_helper_interfaces.py text eol=lf
+scripts/test-staged-helper-interfaces.py text eol=lf
+scripts/audit-staged-helper-preparation.py text eol=lf
