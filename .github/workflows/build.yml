@@ -82,6 +82,8 @@ jobs:
       - shell: pwsh
         run: python scripts/test-navigation-3.py
       - shell: pwsh
+        run: python scripts/test-navigation-process-offline.py
+      - shell: pwsh
         run: python scripts/replay-navigation-3.py docs/evidence/td-navigation-3-preparation.zip --strict
       - uses: actions/setup-node@v4
         with:
