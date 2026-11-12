@@ -120,3 +120,6 @@ scripts/audit-windows-harness-preparation.py text eol=lf
 scripts/bootstrap_cleanup_boundary.py text eol=lf
 scripts/test-bootstrap-cleanup-boundary.py text eol=lf
 scripts/audit-bootstrap-boundary-preparation.py text eol=lf
+scripts/bootstrap_containment_model.py text eol=lf
+scripts/test-bootstrap-containment.py text eol=lf
+scripts/audit-bootstrap-containment-review.py text eol=lf
