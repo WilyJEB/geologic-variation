@@ -18,7 +18,8 @@ def package(freeze=False):
     require(not (ROOT/'runs/acceptance/td-navigation-3').exists())
     files = ['scripts/'+n for n in ('launch-navigation-3.py','navigation-process.py',
              'replay-navigation-3.py','test-navigation-3.py','package-navigation-3.py','record-navigation-3.py',
-             'launch-retained-navigation-supplement.py','launch-acceptance-client.py')]
+             'launch-retained-navigation-supplement.py','launch-acceptance-client.py',
+             'export-navigation-supplement.py','export-retained-client.py')]
     files += ['docs/'+n for n in ('td-navigation-3-protocol.md','td-navigation-3-schema.json','td-navigation-3-installed-inputs.json',
               'td-navigation-protocol.md','td-navigation-supplement.md','td-navigation-supplement-hashes.json',
               'td-region-viewer.html')]

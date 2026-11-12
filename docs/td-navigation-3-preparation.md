@@ -44,8 +44,8 @@ Exact prepared SHA256 values:
 - `scripts/navigation-process.py`: `07ea16c77f07c87906081cde3c075f95a5b92deb14f9181707babfbcd7bdba95`
 - `scripts/replay-navigation-3.py`: `496899266334d4e94e43e994529ea50d56abe38703c9f2ee6b604dbf0ad0567b`
 - `docs/td-navigation-3-protocol.md`: `f8e5c6264eb75a4f7efa6269c6c90a054fc4718dd70ebbfca674b44875acf3b2`
-- `docs/td-navigation-3-hashes.json`: `594718716bd55bd90372cf57cf49c2a1751770822de9dcb5ff2f4e7e615be7b9`
-- `docs/evidence/td-navigation-3-preparation.zip`: `b0a16625887b2881304394b3662271acb9f1f21e5490f12cb21d28837a6698f5`
+- `docs/td-navigation-3-hashes.json`: `64718116099bf3e3cd06187b3853e07dcdd5fcecd7c4bf36066abacdce96fe63`
+- `docs/evidence/td-navigation-3-preparation.zip`: `90f1de99e1362739aa1cc06e18a1f29092589f7068cb97ac8dd6fef312d2d4fe`
 
 Launch requires a separate explicit ONE-attempt approval in the named interactive
 Windows context in the protocol, immediate same-process/context preflight, and
