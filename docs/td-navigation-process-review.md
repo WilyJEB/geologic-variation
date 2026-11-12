@@ -231,3 +231,13 @@ immutable inputs, optional Ulti-World, viewer repairs and unrelated temp/. PR54'
 four launches remain exhausted; final capture mixin is compile-only; historical
 arrays/indices/ULPs remain unknown. #9/#11 stay open. No offline test or CI result
 establishes runtime acceptance or player-visible gameplay improvement.
+
+## Subsequently authorized offline preparation
+
+The user separately authorized ONLY the bounded standalone preparation in
+[Windows monitor preparation and proposed native contract](windows-process-monitor-preparation.md).
+It adds independently named direct-API bindings, retained-handle state logic,
+fake tests and portable preparation evidence. It does not modify or refreeze
+navigation-3 or allocate/activate another attempt. The independent watchdog
+ownership proposal and remaining atomic-creation/native-validation gates are
+explicit; hard deadlines are not claimed enforceable. PR62 remains draft/unmerged.

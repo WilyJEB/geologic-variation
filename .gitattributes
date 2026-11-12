@@ -111,3 +111,6 @@ scripts/replay-navigation-3.py text eol=lf
 scripts/test-navigation-3.py text eol=lf
 scripts/package-navigation-3.py text eol=lf
 scripts/record-navigation-3.py text eol=lf
+scripts/windows_process_monitor.py text eol=lf
+scripts/test-windows-process-monitor.py text eol=lf
+scripts/audit-process-monitor-preparation.py text eol=lf
