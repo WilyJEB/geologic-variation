@@ -1,4 +1,76 @@
-# navigation-3 stopped before preflight or allocation
+# navigation-3 sole allocated attempt failed during startup
+
+The user subsequently authorized ONE new invocation and freshly replied
+"Present now; proceed with preflight and the sole attempt". Execution stayed at
+pushed HEAD `435de09b7683a4e6d24f1d38eee9a03fb0d6da7c`. The frozen
+`pushed_commit` guard requires current HEAD and origin branch equality; the
+unchanged preparation bytes remain those of `951fcda92470244475f6164f11520f20b53834a4`.
+No collector/helper/recorder/schema/replay/artifact was changed or refrozen.
+The earlier failed approval and portable stopped record below remain verbatim.
+
+Offline comparison established identical literal command/approval argv, including
+the authorization-file separators. The separately approved read-only actual
+context check returned digif@LAPTOP-1TV1KTCM, session_id1, SESSIONNAME null,
+Python313 and pinned Java21. The invocation rechecked that context and recorded
+the fresh reply before calling the frozen launcher exactly once. Its same-process
+installed-profile preflight passed, including the one IPv4 handshake, dependency,
+nested-JAR, artifact, Java and shared-input hashes. Confirmation age at completed
+preflight was15.970s; allocation followed0.054s later, within both frozen limits.
+
+The runtime root was exclusively created and its durable ledger consumed the
+sole slot, charging1200s with zero remaining attempts. Java was created suspended,
+identified, assigned to the job and resumed. A later one-second PowerShell/CIM
+identity query for PIDs27824 and9140 timed out. The collector failed closed and
+terminated only its allocated job. This is an observed process-monitor timeout,
+not evidence of a TD or geology incompatibility. No retry/replacement occurred.
+
+Actual cleanup records identify Java PID27824 and conhost descendant9140, their
+creation identities and commands; post-termination queries returned no matching
+processes, both absence checks passed and the job was empty. Cleanup was forced,
+parent exit1; normal server/client shutdown is UNMET. There was no game input,
+human W hold, live screenshot, first player position, route or world/save creation
+evidence. All18 checklist rows remain not observed; no human visual judgment was
+obtained. Native startup/containment/cleanup now have this partial runtime evidence,
+but the complete navigation acceptance remains INCOMPLETE.
+
+Final collector resource snapshot:9.336s allocated wall time,17,840,560 output
+bytes,57,490,669,568 free bytes. Finalization and immutable-input recheck passed.
+The timeout prevents a complete process-sampling trace; sampled memory is not a
+peak guarantee. Zero TD/model/provider execution is a structural deduction from
+excluded executable bytes and loaded classes, not measured TD counters.
+
+[Portable complete partial root](evidence/td-navigation-3-runtime.zip) includes
+executed frozen bytes/JAR, ledger/approval/preflight, exact command, dependencies,
+logs/class loads, process/monitor/cleanup records, post-hashes, complete inventory,
+external command equality plan and raw invocation stdout/stderr. Archive SHA256:
+`52319ac3ab554e9d183b004792cc1d5b7a0328f7a1666ab8a50651a033f465a5`.
+[Computed summary and full unmet replay list](evidence/td-navigation-3-runtime.json)
+separate computation from observations. The frozen recorder retains an explicitly
+post-run failure event; it does not fabricate live actions or screenshots.
+Portable runtime export/replay reports INCOMPLETE; the frozen corruption suite
+and strict preparation reproduction/replay pass. Final Windows audits and CI
+are reported with the retained outcome commit. PR62 stays draft and unmerged.
+After allocation, direct preparation-only test/package commands correctly reject
+the existing runtime root (23/24 tests passed; the absent-root assertion failed).
+The unmodified frozen package was extracted to an offline fixture, with its
+original preparation ZIP copied alongside it; all24 tests and strict package
+reproduction then passed. The initial fixture omitted that ZIP and six tests
+errored before it was supplied. These are retained offline verification failures,
+not additional launch invocations or grounds to remove the real runtime root.
+The19 related navigation/supplement/readiness tests pass; readiness uses mock
+sockets and is not an extra actual handshake.
+
+The seven decimal sites, scales1/6, bounded movement, marker/HUD controls,
+independently selected unchanged panel/PR58/59, both full token halves, both
+configurations and normal shutdown remain unmet. This adds no player-visible
+improvement. All carried geometry/uncertainty, numerical reproducer, joining,
+fresh validation, paired performance and versioned adoption/save-safety gates
+remain open, as do #9/#11. Historical attempts/failures, PR59 negative contacts,
+geology-1, continuing saves, strict production guards, immutable inputs, optional
+Ulti-World, viewer repairs and unrelated temp remain preserved. No further
+navigation-3 launch is permitted by the exhausted slot.
+
+## Historical stopped invocation (preserved)
 
 The user explicitly authorized one attempt including failure at prepared commit
 `951fcda92470244475f6164f11520f20b53834a4`, then freshly confirmed physical

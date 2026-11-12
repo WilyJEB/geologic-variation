@@ -1,4 +1,17 @@
-# navigation-3 authorization stopped before allocation
+# navigation-3 sole slot consumed; startup monitor failure
+
+After fresh explicit authorization/presence at pushed435de09, identical literal
+argv and the unchanged951fcda freeze passed the immediate same-process preflight.
+Allocation consumed the sole navigation-3 slot. A one-second process identity
+query timed out during startup; the frozen collector failed closed and forcibly
+cleaned up Java27824 and descendant9140. Exact identity absence and empty job were
+recorded. No input, route, captures or normal shutdown occurred; all18 checklist
+rows remain not observed and acceptance is INCOMPLETE. No retry or replacement.
+See [current outcome](td-navigation-3-outcome.md), [portable partial root](evidence/td-navigation-3-runtime.zip)
+and [computed replay](evidence/td-navigation-3-runtime.json). PR62 remains draft
+and unmerged; all historical failures and carried gates remain unchanged.
+
+# Historical authorization stop before allocation
 
 The user subsequently authorized ONE attempt including failure at prepared
 951fcda and freshly confirmed presence. The invocation stopped at the frozen
