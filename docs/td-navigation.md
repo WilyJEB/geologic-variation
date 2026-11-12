@@ -1,5 +1,38 @@
 # Retained navigation attempt: acceptance failed (#11)
 
+## Future-proposal review only (no budget implemented)
+
+Fetched origin/main remains513c4ca; local HEAD, remote navigation branch and
+GitHub PR62 head agree atc57ca8a before this documentation revision. GitHub
+confirms PR62 open/draft/unmerged and build/offline CI run42574078432 successful
+at that commit. Existing untracked viewer repairs and unrelated temp/ are
+preserved. Historical strict replay results below remain historical results;
+this guidance-only review does not rerun clients, readiness or retained exports.
+
+Reviewed the [future proposal](td-navigation-future-proposal.md) against both
+frozen navigation contracts, decimal amendment/hash manifest, readiness records,
+portable actions/replay, launcher and carried gates. Narrow additions make the
+decision concrete: separate preparation/execution approvals; present-human and
+same-context preflight conditions; per-check live evidence; independent panel
+selection (P does not inherit the HUD model); bounded schedule with shutdown
+reserve; exact parent/descendant cleanup evidence and failure disposition.
+No executable, launch budget, ledger, artifact or frozen contract is changed.
+
+One attempt could finish the existing retained-display inspection within1200s
+if client entry, exact setup and human/capture handoffs work. It cannot be
+promised: Python IPv4 does not establish Java/Netty, and decimal setup, full
+route/controls, readable panel/return/configurations and normal server shutdown
+remain unmet. Missing any required evidence keeps acceptance incomplete, with
+no replacement slot. Revised launcher still has never launched a client.
+
+Next decision is whether to authorize preparation of that one-attempt collector
+and frozen protocol. Execution needs a separate explicit client approval after
+the exact collector/protocol/hashes are pushed and reviewable, a present human,
+named approved context and successful immediate preflight in that context.
+Non-client permission is not client permission. No launch, allocation, save
+reopen, TD execution, seed or terrain observation occurred in this review.
+PR62 stays draft/unmerged; PR59 negative contacts and all carried gates remain.
+
 ## Non-client loopback readiness revision (no new launch authorization)
 
 Reconciled fetched main513c4ca, GitHub draft/open/unmerged PR62 and brancha17feef.
