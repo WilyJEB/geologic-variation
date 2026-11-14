@@ -1,0 +1,31 @@
+{
+  "attempt_2_planned_changed": {
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Navigation.java": "1a2afd6c1e6927f909004668fabfcdf42e0e0d605ed93158510008d693769fa3"
+  },
+  "base": "ed42ef0bb6de399a02438a67d6beacdf7735eead",
+  "change": "Only navigation root ledger name td-navigation-1 -> td-navigation-2. All other adapter, full panel, records and drawing bytes reused.",
+  "planned_changed": {
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Navigation.java": "206c99b531ee00eb6a574bb67563594fd424154d2762e82003c4841d6700b8c4"
+  },
+  "reused": {
+    "diagnostics/retained-navigation/src/main/descriptor/neoforge.mods.toml": "2ab97c8d21bad87b48bb1c52b3307f772ae322a2417145fc54bad0c155e9198e",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Diagnostic.java": "f0df6be73037b170889eea4ae67f28d28097f2be61f114c8762f4bfe333d3a92",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/DisconnectedOnly.java": "0ff0d1b3938b149cb7826b8c22cf17f0ff0841e85447e2d0476e2670b89b4e12",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Hud.java": "855db446396f0adc3b8f9349f6ec91caf3360fbc4f36c68dc40d0a14f4b03b98",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Keys.java": "15e468aa17f997bf5b9cc8162702241634a0498de53489f3ed2d2c7b2b832aca",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/LanBarrier.java": "315df8264b901eab184fa62cddc3c40037f4649b493b15f10773dea60b5e297c",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/Navigation.java": "5e86a98ca632d091462ac4e4d5dd20b8e811b4e3a34d4b61167be1ef9f5091c2",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/SaveBarrier.java": "2f70f0fd0bf149b4a77a1b7aa2762bc0266826cc4f9fa579e6cba0d17e1ddac0",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/TitleOnly.java": "48f1a8c38cf3a455c6c171a096a40e99ca8c85392e9df9380d59e96cbcea345f",
+    "diagnostics/retained-navigation/src/main/java/dev/wilyjeb/retainedclient/WorldBarrier.java": "2a6d143da641a1a40a873659af0843d187a0cee37f613ffae70da113b38a85c2",
+    "diagnostics/retained-navigation/src/main/resources/retained-navigation.mixins.json": "48726ed1df93f94730fb342d8279815859290823360d8e6da894e5c664007e89",
+    "docs/evidence/td-navigation.zip": "642da233c3ce1544c13b42a54ecaf872383bd26fb835a2d51a1c0127bba8a021",
+    "docs/evidence/td-retained-map.zip": "fafa93f9a8a4865e2e2592cce3a54a1f5937822a059f23a3dfbec31981e9e05a",
+    "docs/evidence/td-story.zip": "fec51d36faeb1d8b99e7624c2daab5cbd2b614227c6df9527dfe0f7c7954da47",
+    "docs/td-region-viewer.html": "79b49d7f5b4425cb43a7c232f09fe388966cd6abd1ee7a047e2a789bf7263660",
+    "scripts/build-td-region-preview.py": "5cbe8a855f22f150500d6e7af2bd6906fe4dea3dc5d711e34883d19fcc7c8658",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/RetainedMap.java": "59573cb79b24c1c1526018a237cfa0d3331f9fdc59311b0afbea7c6f54b69407",
+    "src/runtimeProbe/java/dev/wilyjeb/geology/probe/RetainedMapScreen.java": "e2e674602aea6004144fa18a0f30bc365475757b88cea388d378db7ca52bb3d2",
+    "src/runtimeProbe/resources/retained-map.tsv": "ab7168c07af32e981601d2e2fecb7a8457ec3607e68e2dec0731a6c86a67b872"
+  }
+}

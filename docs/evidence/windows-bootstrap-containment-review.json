@@ -1,0 +1,141 @@
+{
+  "allocated_slots": 0,
+  "assumptions": [
+    "eventual successful OS termination/handle closure",
+    "independent W control established before H duplication",
+    "explicit W target termination action, not scheduled by model"
+  ],
+  "basis_commit": "6d972703223fe20cf81d181b5322550f11a4aac5",
+  "candidate": "D-staged-helper-job-copy",
+  "caps_changed": false,
+  "decision": 1,
+  "documentation_review_date": "2026-11-12",
+  "documentation_urls": [
+    "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute",
+    "https://learn.microsoft.com/en-us/windows/win32/api/jobapi2/nf-jobapi2-createjobobjectw",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_basic_limit_information",
+    "https://learn.microsoft.com/en-us/windows/win32/procthread/terminating-a-process",
+    "https://learn.microsoft.com/en-us/windows/win32/procthread/job-objects",
+    "https://learn.microsoft.com/en-us/windows/win32/api/jobapi2/nf-jobapi2-terminatejobobject"
+  ],
+  "fake_tests": 8,
+  "graph_cases": [
+    {
+      "after_C_death": [
+        "W"
+      ],
+      "arrangement": "create-then-assign",
+      "first": "W"
+    },
+    {
+      "after_C_death": [
+        "W"
+      ],
+      "arrangement": "early-helper-copy",
+      "first": "W"
+    },
+    {
+      "after_C_death": [],
+      "arrangement": "sole-controller-copy",
+      "first": "W"
+    },
+    {
+      "after_C_death": [
+        "S"
+      ],
+      "arrangement": "create-then-assign",
+      "first": "S"
+    },
+    {
+      "after_C_death": [
+        "S"
+      ],
+      "arrangement": "early-helper-copy",
+      "first": "S"
+    },
+    {
+      "after_C_death": [],
+      "arrangement": "sole-controller-copy",
+      "first": "S"
+    },
+    {
+      "H_owners": [
+        "C"
+      ],
+      "after_C_death": [],
+      "after_W_exit": [],
+      "after_assumed_W_target_termination": [],
+      "arrangement": "staged-helper-copy",
+      "independent_W_available": false,
+      "phase": "both-unready",
+      "ready": false
+    },
+    {
+      "H_owners": [
+        "C"
+      ],
+      "after_C_death": [],
+      "after_W_exit": [],
+      "after_assumed_W_target_termination": [],
+      "arrangement": "staged-helper-copy",
+      "independent_W_available": false,
+      "phase": "control-ready-before-copy",
+      "ready": true
+    },
+    {
+      "H_owners": [
+        "C",
+        "W"
+      ],
+      "after_C_death": [
+        "S",
+        "W"
+      ],
+      "after_W_exit": [],
+      "after_assumed_W_target_termination": [
+        "S",
+        "W"
+      ],
+      "arrangement": "staged-helper-copy",
+      "independent_W_available": true,
+      "phase": "copy-acquired-before-ack",
+      "ready": true
+    },
+    {
+      "H_owners": [
+        "C",
+        "W"
+      ],
+      "after_C_death": [
+        "P",
+        "S",
+        "T",
+        "W"
+      ],
+      "after_W_exit": [],
+      "after_assumed_W_target_termination": [
+        "S",
+        "W"
+      ],
+      "arrangement": "staged-helper-copy",
+      "independent_W_available": true,
+      "phase": "targets-created",
+      "ready": true
+    }
+  ],
+  "hard_deadlines": false,
+  "historical_boundary_zip_sha256": "c22d1e0ebf7cd7e2983db1e80431f3996c2cafa8723829380aecf83a829235d5",
+  "interface_implemented": false,
+  "kind": "offline-containment-design-review",
+  "main_commit": "513c4ca1e950969453faf52723f7ee68c7d6c329",
+  "native_acceptance": false,
+  "native_execution": false,
+  "navigation_3_attempts_remaining": 0,
+  "retained_acceptance": "INCOMPLETE",
+  "source_sha256": {
+    "docs/windows-bootstrap-containment-review.md": "fa199bc6a91cc79c830f66af7efa7ff10463e2c8c6115e0c0ffb1e2113f34ebc",
+    "scripts/audit-bootstrap-containment-review.py": "66bea3e1c5bad1c28f4931e606af14401c21596abfe0e95a650ca27287174dd0",
+    "scripts/bootstrap_containment_model.py": "aa1d101ad5eb1909bb952a4dd8b4f8df71467c5237bb71d8b081aa69d2dc1d72",
+    "scripts/test-bootstrap-containment.py": "22ddd66caa4bbf979f4e912e5fd141bb000a4e9636cc20d3b3d11b3ab3a8c926"
+  }
+}

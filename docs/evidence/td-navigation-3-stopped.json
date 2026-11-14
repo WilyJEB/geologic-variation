@@ -1,0 +1,226 @@
+{
+  "acceptance": "INCOMPLETE",
+  "actual_context_observed_before_invocation": {
+    "account": "digif",
+    "computer": "LAPTOP-1TV1KTCM",
+    "java": "C:/Program Files/Java/jdk-21/bin/java.exe",
+    "python": "C:\\Users\\digif\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "session": null,
+    "session_id": 1
+  },
+  "actual_launcher_argv": [
+    "C:\\Users\\digif\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "C:\\Users\\digif\\Documents\\Codex\\2026-10-18\\i-w\\outputs\\geologic-variation\\scripts\\launch-navigation-3.py",
+    "--launch",
+    "--authorization",
+    "C:/Users/digif/Documents/Codex/2026-10-18/i-w/outputs/geologic-variation/runs/acceptance/td-navigation-3-approval.json",
+    "--context",
+    "digif-interactive-session1-separately-approved"
+  ],
+  "actual_observations": [
+    "Human freshly confirmed presence and availability through quit.",
+    "Launcher rejected literal command inequality and exited1 before preflight.",
+    "Runtime root remains absent; historical ledgers and attempt lists unchanged.",
+    "No game input, movement hold, capture, configuration change or quit occurred."
+  ],
+  "allocated": false,
+  "approval": {
+    "attempts_including_failure": 1,
+    "command": [
+      "C:\\Users\\digif\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\digif\\Documents\\Codex\\2026-10-18\\i-w\\outputs\\geologic-variation\\scripts\\launch-navigation-3.py",
+      "--launch",
+      "--authorization",
+      "C:\\Users\\digif\\Documents\\Codex\\2026-10-18\\i-w\\outputs\\geologic-variation\\runs\\acceptance\\td-navigation-3-approval.json",
+      "--context",
+      "digif-interactive-session1-separately-approved"
+    ],
+    "confirmation": "Present now; proceed with preflight and the sole attempt",
+    "context": "digif-interactive-session1-separately-approved",
+    "contract": "navigation-3",
+    "explicit_client_launch_authorized": true,
+    "human_available_through_quit": true,
+    "human_confirmation_unix": 1794503893.4174712,
+    "human_present": true,
+    "manifest_sha256": "64718116099bf3e3cd06187b3853e07dcdd5fcecd7c4bf36066abacdce96fe63",
+    "observed_context": {
+      "account": "digif",
+      "computer": "LAPTOP-1TV1KTCM",
+      "java": "C:/Program Files/Java/jdk-21/bin/java.exe",
+      "python": "C:\\Users\\digif\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "session": null,
+      "session_id": 1
+    },
+    "permission_mode": "separately-approved",
+    "pushed_commit": "951fcda92470244475f6164f11520f20b53834a4"
+  },
+  "carried_gates_unchanged": true,
+  "checks": {
+    "configuration_1200_900_gui1": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "configuration_1600_1000_gui2": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "cover_east": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "cover_west": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "entry_setup": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "exposure": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "hud_toggle": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "isolation": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "movement_scale1": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "movement_scale6": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "normal_shutdown": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "panel_pr58_pr59": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "panel_return": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "pid_tree_cleanup": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "scale_arithmetic": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "seven_site_route": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "token_first_half": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    },
+    "token_second_half": {
+      "evidence": [],
+      "observation": "Authorization stopped before preflight/allocation; no live evidence.",
+      "result": "not-observed"
+    }
+  },
+  "cleanup": {
+    "allocated_pids": [],
+    "applicable": false,
+    "forced_kill": false,
+    "job_empty_runtime_verified": false,
+    "reason": "Authorization rejected before allocation, job construction or Java creation."
+  },
+  "client_launched": false,
+  "computed_checks": {
+    "frozen_file_hashes": 39,
+    "literal_argv_equal": false,
+    "manifest_sha256": "64718116099bf3e3cd06187b3853e07dcdd5fcecd7c4bf36066abacdce96fe63",
+    "path_resolution_equal": true
+  },
+  "context_provenance": "Separate approved read-only context() invocation matched; failed launcher passed context equality before argv equality.",
+  "error": "ValueError: Authorized command differs",
+  "error_provenance": "Transcribed from exec_command tool output, chunk bddad6; not a raw collector log.",
+  "exit_code": 1,
+  "failure_location": {
+    "authorization_line": 90,
+    "file": "scripts/launch-navigation-3.py",
+    "main_line": 347,
+    "require_line": 30
+  },
+  "future_invocation_authorized": false,
+  "historical_state_after": {
+    "1": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger": "733bee0b5b78a6774801a7c92d5202872ab22203251967a8fc55b2e851a31703"
+    },
+    "2": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger": "7817092a59e0d39837837d2b73de5f219e1ff77a6c0204d550f59686d00d3b12"
+    }
+  },
+  "historical_state_before": {
+    "1": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger": "733bee0b5b78a6774801a7c92d5202872ab22203251967a8fc55b2e851a31703"
+    },
+    "2": {
+      "directories": [
+        "attempt-01",
+        "attempt-02"
+      ],
+      "ledger": "7817092a59e0d39837837d2b73de5f219e1ff77a6c0204d550f59686d00d3b12"
+    }
+  },
+  "installed_profile_preflight_run": false,
+  "java_created": false,
+  "kind": "stopped-before-preflight-not-runtime-evidence",
+  "ledger_exists": false,
+  "loopback_run": false,
+  "permission_mode": "separately-approved",
+  "pr62_draft": true,
+  "pr62_merged": false,
+  "preparation_ci": {
+    "conclusion": "success",
+    "run": 43255494316,
+    "scope": "Build/offline checks, not runtime acceptance"
+  },
+  "prepared_commit": "951fcda92470244475f6164f11520f20b53834a4",
+  "retry_performed": false,
+  "runtime_root_exists": false,
+  "slot_consumed": false,
+  "td_executed": false,
+  "visual_judgment": "Not observed: no client or live display."
+}

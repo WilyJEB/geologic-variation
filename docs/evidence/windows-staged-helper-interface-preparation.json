@@ -1,0 +1,99 @@
+{
+  "allocated_slots": 0,
+  "basis_commit": "86e6639d292292966e76e1843c581d6757d0a34d",
+  "calls": {
+    "C": {
+      "cleanup": {
+        "evidence_io": 8,
+        "poll_wait": 400,
+        "terminate_query_close": 40
+      },
+      "ordinary": {
+        "bootstrap_transfer_query": 700,
+        "evidence_io": 200,
+        "poll_wait": 200
+      }
+    },
+    "P": {
+      "cleanup": {
+        "close_exit": 16
+      },
+      "ordinary": {
+        "create_handshake_exit": 136
+      }
+    },
+    "S": {
+      "cleanup": {
+        "evidence_io": 64,
+        "quiesce_close": 32
+      },
+      "ordinary": {
+        "bootstrap_evidence_io": 200,
+        "sample_query_wait": 400
+      }
+    },
+    "T": {
+      "cleanup": {
+        "close_exit": 16
+      },
+      "ordinary": {
+        "handshake_exit": 136
+      }
+    },
+    "W": {
+      "cleanup": {
+        "evidence_io": 8,
+        "poll_wait": 400,
+        "terminate_query_close": 40
+      },
+      "ordinary": {
+        "bootstrap_transfer_query": 700,
+        "evidence_io": 200,
+        "poll_wait": 200
+      }
+    }
+  },
+  "caps_changed": false,
+  "decision": 1,
+  "fake_tests": 8,
+  "historical_containment_zip_sha256": "74fabf75f158319e6f17517724f5124c303360025d2064c45b2043b7b2b1d0a6",
+  "issued_bytes": {
+    "C": {
+      "cleanup": 1048576,
+      "ordinary": 2097152
+    },
+    "P": {
+      "cleanup": 131072,
+      "ordinary": 131072
+    },
+    "S": {
+      "cleanup": 524288,
+      "ordinary": 1048576
+    },
+    "T": {
+      "cleanup": 131072,
+      "ordinary": 131072
+    },
+    "W": {
+      "cleanup": 1048576,
+      "ordinary": 2097152
+    }
+  },
+  "kind": "offline-staged-helper-interface-preparation",
+  "limitations": [
+    "independent control assumed, not scheduled",
+    "OS termination/atomicity assumed, not executed",
+    "no timing, durability, or cleanup acceptance proof"
+  ],
+  "main_commit": "513c4ca1e950969453faf52723f7ee68c7d6c329",
+  "native_execution": false,
+  "native_implementation": false,
+  "navigation_3_attempts_remaining": 0,
+  "retained_acceptance": "INCOMPLETE",
+  "source_sha256": {
+    "docs/windows-staged-helper-interface-preparation.md": "b3352e39422679a1c940f777ef783891875524bc4e674ec201d6d69f43375ccd",
+    "scripts/audit-staged-helper-preparation.py": "40e59e7f31a26f32a2240622032a66a481674f276699493573cc876a3c750419",
+    "scripts/staged_helper_interfaces.py": "3d68e7f69f839500e3ab469bbbbf65f91eadc719608012db02ab20ccf22a4b1f",
+    "scripts/test-staged-helper-interfaces.py": "e7ea93b06099edf833c3b785624429e73c048123eb302a0e94d9c7d85f8bd89d"
+  }
+}
