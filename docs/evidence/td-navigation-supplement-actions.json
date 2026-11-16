@@ -1,0 +1,32 @@
+{
+  "acceptance": "INCOMPLETE",
+  "attempts_used": 2,
+  "attempts_remaining": 0,
+  "source": "Actual Minecraft window captures via documented CUA; full client position logs; user-confirmed physical held W input.",
+  "actual_observations": [
+    "Title and NEW vanilla navigation button visible. Tab/Return did not immediately change the observed title; coordinate click entered the fresh world.",
+    "HUD entry visible at X-0.5 Z8.5, blocks -1,8 chunks -1,0, exterior.",
+    "Agent short R input invoked route0 and setup teleported to X2944.5 Z13824.5. Exact support correctly remained GAP. Integer command centering is a setup failure.",
+    "Captured title, entry and scale1-before real-client images.",
+    "User confirmed held W completed and possibly slight mouse turn. Position logs changed to X2922.054713 Z13824.447234; no after-movement screenshot was obtained.",
+    "Next CUA capture/H action was interrupted by physical Escape. Tool reported stop before returning an image or action result; do not claim H was delivered. No further UI actions were performed.",
+    "Exact client PID tree forcibly terminated after stop; launcher finalized, not graceful server shutdown.",
+    "Attempt2: fresh title at1600x1000 GUI2 captured; NEW vanilla navigation clicked once. Fresh-save and integrated-server guards logged. World entry failed: Netty could not create its event loop/selector because local loopback connect was denied. Returned restricted title captured; no local attachment or player position exists.",
+    "Quit diagnostic clicked; client logged Stopping! and exited0 in42.11951270001009 seconds. Exact PID29076 absent; no Minecraft window remains. No Stopping server log: normal local-server shutdown remains unverified. No retry, movement, teleport or other route input occurred."
+  ],
+  "unverified": [
+    "After-movement screenshot and marker coherence",
+    "HUD off/on",
+    "Full panel entry/return from loaded world",
+    "Remaining frozen route sites, edges, gap/exterior",
+    "scale6 movement and conversions in client",
+    "same-site PR58/59 comparison and exposure/cover/full-token inspection in this attempt",
+    "alternate window/GUI",
+    "normal local-server shutdown"
+  ],
+  "visual_judgment": "Before-movement HUD labels remain too small; live coordinate/status lines readable. Cannot assess movement benefit for contacts/shared history from missing after image. Existing full-panel evidence is reused only.",
+  "compile_only": "Decimal correction source/JAR loaded in attempt2, but no route executed; exact decimal setup remains runtime-unverified.",
+  "input_limit": "No human movement requested in attempt2 because world entry failed. Both supplemental slots exhausted.",
+  "carried_gates": "All navigation-1 failures, PR59 negative contact result and td-retained-map carried gates remain; no TD execution/new observations/production adoption.",
+  "final_attempt_visual_judgment": "Only title and returned-title images exist; no new HUD, movement, panel, configuration or contact judgment possible."
+}

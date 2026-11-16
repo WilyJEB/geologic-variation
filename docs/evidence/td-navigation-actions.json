@@ -1,0 +1,27 @@
+{
+  "acceptance": "FAILED",
+  "new_launches_allowed": 0,
+  "source": "actual Minecraft window screenshots and UI actions via Computer Use skill",
+  "attempt_1": [
+    "Clicked NEW navigation; guards rejected two invalid names; fixed disposable world created. Local login failed: synthetic RetainedDiagnostic has18 characters, maximum16. Failure screenshot retained. Parent interrupted with Ctrl-C; both processes confirmed absent. Ledger finalized with full1200 seconds conservatively charged; original allocation ledger preserved. No exact completion duration claimed."
+  ],
+  "attempt_2": [
+    "Synthetic name RetainedNav corrected before launch. Initial coordinate clicks did not activate title button; Tab then Return created fresh flat world.",
+    "Actual1600x1000 GUI2 HUD rendered at playerX7.5,Z-0.5; blocks7,-1; chunks0,-1; EXTERIOR UNKNOWN. No retained geology assigned.",
+    "Short R and P inputs did not trigger route or panel. P produced vanilla social-interaction message. Short W did not produce recorded X/Z movement. Polling adapter did not establish control acceptance.",
+    "Escape opened pause. Click Save and Quit to Title stopped integrated server; title offered panel/quit only, no creation/reopen.",
+    "Title panel opened, unchanged default cover card at native2688,10880; both full token halves visible. Escape returned to title. Quit closed client normally."
+  ],
+  "not_verified": [
+    "HUD toggle/return",
+    "movement and marker coherence",
+    "fixed retained route",
+    "scale1/6 in-world behavior",
+    "in-world panel return",
+    "alternate window/GUI configuration",
+    "exposure and comparison interactions in new client"
+  ],
+  "computed_checks": "Immutable bytes, class-load/guard logs, path inventories, dependency hashes and sampled caps only. Existing portable retained map coordinate/record checks reused and rerun offline.",
+  "visual_judgment": "HUD map rendered but shrinking whole unchanged drawing makes its labels too small. Readable live X/Z lines and prominent unrelated-world label. Cannot assess whether movement improves regional size, contacts or shared-history understanding. PR59 negative result unchanged.",
+  "final_correction": "Event-driven keyPress adapter replaces render polling; compile-only, never launched. Cause attribution is source-based diagnosis, not a successfully retested fix."
+}

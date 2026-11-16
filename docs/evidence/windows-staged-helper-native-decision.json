@@ -1,0 +1,39 @@
+{
+  "allocated_slots": 0,
+  "arithmetic_witnesses": {
+    "advertised_action_calls": 32,
+    "advertised_error_calls": 8,
+    "all_action_failures_with_error_retrieval": 64,
+    "existing_two_target_sampler_64_samples": 640,
+    "twenty_failed_closes_with_error_retrieval": 40
+  },
+  "basis_commit": "a5161ec851e82959fd1fb6ab780ecd580d5298b8",
+  "caps_changed": false,
+  "decision": 2,
+  "inherited_staged_zip_sha256": "04aa953e868326efa3c978b598e8894241a240dc459cfb3b3d91ee03124d0623",
+  "kind": "offline-staged-helper-native-implementation-preparation-decision",
+  "limitations": [
+    "witnesses audit advertised maxima, not an exact native inventory",
+    "no timing, memory, durability or cleanup acceptance proof",
+    "all-runtime issuance accounting and control schedule unresolved"
+  ],
+  "main_commit": "513c4ca1e950969453faf52723f7ee68c7d6c329",
+  "native_execution": false,
+  "native_implementation": false,
+  "navigation_3_attempts_remaining": 0,
+  "retained_acceptance": "INCOMPLETE",
+  "source_sha256": {
+    "docs/td-navigation-3-outcome.md": "46f034bbb1179ab136dee32f4395ca25f4a6990fe93bc84818a99b6e1a638b2f",
+    "docs/td-navigation-process-review.md": "afb454281f360dd9c7badf8c5ca63142f2e50ccaacbda9cda49e0e2940328da9",
+    "docs/windows-bootstrap-boundary-preparation.md": "74fdeaaa4210c718f49e0d4288f13cea8b8ff79aefbcb18169180ec5a26c1256",
+    "docs/windows-bootstrap-containment-review.md": "fa199bc6a91cc79c830f66af7efa7ff10463e2c8c6115e0c0ffb1e2113f34ebc",
+    "docs/windows-bootstrap-design-review.md": "b63499aeb7bf4f2acfbe069b350da006b7c899ae2103d5ba61fedf5d5c538969",
+    "docs/windows-process-monitor-preparation.md": "76ba897ddf53390d2c9b7fdca2098cb93eaece58ff3663cd4cdd77ff1de5cc66",
+    "docs/windows-staged-helper-interface-preparation.md": "b3352e39422679a1c940f777ef783891875524bc4e674ec201d6d69f43375ccd",
+    "docs/windows-staged-helper-native-decision.md": "e100167fb53d2465cc66e21ee35f77e5d8794b2a6e4043c73cd79eecf47d245f",
+    "docs/windows-validation-harness-preparation.md": "4a726b42473db33550c71e1b7b2fad2d17bd7420459906c12953c468935de966",
+    "scripts/audit-staged-helper-native-decision.py": "eb1297a24e5e337c1fd3fde18aae861c0ad2ffe168e8f46201b9f80bac843b00",
+    "scripts/staged_helper_interfaces.py": "3d68e7f69f839500e3ab469bbbbf65f91eadc719608012db02ab20ccf22a4b1f",
+    "scripts/test-staged-helper-interfaces.py": "e7ea93b06099edf833c3b785624429e73c048123eb302a0e94d9c7d85f8bd89d"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "allocated_slots": 0,
+  "errors": 0,
+  "failures": 0,
+  "frozen_files_verified": 39,
+  "kind": "offline-preparation-only",
+  "mock_tests": 23,
+  "native_execution": false,
+  "navigation_3_attempts_remaining": 0,
+  "retained_acceptance": "INCOMPLETE",
+  "retained_runtime_sha256": "52319ac3ab554e9d183b004792cc1d5b7a0328f7a1666ab8a50651a033f465a5",
+  "skipped": 0,
+  "source_sha256": {
+    "docs/windows-process-monitor-preparation.md": "76ba897ddf53390d2c9b7fdca2098cb93eaece58ff3663cd4cdd77ff1de5cc66",
+    "scripts/audit-process-monitor-preparation.py": "206703e15d08f5842ca3cb55dcb05c2c542cd0e28f1c6aa373c1b6169e2c85c0",
+    "scripts/test-windows-process-monitor.py": "5a07f9a1f9f0a8dc28b918b143741a0ed4f7c77fed658613607c67bf5648aee3",
+    "scripts/windows_process_monitor.py": "22504abca9414be2b78bb8de7f7394806b2cc1008df9b2eb8afc9c845eba1021"
+  }
+}

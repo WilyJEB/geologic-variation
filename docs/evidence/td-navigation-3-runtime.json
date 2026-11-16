@@ -1,0 +1,161 @@
+{
+  "allocated_unix": 1794504371.1404812,
+  "approval": {
+    "attempts_including_failure": 1,
+    "command": [
+      "C:\\Users\\digif\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\digif\\Documents\\Codex\\2026-10-18\\i-w\\outputs\\geologic-variation\\scripts\\launch-navigation-3.py",
+      "--launch",
+      "--authorization",
+      "C:/Users/digif/Documents/Codex/2026-10-18/i-w/outputs/geologic-variation/runs/acceptance/td-navigation-3-approval-continuation.json",
+      "--context",
+      "digif-interactive-session1-separately-approved"
+    ],
+    "confirmation": "Present now; proceed with preflight and the sole attempt",
+    "context": "digif-interactive-session1-separately-approved",
+    "contract": "navigation-3",
+    "explicit_client_launch_authorized": true,
+    "human_available_through_quit": true,
+    "human_confirmation_unix": 1794504355.1167188,
+    "human_present": true,
+    "manifest_sha256": "64718116099bf3e3cd06187b3853e07dcdd5fcecd7c4bf36066abacdce96fe63",
+    "observed_context": {
+      "account": "digif",
+      "computer": "LAPTOP-1TV1KTCM",
+      "java": "C:/Program Files/Java/jdk-21/bin/java.exe",
+      "python": "C:\\Users\\digif\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "session": null,
+      "session_id": 1
+    },
+    "permission_mode": "separately-approved",
+    "pushed_commit": "435de09b7683a4e6d24f1d38eee9a03fb0d6da7c"
+  },
+  "archive_sha256": "52319ac3ab554e9d183b004792cc1d5b7a0328f7a1666ab8a50651a033f465a5",
+  "attempts_remaining": 0,
+  "cleanup": {
+    "forced": true,
+    "identities": [
+      {
+        "absent": true,
+        "creation": "/Date(1794504373030)/",
+        "pid": 27824
+      },
+      {
+        "absent": true,
+        "creation": "/Date(1794504373882)/",
+        "pid": 9140
+      }
+    ],
+    "job_empty": true,
+    "parent_exit_code": 1,
+    "remaining_job_pids": []
+  },
+  "execution_commit": "435de09b7683a4e6d24f1d38eee9a03fb0d6da7c",
+  "failure": "TimeoutExpired(['powershell.exe', '-NoProfile', '-Command', '$ids=@(27824,9140); Get-CimInstance Win32_Process | Where-Object { $ids -contains $_.ProcessId } | Select-Object ProcessId,ParentProcessId,CreationDate,CommandLine,WorkingSetSize | ConvertTo-Json -Compress'], 1)",
+  "final_resources": {
+    "free": 57490669568,
+    "output_bytes": 17840560,
+    "wall": 9.335783549337066
+  },
+  "finalized": true,
+  "frozen_bytes_unchanged": true,
+  "historical_state_unchanged": true,
+  "preflight_timestamp": 1794504371.0864208,
+  "prepared_commit": "951fcda92470244475f6164f11520f20b53834a4",
+  "runtime_replay": {
+    "acceptance": "INCOMPLETE",
+    "attempts_remaining": 0,
+    "computed": {
+      "along_x_width": [
+        2048,
+        12288
+      ],
+      "side": [
+        3073,
+        18438
+      ],
+      "spacing": [
+        64,
+        384
+      ],
+      "spacing_chunks": [
+        4,
+        24
+      ],
+      "width_chunks": [
+        128,
+        768
+      ]
+    },
+    "mode": "runtime",
+    "unmet": [
+      "normal client exit",
+      "guard fresh save ",
+      "guard fresh integrated server",
+      "guard local attachment",
+      "guard rejected ../continuing",
+      "guard rejected other-world",
+      "Stopping server",
+      "Stopping!",
+      "applied guard SaveBarrier",
+      "applied guard TitleOnly",
+      "applied guard Hud",
+      "applied guard LanBarrier",
+      "applied guard Keys",
+      "normal shutdown and exact tree absence",
+      "exact route 0",
+      "exact route 1",
+      "exact route 2",
+      "exact route 3",
+      "exact route 4",
+      "exact route 5",
+      "exact route 6",
+      "entry_setup",
+      "image entry_setup",
+      "movement_scale1",
+      "image movement_scale1",
+      "capture roles movement_scale1",
+      "movement_scale6",
+      "image movement_scale6",
+      "capture roles movement_scale6",
+      "hud_toggle",
+      "image hud_toggle",
+      "capture roles hud_toggle",
+      "panel_return",
+      "image panel_return",
+      "capture roles panel_return",
+      "seven_site_route",
+      "image seven_site_route",
+      "panel_pr58_pr59",
+      "image panel_pr58_pr59",
+      "capture roles panel_pr58_pr59",
+      "exposure",
+      "image exposure",
+      "cover_west",
+      "image cover_west",
+      "cover_east",
+      "image cover_east",
+      "token_first_half",
+      "image token_first_half",
+      "token_second_half",
+      "image token_second_half",
+      "configuration_1600_1000_gui2",
+      "image configuration_1600_1000_gui2",
+      "capture roles configuration_1600_1000_gui2",
+      "observed settings configuration_1600_1000_gui2",
+      "configuration_1200_900_gui1",
+      "image configuration_1200_900_gui1",
+      "capture roles configuration_1200_900_gui1",
+      "observed settings configuration_1200_900_gui1",
+      "scale_arithmetic",
+      "normal_shutdown",
+      "isolation",
+      "pid_tree_cleanup",
+      "human movement scale1",
+      "human movement scale6",
+      "human visual review"
+    ],
+    "visual_judgment": "No live capture or human visual review was obtained before startup failure."
+  },
+  "slot_consumed": true
+}

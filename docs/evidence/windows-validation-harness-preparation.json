@@ -1,0 +1,23 @@
+{
+  "allocated_slots": 0,
+  "errors": 0,
+  "failures": 0,
+  "frozen_files_verified": 39,
+  "kind": "offline-partial-harness-preparation",
+  "mock_tests": 21,
+  "native_bootstrap_implemented": false,
+  "native_case_runner_implemented": false,
+  "native_execution": false,
+  "navigation_3_attempts_remaining": 0,
+  "previous_mock_tests": 23,
+  "previous_portable_zip_sha256": "fb25d9f04afc1fd5c16f4a3db52217836418671e1a0a674ed19c29a9fedf1acc",
+  "retained_acceptance": "INCOMPLETE",
+  "skipped": 0,
+  "source_sha256": {
+    "docs/windows-validation-harness-preparation.md": "4a726b42473db33550c71e1b7b2fad2d17bd7420459906c12953c468935de966",
+    "docs/windows-validation-harness-schema.json": "4dbc5e53b611a40727b68e2c4b2576eb8cdecbba1c6d52a5a47f5430f035e11b",
+    "scripts/audit-windows-harness-preparation.py": "c288cbd44e8ec79578d273b9ade4cb8a36612993f6b032b4cc0280adcfaf4a7f",
+    "scripts/test-windows-validation-harness.py": "773e23cebe153a14f246934fbfe664bda95b2248c56c513ebfc55532b6d63b4e",
+    "scripts/windows_validation_harness.py": "f351ef6b40e938dc73ef8640dacca979e11ecbb71c52246f0147dcc1c1a28dbf"
+  }
+}

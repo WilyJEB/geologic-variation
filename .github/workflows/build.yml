@@ -64,11 +64,43 @@ jobs:
       - shell: pwsh
         run: python scripts/test-td-story.py
       - shell: pwsh
+        run: python scripts/test-td-region-explainer.py
+      - shell: pwsh
         run: python scripts/test-td-retained-map.py
       - shell: pwsh
         run: ./gradlew.bat -p diagnostics/retained-client build
       - shell: pwsh
         run: python scripts/test-retained-client.py
+      - shell: pwsh
+        run: ./gradlew.bat -p diagnostics/retained-navigation build
+      - shell: pwsh
+        run: python scripts/test-retained-navigation.py
+      - shell: pwsh
+        run: python scripts/test-navigation-supplement.py
+      - shell: pwsh
+        run: python scripts/test-navigation-readiness.py
+      - shell: pwsh
+        run: python scripts/export-navigation-readiness.py --strict
+      - shell: pwsh
+        run: python scripts/test-navigation-3.py
+      - shell: pwsh
+        run: python scripts/test-navigation-process-offline.py
+      - shell: pwsh
+        run: python scripts/test-windows-process-monitor.py
+      - shell: pwsh
+        run: python scripts/audit-process-monitor-preparation.py
+      - shell: pwsh
+        run: python scripts/audit-windows-harness-preparation.py
+      - shell: pwsh
+        run: python scripts/audit-bootstrap-boundary-preparation.py
+      - shell: pwsh
+        run: python scripts/audit-bootstrap-containment-review.py
+      - shell: pwsh
+        run: python scripts/audit-staged-helper-preparation.py
+      - shell: pwsh
+        run: python scripts/audit-staged-helper-native-decision.py
+      - shell: pwsh
+        run: python scripts/replay-navigation-3.py docs/evidence/td-navigation-3-preparation.zip --strict
       - uses: actions/setup-node@v4
         with:
           node-version: '20'

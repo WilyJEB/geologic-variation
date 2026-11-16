@@ -1,0 +1,38 @@
+{
+  "allocated_slots": 0,
+  "basis_commit": "48b0f7a34e88f19a25c9bc51dd707a2d78de6cb3",
+  "counterexamples": [
+    {
+      "cleanup_agents": [],
+      "first": "watchdog",
+      "target_created": false,
+      "trace": [
+        "create-first-helper-and-own-exact-handles",
+        "controller-death"
+      ]
+    },
+    {
+      "cleanup_agents": [],
+      "first": "sampler",
+      "target_created": false,
+      "trace": [
+        "create-first-helper-and-own-exact-handles",
+        "controller-death"
+      ]
+    }
+  ],
+  "decision": "stop-before-containment-expansion",
+  "historical_harness_zip_sha256": "b5ff179dbe8873c4d59d9c22d2bd62ffe2cb7f69f89d3c3b4f22abf16c5595a3",
+  "kind": "offline-bootstrap-boundary-negative-preparation",
+  "mock_tests": 5,
+  "model_closed_design_gaps": false,
+  "native_execution": false,
+  "navigation_3_attempts_remaining": 0,
+  "retained_acceptance": "INCOMPLETE",
+  "source_sha256": {
+    "docs/windows-bootstrap-boundary-preparation.md": "74fdeaaa4210c718f49e0d4288f13cea8b8ff79aefbcb18169180ec5a26c1256",
+    "scripts/audit-bootstrap-boundary-preparation.py": "67efb80676fd027d25d810686bd1472b290fdb656201a1abd123631e515d44f8",
+    "scripts/bootstrap_cleanup_boundary.py": "7829602963ae6905d5f670fd71bd53a13ac64439f3939fcecb3a1d6bfffa96dc",
+    "scripts/test-bootstrap-cleanup-boundary.py": "65078776b24ce2809bb94b0b3c720eb7f4fd91b128900f63d45eecd083f1c955"
+  }
+}

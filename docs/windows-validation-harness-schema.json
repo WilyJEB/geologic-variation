@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proposed native harness JSONL row, offline preparation only",
+  "type": "object",
+  "required": ["kind", "case", "role", "sequence", "monotonic", "unix"],
+  "properties": {
+    "kind": {"enum": ["case-start", "case-end", "api-start", "api-end", "ownership", "ownership-ack", "readiness", "trigger", "action", "sample", "cleanup", "close", "incomplete"]},
+    "case": {"enum": ["N1", "N2", "N3", "N4", "N5", "N6"]},
+    "role": {"enum": ["controller", "watchdog", "sampler", "target-parent", "target-child"]},
+    "sequence": {"type": "integer", "minimum": 0},
+    "monotonic": {"type": "number"},
+    "unix": {"type": "number"},
+    "complete": {"type": "boolean"},
+    "error": {"type": ["string", "null"]},
+    "winerror": {"type": ["integer", "null"]},
+    "api": {"type": "string"},
+    "args": {"type": "array"},
+    "result": {},
+    "handle": {"type": "integer", "minimum": 1},
+    "owner": {"type": "string"},
+    "transfer_id": {"type": "string"},
+    "rights": {"type": "integer", "minimum": 0},
+    "identity": {"type": "array", "prefixItems": [{"type": "integer"}, {"type": "integer"}], "minItems": 2, "maxItems": 2},
+    "members": {"type": ["array", "null"], "items": {"type": "integer"}},
+    "accounting": {"type": ["object", "null"]},
+    "waits": {"type": "array", "items": {"type": "object", "required": ["handle", "signaled"], "properties": {"handle": {"type": "integer"}, "signaled": {"type": "boolean"}}}},
+    "errors": {"type": "array"},
+    "deadline": {"type": "number"},
+    "memory_bytes": {"type": ["integer", "null"], "minimum": 0}
+  },
+  "allOf": [
+    {"if": {"properties": {"kind": {"enum": ["api-start", "api-end"]}}}, "then": {"required": ["api", "args"]}},
+    {"if": {"properties": {"kind": {"enum": ["ownership", "ownership-ack", "close"]}}}, "then": {"required": ["handle", "owner", "transfer_id", "rights"]}},
+    {"if": {"properties": {"kind": {"const": "cleanup"}}}, "then": {"required": ["complete", "members", "accounting", "waits", "errors", "deadline"]}},
+    {"if": {"properties": {"kind": {"const": "case-end"}}}, "then": {"required": ["complete"]}}
+  ]
+}
