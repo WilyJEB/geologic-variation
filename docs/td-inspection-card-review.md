@@ -1,5 +1,77 @@
 # Independent static inspection-card prototype
 
+## Completed bounded offline selection model, 2026-11-15
+
+Starting local HEAD, origin branch ref and live GitHub PR62 head matched
+`5775f03909b25fdeb7e007117240520fae1f1768` on `codex/retained-navigation`.
+Local main/origin/main and live PR base matched
+`513c4ca1e950969453faf52723f7ee68c7d6c329`. No tracked changes were present.
+Starting-head [CI43798281770](https://github.com/WilyJEB/geologic-variation/actions/runs/43798281770)
+passed: reused remote build/offline evidence, not runtime acceptance.
+PR62 was confirmed open, draft and unmerged. The earlier static-card completion
+and historical failures below remain intact; its proposed selection step is now
+implemented within the user's separately authorized three-file scope.
+
+[Selection model](../scripts/td-inspection-selection.py) gives each
+`InspectionSelection` instance exclusive ownership of its own selected site.
+Construction reads the existing card model's hash-pinned archives through `load`;
+it imports definitions without calling the builder, renderer or main entry point.
+There is no global selection, UI event adapter, player/HUD state or persistence.
+The two archives remain read-only. All 2,401 retained sites still abstain from
+actual geological interpretation. This provides a deliberate selection contract
+for a future card interface; player usefulness and interaction remain untested.
+
+| Operation/input | State | Stored request and observation |
+| --- | --- | --- |
+| Construct or `reset()` | `empty` | Neither coordinates nor site; reset is idempotent. |
+| `select(x,z)` at an exact retained integer site | `selected` | Exact native coordinates and existing full-precision card-model Site. |
+| Integer coordinate inside the closed retained extent but off its lattice | `gap` | Requested coordinates; no site or observation. |
+| Integer coordinate outside that extent | `exterior` | Requested coordinates; no site or observation. |
+| Non-integer input, including bool/float | `invalid` | Neither coordinates nor site. |
+
+The closed extent is x=2688..5760, z=10880..13952, with spacing 64 in each
+axis. No rounding, interpolation, proximity radius or nearest-site inference is
+used. Every selection request clears the previous card first, including invalid
+and unsupported requests; a lookup exception propagates with the owner left
+`invalid`, without stale observation. Constructor input errors propagate without
+creating a usable owner. Returned frozen state records contain defensive copies
+of the Site/history dictionaries so external mutation cannot change owner data.
+Separate owners never share selections; reset does not choose a default site.
+Coordinates describe retained native samples, not Minecraft positions or Y.
+
+New verification was limited to [seven focused selection tests](../scripts/test-td-inspection-selection.py)
+and document/link/diff checks:
+
+```powershell
+& 'C:/Users/digif/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe' -B scripts/test-td-inspection-selection.py
+```
+
+All seven passed. Coverage includes exact existing card records/full precision at
+the three pinned example sites; every retained site's row/column and abstention;
+closed edges, gap/exterior transitions without stale cards; invalid input;
+idempotent reset/reselection; independent owners and defensive copies; corrupt
+and missing pinned archive rejection and lookup-error clearing. No static-card
+test suite, image generation/review, historical exporter or evidence rerun was
+performed. Existing card PNG/JSON bytes and sources are unchanged. The completed
+static review below is reused evidence; no new visual/keyboard/player/Minecraft
+acceptance follows from these model tests. Final-head CI is reported separately
+with the delivered commit; CI remains remote build/offline evidence only.
+
+Only the two new selection files and this report change. Completed static cards,
+blocked companion, viewer repairs and unrelated temp/ remain preserved.
+Navigation-3 remains consumed, zero remaining, **INCOMPLETE**, with all 18 live
+acceptance rows unverified. Historical failures and the complete #9/#11 gates
+below remain unchanged. Geology-1, continuing-save safety, strict guards and
+immutable inputs remain intact. No local build, historical execution, Java,
+Minecraft, TD/provider/model execution, save access, new terrain/seeds, native or
+process-control/preflight/socket work, monitoring, runtime roots, ledgers,
+approval flags, in-game adaptation, player study, adoption or merge occurred.
+
+Smallest next authorization: one bounded offline review of how an eventual card
+interface would issue explicit select/reset operations and display these five
+states, using only the existing retained examples. No interface implementation,
+game integration or execution is authorized by this proposed next step.
+
 ## Completed bounded glyph-bearing correction, 2026-11-15
 
 This section supersedes the current-status wording in the historical attempts
