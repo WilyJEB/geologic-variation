@@ -1,0 +1,3604 @@
+{
+  "archive_sha256": {
+    "td-region-visual": "f939c32cefe3a4e4f06320c056dcf5cb33e96ab6c50dcc76cc9640f297b1f1d8",
+    "td-story": "fec51d36faeb1d8b99e7624c2daab5cbd2b614227c6df9527dfe0f7c7954da47"
+  },
+  "card_sections": [
+    [
+      [
+        "Observed / exact selected site",
+        "r46, c4; native x2944, z13824\n2090.142 TD metres (rounded: 0.001 m).\nNot Minecraft Y."
+      ],
+      [
+        "Regional mean / not site height",
+        "Band minus field mean: +2693.8 m\n(196 sites; rounded: 0.1 m)."
+      ],
+      [
+        "Seeded abstract substrate",
+        "PR59 ID -3; tag B. Not a rock name."
+      ],
+      [
+        "Authored history / invented",
+        "B -> conceptual tilt ->\ngreater stripping / exposure."
+      ],
+      [
+        "Conceptual surface / deep",
+        "Surface: greater stripping / exposure.\nDeep: inherited B, ID -3.\nShared identity/history; no measured\ndepth or subsurface interface."
+      ],
+      [
+        "PR58 / unchanged, separate",
+        "ID [0, 5]: H1 -> O1. Invented tags."
+      ],
+      [
+        "Regional trend / not local slope",
+        "2,401 sites: down with x, up with z.\nRatio about -1.01; active tilt clamp -0.5.\nTrend influences tilt; seed/width also matter."
+      ]
+    ],
+    [
+      [
+        "Observed / exact selected site",
+        "r0, c0; native x2688, z10880\n-179.612 TD metres (rounded: 0.001 m).\nNot Minecraft Y."
+      ],
+      [
+        "Regional mean / not site height",
+        "Band minus field mean: -221.0 m\n(1,458 sites; rounded: 0.1 m)."
+      ],
+      [
+        "Seeded abstract substrate",
+        "PR59 ID -2; tag B. Not a rock name."
+      ],
+      [
+        "Authored history / invented",
+        "B -> conceptual tilt ->\ncover preservation."
+      ],
+      [
+        "Conceptual surface / deep",
+        "Surface: cover preservation.\nDeep: inherited B, ID -2.\nShared identity/history; no measured\ndepth or subsurface interface."
+      ],
+      [
+        "PR58 / unchanged, separate",
+        "ID [0, 4]: H1 -> O0. Invented tags."
+      ],
+      [
+        "Regional trend / not local slope",
+        "2,401 sites: down with x, up with z.\nRatio about -1.01; active tilt clamp -0.5.\nTrend influences tilt; seed/width also matter."
+      ]
+    ],
+    [
+      [
+        "Observed / exact selected site",
+        "r0, c48; native x5760, z10880\n-2250.709 TD metres (rounded: 0.001 m).\nNot Minecraft Y."
+      ],
+      [
+        "Regional mean / not site height",
+        "Band minus field mean: -275.5 m\n(747 sites; rounded: 0.1 m)."
+      ],
+      [
+        "Seeded abstract substrate",
+        "PR59 ID -1; tag A. Not a rock name."
+      ],
+      [
+        "Authored history / invented",
+        "A -> conceptual tilt ->\ncover preservation."
+      ],
+      [
+        "Conceptual surface / deep",
+        "Surface: cover preservation.\nDeep: inherited A, ID -1.\nShared identity/history; no measured\ndepth or subsurface interface."
+      ],
+      [
+        "PR58 / unchanged, separate",
+        "ID [1, 4]: H1 -> O0. Invented tags."
+      ],
+      [
+        "Regional trend / not local slope",
+        "2,401 sites: down with x, up with z.\nRatio about -1.01; active tilt clamp -0.5.\nTrend influences tilt; seed/width also matter."
+      ]
+    ]
+  ],
+  "cards": [
+    {
+      "column": 4,
+      "elevation_metres": 2090.142,
+      "interpretation": "abstain",
+      "pr58": {
+        "id": [
+          0,
+          5
+        ],
+        "inherited": "H1",
+        "overprint": "O1",
+        "token": "2f491fac17a19621fc6ceebff9acff1250b34a4ad18bcaf7ed143b642910e130"
+      },
+      "pr59": {
+        "anchor": [
+          -4453.0,
+          0
+        ],
+        "authored_event": "greater stripping / exposure",
+        "deep_history": "051de0016f8a327cc808b53891009c5d99df891b1354d63e2f4fc9eba492c220",
+        "id": -3,
+        "mean_contrast_metres": 2693.8252599591056,
+        "observed_sites": 196,
+        "substrate": "B",
+        "surface_history": "051de0016f8a327cc808b53891009c5d99df891b1354d63e2f4fc9eba492c220",
+        "token": "051de0016f8a327cc808b53891009c5d99df891b1354d63e2f4fc9eba492c220"
+      },
+      "row": 46,
+      "x": 2944,
+      "z": 13824
+    },
+    {
+      "column": 0,
+      "elevation_metres": -179.61244,
+      "interpretation": "abstain",
+      "pr58": {
+        "id": [
+          0,
+          4
+        ],
+        "inherited": "H1",
+        "overprint": "O0",
+        "token": "33babf8f7f7b5278c0eaf20e3750d6d55ae14daf5fe33f2bec365b42439b4f78"
+      },
+      "pr59": {
+        "anchor": [
+          -2405.0,
+          0
+        ],
+        "authored_event": "cover preservation",
+        "deep_history": "ff3da0343871bf20b9d1835d63ae04e5769b54fa444f77c444aa92b1b62444c4",
+        "id": -2,
+        "mean_contrast_metres": -220.98168578350578,
+        "observed_sites": 1458,
+        "substrate": "B",
+        "surface_history": "ff3da0343871bf20b9d1835d63ae04e5769b54fa444f77c444aa92b1b62444c4",
+        "token": "ff3da0343871bf20b9d1835d63ae04e5769b54fa444f77c444aa92b1b62444c4"
+      },
+      "row": 0,
+      "x": 2688,
+      "z": 10880
+    },
+    {
+      "column": 48,
+      "elevation_metres": -2250.709,
+      "interpretation": "abstain",
+      "pr58": {
+        "id": [
+          1,
+          4
+        ],
+        "inherited": "H1",
+        "overprint": "O0",
+        "token": "3b0ce8c1fa1c2f308e83e781d25ce5b9f78adbfdc0f0cd7c0b0d3c9f6b76c081"
+      },
+      "pr59": {
+        "anchor": [
+          -357.0,
+          0
+        ],
+        "authored_event": "cover preservation",
+        "deep_history": "182ecb78d9890a81f38831860ca6011d45d81c3c7b08da2de4efab0d96685216",
+        "id": -1,
+        "mean_contrast_metres": -275.49993718826454,
+        "observed_sites": 747,
+        "substrate": "A",
+        "surface_history": "182ecb78d9890a81f38831860ca6011d45d81c3c7b08da2de4efab0d96685216",
+        "token": "182ecb78d9890a81f38831860ca6011d45d81c3c7b08da2de4efab0d96685216"
+      },
+      "row": 0,
+      "x": 5760,
+      "z": 10880
+    }
+  ],
+  "caveat": [
+    "Unknown / interpretation abstains",
+    "All 2,401 sites abstain. Unknown: real rock,\nage, dip, erosion, cover thickness, true\nhistory, gaps/exterior, between-site terrain\nand observation error. No nearby cursor/\nplayer height is inferred."
+  ],
+  "comparison": "Cards 2/3: different IDs/tokens; same cover-preservation event.\nTheir contact has no demonstrated geological necessity.\nPR59 did not establish better landscape-related contacts.",
+  "contract": "independent-static-inspection-card-1",
+  "evidence_limits": {
+    "companion_presentation": "blocked and unverified",
+    "minecraft_acceptance": false,
+    "player_study": false,
+    "static_only": true
+  },
+  "images": {
+    "td-inspection-card-1200.png": {
+      "card_allocation": [
+        360,
+        760
+      ],
+      "height": 900,
+      "sha256": "5803683e24fa6ee379d776104371f8b790b60d9db485500ccfd338f6ba5d1d02",
+      "text_boxes": [
+        {
+          "allocation": [
+            0,
+            0,
+            1200,
+            40
+          ],
+          "bounds": [
+            24,
+            12,
+            524,
+            32
+          ],
+          "role": "sheet heading",
+          "size": 22,
+          "text": "Why this region? / independent static card prototype"
+        },
+        {
+          "allocation": [
+            24,
+            44,
+            384,
+            804
+          ],
+          "bounds": [
+            40,
+            58,
+            231,
+            74
+          ],
+          "role": "card title",
+          "size": 22,
+          "text": "Card 1 / PR59 ID -3"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            93,
+            269,
+            106
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Observed / exact selected site"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            113,
+            248,
+            128
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "r46, c4; native x2944, z13824"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            132,
+            327,
+            147
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2090.142 TD metres (rounded: 0.001 m)."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            151,
+            153,
+            163
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Not Minecraft Y."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            178,
+            271,
+            194
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional mean / not site height"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            198,
+            286,
+            210
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Band minus field mean: +2693.8 m"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            217,
+            232,
+            232
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "(196 sites; rounded: 0.1 m)."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            244,
+            237,
+            257
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Seeded abstract substrate"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            264,
+            292,
+            279
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "PR59 ID -3; tag B. Not a rock name."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            291,
+            242,
+            307
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Authored history / invented"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            311,
+            189,
+            326
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "B -> conceptual tilt ->"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            330,
+            237,
+            345
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "greater stripping / exposure."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            357,
+            236,
+            373
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Conceptual surface / deep"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            377,
+            300,
+            392
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Surface: greater stripping / exposure."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            396,
+            210,
+            411
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Deep: inherited B, ID -3."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            415,
+            299,
+            430
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Shared identity/history; no measured"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            434,
+            249,
+            449
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "depth or subsurface interface."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            461,
+            252,
+            477
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "PR58 / unchanged, separate"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            481,
+            273,
+            496
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "ID [0, 5]: H1 -> O1. Invented tags."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            508,
+            271,
+            524
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional trend / not local slope"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            528,
+            284,
+            543
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2,401 sites: down with x, up with z."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            547,
+            314,
+            562
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Ratio about -1.01; active tilt clamp -0.5."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            566,
+            350,
+            581
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Trend influences tilt; seed/width also matter."
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            662,
+            290,
+            678
+          ],
+          "role": "reserved caveat heading",
+          "size": 17,
+          "text": "Unknown / interpretation abstains"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            685,
+            346,
+            700
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "All 2,401 sites abstain. Unknown: real rock,"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            704,
+            311,
+            719
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "age, dip, erosion, cover thickness, true"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            723,
+            335,
+            738
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "history, gaps/exterior, between-site terrain"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            742,
+            326,
+            757
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "and observation error. No nearby cursor/"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            761,
+            210,
+            776
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "player height is inferred."
+        },
+        {
+          "allocation": [
+            408,
+            44,
+            768,
+            804
+          ],
+          "bounds": [
+            424,
+            58,
+            615,
+            74
+          ],
+          "role": "card title",
+          "size": 22,
+          "text": "Card 2 / PR59 ID -2"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            93,
+            653,
+            106
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Observed / exact selected site"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            113,
+            623,
+            128
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "r0, c0; native x2688, z10880"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            132,
+            707,
+            147
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "-179.612 TD metres (rounded: 0.001 m)."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            151,
+            537,
+            163
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Not Minecraft Y."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            178,
+            655,
+            194
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional mean / not site height"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            198,
+            657,
+            210
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Band minus field mean: -221.0 m"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            217,
+            629,
+            232
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "(1,458 sites; rounded: 0.1 m)."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            244,
+            621,
+            257
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Seeded abstract substrate"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            264,
+            676,
+            279
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "PR59 ID -2; tag B. Not a rock name."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            291,
+            626,
+            307
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Authored history / invented"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            311,
+            573,
+            326
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "B -> conceptual tilt ->"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            330,
+            559,
+            345
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "cover preservation."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            357,
+            620,
+            373
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Conceptual surface / deep"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            377,
+            622,
+            392
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Surface: cover preservation."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            396,
+            594,
+            411
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Deep: inherited B, ID -2."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            415,
+            683,
+            430
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Shared identity/history; no measured"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            434,
+            633,
+            449
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "depth or subsurface interface."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            461,
+            636,
+            477
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "PR58 / unchanged, separate"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            481,
+            657,
+            496
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "ID [0, 4]: H1 -> O0. Invented tags."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            508,
+            655,
+            524
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional trend / not local slope"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            528,
+            668,
+            543
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2,401 sites: down with x, up with z."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            547,
+            698,
+            562
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Ratio about -1.01; active tilt clamp -0.5."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            566,
+            734,
+            581
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Trend influences tilt; seed/width also matter."
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            662,
+            674,
+            678
+          ],
+          "role": "reserved caveat heading",
+          "size": 17,
+          "text": "Unknown / interpretation abstains"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            685,
+            730,
+            700
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "All 2,401 sites abstain. Unknown: real rock,"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            704,
+            695,
+            719
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "age, dip, erosion, cover thickness, true"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            723,
+            719,
+            738
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "history, gaps/exterior, between-site terrain"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            742,
+            710,
+            757
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "and observation error. No nearby cursor/"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            761,
+            594,
+            776
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "player height is inferred."
+        },
+        {
+          "allocation": [
+            792,
+            44,
+            1152,
+            804
+          ],
+          "bounds": [
+            808,
+            58,
+            999,
+            74
+          ],
+          "role": "card title",
+          "size": 22,
+          "text": "Card 3 / PR59 ID -1"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            93,
+            1037,
+            106
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Observed / exact selected site"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            113,
+            1016,
+            128
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "r0, c48; native x5760, z10880"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            132,
+            1100,
+            147
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "-2250.709 TD metres (rounded: 0.001 m)."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            151,
+            921,
+            163
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Not Minecraft Y."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            178,
+            1039,
+            194
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional mean / not site height"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            198,
+            1041,
+            210
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Band minus field mean: -275.5 m"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            217,
+            1000,
+            232
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "(747 sites; rounded: 0.1 m)."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            244,
+            1005,
+            257
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Seeded abstract substrate"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            264,
+            1060,
+            279
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "PR59 ID -1; tag A. Not a rock name."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            291,
+            1010,
+            307
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Authored history / invented"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            311,
+            958,
+            326
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "A -> conceptual tilt ->"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            330,
+            943,
+            345
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "cover preservation."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            357,
+            1004,
+            373
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Conceptual surface / deep"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            377,
+            1006,
+            392
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Surface: cover preservation."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            396,
+            978,
+            411
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Deep: inherited A, ID -1."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            415,
+            1067,
+            430
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Shared identity/history; no measured"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            434,
+            1017,
+            449
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "depth or subsurface interface."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            461,
+            1020,
+            477
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "PR58 / unchanged, separate"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            481,
+            1041,
+            496
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "ID [1, 4]: H1 -> O0. Invented tags."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            508,
+            1039,
+            524
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional trend / not local slope"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            528,
+            1052,
+            543
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2,401 sites: down with x, up with z."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            547,
+            1082,
+            562
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Ratio about -1.01; active tilt clamp -0.5."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            566,
+            1118,
+            581
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Trend influences tilt; seed/width also matter."
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            662,
+            1058,
+            678
+          ],
+          "role": "reserved caveat heading",
+          "size": 17,
+          "text": "Unknown / interpretation abstains"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            685,
+            1114,
+            700
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "All 2,401 sites abstain. Unknown: real rock,"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            704,
+            1079,
+            719
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "age, dip, erosion, cover thickness, true"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            723,
+            1103,
+            738
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "history, gaps/exterior, between-site terrain"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            742,
+            1094,
+            757
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "and observation error. No nearby cursor/"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            761,
+            978,
+            776
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "player height is inferred."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            24,
+            816,
+            467,
+            831
+          ],
+          "role": "comparison",
+          "size": 16,
+          "text": "Cards 2/3: different IDs/tokens; same cover-preservation event."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            24,
+            835,
+            422,
+            850
+          ],
+          "role": "comparison",
+          "size": 16,
+          "text": "Their contact has no demonstrated geological necessity."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            24,
+            854,
+            428,
+            869
+          ],
+          "role": "comparison",
+          "size": 16,
+          "text": "PR59 did not establish better landscape-related contacts."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            816,
+            972,
+            831
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "Unsupported / exact lookup only"
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            835,
+            990,
+            850
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "Gap (2689,10880): no observation."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            854,
+            1015,
+            869
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "Exterior (5761,13953): no observation."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            873,
+            1036,
+            888
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "No interpolation or nearest-site inference."
+        }
+      ],
+      "width": 1200
+    },
+    "td-inspection-card-1600.png": {
+      "card_allocation": [
+        360,
+        760
+      ],
+      "height": 1000,
+      "sha256": "437ff2ae4b987e23be054fe8ece2f80be0a8fb4bf22e091fb4a0fe43c473d4f3",
+      "text_boxes": [
+        {
+          "allocation": [
+            0,
+            0,
+            1600,
+            40
+          ],
+          "bounds": [
+            24,
+            12,
+            524,
+            32
+          ],
+          "role": "sheet heading",
+          "size": 22,
+          "text": "Why this region? / independent static card prototype"
+        },
+        {
+          "allocation": [
+            24,
+            44,
+            384,
+            804
+          ],
+          "bounds": [
+            40,
+            58,
+            231,
+            74
+          ],
+          "role": "card title",
+          "size": 22,
+          "text": "Card 1 / PR59 ID -3"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            93,
+            269,
+            106
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Observed / exact selected site"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            113,
+            248,
+            128
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "r46, c4; native x2944, z13824"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            132,
+            327,
+            147
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2090.142 TD metres (rounded: 0.001 m)."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            151,
+            153,
+            163
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Not Minecraft Y."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            178,
+            271,
+            194
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional mean / not site height"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            198,
+            286,
+            210
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Band minus field mean: +2693.8 m"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            217,
+            232,
+            232
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "(196 sites; rounded: 0.1 m)."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            244,
+            237,
+            257
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Seeded abstract substrate"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            264,
+            292,
+            279
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "PR59 ID -3; tag B. Not a rock name."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            291,
+            242,
+            307
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Authored history / invented"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            311,
+            189,
+            326
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "B -> conceptual tilt ->"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            330,
+            237,
+            345
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "greater stripping / exposure."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            357,
+            236,
+            373
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Conceptual surface / deep"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            377,
+            300,
+            392
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Surface: greater stripping / exposure."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            396,
+            210,
+            411
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Deep: inherited B, ID -3."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            415,
+            299,
+            430
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Shared identity/history; no measured"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            434,
+            249,
+            449
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "depth or subsurface interface."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            461,
+            252,
+            477
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "PR58 / unchanged, separate"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            481,
+            273,
+            496
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "ID [0, 5]: H1 -> O1. Invented tags."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            508,
+            271,
+            524
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional trend / not local slope"
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            528,
+            284,
+            543
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2,401 sites: down with x, up with z."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            547,
+            314,
+            562
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Ratio about -1.01; active tilt clamp -0.5."
+        },
+        {
+          "allocation": [
+            40,
+            58,
+            368,
+            646
+          ],
+          "bounds": [
+            40,
+            566,
+            350,
+            581
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Trend influences tilt; seed/width also matter."
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            662,
+            290,
+            678
+          ],
+          "role": "reserved caveat heading",
+          "size": 17,
+          "text": "Unknown / interpretation abstains"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            685,
+            346,
+            700
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "All 2,401 sites abstain. Unknown: real rock,"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            704,
+            311,
+            719
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "age, dip, erosion, cover thickness, true"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            723,
+            335,
+            738
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "history, gaps/exterior, between-site terrain"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            742,
+            326,
+            757
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "and observation error. No nearby cursor/"
+        },
+        {
+          "allocation": [
+            40,
+            660,
+            368,
+            790
+          ],
+          "bounds": [
+            40,
+            761,
+            210,
+            776
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "player height is inferred."
+        },
+        {
+          "allocation": [
+            408,
+            44,
+            768,
+            804
+          ],
+          "bounds": [
+            424,
+            58,
+            615,
+            74
+          ],
+          "role": "card title",
+          "size": 22,
+          "text": "Card 2 / PR59 ID -2"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            93,
+            653,
+            106
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Observed / exact selected site"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            113,
+            623,
+            128
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "r0, c0; native x2688, z10880"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            132,
+            707,
+            147
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "-179.612 TD metres (rounded: 0.001 m)."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            151,
+            537,
+            163
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Not Minecraft Y."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            178,
+            655,
+            194
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional mean / not site height"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            198,
+            657,
+            210
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Band minus field mean: -221.0 m"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            217,
+            629,
+            232
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "(1,458 sites; rounded: 0.1 m)."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            244,
+            621,
+            257
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Seeded abstract substrate"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            264,
+            676,
+            279
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "PR59 ID -2; tag B. Not a rock name."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            291,
+            626,
+            307
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Authored history / invented"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            311,
+            573,
+            326
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "B -> conceptual tilt ->"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            330,
+            559,
+            345
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "cover preservation."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            357,
+            620,
+            373
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Conceptual surface / deep"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            377,
+            622,
+            392
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Surface: cover preservation."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            396,
+            594,
+            411
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Deep: inherited B, ID -2."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            415,
+            683,
+            430
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Shared identity/history; no measured"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            434,
+            633,
+            449
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "depth or subsurface interface."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            461,
+            636,
+            477
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "PR58 / unchanged, separate"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            481,
+            657,
+            496
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "ID [0, 4]: H1 -> O0. Invented tags."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            508,
+            655,
+            524
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional trend / not local slope"
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            528,
+            668,
+            543
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2,401 sites: down with x, up with z."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            547,
+            698,
+            562
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Ratio about -1.01; active tilt clamp -0.5."
+        },
+        {
+          "allocation": [
+            424,
+            58,
+            752,
+            646
+          ],
+          "bounds": [
+            424,
+            566,
+            734,
+            581
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Trend influences tilt; seed/width also matter."
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            662,
+            674,
+            678
+          ],
+          "role": "reserved caveat heading",
+          "size": 17,
+          "text": "Unknown / interpretation abstains"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            685,
+            730,
+            700
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "All 2,401 sites abstain. Unknown: real rock,"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            704,
+            695,
+            719
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "age, dip, erosion, cover thickness, true"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            723,
+            719,
+            738
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "history, gaps/exterior, between-site terrain"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            742,
+            710,
+            757
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "and observation error. No nearby cursor/"
+        },
+        {
+          "allocation": [
+            424,
+            660,
+            752,
+            790
+          ],
+          "bounds": [
+            424,
+            761,
+            594,
+            776
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "player height is inferred."
+        },
+        {
+          "allocation": [
+            792,
+            44,
+            1152,
+            804
+          ],
+          "bounds": [
+            808,
+            58,
+            999,
+            74
+          ],
+          "role": "card title",
+          "size": 22,
+          "text": "Card 3 / PR59 ID -1"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            93,
+            1037,
+            106
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Observed / exact selected site"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            113,
+            1016,
+            128
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "r0, c48; native x5760, z10880"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            132,
+            1100,
+            147
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "-2250.709 TD metres (rounded: 0.001 m)."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            151,
+            921,
+            163
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Not Minecraft Y."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            178,
+            1039,
+            194
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional mean / not site height"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            198,
+            1041,
+            210
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Band minus field mean: -275.5 m"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            217,
+            1000,
+            232
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "(747 sites; rounded: 0.1 m)."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            244,
+            1005,
+            257
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Seeded abstract substrate"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            264,
+            1060,
+            279
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "PR59 ID -1; tag A. Not a rock name."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            291,
+            1010,
+            307
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Authored history / invented"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            311,
+            958,
+            326
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "A -> conceptual tilt ->"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            330,
+            943,
+            345
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "cover preservation."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            357,
+            1004,
+            373
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Conceptual surface / deep"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            377,
+            1006,
+            392
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Surface: cover preservation."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            396,
+            978,
+            411
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Deep: inherited A, ID -1."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            415,
+            1067,
+            430
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Shared identity/history; no measured"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            434,
+            1017,
+            449
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "depth or subsurface interface."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            461,
+            1020,
+            477
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "PR58 / unchanged, separate"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            481,
+            1041,
+            496
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "ID [1, 4]: H1 -> O0. Invented tags."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            508,
+            1039,
+            524
+          ],
+          "role": "section heading",
+          "size": 17,
+          "text": "Regional trend / not local slope"
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            528,
+            1052,
+            543
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "2,401 sites: down with x, up with z."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            547,
+            1082,
+            562
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Ratio about -1.01; active tilt clamp -0.5."
+        },
+        {
+          "allocation": [
+            808,
+            58,
+            1136,
+            646
+          ],
+          "bounds": [
+            808,
+            566,
+            1118,
+            581
+          ],
+          "role": "body",
+          "size": 16,
+          "text": "Trend influences tilt; seed/width also matter."
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            662,
+            1058,
+            678
+          ],
+          "role": "reserved caveat heading",
+          "size": 17,
+          "text": "Unknown / interpretation abstains"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            685,
+            1114,
+            700
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "All 2,401 sites abstain. Unknown: real rock,"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            704,
+            1079,
+            719
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "age, dip, erosion, cover thickness, true"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            723,
+            1103,
+            738
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "history, gaps/exterior, between-site terrain"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            742,
+            1094,
+            757
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "and observation error. No nearby cursor/"
+        },
+        {
+          "allocation": [
+            808,
+            660,
+            1136,
+            790
+          ],
+          "bounds": [
+            808,
+            761,
+            978,
+            776
+          ],
+          "role": "reserved caveat",
+          "size": 16,
+          "text": "player height is inferred."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            24,
+            816,
+            467,
+            831
+          ],
+          "role": "comparison",
+          "size": 16,
+          "text": "Cards 2/3: different IDs/tokens; same cover-preservation event."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            24,
+            835,
+            422,
+            850
+          ],
+          "role": "comparison",
+          "size": 16,
+          "text": "Their contact has no demonstrated geological necessity."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            24,
+            854,
+            428,
+            869
+          ],
+          "role": "comparison",
+          "size": 16,
+          "text": "PR59 did not establish better landscape-related contacts."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            816,
+            972,
+            831
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "Unsupported / exact lookup only"
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            835,
+            990,
+            850
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "Gap (2689,10880): no observation."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            854,
+            1015,
+            869
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "Exterior (5761,13953): no observation."
+        },
+        {
+          "allocation": [
+            24,
+            814,
+            1176,
+            898
+          ],
+          "bounds": [
+            744,
+            873,
+            1036,
+            888
+          ],
+          "role": "unsupported",
+          "size": 16,
+          "text": "No interpolation or nearest-site inference."
+        }
+      ],
+      "width": 1600
+    }
+  },
+  "input_sha256": "8dc1e0a9f98edd1dc6b2ce74cc1d795c117c15feb9503b0260a5c5ef23a701d6",
+  "regional_summaries": {
+    "a": -0.5,
+    "clamp_active": true,
+    "gx": -0.5410553201034904,
+    "gz": 0.5450102547687877,
+    "mean_elevation": -2167.4827969884423,
+    "slope_ratio": -1.007309667825724
+  },
+  "renderer": {
+    "font": "C:\\Windows\\Fonts\\arial.ttf",
+    "font_family": [
+      "Arial",
+      "Regular"
+    ],
+    "font_sha256": "edfbd22a3d088fc2f5d7c79b8c9c732df6dc878a60f0a80be0f92a3c7a634404",
+    "glyph_check": "Unicode cmap nonzero glyph IDs for all displayed characters",
+    "interpreter": "C:\\Users\\digif\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "pillow": "12.3.0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "result_sha256": {
+    "td-region-visual": "d0853fba10ca350e353d9a2786a6362d99f80363aa7b12a071d470b89e56819c",
+    "td-story": "9caff8648cb2165bf0d0ed7c3e9fd70ce6759d28b0c891b9fd36de1551fac650"
+  },
+  "rounding": {
+    "regional_contrast_decimal_places": 1,
+    "site_elevation_decimal_places": 3,
+    "trend_ratio_decimal_places": 2
+  },
+  "unsupported": [
+    {
+      "observation": null,
+      "x": 2689,
+      "z": 10880
+    },
+    {
+      "observation": null,
+      "x": 5761,
+      "z": 13953
+    }
+  ],
+  "unsupported_display": "Unsupported / exact lookup only\nGap (2689,10880): no observation.\nExterior (5761,13953): no observation.\nNo interpolation or nearest-site inference."
+}
