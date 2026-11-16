@@ -62,7 +62,7 @@ class Atlas(unittest.TestCase):
     def test_canonical_rebuild_and_limits(self):
         raw = B['build']()
         self.assertEqual(raw,B['build']())
-        self.assertEqual(raw,B['OUTPUT'].read_bytes())
+        self.assertEqual(raw,B['OUTPUT'].read_text(encoding='utf-8').encode())
         text = raw.decode()
         for phrase in ('no demonstrated geological necessity','error remain unknown',
                        'Geological interpretation abstains everywhere',

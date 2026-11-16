@@ -57,7 +57,8 @@ Run with `-B`:
 * `scripts/test-td-site-atlas.py`: four tests passed, including every exact
   elevation/contrast/identity/event, unique IDs and complete fragment targets,
   script-free source, unchanged map contents after link removal, archive
-  corruption rejection and byte-identical repeat rebuild.
+  corruption rejection and byte-identical repeat rebuild. Checked-in HTML is
+  compared with checkout CRLF normalized to LF; generated UTF-8 stays canonical.
 * `scripts/build-td-site-atlas.py --check`: passed.
 * Existing `scripts/test-td-region-explainer.py`: seven tests passed.
 

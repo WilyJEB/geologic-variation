@@ -69,7 +69,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     data = build()
     if args.check:
-        if OUTPUT.read_bytes() != data:
+        if OUTPUT.read_text(encoding='utf-8').encode() != data:
             raise SystemExit('Atlas differs from deterministic rebuild')
         print('Atlas rebuild matches')
     else:
